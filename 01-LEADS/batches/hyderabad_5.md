@@ -1,8 +1,24 @@
 # Batch: Solar Hyderabad — 5 Leads (staged 2026-10-18)
 
-Selected from the cleaned `leads.csv` Hyderabad pool (Ksquare Energy excluded —
-already audited + drafted). Every website below was fetched and verified
-live on 2026-10-18; all are real Hyderabad solar installers/EPCs.
+## Correct flow: leads come from the AD LIBRARY, not from search
+
+```
+python discover_leads.py "solar Hyderabad" --limit 5
+  1. Searches the LIVE Meta Ad Library for ACTIVE solar advertisers in Hyderabad
+  2. One lead per advertiser; takes the ad's real destination/conversion page
+     (the exact URL the ad sends customers to, or WhatsApp if that's the funnel)
+  3. Audits THAT conversion page — only because that's where ad clicks land,
+     so pixel/tracking/CTA/speed on it decide whether ad spend converts
+  4. Pulls full live ad activity: Meta own ads + Meta competitors + Google
+     Ads Transparency (own + competitors)
+  5. Builds the branded Ads Audit PDF (ad sections are the headline;
+     the conversion-page score is one panel in it)
+```
+
+The 5 companies below are a FALLBACK seed list from the cleaned `leads.csv`
+pool (Ksquare Energy excluded — already audited + drafted), in case the ad
+library returns fewer than 5 usable advertisers. The discovery run decides
+the real 5 — it may legitimately return different companies.
 
 | # | Company | Website | Email | Phone | Notes (verified from live site) |
 |---|---|---|---|---|---|
@@ -31,11 +47,8 @@ cd performance-marketing-os
 pip install -r 01-LEADS/requirements.txt
 
 cd 01-LEADS
-python run_pipeline.py https://samrajsolar.com "Samraj Solar" --city Hyderabad
-python run_pipeline.py https://sriishaansolar.com "Sri Ishaan Solar" --city Hyderabad
-python run_pipeline.py https://augnisolar.com "Avghni Solar" --city Hyderabad
-python run_pipeline.py https://nairasolar.com "Naira Solar" --city Hyderabad
-python run_pipeline.py https://www.arkahub.in "Arkahub" --city Hyderabad
+# PRIMARY: leads discovered from the live Meta Ad Library, ads audited
+python discover_leads.py "solar Hyderabad" --limit 5
 
 # QA gate — must print ALL REPORTS PASS before anything is delivered
 python verify_report.py --all
@@ -43,6 +56,10 @@ python verify_report.py --all
 cd ../02-OUTREACH
 python audit_outreach.py --export   # emails + sequence_manifest.json
 ```
+
+Only if discovery returns too few advertisers, top up individually with
+`python run_pipeline.py <ad destination URL> "<Advertiser Name>" --city Hyderabad`
+(do NOT pass --skip-ads; the ad research is the point of the report).
 
 Then commit + push (audit JSONs, PDFs, generated emails, manifest).
 
