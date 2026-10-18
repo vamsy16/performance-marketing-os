@@ -80,6 +80,18 @@ def main():
               f"google advertisers={len(ad_data['google_competitors']['advertisers'])}")
 
     # --- Step 3: Branded PDF ---
+    # Guard: never build a report out of nothing. If the website fetch
+    # failed AND we have no live ad data, a PDF would be an empty shell —
+    # refuse loudly instead of producing a deliverable-looking fake.
+    has_ads = bool((audit.get("ad_library") or {}).get("meta_own", {}).get("found")
+                   or (audit.get("ad_library") or {}).get("google_own", {}).get("found"))
+    if "error" in audit and not has_ads:
+        print("\nERROR: website audit failed and no live ads were found — "
+              "refusing to generate an empty PDF.")
+        print(f"  Fetch error: {audit['error']}")
+        print("  Check the URL / network and re-run. Nothing was delivered.")
+        sys.exit(1)
+
     print(f"\n[3/3] Generating branded PDF...")
     pdf_path = generate_pdf(audit)
     size_kb = os.path.getsize(pdf_path) // 1024 if os.path.exists(pdf_path) else 0

@@ -40,17 +40,18 @@ This is your complete workflow: find companies → audit their ads/website → s
 │    → Fills in company name, city, specific issues               │
 │    → Saves ready-to-send emails as .txt files                   │
 │                                                                  │
-│  STEP 5: SEND (daily, 20-30 min)                                │
-│    → Open each .txt file                                        │
-│    → Copy subject + body into Gmail                             │
-│    → Personalize one more line if possible                      │
-│    → Send                                                      │
-│    → Log in CRM                                                 │
+│  STEP 5: DRAFT IN GMAIL (agent does this — GMAIL_DRAFT_WORKFLOW)│
+│    → ONLY the initial draft is created (audit PDF attached)     │
+│    → Tracked columns: thread_id, mails_sent, next_followup_date │
+│    → You review in Gmail and SEND manually (never auto-sent)    │
+│    → Tell Arena "I sent <company>" → send is recorded           │
 │                                                                  │
-│  STEP 6: FOLLOW UP (daily, 15 min)                              │
-│  $ python 05-CRM/crm.py                                         │
-│    → See who hasn't replied                                     │
-│    → Send follow-up using templates                             │
+│  STEP 6: FOLLOW UP (+2 days after previous send, same thread)   │
+│  $ python 02-OUTREACH/sequence.py due                           │
+│    → On the due day, agent creates the follow-up draft IN the   │
+│      recorded thread (never in advance, never a new mail)       │
+│    → You review + send; mails_sent +1, next date moves +2 days  │
+│    → 3 follow-ups max (last one is the breakup email)           │
 │                                                                  │
 └─────────────────────────────────────────────────────────────────┘
 ```
@@ -144,11 +145,17 @@ python 01-LEADS/verify_report.py --latest
 python 01-LEADS/ads_audit.py https://example.com
 python 01-LEADS/ads_audit.py "SunTech Solar" --city Mumbai
 
-# === GENERATE EMAILS ===
+# === GENERATE EMAILS + FOLLOW-UP SEQUENCE ===
 python 02-OUTREACH/audit_outreach.py --top 10
-python 02-OUTREACH/audit_outreach.py --top 10 --export   # Save as files
+python 02-OUTREACH/audit_outreach.py --top 10 --export   # Files + sequence_manifest.json
 python 02-OUTREACH/audit_outreach.py --name "SunTech"    # Specific company
 python 02-OUTREACH/audit_outreach.py --template speed_urgent  # Force template
+
+# === GMAIL DRAFTS + THREADED FOLLOW-UPS (+2 days, same thread) ===
+python 02-OUTREACH/sequence.py status    # all sequences, draft/sent state, due dates
+python 02-OUTREACH/sequence.py due       # follow-ups due to send today
+python 02-OUTREACH/tests_sequence.py     # sequence engine tests
+# Agent runbook: 02-OUTREACH/GMAIL_DRAFT_WORKFLOW.md
 
 # === CRM ===
 python 05-CRM/crm.py                        # Interactive

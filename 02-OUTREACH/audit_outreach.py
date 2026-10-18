@@ -8,6 +8,11 @@ Usage:
   python audit_outreach.py --top 5                  # Only top 5 by opportunity
   python audit_outreach.py --name "SunTech Solar"   # Specific company
   python audit_outreach.py --export emails          # Save as .txt files for copy-paste
+
+With --export this also writes generated_emails/sequence_manifest.json:
+the initial email + 3 threaded follow-ups per lead (each follow-up due
+2 days after the PREVIOUS email is sent — see sequence.py). The agent
+then creates Gmail drafts from that manifest (see GMAIL_DRAFT_WORKFLOW.md).
 """
 
 import argparse
@@ -28,6 +33,9 @@ LEADS_DIR = os.path.join(os.path.dirname(BASE_DIR), "01-LEADS")
 AUDIT_DIR = os.path.join(LEADS_DIR, "audit_results")
 LEADS_CSV = os.path.join(LEADS_DIR, "leads.csv")
 EMAILS_DIR = os.path.join(BASE_DIR, "generated_emails")
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import sequence as seq_engine  # threaded follow-ups (+2 days, same thread)
 
 # Your details — override with env vars SP_NAME / SP_AGENCY / SP_PHONE
 YOUR_NAME = os.environ.get("SP_NAME", "Vamsi")
@@ -369,6 +377,17 @@ def main():
         email = generate_email(lead, audit, args.template)
         emails.append(email)
 
+        # Build the threaded follow-up sequence (initial + 3 follow-ups,
+        # each due 2 days after the previous email is SENT). Existing
+        # Gmail draft/sent state in the manifest is preserved.
+        manifest = seq_engine.load_manifest()
+        seq = seq_engine.upsert_sequence(
+            manifest, lead, audit, email["subject"], email["body"])
+        seq_engine.save_manifest(manifest)
+        email["sequence_steps"] = len(seq["steps"])
+        print(f"  Sequence: {len(seq['steps'])} emails "
+              f"(follow-ups every {seq_engine.FOLLOWUP_DELAY_DAYS}d after previous send, same thread)")
+
         print(f"  Template: {email['template']}")
         print(f"  Subject:  {email['subject'][:60]}")
         print(f"  To:       {email['email'] or '(no email - need to find)'}")
@@ -401,11 +420,17 @@ def main():
     if args.export:
         print(f"Files saved to: {EMAILS_DIR}")
 
+    print(f"\nSequence manifest: {seq_engine.MANIFEST_FILE}")
+    print(f"Check state anytime:  python sequence.py status")
+    print(f"Follow-ups due today: python sequence.py due")
+
     print(f"\nNext steps:")
     print(f"1. For leads without email → Google their name + 'contact'")
-    print(f"2. Open the ad check URLs to verify their ad presence")
-    print(f"3. Send emails ONE BY ONE via Gmail (personalize further if possible)")
-    print(f"4. Track responses in CRM: python ../05-CRM/crm.py")
+    print(f"2. Ask Arena: 'create Gmail drafts from the sequence manifest' (GMAIL_DRAFT_WORKFLOW.md)")
+    print(f"3. Review each draft in Gmail, attach the audit PDF, and SEND manually")
+    print(f"4. Tell Arena 'I sent <company>' → it records the send; follow-up draft")
+    print(f"   appears IN THE SAME THREAD {seq_engine.FOLLOWUP_DELAY_DAYS} days later (never a new mail)")
+    print(f"5. Track responses in CRM: python ../05-CRM/crm.py")
 
 
 if __name__ == "__main__":

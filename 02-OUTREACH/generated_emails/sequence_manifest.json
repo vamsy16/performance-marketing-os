@@ -1,0 +1,213 @@
+{
+  "version": 1,
+  "followup_delay_days": 2,
+  "sequences": [
+    {
+      "company": "Ksquare Energy",
+      "to": "info@ksquareenergy.com",
+      "city": "Hyderabad",
+      "website": "https://www.ksquareenergy.com/solar-company-in-hyderabad",
+      "thread_subject": "Quick question about Ksquare Energy's website",
+      "steps": [
+        {
+          "step": 0,
+          "kind": "initial",
+          "subject": "Quick question about Ksquare Energy's website",
+          "body": "Hi,\n\nI was looking at solar companies in Hyderabad and came across Ksquare Energy.\n\nI ran a quick check on your website and found a couple of things that might be costing you leads:\n\n  • No Google Analytics — flying blind on website traffic\n  • No live chat — missing after-hours leads\n\nYour current website score is 10/100 — there's some quick wins available that could help convert more visitors into enquiries.\n\nI've attached a short report walking through exactly what I found and what I'd fix.\n\nNo strings attached — it's yours to keep whether we ever work together or not.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
+          "delay_after_previous_days": 0,
+          "status": "draft",
+          "draft_id": "r1204787819089709045",
+          "message_id": "<CAPHXTMo6vxt8n0tVPdENeWwjduiqXiFvAiTW+QxyK_w-LB5_8w@mail.gmail.com>",
+          "thread_id": "1a14f7346f5232f1",
+          "draft_created_at": "2026-10-18",
+          "sent_at": "",
+          "due_date": ""
+        },
+        {
+          "step": 1,
+          "kind": "followup",
+          "subject": "Re: Quick question about Ksquare Energy's website",
+          "body": "Hi,\n\nJust bumping this up your inbox — I ran a quick audit of Ksquare Energy's online presence and the biggest thing I found was: No Google Analytics — flying blind on website traffic\n\nI've attached the full report to my first email. Happy to walk you through it on a 10-minute call if useful — or just keep the report, no strings attached.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
+          "delay_after_previous_days": 2,
+          "status": "pending",
+          "draft_id": "",
+          "message_id": "",
+          "thread_id": "",
+          "draft_created_at": "",
+          "sent_at": "",
+          "due_date": ""
+        },
+        {
+          "step": 2,
+          "kind": "followup",
+          "subject": "Re: Quick question about Ksquare Energy's website",
+          "body": "Hi,\n\nOne more thing about the Hyderabad solar market: searches for rooftop solar in Hyderabad keep growing, but very few local installers are set up to actually capture that demand — most are missing basic tracking, so they can't even tell which enquiries come from where.\n\nThat's a fixable gap, and it's exactly what I help solar companies with.\n\nIf lead flow ever becomes a priority, I'd love to help Ksquare Energy.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
+          "delay_after_previous_days": 2,
+          "status": "pending",
+          "draft_id": "",
+          "message_id": "",
+          "thread_id": "",
+          "draft_created_at": "",
+          "sent_at": "",
+          "due_date": ""
+        },
+        {
+          "step": 3,
+          "kind": "breakup",
+          "subject": "Re: Quick question about Ksquare Energy's website",
+          "body": "Hi,\n\nI've reached out a couple of times about helping Ksquare Energy get more leads through Google — no response, so I'll assume the timing isn't right and close the loop.\n\nIf that changes (or you ever want a second opinion on your marketing), my door is open.\n\nWishing you a strong quarter.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
+          "delay_after_previous_days": 2,
+          "status": "pending",
+          "draft_id": "",
+          "message_id": "",
+          "thread_id": "",
+          "draft_created_at": "",
+          "sent_at": "",
+          "due_date": ""
+        }
+      ],
+      "thread_id": "1a14f7346f5232f1",
+      "mails_sent": 0,
+      "next_followup_date": "",
+      "next_step": 1
+    },
+    {
+      "company": "Venus home appliances",
+      "to": "",
+      "city": "Hyderabad",
+      "website": "https://VENUSHOMEAPPLIANCES.COM",
+      "thread_subject": "Quick question about Venus home appliances's website",
+      "steps": [
+        {
+          "step": 0,
+          "kind": "initial",
+          "subject": "Quick question about Venus home appliances's website",
+          "body": "Hi,\n\nI was looking at solar companies in Hyderabad and came across Venus home appliances.\n\nI ran a quick check on your website and found a couple of things that might be costing you leads:\n\n  • No live chat — missing after-hours leads\n  • 46 images missing alt text — hurts SEO\n\nYour current website score is 5/100 — there's some quick wins available that could help convert more visitors into enquiries.\n\nI recorded a short video walking through exactly what I found and what I'd fix. Want me to send it over?\n\nNo strings attached — it's yours to keep whether we ever work together or not.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
+          "delay_after_previous_days": 0,
+          "status": "pending",
+          "draft_id": "",
+          "message_id": "",
+          "thread_id": "",
+          "draft_created_at": "",
+          "sent_at": "",
+          "due_date": ""
+        },
+        {
+          "step": 1,
+          "kind": "followup",
+          "subject": "Re: Quick question about Venus home appliances's website",
+          "body": "Hi,\n\nJust bumping this up your inbox — I ran a quick audit of Venus home appliances's online presence and the biggest thing I found was: No live chat — missing after-hours leads\n\nI've attached the full report to my first email. Happy to walk you through it on a 10-minute call if useful — or just keep the report, no strings attached.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
+          "delay_after_previous_days": 2,
+          "status": "pending",
+          "draft_id": "",
+          "message_id": "",
+          "thread_id": "",
+          "draft_created_at": "",
+          "sent_at": "",
+          "due_date": ""
+        },
+        {
+          "step": 2,
+          "kind": "followup",
+          "subject": "Re: Quick question about Venus home appliances's website",
+          "body": "Hi,\n\nOne more thing about the Hyderabad solar market: searches for rooftop solar in Hyderabad keep growing, but very few local installers are set up to actually capture that demand — most are missing basic tracking, so they can't even tell which enquiries come from where.\n\nThat's a fixable gap, and it's exactly what I help solar companies with.\n\nIf lead flow ever becomes a priority, I'd love to help Venus home appliances.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
+          "delay_after_previous_days": 2,
+          "status": "pending",
+          "draft_id": "",
+          "message_id": "",
+          "thread_id": "",
+          "draft_created_at": "",
+          "sent_at": "",
+          "due_date": ""
+        },
+        {
+          "step": 3,
+          "kind": "breakup",
+          "subject": "Re: Quick question about Venus home appliances's website",
+          "body": "Hi,\n\nI've reached out a couple of times about helping Venus home appliances get more leads through Google — no response, so I'll assume the timing isn't right and close the loop.\n\nIf that changes (or you ever want a second opinion on your marketing), my door is open.\n\nWishing you a strong quarter.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
+          "delay_after_previous_days": 2,
+          "status": "pending",
+          "draft_id": "",
+          "message_id": "",
+          "thread_id": "",
+          "draft_created_at": "",
+          "sent_at": "",
+          "due_date": ""
+        }
+      ],
+      "thread_id": "",
+      "mails_sent": 0,
+      "next_followup_date": "",
+      "next_step": 1
+    },
+    {
+      "company": "Sri Balaji Solar Energies",
+      "to": "",
+      "city": "Hyderabad",
+      "website": "",
+      "thread_subject": "Noticed something about Sri Balaji Solar Energies's online presence",
+      "steps": [
+        {
+          "step": 0,
+          "kind": "initial",
+          "subject": "Noticed something about Sri Balaji Solar Energies's online presence",
+          "body": "Hi,\n\nI specialize in helping solar companies in Hyderabad get more installation enquiries.\n\nWhen I looked at Sri Balaji Solar Energies's online setup, I noticed a few gaps that are pretty common (but costly):\n\n  • not being able to run retargeting ads to people who visited their site\n  • having no way to measure which marketing is actually working\n\nMost solar companies I work with fix these in the first week — and immediately know whether their marketing is working or not.\n\nWould you be open to a free 10-minute call where I walk you through exactly what I found and what I'd recommend? No pitch — just useful info.\n\nEither way, keep up the good work with solar in Hyderabad.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
+          "delay_after_previous_days": 0,
+          "status": "pending",
+          "draft_id": "",
+          "message_id": "",
+          "thread_id": "",
+          "draft_created_at": "",
+          "sent_at": "",
+          "due_date": ""
+        },
+        {
+          "step": 1,
+          "kind": "followup",
+          "subject": "Re: Noticed something about Sri Balaji Solar Energies's online presence",
+          "body": "Hi,\n\nJust bumping this up your inbox — I ran a quick audit of Sri Balaji Solar Energies's online presence and the biggest thing I found was: a couple of quick wins on your website\n\nI've attached the full report to my first email. Happy to walk you through it on a 10-minute call if useful — or just keep the report, no strings attached.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
+          "delay_after_previous_days": 2,
+          "status": "pending",
+          "draft_id": "",
+          "message_id": "",
+          "thread_id": "",
+          "draft_created_at": "",
+          "sent_at": "",
+          "due_date": ""
+        },
+        {
+          "step": 2,
+          "kind": "followup",
+          "subject": "Re: Noticed something about Sri Balaji Solar Energies's online presence",
+          "body": "Hi,\n\nOne more thing about the Hyderabad solar market: searches for rooftop solar in Hyderabad keep growing, but very few local installers are set up to actually capture that demand — most are missing basic tracking, so they can't even tell which enquiries come from where.\n\nThat's a fixable gap, and it's exactly what I help solar companies with.\n\nIf lead flow ever becomes a priority, I'd love to help Sri Balaji Solar Energies.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
+          "delay_after_previous_days": 2,
+          "status": "pending",
+          "draft_id": "",
+          "message_id": "",
+          "thread_id": "",
+          "draft_created_at": "",
+          "sent_at": "",
+          "due_date": ""
+        },
+        {
+          "step": 3,
+          "kind": "breakup",
+          "subject": "Re: Noticed something about Sri Balaji Solar Energies's online presence",
+          "body": "Hi,\n\nI've reached out a couple of times about helping Sri Balaji Solar Energies get more leads through Google — no response, so I'll assume the timing isn't right and close the loop.\n\nIf that changes (or you ever want a second opinion on your marketing), my door is open.\n\nWishing you a strong quarter.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
+          "delay_after_previous_days": 2,
+          "status": "pending",
+          "draft_id": "",
+          "message_id": "",
+          "thread_id": "",
+          "draft_created_at": "",
+          "sent_at": "",
+          "due_date": ""
+        }
+      ],
+      "thread_id": "",
+      "mails_sent": 0,
+      "next_followup_date": "",
+      "next_step": 1
+    }
+  ]
+}
