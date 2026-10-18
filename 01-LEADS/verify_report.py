@@ -29,9 +29,9 @@ BASE_DIR = os.path.dirname(__file__)
 AUDIT_DIR = os.path.join(BASE_DIR, "audit_results")
 PDF_DIR = os.path.join(os.path.dirname(BASE_DIR), "02-OUTREACH", "audit_pdfs")
 
-BRAND_NAME = "Vamsi"
-BRAND_AGENCY = "Smart Pursuit"
-BRAND_PHONE_TAIL = "70950 24220"
+BRAND_NAME = os.environ.get("SP_NAME", "Vamsi")
+BRAND_AGENCY = os.environ.get("SP_AGENCY", "Smart Pursuit")
+BRAND_PHONE_TAIL = os.environ.get("SP_PHONE", "+91 70950 24220").replace("+91 ", "")
 HEADER_LABEL = "ADS AUDIT REPORT"
 
 SOCIAL_WEBSITE_RE = re.compile(r"facebook\.com|fb\.me|instagram\.com|whatsapp\.com", re.I)

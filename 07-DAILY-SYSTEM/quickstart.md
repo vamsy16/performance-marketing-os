@@ -16,25 +16,21 @@ This is your command center. Everything goes here.
 
 ### 2. Install Python dependencies (2 min)
 ```bash
-pip install requests beautifulsoup4
+pip install -r 01-LEADS/requirements.txt
 ```
 
-### 3. Define your target city (3 min)
-Open `01-LEADS/find_leads.py` and edit the `CITIES` list at the top.
-Put YOUR city first. Keep 3-5 total.
+### 3. Discover live advertisers (one command)
+Ask Arena: *"Run the ads-audit skill: discover leads for 'solar <your city>' limit 5, then review"*
+It finds active advertisers from the live Meta Ad Library, audits each, and writes PDFs + `leads.csv`.
 
 ---
 
 ## Day 2 (30 minutes)
 
-### 4. Find your first leads (10 min run + 20 min review)
-```bash
-cd "01-LEADS"
-python find_leads.py
-```
-Open `leads.csv`. Star the 10 most promising companies (owner-operated, active, small).
+### 4. Review your first leads (20 min)
+Open `01-LEADS/leads.csv`. Star the 10 most promising companies (owner-operated, active, small).
 
-Import them to CRM:
+They're already in the CRM:
 ```bash
 cd "05-CRM"
 python crm.py import ../01-LEADS/leads.csv

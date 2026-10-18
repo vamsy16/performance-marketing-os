@@ -14,6 +14,7 @@ import argparse
 import io
 import json
 import os
+import re
 import sys
 from datetime import datetime
 
@@ -25,13 +26,13 @@ if sys.platform == "win32":
 BASE_DIR = os.path.dirname(__file__)
 LEADS_DIR = os.path.join(os.path.dirname(BASE_DIR), "01-LEADS")
 AUDIT_DIR = os.path.join(LEADS_DIR, "audit_results")
-RANKINGS_FILE = os.path.join(AUDIT_DIR, "rankings.json")
+LEADS_CSV = os.path.join(LEADS_DIR, "leads.csv")
 EMAILS_DIR = os.path.join(BASE_DIR, "generated_emails")
 
-# Your details — EDIT THIS
-YOUR_NAME = "Vamsi"
-YOUR_AGENCY = "Smart Pursuit"
-YOUR_PHONE = "+91 70950 24220"
+# Your details — override with env vars SP_NAME / SP_AGENCY / SP_PHONE
+YOUR_NAME = os.environ.get("SP_NAME", "Vamsi")
+YOUR_AGENCY = os.environ.get("SP_AGENCY", "Smart Pursuit")
+YOUR_PHONE = os.environ.get("SP_PHONE", "+91 70950 24220")
 YOUR_SIGNATURE = f"{YOUR_NAME}\n{YOUR_AGENCY}\n{YOUR_PHONE}"
 
 
@@ -213,15 +214,62 @@ def generate_email(lead, audit, template_name=None):
     }
 
 
-def load_rankings():
-    """Load ranked leads from pipeline output."""
-    if not os.path.exists(RANKINGS_FILE):
-        print(f"No rankings found at {RANKINGS_FILE}")
-        print("Run the pipeline first: python ../01-LEADS/pipeline.py")
-        return []
+def contact_lookup():
+    """host -> (email, phone) from the cleaned leads.csv, for enrichment."""
+    lookup = {}
+    if not os.path.exists(LEADS_CSV):
+        return lookup
+    import csv as _csv
+    with open(LEADS_CSV, "r", encoding="utf-8") as f:
+        for row in _csv.DictReader(f):
+            site = (row.get("website") or "").strip()
+            m = re.search(r"https?://(?:www\.)?([^/]+)", site)
+            if m:
+                lookup[m.group(1).lower()] = (
+                    (row.get("email") or "").strip(),
+                    (row.get("phone") or "").strip())
+    return lookup
 
-    with open(RANKINGS_FILE, "r", encoding="utf-8") as f:
-        return json.load(f)
+
+def load_rankings():
+    """Build ranked leads directly from audit JSONs (highest score = best
+    opportunity). Contacts are enriched from leads.csv by domain match."""
+    contacts = contact_lookup()
+    rows = []
+    if not os.path.isdir(AUDIT_DIR):
+        print(f"No audit directory at {AUDIT_DIR}")
+        return rows
+    for filename in sorted(os.listdir(AUDIT_DIR)):
+        if not (filename.startswith("audit_") and filename.endswith(".json")):
+            continue
+        try:
+            with open(os.path.join(AUDIT_DIR, filename), "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            continue
+        name = (data.get("company") or "").strip()
+        if not name:
+            continue
+        score = data.get("score", {}).get("score", 0)
+        issues = data.get("score", {}).get("issues", []) or []
+        site = (data.get("website") or data.get("final_url") or "").strip()
+        email = phone = ""
+        m = re.search(r"https?://(?:www\.)?([^/]+)", site)
+        if m and m.group(1).lower() in contacts:
+            email, phone = contacts[m.group(1).lower()]
+        rows.append({
+            "rank": 0, "name": name, "city": data.get("city", ""),
+            "website": site, "email": email, "phone": phone,
+            "audit_score": score if isinstance(score, int) else 0,
+            "top_issues": issues[:3],
+        })
+    rows.sort(key=lambda r: r["audit_score"], reverse=True)
+    for i, r in enumerate(rows, 1):
+        r["rank"] = i
+    if not rows:
+        print("No audits found. Run discovery first: "
+              "python ../01-LEADS/discover_leads.py \"solar <city>\"")
+    return rows
 
 
 def load_audit_for_lead(lead_name):

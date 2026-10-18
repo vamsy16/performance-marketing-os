@@ -187,9 +187,10 @@ built from `02-OUTREACH/templates/`.
 - **Chrome not found**: install Google Chrome, or edit `ad_library.py` to
   remove `channel="chrome"` so Playwright's bundled Chromium is used
   (requires `playwright install chromium`).
-- **`leads.csv` line 1 is corrupted** (known issue): header + Mumbai leads
-  merged into one line. Do not use it as-is; fix or recreate before
-  bulk-running the pipeline.
+- **`leads.csv` looks garbled after a bulk import**: run
+  `python lead_data.py` — it repairs structure, sanitizes emails/phones,
+  and drops directory/blog/listicle URLs. `python lead_data.py --check`
+  is a dry run. `python tests.py` covers the hygiene rules.
 
 ## Do not
 

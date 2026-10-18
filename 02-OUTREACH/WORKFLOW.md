@@ -11,28 +11,27 @@ This is your complete workflow: find companies → audit their ads/website → s
 │                    YOUR WEEKLY PIPELINE                          │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                  │
-│  STEP 1: FIND (once/week, 10 min)                               │
-│  $ python 01-LEADS/pipeline.py --cities "Mumbai,Pune"           │
-│    → Searches DuckDuckGo for solar companies                    │
-│    → Extracts their email + phone from websites                 │
-│    → DEDUPLICATES against all existing data                     │
-│    → Saves to leads.csv                                         │
+│  STEP 1: DISCOVER (once/week, one command)                      │
+│  $ python 01-LEADS/discover_leads.py "solar Mumbai" --limit 5   │
+│    → Finds ACTIVE advertisers in the live Meta Ad Library      │
+│    → Pulls each ad's real conversion page destination          │
+│    → Writes clean leads (lead_data.py guards the data)         │
 │                                                                  │
-│  STEP 2: AUDIT (runs automatically in pipeline, 30-60 sec each) │
+│  STEP 2: AUDIT (runs automatically in discovery, 30-60 sec each)│
 │    For each new lead, checks:                                   │
 │    ✅ Meta Pixel installed? (needed for retargeting ads)         │
 │    ✅ Google Ads tracking? (needed for conversion tracking)      │
 │    ✅ Google Analytics? (needed to measure traffic)              │
 │    ✅ Contact form? WhatsApp link? CTAs?                        │
 │    ✅ Mobile speed score (Google PageSpeed)                      │
-│    ✅ SEO basics (title, meta, schema, OG tags)                  │
+│    ✅ SEO basics (title, meta, schema, OG tags)                 │
 │    ✅ SSL, page count, local SEO signals                        │
 │    → Scores each company 0-100 (higher = more issues = better)  │
 │    → Saves detailed audit as JSON                               │
 │                                                                  │
 │  STEP 3: RANK (automatic)                                       │
 │    → Sorts by opportunity (most issues = best sales pitch)      │
-│    → Saves rankings.json                                        │
+│    → Built on demand from the audit JSONs                       │
 │                                                                  │
 │  STEP 4: GENERATE EMAILS (once/week, 10 min)                    │
 │  $ python 02-OUTREACH/audit_outreach.py --top 10 --export       │
@@ -115,9 +114,8 @@ Layer 3: Email domain
 ```
 
 Data checked against:
-- ✅ Existing `leads.csv`
+- ✅ Existing `leads.csv` (cleaned by `lead_data.py` — junk hosts and garbled contacts rejected)
 - ✅ CRM data (`crm_data.json`)
-- ✅ Previous pipeline runs (`pipeline_log.json`)
 - ✅ Results within the same run (double safety)
 
 ---
@@ -125,11 +123,22 @@ Data checked against:
 ## Command Reference
 
 ```bash
-# === FULL PIPELINE (find + dedup + audit + rank) ===
-python 01-LEADS/pipeline.py
-python 01-LEADS/pipeline.py --cities "Mumbai,Pune,Delhi"
-python 01-LEADS/pipeline.py --max 5          # Only audit 5
-python 01-LEADS/pipeline.py --skip-audit     # Fast (no PageSpeed calls)
+# === DISCOVER + AUDIT + RANK + PDF (one command) ===
+python 01-LEADS/discover_leads.py "solar Mumbai" --limit 5
+python 01-LEADS/discover_leads.py "solar Delhi" --limit 10 --competitors 3
+
+# === AUDIT ONE KNOWN WEBSITE ===
+python 01-LEADS/run_pipeline.py https://example.com "SunTech Solar" --city Mumbai
+
+# === CLEAN LEAD DATA ===
+python 01-LEADS/lead_data.py           # repair/filter/sanitize leads.csv
+python 01-LEADS/lead_data.py --check   # dry run
+
+# === TESTS ===
+python 01-LEADS/tests.py
+
+# === VERIFY A REPORT BEFORE DELIVERY ===
+python 01-LEADS/verify_report.py --latest
 
 # === SINGLE AUDIT (one company) ===
 python 01-LEADS/ads_audit.py https://example.com

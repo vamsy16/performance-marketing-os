@@ -18,7 +18,7 @@ Everything you need to run a full-service digital marketing agency alone, using 
 | `03-CONTENT` | Arena prompt library + content calendar | Paste prompts into Arena to generate |
 | `04-DELIVERY` | Client work playbooks + audit tools | How to actually deliver each service |
 | `05-CRM` | Free local CRM (Python) | Track every lead & client |
-| `06-AUTOMATION` | GitHub Actions + scheduled jobs | Automates repetitive work |
+| `06-AUTOMATION` | Automation blueprints (scheduling/workflows) | Wire these up when you have volume |
 | `07-DAILY-SYSTEM` | Daily/weekly checklists | Your operating routine for inconsistent hours |
 
 ## Your tech stack (all ₹0)
@@ -40,7 +40,7 @@ Everything you need to run a full-service digital marketing agency alone, using 
 
 1. Read `00-PLAYBOOK/positioning.md` (15 min)
 2. Run `python 05-CRM/crm.py` to start your CRM (5 min)
-3. Run `python 01-LEADS/find_leads.py` to get your first 20 prospects (10 min)
+3. Ask Arena to run the ads-audit skill (discovery from the live Meta Ad Library) — or run `python 01-LEADS/discover_leads.py "solar <city>"` (10 min)
 4. Copy 1 email from `02-OUTREACH/templates/` and send 5 today (30 min)
 
 That's it. You're now a solar marketing agency.

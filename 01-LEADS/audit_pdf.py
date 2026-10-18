@@ -49,9 +49,9 @@ AUDIT_DIR = os.path.join(BASE_DIR, "audit_results")
 OUT_DIR = os.path.join(os.path.dirname(BASE_DIR), "02-OUTREACH", "audit_pdfs")
 LOGO_PATH = os.path.join(os.path.dirname(BASE_DIR), "smart pursuit logo.png")
 
-YOUR_NAME = "Vamsi"
-YOUR_AGENCY = "Smart Pursuit"
-YOUR_PHONE = "+91 70950 24220"
+YOUR_NAME = os.environ.get("SP_NAME", "Vamsi")
+YOUR_AGENCY = os.environ.get("SP_AGENCY", "Smart Pursuit")
+YOUR_PHONE = os.environ.get("SP_PHONE", "+91 70950 24220")
 TAGLINE = "SOLAR GROWTH PARTNER"
 
 PAGE_W, PAGE_H = A4
