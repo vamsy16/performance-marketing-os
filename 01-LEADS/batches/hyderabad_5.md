@@ -36,6 +36,15 @@ sandbox cannot do either (outbound web is restricted and no Chrome is
 available/installable there), so audits run on the owner's machine via
 OpenCode — exactly as the ads-audit skill was designed.
 
+> **Correction (2026-10-18):** the paragraph above is half wrong. The Arena
+> sandbox has no Chrome/Playwright and its bash has no outbound TLS, but the
+> Arena agent's own page-fetch tooling **can** read the live Meta Ad Library
+> and lead websites — that is how
+> `batches/hyderabad_5_leads_batch2_2026-10-18.md` was built (library IDs,
+> start dates, destinations and contacts all read live). What still requires
+> the owner's machine is the pipeline itself: website audit, creative
+> downloads, Google Ads Transparency and the branded PDF.
+
 A sandbox test run against samrajsolar.com failed to fetch the site; the
 empty PDF it produced was deleted rather than kept, and `verify_report.py`
 would have failed it anyway. No fabricated audits, ever.
