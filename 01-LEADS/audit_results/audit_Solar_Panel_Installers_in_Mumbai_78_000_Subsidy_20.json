@@ -1,0 +1,76 @@
+{
+  "company": "Solar Panel Installers in Mumbai — ₹78,000 Subsidy (2026)",
+  "city": "Mumbai",
+  "website": "https://solarcalculators.in/solar-in-mumbai/",
+  "audit_date": "2026-10-18 10:01",
+  "ssl": true,
+  "load_time_seconds": 0.59,
+  "pixels": {
+    "meta_pixel": false,
+    "google_ads": true,
+    "google_analytics_ga4": true,
+    "google_analytics_ua": false,
+    "linkedin_insight": false,
+    "microsoft_clarity": false,
+    "hotjar": false,
+    "google_tag_manager": true
+  },
+  "conversion": {
+    "has_contact_form": false,
+    "has_phone_click": false,
+    "has_whatsapp_link": true,
+    "has_cta_buttons": 6,
+    "has_live_chat": false,
+    "has_popup_optin": false,
+    "has_testimonials": true,
+    "has_pricing_page_link": true
+  },
+  "seo": {
+    "has_title": true,
+    "title_text": "Solar Panel Installers in Mumbai — ₹78,000 Subsidy (2026)",
+    "title_length": 57,
+    "has_meta_description": true,
+    "meta_desc_length": 149,
+    "h1_count": 1,
+    "h1_text": "Solar Panel Installers in Mumbai",
+    "has_og_tags": true,
+    "has_schema": true,
+    "has_favicon": true,
+    "image_count": 1,
+    "images_without_alt": 0
+  },
+  "pagespeed": {
+    "error": "API returned 429"
+  },
+  "page_count": {
+    "sitemap_pages": 1211,
+    "has_sitemap": true
+  },
+  "local_signals": {
+    "has_google_maps_embed": false,
+    "has_address_schema": true,
+    "mentions_city": true,
+    "company_in_title": true
+  },
+  "ad_check_urls": {
+    "google_ads_transparency": "https://adstransparency.google.com/?region=anywhere&q=solarcalculators.in&country=IN",
+    "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Solar Panel Installers in Mumbai — ₹78,000 Subsidy (2026)&search_type=keyword_unordered",
+    "note": "Open these URLs in your browser to check if they're running ads and what those ads look like."
+  },
+  "score": {
+    "score": 16,
+    "issues": [
+      "No Meta Pixel installed — can't run retargeting or track ad conversions",
+      "No contact form on homepage — visitors can't easily enquire",
+      "No live chat — missing after-hours leads"
+    ],
+    "wins": [
+      "Google tracking is present",
+      "Google Analytics is installed",
+      "WhatsApp link present",
+      "Good CTA presence (6 buttons)",
+      "Testimonials visible"
+    ]
+  },
+  "final_url": "https://solarcalculators.in/solar-in-mumbai/"
+}

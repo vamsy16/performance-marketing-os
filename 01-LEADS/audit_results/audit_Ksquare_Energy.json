@@ -1,0 +1,234 @@
+{
+  "company": "Ksquare Energy",
+  "city": "Hyderabad",
+  "website": "https://www.ksquareenergy.com/solar-company-in-hyderabad",
+  "audit_date": "2026-10-18 15:22",
+  "ssl": true,
+  "load_time_seconds": 1.14,
+  "pixels": {
+    "meta_pixel": true,
+    "google_ads": false,
+    "google_analytics_ga4": false,
+    "google_analytics_ua": false,
+    "linkedin_insight": false,
+    "microsoft_clarity": false,
+    "hotjar": false,
+    "google_tag_manager": true
+  },
+  "conversion": {
+    "has_contact_form": true,
+    "has_phone_click": true,
+    "has_whatsapp_link": true,
+    "has_cta_buttons": 23,
+    "has_live_chat": false,
+    "has_popup_optin": true,
+    "has_testimonials": true,
+    "has_pricing_page_link": true
+  },
+  "seo": {
+    "has_title": true,
+    "title_text": "Best Solar Company in Hyderabad, Telangana",
+    "title_length": 42,
+    "has_meta_description": true,
+    "meta_desc_length": 162,
+    "h1_count": 1,
+    "h1_text": "Best Solar Company in Hyderabad",
+    "has_og_tags": true,
+    "has_schema": true,
+    "has_favicon": true,
+    "image_count": 7,
+    "images_without_alt": 5
+  },
+  "pagespeed": {
+    "error": "API returned 429"
+  },
+  "page_count": {
+    "sitemap_pages": 359,
+    "has_sitemap": true
+  },
+  "local_signals": {
+    "has_google_maps_embed": false,
+    "has_address_schema": true,
+    "mentions_city": true,
+    "company_in_title": false
+  },
+  "ad_check_urls": {
+    "google_ads_transparency": "https://adstransparency.google.com/?region=anywhere&q=ksquareenergy.com&country=IN",
+    "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Ksquare Energy&search_type=keyword_unordered",
+    "note": "Open these URLs in your browser to check if they're running ads and what those ads look like."
+  },
+  "score": {
+    "score": 10,
+    "issues": [
+      "No Google Analytics — flying blind on website traffic",
+      "No live chat — missing after-hours leads",
+      "5 images missing alt text — hurts SEO"
+    ],
+    "wins": [
+      "Meta Pixel is installed",
+      "Google tracking is present",
+      "Contact form exists",
+      "WhatsApp link present",
+      "Good CTA presence (23 buttons)",
+      "Testimonials visible"
+    ]
+  },
+  "final_url": "https://www.ksquareenergy.com/solar-company-in-hyderabad",
+  "ad_library": {
+    "checked_at": "2026-10-18 15:22",
+    "meta_own": {
+      "query": "Ksquare Energy",
+      "results_label": "~4 results",
+      "results_count": 4,
+      "ads": [
+        {
+          "library_id": "2654292895024722",
+          "page_name": "Ksquare Energy Pvt Ltd",
+          "started": "10 Sep 2026",
+          "text": "તમારો બિઝનેસ ને લઈ જાઓ, સોલાર સાથે નવી ઊંચાઈએ. ☀️📈\n\nસોલારની વધતી માંગનો લાભ લો અને Ksquare Energy સાથે ચેનલ પાર્ટનર તરીકે જોડાઈને તમારા બિઝનેસમાં નવી તક ઊભી કરો.\n\n🤝 મજબૂત પાર્ટનરશિપ\n📢 માર્કેટિંગમાં સંપૂર્ણ સહયોગ\n💼 સરળ બિઝનેસ મોડલ\n🚀 વિકાસ માટે સતત સપોર્ટ\n\nઆજે લીધેલું એક પગલું, આવતીકાલની મોટી બિઝનેસ તક બની શકે છે.\nWHATSAPP\nKsquare સાથે Solar Panel Partner બનો!\nZero Experience થી શરૂઆત કરો | Full Support સાથે Earn કરો\nSend WhatsApp message",
+          "image_urls": [
+            "https://scontent.fblr2-2.fna.fbcdn.net/v/t39.35426-6/789594346_1430642848977047_9126785196892388321_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_kufcOfnOoIQ7kNvwHr7Itn&_nc_oc=AdrZ6RNQS2OLUWiV1syj89t1ObIoNFfsYkBD89ObW0w46BZD3vB2ZLSVgv5FgKb-Rr7raDAcu_t08ITNT__ulDLc&_nc_zt=14&_nc_ht=scontent.fblr2-2.fna&_nc_gid=zX3SfPLXAoQ4VuLeGuOKMg&_nc_ss=7b289&oh=00_AQOsrKrHRPoQF6s4fYsY6xAaBbRBpesOHYmtpsDa3w8bSw&oe=6ADA6240"
+          ],
+          "images": [
+            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\Ksquare_Energy\\789594346_1430642848977047_912_53625030.jpg"
+          ],
+          "library_url": "https://www.facebook.com/ads/library/?id=2654292895024722"
+        },
+        {
+          "library_id": "1366008335331187",
+          "page_name": "Ksquare Energy Pvt Ltd",
+          "started": "8 Oct 2026",
+          "text": "Still compromising on ACDB & DCDB quality?\n\nGet reliable ACDB & DCDB solutions from KSQUARE built for solar projects of different sizes.\n\n✅ Custom Configurations\n✅ Ready Stock\n✅ Bulk Pricing\n✅ 5 Years SPD Warranty  \n\nSend us an enquiry today for pricing and bulk requirements.",
+          "image_urls": [
+            "https://scontent.fblr2-2.fna.fbcdn.net/v/t39.35426-6/835060664_1094734359607832_736199757320675951_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=lmK45a2VU7kQ7kNvwF-USqN&_nc_oc=AdodLlUBTNxQD8odLLMiG2Tj7cvENnawaRIuOzDtEqshdF-a3s7mpVRcgydcsE-_JnZtDPLI7wJ6TaEau_IfYnIy&_nc_zt=14&_nc_ht=scontent.fblr2-2.fna&_nc_gid=zX3SfPLXAoQ4VuLeGuOKMg&_nc_ss=7b289&oh=00_AQPnGvlBzWyLgfhhZ4PfnKmqYrm7Qyf7O6v7D6rUkunaJw&oe=6ADA584C"
+          ],
+          "images": [
+            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\Ksquare_Energy\\835060664_1094734359607832_736_53091767.jpg"
+          ],
+          "library_url": "https://www.facebook.com/ads/library/?id=1366008335331187"
+        },
+        {
+          "library_id": "1835295154497022",
+          "page_name": "Ksquare Energy Pvt Ltd",
+          "started": "9 Oct 2026",
+          "text": "Solar protection starts with the right ACDB & DCDB.\n\n✅ Custom configurations\n✅ Ready stock\n✅ Bulk pricing\n✅ 5-year SPD warranty*\n\n📲 WhatsApp us for pricing and details.\nWHATSAPP\nACDB & DCDB — Ask for Pricing\nCustom configurations - Ready stock\nSend WhatsApp message",
+          "image_urls": [
+            "https://scontent.fblr2-3.fna.fbcdn.net/v/t39.35426-6/839618821_1645271780445698_6017438994991396794_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=adCxWsVK6fYQ7kNvwFiDclq&_nc_oc=AdqshXwt82XsTCrPmz919I3xf32qqBnAGYO7gvAxfbmanOmtvGTCIIwT11fJr1jAg0TaSenzrLgtgES6NfwI5DJ4&_nc_zt=14&_nc_ht=scontent.fblr2-3.fna&_nc_gid=zX3SfPLXAoQ4VuLeGuOKMg&_nc_ss=7b289&oh=00_AQPvDkdBUFo170wjw4Al7uZ7MSk3_mqyhHnexmM9aBZPZA&oe=6ADA655A"
+          ],
+          "images": [
+            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\Ksquare_Energy\\839618821_1645271780445698_601_34695947.jpg"
+          ],
+          "library_url": "https://www.facebook.com/ads/library/?id=1835295154497022"
+        }
+      ],
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Ksquare+Energy&search_type=keyword_unordered",
+      "found": true
+    },
+    "meta_competitors": {
+      "query": "solar Hyderabad",
+      "results_label": "~340 results",
+      "results_count": 340,
+      "ads": [
+        {
+          "library_id": "1634933028227929",
+          "page_name": "Venus home appliances",
+          "started": "19 Aug 2026",
+          "text": "Venus - the most reliable name in Home Appliances including Water Heaters, Solar Water Heaters and High-performance Fans.\nVENUSHOMEAPPLIANCES.COM\nVENUS Water Heaters Now in Hyderabad\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nGet Directions\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nVENUSHOMEAPPLIANCES.COM\nVENUS Water Heaters Now in Hyderabad\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nGet Directions\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nVENUSHOMEAPPLIANCES.COM\nVENUS Water Heaters Now in Hyderabad\nVisit GKK Electricals for the latest VENUS range and ",
+          "image_urls": [
+            "https://scontent.fblr2-3.fna.fbcdn.net/v/t39.35426-6/772735182_1663495645499486_2474988722221012476_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=eU4TL5qrFoEQ7kNvwFPuahW&_nc_oc=AdqX2ON6abkQTAETdRWt4KeQEJr0cUE_TTUDQmNdZDeuJB43Tf5LGmIJDvivLkgjRnniUFiS-CMmQNKyfZtNlQ5I&_nc_zt=14&_nc_ht=scontent.fblr2-3.fna&_nc_gid=eQeudlN-7TYwNtvsTs9H7g&_nc_ss=7b289&oh=00_AQMyAbjy1za0nbfDt1-gKUbSv9jaQy6Dbw6Om3pkhuaNGA&oe=6ADA8307",
+            "https://scontent.fblr2-2.fna.fbcdn.net/v/t39.35426-6/769403501_1045846358303612_8400512787032328291_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=oMYA5Zz9tRAQ7kNvwH4_9rw&_nc_oc=AdoQdXGVTmmyHMQcNE4AuKpJm2utrXPJhtJd24nV8jbDZ6EOYH00E_nuRb079AvG6oPbmokQGosWeS6ImGM2UvB7&_nc_zt=14&_nc_ht=scontent.fblr2-2.fna&_nc_gid=eQeudlN-7TYwNtvsTs9H7g&_nc_ss=7b289&oh=00_AQMvAteNUNjEV8-MJFKcOFSRZuUxj8kmNSN4NsbXh2l7bA&oe=6ADA7A35",
+            "https://scontent.fblr2-3.fna.fbcdn.net/v/t39.35426-6/772434001_1499243515337989_8726947715847260551_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=S1qShBHbA-kQ7kNvwEMwLqo&_nc_oc=AdpB8b7L8z-ZG4QvpB8K02B0bEqMjEbi30oJOorNdouyZxSiPM6wUl-14TUoLdzWsGhoWZKEVXDMbwEU8wXqVFRt&_nc_zt=14&_nc_ht=scontent.fblr2-3.fna&_nc_gid=eQeudlN-7TYwNtvsTs9H7g&_nc_ss=7b289&oh=00_AQPzeNxUt6t0u2a_jrsMWEbROQFzHxm-UHwaOeP_AlWDYQ&oe=6ADA8145"
+          ],
+          "images": [
+            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\Ksquare_Energy\\772735182_1663495645499486_247_36624586.jpg",
+            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\Ksquare_Energy\\769403501_1045846358303612_840_36315910.jpg"
+          ],
+          "library_url": "https://www.facebook.com/ads/library/?id=1634933028227929"
+        },
+        {
+          "library_id": "942037648839408",
+          "page_name": "Sri Balaji Solar Energies",
+          "started": "29 May 2026",
+          "text": "🌞 ఇకపై కరెంట్ బిల్లు కట్టే పని లేదు!\nమీ ఇంటిపై సోలార్ సిస్టమ్ అమర్చుకోండి... ₹0 (సున్నా) ముందస్తు ఖర్చుతో!*\nశ్రీ బాలాజీ సోలార్ ఎనర్జీస్ (Sri Balaji Solar Energies) - 14 సంవత్సరాల నమ్మకం. 🏛\nమా ప్రత్యేకతలు: \n✅ కేంద్ర ప్రభుత్వం నుండి ₹78,000/- వరకు సబ్సిడీ! ✅ నెలకు కరెంట్ బిల్లు బదులు, కేవలం ₹1355/- EMI కట్టండి. \n✅ 10,000+ సంతృప్తికరమైన కస్టమర్లు. \n✅ ప్రభుత్వ ఉద్యోగులకు కూడా సబ్సిడీ వర్తిస్తుంది.\n⚡  కొత్తగూడెం , నర్సంపేట, వరంగల్ (Warangal) , హన్మకొండ (Hanumakonda), రాజమహేంద్రవరం, భద్రాచలం, ఘట్‌కేసర్ హుజూరాబాద్ and hyderabad మరియు చుట్టుపక్కల జిల్లాల్లో సర్వీస్ కలదు.\n\n👇 ఈ రోజే ఫ్రీ సైట్ విజిట్ (Free Site Visit) లభిస్తుంది\nFB.ME\n🌞 ఇకపై కరెంట్ బిల్లు కట్టే పని లేదు!\n✅ కేవలం ₹1355/- EMI కట్టండి. ✅ ",
+          "image_urls": [
+            "https://scontent.fblr2-3.fna.fbcdn.net/v/t39.35426-6/612709264_1552468135986225_1240266142572683594_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_eFzxzTHYU8Q7kNvwGKZkKK&_nc_oc=Adqxf3LLIvYREhDtr9GlvfoTu9EDM-3Xg5KY2nY2I9RektjNaeUsuvPzmYUnQ1B6F0v47suGbaHKfnMfTFqCHXn_&_nc_zt=14&_nc_ht=scontent.fblr2-3.fna&_nc_gid=eQeudlN-7TYwNtvsTs9H7g&_nc_ss=7b289&oh=00_AQOcgsFWSaCnxUQvDbGOYzMXjJGty2-bSk_KGVqSxls1mA&oe=6ADA6DE4"
+          ],
+          "images": [
+            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\Ksquare_Energy\\612709264_1552468135986225_124_94981770.jpg"
+          ],
+          "library_url": "https://www.facebook.com/ads/library/?id=942037648839408"
+        },
+        {
+          "library_id": "2110991659634519",
+          "page_name": "ORBIT SOLAR",
+          "started": "10 Dec 2025",
+          "text": "🏡 “They trusted us. You can too.”\n5+ years, 1000+ installations across Hyderabad — all with 25-year guarantees.\n\n🌞 orbitsolar.in\n📱 +91-9059806772\nFB.ME\nSee How Much You Can Save\nSign Up\n \nFB.ME\nSave ₹3,000/Month Like Him\nSign Up\n \nFB.ME\nCut Your Bill by 90% Too\nSign Up\n \nFB.ME\nGet ₹78K Subsidy - Zero Hassle\nSign Up\n \nFB.ME\nGet a Solar Pergola Like This\nSign Up\n \nFB.ME\nJoin 1000+ Happy Homes\nSign Up",
+          "image_urls": [
+            "https://scontent.fblr2-3.fna.fbcdn.net/v/t39.35426-6/595637113_843065571766706_2520315710846868498_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Rilprk_Eo9EQ7kNvwGYYyf4&_nc_oc=Adop8BkYNm_4Z-fAxFJbaU38nuTekx5IETOM-oxlUIAD8Jy20oKEcazvjMsu6As4dNUV28E6MsGJBeQDR499uysk&_nc_zt=14&_nc_ht=scontent.fblr2-3.fna&_nc_gid=eQeudlN-7TYwNtvsTs9H7g&_nc_ss=7b289&oh=00_AQOzvOcYoJQ013vhcDOQwFQkkE9Rhe1U1n_Iq13krylzhQ&oe=6ADA68A0",
+            "https://scontent.fblr2-2.fna.fbcdn.net/v/t39.35426-6/594423875_1532465847848295_2310081715217635639_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_4da1SgcjRwQ7kNvwEJOAu5&_nc_oc=Adqcr8QHIHqP3paWkxBRiMe7_aGOAkpGHkRqguDa0Vg9CL5TJ33YkNz6fYmx86uFTUrB_hhp8wIjkjwJCYNmWkFU&_nc_zt=14&_nc_ht=scontent.fblr2-2.fna&_nc_gid=eQeudlN-7TYwNtvsTs9H7g&_nc_ss=7b289&oh=00_AQOwHRcH0cMQ-LrloKfP0xcT0iaFZA6rGCz7Am3JunZa6A&oe=6ADA6F92",
+            "https://scontent.fblr2-2.fna.fbcdn.net/v/t39.35426-6/594134128_868943678979381_480540375743244641_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1ZDAU7TxN60Q7kNvwHP1mmb&_nc_oc=AdpPjJA-9-7vCHHFv0kCHllfuTJi0LWaU-cnx2Zqtv8ITjbS-ZK_iwCMlOHa6-qZW8greW5SMLXYbO1OM0jIm1Nh&_nc_zt=14&_nc_ht=scontent.fblr2-2.fna&_nc_gid=eQeudlN-7TYwNtvsTs9H7g&_nc_ss=7b289&oh=00_AQPLk4dUZiMBv0RUK5gQQWwBoE9HwRa8gjExurQfXLvrVw&oe=6ADA6A11"
+          ],
+          "images": [
+            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\Ksquare_Energy\\595637113_843065571766706_2520_67923743.jpg",
+            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\Ksquare_Energy\\594423875_1532465847848295_231_56548986.jpg"
+          ],
+          "library_url": "https://www.facebook.com/ads/library/?id=2110991659634519"
+        }
+      ],
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=solar+Hyderabad&search_type=keyword_unordered",
+      "found": true
+    },
+    "google_own": {
+      "found": false,
+      "advertisers": [],
+      "detail": null,
+      "query": "Ksquare Energy"
+    },
+    "google_competitors": {
+      "found": true,
+      "advertisers": [
+        {
+          "name": "Venus Home Appliances Pvt Ltd",
+          "country": "IN",
+          "ad_count": 203,
+          "detail": {
+            "name": "Venus Home Appliances Pvt Ltd",
+            "advertiser_id": "",
+            "country": "IN",
+            "ad_count": 75,
+            "url": "https://adstransparency.google.com/?hl=en&region=anywhere",
+            "images": [],
+            "found": true,
+            "image_files": []
+          }
+        },
+        {
+          "name": "WAAREE ENERGIES LIMITED",
+          "country": "IN",
+          "ad_count": 200,
+          "detail": {
+            "name": "WAAREE ENERGIES LIMITED",
+            "advertiser_id": "",
+            "country": "IN",
+            "ad_count": 200,
+            "url": "https://adstransparency.google.com/advertiser/AR01069449622662938625?hl=en&region=anywhere",
+            "images": [],
+            "found": true,
+            "image_files": []
+          }
+        },
+        {
+          "name": "Orbit Solar Energy System",
+          "country": "IN",
+          "ad_count": 8
+        }
+      ],
+      "query": "Venus home appliances, Venus, Sri Balaji Solar Energies"
+    },
+    "notes": [
+      "No Google Ads advertiser record found for 'Ksquare Energy' or 'ksquareenergy.com'.",
+      "No active Google ads found for this company."
+    ],
+    "summary": "Ksquare Energy is running active ads on Meta (Facebook/Instagram) — about 4 live results in the Ad Library. No Google Ads advertiser record was found, so search/YouTube demand is going to competitors. Meanwhile ~340 live Meta ads from competitors in Hyderabad and 3 Indian advertisers on Google Ads in the solar category are capturing the same customers."
+  }
+}

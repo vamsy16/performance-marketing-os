@@ -1,0 +1,80 @@
+{
+  "company": "Tata Power Solar",
+  "city": "Mumbai",
+  "website": "https://www.tatapowersolar.com",
+  "audit_date": "2026-10-18 09:55",
+  "ssl": true,
+  "load_time_seconds": 1.08,
+  "pixels": {
+    "meta_pixel": false,
+    "google_ads": false,
+    "google_analytics_ga4": false,
+    "google_analytics_ua": false,
+    "linkedin_insight": false,
+    "microsoft_clarity": false,
+    "hotjar": false,
+    "google_tag_manager": true
+  },
+  "conversion": {
+    "has_contact_form": true,
+    "has_phone_click": true,
+    "has_whatsapp_link": false,
+    "has_cta_buttons": 3,
+    "has_live_chat": true,
+    "has_popup_optin": false,
+    "has_testimonials": false,
+    "has_pricing_page_link": true
+  },
+  "seo": {
+    "has_title": true,
+    "title_text": "Tata Power Solar",
+    "title_length": 16,
+    "has_meta_description": false,
+    "meta_desc_length": 0,
+    "h1_count": 0,
+    "h1_text": "",
+    "has_og_tags": false,
+    "has_schema": true,
+    "has_favicon": true,
+    "image_count": 89,
+    "images_without_alt": 45
+  },
+  "pagespeed": {
+    "error": "API returned 429"
+  },
+  "page_count": {
+    "linked_pages": 80,
+    "has_sitemap": false
+  },
+  "local_signals": {
+    "has_google_maps_embed": false,
+    "has_address_schema": true,
+    "mentions_city": true,
+    "company_in_title": true
+  },
+  "ad_check_urls": {
+    "google_ads_transparency": "https://adstransparency.google.com/?region=anywhere&q=tatapowersolar.com&country=IN",
+    "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=https://www.tatapowersolar.com&search_type=keyword_unordered",
+    "note": "Open these URLs in your browser to check if they're running ads and what those ads look like."
+  },
+  "score": {
+    "score": 30,
+    "issues": [
+      "No Meta Pixel installed \u00e2\u20ac\u201d can't run retargeting or track ad conversions",
+      "No Google Analytics \u00e2\u20ac\u201d flying blind on website traffic",
+      "No WhatsApp link \u00e2\u20ac\u201d losing mobile leads (WhatsApp converts 3x better for Indian home services)",
+      "No visible testimonials/social proof on homepage",
+      "No meta description \u00e2\u20ac\u201d lower click-through from Google",
+      "No H1 tag on homepage",
+      "No Open Graph tags \u00e2\u20ac\u201d links look bad when shared on social/WhatsApp",
+      "45 images missing alt text \u00e2\u20ac\u201d hurts SEO"
+    ],
+    "wins": [
+      "Google tracking is present",
+      "Contact form exists",
+      "Good CTA presence (3 buttons)",
+      "Live chat present"
+    ]
+  },
+  "final_url": "https://www.tatapowersolar.com/"
+}

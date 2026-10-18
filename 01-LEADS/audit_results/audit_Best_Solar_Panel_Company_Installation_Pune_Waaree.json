@@ -1,0 +1,77 @@
+{
+  "company": "Best Solar Panel Company & Installation Pune | Waaree",
+  "city": "Pune",
+  "website": "https://www.waaree.com/solar-company-in-pune/",
+  "audit_date": "2026-10-18 10:15",
+  "ssl": true,
+  "load_time_seconds": 0.76,
+  "pixels": {
+    "meta_pixel": false,
+    "google_ads": false,
+    "google_analytics_ga4": false,
+    "google_analytics_ua": false,
+    "linkedin_insight": false,
+    "microsoft_clarity": false,
+    "hotjar": false,
+    "google_tag_manager": true
+  },
+  "conversion": {
+    "has_contact_form": false,
+    "has_phone_click": true,
+    "has_whatsapp_link": true,
+    "has_cta_buttons": 0,
+    "has_live_chat": false,
+    "has_popup_optin": false,
+    "has_testimonials": true,
+    "has_pricing_page_link": true
+  },
+  "seo": {
+    "has_title": true,
+    "title_text": "Best Solar Panel Company & Installation Pune | Waaree",
+    "title_length": 53,
+    "has_meta_description": true,
+    "meta_desc_length": 152,
+    "h1_count": 0,
+    "h1_text": "",
+    "has_og_tags": true,
+    "has_schema": true,
+    "has_favicon": true,
+    "image_count": 0,
+    "images_without_alt": 0
+  },
+  "pagespeed": {
+    "error": "API returned 429"
+  },
+  "page_count": {
+    "sitemap_pages": 2185,
+    "has_sitemap": true
+  },
+  "local_signals": {
+    "has_google_maps_embed": false,
+    "has_address_schema": true,
+    "mentions_city": true,
+    "company_in_title": true
+  },
+  "ad_check_urls": {
+    "google_ads_transparency": "https://adstransparency.google.com/?region=anywhere&q=waaree.com&country=IN",
+    "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Best Solar Panel Company & Installation Pune | Waaree&search_type=keyword_unordered",
+    "note": "Open these URLs in your browser to check if they're running ads and what those ads look like."
+  },
+  "score": {
+    "score": 32,
+    "issues": [
+      "No Meta Pixel installed — can't run retargeting or track ad conversions",
+      "No Google Analytics — flying blind on website traffic",
+      "No contact form on homepage — visitors can't easily enquire",
+      "No clear call-to-action buttons on homepage",
+      "No live chat — missing after-hours leads",
+      "No H1 tag on homepage"
+    ],
+    "wins": [
+      "Google tracking is present",
+      "WhatsApp link present",
+      "Testimonials visible"
+    ]
+  },
+  "final_url": "https://www.waaree.com/solar-company-in-pune/"
+}

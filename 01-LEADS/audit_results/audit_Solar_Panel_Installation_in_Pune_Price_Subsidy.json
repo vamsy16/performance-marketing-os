@@ -1,0 +1,77 @@
+{
+  "company": "Solar Panel Installation in Pune: Price & Subsidy",
+  "city": "Pune",
+  "website": "https://www.heavengreenenergy.com/solar/pune",
+  "audit_date": "2026-10-18 10:15",
+  "ssl": true,
+  "load_time_seconds": 0.57,
+  "pixels": {
+    "meta_pixel": false,
+    "google_ads": true,
+    "google_analytics_ga4": true,
+    "google_analytics_ua": false,
+    "linkedin_insight": false,
+    "microsoft_clarity": false,
+    "hotjar": false,
+    "google_tag_manager": false
+  },
+  "conversion": {
+    "has_contact_form": true,
+    "has_phone_click": true,
+    "has_whatsapp_link": true,
+    "has_cta_buttons": 21,
+    "has_live_chat": false,
+    "has_popup_optin": false,
+    "has_testimonials": true,
+    "has_pricing_page_link": true
+  },
+  "seo": {
+    "has_title": true,
+    "title_text": "Solar Panel Installation in Pune: Price & Subsidy",
+    "title_length": 49,
+    "has_meta_description": true,
+    "meta_desc_length": 153,
+    "h1_count": 1,
+    "h1_text": "Solar panel installation inPune.",
+    "has_og_tags": true,
+    "has_schema": true,
+    "has_favicon": true,
+    "image_count": 8,
+    "images_without_alt": 1
+  },
+  "pagespeed": {
+    "error": "API returned 429"
+  },
+  "page_count": {
+    "sitemap_pages": 1,
+    "has_sitemap": true
+  },
+  "local_signals": {
+    "has_google_maps_embed": false,
+    "has_address_schema": true,
+    "mentions_city": true,
+    "company_in_title": true
+  },
+  "ad_check_urls": {
+    "google_ads_transparency": "https://adstransparency.google.com/?region=anywhere&q=heavengreenenergy.com&country=IN",
+    "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Solar Panel Installation in Pune: Price & Subsidy&search_type=keyword_unordered",
+    "note": "Open these URLs in your browser to check if they're running ads and what those ads look like."
+  },
+  "score": {
+    "score": 10,
+    "issues": [
+      "No Meta Pixel installed — can't run retargeting or track ad conversions",
+      "No live chat — missing after-hours leads",
+      "1 images missing alt text — hurts SEO"
+    ],
+    "wins": [
+      "Google tracking is present",
+      "Google Analytics is installed",
+      "Contact form exists",
+      "WhatsApp link present",
+      "Good CTA presence (21 buttons)",
+      "Testimonials visible"
+    ]
+  },
+  "final_url": "https://www.heavengreenenergy.com/solar/pune"
+}
