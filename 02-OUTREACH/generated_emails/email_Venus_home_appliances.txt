@@ -1,0 +1,40 @@
+=== EMAIL FOR: Venus home appliances ===
+City: Hyderabad
+To: (no email found)
+Phone: N/A
+Website: https://VENUSHOMEAPPLIANCES.COM
+Audit Score: 5/100
+Template: audit_hook
+Generated: 2026-10-18 14:33
+
+--- SUBJECT ---
+Quick question about Venus home appliances's website
+
+--- BODY ---
+Hi,
+
+I was looking at solar companies in Hyderabad and came across Venus home appliances.
+
+I ran a quick check on your website and found a couple of things that might be costing you leads:
+
+  • No live chat — missing after-hours leads
+  • 46 images missing alt text — hurts SEO
+
+Your current website score is 5/100 — there's some quick wins available that could help convert more visitors into enquiries.
+
+I recorded a short video walking through exactly what I found and what I'd fix. Want me to send it over?
+
+No strings attached — it's yours to keep whether we ever work together or not.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+--- MANUAL AD CHECK URLS ---
+Open these to see if they're running ads:
+  Google: https://adstransparency.google.com/?region=anywhere&q=VENUSHOMEAPPLIANCES.COM&country=IN
+  Meta:   https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Venus home appliances
+
+=== END ===
