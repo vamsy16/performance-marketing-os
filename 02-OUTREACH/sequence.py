@@ -2,23 +2,27 @@
 """
 Email Sequence Engine — threaded follow-ups, +2 days after the previous email.
 
-Turns the one-shot emails from audit_outreach.py into a tracked sequence:
+Turns the one-shot emails from audit_outreach.py into a tracked sequence.
+Only ONE draft exists at a time — follow-up drafts are NOT pre-created:
 
-  Step 0  initial audit email          -> Gmail DRAFT (agent creates it)
-  Step 1  follow-up 1                  -> draft pre-created IN STEP 0's THREAD;
-                                          SEND due 2 days after step 0 is SENT
-  Step 2  follow-up 2                  -> same thread; due +2d after step 1 SENT
-  Step 3  breakup email                -> same thread; due +2d after step 2 SENT
+  Step 0  initial audit email  -> Gmail DRAFT (created right after audit)
+  Step 1  follow-up 1          -> draft created ON its due day, in the thread
+  Step 2  follow-up 2          -> draft created ON its due day, in the thread
+  Step 3  breakup email        -> draft created ON its due day, in the thread
 
-Threading rules (enforced here, not left to chance):
+Each sequence (one row per lead) tracks these columns:
+  thread_id           the Gmail conversation every follow-up must reply in
+  mails_sent          how many emails have actually been SENT (0..4)
+  next_followup_date  previous SENT date + FOLLOWUP_DELAY_DAYS (2);
+                      empty until the previous email is sent
+
+Rules (enforced here, not left to chance):
   * Every follow-up subject is "Re: <original subject>".
-  * A follow-up draft may only be created once the previous step exists in
-    Gmail with a recorded thread_id + Message-ID (as a draft or sent) —
-    the follow-up is created inside that exact thread (thread_id +
-    In-Reply-To + References), NEVER as a new standalone mail.
-  * A follow-up's SEND due date is computed from the previous step's SENT
-    date (+ FOLLOWUP_DELAY_DAYS), never from the draft-creation date. A
-    draft sitting unsent for a week does not start the clock.
+  * A follow-up draft may only be created on/after its next_followup_date,
+    and only once the previous step is SENT with a recorded thread_id +
+    Message-ID — the draft is created inside that exact thread
+    (thread_id + In-Reply-To + References), NEVER as a new standalone mail.
+  * The 2-day clock starts on the SENT date, never on the draft date.
 
 State lives in generated_emails/sequence_manifest.json and survives
 re-runs of audit_outreach.py (draft/sent state is never clobbered).
@@ -170,7 +174,9 @@ def upsert_sequence(manifest, lead, audit, initial_subject, initial_body):
     if seq is None:
         seq = {"company": company, "to": lead.get("email", ""),
                "city": lead.get("city", ""), "website": lead.get("website", ""),
-               "thread_subject": initial_subject, "steps": []}
+               "thread_subject": initial_subject,
+               "thread_id": "", "mails_sent": 0,
+               "next_followup_date": "", "next_step": None, "steps": []}
         manifest["sequences"].append(seq)
 
     seq["to"] = lead.get("email", "") or seq.get("to", "")
@@ -184,6 +190,7 @@ def upsert_sequence(manifest, lead, audit, initial_subject, initial_body):
                 state[k] = prev[k]
         merged.append({**fs, **state})
     seq["steps"] = merged
+    refresh_due_dates(seq)
     return seq
 
 
@@ -217,27 +224,62 @@ def due_date_for(seq, step_no):
 def refresh_due_dates(seq):
     for s in seq["steps"]:
         s["due_date"] = due_date_for(seq, s["step"])
+    refresh_columns(seq)
+    return seq
+
+
+def refresh_columns(seq):
+    """Recompute the per-sequence tracking columns:
+      thread_id           Gmail thread shared by the whole sequence
+      mails_sent          count of steps actually SENT
+      next_followup_date  due date of the next unsent follow-up
+                          ('' until the previous email is sent, and ''
+                          once the sequence is finished/replied)
+      next_step           which step that date belongs to (None if none)
+    """
+    steps = sorted(seq["steps"], key=lambda s: s["step"])
+    seq["thread_id"] = next((s["thread_id"] for s in steps
+                             if s.get("thread_id")), seq.get("thread_id", ""))
+    seq["mails_sent"] = sum(1 for s in steps if s.get("status") == "sent")
+    seq["next_followup_date"] = ""
+    seq["next_step"] = None
+    for s in steps:
+        if s["step"] == 0 or s.get("status") == "sent":
+            continue
+        # First unsent follow-up: its due date is the next follow-up date
+        # ('' while the previous email hasn't been sent yet).
+        seq["next_followup_date"] = due_date_for(seq, s["step"])
+        seq["next_step"] = s["step"]
+        break
     return seq
 
 
 def mark_draft(seq, step_no, draft_id, thread_id="", message_id="",
-               on=None):
+               on=None, today=None):
     """Record that a Gmail draft exists for a step.
 
-    Follow-ups (step >= 1) are REFUSED unless the previous step is SENT
-    with a recorded thread_id + message_id — that is what guarantees the
-    follow-up lands in the same thread instead of as a new mail."""
+    Follow-ups (step >= 1) are REFUSED unless BOTH hold — this is what
+    keeps exactly one draft alive at a time and guarantees the follow-up
+    lands in the same thread instead of as a new mail:
+      1. the previous step is SENT with a recorded thread_id + Message-ID
+      2. today is on/after this step's due date (previous sent + 2 days)"""
     step = get_step(seq, step_no)
     if step_no >= 1:
         prev = get_step(seq, step_no - 1)
-        if prev.get("status") not in ("draft", "sent") \
+        if prev.get("status") != "sent" \
                 or not prev.get("thread_id") or not prev.get("message_id"):
             raise SystemExit(
                 f"REFUSED: step {step_no} for {seq['company']} cannot be "
-                f"drafted yet — step {step_no - 1} has no recorded Gmail "
-                "draft/sent message with thread_id/message_id. Follow-ups "
-                "must be created inside the original thread, never as a "
-                "new mail.")
+                f"drafted yet — step {step_no - 1} is not SENT with a "
+                "recorded thread_id/message_id. Follow-ups are drafted "
+                "only on their due day, inside the original thread.")
+        due = due_date_for(seq, step_no)
+        today = today or date.today()
+        if not due or date.fromisoformat(due) > today:
+            raise SystemExit(
+                f"REFUSED: step {step_no} for {seq['company']} is not due "
+                f"until {due or 'the previous email is sent'}. Follow-up "
+                "drafts are created on the due day, not in advance.")
         if thread_id and thread_id != prev["thread_id"]:
             raise SystemExit(
                 f"REFUSED: follow-up thread_id {thread_id} does not match "
@@ -272,9 +314,10 @@ def mark_sent(seq, step_no, thread_id="", message_id="", on=None):
 
 
 def due_followups(manifest, today=None):
-    """Follow-ups due to SEND today: previous step was sent >= delay days
-    ago. `action` is 'send_draft' when the threaded draft already exists
-    (the normal case — drafts are pre-created), else 'create_draft'."""
+    """Follow-ups due TODAY: previous step was sent >= delay days ago.
+    `action` is 'create_draft' (the normal case — on the due day the agent
+    creates the follow-up draft inside `thread_id`), or 'send_draft' if
+    that draft was already created earlier the same day."""
     today = today or date.today()
     due = []
     for seq in manifest["sequences"]:
@@ -333,18 +376,24 @@ def main():
         if not manifest["sequences"]:
             print("No sequences yet. Run: python audit_outreach.py --export")
             return
+        hdr = (f"{'COMPANY':28} {'THREAD_ID':20} {'MAILS_SENT':10} "
+               f"{'NEXT_FOLLOWUP_DATE':18} NEXT_STEP")
+        print(hdr)
+        print("-" * len(hdr))
         for seq in manifest["sequences"]:
             refresh_due_dates(seq)
-            print(f"\n{seq['company']}  <{seq.get('to') or 'NO EMAIL'}>")
+            print(f"{seq['company'][:28]:28} "
+                  f"{(seq.get('thread_id') or '—')[:20]:20} "
+                  f"{seq.get('mails_sent', 0):<10} "
+                  f"{(seq.get('next_followup_date') or '—'):18} "
+                  f"{seq.get('next_step') if seq.get('next_step') is not None else '—'}")
             for s in seq["steps"]:
                 extra = ""
                 if s["step"] and s.get("due_date"):
                     extra = f" due {s['due_date']}"
                 if s.get("sent_at"):
                     extra += f" sent {s['sent_at']}"
-                thread = f" thread {s['thread_id'][:12]}…" if s.get("thread_id") else ""
-                print(f"  step {s['step']} ({s['kind']:8}) {s['status']:8}"
-                      f"{extra}{thread}")
+                print(f"    step {s['step']} ({s['kind']:8}) {s['status']:8}{extra}")
         save_manifest(manifest)
 
     elif args.cmd == "due":

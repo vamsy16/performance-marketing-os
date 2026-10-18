@@ -72,7 +72,7 @@ class TestSchedule(unittest.TestCase):
     def test_chain_each_step_plus_two(self):
         m, seq = fresh_manifest()
         S.mark_sent(seq, 0, thread_id="t1", message_id="<m1>", on=date(2026, 10, 18))
-        S.mark_draft(seq, 1, "draft-2")
+        S.mark_draft(seq, 1, "draft-2", today=date(2026, 10, 20))  # on due day
         S.mark_sent(seq, 1, on=date(2026, 10, 21))  # sent a day late
         # Next due is +2 from ACTUAL send (21st), not from original plan
         self.assertEqual(S.due_date_for(seq, 2), "2026-10-23")
@@ -94,23 +94,59 @@ class TestThreadingGuard(unittest.TestCase):
     def test_followup_draft_inherits_thread(self):
         m, seq = fresh_manifest()
         S.mark_sent(seq, 0, thread_id="t1", message_id="<m1>", on=date(2026, 10, 18))
-        step = S.mark_draft(seq, 1, "draft-2")
+        step = S.mark_draft(seq, 1, "draft-2", today=date(2026, 10, 20))
         self.assertEqual(step["thread_id"], "t1")
         self.assertEqual(step["status"], "draft")
-        # Pre-drafted -> when due, the action is to SEND that draft
-        due = S.due_followups(m, today=date(2026, 10, 25))
-        self.assertEqual(len(due), 1)
-        self.assertEqual(due[0]["action"], "send_draft")
-        self.assertEqual(due[0]["draft_id"], "draft-2")
 
-    def test_followup_can_predraft_against_initial_draft(self):
-        # Drafts are pre-created in the thread before step 0 is sent;
-        # the +2d SEND clock still only starts when step 0 is sent.
+    def test_no_predrafting_only_one_draft_at_a_time(self):
+        # Follow-up drafts must NOT exist before their due day:
+        # refused while step 0 is merely a draft...
         m, seq = fresh_manifest()
         S.mark_draft(seq, 0, "draft-1", thread_id="t1", message_id="<m1>")
-        step = S.mark_draft(seq, 1, "draft-2")
+        with self.assertRaises(SystemExit):
+            S.mark_draft(seq, 1, "draft-2", today=date(2026, 10, 18))
+        # ...and refused after sending but BEFORE the +2-day due date.
+        S.mark_sent(seq, 0, on=date(2026, 10, 18))
+        with self.assertRaises(SystemExit):
+            S.mark_draft(seq, 1, "draft-2", today=date(2026, 10, 19))
+        # On the due day it is allowed (created then, in the thread).
+        step = S.mark_draft(seq, 1, "draft-2", today=date(2026, 10, 20))
         self.assertEqual(step["thread_id"], "t1")
-        self.assertEqual(S.due_followups(m, today=date(2030, 1, 1)), [])
+
+    def test_due_action_is_create_draft(self):
+        m, seq = fresh_manifest()
+        S.mark_sent(seq, 0, thread_id="t1", message_id="<m1>", on=date(2026, 10, 18))
+        due = S.due_followups(m, today=date(2026, 10, 20))
+        self.assertEqual(len(due), 1)
+        self.assertEqual(due[0]["action"], "create_draft")
+        self.assertEqual(due[0]["thread_id"], "t1")
+
+
+class TestColumns(unittest.TestCase):
+    def test_columns_track_progress(self):
+        m, seq = fresh_manifest()
+        S.refresh_columns(seq)
+        self.assertEqual(seq["mails_sent"], 0)
+        self.assertEqual(seq["next_followup_date"], "")
+        self.assertEqual(seq["thread_id"], "")
+
+        S.mark_draft(seq, 0, "d1", thread_id="t1", message_id="<m1>")
+        S.refresh_columns(seq)
+        self.assertEqual(seq["thread_id"], "t1")
+        self.assertEqual(seq["mails_sent"], 0)          # draft != sent
+        self.assertEqual(seq["next_followup_date"], "")  # clock not started
+
+        S.mark_sent(seq, 0, on=date(2026, 10, 18))
+        self.assertEqual(seq["mails_sent"], 1)
+        self.assertEqual(seq["next_followup_date"], "2026-10-20")
+        self.assertEqual(seq["next_step"], 1)
+
+        S.mark_sent(seq, 1, on=date(2026, 10, 20))
+        S.mark_sent(seq, 2, on=date(2026, 10, 22))
+        S.mark_sent(seq, 3, on=date(2026, 10, 24))
+        self.assertEqual(seq["mails_sent"], 4)
+        self.assertEqual(seq["next_followup_date"], "")  # sequence finished
+        self.assertIsNone(seq["next_step"])
 
 
 class TestManifestPreservesState(unittest.TestCase):

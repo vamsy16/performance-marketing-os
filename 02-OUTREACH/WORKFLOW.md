@@ -41,15 +41,16 @@ This is your complete workflow: find companies → audit their ads/website → s
 │    → Saves ready-to-send emails as .txt files                   │
 │                                                                  │
 │  STEP 5: DRAFT IN GMAIL (agent does this — GMAIL_DRAFT_WORKFLOW)│
-│    → Initial draft created in Gmail with audit PDF attached     │
-│    → Follow-up drafts pre-created IN THE SAME THREAD (Re: ...)  │
+│    → ONLY the initial draft is created (audit PDF attached)     │
+│    → Tracked columns: thread_id, mails_sent, next_followup_date │
 │    → You review in Gmail and SEND manually (never auto-sent)    │
 │    → Tell Arena "I sent <company>" → send is recorded           │
 │                                                                  │
 │  STEP 6: FOLLOW UP (+2 days after previous send, same thread)   │
 │  $ python 02-OUTREACH/sequence.py due                           │
-│    → Shows follow-ups due to SEND (draft already in the thread) │
-│    → You open the draft in the conversation, review, send       │
+│    → On the due day, agent creates the follow-up draft IN the   │
+│      recorded thread (never in advance, never a new mail)       │
+│    → You review + send; mails_sent +1, next date moves +2 days  │
 │    → 3 follow-ups max (last one is the breakup email)           │
 │                                                                  │
 └─────────────────────────────────────────────────────────────────┘

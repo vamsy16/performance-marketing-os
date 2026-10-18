@@ -12,18 +12,23 @@ Gmail account: `smartpursuit3@gmail.com` (via the Gmail connector in Arena).
 | Step | What | When | Where it lands |
 |---|---|---|---|
 | 0 | Initial audit email (+ audit PDF attached) | Draft created right after the audit | New draft — becomes the thread when sent |
-| 1 | Follow-up 1 | Draft pre-created **inside step 0's thread** (`Re:` + In-Reply-To); **send due 2 days after step 0 is SENT** | Same thread |
+| 1 | Follow-up 1 | Draft created **on the due day** (2 days after step 0 is SENT), **inside step 0's thread** (`Re:` + In-Reply-To) | Same thread |
 | 2 | Follow-up 2 | **2 days after step 1 is SENT** | Same thread |
 | 3 | Breakup email | **2 days after step 2 is SENT** | Same thread |
 
 Rules enforced by `sequence.py` (not by memory):
 
+- **Only one draft exists at a time.** Follow-up drafts are never
+  pre-created — each is created on its due day, and only then.
 - The 2-day clock starts on the **sent date**, not the draft date. A draft
   sitting in Gmail for a week does not trigger follow-ups.
-- A follow-up draft is **refused** until the previous step is recorded as
-  sent with its Gmail `thread_id` + Message-ID. When created, it reuses
-  that exact `thread_id` and sets `In-Reply-To`/`References` to the
-  previous message — Gmail shows it as a reply in the same conversation.
+- A follow-up draft is **refused** before its due date, and refused until
+  the previous step is recorded as sent with its Gmail `thread_id` +
+  Message-ID. When created, it reuses that exact `thread_id` and sets
+  `In-Reply-To`/`References` — Gmail shows it as a reply in the same
+  conversation, never a new mail.
+- Each sequence row tracks: `thread_id`, `mails_sent` (how many emails
+  actually sent), `next_followup_date` (previous sent date + 2 days).
 - Max 3 follow-ups (step 3 = breakup). Then the sequence stops.
 - State lives in `generated_emails/sequence_manifest.json` and survives
   re-running the generator.
@@ -36,11 +41,10 @@ Rules enforced by `sequence.py` (not by memory):
               -> email_*.txt + sequence_manifest.json (4 steps per lead)
 3. DRAFT      Ask Arena: "create Gmail drafts from the sequence manifest"
               Agent, per lead WITH an email address:
-                - creates the step-0 Gmail draft with the audit PDF attached
-                - creates follow-up drafts 1-3 INSIDE that draft's thread
-                  (same thread_id, In-Reply-To/References = previous message)
-                - records each: python sequence.py mark-draft --company "<X>" \
-                      --step N --draft-id <id> --thread-id <id> --message-id <id>
+                - creates ONLY the step-0 Gmail draft (audit PDF attached)
+                - records it: python sequence.py mark-draft --company "<X>" --step 0 \
+                      --draft-id <id> --thread-id <id> --message-id <id>
+                - follow-up drafts are NOT created yet — see step 6
               Leads without an email are skipped (find the email first).
 4. YOU        Review the draft in Gmail → personalize → SEND (manually, always).
 5. RECORD     Tell Arena: "I sent <company>"
@@ -48,13 +52,13 @@ Rules enforced by `sequence.py` (not by memory):
                 python sequence.py mark-sent --company "<X>" --step 0 \
                     --thread-id <sent thread> --message-id <sent Message-ID>
               -> follow-up 1 due date = sent date + 2 days.
-6. FOLLOW-UP  Anytime after that, ask Arena: "check follow-ups due"
-              Agent runs `python sequence.py due`. For each due item the
-              threaded draft already exists (action=send_draft): you open
-              it in Gmail (inside the original conversation), review, SEND.
-              Then repeat step 5 for that step. If a draft is missing
-              (action=create_draft), the agent creates it in the recorded
-              thread first — never as a new mail.
+6. FOLLOW-UP  On/after next_followup_date, ask Arena: "check follow-ups due"
+              Agent runs `python sequence.py due`, and for each due item
+              creates the follow-up draft THAT DAY inside the recorded
+              thread_id (Re: + In-Reply-To to the previous sent message),
+              records it with mark-draft, and tells you. You review + send
+              it in Gmail, then repeat step 5 for that step (mails_sent
+              increments, next_followup_date moves +2 days).
 ```
 
 ## Commands
