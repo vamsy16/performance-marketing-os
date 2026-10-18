@@ -148,6 +148,18 @@ python audit_outreach.py --export   # emails + sequence_manifest.json
 
 Then commit + push (audit JSONs, PDFs, generated emails, manifest).
 
+## Pre-audit outreach copy is already written
+
+`../02-OUTREACH/pre_audit_drafts/hyderabad_batch3_2026-10-18.md` holds a full
+4-step sequence (initial + 2 follow-ups + breakup) per lead, built **only** from
+facts verified live today — live ad copy, Library IDs, funnels and the specific
+defects found (Evergrid's FB-form-only ads, Solox's "0+ MW" counters and stale
+`mailto:`, Truzon's missing Telugu creative, Punarvi's ad/site phone mismatch,
+Varahi's zero paid acquisition). It deliberately contains **no website scores or
+pixel/PageSpeed claims**, because those don't exist until the pipeline runs.
+Use it to start outreach today if you want; `audit_outreach.py --export` will
+produce the audit-personalized versions once the reports are pushed.
+
 ## What Arena does next (after you push)
 
 1. Re-runs `verify_report.py --all` on the pushed reports.
