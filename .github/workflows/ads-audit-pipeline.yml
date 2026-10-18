@@ -38,9 +38,12 @@ on:
         description: "Audit mode: city"
         required: false
         default: ""
-  # Weekly lead discovery (Mondays 09:30 IST = 04:00 UTC). Uncomment to enable:
-  # schedule:
-  #   - cron: "0 4 * * 1"
+  # Weekly lead discovery: Mondays 09:30 IST (04:00 UTC), runs automatically
+  # with the default query/limit below. The Arena agent token cannot
+  # dispatch workflows (403), so the schedule + the owner's manual
+  # "Run workflow" click in the Actions tab are the two ways to start it.
+  schedule:
+    - cron: "0 4 * * 1"
 
 permissions:
   contents: write
@@ -72,11 +75,11 @@ jobs:
           playwright install --with-deps chrome
 
       - name: Discover leads + audit ads (Meta Ad Library)
-        if: ${{ inputs.mode == 'discover' }}
+        if: ${{ inputs.mode == 'discover' || github.event_name == 'schedule' }}
         working-directory: 01-LEADS
         run: |
-          python discover_leads.py "${{ inputs.query }}" \
-            --limit "${{ inputs.limit }}"
+          python discover_leads.py "${{ inputs.query || 'solar Hyderabad' }}" \
+            --limit "${{ inputs.limit || '5' }}"
 
       - name: Audit one company (ads + conversion page)
         if: ${{ inputs.mode == 'audit' }}
