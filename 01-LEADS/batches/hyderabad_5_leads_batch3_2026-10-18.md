@@ -148,6 +148,27 @@ python audit_outreach.py --export   # emails + sequence_manifest.json
 
 Then commit + push (audit JSONs, PDFs, generated emails, manifest).
 
+### No laptop handy? Run the same pipeline on GitHub Actions
+
+`.github/workflows/ads-audit-pipeline.yml` already runs `run_pipeline.py` on a
+GitHub runner (Chrome + open internet) and commits the results back. Open
+**Actions → Ads Audit Pipeline → Run workflow**, pick the branch you want the
+results on, and use these inputs — one run per company (~5 min each):
+
+| mode | website | company | city |
+|---|---|---|---|
+| `audit` | `https://www.evergridenergy.in` | `Evergrid Energy` | `Hyderabad` |
+| `audit` | `https://solox.in` | `Solox Energies` | `Hyderabad` |
+| `audit` | `https://www.truzonsolar.com` | `Truzon Solar` | `Hyderabad` |
+| `audit` | `https://www.punarvienergies.com` | `Punarvi Energies` | `Hyderabad` |
+| `audit` | `https://varahienergies.in` | `Varahi Energies` | `Hyderabad` |
+
+Each run writes `01-LEADS/audit_results/audit_<Company>.json`,
+`02-OUTREACH/audit_pdfs/audit_<Company>.pdf` and the matching email, runs the
+`verify_report.py --all` gate, and uploads everything as an artifact. The
+`Run workflow` button needs the repo owner's own login (an integration token
+gets 403), and it only appears for workflow files on the default branch.
+
 ## Pre-audit outreach copy is already written
 
 `../02-OUTREACH/pre_audit_drafts/hyderabad_batch3_2026-10-18.md` holds a full
