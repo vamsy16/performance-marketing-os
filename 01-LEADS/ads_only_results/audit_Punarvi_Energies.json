@@ -1,0 +1,100 @@
+{
+  "company": "Punarvi Energies",
+  "legal": "Punarvi Energies Limited",
+  "city": "Hyderabad",
+  "website": "https://www.punarvienergies.com",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-18",
+  "generated_at": "2026-10-19 13:20",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 2,
+      "results_label": "~2 results",
+      "query": "Punarvi Energies",
+      "ads": [
+        {
+          "library_id": "1122725223617884",
+          "library_url": "https://www.facebook.com/ads/library/?id=1122725223617884",
+          "page_name": "Punarvi Energies Limited",
+          "started": "Oct 13, 2026",
+          "destination": "Facebook lead form (fb.me 'Get quote')",
+          "text": "NAVARATRI MEGA SOLAR OFFER! 3 kW Solar - Rs. 1,02,000 (Actual Rs. 1,30,000). 5 kW Solar - Rs. 2,10,000 (Actual Rs. 3,30,000). Government subsidy up to Rs. 78,000. FREE Solar Cleaning Kit.",
+          "images": []
+        },
+        {
+          "library_id": "994804120334409",
+          "library_url": "https://www.facebook.com/ads/library/?id=994804120334409",
+          "page_name": "Punarvi Energies Limited",
+          "started": "Oct 13, 2026",
+          "destination": "Facebook lead form (fb.me 'Get quote')",
+          "text": "Navaratri Dhamaka Offer! 3 KW - Rs. 1,02,000/- Only. 5 KW - Rs. 2,10,000/- Only. FREE Solar Cleaning Kit on Every Booking. Govt Subsidy Up to Rs. 78,000. Offer valid until October 20th. Call Now: 7997667677",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Punarvi Energies is running 2 active Navaratri-offer ads on Meta, both started 13 October 2026, both sending the click into a Facebook lead form. Behind the offer sits the strongest proof base in this market: MNRE-approved EPC, 79 MW installed and clients including IIIT Hyderabad, TGSPDCL, TSREDCO and HPCL."
+  },
+  "funnel": {
+    "type": "Facebook lead form",
+    "destination": "fb.me 'Get quote' (inside Facebook)",
+    "meaning": "The click never reaches punarvienergies.com, so none of your 79 MW, your MNRE approval or your institutional clients appear in front of the person deciding whether to enquire."
+  },
+  "findings": [
+    "Both ads send the click into a Facebook lead form - your 79 MW of installed capacity, MNRE approval and clients like IIIT Hyderabad, TGSPDCL, TSREDCO and HPCL never appear in front of the person clicking.",
+    "The phone number in the ad (7997667677) is a transposition of the number on your own site (7799757777). Worth checking before the offer closes on 20 October - calls may be going nowhere while the spend continues.",
+    "You are the biggest spender in this set with the strongest references (11 MW Khammam ground-mount, 5 MW Parigi, 3 MW Jadcherla textiles, Google 5.0 from 26 reviews) - and the least ownership of the click.",
+    "Both ads lead with price only. Nobody in your market is leading with '79 MW installed for TGSPDCL and IIIT Hyderabad' - that is an untested differentiator."
+  ],
+  "next_steps": [
+    [
+      "Fix the number first",
+      "Align the ad phone with the site phone (7799757777) and add call tracking on both, so the Navaratri spend stops leaking."
+    ],
+    [
+      "Send the click to your own proof",
+      "A landing page with the offer at the top and the MW-scale references below it converts better than a Facebook form - and it is yours to retarget."
+    ],
+    [
+      "Lead with credentials, not just price",
+      "Test a second creative angle: '79 MW installed for TGSPDCL, IIIT Hyderabad and HPCL' against the price-led one."
+    ],
+    [
+      "Capture the non-bookers",
+      "Pixel + retargeting for everyone who clicked and did not submit. At your spend that audience is the cheapest pipeline you are currently not using."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "solar@punarvienergies.com"
+    ],
+    [
+      "Phone",
+      "+91 7799757777 | landline +91 40 49941999 | ad phone 7997667677"
+    ],
+    [
+      "Corporate office",
+      "Plot No. 5, Chandragiri Colony, Above SBI Bank, 3rd Floor, Tirmulgherry, Hyderabad 500015"
+    ],
+    [
+      "Factory",
+      "Plot No. 1, Phase-1, BN Reddy Nagar, Cherlapally, Hyderabad 500051"
+    ],
+    [
+      "Credentials",
+      "MNRE Approved EPC - 79 MW installed, 2,400+ projects"
+    ],
+    [
+      "Meta page",
+      "facebook.com/punarvisolarenergies"
+    ]
+  ],
+  "contact": {
+    "email": "solar@punarvienergies.com",
+    "phone": "+91 7799757777",
+    "fb_page": "https://www.facebook.com/punarvisolarenergies/"
+  }
+}

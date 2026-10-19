@@ -1,0 +1,77 @@
+{
+  "company": "Varahi Energies",
+  "legal": "Varahi Energies",
+  "city": "Hyderabad",
+  "website": "https://varahienergies.in",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-18",
+  "generated_at": "2026-10-19 13:20",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": false,
+      "results_count": 0,
+      "results_label": "No ads match your search criteria",
+      "query": "Varahi Energies",
+      "ads": []
+    },
+    "summary": "No active Meta ads were found for Varahi Energies. Meanwhile four Hyderabad installers - Evergrid Energy, Solox Energies, Truzon Solar and Punarvi Energies - are all live this week buying the same homeowner with Rs. 78,000-subsidy offers. Varahi's MNRE-approved track record (250+ projects, 700 kW+ PM Surya Ghar, 80 MW PM-KUSUM assistance) is not in front of any paid traffic."
+  },
+  "funnel": {
+    "type": "WhatsApp only",
+    "destination": "wa.me/919666120045 on every call-to-action",
+    "meaning": "Every enquiry arrives as a chat message. There is no email capture anywhere on the site, so nobody who does not reply can be followed up with, and nothing can be retargeted or measured."
+  },
+  "findings": [
+    "No active Meta ads under your name - four Hyderabad installers are buying the same homeowner this week with the same Rs. 78,000-subsidy message.",
+    "Every CTA on the site is a WhatsApp deep link. There is no email capture, so a visitor who does not reply cannot be followed up with, and no audience can be built.",
+    "MNRE-approved vendor with 250+ projects, 700 kW+ of PM Surya Ghar work, a 545 kW commercial rice-industry plant and 80 MW of PM-KUSUM assistance - the proof exists, it just is not in front of paid traffic.",
+    "Head office is in Nizamabad with the Hyderabad branch in Kompally, but there is very little Hyderabad-specific content for local search demand (Kompally, Secunderabad, Kukatpally)."
+  ],
+  "next_steps": [
+    [
+      "Turn WhatsApp into a funnel, not a dead end",
+      "Keep WhatsApp as the reply channel, but capture name, phone and locality on the site first, so non-repliers can be followed up."
+    ],
+    [
+      "Test paid lead gen in Hyderabad",
+      "Start with a small Meta budget on one residential offer. Your four competitors are already proving the demand exists in this city."
+    ],
+    [
+      "Build Hyderabad location pages",
+      "Kompally, Secunderabad and Kukatpalli pages with real project photos - free local search traffic sitting next to the traffic you would be buying."
+    ],
+    [
+      "Show the live generation data",
+      "Your site already displays a live generation widget (8.4 kW, 94%, 32 units today). That is a trust asset most installers do not have - put it on the homepage."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "varahienergies@gmail.com"
+    ],
+    [
+      "Phone / WhatsApp",
+      "+91 9666120045 / wa.me/919666120045 (Mon-Sat 9AM-7PM)"
+    ],
+    [
+      "Head office",
+      "Kanteshwar, Beside Bajrang Tiles, Nizamabad, Telangana 503002"
+    ],
+    [
+      "Hyderabad branch",
+      "Lane No. 4, Panchasheel Enclave St, Kompally, Hyderabad-Secunderabad 500067"
+    ],
+    [
+      "Credentials",
+      "MNRE approved vendor - 250+ projects, 700 kW+ PM Surya Ghar, 80 MW PM-KUSUM assistance"
+    ]
+  ],
+  "contact": {
+    "email": "varahienergies@gmail.com",
+    "phone": "+91 9666120045",
+    "fb_page": ""
+  }
+}

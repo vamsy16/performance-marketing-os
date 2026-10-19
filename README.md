@@ -15,6 +15,7 @@ Everything you need to run a full-service digital marketing agency alone, using 
 | `00-PLAYBOOK` | Your positioning, offers, pricing | Read first. This is your business brain. |
 | `01-LEADS` | Lead generation + scraper | Run to find solar companies to pitch |
 | `02-OUTREACH` | Email/call templates + sequences | Copy-paste + personalize |
+| `02-OUTREACH/ads_only_pdfs/` | Live-ad-activity PDFs (no website audit) | Built by `python 01-LEADS/ads_only_report.py` when the full pipeline can't run; each report says so on page 1 |
 | `03-CONTENT` | Arena prompt library + content calendar | Paste prompts into Arena to generate |
 | `04-DELIVERY` | Client work playbooks + audit tools | How to actually deliver each service |
 | `05-CRM` | Free local CRM (Python) | Track every lead & client |
@@ -44,6 +45,16 @@ Everything you need to run a full-service digital marketing agency alone, using 
 4. Copy 1 email from `02-OUTREACH/templates/` and send 5 today (30 min)
 
 That's it. You're now a solar marketing agency.
+
+## Two kinds of audit PDF
+
+| Report | Contains | Built by |
+|---|---|---|
+| **Full audit** (`02-OUTREACH/audit_pdfs/`) | Website score, tracking/pixels, PageSpeed, conversion checklist **+** live Meta/Google ads | `python 01-LEADS/run_pipeline.py <site> "<Company>" --city <City>` |
+| **Live ad activity** (`02-OUTREACH/ads_only_pdfs/`) | Live ads only: Library IDs, start dates, ad copy, live permalinks, funnel, action plan. **States on page 1 that no website audit was run** | `python 01-LEADS/ads_only_report.py` |
+
+Always gate before delivering: `python 01-LEADS/verify_report.py --all` for full
+reports, `python 01-LEADS/verify_report.py --ads-only` for the live-ad ones.
 
 ---
 

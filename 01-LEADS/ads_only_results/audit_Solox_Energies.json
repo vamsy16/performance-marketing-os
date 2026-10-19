@@ -1,0 +1,88 @@
+{
+  "company": "Solox Energies",
+  "legal": "Solox Energies Private Limited",
+  "city": "Hyderabad",
+  "website": "https://solox.in",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-18",
+  "generated_at": "2026-10-19 13:20",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "~1 result",
+      "query": "Solox Energies",
+      "ads": [
+        {
+          "library_id": "2023601181805342",
+          "library_url": "https://www.facebook.com/ads/library/?id=2023601181805342",
+          "page_name": "Solox Energies Pvt Ltd",
+          "started": "Oct 17, 2026",
+          "destination": "https://solox.in/ ('Book Now')",
+          "text": "HELLO TELANGANA! YOUR SOLAR JOURNEY STARTS WITH ZERO DOWN PAYMENT! Zero Down Payment on Solar Installation, Government Subsidy of up to Rs. 78,000, Free Site Visit, Expert Guidance from Site Survey to Installation, Assistance with the Subsidy Process. Call us: 99881 33789 - www.solox.in",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Solox Energies is running 1 active ad on Meta, started 17 October 2026, with multiple versions of the same creative. It is the only advertiser in this Hyderabad set whose ad sends traffic to its own website - the rest send clicks into Facebook forms."
+  },
+  "funnel": {
+    "type": "Own website",
+    "destination": "https://solox.in/ ('Book Now')",
+    "meaning": "The right structure - the click reaches a page you own. The problem is what that page currently tells a homeowner who just clicked a paid ad."
+  },
+  "findings": [
+    "Your ad points at solox.in - that part is already right, and it is rarer in this market than it should be.",
+    "But the page it lands on still reads '0+ MW' of renewable energy installed, '1+ projects' and '1+ years of cumulative team experience'. A homeowner who just clicked a paid ad reads that as a brand-new company, right next to your Rs. 0-down promise.",
+    "The contact page displays contact@solox.in, but the form's own mailto still points at Sungosolarenergy@gmail.com - a leftover from the site template. Enquiries may not be reaching the inbox you advertise.",
+    "One live ad, one creative, one audience. There is no second angle, no retargeting creative and no test structure behind it.",
+    "Worth keeping: Google Analytics is already installed on the site, so traffic measurement exists - the gap is what happens after the click."
+  ],
+  "next_steps": [
+    [
+      "Replace the placeholder numbers",
+      "Fill in real installed capacity, project count and years of experience - or remove the counters entirely. On a paid landing page, '0+ MW' costs more than it says."
+    ],
+    [
+      "Repoint the enquiry form",
+      "Make the form deliver to contact@solox.in and add a backup address, so no paid enquiry can be lost to an old template email."
+    ],
+    [
+      "Build the Rs. 0-down angle into a page",
+      "Turn the ad promise into a landing page section: Rs. 0 down, subsidy up to Rs. 78,000 handled end-to-end, free site visit - with the calculator next to it."
+    ],
+    [
+      "Start testing creatives",
+      "Run 3-4 versions of the zero-down-payment angle (including Telugu) against the current one. You have analytics in place, so you will actually see the difference."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "contact@solox.in (form mailto: Sungosolarenergy@gmail.com)"
+    ],
+    [
+      "Phone",
+      "+91 9988133789 (Mon-Sat 9.00-18.00)"
+    ],
+    [
+      "Address",
+      "Flat 401, Ace Krisna Prime, 11-9-50, Rd Number 1, Prabhat Nagar, Laxmi Nagar Colony, Kothapet, Hyderabad 500102 (HQ) + Vijayawada branch"
+    ],
+    [
+      "Entity",
+      "Solox Energies Private Limited - ISO 9001:2015"
+    ],
+    [
+      "Meta page",
+      "facebook.com/soloxenergies (Solox Energies Pvt Ltd)"
+    ]
+  ],
+  "contact": {
+    "email": "contact@solox.in",
+    "phone": "+91 9988133789",
+    "fb_page": "https://www.facebook.com/soloxenergies/"
+  }
+}

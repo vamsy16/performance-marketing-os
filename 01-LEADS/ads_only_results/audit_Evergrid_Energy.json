@@ -1,0 +1,96 @@
+{
+  "company": "Evergrid Energy",
+  "legal": "Evergrid Energy Pvt Ltd",
+  "city": "Hyderabad",
+  "website": "https://www.evergridenergy.in",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-18",
+  "generated_at": "2026-10-19 13:20",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 2,
+      "results_label": "~2 results",
+      "query": "Evergrid Energy",
+      "ads": [
+        {
+          "library_id": "1642242114211409",
+          "library_url": "https://www.facebook.com/ads/library/?id=1642242114211409",
+          "page_name": "Evergrid Energy",
+          "started": "Oct 16, 2026",
+          "destination": "Facebook lead form (fb.me 'Get quote')",
+          "text": "Dussehra Offer: Rs. 22,000 OFF rooftop solar + up to Rs. 78,000 govt subsidy. EMIs from Rs. 1,900/month. Installed in 21 days. Up to 30-year panel warranty. Book your free site visit today.",
+          "images": []
+        },
+        {
+          "library_id": "1079793338257084",
+          "library_url": "https://www.facebook.com/ads/library/?id=1079793338257084",
+          "page_name": "Evergrid Energy",
+          "started": "Oct 17, 2026",
+          "destination": "Facebook lead form (fb.me 'Get quote')",
+          "text": "Dussehra Offer: Rs. 22,000 OFF rooftop solar + up to Rs. 78,000 govt subsidy. EMIs from Rs. 1,900/month. Installed in 21 days. Creative line: 'Ravan = your electricity bill. Time to end it.'",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Evergrid Energy is running 2 active Dussehra-offer ads on Meta (Facebook and Instagram), started on 16 and 17 October 2026. Both ads send the click into a Facebook lead form, so the spend never reaches evergridenergy.in. No Google Ads advertiser record was checked for this report - that requires the full pipeline."
+  },
+  "funnel": {
+    "type": "Facebook lead form",
+    "destination": "fb.me 'Get quote' (inside Facebook)",
+    "meaning": "Every rupee of ad spend lands inside Facebook's form. You own no pixel, you cannot retarget the people who clicked and did not submit, and there is no page you can test a different headline or price on."
+  },
+  "findings": [
+    "Both live ads dump the click into a Facebook lead form - not your website. No pixel ownership, no retargeting pool, no page to test.",
+    "Your own site has a real quote form (name, phone, installation type, monthly bill, location) and a projects page - Kukatpally 6 kW residential, Shamshabad 120 kW commercial, Nacharam 20 kW commercial - that none of the paid traffic ever sees.",
+    "The contact page shows contact@evergridenergy.in while the form's own mailto points at hello@evergridenergy.in - enquiries can land in an inbox nobody is watching.",
+    "Two ads, both the same offer, both new (16-17 Oct). There is no second angle and no retargeting creative behind them yet."
+  ],
+  "next_steps": [
+    [
+      "Move the click onto a page you own",
+      "Send both ads to a dedicated landing page with the Dussehra offer, an enquiry form and the Meta Pixel installed - so every click is measurable and retargetable."
+    ],
+    [
+      "Install pixel + conversions API",
+      "One pixel plus the Conversions API gives you the audience of everyone who clicked but did not submit - usually 10-20x the size of the people who fill a form."
+    ],
+    [
+      "Put your project photos to work",
+      "Kukatpally, Shamshabad and Nacharam installs are real proof. They belong on the landing page next to the offer, not on a page the ad never sends anyone to."
+    ],
+    [
+      "Fix the email routing",
+      "Point the contact form at the same inbox the site advertises, and add a second address so an enquiry can never sit unread."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "contact@evergridenergy.in (form mailto: hello@evergridenergy.in)"
+    ],
+    [
+      "Phone / WhatsApp",
+      "+91 7330777310 / wa.me/917330777310"
+    ],
+    [
+      "Address",
+      "Harmony Heights, Road number 9, Park View Enclave Road, Jubilee Hills, Hyderabad, Telangana 500034"
+    ],
+    [
+      "Entity",
+      "Evergrid Energy Pvt Ltd - GST 36AAJCE8588K1ZS"
+    ],
+    [
+      "Meta page",
+      "facebook.com/61593038197988 (Evergrid Energy)"
+    ]
+  ],
+  "contact": {
+    "email": "contact@evergridenergy.in",
+    "phone": "+91 7330777310",
+    "fb_page": "https://www.facebook.com/61593038197988/"
+  }
+}

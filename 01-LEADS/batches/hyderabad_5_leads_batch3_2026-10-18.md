@@ -160,6 +160,41 @@ pixel/PageSpeed claims**, because those don't exist until the pipeline runs.
 Use it to start outreach today if you want; `audit_outreach.py --export` will
 produce the audit-personalized versions once the reports are pushed.
 
+## Live-ad PDFs are already generated (website audit still pending)
+
+Because the website half of the audit needs Playwright + Chrome (not available in
+the Arena sandbox), these 5 leads now have **live-ad-activity PDFs** built only
+from public Meta Ad Library data — with the limitation printed on page 1 of every
+report:
+
+```
+02-OUTREACH/ads_only_pdfs/
+├── audit_Evergrid_Energy.pdf      (2 pages)
+├── audit_Solox_Energies.pdf       (2 pages)
+├── audit_Truzon_Solar.pdf         (3 pages)
+├── audit_Punarvi_Energies.pdf     (2 pages)
+└── audit_Varahi_Energies.pdf      (2 pages)
+```
+
+Each report contains: the live ads with real **Library IDs**, start dates, ad copy
+and clickable "Open the live ad" permalinks · where the clicks land (Facebook lead
+form vs own site) · what that costs · the findings read live today · a 30-day
+action plan · verified contact details. Each one states in an amber panel that
+**no website audit, tracking check or page-speed test was run**, and prints the
+exact `run_pipeline.py` command that produces the full report.
+
+Rebuild / re-verify anytime:
+
+```bash
+cd 01-LEADS
+python ads_only_report.py            # rebuilds JSON + PDF from the verified data
+python verify_report.py --ads-only   # QA gate - must print ALL ADS-ONLY REPORTS PASS
+```
+
+The gate refuses to pass a report that carries a fake score, a fake pixel
+finding, or a missing Library ID. The **full** audit PDFs (with website score,
+pixels, PageSpeed) still need the five `run_pipeline.py` commands below.
+
 ## What Arena does next (after you push)
 
 1. Re-runs `verify_report.py --all` on the pushed reports.

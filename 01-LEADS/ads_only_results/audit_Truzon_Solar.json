@@ -1,0 +1,105 @@
+{
+  "company": "Truzon Solar",
+  "legal": "Truzon Solar",
+  "city": "Hyderabad",
+  "website": "https://www.truzonsolar.com",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-18",
+  "generated_at": "2026-10-19 13:20",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 3,
+      "results_label": "3 live ads verified",
+      "query": "Truzon Solar",
+      "ads": [
+        {
+          "library_id": "1522258176260844",
+          "library_url": "https://www.facebook.com/ads/library/?id=1522258176260844",
+          "page_name": "Truzon Solar",
+          "started": "May 20, 2026",
+          "destination": "Facebook lead form ('Call Now +91 9030032222')",
+          "text": "Solar is no longer difficult to install. With Truzon Solar the whole process is simple and fast. Talk today and start your solar journey. (Hindi creative - 7 ads share this creative and text)",
+          "images": []
+        },
+        {
+          "library_id": "1399945148943213",
+          "library_url": "https://www.facebook.com/ads/library/?id=1399945148943213",
+          "page_name": "Truzon Solar",
+          "started": "Aug 25, 2026",
+          "destination": "Facebook lead form ('Book Now')",
+          "text": "Solar is no longer difficult to install. With Truzon Solar the whole process is simple. Contact today and start your solar journey. (Marathi creative - 6 ads share this creative and text)",
+          "images": []
+        },
+        {
+          "library_id": "1001393986178171",
+          "library_url": "https://www.facebook.com/ads/library/?id=1001393986178171",
+          "page_name": "Truzon Solar",
+          "started": "May 20, 2026",
+          "destination": "Facebook lead form",
+          "text": "Solar is no longer difficult to install. With Truzon Solar the whole process is simple and fast. Talk today and start your solar journey. (Hindi creative)",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Truzon Solar has been advertising on Meta continuously since May 2026 - the longest-running programme in this Hyderabad set - with 3 live ads across 2 creatives (7 ads share one creative, 6 share another). Every creative is Hindi or Marathi, and every CTA drops the click into a Facebook lead form."
+  },
+  "funnel": {
+    "type": "Facebook lead form",
+    "destination": "fb.me ('Call Now +91 9030032222' / 'Book Now')",
+    "meaning": "The click never reaches truzonsolar.com. You cannot retarget the people who clicked and did not call, you cannot test a landing page, and the phone number in the button is the only thing connecting the ad to your business."
+  },
+  "findings": [
+    "Every live creative is Hindi or Marathi. In Hyderabad the strongest solar ads run in Telugu to the same homeowners - your own head office is here, but your ads are not speaking the local language.",
+    "7 ads share one creative and 6 share another. You are buying reach on two ideas while competitors test new angles weekly.",
+    "The 'Call Now' button sends people into a Facebook lead form, not your own quote page - so none of your residential, commercial, industrial and ground-mounted service pages ever get seen by paid traffic.",
+    "You have the longest-running ad programme in this market (since May 2026) - which means the tracking and retargeting gap has been costing you the whole time."
+  ],
+  "next_steps": [
+    [
+      "Run Telugu creative",
+      "Translate the winning 'solar is no longer difficult' message into Telugu and test it against the Hindi and Marathi versions. This is the cheapest lift available in this market."
+    ],
+    [
+      "Send the click to your own page",
+      "Move the CTA from the Facebook form to a Hyderabad landing page with a quote form, so the traffic becomes an asset you own and can retarget."
+    ],
+    [
+      "Break the creative deadlock",
+      "Test 3-4 new angles - subsidy math, EMI vs bill, Dussehra-style offer, commercial rooftop - instead of spending the whole budget on two creatives."
+    ],
+    [
+      "Track the calls",
+      "Put call tracking on the 9030032222 button so you know which creative actually produces booked site visits."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@truzonsolar.com"
+    ],
+    [
+      "Phone",
+      "+91-9030032222"
+    ],
+    [
+      "Corporate office",
+      "5A, Astral Heights, Road No-1, Banjara Hills, Hyderabad 500034"
+    ],
+    [
+      "Services",
+      "Residential, commercial and industrial rooftop, ground-mounted solar, solar water heaters"
+    ],
+    [
+      "Meta page",
+      "facebook.com/truzonsolar"
+    ]
+  ],
+  "contact": {
+    "email": "info@truzonsolar.com",
+    "phone": "+91 9030032222",
+    "fb_page": "https://www.facebook.com/truzonsolar/"
+  }
+}

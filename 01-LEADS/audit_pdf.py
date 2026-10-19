@@ -655,6 +655,193 @@ def cta_card(audit):
 
 
 # ---------------------------------------------------------------------------
+# Ads-only story (live ad activity, website audit NOT run)
+# ---------------------------------------------------------------------------
+
+ADS_ONLY_LABEL = "LIVE AD ACTIVITY"
+
+
+def honesty_banner(audit):
+    """The panel that keeps an ads-only report from looking like a full audit.
+
+    An ads-only report is built ONLY from public Meta Ad Library data. The
+    website half of the audit (pixels, tracking, PageSpeed, conversion
+    elements, score) is not run, so it must be stated - never implied.
+    """
+    checked = audit.get("checked_on") or audit.get("generated_at") or ""
+    website = audit.get("website") or ""
+    company = audit.get("company") or "this company"
+    body = [
+        Paragraph('<font color="#B26A00"><b>WEBSITE AUDIT NOT RUN</b></font>', ST["h3"]),
+        Spacer(1, 1.2 * mm),
+        Paragraph(
+            f"This report covers <b>live ad activity only</b>, read from the public Meta Ad "
+            f"Library on {T(checked)}. No website was fetched, so it contains "
+            f"<b>no audit score, no tracking/pixel findings, no page-speed data and no "
+            f"conversion checklist</b> - those numbers are only real once the full pipeline "
+            f"runs. The complete report for {T(company)} is produced with:<br/>"
+            f"<font color='#1B6EC2'>python run_pipeline.py {T(website)} \"{T(company)}\" "
+            f"--city {T(audit.get('city') or 'Hyderabad')}</font>", ST["body"]),
+    ]
+    banner = Table([[body]], colWidths=[CONTENT_W])
+    banner.setStyle(TableStyle([
+        ("BACKGROUND", (0, 0), (-1, -1), colors.HexColor("#FFF7E6")),
+        ("BOX", (0, 0), (-1, -1), 0.8, AMBER),
+        ("LINEBEFORE", (0, 0), (0, 0), 3, AMBER),
+        ("LEFTPADDING", (0, 0), (-1, -1), 10),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 10),
+        ("TOPPADDING", (0, 0), (-1, -1), 8),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
+    ]))
+    return banner
+
+
+def ads_only_tiles(audit):
+    adlib = audit.get("ad_library") or {}
+    meta_own = adlib.get("meta_own") or {}
+    ads = meta_own.get("ads") or []
+    n_ads = len(ads)
+    started = [a.get("started", "") for a in ads if a.get("started")]
+    oldest = None
+    days = []
+    for s in started:
+        d = days_running(s)
+        if d is not None:
+            days.append(d)
+    if days:
+        oldest = max(days)
+    funnel = audit.get("funnel") or {}
+    funnel_txt = funnel.get("type") or "Not determined"
+
+    def tile(num, label, num_color=NAVY):
+        return [
+            Paragraph(f'<font color="{num_color.hexval()}">{T(num)}</font>', ST["tile_num"]),
+            Spacer(1, 0.8 * mm),
+            Paragraph(T(label), ST["tile_lbl"]),
+        ]
+
+    ads_color = GREEN if n_ads else RED
+    tiles = Table([[
+        tile(n_ads, "LIVE ADS RUNNING", ads_color),
+        tile(f"{oldest} days" if oldest is not None else "-", "LONGEST-RUNNING AD"),
+        tile(funnel_txt, "WHERE CLICKS LAND", AMBER if "form" in funnel_txt.lower() else NAVY),
+        tile("Meta", "SOURCE"),
+    ]], colWidths=[CONTENT_W / 4] * 4)
+    tiles.setStyle(TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+        ("ALIGN", (0, 0), (-1, -1), "CENTER"),
+        ("BACKGROUND", (0, 0), (-1, -1), CARD),
+        ("BOX", (0, 0), (-1, -1), 0.6, BORDER),
+        ("INNERGRID", (0, 0), (-1, -1), 0.6, BORDER),
+        ("TOPPADDING", (0, 0), (-1, -1), 7),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 7),
+    ]))
+    return tiles
+
+
+def build_ads_only_story(audit):
+    story = []
+    company = audit.get("company") or audit.get("website", "")
+    city = audit.get("city", "")
+    adlib = audit.get("ad_library") or {}
+    meta_own = adlib.get("meta_own") or {}
+    ads = meta_own.get("ads") or []
+    funnel = audit.get("funnel") or {}
+
+    story.append(Spacer(1, 3 * mm))
+    story.append(Paragraph(ADS_ONLY_LABEL, ST["kicker"]))
+    story.append(Spacer(1, 1.5 * mm))
+    story.append(Paragraph(T(company), ST["h1"]))
+    story.append(Spacer(1, 1.5 * mm))
+    meta_line = " &nbsp;·&nbsp; ".join(
+        T(x) for x in [city, audit.get("website", ""),
+                       f"Ad data pulled {audit.get('checked_on', '')}"] if x)
+    story.append(Paragraph(meta_line, ParagraphStyle(
+        "metaline", parent=ST["small"], fontSize=8.4, leading=11)))
+    story.append(Spacer(1, 2 * mm))
+    story.append(HRFlowable(width="100%", thickness=1.4, color=AMBER, spaceBefore=1, spaceAfter=3))
+
+    story.append(honesty_banner(audit))
+    story.append(Spacer(1, 3.5 * mm))
+
+    if adlib.get("summary"):
+        story.append(Paragraph(f"<b>Executive summary.</b> {T(adlib['summary'])}", ST["body"]))
+    story.append(Spacer(1, 3.5 * mm))
+    story.append(ads_only_tiles(audit))
+    story.append(Spacer(1, 3.5 * mm))
+
+    story.extend(section_bar("Your live ads - Meta (Facebook / Instagram)",
+                             "source: Meta Ad Library"))
+    if ads:
+        story.append(Paragraph(
+            f"<b>{len(ads)} live ad{'s' if len(ads) != 1 else ''} verified.</b> "
+            f"These are publicly visible in the Ad Library right now - click any ad to open it.",
+            ST["body"]))
+        story.append(Spacer(1, 2.5 * mm))
+        for ad in ads[:4]:
+            story.append(ad_card(ad, "Meta"))
+    else:
+        story.append(empty_box(
+            "No active Meta ads were found for this company. Competitors in your city are buying "
+            "this attention instead - which is itself the finding worth acting on."))
+
+    story.extend(section_bar("Where your ad clicks land", "the funnel behind the spend"))
+    if funnel:
+        story.append(facts_table([
+            ("Destination type", funnel.get("type", "Not determined")),
+            ("Destination", funnel.get("destination", "Not determined")),
+            ("What that means", funnel.get("meaning", "")),
+        ]))
+    else:
+        story.append(empty_box("No ad destination was captured for this lead."))
+
+    findings = audit.get("findings") or []
+    if findings:
+        story.extend(section_bar("What I found", "read live, not guessed"))
+        story.append(bullets_table(findings, RED, "!"))
+
+    steps = audit.get("next_steps") or []
+    if steps:
+        story.extend(section_bar("Recommended next steps", "what I would do first"))
+        story.append(steps_table(steps))
+
+    facts = audit.get("contact_facts") or []
+    if facts:
+        story.extend(section_bar("Verified contact details", "read from the live site / ad"))
+        story.append(facts_table(facts))
+
+    story.append(Spacer(1, 6 * mm))
+    story.append(cta_card(audit))
+    story.append(Spacer(1, 2.5 * mm))
+    story.append(Paragraph(
+        f"Ad-library data is live public data from the Meta Ad Library, read on "
+        f"{audit.get('checked_on', '')}. No website audit, tracking check or page-speed test was "
+        f"performed for this report - run the full pipeline for the complete audit. Generated by "
+        f"the {YOUR_AGENCY} audit engine.", ST["small"]))
+    return story
+
+
+def generate_ads_only_pdf(audit, out_path=None):
+    """Render an ads-only (live ad activity) report. Returns the output path."""
+    company = audit.get("company") or audit.get("website", "audit")
+    slug = re.sub(r"[^a-zA-Z0-9]+", "_", company)[:50]
+    ads_only_dir = os.path.join(os.path.dirname(BASE_DIR), "02-OUTREACH", "ads_only_pdfs")
+    if out_path is None:
+        os.makedirs(ads_only_dir, exist_ok=True)
+        out_path = os.path.join(ads_only_dir, f"audit_{slug}.pdf")
+
+    doc = SimpleDocTemplate(
+        out_path, pagesize=A4,
+        leftMargin=MARGIN, rightMargin=MARGIN, topMargin=32 * mm, bottomMargin=15 * mm,
+        title=f"Ads Audit (live ad activity) - {company}",
+        author=f"{YOUR_NAME} - {YOUR_AGENCY}",
+        subject="Live Meta ad activity report - website audit not included",
+    )
+    doc.build(build_ads_only_story(audit), onFirstPage=header_footer, onLaterPages=header_footer)
+    return out_path
+
+
+# ---------------------------------------------------------------------------
 # Story
 # ---------------------------------------------------------------------------
 
