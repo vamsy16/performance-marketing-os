@@ -5,17 +5,17 @@ Phone: N/A
 Website: 
 Audit Score: 0/100
 Template: competitor_gap
-Generated: 2026-10-18 14:33
+Generated: 2026-10-19 14:24
 
 --- SUBJECT ---
-Noticed something about Sri Balaji Solar Energies's online presence
+Noticed something about Sri Balaji Solar Energies' online presence
 
 --- BODY ---
 Hi,
 
 I specialize in helping solar companies in Hyderabad get more installation enquiries.
 
-When I looked at Sri Balaji Solar Energies's online setup, I noticed a few gaps that are pretty common (but costly):
+When I looked at Sri Balaji Solar Energies' online setup, I noticed a few gaps that are pretty common (but costly):
 
   • not being able to run retargeting ads to people who visited their site
   • having no way to measure which marketing is actually working

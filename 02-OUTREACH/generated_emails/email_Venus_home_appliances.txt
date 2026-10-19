@@ -1,14 +1,14 @@
 === EMAIL FOR: Venus home appliances ===
 City: Hyderabad
-To: (no email found)
-Phone: N/A
+To: enquiry@venushomeappliances.com
+Phone: +91 8144666999
 Website: https://VENUSHOMEAPPLIANCES.COM
 Audit Score: 5/100
 Template: audit_hook
-Generated: 2026-10-18 14:33
+Generated: 2026-10-19 14:24
 
 --- SUBJECT ---
-Quick question about Venus home appliances's website
+Quick question about Venus home appliances' website
 
 --- BODY ---
 Hi,

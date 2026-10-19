@@ -48,6 +48,13 @@ YOUR_SIGNATURE = f"{YOUR_NAME}\n{YOUR_AGENCY}\n{YOUR_PHONE}"
 # Email Templates (3 variants — pick based on situation)
 # ---------------------------------------------------------------------------
 
+def possessive(name):
+    """English possessive that does not produce "Systems's" for a company
+    name already ending in s (e.g. "AB Solar Power Systems' website")."""
+    n = (name or "").strip()
+    return n + ("'" if n.endswith("s") else "'s")
+
+
 def template_audit_hook(lead, audit):
     """
     Template 1: The Audit Hook (best for companies with LOW scores = lots of issues)
@@ -62,7 +69,7 @@ def template_audit_hook(lead, audit):
     top_issues = issues[:2] if issues else ["a few things I noticed"]
     issue_bullets = "\n".join(f"  • {issue}" for issue in top_issues)
 
-    subject = f"Quick question about {name}'s website"
+    subject = f"Quick question about {possessive(name)} website"
 
     body = f"""Hi,
 
@@ -108,13 +115,13 @@ def template_competitor_gap(lead, audit):
 
     gap_list = "\n".join(f"  • {g}" for g in gaps[:2])
 
-    subject = f"Noticed something about {name}'s online presence"
+    subject = f"Noticed something about {possessive(name)} online presence"
 
     body = f"""Hi,
 
 I specialize in helping solar companies in {city} get more installation enquiries.
 
-When I looked at {name}'s online setup, I noticed a few gaps that are pretty common (but costly):
+When I looked at {possessive(name)} online setup, I noticed a few gaps that are pretty common (but costly):
 
 {gap_list}
 
@@ -149,7 +156,7 @@ def template_speed_urgent(lead, audit):
 
     body = f"""Hi,
 
-Quick data point: {name}'s website scores {perf}/100 on Google's mobile speed test.
+Quick data point: {possessive(name)} website scores {perf}/100 on Google's mobile speed test.
 
 Studies show that for every second a page takes to load, conversions drop by ~7%. At {perf}/100, you're likely losing a significant chunk of mobile visitors before they ever see your offer.
 
