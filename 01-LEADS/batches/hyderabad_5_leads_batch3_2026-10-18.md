@@ -195,6 +195,20 @@ The gate refuses to pass a report that carries a fake score, a fake pixel
 finding, or a missing Library ID. The **full** audit PDFs (with website score,
 pixels, PageSpeed) still need the five `run_pipeline.py` commands below.
 
+### The outreach emails for these 5 are already written too
+
+```bash
+cd 02-OUTREACH
+python ads_only_outreach.py --export   # rebuilds the emails + sequence manifest
+```
+
+Writes `generated_emails/ads_only_email_<Company>.txt` (one per lead, each with
+the PDF to attach named at the top) and registers all five in
+`generated_emails/sequence_manifest.json` as `report_kind=ads_only`, so the
+Gmail workflow attaches the **live-ad PDF**, not a full audit. Every line comes
+from the Ad Library data above — the emails say out loud that they are an ad
+report, not a website audit.
+
 ## What Arena does next (after you push)
 
 1. Re-runs `verify_report.py --all` on the pushed reports.
