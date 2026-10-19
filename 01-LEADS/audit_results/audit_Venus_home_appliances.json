@@ -2,9 +2,9 @@
   "company": "Venus home appliances",
   "city": "Hyderabad",
   "website": "https://VENUSHOMEAPPLIANCES.COM",
-  "audit_date": "2026-10-18 16:03",
+  "audit_date": "2026-10-19 09:31",
   "ssl": true,
-  "load_time_seconds": 0.85,
+  "load_time_seconds": 0.89,
   "pixels": {
     "meta_pixel": true,
     "google_ads": true,
@@ -43,8 +43,8 @@
     "error": "API returned 429"
   },
   "page_count": {
-    "sitemap_pages": 346,
-    "has_sitemap": true
+    "linked_pages": 87,
+    "has_sitemap": false
   },
   "local_signals": {
     "has_google_maps_embed": false,
@@ -82,25 +82,25 @@
     "whatsapp": ""
   },
   "ad_library": {
-    "checked_at": "2026-10-18 16:03",
+    "checked_at": "2026-10-19 09:31",
     "meta_own": {
       "query": "Venus home appliances",
-      "results_label": "~90 results",
-      "results_count": 90,
+      "results_label": "~91 results",
+      "results_count": 91,
       "ads": [
         {
           "library_id": "1601332488377612",
           "page_name": "Venus home appliances",
-          "started": "9 Aug 2026",
+          "started": "Aug 9, 2026",
           "text": "The VENUS Experience Centre is now open in Bangalore! Experience India's complete range of Water Heaters, Heat Pumps, Solar Solutions, Tankless Water Heaters and BLDC Fans—all under one roof. Visit today and discover the perfect solution for your home or business.\nHTTPS://WWW.VENUSHOMEAPPLIANCES.COM/\nVisit the New VENUS Experience Centre\nExperience. Compare. Choose with Confidence.\nGet Directions\nExperience. Compare. Choose with Confidence.\nHTTPS://WWW.VENUSHOMEAPPLIANCES.COM/\nEvery Water Heater. One Destination.\nFind the perfect water heater for your needs.\nGet Directions\nFind the perfect water heater for your needs.\nHTTPS://WWW.VENUSHOMEAPPLIANCES.COM/\nExperience Technology Live\nSee it. To",
           "image_urls": [
-            "https://scontent.fblr2-2.fna.fbcdn.net/v/t39.35426-6/771629126_4436200756634439_1546983187229772392_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=EDW-8hK_jpkQ7kNvwFL87io&_nc_oc=AdoQ3rPwNmNojzdIxF99cDKqsYy8E7qsTaaICBIpjfhle1R9CeLLGnEVk6fpoKxZU0pr_DhCA0GpD4BPaUlkmUY-&_nc_zt=14&_nc_ht=scontent.fblr2-2.fna&_nc_gid=z_MP9-PEoguUZQ5BIyQQSw&_nc_ss=7b289&oh=00_AQNKawGSlDFbtn-RXXAJIwm2LLxrH_4o5LrpXzCQBmsXmw&oe=6ADA6D66",
-            "https://scontent.fblr2-2.fna.fbcdn.net/v/t39.35426-6/770093260_1760515538305840_1716614496657730395_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-9TLmymSxg8Q7kNvwEegNBv&_nc_oc=Adro1eUrIbGTd7g4w0v6gZFZStmGMdz-vbCpDCuhPhbs9AlAvHMjbb7SBPtAbXOmKugUOoasHpV_PV8BciyG9P63&_nc_zt=14&_nc_ht=scontent.fblr2-2.fna&_nc_gid=z_MP9-PEoguUZQ5BIyQQSw&_nc_ss=7b289&oh=00_AQPKSdYWNoKXfcyFoBNuC72yxVPyEYMRumIsbxiySqOlxA&oe=6ADA5933",
-            "https://scontent.fblr2-2.fna.fbcdn.net/v/t39.35426-6/769222488_1032701162949206_8361600260652764390_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=o7PcxQs8Qd8Q7kNvwHVm202&_nc_oc=AdqIs1vONN55Ob9xEbWmz5NUCGJhcXdY5vbQtb0RFjOV_hMFuzKqCM22WWTPLjfq81BIk6evAusuK96znm14MUEi&_nc_zt=14&_nc_ht=scontent.fblr2-2.fna&_nc_gid=z_MP9-PEoguUZQ5BIyQQSw&_nc_ss=7b289&oh=00_AQMJ2OhUFCojwS24LkUluL4zc6Jom5FOCr1IRJyxMozAtA&oe=6ADA72D8"
+            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/771629126_4436200756634439_1546983187229772392_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3hJbC1B8pegQ7kNvwHMJi5N&_nc_oc=AdpMtMnbjDlbRetTxcYRdOeS37ApZRfzyslRK6T_9EQ2cYMCRNh_In8hBIBHlSH370Y&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=lwS9xMiLGFABu9YAsALcyw&_nc_ss=7b289&oh=00_AQPsrp7KEiOo8-oNAMOtI86gL5xFeqD11m9OlKKLgYmjMQ&oe=6ADBBEE6",
+            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/770093260_1760515538305840_1716614496657730395_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vpR8ASeBRAIQ7kNvwFZ4Fab&_nc_oc=AdrCelZC_L2kO2NHWfWGtY2Ww1h87B-lZUJKs6dZnex4TZwLsqOLXC1WjEZ77dXjYs8&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=lwS9xMiLGFABu9YAsALcyw&_nc_ss=7b289&oh=00_AQNPBkyerrHDJd-XiPVzvLEyaGbPLV56Nrm1D4Hqn5JP5A&oe=6ADBAAB3",
+            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/769222488_1032701162949206_8361600260652764390_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=o7PcxQs8Qd8Q7kNvwFkvlZT&_nc_oc=AdpC5YcUrO0m9VEEt-dSQiDASR4JloaNo9zftIRnae1fjNInGHnZfWNUbhjmS-JYGS8&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=lwS9xMiLGFABu9YAsALcyw&_nc_ss=7b289&oh=00_AQOnJvZn6dE3GlE5umXKogzdCZkorViTcNtUjOW0iVGN_Q&oe=6ADBC458"
           ],
           "images": [
-            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\Venus_home_appliances\\771629126_4436200756634439_154_16855304.jpg",
-            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\Venus_home_appliances\\770093260_1760515538305840_171_13032498.jpg"
+            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/771629126_4436200756634439_154_74788879.jpg",
+            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/770093260_1760515538305840_171_1586254.jpg"
           ],
           "library_url": "https://www.facebook.com/ads/library/?id=1601332488377612",
           "destination": "",
@@ -109,7 +109,7 @@
         {
           "library_id": "1716546572757274",
           "page_name": "Venus home appliances",
-          "started": "6 Aug 2026",
+          "started": "Aug 6, 2026",
           "text": "Never wait for hot water again. Venus Tankless Water Heaters provide instant hot water, save space, and are designed for energy-efficient performance. Upgrade your home with smart water heating today.\n0:00 / 1:00\nHTTPS://WWW.VENUSHOMEAPPLIANCES.COM/\nHot Water, Instantly with Venus Tankless Water Heaters\nInstant hot water. Energy efficient. Compact design.\nOrder now",
           "image_urls": [],
           "images": [],
@@ -120,16 +120,16 @@
         {
           "library_id": "1634933028227929",
           "page_name": "Venus home appliances",
-          "started": "19 Aug 2026",
+          "started": "Aug 19, 2026",
           "text": "Venus - the most reliable name in Home Appliances including Water Heaters, Solar Water Heaters and High-performance Fans.\nVENUSHOMEAPPLIANCES.COM\nVENUS Water Heaters Now in Hyderabad\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nGet Directions\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nVENUSHOMEAPPLIANCES.COM\nVENUS Water Heaters Now in Hyderabad\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nGet Directions\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nVENUSHOMEAPPLIANCES.COM\nVENUS Water Heaters Now in Hyderabad\nVisit GKK Electricals for the latest VENUS range and ",
           "image_urls": [
-            "https://scontent.fblr2-3.fna.fbcdn.net/v/t39.35426-6/772735182_1663495645499486_2474988722221012476_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=eU4TL5qrFoEQ7kNvwFPuahW&_nc_oc=AdqX2ON6abkQTAETdRWt4KeQEJr0cUE_TTUDQmNdZDeuJB43Tf5LGmIJDvivLkgjRnniUFiS-CMmQNKyfZtNlQ5I&_nc_zt=14&_nc_ht=scontent.fblr2-3.fna&_nc_gid=z_MP9-PEoguUZQ5BIyQQSw&_nc_ss=7b289&oh=00_AQNbZszzWYAnkVHr7gqC2bbwyq2XP7l_2cGpYPG-Inxb3Q&oe=6ADA8307",
-            "https://scontent.fblr2-2.fna.fbcdn.net/v/t39.35426-6/769403501_1045846358303612_8400512787032328291_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=oMYA5Zz9tRAQ7kNvwH4_9rw&_nc_oc=AdoQdXGVTmmyHMQcNE4AuKpJm2utrXPJhtJd24nV8jbDZ6EOYH00E_nuRb079AvG6oPbmokQGosWeS6ImGM2UvB7&_nc_zt=14&_nc_ht=scontent.fblr2-2.fna&_nc_gid=z_MP9-PEoguUZQ5BIyQQSw&_nc_ss=7b289&oh=00_AQNXGuvBSjtIcPI6Pgd69jAiXc852X1ftoKA0O5LxKt-nA&oe=6ADA7A35",
-            "https://scontent.fblr2-3.fna.fbcdn.net/v/t39.35426-6/772434001_1499243515337989_8726947715847260551_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=S1qShBHbA-kQ7kNvwEMwLqo&_nc_oc=AdpB8b7L8z-ZG4QvpB8K02B0bEqMjEbi30oJOorNdouyZxSiPM6wUl-14TUoLdzWsGhoWZKEVXDMbwEU8wXqVFRt&_nc_zt=14&_nc_ht=scontent.fblr2-3.fna&_nc_gid=z_MP9-PEoguUZQ5BIyQQSw&_nc_ss=7b289&oh=00_AQMg69r-1xeJn6OMKSYcvTZC47q8mosqh4OClzfdLcamag&oe=6ADA8145"
+            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/772735182_1663495645499486_2474988722221012476_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=eU4TL5qrFoEQ7kNvwEt37jw&_nc_oc=AdpKJuZKqjQp22WicqzcQLnVKeReVnudgOtT67By1HKD7k20i-q1kndqU5lkfI4Sr3k&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=lwS9xMiLGFABu9YAsALcyw&_nc_ss=7b289&oh=00_AQOSyREMGFCo0DZ1wPipJluTCIewRor3zjfKp9a24qAV1Q&oe=6ADB9C47",
+            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/769403501_1045846358303612_8400512787032328291_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=f95ReBlcMVkQ7kNvwEM1m0p&_nc_oc=Adpjjb0KXhBLH5kEDsYaF3bJT1BW9kWaT2MaXReFo2I2pnP7gz1sGA7szhJFyb_X9HM&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=lwS9xMiLGFABu9YAsALcyw&_nc_ss=7b289&oh=00_AQMJROtI6z1-_xREVJr8Bb4WkaDRHKHP621yBUbPduz5aQ&oe=6ADBCBB5",
+            "https://scontent-iad3-2.xx.fbcdn.net/v/t39.35426-6/772434001_1499243515337989_8726947715847260551_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=S1qShBHbA-kQ7kNvwGwO4GS&_nc_oc=AdriV3Hv6tELY1mx6SepWyz9v_G4nr6n9uMUa5SBPR9L35R--b8aEGx6TVPIMN1l2J8&_nc_zt=14&_nc_ht=scontent-iad3-2.xx&_nc_gid=lwS9xMiLGFABu9YAsALcyw&_nc_ss=7b289&oh=00_AQM0IZRnkkH5fAEutC_6eCnKSWXMJznD73Vk3XJmyWdpPg&oe=6ADB9A85"
           ],
           "images": [
-            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\Venus_home_appliances\\772735182_1663495645499486_247_32567584.jpg",
-            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\Venus_home_appliances\\769403501_1045846358303612_840_77287847.jpg"
+            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/772735182_1663495645499486_247_70973911.jpg",
+            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/769403501_1045846358303612_840_11740625.jpg"
           ],
           "library_url": "https://www.facebook.com/ads/library/?id=1634933028227929",
           "destination": "",
@@ -138,16 +138,16 @@
         {
           "library_id": "1022134620582672",
           "page_name": "Venus home appliances",
-          "started": "1 Aug 2026",
+          "started": "Aug 1, 2026",
           "text": "Why heat and store water when you only need it instantly?\nHTTPS://WWW.VENUSHOMEAPPLIANCES.COM/PRODUCT/TANKLE...\nInstant Hot Water. Zero Waiting\nCompact, energy-efficient & built for continuous hot water.\nShop Now\nCompact, energy-efficient & built for continuous hot water.\nHTTPS://WWW.VENUSHOMEAPPLIANCES.COM/PRODUCT/TANKLE...\nSave Energy with Tankless Technology\nHot water only when you need it.\nShop Now\nHot water only when you need it.\nHTTPS://WWW.VENUSHOMEAPPLIANCES.COM/PRODUCT/TANKLE...\nUpgrade to Smart Hot Water\nFast heating. Compact design. Reliable performance.\nShop Now\nFast heating. Compact design. Reliable performance.\nHTTPS://WWW.VENUSHOMEAPPLIANCES.COM/PRODUCT/TANKLE...\nCompact Desig",
           "image_urls": [
-            "https://scontent.fblr2-2.fna.fbcdn.net/v/t39.35426-6/762276280_27713128891685251_2990382106435138395_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-_vv1CMzjz8Q7kNvwHXYHHz&_nc_oc=AdpN7nprqXwgF7xdREipK6EJbgY2iczGRwA97TeaGx5cUSQpLmrqpYDx7OXt0--bhfou2ialdk7o1pPxzPlCM4pW&_nc_zt=14&_nc_ht=scontent.fblr2-2.fna&_nc_gid=z_MP9-PEoguUZQ5BIyQQSw&_nc_ss=7b289&oh=00_AQMscAvEf9iR_Ss96TgbxL_ypFzq7l3Jm6hUjgZ8N7pZKw&oe=6ADA7699",
-            "https://scontent.fblr2-3.fna.fbcdn.net/v/t39.35426-6/763701385_1592015422519138_9799658591181291_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=0DuwT6hlflsQ7kNvwHYtEw2&_nc_oc=Adr8xRTKX6ZbhQy7Zs-3zlFN5kzcz0Yz5mqwPkC0M5qHABYX3TSmwhLfYyseygdEkkj8wXSJp5PFxha7w4DQs3W8&_nc_zt=14&_nc_ht=scontent.fblr2-3.fna&_nc_gid=z_MP9-PEoguUZQ5BIyQQSw&_nc_ss=7b289&oh=00_AQPwiULkePp4Q2WCtj9gepsHvxYqJOXAmZQ4kp4cAFg6dg&oe=6ADA676F",
-            "https://scontent.fblr2-3.fna.fbcdn.net/v/t39.35426-6/759810009_27175787448766944_1404147249111069918_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HuTLvds_Ht0Q7kNvwHSWoJn&_nc_oc=AdrVDGdPLAHo6yyZVLLloJ0zwL4BU7tHLEuju-r_DKHFjO2uhi_4kCSRpF61IM5Ymhg91I1glzlF-7QdgfX72BTv&_nc_zt=14&_nc_ht=scontent.fblr2-3.fna&_nc_gid=z_MP9-PEoguUZQ5BIyQQSw&_nc_ss=7b289&oh=00_AQMsS6GBhMEcoN9dX8O5anuwCxzZy8CYhkR4J_-GaAehHQ&oe=6ADA6E38"
+            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/762276280_27713128891685251_2990382106435138395_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-_vv1CMzjz8Q7kNvwElCcN5&_nc_oc=AdolUzwdu5bK5cU8cIN8Zm4LQvTut3AwHGJRgaGH8NTa0vLrULgF-s2ZAYkjp2TsqZQ&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=lwS9xMiLGFABu9YAsALcyw&_nc_ss=7b289&oh=00_AQOOTSlDtxxlXBnANKmhuwwMaRTi2jQF4mRy9Zwjv-8Wvg&oe=6ADBC819",
+            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/763701385_1592015422519138_9799658591181291_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=0DuwT6hlflsQ7kNvwFLWMo0&_nc_oc=AdrGJR8pUvEtX4LSYRIbVJmkCqOo1FrXdmaHkXqr9PC3TkB8HPLqeuDMwGbtHGpGzhs&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=lwS9xMiLGFABu9YAsALcyw&_nc_ss=7b289&oh=00_AQM9ucVfXekjuZaED6s4fF4KjT-or_MG5UhZ9W-clOxy4A&oe=6ADBB8EF",
+            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/759810009_27175787448766944_1404147249111069918_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HuTLvds_Ht0Q7kNvwFBV7_q&_nc_oc=Adof_BDK4zIqKCCt6y2Ugz1TgNt2B9uX5Xg7UITc6Z19YGLxrLCV16g8Z0P6-h25dK4&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=lwS9xMiLGFABu9YAsALcyw&_nc_ss=7b289&oh=00_AQPr9Ju7Hd6BBc3tQz2C600937LA3UEJHJReWM5H_WtXUQ&oe=6ADBBFB8"
           ],
           "images": [
-            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\Venus_home_appliances\\762276280_27713128891685251_29_18408819.jpg",
-            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\Venus_home_appliances\\763701385_1592015422519138_979_61702731.jpg"
+            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/762276280_27713128891685251_29_96295221.jpg",
+            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/763701385_1592015422519138_979_64379132.jpg"
           ],
           "library_url": "https://www.facebook.com/ads/library/?id=1022134620582672",
           "destination": "https://www.venushomeappliances.com/product/tankless-water-heater",
@@ -156,7 +156,7 @@
         {
           "library_id": "1621604429303607",
           "page_name": "Venus home appliances",
-          "started": "18 Sep 2026",
+          "started": "Sep 18, 2026",
           "text": "The future of energy is getting brighter.\nDiscover Venus Solar Power Solutions and explore a smarter way to harness the power of the sun for your home or business.\n0:00 / 2:03\nAPI.WHATSAPP.COM\nYour Energy. Powered by the Sun.\nDiscover solar solutions from Venus.\nSee details",
           "image_urls": [],
           "images": [],
@@ -170,55 +170,52 @@
     },
     "meta_competitors": {
       "query": "solar Hyderabad",
-      "results_label": "~340 results",
-      "results_count": 340,
+      "results_label": "~330 results",
+      "results_count": 330,
       "ads": [
         {
           "library_id": "942037648839408",
           "page_name": "Sri Balaji Solar Energies",
-          "started": "29 May 2026",
+          "started": "May 29, 2026",
           "text": "🌞 ఇకపై కరెంట్ బిల్లు కట్టే పని లేదు!\nమీ ఇంటిపై సోలార్ సిస్టమ్ అమర్చుకోండి... ₹0 (సున్నా) ముందస్తు ఖర్చుతో!*\nశ్రీ బాలాజీ సోలార్ ఎనర్జీస్ (Sri Balaji Solar Energies) - 14 సంవత్సరాల నమ్మకం. 🏛\nమా ప్రత్యేకతలు: \n✅ కేంద్ర ప్రభుత్వం నుండి ₹78,000/- వరకు సబ్సిడీ! ✅ నెలకు కరెంట్ బిల్లు బదులు, కేవలం ₹1355/- EMI కట్టండి. \n✅ 10,000+ సంతృప్తికరమైన కస్టమర్లు. \n✅ ప్రభుత్వ ఉద్యోగులకు కూడా సబ్సిడీ వర్తిస్తుంది.\n⚡  కొత్తగూడెం , నర్సంపేట, వరంగల్ (Warangal) , హన్మకొండ (Hanumakonda), రాజమహేంద్రవరం, భద్రాచలం, ఘట్‌కేసర్ హుజూరాబాద్ and hyderabad మరియు చుట్టుపక్కల జిల్లాల్లో సర్వీస్ కలదు.\n\n👇 ఈ రోజే ఫ్రీ సైట్ విజిట్ (Free Site Visit) లభిస్తుంది\nFB.ME\n🌞 ఇకపై కరెంట్ బిల్లు కట్టే పని లేదు!\n✅ కేవలం ₹1355/- EMI కట్టండి. ✅ ",
           "image_urls": [
-            "https://scontent.fblr2-3.fna.fbcdn.net/v/t39.35426-6/612709264_1552468135986225_1240266142572683594_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_eFzxzTHYU8Q7kNvwGKZkKK&_nc_oc=Adqxf3LLIvYREhDtr9GlvfoTu9EDM-3Xg5KY2nY2I9RektjNaeUsuvPzmYUnQ1B6F0v47suGbaHKfnMfTFqCHXn_&_nc_zt=14&_nc_ht=scontent.fblr2-3.fna&_nc_gid=FnRKnRYawYoOd9kyCC9oQA&_nc_ss=7b289&oh=00_AQOPPgKbXUFdNuXhmbQYYHPAZv-SOjrr89ABJbvwnkwZ4g&oe=6ADA6DE4"
+            "https://scontent-iad3-1.xx.fbcdn.net/v/t39.35426-6/612709264_1552468135986225_1240266142572683594_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=i5b_rLgAUbYQ7kNvwGiJ3qc&_nc_oc=Ado1iWQadVX8MJTIl2zmA4SC6SbOkpajI256FwCl-9XOnSTDEk35fvz-RGOTZg96Ogc&_nc_zt=14&_nc_ht=scontent-iad3-1.xx&_nc_gid=SJbInrwFtforBa-REBLP1Q&_nc_ss=7b289&oh=00_AQOCP9IImFYdJNybUaiCo7iUnE7DdQLuAhaxcCGjOKCqPA&oe=6ADBBF64"
           ],
           "images": [
-            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\Venus_home_appliances\\612709264_1552468135986225_124_61215985.jpg"
+            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/612709264_1552468135986225_124_7175669.jpg"
           ],
           "library_url": "https://www.facebook.com/ads/library/?id=942037648839408",
           "destination": "http://fb.me/",
           "whatsapp": ""
         },
         {
-          "library_id": "2110991659634519",
-          "page_name": "ORBIT SOLAR",
-          "started": "10 Dec 2025",
-          "text": "🏡 “They trusted us. You can too.”\n5+ years, 1000+ installations across Hyderabad — all with 25-year guarantees.\n\n🌞 orbitsolar.in\n📱 +91-9059806772\nFB.ME\nSee How Much You Can Save\nSign Up\n \nFB.ME\nSave ₹3,000/Month Like Him\nSign Up\n \nFB.ME\nCut Your Bill by 90% Too\nSign Up\n \nFB.ME\nGet ₹78K Subsidy - Zero Hassle\nSign Up\n \nFB.ME\nGet a Solar Pergola Like This\nSign Up\n \nFB.ME\nJoin 1000+ Happy Homes\nSign Up",
-          "image_urls": [
-            "https://scontent.fblr2-3.fna.fbcdn.net/v/t39.35426-6/595637113_843065571766706_2520315710846868498_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Rilprk_Eo9EQ7kNvwGYYyf4&_nc_oc=Adop8BkYNm_4Z-fAxFJbaU38nuTekx5IETOM-oxlUIAD8Jy20oKEcazvjMsu6As4dNUV28E6MsGJBeQDR499uysk&_nc_zt=14&_nc_ht=scontent.fblr2-3.fna&_nc_gid=FnRKnRYawYoOd9kyCC9oQA&_nc_ss=7b289&oh=00_AQOGsuPeLA-plIhC_nqqXzP0QODNZKF63FzjyEaEQHCgcA&oe=6ADA68A0",
-            "https://scontent.fblr2-2.fna.fbcdn.net/v/t39.35426-6/594423875_1532465847848295_2310081715217635639_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_4da1SgcjRwQ7kNvwEJOAu5&_nc_oc=Adqcr8QHIHqP3paWkxBRiMe7_aGOAkpGHkRqguDa0Vg9CL5TJ33YkNz6fYmx86uFTUrB_hhp8wIjkjwJCYNmWkFU&_nc_zt=14&_nc_ht=scontent.fblr2-2.fna&_nc_gid=FnRKnRYawYoOd9kyCC9oQA&_nc_ss=7b289&oh=00_AQN4tSkZjUUv5Dj8ZsYk-loYIOsksK3iQklv8auSpJ9Mdw&oe=6ADA6F92",
-            "https://scontent.fblr2-2.fna.fbcdn.net/v/t39.35426-6/594134128_868943678979381_480540375743244641_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1ZDAU7TxN60Q7kNvwHP1mmb&_nc_oc=AdpPjJA-9-7vCHHFv0kCHllfuTJi0LWaU-cnx2Zqtv8ITjbS-ZK_iwCMlOHa6-qZW8greW5SMLXYbO1OM0jIm1Nh&_nc_zt=14&_nc_ht=scontent.fblr2-2.fna&_nc_gid=FnRKnRYawYoOd9kyCC9oQA&_nc_ss=7b289&oh=00_AQPU3AkmNxkzqbwZaxW4BPrh_FS_WfJvqqzaQyvSEMWk_w&oe=6ADA6A11"
-          ],
-          "images": [
-            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\Venus_home_appliances\\595637113_843065571766706_2520_4643648.jpg",
-            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\Venus_home_appliances\\594423875_1532465847848295_231_28288860.jpg"
-          ],
-          "library_url": "https://www.facebook.com/ads/library/?id=2110991659634519",
-          "destination": "http://fb.me/",
-          "whatsapp": ""
-        },
-        {
           "library_id": "1970895137170804",
           "page_name": "AB Solar Power Systems",
-          "started": "11 Oct 2026",
+          "started": "Oct 11, 2026",
           "text": "This Dussehra, Hyderabad homes can go solar with ₹0 down payment on eligible EMI plans, ₹22,000 off from AB Solar, and up to ₹78,000 government subsidy*. Book a free site visit.\n\n📞 Call us: +91 80990 40600 | 9121 9121 35\n🌐 Visit: www.absolar.in\n📍 Serving Hyderabad & surrounding areas.\nFB.ME\nDussehra Offer: ₹22,000 Off\nGet offer",
           "image_urls": [
-            "https://scontent.fblr2-3.fna.fbcdn.net/v/t39.35426-6/841439167_1424386869844643_2611946368120982355_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=efO-hbYs6UkQ7kNvwEx36AK&_nc_oc=Adqt845w1x1cSwhCH87e9ydDkKKtazFNIu2karKxdGOOZ2udCK1Hb11OF1hLuxJFsxtGh-JlUvlbNjG_LgIBPf79&_nc_zt=14&_nc_ht=scontent.fblr2-3.fna&_nc_gid=FnRKnRYawYoOd9kyCC9oQA&_nc_ss=7b289&oh=00_AQOcfdpzRjBgTwXZVynCdaSXXTWLO26YmjWZOTtGVrn0BQ&oe=6ADA7273"
+            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/841439167_1424386869844643_2611946368120982355_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=efO-hbYs6UkQ7kNvwFX_uTf&_nc_oc=Adpgr2TZcWWHizex6fa1cBZkJkdqxrpgZVgjleSHyoDDppHrQnp8aP8dDqLFtJPn6M8&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=SJbInrwFtforBa-REBLP1Q&_nc_ss=7b289&oh=00_AQP6y-YZQuiBQQASPbT1Z2dkEqVs3oI31xgYFS2UCvk0Nw&oe=6ADBC3F3"
           ],
           "images": [
-            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\Venus_home_appliances\\841439167_1424386869844643_261_3677617.jpg"
+            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/841439167_1424386869844643_261_99406218.jpg"
           ],
           "library_url": "https://www.facebook.com/ads/library/?id=1970895137170804",
           "destination": "http://www.absolar.in/",
+          "whatsapp": ""
+        },
+        {
+          "library_id": "1553074916624250",
+          "page_name": "Suryon",
+          "started": "Oct 1, 2026",
+          "text": "Your Roof Can Save You Money! Go solar, reduce your monthly electricity expenses\nFB.ME\nReduce Your Electricity Bill with Rooftop Solar!\nGenerate your own clean electricity and enjoy long-term savings on your monthly power bills. Check your solar eligibility, subsidy benefits, and suitable system size with our solar experts.\nSign up",
+          "image_urls": [
+            "https://scontent-iad3-1.xx.fbcdn.net/v/t39.35426-6/790509774_1761904034702808_833261644955310676_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Lu0d5kgvYdcQ7kNvwFIZf9C&_nc_oc=AdoEjfW6YnlYtkIFNIp23-jqeis1OTN1-TTA_FK5RNEJQI71jdsxu-0gITBNO_-9JSU&_nc_zt=14&_nc_ht=scontent-iad3-1.xx&_nc_gid=SJbInrwFtforBa-REBLP1Q&_nc_ss=7b289&oh=00_AQM-9FJOQ0sLO_hNZbgAI351s-sT7qRf4iRsyWWp5yV2qw&oe=6ADB9E1D"
+          ],
+          "images": [
+            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/790509774_1761904034702808_833_71896338.jpg"
+          ],
+          "library_url": "https://www.facebook.com/ads/library/?id=1553074916624250",
+          "destination": "http://fb.me/",
           "whatsapp": ""
         }
       ],
@@ -265,29 +262,29 @@
           }
         },
         {
-          "name": "Orbit Solar Energy System",
+          "name": "AB SOLAR POWER SYSTEMS",
           "country": "IN",
-          "ad_count": 8,
+          "ad_count": 7,
           "detail": {
-            "name": "Orbit Solar Energy System",
+            "name": "AB SOLAR POWER SYSTEMS",
             "advertiser_id": "",
             "country": "IN",
-            "ad_count": 8,
-            "url": "https://adstransparency.google.com/advertiser/AR08333108226442657793?hl=en&region=anywhere",
+            "ad_count": 7,
+            "url": "https://adstransparency.google.com/advertiser/AR00983201834636148737?hl=en&region=anywhere",
             "images": [],
             "found": true,
             "image_files": []
           }
         },
         {
-          "name": "AB SOLAR POWER SYSTEMS",
+          "name": "WAAREE INFRASTRUCTURE & AGRITECH PRIVATE LIMITED",
           "country": "IN",
-          "ad_count": 7
+          "ad_count": 1
         }
       ],
-      "query": "Sri Balaji Solar Energies, ORBIT SOLAR, ORBIT"
+      "query": "Sri Balaji Solar Energies, AB Solar Power Systems, Suryon"
     },
     "notes": [],
-    "summary": "Venus home appliances is running active ads on Meta (Facebook/Instagram) — about 90 live results in the Ad Library. On Google's network, the transparency centre shows roughly 75 live ads. Meanwhile ~340 live Meta ads from competitors in Hyderabad and 3 Indian advertisers on Google Ads in the solar category are capturing the same customers."
+    "summary": "Venus home appliances is running active ads on Meta (Facebook/Instagram) — about 91 live results in the Ad Library. On Google's network, the transparency centre shows roughly 75 live ads. Meanwhile ~330 live Meta ads from competitors in Hyderabad and 3 Indian advertisers on Google Ads in the solar category are capturing the same customers."
   }
 }

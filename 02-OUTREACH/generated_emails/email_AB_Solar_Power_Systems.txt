@@ -1,0 +1,39 @@
+=== EMAIL FOR: AB Solar Power Systems ===
+City: Hyderabad
+To: (no email found)
+Phone: N/A
+Website: http://www.absolar.in/
+Audit Score: 7/100
+Template: competitor_gap
+Generated: 2026-10-19 09:45
+
+--- SUBJECT ---
+Noticed something about AB Solar Power Systems's online presence
+
+--- BODY ---
+Hi,
+
+I specialize in helping solar companies in Hyderabad get more installation enquiries.
+
+When I looked at AB Solar Power Systems's online setup, I noticed a few gaps that are pretty common (but costly):
+
+  • not being able to run retargeting ads to people who visited their site
+
+Most solar companies I work with fix these in the first week — and immediately know whether their marketing is working or not.
+
+Would you be open to a free 10-minute call where I walk you through exactly what I found and what I'd recommend? No pitch — just useful info.
+
+Either way, keep up the good work with solar in Hyderabad.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+--- MANUAL AD CHECK URLS ---
+Open these to see if they're running ads:
+  Google: https://adstransparency.google.com/?region=anywhere&q=www.absolar.in&country=IN
+  Meta:   https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=AB Solar Power Systems
+
+=== END ===
