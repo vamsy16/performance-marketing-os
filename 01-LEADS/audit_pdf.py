@@ -260,7 +260,9 @@ def next_steps(audit):
 
 
 def days_running(started):
-    for fmt in ("%d %b %Y", "%d %B %Y"):
+    # Meta's Ad Library prints both "13 Oct 2026" (card DOM) and
+    # "Oct 13, 2026" (page text) - accept either.
+    for fmt in ("%d %b %Y", "%d %B %Y", "%b %d, %Y", "%B %d, %Y"):
         try:
             start = datetime.strptime(started.strip(), fmt)
             return (datetime.now() - start).days
