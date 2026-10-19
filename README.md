@@ -53,6 +53,11 @@ That's it. You're now a solar marketing agency.
 | **Full audit** (`02-OUTREACH/audit_pdfs/`) | Website score, tracking/pixels, PageSpeed, conversion checklist **+** live Meta/Google ads | `python 01-LEADS/run_pipeline.py <site> "<Company>" --city <City>` |
 | **Live ad activity** (`02-OUTREACH/ads_only_pdfs/`) | Live ads only: Library IDs, start dates, ad copy, live permalinks, funnel, action plan. **States on page 1 that no website audit was run** | `python 01-LEADS/ads_only_report.py` |
 
+Each report kind has its own outreach path — `audit_outreach.py --export` for
+full audits, `ads_only_outreach.py --export` for live-ad reports. Both write
+the same `sequence_manifest.json` (4 steps per lead), and every sequence is
+tagged `report_kind` so the Gmail workflow knows which PDF to attach.
+
 Always gate before delivering: `python 01-LEADS/verify_report.py --all` for full
 reports, `python 01-LEADS/verify_report.py --ads-only` for the live-ad ones.
 

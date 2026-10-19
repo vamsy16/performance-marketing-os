@@ -1,0 +1,42 @@
+=== EMAIL FOR: Truzon Solar ===
+City: Hyderabad
+To: info@truzonsolar.com
+Phone: +91 9030032222
+Website: https://www.truzonsolar.com
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Truzon_Solar.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-19 13:41
+
+--- SUBJECT ---
+Truzon Solar: 3 live Hyderabad ads, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Truzon Solar is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-18):
+
+  - 3 live ads on Meta, running since 20 May 2026
+  - every click lands in Facebook lead form
+  - Every live creative is Hindi or Marathi. In Hyderabad the strongest solar ads run in Telugu to the same homeowners - your own head office is here, but your ads are not speaking the local language.
+  - 7 ads share one creative and 6 share another. You are buying reach on two ideas while competitors test new angles weekly.
+
+You can verify every line yourself:
+
+  Library ID 1522258176260844: https://www.facebook.com/ads/library/?id=1522258176260844
+  Library ID 1399945148943213: https://www.facebook.com/ads/library/?id=1399945148943213
+  Library ID 1001393986178171: https://www.facebook.com/ads/library/?id=1001393986178171
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

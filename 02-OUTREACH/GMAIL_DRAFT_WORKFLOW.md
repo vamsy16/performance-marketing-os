@@ -33,15 +33,33 @@ Rules enforced by `sequence.py` (not by memory):
 - State lives in `generated_emails/sequence_manifest.json` and survives
   re-running the generator.
 
+## Which PDF to attach
+
+`generated_emails/sequence_manifest.json` tags every sequence with
+`report_kind`:
+
+| `report_kind` | Attach | Built by |
+|---|---|---|
+| `full_audit` | `02-OUTREACH/audit_pdfs/audit_<Company>.pdf` | `python 01-LEADS/run_pipeline.py …` |
+| `ads_only` | `02-OUTREACH/ads_only_pdfs/audit_<Company>.pdf` | `python 01-LEADS/ads_only_report.py` |
+
+`ads_only` means **no website audit exists yet** — the report contains live
+Meta Ad Library data only and says so on page 1. Attach the live-ad PDF and
+never invent a score, a pixel finding or a page-speed number in the draft.
+
 ## Flow
 
 ```
 1. AUDIT      python 01-LEADS/discover_leads.py "solar Hyderabad"   (or run_pipeline.py)
+              No audit possible? Build the live-ad report instead:
+              python 01-LEADS/ads_only_report.py
 2. GENERATE   python 02-OUTREACH/audit_outreach.py --export
               -> email_*.txt + sequence_manifest.json (4 steps per lead)
+              (ads-only leads: python 02-OUTREACH/ads_only_outreach.py --export)
 3. DRAFT      Ask Arena: "create Gmail drafts from the sequence manifest"
               Agent, per lead WITH an email address:
-                - creates ONLY the step-0 Gmail draft (audit PDF attached)
+                - creates ONLY the step-0 Gmail draft, attaching the PDF from
+                  the "Which PDF to attach" table above
                 - records it: python sequence.py mark-draft --company "<X>" --step 0 \
                       --draft-id <id> --thread-id <id> --message-id <id>
                 - follow-up drafts are NOT created yet — see step 6
@@ -66,9 +84,11 @@ Rules enforced by `sequence.py` (not by memory):
 ```bash
 cd 02-OUTREACH
 python audit_outreach.py --export     # generate emails + sequence manifest
-python sequence.py status             # every lead, every step, due dates
+python ads_only_outreach.py --export  # same, for live-ad reports (report_kind=ads_only)
+python sequence.py status             # every lead, every step, due dates, report kind
 python sequence.py due                # follow-ups ready to draft today
 python sequence.py mark-sent --company "Ksquare Energy" --step 0
+python tests_sequence.py              # sequence engine tests
 ```
 
 Change the gap anytime: `SP_FOLLOWUP_DELAY_DAYS=3` (default 2).
@@ -79,3 +99,6 @@ Change the gap anytime: `SP_FOLLOWUP_DELAY_DAYS=3` (default 2).
 - Never create a follow-up as a new standalone mail, and never before the
   previous step is sent + recorded.
 - Never draft for a lead with no email address in the manifest.
+- For `report_kind=ads_only` leads, never write or imply a website audit
+  result (score, pixels, page speed) in the draft or its follow-ups — the
+  only evidence that exists is the live Meta Ad Library data.

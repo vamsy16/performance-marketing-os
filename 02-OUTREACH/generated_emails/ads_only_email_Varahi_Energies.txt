@@ -1,0 +1,38 @@
+=== EMAIL FOR: Varahi Energies ===
+City: Hyderabad
+To: varahienergies@gmail.com
+Phone: +91 9666120045
+Website: https://varahienergies.in
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Varahi_Energies.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-19 13:41
+
+--- SUBJECT ---
+Varahi Energies: no live ads while Hyderabad competitors buy the same homeowner
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Varahi Energies is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-18):
+
+  - No active Meta ads under your name - four Hyderabad installers are buying the same homeowner this week with the same Rs. 78,000-subsidy message.
+  - Every CTA on the site is a WhatsApp deep link. There is no email capture, so a visitor who does not reply cannot be followed up with, and no audience can be built.
+
+You can verify every line yourself:
+
+  Meta Ad Library search: https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Varahi%20Energies
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your ad presence is - and is not - doing in this market.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

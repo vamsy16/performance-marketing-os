@@ -162,5 +162,70 @@ class TestManifestPreservesState(unittest.TestCase):
         self.assertEqual(S.due_date_for(seq2, 1), "2026-10-20")
 
 
+
+
+
+# ---------------------------------------------------------------------------
+# Ads-only sequences (live-ad reports, no website audit)
+# ---------------------------------------------------------------------------
+
+ADS_ONLY_AUDIT = {
+    "company": "Truzon Solar", "city": "Hyderabad",
+    "ads_only": True, "website_audit_run": False, "checked_on": "2026-10-18",
+    "ad_library": {"meta_own": {"results_count": 3, "ads": [
+        {"library_id": "1522258176260844", "started": "May 20, 2026"}]}},
+    "funnel": {"type": "Facebook lead form"},
+    "findings": ["Every live creative is Hindi or Marathi."],
+    "contact": {"email": "info@truzonsolar.com"},
+}
+ADS_ONLY_LEAD = {"name": "Truzon Solar", "city": "Hyderabad",
+                 "email": "info@truzonsolar.com",
+                 "website": "https://www.truzonsolar.com"}
+
+
+class TestAdsOnlyFollowups(unittest.TestCase):
+    """Follow-ups for a lead with NO website audit must stay inside the
+    live-ad report - no score, no pixel/page-speed claims."""
+
+    FORBIDDEN = ["/100", "quick wins on your website", "meta pixel",
+                 "page-speed", "page speed", "audit score", "website score"]
+
+    def test_four_steps_and_threading_unchanged(self):
+        steps = S.build_steps(ADS_ONLY_LEAD, ADS_ONLY_AUDIT, "s", "b",
+                              ads_only=True)
+        self.assertEqual(len(steps), 4)
+        self.assertEqual(steps[3]["kind"], "breakup")
+        for s in steps[1:]:
+            self.assertEqual(s["subject"], "Re: s")
+
+    def test_bodies_stay_inside_the_ad_report(self):
+        steps = S.build_steps(ADS_ONLY_LEAD, ADS_ONLY_AUDIT, "s", "b",
+                              ads_only=True)
+        blob = "\n".join(s["body"] for s in steps).lower()
+        for phrase in self.FORBIDDEN:
+            self.assertNotIn(phrase, blob)
+        # but it does use the verified live-ad facts
+        self.assertIn("3", steps[1]["body"])
+        self.assertIn("Facebook lead form", steps[1]["body"])
+        self.assertIn("Hindi or Marathi", steps[1]["body"])
+        self.assertIn("Truzon Solar", steps[3]["body"])
+
+    def test_upsert_marks_report_kind(self):
+        m = {"version": 1, "sequences": []}
+        S.upsert_sequence(m, ADS_ONLY_LEAD, ADS_ONLY_AUDIT, "s", "b",
+                          ads_only=True)
+        self.assertEqual(m["sequences"][0]["report_kind"], "ads_only")
+        m2 = {"version": 1, "sequences": []}
+        S.upsert_sequence(m2, LEAD, AUDIT, "s", "b")
+        self.assertEqual(m2["sequences"][0]["report_kind"], "full_audit")
+
+    def test_ads_only_sequence_still_respects_the_clock(self):
+        m = {"version": 1, "sequences": []}
+        seq = S.upsert_sequence(m, ADS_ONLY_LEAD, ADS_ONLY_AUDIT, "s", "b",
+                                ads_only=True)
+        with self.assertRaises(SystemExit):
+            S.mark_draft(seq, 1, "draft-x")  # step 0 not sent yet -> refused
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

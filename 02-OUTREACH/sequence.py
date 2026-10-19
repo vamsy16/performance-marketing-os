@@ -75,10 +75,78 @@ def re_subject(subject):
     return f"Re: {s}"
 
 
-def followup_body(step, lead, audit):
-    """Body for follow-up `step` (1..3). Each adds new value, per templates."""
+def ad_facts(audit):
+    """Verified facts from an ADS-ONLY report (no website audit was run).
+    Everything here comes straight from the Meta Ad Library, so a follow-up
+    can reference it without inventing a website finding."""
+    meta = ((audit.get("ad_library") or {}).get("meta_own") or {})
+    ads = meta.get("ads") or []
+    findings = audit.get("findings") or []
+    return {
+        "n_ads": meta.get("results_count") or len(ads),
+        "funnel": (audit.get("funnel") or {}).get("type") or "a paid funnel",
+        "finding": findings[0] if findings else "",
+        "summary": audit.get("summary") or "",
+    }
+
+
+def followup_body(step, lead, audit, ads_only=False):
+    """Body for follow-up `step` (1..3). Each adds new value, per templates.
+
+    ads_only=True keeps every claim inside the live-ad report: no website
+    score, no pixel or page-speed findings - those numbers do not exist yet.
+    """
     name = lead.get("name", "there")
     city = lead.get("city", "")
+    if ads_only:
+        facts = ad_facts(audit)
+        if step == 1:
+            return f"""Hi,
+
+Following up on the live-ad report I sent for {name}.
+
+Right now {facts['n_ads']} of your ads are live on Meta, and every click lands
+in {facts['funnel']}. That means anyone who clicks and doesn't enquire is gone
+for good, and there is no way to tell which creative actually produces a
+booking.
+
+{facts['finding']}
+
+Happy to walk you through the 3 changes I'd make first on a 10-minute call -
+or just keep the report, no strings attached.
+
+Best,
+{YOUR_SIGNATURE}
+"""
+        if step == 2:
+            return f"""Hi,
+
+One thing I keep seeing in the {city} solar market: the installers who are
+winning right now are not the ones with the biggest ad budget, they are the
+ones whose ads speak to the {city} homeowner directly and send the click to a
+page they own.
+
+That is a fixable gap, and it is exactly what I help solar companies with.
+
+If lead flow ever becomes a priority for {name}, I would love to help.
+
+Best,
+{YOUR_SIGNATURE}
+"""
+        # step 3 - breakup
+        return f"""Hi,
+
+I have reached out a couple of times about the ad report for {name} with no
+response, so I will assume the timing is not right and close the loop.
+
+The report is yours to keep. If paid acquisition ever becomes a priority, my
+door is open.
+
+Wishing you a strong quarter.
+
+Best,
+{YOUR_SIGNATURE}
+"""
     issues = (audit.get("score", {}) or {}).get("issues", []) or []
     top_issue = issues[0] if issues else "a couple of quick wins on your website"
 
@@ -118,7 +186,7 @@ Best,
 """
 
 
-def build_steps(lead, audit, initial_subject, initial_body):
+def build_steps(lead, audit, initial_subject, initial_body, ads_only=False):
     """The full 4-step sequence for one lead (bodies + subjects, no state)."""
     steps = [{
         "step": 0, "kind": "initial",
@@ -130,7 +198,7 @@ def build_steps(lead, audit, initial_subject, initial_body):
             "step": n,
             "kind": "breakup" if n == MAX_STEP else "followup",
             "subject": re_subject(initial_subject),
-            "body": followup_body(n, lead, audit),
+            "body": followup_body(n, lead, audit, ads_only=ads_only),
             "delay_after_previous_days": FOLLOWUP_DELAY_DAYS,
         })
     return steps
@@ -162,12 +230,17 @@ def save_manifest(manifest, path=MANIFEST_FILE):
     return path
 
 
-def upsert_sequence(manifest, lead, audit, initial_subject, initial_body):
+def upsert_sequence(manifest, lead, audit, initial_subject, initial_body,
+                    ads_only=False):
     """Add/refresh a lead's sequence. Existing Gmail state is preserved:
     re-running the generator updates bodies/subjects but never wipes
-    draft_id / thread_id / sent_at already recorded."""
+    draft_id / thread_id / sent_at already recorded.
+
+    ads_only=True marks the sequence's report_kind so the Gmail workflow
+    knows to attach the live-ad PDF (no website audit exists for it)."""
     company = lead.get("name", "")
-    fresh_steps = build_steps(lead, audit, initial_subject, initial_body)
+    fresh_steps = build_steps(lead, audit, initial_subject, initial_body,
+                              ads_only=ads_only)
 
     seq = next((s for s in manifest["sequences"]
                 if s["company"].lower() == company.lower()), None)
@@ -178,6 +251,7 @@ def upsert_sequence(manifest, lead, audit, initial_subject, initial_body):
                "thread_id": "", "mails_sent": 0,
                "next_followup_date": "", "next_step": None, "steps": []}
         manifest["sequences"].append(seq)
+    seq["report_kind"] = "ads_only" if ads_only else "full_audit"
 
     seq["to"] = lead.get("email", "") or seq.get("to", "")
     old = {s["step"]: s for s in seq.get("steps", [])}
@@ -376,15 +450,16 @@ def main():
         if not manifest["sequences"]:
             print("No sequences yet. Run: python audit_outreach.py --export")
             return
-        hdr = (f"{'COMPANY':28} {'THREAD_ID':20} {'MAILS_SENT':10} "
+        hdr = (f"{'COMPANY':26} {'REPORT':10} {'THREAD_ID':20} {'MAILS_SENT':9} "
                f"{'NEXT_FOLLOWUP_DATE':18} NEXT_STEP")
         print(hdr)
         print("-" * len(hdr))
         for seq in manifest["sequences"]:
             refresh_due_dates(seq)
-            print(f"{seq['company'][:28]:28} "
+            print(f"{seq['company'][:26]:26} "
+                  f"{(seq.get('report_kind') or 'full_audit')[:10]:10} "
                   f"{(seq.get('thread_id') or '—')[:20]:20} "
-                  f"{seq.get('mails_sent', 0):<10} "
+                  f"{seq.get('mails_sent', 0):<9} "
                   f"{(seq.get('next_followup_date') or '—'):18} "
                   f"{seq.get('next_step') if seq.get('next_step') is not None else '—'}")
             for s in seq["steps"]:
