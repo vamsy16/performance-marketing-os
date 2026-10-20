@@ -123,8 +123,13 @@ Sainikpuri), A & T Power Systems (anilparcha@gmail.com, Ameerpet).
   - `python run_pipeline.py https://origianpower.com/ "Origian Power" --city Hyderabad`
   - `python run_pipeline.py https://www.m-e-solutions.co.in/ "Mamindla Energy Solutions" --city Hyderabad`
   - `python run_pipeline.py https://www.junnasolar.com/ "Junna Solar Systems" --city Hyderabad`
-- **Twilight Solar** is the ads-only case (2 live Library IDs above) and can go
-  through `ads_only_report.py` + `ads_only_outreach.py` exactly like batch 3.
+- **Twilight Solar** is the ads-only case (2 live Library IDs above) — **DONE 2026-10-20**:
+  ads-only report built from today's live Ad Library pull
+  (`ads_only_pdfs/audit_Twilight_Solar.pdf`, passes `verify_report.py --ads-only`),
+  outreach email generated (`ads_only_email_Twilight_Solar.txt`), and the step-0
+  Gmail draft created for the owner's review (draft `r-8779083725422295887`,
+  thread `1a159024db4302f5`, registered in the sequence manifest). Sending stays
+  the owner's manual click.
 - Twilight's ad-vs-site customer-count gap (280+ in the ad vs 128+/119+ on the
   site) is quotable because both numbers were read live today; the ~2-ad count is
   the whole library result, so make no spend/impression claims.

@@ -1,0 +1,106 @@
+{
+  "company": "Twilight Solar",
+  "legal": "Twilight Solar Pvt Ltd",
+  "city": "Hyderabad",
+  "website": "https://twilightsolar.com/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-20",
+  "generated_at": "2026-10-20 11:09",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 2,
+      "results_label": "~2 results",
+      "query": "Twilight Solar Hyderabad",
+      "ads": [
+        {
+          "library_id": "3823689667771361",
+          "library_url": "https://www.facebook.com/ads/library/?id=3823689667771361",
+          "page_name": "Twilight Solar Pvt Ltd",
+          "started": "Jul 30, 2026",
+          "destination": "Facebook lead form (fb.me 'Get quote')",
+          "text": "Hyderabad's Leading Brand For Complete Power & Energy Solution. We provide complete Residential & Commercial Solar Solutions designed to reduce electricity bills, helping you switch to sustainable power with ease. From consultation to installation, our experts handle it all. High-quality Solar Panels, Professional Installation, Cost-effective Energy Solutions, 280+ Happy Customers, Well Equipped & Dedicated Team. Make the smart move to solar today.",
+          "images": []
+        },
+        {
+          "library_id": "28023952863910719",
+          "library_url": "https://www.facebook.com/ads/library/?id=28023952863910719",
+          "page_name": "Twilight Solar Pvt Ltd",
+          "started": "Jul 30, 2026",
+          "destination": "Facebook lead form (fb.me 'Get quote')",
+          "text": "Second version of the same 'Hyderabad's Leading Brand For Complete Power & Energy Solution' creative - same copy, same 280+ Happy Customers claim, same Facebook lead-form destination.",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Twilight Solar has run 2 active ads on Meta since 30 July 2026 - about 12 weeks - and they are two versions of one creative. Both send the click into a Facebook lead form, so none of the paid traffic ever reaches twilightsolar.com. Only ~2 results exist in the library, so this is a small advertiser: no spend or impression figures are published, and none are claimed here."
+  },
+  "funnel": {
+    "type": "Facebook lead form",
+    "destination": "fb.me ('Get quote')",
+    "meaning": "The click never reaches a page you own. Every lead is captured inside Facebook, so there is no pixel on your site, no retargeting pool, no landing page you can test, and no way to see what happens after the click."
+  },
+  "findings": [
+    "Two live ads (both started 30 July 2026, about 12 weeks) and every click goes into a Facebook lead form - the paid traffic never reaches twilightsolar.com. You own no pixel, no retargeting pool and no page you can A/B test.",
+    "The ad promises '280+ Happy Customers', but your own homepage counters read 128+ successful installations, 119+ satisfied customers and 12+ MW delivered. The ad is claiming more than double the number your site can prove.",
+    "Two versions of one creative and no second angle - no retargeting creative, no test structure, and no Telugu creative in a Telangana-first market.",
+    "The only contact email published on the site is a personal Gmail (Prabhakar.katkam@gmail.com), not a company-domain inbox - even though you own twilightsolar.com.",
+    "The site itself is solid: residential, commercial, industrial, EPC, O&M and consulting pages, subsidy and net-metering support messaging, and a clear 5-step process. That is good raw material that no paid traffic ever sees.",
+    "One caution for sizing this up: only ~2 ad results exist in the library, so treat this as a small advertiser, not a big spender."
+  ],
+  "next_steps": [
+    [
+      "Point one ad at your own site",
+      "Send even one of the two live ads to an owned landing page instead of the Facebook form, so you can test, measure and retarget from it."
+    ],
+    [
+      "Fix the customer-count gap",
+      "Make the ad claim match what the site proves (128+ / 119+ / 12+ MW), or update the site counters. A homeowner who clicks the ad and sees half the number loses trust before the first call."
+    ],
+    [
+      "Build a Hyderabad residential landing page",
+      "Your service pages already exist. Turn the Chengicherla/Hyderabad residential offer into one page: subsidy up to Rs. 78,000, net-metering support, free site evaluation, with the consultation form on it."
+    ],
+    [
+      "Test a second creative angle",
+      "Run a Telugu and a Rs. 0-down/EMI version against the current creative. Two versions of the same ad cannot tell you which message works."
+    ],
+    [
+      "Move to a company-domain email",
+      "Publish info@twilightsolar.com (or similar) so paid enquiries do not depend on one person's personal inbox."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "Prabhakar.katkam@gmail.com (the only address published on the site)"
+    ],
+    [
+      "Phone",
+      "+91 9542846721 / +91 9849934422"
+    ],
+    [
+      "Address",
+      "Plot #206, Behind MYE Villas, Ramakrishna Nagar, Chengicherla, Hyderabad 500039"
+    ],
+    [
+      "Site counters",
+      "128+ successful installations, 119+ satisfied customers, 12+ MW solar capacity delivered, 2+ states"
+    ],
+    [
+      "Ad copy claim",
+      "280+ Happy Customers"
+    ],
+    [
+      "Meta page",
+      "facebook.com/twilightsolarpvtltd (Twilight Solar Pvt Ltd)"
+    ]
+  ],
+  "contact": {
+    "email": "Prabhakar.katkam@gmail.com",
+    "phone": "+91 9542846721",
+    "fb_page": "https://www.facebook.com/twilightsolarpvtltd/"
+  }
+}

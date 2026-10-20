@@ -1,0 +1,41 @@
+=== EMAIL FOR: Twilight Solar ===
+City: Hyderabad
+To: Prabhakar.katkam@gmail.com
+Phone: +91 9542846721
+Website: https://twilightsolar.com/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Twilight_Solar.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-20 11:09
+
+--- SUBJECT ---
+Twilight Solar: 2 live Hyderabad ads, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Twilight Solar is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-20):
+
+  - 2 live ads on Meta, running since 30 July 2026
+  - every click lands in Facebook lead form
+  - Two live ads (both started 30 July 2026, about 12 weeks) and every click goes into a Facebook lead form - the paid traffic never reaches twilightsolar.com. You own no pixel, no retargeting pool and no page you can A/B test.
+  - The ad promises '280+ Happy Customers', but your own homepage counters read 128+ successful installations, 119+ satisfied customers and 12+ MW delivered. The ad is claiming more than double the number your site can prove.
+
+You can verify every line yourself:
+
+  Library ID 3823689667771361: https://www.facebook.com/ads/library/?id=3823689667771361
+  Library ID 28023952863910719: https://www.facebook.com/ads/library/?id=28023952863910719
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===
