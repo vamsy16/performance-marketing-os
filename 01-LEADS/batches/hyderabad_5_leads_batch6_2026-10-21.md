@@ -129,3 +129,21 @@ locally with `python audit_pdf.py "<Company>"` from 01-LEADS to embed creatives
 (owner-built full reports run 300-590KB). Every number in the JSONs was verified
 live on 2026-10-21; competitor Meta ads (~180 results) and WAAREE's Google ads
 were verified the same day (Venus + Orbit Solar verified 2026-10-18, noted in the JSONs).
+
+## Outreach drafts — prepared 2026-10-21 (awaiting your schedule/send)
+
+Full-audit outreach emails generated with `audit_outreach.py --export` (same
+templates as the sent Ksquare / AB Solar / Venus emails) and Gmail drafts created
+with the full-audit PDFs attached. Registered in
+`02-OUTREACH/generated_emails/sequence_manifest.json` at step 0 (full_audit).
+**Nothing was sent** — you review and schedule them in the Gmail UI yourself.
+
+| Lead | To | Subject | Template | Draft ID | Thread |
+|---|---|---|---|---|---|
+| Ecolt Energy | Contact@ecoltenergy.com | Noticed something about Ecolt Energy's online presence | competitor_gap (15/100) | r6086512602260834573 | 1a15c77bbccbd363 |
+| Orizen Solar Innovations | info.orizensolar@gmail.com | Quick question about Orizen Solar Innovations' website | audit_hook (23/100) | r360386757539136631 | 1a15c78051e8aee2 |
+| Ray On Solar Systems | rayonsolars@gmail.com | Noticed something about Ray On Solar Systems' online presence | competitor_gap (31/100) | r-689237871299726138 | 1a15c7825fac6b5f |
+
+Follow-up 1 for each is due 2 days after you send the initial (threaded as a
+`Re:` reply inside the same Gmail thread — never a new email). When you send one,
+mark it with `python sequence.py mark-sent --company "<Company>" --step 0`.

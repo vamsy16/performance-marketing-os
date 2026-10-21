@@ -1,0 +1,40 @@
+=== EMAIL FOR: Ray On Solar Systems ===
+City: Hyderabad
+To: rayonsolars@gmail.com
+Phone: +91 8500976346
+Website: https://www.rayonsolarsystems.in/
+Audit Score: 31/100
+Template: competitor_gap
+Generated: 2026-10-21 03:17
+
+--- SUBJECT ---
+Noticed something about Ray On Solar Systems' online presence
+
+--- BODY ---
+Hi,
+
+I specialize in helping solar companies in Hyderabad get more installation enquiries.
+
+When I looked at Ray On Solar Systems' online setup, I noticed a few gaps that are pretty common (but costly):
+
+  • not being able to run retargeting ads to people who visited their site
+  • having no way to measure which marketing is actually working
+
+Most solar companies I work with fix these in the first week — and immediately know whether their marketing is working or not.
+
+Would you be open to a free 10-minute call where I walk you through exactly what I found and what I'd recommend? No pitch — just useful info.
+
+Either way, keep up the good work with solar in Hyderabad.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+--- MANUAL AD CHECK URLS ---
+Open these to see if they're running ads:
+  Google: https://adstransparency.google.com/?region=anywhere&q=www.rayonsolarsystems.in&country=IN
+  Meta:   https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Ray On Solar Systems
+
+=== END ===
