@@ -1,0 +1,199 @@
+{
+  "company": "Ray On Solar Systems",
+  "city": "Hyderabad",
+  "website": "https://www.rayonsolarsystems.in/",
+  "ssl": true,
+  "pixels": {
+    "meta_pixel": false,
+    "google_ads": false,
+    "google_analytics_ga4": false,
+    "google_analytics_ua": false,
+    "linkedin_insight": false,
+    "microsoft_clarity": false,
+    "hotjar": false,
+    "google_tag_manager": false
+  },
+  "conversion": {
+    "has_contact_form": false,
+    "has_phone_click": false,
+    "has_whatsapp_link": true,
+    "has_cta_buttons": 4,
+    "has_live_chat": false,
+    "has_popup_optin": false,
+    "has_testimonials": true,
+    "has_pricing_page_link": false
+  },
+  "seo": {
+    "has_title": true,
+    "title_text": "Roof top Solar System with PM Suryodhya ghar Subsidy",
+    "title_length": 52,
+    "has_meta_description": true,
+    "meta_desc_length": 139,
+    "h1_count": 1,
+    "h1_text": "Install Roof Top Solar System and Start saving on your electricity bills while contributing to a sustainable future",
+    "has_og_tags": true,
+    "has_schema": false,
+    "has_favicon": false,
+    "image_count": 7,
+    "images_without_alt": 0
+  },
+  "page_count": {
+    "sitemap_pages": 7,
+    "has_sitemap": true
+  },
+  "local_signals": {
+    "has_google_maps_embed": false,
+    "has_address_schema": false,
+    "mentions_city": true,
+    "company_in_title": false
+  },
+  "ad_check_urls": {
+    "google_ads_transparency": "https://adstransparency.google.com/?region=anywhere&country=IN&domain=rayonsolarsystems.in",
+    "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Ray+On+Solar+Systems&search_type=keyword_unordered",
+    "note": "Open these URLs in your browser to check if they're running ads and what those ads look like."
+  },
+  "score": {
+    "score": 31,
+    "issues": [
+      "No Meta Pixel installed — can't run retargeting or track ad conversions",
+      "No Google Ads / GTM tracking — can't measure ad performance",
+      "No Google Analytics — flying blind on website traffic",
+      "No contact form on homepage — visitors can't easily enquire",
+      "No live chat — missing after-hours leads",
+      "No structured data (Schema.org) — missing rich results in Google",
+      "No favicon — looks unprofessional in browser tabs",
+      "Phone numbers on the homepage are plain text — no tap-to-call on mobile",
+      "'Get Started' buttons link to /contact/, which returns a 404"
+    ],
+    "wins": [
+      "WhatsApp link present",
+      "Good CTA presence (4 buttons)",
+      "Testimonials visible"
+    ]
+  },
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "1 result",
+      "query": "Telugu solar system",
+      "ads": [
+        {
+          "library_id": "1107666674962232",
+          "library_url": "https://www.facebook.com/ads/library/?id=1107666674962232",
+          "page_name": "Ray On Solar Systems",
+          "started": "Oct 13, 2026",
+          "destination": "Instagram (instagram.com/ray_on_solar_systems_) with an fb.me 'Get Quote' button",
+          "text": "Reduce Your Electricity Bills with Solar - 3kW Solar Power System Offer. Get your 3kW solar system at a special price with subsidy and long-term warranty support. (Ad destination links to the company's Instagram profile; the Get Quote button goes to a generic fb.me link.)",
+          "images": []
+        }
+      ],
+      "images": []
+    },
+    "google_own": {
+      "found": false,
+      "advertisers": [],
+      "detail": null,
+      "query": "Ray On Solar Systems"
+    },
+    "meta_competitors": {
+      "query": "solar subsidy (Telugu)",
+      "results_label": "~180 results",
+      "results_count": 180,
+      "ads": [
+        {
+          "library_id": "28876616218695042",
+          "page_name": "Eastman New Energy Private Limited",
+          "started": "Sep 29, 2026",
+          "text": "Telugu: Under the PM Surya Ghar Muft Bijli Yojana, switch to Eastman hybrid solar solutions and get a Rs.78,000* subsidy plus an additional state subsidy. Eastman hybrid inverters with lithium batteries for 24x7 power. Call today: 80016 80016.",
+          "image_urls": [
+            "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/787743815_1093982023611103_119215054499862290_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=0bmg7Do2z1gQ7kNvwEb_z_l&_nc_oc=AdolFdyb6_FPR7afVdiq50D3zxRGNXxp4TMcH7Eet-Bu0EjHwZ3YZ1FyVVg1YB14Jvw&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=ExwgK2RLbzZfzDAuGfYJpQ&_nc_ss=7b289&oh=00_AQNx0IBDiX8FWT6coAqreS6gVaXIHDqrgYZa6jXwCk3hiA&oe=6ADDE721"
+          ],
+          "images": [],
+          "library_url": "https://www.facebook.com/ads/library/?id=28876616218695042"
+        },
+        {
+          "library_id": "1454295123168911",
+          "page_name": "Sri Balaji Solar Energies",
+          "started": "May 29, 2026",
+          "text": "Telugu: Say goodbye to big current bills! Get the best solar plan and subsidy details for your home. Sri Balaji Solar Energies (15 years legacy). Leave your details - our experts will call you.",
+          "image_urls": [
+            "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/657034938_1472739317629903_7932454137442148511_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=UHpdMPmZNj8Q7kNvwErTghS&_nc_oc=Ado3n02xjI_pFJlMRVaj22mk83i22E0TTriEwQgxZ7hUU8HQs5qkRaNC69bQ5LAOZcM&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=ExwgK2RLbzZfzDAuGfYJpQ&_nc_ss=7b289&oh=00_AQNlWfzyIg5WN3T-HXW2MGYIAmQuy0pc3EP625ypG_oA_g&oe=6ADDEDF2"
+          ],
+          "images": [],
+          "library_url": "https://www.facebook.com/ads/library/?id=1454295123168911"
+        },
+        {
+          "library_id": "2046407626037554",
+          "page_name": "FreyrEnergy",
+          "started": "Oct 13, 2026",
+          "text": "Telugu: Still paying high electricity bills? Switch to Freyr Energy smart solar solutions and save up to Rs.1 lakh total with the Rs.78,000 government subsidy plus a special Rs.22,000 Freyr Energy discount. 24x7 support, automated self-cleaning sprinklers, track performance in the Freyr Energy App. 4.7 star Google rating.",
+          "image_urls": [
+            "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/770719966_1825935338388582_5013599579577659041_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uShWOgb_4D4Q7kNvwGwksly&_nc_oc=Adqxr68sTTQBB68RRWXoxpe0P_gHJQqKOQwP-X8VQB5NfQqmNV9-vj1l8DF_a_1QJ3c&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=ExwgK2RLbzZfzDAuGfYJpQ&_nc_ss=7b289&oh=00_AQ7DNQxlzmImdI1fGTxa8Z2ml_u0ZbW6sH6zwHOhRz5Eg&oe=6ADDF534"
+          ],
+          "images": [],
+          "library_url": "https://www.facebook.com/ads/library/?id=2046407626037554"
+        }
+      ],
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=%E0%B8%B8%E0%B0%B8%E0%B0%BE%E0%B0%B2%E0%B0%BE%E0%B0%B0%E0%B1%8D%20%E0%B0%B8%E0%B0%AC%E0%B0%B8%E0%B0%BF%E0%B0%A1%E0%B1%80&search_type=keyword_unordered",
+      "found": true
+    },
+    "google_competitors": {
+      "found": true,
+      "advertisers": [
+        {
+          "name": "WAAREE ENERGIES LIMITED",
+          "country": "IN",
+          "ad_count": 200,
+          "detail": {
+            "name": "WAAREE ENERGIES LIMITED",
+            "advertiser_id": "AR01069449622662938625",
+            "country": "IN",
+            "ad_count": 200,
+            "url": "https://adstransparency.google.com/advertiser/AR01069449622662938625?hl=en&region=anywhere",
+            "images": [],
+            "found": true,
+            "image_files": []
+          }
+        },
+        {
+          "name": "Venus Home Appliances Pvt Ltd",
+          "country": "IN",
+          "ad_count": 203,
+          "detail": {
+            "name": "Venus Home Appliances Pvt Ltd",
+            "advertiser_id": "",
+            "country": "IN",
+            "ad_count": 203,
+            "url": "https://adstransparency.google.com/?hl=en&region=anywhere",
+            "images": [],
+            "found": true,
+            "image_files": []
+          }
+        },
+        {
+          "name": "Orbit Solar Energy System",
+          "country": "IN",
+          "ad_count": 8
+        }
+      ],
+      "query": "solar advertisers in India"
+    },
+    "notes": [
+      "PDF built in an offline audit environment: ad-creative images cannot be downloaded here (ad-library CDN blocked), so the report carries the live ad copy, Library IDs and links but no creative thumbnails. Re-running audit_pdf.py locally embeds the creatives (owner-built full reports run 300-590KB). Every other figure was verified live.",
+      "No Google Ads advertiser record found for 'Ray On Solar Systems' or 'rayonsolarsystems.in' (checked in Google's Ads Transparency Center on 2026-10-21: 0 ads).",
+      "The only live Meta ad sends its click to Instagram, never to the website.",
+      "Schema microdata on the page uses invalid https://schema.org URLs (12 validation errors) - Google ignores it.",
+      "Page title still reads 'Suryodhya ghar' and does not contain the company name.",
+      "The WordPress plugin that carries header snippets (HFCM) is used only for a Search Console verification tag - no pixel or analytics snippet exists anywhere in the page source.",
+      "Google competitor ads: WAAREE Energies verified live 2026-10-21; Venus and Orbit Solar verified in the same centre on 2026-10-18."
+    ],
+    "summary": "Ray On Solar Systems is running 1 live Meta ad (Library ID 1107666674962232, started 13 October 2026) offering a 3kW solar system with subsidy - and its click goes to Instagram, not to the website. The site has no tracking at all: no Meta Pixel, no GA4, no GTM, and no Google Ads record. The homepage has no enquiry form and no tap-to-call phone links, while every 'Get Started' button points to a /contact/ address that returns a 404 - the site's own free-quote form sits unused while the ad pays for clicks. Rank Math gives the site decent meta tags, but the title still reads 'Suryodhya ghar', never mentions the brand, and the schema markup uses invalid https://schema.org URLs that Google ignores. Meanwhile ~180 live competitor Meta ads and WAAREE's ~200 Google ads are buying the same customers.",
+    "checked_at": "2026-10-21"
+  },
+  "audit_date": "2026-10-21",
+  "pagespeed": {
+    "error": "PageSpeed API unavailable during this audit"
+  },
+  "final_url": "https://www.rayonsolarsystems.in/"
+}

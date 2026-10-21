@@ -90,7 +90,9 @@ panels), MRK Associates / Bezawada Realty / Golden Green Farms / Siva kumar page
   Reports: `02-OUTREACH/ads_only_pdfs/audit_Ecolt_Energy.pdf`,
   `audit_Orizen_Solar_Innovations.pdf`, `audit_Ray_On_Solar_Systems.pdf`
   (+ JSONs in `01-LEADS/ads_only_results/`).
-- The **full audit** (website score, pixels, PageSpeed) stays owner-side only:
+- **Full audits BUILT 2026-10-21 with real live data** (see section below). The
+  owner-side pipeline remains the way to embed ad-creative thumbnails; everything
+  else is already verified live:
   - `python run_pipeline.py https://www.ecoltenergy.com/ "Ecolt Energy" --city Hyderabad`
   - `python run_pipeline.py https://www.orizensolar.com/ "Orizen Solar Innovations" --city Hyderabad`
   - `python run_pipeline.py https://www.rayonsolarsystems.in/ "Ray On Solar Systems" --city Hyderabad`
@@ -101,3 +103,29 @@ panels), MRK Associates / Bezawada Realty / Golden Green Farms / Siva kumar page
   queries — e.g. `solar LB Nagar`, `solar Kompally`, Telugu `రూఫ్‌టాప్ సోలార్`, or
   name probes against the TGREDCO 2026 alternates (Gigawatt, Green Secure, Solar
   Idea, Helios, Axis, Bandaru, Aditi, E-Mug, Envious, A&T Power).
+
+## Full website audits — built 2026-10-21 (real live data)
+
+All three sites were audited line-by-line from their live source (fetched via the
+W3C Nu Html Checker source view — head, wp_head, body, footer, sitemaps, wp-json
+and Google/Meta transparency centres all read in full). JSONs:
+`01-LEADS/audit_results/audit_{Ecolt_Energy,Orizen_Solar_Innovations,Ray_On_Solar_Systems}.json`
+(builder: `01-LEADS/build_batch6_full_audits.py`, reproducible). PDFs:
+`02-OUTREACH/audit_pdfs/audit_{same}.pdf` — 4 pages each, same format as
+audit_Ksquare_Energy.pdf. Scores use the repo's own formula (higher = more problems).
+
+| Lead | Score | Live Meta ads | Google ads | Tracking | Biggest verified findings |
+|---|---|---|---|---|---|
+| Ecolt Energy | 15/100 | 2 ads, 1 creative (ID 1405421181747986, Oct 13) | none (0 in transparency centre) | none of 8 tools | Project map explicitly labelled "placeholder EXAMPLES only" in its own source; stat counters render 0 without JS; quote popup re-opens every 30s; everything else (form, WhatsApp, chat, meta/OG/schema, 18-page sitemap + Telugu version) is in place |
+| Orizen Solar Innovations | 23/100 | 1 ad, multiple versions (ID 3529873930505195, Sep 18) | 1 ad (verified advertiser Palisetty Ranadheer Kumar) | Meta Pixel only (ID 1655381782019850, PageView only — no Lead event) | Hero carousel H1s commented out; "At Your Solar Partner" placeholder live; floating email icon → mailto:example@example.com; "Features of Origin Solar Panels" (Origin ≠ Orizen); no OG tags, no schema, no sitemap (404); 10+ vs 17+ years contradiction on the same page |
+| Ray On Solar Systems | 31/100 | 1 ad (ID 1107666674962232, Oct 13) — click goes to Instagram | none (0 in transparency centre) | none of 8 tools (HFCM plugin carries only a Search Console tag) | All "Get Started" buttons → /contact/ (404); phone numbers are plain text (no tap-to-call); schema uses invalid https://schema.org URLs (12 errors); title says "Suryodhya ghar" and never names the company; WordPress version exposed |
+
+Honesty notes: PageSpeed/Lighthouse was unavailable in the build environment, so
+it renders "Not available at audit time" (Ksquare precedent). Ad-creative
+thumbnails could not be downloaded in the build environment (ad-library CDN
+blocked) — the reports carry the live ad copy, Library IDs and links instead; the
+same text-only format the repo documents for ads-only reports (12-14KB). Rebuild
+locally with `python audit_pdf.py "<Company>"` from 01-LEADS to embed creatives
+(owner-built full reports run 300-590KB). Every number in the JSONs was verified
+live on 2026-10-21; competitor Meta ads (~180 results) and WAAREE's Google ads
+were verified the same day (Venus + Orbit Solar verified 2026-10-18, noted in the JSONs).
