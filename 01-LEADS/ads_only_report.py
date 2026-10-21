@@ -1328,6 +1328,274 @@ LEADS = [
             ("Meta page", "facebook.com/Eastmannewenergy"),
         ],
     },
+    {
+        "company": "Ecolt Energy",
+        "legal": "Ecolt Energy",
+        "city": "Hyderabad",
+        "website": "https://www.ecoltenergy.com/",
+        "email": "Contact@ecoltenergy.com",
+        "phone": "+91 83411 13782",
+        "fb_page": "https://www.facebook.com/61584855812336/",
+        "checked_on": "2026-10-21",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 2,
+                "results_label": "2 ads use this creative and text",
+                "query": "Telugu solar system",
+                "ads": [
+                    ad("1405421181747986", "Ecolt Energy", "Oct 13, 2026",
+                       "Facebook lead form (fb.me 'Sign up')",
+                       "Telugu: ఈరోజు సోలార్ పెట్టుబడి... రేపటి విద్యుత్ ఖర్చులకు "
+                       "ఉపశమనం! మీ ఇంటి కరెంట్ బిల్లును తగ్గించుకోవాలని "
+                       "అనుకుంటున్నారా? Ecolt Energy Rooftop Solar తో మీ ఇంటికు "
+                       "సరిపోయే సోలార్ సిస్టమ్‌ను ఎంచుకోండి. ✅ 3KW Rooftop Solar — "
+                       "₹1,90,000. 💰 ₹33,000 ప్రత్యేక తగ్గింపు. 🏛️ అర్హత ఉన్న "
+                       "గృహాలకు PM Surya Ghar సబ్సిడీ ₹78,000 వరకు. 🔧 నిపుణుల "
+                       "ఇన్‌స్టాలేషన్, అమ్మకం తర్వాత సేవలు. 📲 మీ ఇంటికి ఉచిత "
+                       "Solar Estimate కోసం WhatsApp చేయండి: +91 82475 37597. 📍 "
+                       "ఆంధ్రప్రదేశ్ & తెలంగాణ. (3KW Rooftop Solar at ₹1,90,000 with "
+                       "a ₹33,000 special discount and PM Surya Ghar subsidy up to "
+                       "₹78,000 - free solar estimate via WhatsApp.)"),
+                ],
+            },
+            "summary": (
+                "Ecolt Energy is running 2 live Telugu ads on Meta - both sharing one "
+                "creative (Library ID 1405421181747986, started 13 October 2026) - "
+                "selling a 3KW rooftop system at ₹1,90,000 with a ₹33,000 discount "
+                "plus the ₹78,000 PM Surya Ghar subsidy, and every click lands in a "
+                "Facebook lead form. The company has a Hyderabad office in Shaikpet "
+                "(registered address Narasaraopet, AP) and a polished, "
+                "calculator-driven website that receives none of the paid traffic."),
+        },
+        "funnel": {
+            "type": "Facebook lead form only",
+            "destination": "fb.me ('Sign up') on both ads",
+            "meaning": (
+                "Every click is captured inside Facebook. The polished ecoltenergy.com "
+                "- savings calculator, project map, WhatsApp chat - is invisible to "
+                "the buyer the ad just paid for."),
+        },
+        "findings": [
+            "2 live Telugu ads - both sharing one creative (Library ID "
+            "1405421181747986, running since 13 October 2026) - and every click lands "
+            "in a Facebook lead form. ecoltenergy.com receives none of the traffic.",
+            "The ad's WhatsApp number (+91 82475 37597) is different from the site's "
+            "(+91 83411 13782) - two numbers, two funnels, one brand.",
+            "The live site's 'Real projects, real power' counters all read 0 - 0 MW "
+            "capacity installed, 0 projects completed, 0 est. energy generated/yr, "
+            "0 CO₂ offset/yr - while the hero banner claims 2,000+ systems installed "
+            "and 95% average bill reduction.",
+            "The site's live weather widget reads 'Right now in Virginia Beach: "
+            "16°C, clear skies' - hardcoded to a US city, on a Hyderabad solar "
+            "company's homepage.",
+            "The build is genuinely good (interactive bill-vs-solar comparison, "
+            "savings calculator, project map across AP & Telangana) - none of it is "
+            "in the paid path, and there is no pixel or retargeting pool from this "
+            "spend.",
+        ],
+        "next_steps": [
+            ("Point the ads at an owned page",
+             "A landing page on ecoltenergy.com carrying the ad's exact offer - 3KW "
+             "at ₹1,90,000, ₹33,000 off, subsidy eligibility - so the spend builds "
+             "one measurable funnel instead of a Facebook form."),
+            ("Fix the zero counters and the weather widget",
+             "0 MW installed and 0 projects next to a '2,000+ systems' claim, plus a "
+             "Virginia Beach widget, are the first things a paid visitor checks."),
+            ("Unify the phone numbers",
+             "The ad says +91 82475 37597, the site says +91 83411 13782. One "
+             "number, everywhere, so the paid click and the site agree."),
+            ("Install pixel and retargeting",
+             "Two ads on one creative with no pixel means no audience to bring back "
+             "and no way to see who dropped off after the click."),
+        ],
+        "contact_facts": [
+            ("Email", "Contact@ecoltenergy.com"),
+            ("Phone", "+91 83411 13782 (site); +91 82475 37597 (ad)"),
+            ("Address", "8-1-87/4/7/2, Vinayak Nagar Colony, Shaikpet, Hyderabad, "
+                        "Telangana 500033 (registered: Narasaraopet, AP)"),
+            ("Entity", "Ecolt Energy - claims 2,000+ systems installed, 95% avg. "
+                       "bill reduction, 30-yr performance warranty"),
+            ("Meta page", "facebook.com/61584855812336 (Ecolt Energy)"),
+        ],
+    },
+    {
+        "company": "Orizen Solar Innovations",
+        "legal": "Orizen Solar Innovations Pvt Ltd",
+        "city": "Hyderabad",
+        "website": "https://www.orizensolar.com/",
+        "email": "info.orizensolar@gmail.com",
+        "phone": "+91 9962039859",
+        "fb_page": "https://www.facebook.com/61562730157779/",
+        "checked_on": "2026-10-21",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 1,
+                "results_label": "1 result, multiple versions",
+                "query": "Telugu solar system",
+                "ads": [
+                    ad("3529873930505195", "Orizen Solar Innovations", "Sep 18, 2026",
+                       "WhatsApp (Send WhatsApp message)",
+                       "Telugu: ☀️ సోలార్‌పై ప్రత్యేక Dussehra & Deepavali Dhamaka "
+                       "Offer 🔥 ఈ పండుగ సీజన్‌లో మీ ఇంటికి Solar Power తీసుకురండి… "
+                       "కరెంట్ బిల్లులపై భారం తగ్గించుకోండి! Orizen Solar Innovations "
+                       "Pvt. Ltd. నుండి ప్రత్యేక Dussehra & Deepavali Dhamaka Offer "
+                       "🎉 ✨ ₹78,000/- వరకు భారీ Subsidy 🔥 3 KW Solar System – "
+                       "అదనంగా ₹10,000 Discount 🔥 5 KW Solar System – అదనంగా ₹20,000 "
+                       "Discount 🎁 Solar Panel Cleaning Brush ఉచితం ☀️ WAAREE "
+                       "Authorised Channel Partner. 📞 8374 670 999 | 8374 683 999 📍 "
+                       "Budampadu Bypass, Ponnur Road, Guntur. (₹78,000 subsidy plus "
+                       "up to ₹20,000 special discount - Dussehra & Deepavali Dhamaka "
+                       "Offer.)"),
+                ],
+            },
+            "summary": (
+                "Orizen Solar Innovations is running a live Telugu ad on Meta (Library "
+                "ID 3529873930505195, started 18 September 2026, multiple versions) "
+                "offering a Dussehra & Deepavali Dhamaka package - ₹78,000 subsidy, "
+                "3KW with ₹10,000 off, 5KW with ₹20,000 off, free panel-cleaning "
+                "brush, WAAREE authorised channel partner - and every click goes to "
+                "WhatsApp. The company is headquartered in Guntur with three AP "
+                "offices (Guntur, Vijayawada, Tirupati) and is advertising into "
+                "Telangana."),
+        },
+        "funnel": {
+            "type": "WhatsApp only",
+            "destination": "WhatsApp message from the ad",
+            "meaning": (
+                "The paid click goes straight to a chat. Nothing is measured, nothing "
+                "is retargeted, and the site's on-grid/off-grid/hybrid pages - all "
+                "of them - never get seen by the buyer the ad paid for."),
+        },
+        "findings": [
+            "Live Telugu ad (Library ID 3529873930505195, running since 18 September "
+            "2026, multiple versions) - the Dussehra & Deepavali offer sends every "
+            "click to WhatsApp; orizensolar.com receives none of the traffic.",
+            "Three phone numbers across the funnel: the ad (8374 670 999 / 8374 683 "
+            "999) and the site (+91 9962039859) - split numbers for one offer.",
+            "The live site still carries template text: the PM Surya Ghar blurb "
+            "reads 'At Your Solar Partner, we are proud to support this initiative' "
+            "- the company name was never filled in.",
+            "The features section is headed 'Features of Origin Solar Panels' - "
+            "'Origin', not 'Orizen' - and every 'Read More' service link points at "
+            "'#' (the homepage anchor), so nothing on the site answers what the ad "
+            "promises.",
+            "Guntur-based with offices in Vijayawada and Tirupati, advertising into "
+            "Telangana - no Telangana service-area proof for the buyer the ad is "
+            "aimed at.",
+        ],
+        "next_steps": [
+            ("Build an owned offer page",
+             "Put the Dussehra & Deepavali offer - ₹78,000 subsidy, 3KW/5KW "
+             "discounts, WAAREE partnership - on a page you control, with name and "
+             "phone captured before the WhatsApp hand-off."),
+            ("Fill in the template placeholders",
+             "'Your Solar Partner' in the PM Surya Ghar blurb and 'Origin Solar' in "
+             "the features heading are the first trust breaks a visitor finds."),
+            ("Fix the dead service links",
+             "Every 'Read More' points at the homepage anchor - the on-grid, "
+             "off-grid and hybrid pages exist in the nav but are unreachable from "
+             "the homepage flow."),
+            ("Unify the numbers and add local proof",
+             "One phone number everywhere, plus a Telangana service-area statement, "
+             "turns a Guntur advertiser into a local option for the Telugu buyer."),
+        ],
+        "contact_facts": [
+            ("Email", "info.orizensolar@gmail.com"),
+            ("Phone", "+91 9962039859 (site); 8374 670 999 / 8374 683 999 (ad)"),
+            ("Address", "Ring Road, Chandramouli Nagar, Vidyanagar, Guntur 522007; "
+                        "offices in Vijayawada and Tirupati"),
+            ("Entity", "Orizen Solar Innovations Pvt Ltd - claims 456+ completed "
+                       "projects, 513+ happy customers, 10+ years of experience"),
+            ("Meta page", "facebook.com/61562730157779 (Orizen Solar Innovations)"),
+        ],
+    },
+    {
+        "company": "Ray On Solar Systems",
+        "legal": "Ray On Solar Systems",
+        "city": "Hyderabad",
+        "website": "https://www.rayonsolarsystems.in/",
+        "email": "rayonsolars@gmail.com",
+        "phone": "+91 8500976346",
+        "fb_page": "https://www.facebook.com/61571060785642/",
+        "checked_on": "2026-10-21",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 1,
+                "results_label": "1 result",
+                "query": "Telugu solar system",
+                "ads": [
+                    ad("1107666674962232", "Ray On Solar Systems", "Oct 13, 2026",
+                       "Instagram (instagram.com/ray_on_solar_systems_) with an "
+                       "fb.me 'Get Quote' button",
+                       "Reduce Your Electricity Bills with Solar - 3kW Solar Power "
+                       "System Offer. Get your 3kW solar system at a special price "
+                       "with subsidy and long-term warranty support. (Ad destination "
+                       "links to the company's Instagram profile; the Get Quote "
+                       "button goes to a generic fb.me link.)"),
+                ],
+            },
+            "summary": (
+                "Ray On Solar Systems is running 1 live ad on Meta (Library ID "
+                "1107666674962232, started 13 October 2026) offering a 3kW solar "
+                "system at a special price with subsidy - and the ad sends the "
+                "click to Instagram, not to the company's website. The company is "
+                "based in Visakhapatnam and is advertising into Telangana."),
+        },
+        "funnel": {
+            "type": "Instagram + generic fb.me link",
+            "destination": "instagram.com/ray_on_solar_systems_ (ad creative link) "
+                           "and fb.me ('Get Quote')",
+            "meaning": (
+                "A social profile is not a funnel. There is no lead capture, no "
+                "quote form and nothing to retarget - and the site's own free-quote "
+                "form sits unused while the ad pays for clicks."),
+        },
+        "findings": [
+            "The live 3kW-offer ad (Library ID 1107666674962232, started 13 October "
+            "2026) sends Telugu solar buyers to an Instagram profile - not to "
+            "rayonsolarsystems.in. A profile has no lead capture, no phone form and "
+            "nothing to retarget.",
+            "The ad's 'Get Quote' button goes to a generic fb.me link - the click "
+            "never lands on a page that takes a name, a phone number or a bill "
+            "amount.",
+            "The site itself is a clean WordPress build with a free-quote form, "
+            "on-grid/off-grid rooftop systems, PM Surya Ghar subsidy assistance and "
+            "a real-time monitoring section - none of it is in the paid path.",
+            "Visakhapatnam-based (Ravi Nagar, Naidu Thota, 530029) and advertising "
+            "into Telangana - no Telangana service-area proof for the buyer the ad "
+            "is aimed at.",
+            "One live ad is the entire paid presence - no second creative, no "
+            "retargeting, nothing to A/B test.",
+        ],
+        "next_steps": [
+            ("Point the ad at the site's own quote page",
+             "The site already has a free-quote form and the PM Surya Ghar subsidy "
+             "section - sending the 3kW-offer click there instead of Instagram turns "
+             "the spend into measurable leads."),
+            ("Or build a dedicated 3kW offer page",
+             "A landing page carrying the ad's exact offer - special 3kW price, "
+             "subsidy, long-term warranty - with name, phone and locality captured "
+             "before any chat."),
+            ("Add Telangana-local proof",
+             "A service-area statement and named local installs turn a Visakhapatnam "
+             "advertiser into a local option for the Telugu buyer."),
+            ("Test a second creative",
+             "One ad cannot tell you which message works - a subsidy-focused and an "
+             "EMI-focused version against each other would."),
+        ],
+        "contact_facts": [
+            ("Email", "rayonsolars@gmail.com"),
+            ("Phone", "+91 8500976346 / +91 9703774654"),
+            ("Address", "Ravi Nagar, Naidu Thota, Visakhapatnam 530029"),
+            ("Entity", "Ray On Solar Systems - claims 5+ years of technical "
+                       "experience"),
+            ("Meta page", "facebook.com/61571060785642 (also Instagram "
+                          "@ray_on_solar_systems_)"),
+        ],
+    },
 ]
 
 

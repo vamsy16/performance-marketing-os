@@ -1,0 +1,88 @@
+{
+  "company": "Ecolt Energy",
+  "legal": "Ecolt Energy",
+  "city": "Hyderabad",
+  "website": "https://www.ecoltenergy.com/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-21",
+  "generated_at": "2026-10-21 02:28",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 2,
+      "results_label": "2 ads use this creative and text",
+      "query": "Telugu solar system",
+      "ads": [
+        {
+          "library_id": "1405421181747986",
+          "library_url": "https://www.facebook.com/ads/library/?id=1405421181747986",
+          "page_name": "Ecolt Energy",
+          "started": "Oct 13, 2026",
+          "destination": "Facebook lead form (fb.me 'Sign up')",
+          "text": "Telugu: ఈరోజు సోలార్ పెట్టుబడి... రేపటి విద్యుత్ ఖర్చులకు ఉపశమనం! మీ ఇంటి కరెంట్ బిల్లును తగ్గించుకోవాలని అనుకుంటున్నారా? Ecolt Energy Rooftop Solar తో మీ ఇంటికు సరిపోయే సోలార్ సిస్టమ్‌ను ఎంచుకోండి. ✅ 3KW Rooftop Solar — ₹1,90,000. 💰 ₹33,000 ప్రత్యేక తగ్గింపు. 🏛️ అర్హత ఉన్న గృహాలకు PM Surya Ghar సబ్సిడీ ₹78,000 వరకు. 🔧 నిపుణుల ఇన్‌స్టాలేషన్, అమ్మకం తర్వాత సేవలు. 📲 మీ ఇంటికి ఉచిత Solar Estimate కోసం WhatsApp చేయండి: +91 82475 37597. 📍 ఆంధ్రప్రదేశ్ & తెలంగాణ. (3KW Rooftop Solar at ₹1,90,000 with a ₹33,000 special discount and PM Surya Ghar subsidy up to ₹78,000 - free solar estimate via WhatsApp.)",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Ecolt Energy is running 2 live Telugu ads on Meta - both sharing one creative (Library ID 1405421181747986, started 13 October 2026) - selling a 3KW rooftop system at ₹1,90,000 with a ₹33,000 discount plus the ₹78,000 PM Surya Ghar subsidy, and every click lands in a Facebook lead form. The company has a Hyderabad office in Shaikpet (registered address Narasaraopet, AP) and a polished, calculator-driven website that receives none of the paid traffic."
+  },
+  "funnel": {
+    "type": "Facebook lead form only",
+    "destination": "fb.me ('Sign up') on both ads",
+    "meaning": "Every click is captured inside Facebook. The polished ecoltenergy.com - savings calculator, project map, WhatsApp chat - is invisible to the buyer the ad just paid for."
+  },
+  "findings": [
+    "2 live Telugu ads - both sharing one creative (Library ID 1405421181747986, running since 13 October 2026) - and every click lands in a Facebook lead form. ecoltenergy.com receives none of the traffic.",
+    "The ad's WhatsApp number (+91 82475 37597) is different from the site's (+91 83411 13782) - two numbers, two funnels, one brand.",
+    "The live site's 'Real projects, real power' counters all read 0 - 0 MW capacity installed, 0 projects completed, 0 est. energy generated/yr, 0 CO₂ offset/yr - while the hero banner claims 2,000+ systems installed and 95% average bill reduction.",
+    "The site's live weather widget reads 'Right now in Virginia Beach: 16°C, clear skies' - hardcoded to a US city, on a Hyderabad solar company's homepage.",
+    "The build is genuinely good (interactive bill-vs-solar comparison, savings calculator, project map across AP & Telangana) - none of it is in the paid path, and there is no pixel or retargeting pool from this spend."
+  ],
+  "next_steps": [
+    [
+      "Point the ads at an owned page",
+      "A landing page on ecoltenergy.com carrying the ad's exact offer - 3KW at ₹1,90,000, ₹33,000 off, subsidy eligibility - so the spend builds one measurable funnel instead of a Facebook form."
+    ],
+    [
+      "Fix the zero counters and the weather widget",
+      "0 MW installed and 0 projects next to a '2,000+ systems' claim, plus a Virginia Beach widget, are the first things a paid visitor checks."
+    ],
+    [
+      "Unify the phone numbers",
+      "The ad says +91 82475 37597, the site says +91 83411 13782. One number, everywhere, so the paid click and the site agree."
+    ],
+    [
+      "Install pixel and retargeting",
+      "Two ads on one creative with no pixel means no audience to bring back and no way to see who dropped off after the click."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "Contact@ecoltenergy.com"
+    ],
+    [
+      "Phone",
+      "+91 83411 13782 (site); +91 82475 37597 (ad)"
+    ],
+    [
+      "Address",
+      "8-1-87/4/7/2, Vinayak Nagar Colony, Shaikpet, Hyderabad, Telangana 500033 (registered: Narasaraopet, AP)"
+    ],
+    [
+      "Entity",
+      "Ecolt Energy - claims 2,000+ systems installed, 95% avg. bill reduction, 30-yr performance warranty"
+    ],
+    [
+      "Meta page",
+      "facebook.com/61584855812336 (Ecolt Energy)"
+    ]
+  ],
+  "contact": {
+    "email": "Contact@ecoltenergy.com",
+    "phone": "+91 83411 13782",
+    "fb_page": "https://www.facebook.com/61584855812336/"
+  }
+}

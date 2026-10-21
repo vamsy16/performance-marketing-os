@@ -1,0 +1,88 @@
+{
+  "company": "Ray On Solar Systems",
+  "legal": "Ray On Solar Systems",
+  "city": "Hyderabad",
+  "website": "https://www.rayonsolarsystems.in/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-21",
+  "generated_at": "2026-10-21 02:28",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "1 result",
+      "query": "Telugu solar system",
+      "ads": [
+        {
+          "library_id": "1107666674962232",
+          "library_url": "https://www.facebook.com/ads/library/?id=1107666674962232",
+          "page_name": "Ray On Solar Systems",
+          "started": "Oct 13, 2026",
+          "destination": "Instagram (instagram.com/ray_on_solar_systems_) with an fb.me 'Get Quote' button",
+          "text": "Reduce Your Electricity Bills with Solar - 3kW Solar Power System Offer. Get your 3kW solar system at a special price with subsidy and long-term warranty support. (Ad destination links to the company's Instagram profile; the Get Quote button goes to a generic fb.me link.)",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Ray On Solar Systems is running 1 live ad on Meta (Library ID 1107666674962232, started 13 October 2026) offering a 3kW solar system at a special price with subsidy - and the ad sends the click to Instagram, not to the company's website. The company is based in Visakhapatnam and is advertising into Telangana."
+  },
+  "funnel": {
+    "type": "Instagram + generic fb.me link",
+    "destination": "instagram.com/ray_on_solar_systems_ (ad creative link) and fb.me ('Get Quote')",
+    "meaning": "A social profile is not a funnel. There is no lead capture, no quote form and nothing to retarget - and the site's own free-quote form sits unused while the ad pays for clicks."
+  },
+  "findings": [
+    "The live 3kW-offer ad (Library ID 1107666674962232, started 13 October 2026) sends Telugu solar buyers to an Instagram profile - not to rayonsolarsystems.in. A profile has no lead capture, no phone form and nothing to retarget.",
+    "The ad's 'Get Quote' button goes to a generic fb.me link - the click never lands on a page that takes a name, a phone number or a bill amount.",
+    "The site itself is a clean WordPress build with a free-quote form, on-grid/off-grid rooftop systems, PM Surya Ghar subsidy assistance and a real-time monitoring section - none of it is in the paid path.",
+    "Visakhapatnam-based (Ravi Nagar, Naidu Thota, 530029) and advertising into Telangana - no Telangana service-area proof for the buyer the ad is aimed at.",
+    "One live ad is the entire paid presence - no second creative, no retargeting, nothing to A/B test."
+  ],
+  "next_steps": [
+    [
+      "Point the ad at the site's own quote page",
+      "The site already has a free-quote form and the PM Surya Ghar subsidy section - sending the 3kW-offer click there instead of Instagram turns the spend into measurable leads."
+    ],
+    [
+      "Or build a dedicated 3kW offer page",
+      "A landing page carrying the ad's exact offer - special 3kW price, subsidy, long-term warranty - with name, phone and locality captured before any chat."
+    ],
+    [
+      "Add Telangana-local proof",
+      "A service-area statement and named local installs turn a Visakhapatnam advertiser into a local option for the Telugu buyer."
+    ],
+    [
+      "Test a second creative",
+      "One ad cannot tell you which message works - a subsidy-focused and an EMI-focused version against each other would."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "rayonsolars@gmail.com"
+    ],
+    [
+      "Phone",
+      "+91 8500976346 / +91 9703774654"
+    ],
+    [
+      "Address",
+      "Ravi Nagar, Naidu Thota, Visakhapatnam 530029"
+    ],
+    [
+      "Entity",
+      "Ray On Solar Systems - claims 5+ years of technical experience"
+    ],
+    [
+      "Meta page",
+      "facebook.com/61571060785642 (also Instagram @ray_on_solar_systems_)"
+    ]
+  ],
+  "contact": {
+    "email": "rayonsolars@gmail.com",
+    "phone": "+91 8500976346",
+    "fb_page": "https://www.facebook.com/61571060785642/"
+  }
+}

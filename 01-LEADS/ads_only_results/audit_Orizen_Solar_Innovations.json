@@ -1,0 +1,88 @@
+{
+  "company": "Orizen Solar Innovations",
+  "legal": "Orizen Solar Innovations Pvt Ltd",
+  "city": "Hyderabad",
+  "website": "https://www.orizensolar.com/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-21",
+  "generated_at": "2026-10-21 02:28",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "1 result, multiple versions",
+      "query": "Telugu solar system",
+      "ads": [
+        {
+          "library_id": "3529873930505195",
+          "library_url": "https://www.facebook.com/ads/library/?id=3529873930505195",
+          "page_name": "Orizen Solar Innovations",
+          "started": "Sep 18, 2026",
+          "destination": "WhatsApp (Send WhatsApp message)",
+          "text": "Telugu: ☀️ సోలార్‌పై ప్రత్యేక Dussehra & Deepavali Dhamaka Offer 🔥 ఈ పండుగ సీజన్‌లో మీ ఇంటికి Solar Power తీసుకురండి… కరెంట్ బిల్లులపై భారం తగ్గించుకోండి! Orizen Solar Innovations Pvt. Ltd. నుండి ప్రత్యేక Dussehra & Deepavali Dhamaka Offer 🎉 ✨ ₹78,000/- వరకు భారీ Subsidy 🔥 3 KW Solar System – అదనంగా ₹10,000 Discount 🔥 5 KW Solar System – అదనంగా ₹20,000 Discount 🎁 Solar Panel Cleaning Brush ఉచితం ☀️ WAAREE Authorised Channel Partner. 📞 8374 670 999 | 8374 683 999 📍 Budampadu Bypass, Ponnur Road, Guntur. (₹78,000 subsidy plus up to ₹20,000 special discount - Dussehra & Deepavali Dhamaka Offer.)",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Orizen Solar Innovations is running a live Telugu ad on Meta (Library ID 3529873930505195, started 18 September 2026, multiple versions) offering a Dussehra & Deepavali Dhamaka package - ₹78,000 subsidy, 3KW with ₹10,000 off, 5KW with ₹20,000 off, free panel-cleaning brush, WAAREE authorised channel partner - and every click goes to WhatsApp. The company is headquartered in Guntur with three AP offices (Guntur, Vijayawada, Tirupati) and is advertising into Telangana."
+  },
+  "funnel": {
+    "type": "WhatsApp only",
+    "destination": "WhatsApp message from the ad",
+    "meaning": "The paid click goes straight to a chat. Nothing is measured, nothing is retargeted, and the site's on-grid/off-grid/hybrid pages - all of them - never get seen by the buyer the ad paid for."
+  },
+  "findings": [
+    "Live Telugu ad (Library ID 3529873930505195, running since 18 September 2026, multiple versions) - the Dussehra & Deepavali offer sends every click to WhatsApp; orizensolar.com receives none of the traffic.",
+    "Three phone numbers across the funnel: the ad (8374 670 999 / 8374 683 999) and the site (+91 9962039859) - split numbers for one offer.",
+    "The live site still carries template text: the PM Surya Ghar blurb reads 'At Your Solar Partner, we are proud to support this initiative' - the company name was never filled in.",
+    "The features section is headed 'Features of Origin Solar Panels' - 'Origin', not 'Orizen' - and every 'Read More' service link points at '#' (the homepage anchor), so nothing on the site answers what the ad promises.",
+    "Guntur-based with offices in Vijayawada and Tirupati, advertising into Telangana - no Telangana service-area proof for the buyer the ad is aimed at."
+  ],
+  "next_steps": [
+    [
+      "Build an owned offer page",
+      "Put the Dussehra & Deepavali offer - ₹78,000 subsidy, 3KW/5KW discounts, WAAREE partnership - on a page you control, with name and phone captured before the WhatsApp hand-off."
+    ],
+    [
+      "Fill in the template placeholders",
+      "'Your Solar Partner' in the PM Surya Ghar blurb and 'Origin Solar' in the features heading are the first trust breaks a visitor finds."
+    ],
+    [
+      "Fix the dead service links",
+      "Every 'Read More' points at the homepage anchor - the on-grid, off-grid and hybrid pages exist in the nav but are unreachable from the homepage flow."
+    ],
+    [
+      "Unify the numbers and add local proof",
+      "One phone number everywhere, plus a Telangana service-area statement, turns a Guntur advertiser into a local option for the Telugu buyer."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info.orizensolar@gmail.com"
+    ],
+    [
+      "Phone",
+      "+91 9962039859 (site); 8374 670 999 / 8374 683 999 (ad)"
+    ],
+    [
+      "Address",
+      "Ring Road, Chandramouli Nagar, Vidyanagar, Guntur 522007; offices in Vijayawada and Tirupati"
+    ],
+    [
+      "Entity",
+      "Orizen Solar Innovations Pvt Ltd - claims 456+ completed projects, 513+ happy customers, 10+ years of experience"
+    ],
+    [
+      "Meta page",
+      "facebook.com/61562730157779 (Orizen Solar Innovations)"
+    ]
+  ],
+  "contact": {
+    "email": "info.orizensolar@gmail.com",
+    "phone": "+91 9962039859",
+    "fb_page": "https://www.facebook.com/61562730157779/"
+  }
+}
