@@ -1,0 +1,98 @@
+{
+  "company": "Valcan Solar",
+  "legal": "Valcan Energy Systems",
+  "city": "Hyderabad",
+  "website": "https://valcansolar.com/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-21",
+  "generated_at": "2026-10-21 01:41",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 2,
+      "results_label": "~2 results",
+      "query": "solar Secunderabad",
+      "ads": [
+        {
+          "library_id": "1156154097084461",
+          "library_url": "https://www.facebook.com/ads/library/?id=1156154097084461",
+          "page_name": "Valcan Solar",
+          "started": "Oct 7, 2026",
+          "destination": "https://valcansolar.com/ ('Book now')",
+          "text": "GO SOLAR. WIN BIG. SAVE MORE! This festive season, make the switch to solar with Valcan Solar and stand a chance to win exciting prizes! Bumper Draw Prizes: 1st Prize - Get Your Solar System FREE, 2nd Prize - EV Bike (5 Winners), 3rd Prize - EV Cycle (10 Winners), Air Fryer (50 Winners), Induction Stove (50 Winners). Government Subsidy up to Rs. 78,000, Additional Discount of Rs. 22,000, 0% Interest EMI, Free Insurance, Free Consultation. Applicable for 2 kW to 10 kW solar systems. Valid Until: 24 November 2026. Bumper Draw: 30 November 2026.",
+          "images": []
+        },
+        {
+          "library_id": "2941615846186384",
+          "library_url": "https://www.facebook.com/ads/library/?id=2941615846186384",
+          "page_name": "valcansolar",
+          "started": "Oct 15, 2026",
+          "destination": "Facebook lead form (Call Us)",
+          "text": "MEGA UTSAV | 2KW-10KW Solar Systems. Bumper Prize Opportunities: 1st Prize - Solar System FREE, 2nd Prize - EV Bike - 5 Winners, 3rd Prize - EV Cycle - 10 Winners, 4th Prize - Air Fryer - 50 Winners, 5th Prize - Induction Stove - 50 Winners. Government Subsidy Rs 78,000. Additional Discount Rs 22,000. No-Cost EMI | 0% Interest. Free Insurance. Free Consultation. Offer Valid Up To: 24th November 2026. Bumper Draw Date: 30th November 2026.",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Valcan Solar is running 2 active ads on Meta for the MEGA UTSAV bumper-draw campaign - one since 7 October 2026 pointing at valcansolar.com, one since 15 October 2026 pointing at a Facebook lead form. The offer (free solar system as first prize, EV bikes, Rs. 78,000 subsidy plus Rs. 22,000 discount, 0% EMI) runs until 24 November with the draw on 30 November. Both ads surfaced in the 'solar Secunderabad' search - their home market."
+  },
+  "funnel": {
+    "type": "Split - own site + Facebook lead form",
+    "destination": "valcansolar.com ('Book now') on one ad, a Facebook lead form ('Call Us') on the other",
+    "meaning": "Half the spend lands on a page you own; half lands inside Facebook. Two destinations for one offer means two different experiences for the same click, and the Facebook side leaves you no pixel, no retargeting pool and nothing to test."
+  },
+  "findings": [
+    "2 live ads running the MEGA UTSAV bumper-draw offer (free solar system as first prize, EV bikes, air fryers) until 24 November, draw 30 November - a deadline-driven push with real money behind it.",
+    "One ad sends clicks to valcansolar.com, the other into a Facebook lead form. The same offer, two different funnels - and the Facebook side owns none of the data.",
+    "The site's 'Our Achievements' counters all read 0 - 0K+ projects completed, 0% positive feedback, 0+ years of experience, 0% success rate. A visitor who just clicked a bumper-draw ad sees a brand-new company.",
+    "The contact block's email reads marketing@vulcansolar.in - misspelled ('vulcansolar'), while the header shows info@valcansolar.com instead. Enquiries may not reach either inbox.",
+    "The contact block's phone link shows +91 9010008373 while the displayed number is +91 90300 33577 - two different numbers in the same block.",
+    "The site itself claims 'since 2012', ISO 9001:2008 certification and 15+ years of experience - the substance is there, it just never reaches the paid visitor."
+  ],
+  "next_steps": [
+    [
+      "Unify the two ads on one owned page",
+      "Point both MEGA UTSAV ads at one landing page on valcansolar.com with the offer, the prize list and the 24 November deadline on it - so the spend builds one measurable funnel."
+    ],
+    [
+      "Fill in the achievement counters",
+      "0+ years of experience and 0K+ projects read as a startup. Real numbers on a deadline-driven campaign page are the difference between a click and a call."
+    ],
+    [
+      "Fix the contact details",
+      "Correct marketing@vulcansolar.in to a working valcansolar.com address and make the phone link match the displayed number - on a draw with a hard deadline, a broken enquiry path is a lost prize entry."
+    ],
+    [
+      "Build the deadline into the page",
+      "Offer valid to 24 Nov, draw on 30 Nov - a countdown and a 'book before the draw' CTA turn urgency into conversions."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@valcansolar.com (header); marketing@vulcansolar.in (contact block, misspelled)"
+    ],
+    [
+      "Phone",
+      "+91 90300 33577 (displayed); +91 9010008373 (phone link in the contact block)"
+    ],
+    [
+      "Address",
+      "Vikrampuri Colony, Karkhana, Secunderabad 500015; Plot No. 16, Goyal Co-operative Housing Society Ltd, Tirumalagiri, Secunderabad Cantonment 500015"
+    ],
+    [
+      "Entity",
+      "Valcan Energy Systems - since 2012, ISO 9001:2008"
+    ],
+    [
+      "Meta page",
+      "facebook.com/valcansolar (also Instagram @valcansolar)"
+    ]
+  ],
+  "contact": {
+    "email": "info@valcansolar.com",
+    "phone": "+91 90300 33577",
+    "fb_page": "https://www.facebook.com/valcansolar/"
+  }
+}

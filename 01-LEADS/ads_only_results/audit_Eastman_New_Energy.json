@@ -1,0 +1,115 @@
+{
+  "company": "Eastman New Energy",
+  "legal": "Eastman New Energy Private Limited",
+  "city": "Hyderabad",
+  "website": "https://eastmansolar.in/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-21",
+  "generated_at": "2026-10-21 01:41",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 4,
+      "results_label": "~4 results",
+      "query": "Telugu solar subsidy",
+      "ads": [
+        {
+          "library_id": "3668088310036092",
+          "library_url": "https://www.facebook.com/ads/library/?id=3668088310036092",
+          "page_name": "Eastman New Energy Private Limited",
+          "started": "Aug 30, 2026",
+          "destination": "https://eastmansolar.in/ ('Learn more')",
+          "text": "Telugu on-grid creative - PM Surya Ghar free-electricity scheme, switch to Eastman on-grid solar solutions for the Rs. 78,000* subsidy plus additional state subsidy. Call 80016 80016.",
+          "images": []
+        },
+        {
+          "library_id": "929674622913607",
+          "library_url": "https://www.facebook.com/ads/library/?id=929674622913607",
+          "page_name": "Eastman New Energy Private Limited",
+          "started": "Aug 29, 2026",
+          "destination": "https://eastmansolar.in/ ('Learn more')",
+          "text": "Telugu hybrid creative - switch to Eastman hybrid solutions for the Rs. 78,000* subsidy plus additional state subsidy, with Eastman hybrid inverters and lithium batteries for 24x7 power. Call 80016 80016.",
+          "images": []
+        },
+        {
+          "library_id": "2152229662052110",
+          "library_url": "https://www.facebook.com/ads/library/?id=2152229662052110",
+          "page_name": "Eastman New Energy Private Limited",
+          "started": "Sep 29, 2026",
+          "destination": "https://eastmansolar.in/ ('Learn more')",
+          "text": "Telugu: మీ కరెంటు బిల్లును సున్నాకు తగ్గించండి. పీఎం సూర్య ఘర్ ముఫ్త్ బిజిలీ యోజన కింద, ఈస్ట్‌మన్ ఆన్-గ్రిడ్ సోలార్ సొల్యూషన్స్‌కు మారి ₹78,000* సబ్సిడీ + అదనపు రాష్ట్ర సబ్సిడీ పొందండి. ఈరోజే కాల్ చేయండి 80016 80016. (Reduce your current bill to zero under the PM Surya Ghar scheme with Eastman on-grid solar solutions - Rs. 78,000* subsidy plus additional state subsidy. Call 80016 80016 today.)",
+          "images": []
+        },
+        {
+          "library_id": "28876616218695042",
+          "library_url": "https://www.facebook.com/ads/library/?id=28876616218695042",
+          "page_name": "Eastman New Energy Private Limited",
+          "started": "Sep 29, 2026",
+          "destination": "https://eastmansolar.in/ ('Learn more')",
+          "text": "Telugu: ఈస్ట్‌మన్ సోలార్ హైబ్రిడ్ సొల్యూషన్స్‌కు మారి ₹78,000* సబ్సిడీ + అదనపు రాష్ట్ర సబ్సిడీ పొందండి. ఈస్ట్‌మన్ హైబ్రిడ్ ఇన్వర్టర్లు, లిథియం బ్యాటరీలతో 24x7 విద్యుత్తు ఆదాను ఆస్వాదించండి. (Switch to Eastman hybrid solar solutions for the Rs. 78,000* subsidy plus additional state subsidy - Eastman hybrid inverters with lithium batteries for 24x7 power.)",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Eastman New Energy is running 4 active Telugu ads on Meta (Aug 29 - Sep 29, 2026) - on-grid and hybrid creatives, both selling the Rs. 78,000 PM Surya Ghar subsidy plus an additional state subsidy - and all four send the click to eastmansolar.in. Eastman is not a local installer: the site is a manufacturer's product catalogue (800 MW in-house panel manufacturing, 1000+ distributors, 400+ OEM partners, part of the Eastman group's 25 GW production)."
+  },
+  "funnel": {
+    "type": "Own website (enquiry form behind reCAPTCHA)",
+    "destination": "eastmansolar.in ('Learn more') on all 4 ads",
+    "meaning": "At least the spend lands on an owned site. But the destination is a manufacturer's product catalogue - on-grid, off-grid and hybrid inverter pages - while the ads promise a B2C subsidy. The gap between the ad promise and the page is where the conversion leaks."
+  },
+  "findings": [
+    "4 live Telugu ads (Aug 29 - Sep 29, 2026), on-grid and hybrid creatives, all pointing at eastmansolar.in - the spend stays on an owned domain.",
+    "But the destination is a manufacturer's catalogue: 800 MW in-house panel manufacturing, 1000+ distributors, 400+ OEM partners, panels from 50W to 590W - a B2B story for ads selling a B2C subsidy.",
+    "The enquiry form runs behind reCAPTCHA and a character-limited 'claim your subsidy of Rs 78,000' field - friction between the ad promise and the lead.",
+    "Every ad ends with the same 80016 80016 short-code number - a call-centre funnel, not a local-installer one.",
+    "Scale note: this is the solar arm of the Eastman group (25 GW group-wide production), not a local installer - the pitch here is the B2C funnel, not the product."
+  ],
+  "next_steps": [
+    [
+      "Build a dedicated residential PM Surya Ghar page",
+      "The ad promise is 'reduce your bill to zero with Rs 78,000 subsidy'. The page should be a residential subsidy calculator and quote form, not the inverter catalogue."
+    ],
+    [
+      "Cut the form friction",
+      "reCAPTCHA plus a limited field on a Rs 78,000 offer loses clicks. Fewer fields, no captcha on the first step."
+    ],
+    [
+      "Install pixel and retargeting on the offer",
+      "4 ads on one offer with no pixel means no way to see who dropped off after the click and no audience to bring back."
+    ],
+    [
+      "Test on-grid vs hybrid against the page",
+      "Two creatives selling two product lines to one funnel - a landing page per line tells you which converts."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "support@eaplworld.com"
+    ],
+    [
+      "Phone",
+      "80016 80016 (short code, in every ad); 0124-4627900"
+    ],
+    [
+      "Address",
+      "Eastman New Energy Private Limited - enquiry via eastmansolar.in (maps link on site)"
+    ],
+    [
+      "Entity",
+      "Eastman New Energy Private Limited - 800 MW in-house panel manufacturing, part of EAPL (25 GW group-wide), 1000+ distributors, 400+ OEM partners"
+    ],
+    [
+      "Meta page",
+      "facebook.com/Eastmannewenergy"
+    ]
+  ],
+  "contact": {
+    "email": "support@eaplworld.com",
+    "phone": "80016 80016",
+    "fb_page": "https://www.facebook.com/Eastmannewenergy/"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "company": "Kapil Power & Infra",
+  "legal": "Kapil Power & Infra (P) Ltd.",
+  "city": "Hyderabad",
+  "website": "https://kapilpower.com/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-21",
+  "generated_at": "2026-10-21 01:41",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 2,
+      "results_label": "~2 results",
+      "query": "Telugu solar subsidy",
+      "ads": [
+        {
+          "library_id": "3669543896537319",
+          "library_url": "https://www.facebook.com/ads/library/?id=3669543896537319",
+          "page_name": "Kapil Power & Infra P Ltd",
+          "started": "Sep 14, 2026",
+          "destination": "Facebook lead form",
+          "text": "Telugu: మీ ఇంటి విలువను పెంచండి మరియు పర్యావరణాన్ని రక్షించండి. అత్యాధునిక టెక్నాలజీతో కూడిన ఆన్-గ్రిడ్ సోలార్ సిస్టమ్స్‌ను మేము అందిస్తున్నాము. ఎటువంటి నిర్వహణ ఖర్చు లేకుండా దశాబ్దాల పాటు ఉచిత విద్యుత్తును పొందండి. (Increase your home's value and protect the environment with modern-technology on-grid solar systems and decades of free electricity.)",
+          "images": []
+        },
+        {
+          "library_id": "2274643036665215",
+          "library_url": "https://www.facebook.com/ads/library/?id=2274643036665215",
+          "page_name": "Kapil Power & Infra P Ltd",
+          "started": "Oct 6, 2026",
+          "destination": "Facebook lead form (fb.me 'See details')",
+          "text": "Stop Paying High Current Bills! Kapil Powerతో మీ ఇంటినే పవర్ హౌస్‌గా మార్చుకోండి. Zero Electricity Bills (reduce your current bill up to 90%), Government Subsidy (PM Surya Ghar), Premium Panels (25 years warranty), Expert Installation (20+ years experience), Trusted Brand (1000+ happy customers).",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Kapil Power & Infra is running 2 active Telugu ads on Meta - one since 14 September 2026 (on-grid solar systems) and one since 6 October 2026 (reduce your bill by 90%, 1000+ happy customers) - and both send the click into a Facebook lead form. Kapil Power is the solar arm of the Kapil Group, a Hyderabad household name since 1981, with 25+ years in solar, TGREDCO empanelment (TSRE180167) and offices in Kapil Towers, Financial District. None of the spend reaches kapilpower.com."
+  },
+  "funnel": {
+    "type": "Facebook lead form",
+    "destination": "fb.me ('See details') on both ads",
+    "meaning": "Both ads land inside Facebook. For a group company with a full EPC website - rooftop, ground-mounted, street lighting, solar fencing, O&M - the paid click never sees any of it."
+  },
+  "findings": [
+    "2 live Telugu ads (14 Sep and 6 Oct 2026) and every click lands in a Facebook lead form - the paid traffic never reaches kapilpower.com.",
+    "This is the Kapil Group - a Hyderabad household name since 1981 - with 25+ years in solar, TGREDCO empanelment (TSRE180167) and a 2004-incorporated company. Heavyweight credibility, all of it invisible to the ad click.",
+    "The site is a full EPC site: on-grid and off-grid, rooftop, ground-mounted, street lighting, solar fencing and O&M, with DISCOM and MNRE paperwork handled - real depth that no paid traffic ever sees.",
+    "No owned landing page for the offers being advertised, no pixel on the site, no retargeting pool built from this spend.",
+    "The '1000+ happy customers' claim in the ad has no matching proof page on the site - testimonials exist, but nothing a Telugu ad click can verify in one step."
+  ],
+  "next_steps": [
+    [
+      "Build a Hyderabad residential landing page",
+      "Point both Telugu ads at one page on kapilpower.com: PM Surya Ghar subsidy, 90% bill reduction, the 1000+ customer proof, and the free site visit - so the Kapil Group name works on the click."
+    ],
+    [
+      "Install the pixel and capture retargeting",
+      "Meta lead forms give you a name and number. The pixel plus Conversions API on your own site gives you the audience to re-market to at a fraction of the cost."
+    ],
+    [
+      "Test a second creative angle",
+      "Two ads is a start. Test a subsidy-focused and an EMI-focused Telugu version against the bill-reduction message."
+    ],
+    [
+      "Put the group's track record in front of the click",
+      "25+ years, 1981, TGREDCO empanelment - trust assets most local competitors cannot show, currently invisible on the paid path."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@kapilpower.com (also sales@kapilpower.com)"
+    ],
+    [
+      "Phone",
+      "+91 7729985106"
+    ],
+    [
+      "Address",
+      "14th Floor, Kapil Towers, Financial District, Nanakramguda, Gachibowli, Hyderabad 500032"
+    ],
+    [
+      "Entity",
+      "Kapil Power & Infra (P) Ltd. - Kapil Group company (since 1981), TGREDCO empanelled TSRE180167, incorporated 2004"
+    ],
+    [
+      "Meta page",
+      "facebook.com/kapilpowerandinfra"
+    ]
+  ],
+  "contact": {
+    "email": "info@kapilpower.com",
+    "phone": "+91 7729985106",
+    "fb_page": "https://www.facebook.com/kapilpowerandinfra/"
+  }
+}

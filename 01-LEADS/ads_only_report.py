@@ -851,6 +851,483 @@ LEADS = [
             ("Meta page", "facebook.com/junnasolar"),
         ],
     },
+    {
+        "company": "Valcan Solar",
+        "legal": "Valcan Energy Systems",
+        "city": "Hyderabad",
+        "website": "https://valcansolar.com/",
+        "email": "info@valcansolar.com",
+        "phone": "+91 90300 33577",
+        "fb_page": "https://www.facebook.com/valcansolar/",
+        "checked_on": "2026-10-21",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 2,
+                "results_label": "~2 results",
+                "query": "solar Secunderabad",
+                "ads": [
+                    ad("1156154097084461", "Valcan Solar", "Oct 7, 2026",
+                       "https://valcansolar.com/ ('Book now')",
+                       "GO SOLAR. WIN BIG. SAVE MORE! This festive season, make the switch "
+                       "to solar with Valcan Solar and stand a chance to win exciting "
+                       "prizes! Bumper Draw Prizes: 1st Prize - Get Your Solar System "
+                       "FREE, 2nd Prize - EV Bike (5 Winners), 3rd Prize - EV Cycle (10 "
+                       "Winners), Air Fryer (50 Winners), Induction Stove (50 Winners). "
+                       "Government Subsidy up to Rs. 78,000, Additional Discount of Rs. "
+                       "22,000, 0% Interest EMI, Free Insurance, Free Consultation. "
+                       "Applicable for 2 kW to 10 kW solar systems. Valid Until: 24 "
+                       "November 2026. Bumper Draw: 30 November 2026."),
+                    ad("2941615846186384", "valcansolar", "Oct 15, 2026",
+                       "Facebook lead form (Call Us)",
+                       "MEGA UTSAV | 2KW-10KW Solar Systems. Bumper Prize Opportunities: "
+                       "1st Prize - Solar System FREE, 2nd Prize - EV Bike - 5 Winners, "
+                       "3rd Prize - EV Cycle - 10 Winners, 4th Prize - Air Fryer - 50 "
+                       "Winners, 5th Prize - Induction Stove - 50 Winners. Government "
+                       "Subsidy Rs 78,000. Additional Discount Rs 22,000. No-Cost EMI | "
+                       "0% Interest. Free Insurance. Free Consultation. Offer Valid Up "
+                       "To: 24th November 2026. Bumper Draw Date: 30th November 2026."),
+                ],
+            },
+            "summary": (
+                "Valcan Solar is running 2 active ads on Meta for the MEGA UTSAV bumper-"
+                "draw campaign - one since 7 October 2026 pointing at valcansolar.com, "
+                "one since 15 October 2026 pointing at a Facebook lead form. The offer "
+                "(free solar system as first prize, EV bikes, Rs. 78,000 subsidy plus "
+                "Rs. 22,000 discount, 0% EMI) runs until 24 November with the draw on "
+                "30 November. Both ads surfaced in the 'solar Secunderabad' search - "
+                "their home market."),
+        },
+        "funnel": {
+            "type": "Split - own site + Facebook lead form",
+            "destination": "valcansolar.com ('Book now') on one ad, a Facebook lead "
+                           "form ('Call Us') on the other",
+            "meaning": (
+                "Half the spend lands on a page you own; half lands inside Facebook. "
+                "Two destinations for one offer means two different experiences for "
+                "the same click, and the Facebook side leaves you no pixel, no "
+                "retargeting pool and nothing to test."),
+        },
+        "findings": [
+            "2 live ads running the MEGA UTSAV bumper-draw offer (free solar system as "
+            "first prize, EV bikes, air fryers) until 24 November, draw 30 November - a "
+            "deadline-driven push with real money behind it.",
+            "One ad sends clicks to valcansolar.com, the other into a Facebook lead "
+            "form. The same offer, two different funnels - and the Facebook side owns "
+            "none of the data.",
+            "The site's 'Our Achievements' counters all read 0 - 0K+ projects completed, "
+            "0% positive feedback, 0+ years of experience, 0% success rate. A visitor "
+            "who just clicked a bumper-draw ad sees a brand-new company.",
+            "The contact block's email reads marketing@vulcansolar.in - misspelled "
+            "('vulcansolar'), while the header shows info@valcansolar.com instead. "
+            "Enquiries may not reach either inbox.",
+            "The contact block's phone link shows +91 9010008373 while the displayed "
+            "number is +91 90300 33577 - two different numbers in the same block.",
+            "The site itself claims 'since 2012', ISO 9001:2008 certification and 15+ "
+            "years of experience - the substance is there, it just never reaches the "
+            "paid visitor.",
+        ],
+        "next_steps": [
+            ("Unify the two ads on one owned page",
+             "Point both MEGA UTSAV ads at one landing page on valcansolar.com with the "
+             "offer, the prize list and the 24 November deadline on it - so the spend "
+             "builds one measurable funnel."),
+            ("Fill in the achievement counters",
+             "0+ years of experience and 0K+ projects read as a startup. Real numbers "
+             "on a deadline-driven campaign page are the difference between a click and "
+             "a call."),
+            ("Fix the contact details",
+             "Correct marketing@vulcansolar.in to a working valcansolar.com address and "
+             "make the phone link match the displayed number - on a draw with a hard "
+             "deadline, a broken enquiry path is a lost prize entry."),
+            ("Build the deadline into the page",
+             "Offer valid to 24 Nov, draw on 30 Nov - a countdown and a 'book before "
+             "the draw' CTA turn urgency into conversions."),
+        ],
+        "contact_facts": [
+            ("Email", "info@valcansolar.com (header); marketing@vulcansolar.in "
+                      "(contact block, misspelled)"),
+            ("Phone", "+91 90300 33577 (displayed); +91 9010008373 (phone link in the "
+                      "contact block)"),
+            ("Address", "Vikrampuri Colony, Karkhana, Secunderabad 500015; Plot No. 16, "
+                        "Goyal Co-operative Housing Society Ltd, Tirumalagiri, "
+                        "Secunderabad Cantonment 500015"),
+            ("Entity", "Valcan Energy Systems - since 2012, ISO 9001:2008"),
+            ("Meta page", "facebook.com/valcansolar (also Instagram @valcansolar)"),
+        ],
+    },
+    {
+        "company": "Ellvin Energy",
+        "legal": "Ellvin Energy Private Limited",
+        "city": "Hyderabad",
+        "website": "https://ellvinenergy.com/",
+        "email": "info@ellvinenergy.com",
+        "phone": "+91 94677 29999",
+        "fb_page": "https://www.facebook.com/61579321563426/",
+        "checked_on": "2026-10-21",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 1,
+                "results_label": "6 ads use this creative and text",
+                "query": "Telugu solar subsidy",
+                "ads": [
+                    ad("1688280062277703", "Ellvin energy", "Aug 12, 2026",
+                       "Facebook lead form (fb.me 'Book now')",
+                       "Telugu: మొదటి కోటి మందికి మాత్రమే సబ్సిడీ రాయితీ. Elvin Energy "
+                       "తో ఒక్క రూపాయి ఖర్చు లేకుండా 3KW సోలార్ ప్లాంట్. ఇక మీరు "
+                       "ఉత్పత్తి చేసిన విద్యుత్తుతో మీ భవిష్యత్తు వెలిగించుకోండి. "
+                       "#GoGreen #SolarPower #ElvinEnergy #ElvinSolar #GoGreen "
+                       "#SolarBenefits #PMSuryaGhar. (Subsidy discount for the first 1 "
+                       "crore people; a 3KW solar plant at zero cost with Elvin "
+                       "Energy.)"),
+                ],
+            },
+            "summary": (
+                "Ellvin Energy is running 6 live ads on Meta - all six sharing one "
+                "Telugu creative (Library ID 1688280062277703, started 12 August 2026) "
+                "- and every one of them sends the click into a Facebook lead form. The "
+                "company was incorporated only in August 2025 (CIN "
+                "U35105AP2025PTC120835), is headquartered in Tadepalli, Andhra Pradesh, "
+                "and is advertising into Telangana in Telugu. No owned page receives "
+                "any of this traffic."),
+        },
+        "funnel": {
+            "type": "Facebook lead form only",
+            "destination": "fb.me ('Book now') on all 6 ads",
+            "meaning": (
+                "Every lead is captured inside Facebook. There is no pixel on "
+                "ellvinenergy.com, no retargeting pool, no landing page to test and no "
+                "way to see what happens after the click."),
+        },
+        "findings": [
+            "6 live ads - and all 6 share one Telugu creative (Library ID "
+            "1688280062277703, running since 12 August 2026). One idea, six versions, "
+            "no second angle and no retargeting creative.",
+            "Every click lands in a Facebook lead form - the paid traffic never reaches "
+            "ellvinenergy.com. No pixel, no retargeting pool, no page you can test.",
+            "The company was incorporated only in August 2025 (CIN U35105AP2025PTC120835, "
+            "directors Vijaya Bhaskar and Nirmala Gangavarapu) - a one-year-old "
+            "installer buying Telugu solar leads in Telangana.",
+            "The creative promises a '3KW solar plant at zero cost' to 'the first 1 "
+            "crore people' - eligibility language that needs a real landing page behind "
+            "it, not just a form.",
+            "Headquartered in Tadepalli, Guntur (Andhra Pradesh), advertising into "
+            "Telangana - no Hyderabad presence on the site, no local proof for a "
+            "Telangana buyer.",
+        ],
+        "next_steps": [
+            ("Build an owned Telugu landing page",
+             "Put the 'zero-cost 3KW' eligibility promise on a page you control - "
+             "eligibility check, subsidy maths, quote form - and point all 6 ads at it."),
+            ("Install the pixel and start retargeting",
+             "Six ads buying leads with no pixel on your site means no audience to "
+             "re-market to. The Meta pixel plus a lead-form integration turns one click "
+             "into a retargetable contact."),
+            ("Test a second creative angle",
+             "One creative cannot tell you which message works. Test a subsidy-focused "
+             "and an EMI-focused Telugu version against each other."),
+            ("Add Telangana-local proof",
+             "Named local projects and a Telangana service area turn a cross-border "
+             "advertiser into a local option for the homeowner reading the ad."),
+        ],
+        "contact_facts": [
+            ("Email", "info@ellvinenergy.com"),
+            ("Phone", "+91 94677 29999"),
+            ("Address", "3rd Floor, Next Space Building, NH-service Road, Kunchanapalli "
+                        "Village, Tadepalli, Guntur Dist, Andhra Pradesh 522501"),
+            ("Entity", "Ellvin Energy Private Limited - incorporated Aug 2025, CIN "
+                       "U35105AP2025PTC120835"),
+            ("Meta page", "facebook.com/61579321563426 (Ellvin energy)"),
+        ],
+    },
+    {
+        "company": "Kapil Power & Infra",
+        "legal": "Kapil Power & Infra (P) Ltd.",
+        "city": "Hyderabad",
+        "website": "https://kapilpower.com/",
+        "email": "info@kapilpower.com",
+        "phone": "+91 7729985106",
+        "fb_page": "https://www.facebook.com/kapilpowerandinfra/",
+        "checked_on": "2026-10-21",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 2,
+                "results_label": "~2 results",
+                "query": "Telugu solar subsidy",
+                "ads": [
+                    ad("3669543896537319", "Kapil Power & Infra P Ltd", "Sep 14, 2026",
+                       "Facebook lead form",
+                       "Telugu: మీ ఇంటి విలువను పెంచండి మరియు పర్యావరణాన్ని "
+                       "రక్షించండి. అత్యాధునిక టెక్నాలజీతో కూడిన ఆన్-గ్రిడ్ "
+                       "సోలార్ సిస్టమ్స్‌ను మేము అందిస్తున్నాము. ఎటువంటి నిర్వహణ "
+                       "ఖర్చు లేకుండా దశాబ్దాల పాటు ఉచిత విద్యుత్తును పొందండి. "
+                       "(Increase your home's value and protect the environment with "
+                       "modern-technology on-grid solar systems and decades of free "
+                       "electricity.)"),
+                    ad("2274643036665215", "Kapil Power & Infra P Ltd", "Oct 6, 2026",
+                       "Facebook lead form (fb.me 'See details')",
+                       "Stop Paying High Current Bills! Kapil Powerతో మీ ఇంటినే పవర్ "
+                       "హౌస్‌గా మార్చుకోండి. Zero Electricity Bills (reduce your "
+                       "current bill up to 90%), Government Subsidy (PM Surya Ghar), "
+                       "Premium Panels (25 years warranty), Expert Installation (20+ "
+                       "years experience), Trusted Brand (1000+ happy customers)."),
+                ],
+            },
+            "summary": (
+                "Kapil Power & Infra is running 2 active Telugu ads on Meta - one since "
+                "14 September 2026 (on-grid solar systems) and one since 6 October 2026 "
+                "(reduce your bill by 90%, 1000+ happy customers) - and both send the "
+                "click into a Facebook lead form. Kapil Power is the solar arm of the "
+                "Kapil Group, a Hyderabad household name since 1981, with 25+ years in "
+                "solar, TGREDCO empanelment (TSRE180167) and offices in Kapil Towers, "
+                "Financial District. None of the spend reaches kapilpower.com."),
+        },
+        "funnel": {
+            "type": "Facebook lead form",
+            "destination": "fb.me ('See details') on both ads",
+            "meaning": (
+                "Both ads land inside Facebook. For a group company with a full EPC "
+                "website - rooftop, ground-mounted, street lighting, solar fencing, "
+                "O&M - the paid click never sees any of it."),
+        },
+        "findings": [
+            "2 live Telugu ads (14 Sep and 6 Oct 2026) and every click lands in a "
+            "Facebook lead form - the paid traffic never reaches kapilpower.com.",
+            "This is the Kapil Group - a Hyderabad household name since 1981 - with "
+            "25+ years in solar, TGREDCO empanelment (TSRE180167) and a 2004-"
+            "incorporated company. Heavyweight credibility, all of it invisible to the "
+            "ad click.",
+            "The site is a full EPC site: on-grid and off-grid, rooftop, ground-mounted, "
+            "street lighting, solar fencing and O&M, with DISCOM and MNRE paperwork "
+            "handled - real depth that no paid traffic ever sees.",
+            "No owned landing page for the offers being advertised, no pixel on the "
+            "site, no retargeting pool built from this spend.",
+            "The '1000+ happy customers' claim in the ad has no matching proof page on "
+            "the site - testimonials exist, but nothing a Telugu ad click can verify "
+            "in one step.",
+        ],
+        "next_steps": [
+            ("Build a Hyderabad residential landing page",
+             "Point both Telugu ads at one page on kapilpower.com: PM Surya Ghar "
+             "subsidy, 90% bill reduction, the 1000+ customer proof, and the free site "
+             "visit - so the Kapil Group name works on the click."),
+            ("Install the pixel and capture retargeting",
+             "Meta lead forms give you a name and number. The pixel plus Conversions "
+             "API on your own site gives you the audience to re-market to at a fraction "
+             "of the cost."),
+            ("Test a second creative angle",
+             "Two ads is a start. Test a subsidy-focused and an EMI-focused Telugu "
+             "version against the bill-reduction message."),
+            ("Put the group's track record in front of the click",
+             "25+ years, 1981, TGREDCO empanelment - trust assets most local "
+             "competitors cannot show, currently invisible on the paid path."),
+        ],
+        "contact_facts": [
+            ("Email", "info@kapilpower.com (also sales@kapilpower.com)"),
+            ("Phone", "+91 7729985106"),
+            ("Address", "14th Floor, Kapil Towers, Financial District, Nanakramguda, "
+                        "Gachibowli, Hyderabad 500032"),
+            ("Entity", "Kapil Power & Infra (P) Ltd. - Kapil Group company (since "
+                       "1981), TGREDCO empanelled TSRE180167, incorporated 2004"),
+            ("Meta page", "facebook.com/kapilpowerandinfra"),
+        ],
+    },
+    {
+        "company": "Solar6",
+        "legal": "Solar6 Pvt Ltd",
+        "city": "Hyderabad",
+        "website": "https://www.solar6.co.in/",
+        "email": "info@solar6.in",
+        "phone": "+91 9912355344",
+        "fb_page": "https://www.facebook.com/61589212079896/",
+        "checked_on": "2026-10-21",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 1,
+                "results_label": "~1 result",
+                "query": "Telugu solar subsidy",
+                "ads": [
+                    ad("1115998414098781", "Solar6 Pvt Ltd", "Sep 14, 2026",
+                       "WhatsApp (Send WhatsApp message)",
+                       "Telugu: దసరా స్పెషల్ ఆఫర్! ఈ పండుగ సీజన్‌లో జీరో డౌన్ "
+                       "పేమెంట్‌తో సోలార్ పొందండి! సోలార్ సిస్టమ్ కేవలం ₹78,000కే + "
+                       "ప్రభుత్వ సబ్సిడీ + FREE Amaron ఇన్వర్టర్ & బ్యాటరీ! Reliable "
+                       "performance, low maintenance, after-sales support. Authorised "
+                       "partners: Adani | Microtek | Waaree | SBI | Union Bank | "
+                       "Canara Bank. 9052 144 777 | www.solar6.co.in. PAN India "
+                       "Services. (Dasara special: zero down payment solar, system at "
+                       "just Rs 78,000 + government subsidy + free Amaron inverter and "
+                       "battery.)"),
+                ],
+            },
+            "summary": (
+                "Solar6 is running an active Telugu Dasara-special ad on Meta (Library "
+                "ID 1115998414098781, started 14 September 2026) offering zero-down-"
+                "payment solar with a free Amaron inverter and battery - and the ad "
+                "sends every click to WhatsApp. The company has over a decade of "
+                "experience, is headquartered in Kukatpally, and runs both "
+                "solar6.co.in and solar6.in. The ad's phone number (9052 144 777) is "
+                "different from the one published on the site (+91 9912355344)."),
+        },
+        "funnel": {
+            "type": "WhatsApp only",
+            "destination": "WhatsApp message from the ad",
+            "meaning": (
+                "The paid click goes straight to a chat. There is no site visit, no "
+                "email capture, no landing page - so nothing can be measured, tested "
+                "or retargeted, and a visitor who does not reply is gone."),
+        },
+        "findings": [
+            "The live Dasara ad sends every click to WhatsApp - no site visit, no email "
+            "capture, nothing to measure or retarget.",
+            "The ad's phone number (9052 144 777) is different from the number "
+            "published on the site (+91 9912355344) - two numbers, two funnels, one "
+            "brand.",
+            "The site's 'Success by the Numbers' counters all read 0 - 0+ projects "
+            "completed, 0+ happy customers, 0+ team members, 0+ years of experience - "
+            "while the homepage claims 'India's #2 Leading Rooftop Solar Company'.",
+            "The site still carries template demo links (wordpress.vecurosoft.com/"
+            "energiso) and a project image credited to 'Maxwatt Solar' - another "
+            "company's photo.",
+            "Authorised-partner line in the ad (Adani, Microtek, Waaree, SBI, Union "
+            "Bank, Canara Bank) is strong trust material with no matching proof page "
+            "for a WhatsApp-click visitor.",
+        ],
+        "next_steps": [
+            ("Build an owned page for the offer",
+             "Put the Dasara offer - zero down payment, Rs 78,000 + subsidy, free "
+             "Amaron inverter and battery - on a landing page on solar6.co.in, and send "
+             "the ad there."),
+            ("Capture before the chat",
+             "Name, phone and locality on the page first, WhatsApp second - so "
+             "non-repliers can be followed up instead of lost."),
+            ("Fix the counters and the credit",
+             "0+ projects and 0+ years read as a startup next to an 'India's #2' claim. "
+             "Remove the Maxwatt Solar photo credit and fill in real numbers."),
+            ("Align the two phone numbers",
+             "The ad says 9052 144 777, the site says +91 9912355344. One number, "
+             "everywhere, so the paid click and the site agree."),
+        ],
+        "contact_facts": [
+            ("Email", "info@solar6.in"),
+            ("Phone", "+91 9912355344 (site); 9052 144 777 (ad)"),
+            ("Address", "4-32-41/39, Kamalaprasanna Nagar, Allwyn Colony, Kukatpally, "
+                        "Hyderabad 500072 (opp SBI Bank)"),
+            ("Entity", "Solar6 - over a decade of experience, headquartered in "
+                       "Hyderabad; sites solar6.co.in and solar6.in"),
+            ("Meta page", "facebook.com/61589212079896 (Solar6 Pvt Ltd)"),
+        ],
+    },
+    {
+        "company": "Eastman New Energy",
+        "legal": "Eastman New Energy Private Limited",
+        "city": "Hyderabad",
+        "website": "https://eastmansolar.in/",
+        "email": "support@eaplworld.com",
+        "phone": "80016 80016",
+        "fb_page": "https://www.facebook.com/Eastmannewenergy/",
+        "checked_on": "2026-10-21",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 4,
+                "results_label": "~4 results",
+                "query": "Telugu solar subsidy",
+                "ads": [
+                    ad("3668088310036092", "Eastman New Energy Private Limited",
+                       "Aug 30, 2026", "https://eastmansolar.in/ ('Learn more')",
+                       "Telugu on-grid creative - PM Surya Ghar free-electricity "
+                       "scheme, switch to Eastman on-grid solar solutions for the "
+                       "Rs. 78,000* subsidy plus additional state subsidy. Call 80016 "
+                       "80016."),
+                    ad("929674622913607", "Eastman New Energy Private Limited",
+                       "Aug 29, 2026", "https://eastmansolar.in/ ('Learn more')",
+                       "Telugu hybrid creative - switch to Eastman hybrid solutions "
+                       "for the Rs. 78,000* subsidy plus additional state subsidy, "
+                       "with Eastman hybrid inverters and lithium batteries for 24x7 "
+                       "power. Call 80016 80016."),
+                    ad("2152229662052110", "Eastman New Energy Private Limited",
+                       "Sep 29, 2026", "https://eastmansolar.in/ ('Learn more')",
+                       "Telugu: మీ కరెంటు బిల్లును సున్నాకు తగ్గించండి. పీఎం "
+                       "సూర్య ఘర్ ముఫ్త్ బిజిలీ యోజన కింద, ఈస్ట్‌మన్ ఆన్-గ్రిడ్ "
+                       "సోలార్ సొల్యూషన్స్‌కు మారి ₹78,000* సబ్సిడీ + అదనపు రాష్ట్ర "
+                       "సబ్సిడీ పొందండి. ఈరోజే కాల్ చేయండి 80016 80016. (Reduce "
+                       "your current bill to zero under the PM Surya Ghar scheme with "
+                       "Eastman on-grid solar solutions - Rs. 78,000* subsidy plus "
+                       "additional state subsidy. Call 80016 80016 today.)"),
+                    ad("28876616218695042", "Eastman New Energy Private Limited",
+                       "Sep 29, 2026", "https://eastmansolar.in/ ('Learn more')",
+                       "Telugu: ఈస్ట్‌మన్ సోలార్ హైబ్రిడ్ సొల్యూషన్స్‌కు మారి "
+                       "₹78,000* సబ్సిడీ + అదనపు రాష్ట్ర సబ్సిడీ పొందండి. ఈస్ట్‌మన్ "
+                       "హైబ్రిడ్ ఇన్వర్టర్లు, లిథియం బ్యాటరీలతో 24x7 విద్యుత్తు "
+                       "ఆదాను ఆస్వాదించండి. (Switch to Eastman hybrid solar solutions "
+                       "for the Rs. 78,000* subsidy plus additional state subsidy - "
+                       "Eastman hybrid inverters with lithium batteries for 24x7 "
+                       "power.)"),
+                ],
+            },
+            "summary": (
+                "Eastman New Energy is running 4 active Telugu ads on Meta (Aug 29 - "
+                "Sep 29, 2026) - on-grid and hybrid creatives, both selling the "
+                "Rs. 78,000 PM Surya Ghar subsidy plus an additional state subsidy - "
+                "and all four send the click to eastmansolar.in. Eastman is not a "
+                "local installer: the site is a manufacturer's product catalogue "
+                "(800 MW in-house panel manufacturing, 1000+ distributors, 400+ OEM "
+                "partners, part of the Eastman group's 25 GW production)."),
+        },
+        "funnel": {
+            "type": "Own website (enquiry form behind reCAPTCHA)",
+            "destination": "eastmansolar.in ('Learn more') on all 4 ads",
+            "meaning": (
+                "At least the spend lands on an owned site. But the destination is a "
+                "manufacturer's product catalogue - on-grid, off-grid and hybrid "
+                "inverter pages - while the ads promise a B2C subsidy. The gap between "
+                "the ad promise and the page is where the conversion leaks."),
+        },
+        "findings": [
+            "4 live Telugu ads (Aug 29 - Sep 29, 2026), on-grid and hybrid creatives, "
+            "all pointing at eastmansolar.in - the spend stays on an owned domain.",
+            "But the destination is a manufacturer's catalogue: 800 MW in-house panel "
+            "manufacturing, 1000+ distributors, 400+ OEM partners, panels from 50W to "
+            "590W - a B2B story for ads selling a B2C subsidy.",
+            "The enquiry form runs behind reCAPTCHA and a character-limited "
+            "'claim your subsidy of Rs 78,000' field - friction between the ad promise "
+            "and the lead.",
+            "Every ad ends with the same 80016 80016 short-code number - a call-centre "
+            "funnel, not a local-installer one.",
+            "Scale note: this is the solar arm of the Eastman group (25 GW group-wide "
+            "production), not a local installer - the pitch here is the B2C funnel, "
+            "not the product.",
+        ],
+        "next_steps": [
+            ("Build a dedicated residential PM Surya Ghar page",
+             "The ad promise is 'reduce your bill to zero with Rs 78,000 subsidy'. The "
+             "page should be a residential subsidy calculator and quote form, not the "
+             "inverter catalogue."),
+            ("Cut the form friction",
+             "reCAPTCHA plus a limited field on a Rs 78,000 offer loses clicks. Fewer "
+             "fields, no captcha on the first step."),
+            ("Install pixel and retargeting on the offer",
+             "4 ads on one offer with no pixel means no way to see who dropped off "
+             "after the click and no audience to bring back."),
+            ("Test on-grid vs hybrid against the page",
+             "Two creatives selling two product lines to one funnel - a landing page "
+             "per line tells you which converts."),
+        ],
+        "contact_facts": [
+            ("Email", "support@eaplworld.com"),
+            ("Phone", "80016 80016 (short code, in every ad); 0124-4627900"),
+            ("Address", "Eastman New Energy Private Limited - enquiry via eastmansolar.in "
+                        "(maps link on site)"),
+            ("Entity", "Eastman New Energy Private Limited - 800 MW in-house panel "
+                       "manufacturing, part of EAPL (25 GW group-wide), 1000+ "
+                       "distributors, 400+ OEM partners"),
+            ("Meta page", "facebook.com/Eastmannewenergy"),
+        ],
+    },
 ]
 
 

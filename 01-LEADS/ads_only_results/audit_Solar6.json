@@ -1,0 +1,88 @@
+{
+  "company": "Solar6",
+  "legal": "Solar6 Pvt Ltd",
+  "city": "Hyderabad",
+  "website": "https://www.solar6.co.in/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-21",
+  "generated_at": "2026-10-21 01:41",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "~1 result",
+      "query": "Telugu solar subsidy",
+      "ads": [
+        {
+          "library_id": "1115998414098781",
+          "library_url": "https://www.facebook.com/ads/library/?id=1115998414098781",
+          "page_name": "Solar6 Pvt Ltd",
+          "started": "Sep 14, 2026",
+          "destination": "WhatsApp (Send WhatsApp message)",
+          "text": "Telugu: దసరా స్పెషల్ ఆఫర్! ఈ పండుగ సీజన్‌లో జీరో డౌన్ పేమెంట్‌తో సోలార్ పొందండి! సోలార్ సిస్టమ్ కేవలం ₹78,000కే + ప్రభుత్వ సబ్సిడీ + FREE Amaron ఇన్వర్టర్ & బ్యాటరీ! Reliable performance, low maintenance, after-sales support. Authorised partners: Adani | Microtek | Waaree | SBI | Union Bank | Canara Bank. 9052 144 777 | www.solar6.co.in. PAN India Services. (Dasara special: zero down payment solar, system at just Rs 78,000 + government subsidy + free Amaron inverter and battery.)",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Solar6 is running an active Telugu Dasara-special ad on Meta (Library ID 1115998414098781, started 14 September 2026) offering zero-down-payment solar with a free Amaron inverter and battery - and the ad sends every click to WhatsApp. The company has over a decade of experience, is headquartered in Kukatpally, and runs both solar6.co.in and solar6.in. The ad's phone number (9052 144 777) is different from the one published on the site (+91 9912355344)."
+  },
+  "funnel": {
+    "type": "WhatsApp only",
+    "destination": "WhatsApp message from the ad",
+    "meaning": "The paid click goes straight to a chat. There is no site visit, no email capture, no landing page - so nothing can be measured, tested or retargeted, and a visitor who does not reply is gone."
+  },
+  "findings": [
+    "The live Dasara ad sends every click to WhatsApp - no site visit, no email capture, nothing to measure or retarget.",
+    "The ad's phone number (9052 144 777) is different from the number published on the site (+91 9912355344) - two numbers, two funnels, one brand.",
+    "The site's 'Success by the Numbers' counters all read 0 - 0+ projects completed, 0+ happy customers, 0+ team members, 0+ years of experience - while the homepage claims 'India's #2 Leading Rooftop Solar Company'.",
+    "The site still carries template demo links (wordpress.vecurosoft.com/energiso) and a project image credited to 'Maxwatt Solar' - another company's photo.",
+    "Authorised-partner line in the ad (Adani, Microtek, Waaree, SBI, Union Bank, Canara Bank) is strong trust material with no matching proof page for a WhatsApp-click visitor."
+  ],
+  "next_steps": [
+    [
+      "Build an owned page for the offer",
+      "Put the Dasara offer - zero down payment, Rs 78,000 + subsidy, free Amaron inverter and battery - on a landing page on solar6.co.in, and send the ad there."
+    ],
+    [
+      "Capture before the chat",
+      "Name, phone and locality on the page first, WhatsApp second - so non-repliers can be followed up instead of lost."
+    ],
+    [
+      "Fix the counters and the credit",
+      "0+ projects and 0+ years read as a startup next to an 'India's #2' claim. Remove the Maxwatt Solar photo credit and fill in real numbers."
+    ],
+    [
+      "Align the two phone numbers",
+      "The ad says 9052 144 777, the site says +91 9912355344. One number, everywhere, so the paid click and the site agree."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@solar6.in"
+    ],
+    [
+      "Phone",
+      "+91 9912355344 (site); 9052 144 777 (ad)"
+    ],
+    [
+      "Address",
+      "4-32-41/39, Kamalaprasanna Nagar, Allwyn Colony, Kukatpally, Hyderabad 500072 (opp SBI Bank)"
+    ],
+    [
+      "Entity",
+      "Solar6 - over a decade of experience, headquartered in Hyderabad; sites solar6.co.in and solar6.in"
+    ],
+    [
+      "Meta page",
+      "facebook.com/61589212079896 (Solar6 Pvt Ltd)"
+    ]
+  ],
+  "contact": {
+    "email": "info@solar6.in",
+    "phone": "+91 9912355344",
+    "fb_page": "https://www.facebook.com/61589212079896/"
+  }
+}

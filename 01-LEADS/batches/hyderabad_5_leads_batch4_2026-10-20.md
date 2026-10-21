@@ -115,6 +115,15 @@ Sainikpuri), A & T Power Systems (anilparcha@gmail.com, Ameerpet).
 
 ## Notes for whoever picks this up
 
+> **Owner decision (2026-10-21):** this batch pivoted away from no-ads leads.
+> The four no-ads reports (Four Solar, Origian Power, Mamindla Energy Solutions,
+> Junna Solar Systems) are built and committed as honest artifacts but are **on
+> hold — not to be pitched** — per the owner's steer: *"you should take leads
+> from ads which are running; if 0 live ads, what is the use of an audit PDF?"*
+> Batch 5 (`hyderabad_5_leads_batch5_2026-10-21.md`) applies the new rule and
+> sources leads from active Meta advertisers only. Twilight Solar (2 live ads)
+> remains the one batch-4 lead that qualifies and was already pitched.
+
 - **All five leads now have their ads-only reports — DONE.** Twilight Solar (2 live
   Library IDs) plus Four Solar, Origian Power, Mamindla Energy Solutions and Junna
   Solar Systems, each built 2026-10-21 from the live Ad Library probes and site
