@@ -1,0 +1,40 @@
+=== EMAIL FOR: Solar6 ===
+City: Hyderabad
+To: info@solar6.in
+Phone: +91 9912355344
+Website: https://www.solar6.co.in/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Solar6.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-21 01:50
+
+--- SUBJECT ---
+Solar6: 1 live Hyderabad ad, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Solar6 is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-21):
+
+  - 1 live ad on Meta, running since 14 September 2026
+  - every click lands in WhatsApp only
+  - The live Dasara ad sends every click to WhatsApp - no site visit, no email capture, nothing to measure or retarget.
+  - The ad's phone number (9052 144 777) is different from the number published on the site (+91 9912355344) - two numbers, two funnels, one brand.
+
+You can verify every line yourself:
+
+  Library ID 1115998414098781: https://www.facebook.com/ads/library/?id=1115998414098781
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

@@ -1,0 +1,43 @@
+=== EMAIL FOR: Eastman New Energy ===
+City: Hyderabad
+To: support@eaplworld.com
+Phone: 80016 80016
+Website: https://eastmansolar.in/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Eastman_New_Energy.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-21 01:50
+
+--- SUBJECT ---
+Eastman New Energy: 4 live Hyderabad ads, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Eastman New Energy is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-21):
+
+  - 4 live ads on Meta, running since 29 August 2026
+  - every click lands in Own website (enquiry form behind reCAPTCHA)
+  - 4 live Telugu ads (Aug 29 - Sep 29, 2026), on-grid and hybrid creatives, all pointing at eastmansolar.in - the spend stays on an owned domain.
+  - But the destination is a manufacturer's catalogue: 800 MW in-house panel manufacturing, 1000+ distributors, 400+ OEM partners, panels from 50W to 590W - a B2B story for ads selling a B2C subsidy.
+
+You can verify every line yourself:
+
+  Library ID 3668088310036092: https://www.facebook.com/ads/library/?id=3668088310036092
+  Library ID 929674622913607: https://www.facebook.com/ads/library/?id=929674622913607
+  Library ID 2152229662052110: https://www.facebook.com/ads/library/?id=2152229662052110
+  Library ID 28876616218695042: https://www.facebook.com/ads/library/?id=28876616218695042
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

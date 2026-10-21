@@ -1,0 +1,41 @@
+=== EMAIL FOR: Valcan Solar ===
+City: Hyderabad
+To: info@valcansolar.com
+Phone: +91 90300 33577
+Website: https://valcansolar.com/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Valcan_Solar.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-21 01:50
+
+--- SUBJECT ---
+Valcan Solar: 2 live Hyderabad ads, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Valcan Solar is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-21):
+
+  - 2 live ads on Meta, running since 07 October 2026
+  - every click lands in Split - own site + Facebook lead form
+  - 2 live ads running the MEGA UTSAV bumper-draw offer (free solar system as first prize, EV bikes, air fryers) until 24 November, draw 30 November - a deadline-driven push with real money behind it.
+  - One ad sends clicks to valcansolar.com, the other into a Facebook lead form. The same offer, two different funnels - and the Facebook side owns none of the data.
+
+You can verify every line yourself:
+
+  Library ID 1156154097084461: https://www.facebook.com/ads/library/?id=1156154097084461
+  Library ID 2941615846186384: https://www.facebook.com/ads/library/?id=2941615846186384
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

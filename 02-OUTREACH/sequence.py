@@ -252,6 +252,8 @@ def upsert_sequence(manifest, lead, audit, initial_subject, initial_body,
                "next_followup_date": "", "next_step": None, "steps": []}
         manifest["sequences"].append(seq)
     seq["report_kind"] = "ads_only" if ads_only else "full_audit"
+    # Refresh the thread subject too (steps below carry it in "Re:" form).
+    seq["thread_subject"] = initial_subject or seq.get("thread_subject", "")
 
     seq["to"] = lead.get("email", "") or seq.get("to", "")
     old = {s["step"]: s for s in seq.get("steps", [])}

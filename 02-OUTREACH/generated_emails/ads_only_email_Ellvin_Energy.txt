@@ -1,0 +1,40 @@
+=== EMAIL FOR: Ellvin Energy ===
+City: Hyderabad
+To: info@ellvinenergy.com
+Phone: +91 94677 29999
+Website: https://ellvinenergy.com/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Ellvin_Energy.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-21 01:50
+
+--- SUBJECT ---
+Ellvin Energy: 6 live Hyderabad ads, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Ellvin Energy is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-21):
+
+  - 6 live ads on Meta, running since 12 August 2026
+  - every click lands in Facebook lead form only
+  - 6 live ads - and all 6 share one Telugu creative (Library ID 1688280062277703, running since 12 August 2026). One idea, six versions, no second angle and no retargeting creative.
+  - Every click lands in a Facebook lead form - the paid traffic never reaches ellvinenergy.com. No pixel, no retargeting pool, no page you can test.
+
+You can verify every line yourself:
+
+  Library ID 1688280062277703: https://www.facebook.com/ads/library/?id=1688280062277703
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

@@ -27,6 +27,7 @@ lead receives says so on page 1, and so does the email.
 import argparse
 import json
 import os
+import re
 import sys
 from datetime import datetime
 
@@ -47,7 +48,9 @@ FORBIDDEN = ["/100", "pagespeed", "page speed", "meta pixel", "google analytics"
 
 
 def safe_name(name):
-    return "".join(c if c.isalnum() else "_" for c in name)[:40]
+    # Collapse runs of non-alnum like the report builder's slug(), so
+    # "Kapil Power & Infra" -> "Kapil_Power_Infra" (matches the built PDF name).
+    return re.sub(r"[^a-zA-Z0-9]+", "_", name)[:50]
 
 
 def pdf_name(company):
@@ -113,10 +116,22 @@ def lead_dict(report):
 # The initial email
 # ---------------------------------------------------------------------------
 
+def live_ad_count(report, ads):
+    """Live-ad count as the Ad Library shows it: 'N ads use this creative'
+    beats len(ads) when one creative powers several running ads."""
+    label = (((report.get("ad_library") or {}).get("meta_own") or {})
+             .get("results_label") or "")
+    m = re.search(r"(\d+)\s+ads?\s+use this creative", label)
+    if m:
+        return int(m.group(1))
+    return len(ads)
+
+
 def build_email(report):
     company = report["company"]
     city = report.get("city", "") or "your city"
     ads = meta_ads(report)
+    n_ads = live_ad_count(report, ads)
     funnel = (report.get("funnel") or {})
     findings = report.get("findings") or []
     checked = report.get("checked_on", "")
@@ -126,7 +141,7 @@ def build_email(report):
         oldest = oldest_started(ads)
         since = oldest.strftime("%d %B %Y") if oldest else "recently"
         bullets.append(
-            f"{len(ads)} live {'ad' if len(ads) == 1 else 'ads'} on Meta, "
+            f"{n_ads} live {'ad' if n_ads == 1 else 'ads'} on Meta, "
             f"running since {since}")
         bullets.append(f"every click lands in {funnel.get('type', 'a paid funnel')}")
         for f in findings[:2]:
@@ -146,9 +161,9 @@ def build_email(report):
     if ads:
         links = "\n".join(
             f"  Library ID {a['library_id']}: {a['library_url']}"
-            for a in ads[:3] if a.get("library_id") and a.get("library_url"))
-        subject = (f"{company}: {len(ads)} live {city} "
-                   f"{'ad' if len(ads) == 1 else 'ads'}, one funnel")
+            for a in ads if a.get("library_id") and a.get("library_url"))
+        subject = (f"{company}: {n_ads} live {city} "
+                   f"{'ad' if n_ads == 1 else 'ads'}, one funnel")
     else:
         links = ("  Meta Ad Library search: "
                  "https://www.facebook.com/ads/library/?active_status=active"
