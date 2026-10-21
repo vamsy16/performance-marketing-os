@@ -534,6 +534,323 @@ LEADS = [
             ("Meta page", "facebook.com/twilightsolarpvtltd (Twilight Solar Pvt Ltd)"),
         ],
     },
+    {
+        "company": "Four Solar",
+        "legal": "Four Solar Energy Systems Pvt. Ltd.",
+        "city": "Hyderabad",
+        "website": "https://www.foursolar.com/",
+        "email": "contact@foursolar.com",
+        "phone": "+91 8886002221",
+        "fb_page": "https://www.facebook.com/foursolar/",
+        "checked_on": "2026-10-20",
+        "ad_library": {
+            "meta_own": {
+                "found": False,
+                "results_count": 0,
+                "results_label": "No ads match your search criteria",
+                "query": "Four Solar Hyderabad",
+                "ads": [],
+            },
+            "summary": (
+                "No active Meta ads were found for Four Solar Energy Systems (Ad Library "
+                "probe 'Four Solar Hyderabad', 2026-10-20). Meanwhile five Hyderabad "
+                "installers - Evergrid Energy (Library IDs 1642242114211409 and "
+                "1079793338257084), Solox Energies (2023601181805342), Truzon Solar "
+                "(1522258176260844), Punarvi Energies (1122725223617884 and "
+                "994804120334409) and Twilight Solar (3823689667771361 and "
+                "28023952863910719) - are all live this month buying the same "
+                "homeowner with Rs. 78,000-subsidy offers. Four Solar's 13-year track "
+                "record is not in front of any paid traffic."),
+        },
+        "funnel": {
+            "type": "Own website + chat/WhatsApp",
+            "destination": "Site contact form, live chat widget and WhatsApp",
+            "meaning": (
+                "The conversion paths are decent - the form takes city and roof details, "
+                "and there is a chat widget. The gap is that nothing paid drives into "
+                "them, so every enquiry depends on someone already looking for you by "
+                "name."),
+        },
+        "findings": [
+            "No active Meta ads under your name - five Hyderabad installers (Evergrid, "
+            "Solox, Truzon, Punarvi, Twilight) are live this month buying the same "
+            "homeowner with the same Rs. 78,000-subsidy message.",
+            "The site claims 13+ years, 50 MW+ delivered and 1500+ satisfied clients, "
+            "with 15+ gated communities powered, a 1521-government-schools Telangana "
+            "order and a 160 kW Corporate Bhavan (Ministry of Corporate Affairs) job. "
+            "That proof exists - it is just not in front of paid traffic.",
+            "TGREDCO-empanelled (TSRE180027) with PM Surya Ghar and PM-KUSUM experience - "
+            "credentials that convert homeowners who have already seen three "
+            "competitor ads.",
+            "The site itself is in good shape: a multi-city quote form (Hyderabad, "
+            "Secunderabad, Ranga Reddy, Medchal-Malkajgiri), a live chat widget, a "
+            "WhatsApp button and a detailed residential page covering approvals, roof "
+            "types and monitoring. Good raw material that no paid traffic ever sees.",
+            "Everything on the site is in English. In this market the strongest "
+            "competitor creatives run in Telugu to the same homeowner - and your head "
+            "office is here.",
+        ],
+        "next_steps": [
+            ("Test paid lead gen in Hyderabad",
+             "Start with a small Meta budget on one residential offer - subsidy up to "
+             "Rs. 78,000, free site visit. Your five competitors are already proving "
+             "the demand exists in this city."),
+            ("Build a dedicated residential landing page",
+             "The residential page exists - turn it into one paid landing page: "
+             "subsidy, gated-community track record, free site visit, quote form on "
+             "it."),
+            ("Run Telugu creative",
+             "Test a Telugu version of the offer against English. Telugu is the "
+             "language of the Telangana homeowner, and your competitors are already "
+             "spending there."),
+            ("Put the government work to work",
+             "The 1521-schools order and the Corporate Bhavan job are strong proof for "
+             "a trust-led paid campaign - most local installers cannot show that."),
+        ],
+        "contact_facts": [
+            ("Email", "contact@foursolar.com"),
+            ("Phone", "+91 8886002221 / 040-23405670 / +91 9248716892"),
+            ("Address", "6-3-1109/1/P/402, 4th Floor, Jewel Pawani Tower, Raj Bhavan "
+                        "Rd, Somajiguda, Hyderabad 500082"),
+            ("Entity", "Four Solar Energy Systems Pvt. Ltd. - TGREDCO empanelled "
+                       "TSRE180027"),
+            ("Meta page", "facebook.com/foursolar"),
+        ],
+    },
+    {
+        "company": "Origian Power",
+        "legal": "Origian Power",
+        "city": "Hyderabad",
+        "website": "https://origianpower.com/",
+        "email": "origian.ei@gmail.com",
+        "phone": "+91 8121766831",
+        "fb_page": "",
+        "checked_on": "2026-10-20",
+        "ad_library": {
+            "meta_own": {
+                "found": False,
+                "results_count": 0,
+                "results_label": "No ads match your search criteria",
+                "query": "Origian Power",
+                "ads": [],
+            },
+            "summary": (
+                "No active Meta ads were found for Origian Power (Ad Library probe "
+                "'Origian Power', 2026-10-20). Meanwhile five Hyderabad installers - "
+                "Evergrid Energy (Library IDs 1642242114211409 and 1079793338257084), "
+                "Solox Energies (2023601181805342), Truzon Solar (1522258176260844), "
+                "Punarvi Energies (1122725223617884 and 994804120334409) and Twilight "
+                "Solar (3823689667771361 and 28023952863910719) - are all live this "
+                "month buying the same homeowner with Rs. 78,000-subsidy offers. "
+                "Origian's location-page content is not in front of any paid traffic."),
+        },
+        "funnel": {
+            "type": "Own website form + phone",
+            "destination": "WPForms contact form (with reCAPTCHA) + three phone lines",
+            "meaning": (
+                "The site already answers the 'where do I click' question, but the form "
+                "runs behind reCAPTCHA and JavaScript - extra friction for someone who "
+                "just tapped a paid ad. Nothing paid currently drives into it at all."),
+        },
+        "findings": [
+            "No active Meta ads under your name - five Hyderabad installers (Evergrid, "
+            "Solox, Truzon, Punarvi, Twilight) are live this month buying the same "
+            "homeowner with the same Rs. 78,000-subsidy message.",
+            "You already run a location-page farm: Hyderabad, Warangal, Nizamabad, "
+            "Karimnagar and Suryapet in Telangana, plus Nellore, Vijayawada, "
+            "Visakhapatam, Guntur, Tirupati, Kurnool, Kadapa and Nandyal in Andhra "
+            "Pradesh. Real, ranking content - with zero paid traffic pointing at it.",
+            "The only contact email published is a personal Gmail "
+            "(origian.ei@gmail.com), even though you own origianpower.com AND "
+            "origianpower.in. No company-domain inbox is advertised anywhere.",
+            "Two Hyderabad offices (Nizampet 500090 and Hitech City 500081) but no "
+            "Hyderabad-specific paid targeting - the pages exist, nothing buys into "
+            "them.",
+            "The contact form is WPForms behind reCAPTCHA. For a paid click that is one "
+            "more step between the ad and the phone call.",
+        ],
+        "next_steps": [
+            ("Point a small budget at the pages you already have",
+             "You do not need new pages to start. A modest Meta budget aimed at the "
+             "existing Hyderabad and Nizampet pages is the fastest test."),
+            ("Move to a company-domain email",
+             "Publish info@origianpower.com - you already own the domain. A Gmail "
+             "address on a solar EPC site reads smaller than the service list next "
+             "to it."),
+            ("Reduce form friction",
+             "Offer WhatsApp alongside the form, or drop the reCAPTCHA step, so a paid "
+             "click reaches you in one tap."),
+            ("Run Telugu creative",
+             "Your location pages are in English only. Telugu creative is the language "
+             "of the Telangana homeowner your competitors are buying."),
+        ],
+        "contact_facts": [
+            ("Email", "origian.ei@gmail.com (the only address published on the site)"),
+            ("Phone", "+91 8121766831 / +91 8121 3668 32 / +91 8121 7668 34"),
+            ("Hyderabad offices", "Flat B-106, Adithya Wizz Lagoon, Nizampet, Hyderabad "
+                                  "500090; 3rd Floor, Lakeview Co-Working, InOrbit Mall "
+                                  "Road, Hitech City, Hyderabad 500081"),
+            ("Head office", "18-5, Indira Gandhi Nagar, Papampeta, Anantapur 515004"),
+            ("Domains", "origianpower.com and origianpower.in both live"),
+        ],
+    },
+    {
+        "company": "Mamindla Energy Solutions",
+        "legal": "Mamindla Energy Solutions LLP",
+        "city": "Hyderabad",
+        "website": "https://www.m-e-solutions.co.in/",
+        "email": "info@m-e-solutions.co.in",
+        "phone": "+91 99498 75868",
+        "fb_page": "",
+        "checked_on": "2026-10-20",
+        "ad_library": {
+            "meta_own": {
+                "found": False,
+                "results_count": 0,
+                "results_label": "No ads match your search criteria",
+                "query": "Mamindla Energy Solutions",
+                "ads": [],
+            },
+            "summary": (
+                "No active Meta ads were found for Mamindla Energy Solutions (Ad "
+                "Library probe 'Mamindla Energy Solutions', 2026-10-20). Meanwhile five "
+                "Hyderabad installers - Evergrid Energy (Library IDs 1642242114211409 "
+                "and 1079793338257084), Solox Energies (2023601181805342), Truzon "
+                "Solar (1522258176260844), Punarvi Energies (1122725223617884 and "
+                "994804120334409) and Twilight Solar (3823689667771361 and "
+                "28023952863910719) - are all live this month buying the same "
+                "homeowner with Rs. 78,000-subsidy offers. Mamindla's govt-empanelled "
+                "credentials are not in front of any paid traffic."),
+        },
+        "funnel": {
+            "type": "Own website form + phone",
+            "destination": "Free-quote form on the homepage + one phone number",
+            "meaning": (
+                "The site is built to convert: quote form, savings calculator, named "
+                "case studies. The problem is that nothing paid drives into it, so "
+                "traffic depends entirely on someone already searching."),
+        },
+        "findings": [
+            "No active Meta ads under your name - five Hyderabad installers (Evergrid, "
+            "Solox, Truzon, Punarvi, Twilight) are live this month buying the same "
+            "homeowner with the same Rs. 78,000-subsidy message.",
+            "The site claims 100+ installations, 10+ MW delivered and 500+ happy "
+            "customers, with an interactive savings calculator (bill + roof size in, "
+            "system size, subsidy and payback out) and three named case studies: 8 kW "
+            "residential in Kondapur, 25 kW commercial at a Hanamkonda school and 50 kW "
+            "industrial in LB Nagar. Trust material, already built.",
+            "Govt-empanelled vendor positioning, Tier-1 panel claims (Waaree, TATA, "
+            "Adani) and full PM Surya Ghar paperwork handling - exactly the proof a "
+            "homeowner wants after seeing three competitor ads.",
+            "The Hyderabad branch sits in Madhapur, right in the commercial heart of "
+            "the city - but there is no Hyderabad-specific paid targeting anywhere.",
+            "Everything on the site is in English. Telugu creative is the language of "
+            "the Telangana homeowner your competitors are buying.",
+        ],
+        "next_steps": [
+            ("Test paid lead gen in Hyderabad",
+             "A small Meta budget on one residential offer, targeted around the "
+             "Madhapur/Hitech City side of the city, would sit right next to your "
+             "branch office."),
+            ("Turn the calculator into a landing page hook",
+             "The savings calculator is already the best asset on the site. Put it at "
+             "the top of a dedicated paid landing page."),
+            ("Run Telugu creative",
+             "Test a Telugu version of the Rs. 78,000-subsidy offer against English."),
+            ("Use the case studies as ad proof",
+             "The Kondapur, Hanamkonda and LB Nagar projects are named, specific and "
+             "local - most competitor ads cannot show that."),
+        ],
+        "contact_facts": [
+            ("Email", "info@m-e-solutions.co.in"),
+            ("Phone", "+91 99498 75868"),
+            ("Hyderabad branch", "4th Floor, Krishna Towers, Plot 527, 100 Feet Rd, "
+                                 "Madhapur, Hyderabad 500081"),
+            ("Head office", "47-5-706, Paidipally, Warangal 506006"),
+            ("Site counters", "100+ installations, 10+ MW delivered, 500+ happy "
+                              "customers"),
+        ],
+    },
+    {
+        "company": "Junna Solar Systems",
+        "legal": "Junna Solar Systems Pvt Ltd",
+        "city": "Hyderabad",
+        "website": "https://www.junnasolar.com/",
+        "email": "junnasolarsystems@gmail.com",
+        "phone": "+91 9949555198",
+        "fb_page": "https://www.facebook.com/junnasolar/",
+        "checked_on": "2026-10-20",
+        "ad_library": {
+            "meta_own": {
+                "found": False,
+                "results_count": 0,
+                "results_label": "No ads match your search criteria",
+                "query": "Junna Solar",
+                "ads": [],
+            },
+            "summary": (
+                "No active Meta ads were found for Junna Solar Systems (Ad Library "
+                "probe 'Junna Solar', 2026-10-20). Meanwhile five Hyderabad installers "
+                "- Evergrid Energy (Library IDs 1642242114211409 and 1079793338257084), "
+                "Solox Energies (2023601181805342), Truzon Solar (1522258176260844), "
+                "Punarvi Energies (1122725223617884 and 994804120334409) and Twilight "
+                "Solar (3823689667771361 and 28023952863910719) - are all live this "
+                "month buying the same homeowner with Rs. 78,000-subsidy offers. "
+                "Junna's 13-year rooftop track record is not in front of any paid "
+                "traffic."),
+        },
+        "funnel": {
+            "type": "Own website form (JavaScript app)",
+            "destination": "Free-consultation form on junnasolar.com + phone",
+            "meaning": (
+                "The site is a JavaScript application - the homepage renders almost "
+                "nothing without JS, and the floating WhatsApp button in the served "
+                "HTML points at wa.me/undefined, a broken deep link. Enquiries that do "
+                "arrive come by phone; nothing paid drives traffic to the site at all."),
+        },
+        "findings": [
+            "No active Meta ads under your name - five Hyderabad installers (Evergrid, "
+            "Solox, Truzon, Punarvi, Twilight) are live this month buying the same "
+            "homeowner with the same Rs. 78,000-subsidy message.",
+            "Incorporated in December 2012 and now a public limited company (CIN "
+            "U40106TG2012PLC084777), TGREDCO-empanelled (TSRE180043) and a registered "
+            "PM Surya Ghar vendor for Telangana North - 13+ years of rooftop and "
+            "water-pump work, HQ in Kukatpally.",
+            "The live site is a JavaScript app: the homepage renders almost nothing "
+            "without JavaScript, so the first thing a paid click or a search visitor "
+            "sees is a loader.",
+            "The floating WhatsApp button in the served HTML points at wa.me/undefined "
+            "- a broken deep link on the exact channel a solar buyer is most likely "
+            "to tap.",
+            "You are hiring across sales and project roles (project managers, sales "
+            "engineers, project engineers) - clear growth mode, with zero paid "
+            "acquisition behind it.",
+        ],
+        "next_steps": [
+            ("Fix the broken WhatsApp link",
+             "The floating button's wa.me target is undefined in the served HTML. "
+             "That is a lost-lead path on the channel your customers actually use."),
+            ("Server-render the homepage",
+             "Make the key content (what you do, where you operate, how to enquire) "
+             "visible without JavaScript, so search and paid traffic see it instantly."),
+            ("Test paid lead gen in Hyderabad",
+             "A small Meta budget on one residential offer, Kukatpally/Kompally/"
+             "Secunderabad targeting, would put 13 years of rooftop work in front of "
+             "buyers who currently only see competitor ads."),
+            ("Run Telugu creative",
+             "Telugu is the language of the Telangana homeowner - and it is what your "
+             "competitors' creatives already speak."),
+        ],
+        "contact_facts": [
+            ("Email", "junnasolarsystems@gmail.com"),
+            ("Phone", "+91 9949555198 / 040-65999222"),
+            ("Address", "Plot 17 & 18, IDA, Prasanthi Nagar Ext., Vignanapuri Colony, "
+                        "Kukatpally, Hyderabad 500072"),
+            ("Entity", "Junna Solar Systems Pvt Ltd - public limited, CIN "
+                       "U40106TG2012PLC084777, TGREDCO empanelled TSRE180043"),
+            ("Meta page", "facebook.com/junnasolar"),
+        ],
+    },
 ]
 
 

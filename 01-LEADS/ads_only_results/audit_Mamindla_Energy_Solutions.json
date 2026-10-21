@@ -1,0 +1,78 @@
+{
+  "company": "Mamindla Energy Solutions",
+  "legal": "Mamindla Energy Solutions LLP",
+  "city": "Hyderabad",
+  "website": "https://www.m-e-solutions.co.in/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-20",
+  "generated_at": "2026-10-21 01:31",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": false,
+      "results_count": 0,
+      "results_label": "No ads match your search criteria",
+      "query": "Mamindla Energy Solutions",
+      "ads": []
+    },
+    "summary": "No active Meta ads were found for Mamindla Energy Solutions (Ad Library probe 'Mamindla Energy Solutions', 2026-10-20). Meanwhile five Hyderabad installers - Evergrid Energy (Library IDs 1642242114211409 and 1079793338257084), Solox Energies (2023601181805342), Truzon Solar (1522258176260844), Punarvi Energies (1122725223617884 and 994804120334409) and Twilight Solar (3823689667771361 and 28023952863910719) - are all live this month buying the same homeowner with Rs. 78,000-subsidy offers. Mamindla's govt-empanelled credentials are not in front of any paid traffic."
+  },
+  "funnel": {
+    "type": "Own website form + phone",
+    "destination": "Free-quote form on the homepage + one phone number",
+    "meaning": "The site is built to convert: quote form, savings calculator, named case studies. The problem is that nothing paid drives into it, so traffic depends entirely on someone already searching."
+  },
+  "findings": [
+    "No active Meta ads under your name - five Hyderabad installers (Evergrid, Solox, Truzon, Punarvi, Twilight) are live this month buying the same homeowner with the same Rs. 78,000-subsidy message.",
+    "The site claims 100+ installations, 10+ MW delivered and 500+ happy customers, with an interactive savings calculator (bill + roof size in, system size, subsidy and payback out) and three named case studies: 8 kW residential in Kondapur, 25 kW commercial at a Hanamkonda school and 50 kW industrial in LB Nagar. Trust material, already built.",
+    "Govt-empanelled vendor positioning, Tier-1 panel claims (Waaree, TATA, Adani) and full PM Surya Ghar paperwork handling - exactly the proof a homeowner wants after seeing three competitor ads.",
+    "The Hyderabad branch sits in Madhapur, right in the commercial heart of the city - but there is no Hyderabad-specific paid targeting anywhere.",
+    "Everything on the site is in English. Telugu creative is the language of the Telangana homeowner your competitors are buying."
+  ],
+  "next_steps": [
+    [
+      "Test paid lead gen in Hyderabad",
+      "A small Meta budget on one residential offer, targeted around the Madhapur/Hitech City side of the city, would sit right next to your branch office."
+    ],
+    [
+      "Turn the calculator into a landing page hook",
+      "The savings calculator is already the best asset on the site. Put it at the top of a dedicated paid landing page."
+    ],
+    [
+      "Run Telugu creative",
+      "Test a Telugu version of the Rs. 78,000-subsidy offer against English."
+    ],
+    [
+      "Use the case studies as ad proof",
+      "The Kondapur, Hanamkonda and LB Nagar projects are named, specific and local - most competitor ads cannot show that."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@m-e-solutions.co.in"
+    ],
+    [
+      "Phone",
+      "+91 99498 75868"
+    ],
+    [
+      "Hyderabad branch",
+      "4th Floor, Krishna Towers, Plot 527, 100 Feet Rd, Madhapur, Hyderabad 500081"
+    ],
+    [
+      "Head office",
+      "47-5-706, Paidipally, Warangal 506006"
+    ],
+    [
+      "Site counters",
+      "100+ installations, 10+ MW delivered, 500+ happy customers"
+    ]
+  ],
+  "contact": {
+    "email": "info@m-e-solutions.co.in",
+    "phone": "+91 99498 75868",
+    "fb_page": ""
+  }
+}

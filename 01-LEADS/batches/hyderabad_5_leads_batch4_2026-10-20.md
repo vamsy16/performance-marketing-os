@@ -115,10 +115,16 @@ Sainikpuri), A & T Power Systems (anilparcha@gmail.com, Ameerpet).
 
 ## Notes for whoever picks this up
 
-- **Four of the five run no Meta ads**, so `ads_only_report.py` is the wrong tool
-  for them (its gate flags "advertising but has no ads"). These need the **full
-  audit** — website score, pixels, PageSpeed — via `run_pipeline.py` locally or
-  the Actions tab, one company at a time:
+- **All five leads now have their ads-only reports — DONE.** Twilight Solar (2 live
+  Library IDs) plus Four Solar, Origian Power, Mamindla Energy Solutions and Junna
+  Solar Systems, each built 2026-10-21 from the live Ad Library probes and site
+  reads done 2026-10-20. The four no-ads leads use the same "zero paid acquisition
+  vs five competitors buying the same homeowner" format as batch 3's Varahi report
+  (0 live ads, competitor Library IDs, site facts, `WEBSITE AUDIT NOT RUN` panel).
+  All 10 ads-only reports pass `verify_report.py --ads-only`.
+- The **full audit** (website score, pixels, PageSpeed) for these four is still
+  owner-side only, via `run_pipeline.py` locally or the Actions tab, one company
+  at a time — the ads-only PDFs deliberately contain none of that:
   - `python run_pipeline.py https://www.foursolar.com/ "Four Solar" --city Hyderabad`
   - `python run_pipeline.py https://origianpower.com/ "Origian Power" --city Hyderabad`
   - `python run_pipeline.py https://www.m-e-solutions.co.in/ "Mamindla Energy Solutions" --city Hyderabad`

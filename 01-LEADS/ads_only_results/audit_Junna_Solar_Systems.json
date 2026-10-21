@@ -1,0 +1,78 @@
+{
+  "company": "Junna Solar Systems",
+  "legal": "Junna Solar Systems Pvt Ltd",
+  "city": "Hyderabad",
+  "website": "https://www.junnasolar.com/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-20",
+  "generated_at": "2026-10-21 01:31",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": false,
+      "results_count": 0,
+      "results_label": "No ads match your search criteria",
+      "query": "Junna Solar",
+      "ads": []
+    },
+    "summary": "No active Meta ads were found for Junna Solar Systems (Ad Library probe 'Junna Solar', 2026-10-20). Meanwhile five Hyderabad installers - Evergrid Energy (Library IDs 1642242114211409 and 1079793338257084), Solox Energies (2023601181805342), Truzon Solar (1522258176260844), Punarvi Energies (1122725223617884 and 994804120334409) and Twilight Solar (3823689667771361 and 28023952863910719) - are all live this month buying the same homeowner with Rs. 78,000-subsidy offers. Junna's 13-year rooftop track record is not in front of any paid traffic."
+  },
+  "funnel": {
+    "type": "Own website form (JavaScript app)",
+    "destination": "Free-consultation form on junnasolar.com + phone",
+    "meaning": "The site is a JavaScript application - the homepage renders almost nothing without JS, and the floating WhatsApp button in the served HTML points at wa.me/undefined, a broken deep link. Enquiries that do arrive come by phone; nothing paid drives traffic to the site at all."
+  },
+  "findings": [
+    "No active Meta ads under your name - five Hyderabad installers (Evergrid, Solox, Truzon, Punarvi, Twilight) are live this month buying the same homeowner with the same Rs. 78,000-subsidy message.",
+    "Incorporated in December 2012 and now a public limited company (CIN U40106TG2012PLC084777), TGREDCO-empanelled (TSRE180043) and a registered PM Surya Ghar vendor for Telangana North - 13+ years of rooftop and water-pump work, HQ in Kukatpally.",
+    "The live site is a JavaScript app: the homepage renders almost nothing without JavaScript, so the first thing a paid click or a search visitor sees is a loader.",
+    "The floating WhatsApp button in the served HTML points at wa.me/undefined - a broken deep link on the exact channel a solar buyer is most likely to tap.",
+    "You are hiring across sales and project roles (project managers, sales engineers, project engineers) - clear growth mode, with zero paid acquisition behind it."
+  ],
+  "next_steps": [
+    [
+      "Fix the broken WhatsApp link",
+      "The floating button's wa.me target is undefined in the served HTML. That is a lost-lead path on the channel your customers actually use."
+    ],
+    [
+      "Server-render the homepage",
+      "Make the key content (what you do, where you operate, how to enquire) visible without JavaScript, so search and paid traffic see it instantly."
+    ],
+    [
+      "Test paid lead gen in Hyderabad",
+      "A small Meta budget on one residential offer, Kukatpally/Kompally/Secunderabad targeting, would put 13 years of rooftop work in front of buyers who currently only see competitor ads."
+    ],
+    [
+      "Run Telugu creative",
+      "Telugu is the language of the Telangana homeowner - and it is what your competitors' creatives already speak."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "junnasolarsystems@gmail.com"
+    ],
+    [
+      "Phone",
+      "+91 9949555198 / 040-65999222"
+    ],
+    [
+      "Address",
+      "Plot 17 & 18, IDA, Prasanthi Nagar Ext., Vignanapuri Colony, Kukatpally, Hyderabad 500072"
+    ],
+    [
+      "Entity",
+      "Junna Solar Systems Pvt Ltd - public limited, CIN U40106TG2012PLC084777, TGREDCO empanelled TSRE180043"
+    ],
+    [
+      "Meta page",
+      "facebook.com/junnasolar"
+    ]
+  ],
+  "contact": {
+    "email": "junnasolarsystems@gmail.com",
+    "phone": "+91 9949555198",
+    "fb_page": "https://www.facebook.com/junnasolar/"
+  }
+}

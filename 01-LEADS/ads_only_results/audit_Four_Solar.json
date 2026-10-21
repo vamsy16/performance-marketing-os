@@ -1,0 +1,78 @@
+{
+  "company": "Four Solar",
+  "legal": "Four Solar Energy Systems Pvt. Ltd.",
+  "city": "Hyderabad",
+  "website": "https://www.foursolar.com/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-20",
+  "generated_at": "2026-10-21 01:31",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": false,
+      "results_count": 0,
+      "results_label": "No ads match your search criteria",
+      "query": "Four Solar Hyderabad",
+      "ads": []
+    },
+    "summary": "No active Meta ads were found for Four Solar Energy Systems (Ad Library probe 'Four Solar Hyderabad', 2026-10-20). Meanwhile five Hyderabad installers - Evergrid Energy (Library IDs 1642242114211409 and 1079793338257084), Solox Energies (2023601181805342), Truzon Solar (1522258176260844), Punarvi Energies (1122725223617884 and 994804120334409) and Twilight Solar (3823689667771361 and 28023952863910719) - are all live this month buying the same homeowner with Rs. 78,000-subsidy offers. Four Solar's 13-year track record is not in front of any paid traffic."
+  },
+  "funnel": {
+    "type": "Own website + chat/WhatsApp",
+    "destination": "Site contact form, live chat widget and WhatsApp",
+    "meaning": "The conversion paths are decent - the form takes city and roof details, and there is a chat widget. The gap is that nothing paid drives into them, so every enquiry depends on someone already looking for you by name."
+  },
+  "findings": [
+    "No active Meta ads under your name - five Hyderabad installers (Evergrid, Solox, Truzon, Punarvi, Twilight) are live this month buying the same homeowner with the same Rs. 78,000-subsidy message.",
+    "The site claims 13+ years, 50 MW+ delivered and 1500+ satisfied clients, with 15+ gated communities powered, a 1521-government-schools Telangana order and a 160 kW Corporate Bhavan (Ministry of Corporate Affairs) job. That proof exists - it is just not in front of paid traffic.",
+    "TGREDCO-empanelled (TSRE180027) with PM Surya Ghar and PM-KUSUM experience - credentials that convert homeowners who have already seen three competitor ads.",
+    "The site itself is in good shape: a multi-city quote form (Hyderabad, Secunderabad, Ranga Reddy, Medchal-Malkajgiri), a live chat widget, a WhatsApp button and a detailed residential page covering approvals, roof types and monitoring. Good raw material that no paid traffic ever sees.",
+    "Everything on the site is in English. In this market the strongest competitor creatives run in Telugu to the same homeowner - and your head office is here."
+  ],
+  "next_steps": [
+    [
+      "Test paid lead gen in Hyderabad",
+      "Start with a small Meta budget on one residential offer - subsidy up to Rs. 78,000, free site visit. Your five competitors are already proving the demand exists in this city."
+    ],
+    [
+      "Build a dedicated residential landing page",
+      "The residential page exists - turn it into one paid landing page: subsidy, gated-community track record, free site visit, quote form on it."
+    ],
+    [
+      "Run Telugu creative",
+      "Test a Telugu version of the offer against English. Telugu is the language of the Telangana homeowner, and your competitors are already spending there."
+    ],
+    [
+      "Put the government work to work",
+      "The 1521-schools order and the Corporate Bhavan job are strong proof for a trust-led paid campaign - most local installers cannot show that."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "contact@foursolar.com"
+    ],
+    [
+      "Phone",
+      "+91 8886002221 / 040-23405670 / +91 9248716892"
+    ],
+    [
+      "Address",
+      "6-3-1109/1/P/402, 4th Floor, Jewel Pawani Tower, Raj Bhavan Rd, Somajiguda, Hyderabad 500082"
+    ],
+    [
+      "Entity",
+      "Four Solar Energy Systems Pvt. Ltd. - TGREDCO empanelled TSRE180027"
+    ],
+    [
+      "Meta page",
+      "facebook.com/foursolar"
+    ]
+  ],
+  "contact": {
+    "email": "contact@foursolar.com",
+    "phone": "+91 8886002221",
+    "fb_page": "https://www.facebook.com/foursolar/"
+  }
+}
