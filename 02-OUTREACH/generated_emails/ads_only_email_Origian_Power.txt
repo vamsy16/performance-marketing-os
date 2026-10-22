@@ -1,0 +1,38 @@
+=== EMAIL FOR: Origian Power ===
+City: Hyderabad
+To: origian.ei@gmail.com
+Phone: +91 8121766831
+Website: https://origianpower.com/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Origian_Power.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-22 13:54
+
+--- SUBJECT ---
+Origian Power: no live ads while Hyderabad competitors buy the same homeowner
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Origian Power is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-20):
+
+  - No active Meta ads under your name - five Hyderabad installers (Evergrid, Solox, Truzon, Punarvi, Twilight) are live this month buying the same homeowner with the same Rs. 78,000-subsidy message.
+  - You already run a location-page farm: Hyderabad, Warangal, Nizamabad, Karimnagar and Suryapet in Telangana, plus Nellore, Vijayawada, Visakhapatam, Guntur, Tirupati, Kurnool, Kadapa and Nandyal in Andhra Pradesh. Real, ranking content - with zero paid traffic pointing at it.
+
+You can verify every line yourself:
+
+  Meta Ad Library search: https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Origian%20Power
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your ad presence is - and is not - doing in this market.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

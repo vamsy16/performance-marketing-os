@@ -1,0 +1,38 @@
+=== EMAIL FOR: Four Solar ===
+City: Hyderabad
+To: contact@foursolar.com
+Phone: +91 8886002221
+Website: https://www.foursolar.com/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Four_Solar.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-22 13:54
+
+--- SUBJECT ---
+Four Solar: no live ads while Hyderabad competitors buy the same homeowner
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Four Solar is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-20):
+
+  - No active Meta ads under your name - five Hyderabad installers (Evergrid, Solox, Truzon, Punarvi, Twilight) are live this month buying the same homeowner with the same Rs. 78,000-subsidy message.
+  - The site claims 13+ years, 50 MW+ delivered and 1500+ satisfied clients, with 15+ gated communities powered, a 1521-government-schools Telangana order and a 160 kW Corporate Bhavan (Ministry of Corporate Affairs) job. That proof exists - it is just not in front of paid traffic.
+
+You can verify every line yourself:
+
+  Meta Ad Library search: https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Four%20Solar
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your ad presence is - and is not - doing in this market.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

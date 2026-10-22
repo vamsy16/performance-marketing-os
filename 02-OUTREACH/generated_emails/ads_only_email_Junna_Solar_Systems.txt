@@ -1,0 +1,38 @@
+=== EMAIL FOR: Junna Solar Systems ===
+City: Hyderabad
+To: junnasolarsystems@gmail.com
+Phone: +91 9949555198
+Website: https://www.junnasolar.com/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Junna_Solar_Systems.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-22 13:54
+
+--- SUBJECT ---
+Junna Solar Systems: no live ads while Hyderabad competitors buy the same homeowner
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Junna Solar Systems is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-20):
+
+  - No active Meta ads under your name - five Hyderabad installers (Evergrid, Solox, Truzon, Punarvi, Twilight) are live this month buying the same homeowner with the same Rs. 78,000-subsidy message.
+  - Incorporated in December 2012 and now a public limited company (CIN U40106TG2012PLC084777), TGREDCO-empanelled (TSRE180043) and a registered PM Surya Ghar vendor for Telangana North - 13+ years of rooftop and water-pump work, HQ in Kukatpally.
+
+You can verify every line yourself:
+
+  Meta Ad Library search: https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Junna%20Solar%20Systems
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your ad presence is - and is not - doing in this market.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

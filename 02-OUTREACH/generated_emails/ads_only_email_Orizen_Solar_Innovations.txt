@@ -1,0 +1,40 @@
+=== EMAIL FOR: Orizen Solar Innovations ===
+City: Hyderabad
+To: info.orizensolar@gmail.com
+Phone: +91 9962039859
+Website: https://www.orizensolar.com/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Orizen_Solar_Innovations.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-22 13:54
+
+--- SUBJECT ---
+Orizen Solar Innovations: 1 live Hyderabad ad, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Orizen Solar Innovations is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-21):
+
+  - 1 live ad on Meta, running since 18 September 2026
+  - every click lands in WhatsApp only
+  - Live Telugu ad (Library ID 3529873930505195, running since 18 September 2026, multiple versions) - the Dussehra & Deepavali offer sends every click to WhatsApp; orizensolar.com receives none of the traffic.
+  - Three phone numbers across the funnel: the ad (8374 670 999 / 8374 683 999) and the site (+91 9962039859) - split numbers for one offer.
+
+You can verify every line yourself:
+
+  Library ID 3529873930505195: https://www.facebook.com/ads/library/?id=3529873930505195
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

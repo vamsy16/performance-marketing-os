@@ -6,7 +6,7 @@ Website: https://www.evergridenergy.in
 Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
 ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Evergrid_Energy.pdf
 Template: ads_only_live_ad_report
-Generated: 2026-10-19 13:41
+Generated: 2026-10-22 13:54
 
 --- SUBJECT ---
 Evergrid Energy: 2 live Hyderabad ads, one funnel

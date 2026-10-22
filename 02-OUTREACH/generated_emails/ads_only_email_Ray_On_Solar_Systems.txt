@@ -1,0 +1,40 @@
+=== EMAIL FOR: Ray On Solar Systems ===
+City: Hyderabad
+To: rayonsolars@gmail.com
+Phone: +91 8500976346
+Website: https://www.rayonsolarsystems.in/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Ray_On_Solar_Systems.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-22 13:54
+
+--- SUBJECT ---
+Ray On Solar Systems: 1 live Hyderabad ad, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Ray On Solar Systems is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-21):
+
+  - 1 live ad on Meta, running since 13 October 2026
+  - every click lands in Instagram + generic fb.me link
+  - The live 3kW-offer ad (Library ID 1107666674962232, started 13 October 2026) sends Telugu solar buyers to an Instagram profile - not to rayonsolarsystems.in. A profile has no lead capture, no phone form and nothing to retarget.
+  - The ad's 'Get Quote' button goes to a generic fb.me link - the click never lands on a page that takes a name, a phone number or a bill amount.
+
+You can verify every line yourself:
+
+  Library ID 1107666674962232: https://www.facebook.com/ads/library/?id=1107666674962232
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===
