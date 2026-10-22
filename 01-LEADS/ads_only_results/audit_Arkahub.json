@@ -1,0 +1,97 @@
+{
+  "company": "Arkahub",
+  "legal": "Interglacial Renewable Technologies Pvt. Ltd.",
+  "city": "Hyderabad",
+  "website": "https://www.arkahub.in/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-22",
+  "generated_at": "2026-10-22 13:49",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 2,
+      "results_label": "~2 results on the 'Thearkahub' page (9 ads use the first creative)",
+      "query": "Telugu సోలార్ ఇన్‌స్టాలేଷన్ (solar installation)",
+      "ads": [
+        {
+          "library_id": "1102186569459926",
+          "library_url": "https://www.facebook.com/ads/library/?id=1102186569459926",
+          "page_name": "Thearkahub",
+          "started": "Oct 14, 2026",
+          "destination": "https://www.arkahub.in/design-new (9 ads use this creative)",
+          "text": "Telugu: సాధారణ రాకింగ్ మీ పైకప్పుపై ఇనుప్ గుట్లలా కనిపిస్తుందా? Arkahub కస్టం GI నిర్మాణం పైకప్పులో కలిసిపోతుంది, వైర్లు పూర్తిగా దాచబడతాయి. అందం తగ్గదు, బలం తగ్గదు. మీ ఇంటికి ఉచిత డిజైన్ అసెస్మెంట్ బుక్ చెయండి. (Solar that doesn't spoil the look of your home - hidden-wire flush installation, thirty-year warranty.) Headline: 'మీ ఇంటి అందం చెడకూండా సోలార్. వైర్లు కనిపిస్తియలేదు ఫ్లష్ ఇన్‌స్టాలేଷన్, ముప్పై ఏళ్ల వారంటీతో.'",
+          "images": []
+        },
+        {
+          "library_id": "1098672362787317",
+          "library_url": "https://www.facebook.com/ads/library/?id=1098672362787317",
+          "page_name": "Thearkahub",
+          "started": "Oct 15, 2026",
+          "destination": "https://www.arkahub.in/hyderabad (this ad has multiple versions)",
+          "text": "Telugu: చాలా సోలార్ కంపెనీలు మాటల్లోనే హామీ ఇస్తాయి. Arkahub ధర, 30 ఏళ్ల వారంటీ, 5 ఏళ్ల ఉచిత మెయింటెనెన్స్ మూడింటీనీ రాతపూర్వకంగా ఇస్తుంది. ఈరోజే ఉచిత విజిట్ బుక్ చెయండి. (Price, 30-year warranty and 5 years free maintenance in writing before you commit.) Headline: 'సంతకం చేసే ముండే ధర, వారంటీ, మెయింటెనెన్స్ మూడూ రాతపూర్వకంగా మీ చెతిలో.'",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Arkahub - the consumer brand of Interglacial Renewable Technologies Pvt. Ltd., listed on the MNRE portal under that name and backed by Kae Capital, Antler and Sparrow after a $2 million seed round - runs two Telugu ads into the Hyderabad market (14 and 15 Oct 2026). The second points at a dedicated Hyderabad landing page (arkahub.in/hyderabad). The site claims 900+ happy customers, monthly panel health checks and cleaning for 4 years, 12-year panel / 25-year performance / 10-year inverter warranties, and lists Hyderabad among its operational cities alongside Bengaluru, Pune and Nagpur. Its registered office is in Bengaluru (Marthahalli)."
+  },
+  "funnel": {
+    "type": "Owned pages (both ads)",
+    "destination": "arkahub.in/design-new and arkahub.in/hyderabad",
+    "meaning": "Both live ads point at pages on arkahub.in - one generic design page, one Hyderabad-specific page. The paid path lands on owned ground, which is the right structure; the gap is that the ads speak Telugu while the destination pages and the consultation form are English-first."
+  },
+  "findings": [
+    "Two live Telugu ads (14 and 15 Oct) and both point at owned pages - the second at a dedicated Hyderabad landing page (arkahub.in/hyderabad). The paid path already lands on owned ground.",
+    "The two ads test two genuinely different angles - aesthetics (hidden wires, flush-mount custom GI structure, 'solar that doesn't spoil the look of your home') versus trust paperwork (price, 30-year warranty and 5 years free maintenance in writing). A real creative test.",
+    "Language mismatch: both ads are Telugu, while arkahub.in's homepage, city selector and consultation form are English-first - the click lands in a different language from the one that earned it.",
+    "Trust assets that never appear in the ad copy: MNRE-portal listing as Interglacial Renewable Technologies Pvt. Ltd., institutional backing (Kae Capital, Antler, Sparrow; $2M seed) and the 900+ customers claim.",
+    "Hyderabad is one of four operational cities (Bengaluru, Hyderabad, Pune, Nagpur) with a registered office in Bengaluru - the Hyderabad page is doing the work of a local presence."
+  ],
+  "next_steps": [
+    [
+      "Mirror the ad language on the landing page",
+      "Both ads are Telugu; arkahub.in/hyderabad and the consultation form are English-first. A Telugu headline and form labels on the Hyderabad page keep the click in the language that earned it."
+    ],
+    [
+      "Put the paperwork promise on the Hyderabad page",
+      "The winning ad angle is 'price, warranty and maintenance in writing' - the Hyderabad page should carry exactly that, plus the MNRE listing and the institutional backing."
+    ],
+    [
+      "Make the local presence explicit",
+      "Hyderabad is one of four cities on the site - a Hyderabad team page, local install photos and a local number turn a city page into a local promise."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "care@arkahub.in (contact page)"
+    ],
+    [
+      "Phone",
+      "080 4736 2828 (contact page)"
+    ],
+    [
+      "Registered office",
+      "Interglacial Renewable Technologies Pvt. Ltd., Purva Riviera, Marthahalli, Bengaluru 560037"
+    ],
+    [
+      "Operational cities",
+      "Bengaluru, Hyderabad, Pune, Nagpur (site claim); dedicated landing page arkahub.in/hyderabad"
+    ],
+    [
+      "Credentials",
+      "Listed on the MNRE portal as Interglacial Renewable Technologies Pvt. Ltd.; backed by Kae Capital, Antler and Sparrow ($2M seed); claims 900+ happy customers"
+    ],
+    [
+      "Meta page",
+      "facebook.com/61584060508957 ('Thearkahub')"
+    ]
+  ],
+  "contact": {
+    "email": "care@arkahub.in",
+    "phone": "080 4736 2828",
+    "fb_page": "https://www.facebook.com/61584060508957/"
+  }
+}

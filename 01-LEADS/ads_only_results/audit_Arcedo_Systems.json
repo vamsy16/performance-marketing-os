@@ -1,0 +1,106 @@
+{
+  "company": "Arcedo Systems",
+  "legal": "Arcedo Systems Private Limited",
+  "city": "Hyderabad",
+  "website": "https://arcedo.net/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-22",
+  "generated_at": "2026-10-22 13:49",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 3,
+      "results_label": "~3 results on the Arcedo Systemss page (a sibling 'Suryon' page runs the same brand's residential ads)",
+      "query": "Telugu సోలార్ ఇన్‌స్టాలేଷన్ (solar installation)",
+      "ads": [
+        {
+          "library_id": "2518444838650356",
+          "library_url": "https://www.facebook.com/ads/library/?id=2518444838650356",
+          "page_name": "Arcedo Systemss",
+          "started": "Sep 23, 2026",
+          "destination": "fb.me 'Get quote'",
+          "text": "Telugu: మీ ఇంటికి సోలార్ సబ్సిడీ అర్హత ఉందా? PM Surya Ghar Yojana ద్వారా ఎంత వరకు ప్రయోజనం పొందగలరో ఉచితంగా చెక్ చెయకుకోండి. (Does your home qualify for the solar subsidy - check free under PM Surya Ghar.) Headline: 'సోలార్ సబ్సిడీ అర్హత చెక్ చెయండి'.",
+          "images": []
+        },
+        {
+          "library_id": "1441101634676762",
+          "library_url": "https://www.facebook.com/ads/library/?id=1441101634676762",
+          "page_name": "Arcedo Systemss",
+          "started": "Sep 30, 2026",
+          "destination": "https://solar.suryon.in/ (2 ads use this creative)",
+          "text": "Telugu: రాబోయే 25 ఏళ్లు, నెలకు కేవలం â¹300 కరెంట్ బిల్లు? Suryon Solar Systems తో ఇది నిజంగానే సాధ్యం. 90% వరకు ఆదా, గవర్నమెంట్ సబ్సిడీ, 25 ఏళ్ల పర్ఫామెంస్ వారంటీ, ఫ్రీ హోమ్ సైట్ విజిట్. (Rs 300 monthly bill in 25 years with Suryon - government subsidy, 25-year performance warranty, free home site visit. Suryon-branded copy running on the Arcedo Systemss page.)",
+          "images": []
+        },
+        {
+          "library_id": "1640504621042947",
+          "library_url": "https://www.facebook.com/ads/library/?id=1640504621042947",
+          "page_name": "Arcedo Systemss",
+          "started": "Oct 17, 2026",
+          "destination": "fb.com/messenger_doc/ ('Contact us')",
+          "text": "CUT YOUR POWER BILLS by up to 50%*, with zero Capex. Get Solar + Battery Storage running at your facility with zero heavy upfront investment. Pay a simple monthly OPEX charges, while clean energy works to lower your costs from day one. Key Benefits: No Big Capex, Just Smart OPEX; Beat Rising Grid Tariffs; 24/7 Power with Battery Backup; Built for Factories & Commercial Sites. Contact Us: +91 844 844 8552.",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Arcedo Systems runs three live ads on its 'Arcedo Systemss' page - a Telugu PM Surya Ghar subsidy-eligibility ad (23 Sep, fb.me), a Telugu residential ad carrying Suryon Solar Systems branding that points at solar.suryon.in (30 Sep), and an English commercial OPEX ad for factories pointing at a Messenger document (17 Oct). A sibling Facebook page named 'Suryon' runs the same brand's residential Telugu ads with Arcedo's own contact details in the copy (info@arcedo.net, 844 844 8552) - one company, two pages, two brand names. arcedo.net itself is the large-scale-PV EPC site (rooftop, ground-mount, floating, O&M); the ads sell Rs 78,000-subsidy homes and zero-capex factory OPEX."
+  },
+  "funnel": {
+    "type": "Split across three destinations",
+    "destination": "fb.me (Telugu subsidy ad), solar.suryon.in (Suryon-branded residential ad), fb.com/messenger_doc/ (commercial OPEX ad)",
+    "meaning": "Three live ads, three different destinations - and not one of them is a page on arcedo.net. The residential click lands on a subdomain of a different brand name; the commercial click lands in a Messenger document. No single owned funnel, no shared page to test."
+  },
+  "findings": [
+    "Three live ads (23 Sep, 30 Sep, 17 Oct) with three different destinations: fb.me, solar.suryon.in and a Messenger document. None lands on arcedo.net.",
+    "One company, two brands: the Telugu residential ad on the Arcedo page carries Suryon Solar Systems branding and points at solar.suryon.in, while a separate 'Suryon' Facebook page runs the same brand's ads with Arcedo's contact details (info@arcedo.net, 844 844 8552) in the copy.",
+    "The commercial OPEX ad - the highest-ticket offer (solar + battery for factories, zero capex) - sends its click to a Messenger document rather than a page that explains the OPEX model.",
+    "arcedo.net positions as a large-scale solar EPC (rooftop, ground-mounted, floating solar, O&M, MEP) while the ads sell Rs 78,000-subsidy homes and zero-capex commercial OPEX - the ad-to-site message match is weak in both directions.",
+    "The company's empanelment credentials (TGREDCO empanelled supplier and TGNPDCL listed vendor, per the Telangana discom supplier lists) appear nowhere in the live ad copy."
+  ],
+  "next_steps": [
+    [
+      "One brand, one funnel",
+      "Decide whether the residential buyer meets Arcedo or Suryon, then point every residential ad at one owned page on arcedo.net with the subsidy offer, the 25-year performance warranty and the free site visit on it."
+    ],
+    [
+      "Give the OPEX offer a real page",
+      "Solar + battery at zero capex for factories is the highest-value offer in the account. A page with the OPEX model, the 50% bill-cut claim and the +91 844 844 8552 contact converts better than a Messenger document."
+    ],
+    [
+      "Put the empanelment in the copy",
+      "TGREDCO-empanelled and discom-listed is the trust asset a subsidy buyer looks for - it belongs in the Telugu ad, not only in a supplier PDF."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@arcedo.net (site contact page; also in the Suryon-page ad copy)"
+    ],
+    [
+      "Phone",
+      "+91 8448448552 (contact page + ads); +91 9866966678 (team page)"
+    ],
+    [
+      "Address",
+      "3rd & 6th Floor, Trendz Techpark, Kakatiya Hills, Madhapur, Hyderabad 500081; 4th Floor 401, Vaishnavi Lamani Arcade, Doolapally Rd, Kompally, Hyderabad 500014"
+    ],
+    [
+      "Entity",
+      "Arcedo Systems Private Limited - CIN U35105TS2025PTC193163, incorporated 21 Jan 2025, ROC Hyderabad (MCA records)"
+    ],
+    [
+      "Credentials",
+      "TGREDCO empanelled supplier; TGNPDCL listed vendor (Telangana discom supplier lists)"
+    ],
+    [
+      "Meta pages",
+      "facebook.com/61561703979379 ('Arcedo Systemss'); sibling page 'Suryon' facebook.com/61585616331903 runs the same brand's residential ads"
+    ]
+  ],
+  "contact": {
+    "email": "info@arcedo.net",
+    "phone": "+91 8448448552",
+    "fb_page": "https://www.facebook.com/61561703979379/"
+  }
+}

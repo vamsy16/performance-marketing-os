@@ -1594,8 +1594,410 @@ LEADS = [
                        "experience"),
             ("Meta page", "facebook.com/61571060785642 (also Instagram "
                           "@ray_on_solar_systems_)"),
+        ],    },
+    {
+        "company": "MrSolar",
+        "legal": "MrSolar (mrsolar.in)",
+        "city": "Hyderabad",
+        "website": "https://mrsolar.in/",
+        "email": "info@mrsolar.in",
+        "phone": "+91 8500225885",
+        "fb_page": "https://www.facebook.com/mrsolarin/",
+        "checked_on": "2026-10-22",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 1,
+                "results_label": "~1 result (a separate Nagpur 'Mr.Solar' page also matched the query and is a different company)",
+                "query": "rooftop solar Hyderabad",
+                "ads": [
+                    ad("2766978160319102", "mrsolar.in", "May 5, 2026",
+                       "fb.me 'Book now' (video ad)",
+                       "Thinking about rooftop solar but not sure whom to trust? Watch this "
+                       "Hyderabad customer share their real experience - from site survey to "
+                       "installation and subsidy guidance. No sales talk. Just facts, uncut "
+                       "customer review. CTA line: 'Real Solar Experience uncut - Hyderabad | "
+                       "uncut Customer review | Rooftop solar | Subsidy support'."),
+                ],
+            },
+            "summary": (
+                "mrsolar.in has exactly one active Meta ad - a Hyderabad customer-review "
+                "video that has been running since 5 May 2026, over five months on the same "
+                "creative. The click goes to an fb.me link, not to a specific page on "
+                "mrsolar.in. The site itself (fetched 2026-10-22) is the fullest asset in "
+                "this batch: an ISO 9001:2015 badge, PM Surya Ghar subsidy content including "
+                "the Rs 78,000 central subsidy and 300 free units, a savings calculator, an "
+                "eligibility form, a WhatsApp button (wa.me/918500911912) and city pages for "
+                "Hyderabad plus seven other Telangana towns. None of that machinery is "
+                "referenced by the ad copy beyond a passing 'subsidy guidance'."),
+        },
+        "funnel": {
+            "type": "fb.me link wrapper",
+            "destination": "fb.me 'Book now' - Facebook's link wrapper, not a page on mrsolar.in",
+            "meaning": (
+                "The only live ad sends its click through an fb.me wrapper instead of to the "
+                "subsidy page, calculator or eligibility form that already exist on "
+                "mrsolar.in. After five months on one creative there is no second angle, no "
+                "retargeting creative and no owned page behind the spend."),
+        },
+        "findings": [
+            "One live ad, running since 5 May 2026 - over five months on a single "
+            "customer-review video with no second creative angle behind it.",
+            "The ad's click goes to an fb.me wrapper, while mrsolar.in already has the "
+            "landing assets a subsidy-motivated click wants: the PM Surya Ghar Rs 78,000 "
+            "subsidy page, the savings calculator and the eligibility form.",
+            "The site positions itself as an 'unbiased consumer reviews of Telangana & AP "
+            "solar companies' destination with an ISO 9001:2015 badge and city pages for "
+            "Hyderabad, Karimnagar, Warangal, Siddipet, Nalgonda, Rangareddy, Medchal and "
+            "Malkajgiri - a trust story the one ad never tells.",
+            "Contact paths on the live site are split three ways: the contact page lists "
+            "info@mrsolar.in and contact@mrsolar.in with +91 8500225885, while the floating "
+            "WhatsApp button uses a different number, +91 85009 11912.",
+        ],
+        "next_steps": [
+            ("Point the ad at the subsidy page",
+             "The video promises 'subsidy guidance' - send the click to the PM Surya Ghar "
+             "Rs 78,000 page with the calculator and eligibility form on it, so five months "
+             "of spend finally lands on the page built to convert it."),
+            ("Add a second creative angle",
+             "One testimonial video for five months is the whole account. A calculator-led "
+             "or eligibility-check creative gives the same audience a different door in."),
+            ("Unify the contact numbers",
+             "info@mrsolar.in / contact@mrsolar.in / +91 8500225885 on the contact page "
+             "against +91 85009 11912 on the WhatsApp button - one enquiry path, one "
+             "number."),
+        ],
+        "contact_facts": [
+            ("Email", "info@mrsolar.in / contact@mrsolar.in (contact page)"),
+            ("Phone", "+91 8500225885 (contact page); WhatsApp +91 85009 11912 (site button)"),
+            ("Address", "1-128/4, Pochammagadda, Kompally, Hyderabad, Secunderabad, "
+                        "Telangana 500100"),
+            ("Site claims", "ISO 9001:2015; PM Surya Ghar Rs 78,000 subsidy + 300 free "
+                            "units content; savings calculator; city pages for Hyderabad and "
+                            "7 other Telangana towns"),
+            ("Meta page", "facebook.com/mrsolarin"),
         ],
     },
+    {
+        "company": "Arcedo Systems",
+        "legal": "Arcedo Systems Private Limited",
+        "city": "Hyderabad",
+        "website": "https://arcedo.net/",
+        "email": "info@arcedo.net",
+        "phone": "+91 8448448552",
+        "fb_page": "https://www.facebook.com/61561703979379/",
+        "checked_on": "2026-10-22",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 3,
+                "results_label": "~3 results on the Arcedo Systemss page (a sibling 'Suryon' page runs the same brand's residential ads)",
+                "query": "Telugu \u0c38\u0c4b\u0c32\u0c3e\u0c30\u0c4d \u0c07\u0c28\u0c4d\u200c\u0c38\u0c4d\u0c1f\u0c3e\u0c32\u0c47\u0b37\u0c28\u0c4d (solar installation)",
+                "ads": [
+                    ad("2518444838650356", "Arcedo Systemss", "Sep 23, 2026",
+                       "fb.me 'Get quote'",
+                       "Telugu: \u0c2e\u0c40 \u0c07\u0c02\u0c1f\u0c3f\u0c15\u0c3f \u0c38\u0c4b\u0c32\u0c3e\u0c30\u0c4d \u0c38\u0c2c\u0c4d\u0c38\u0c3f\u0c21\u0c40 \u0c05\u0c30\u0c4d\u0c39\u0c24 \u0c09\u0c02\u0c26\u0c3e? PM Surya Ghar Yojana \u0c26\u0c4d\u0c35\u0c3e\u0c30\u0c3e \u0c0e\u0c02\u0c24 \u0c35\u0c30\u0c15\u0c41 \u0c2a\u0c4d\u0c30\u0c2f\u0c4b\u0c1c\u0c28\u0c02 \u0c2a\u0c4a\u0c02\u0c26\u0c17\u0c32\u0c30\u0c4b \u0c09\u0c1a\u0c3f\u0c24\u0c02\u0c17\u0c3e \u0c1a\u0c46\u0c15\u0c4d \u0c1a\u0c46\u0c2f\u0c15\u0c41\u0c15\u0c4b\u0c02\u0c21\u0c3f. (Does your home qualify for the solar subsidy - check free under PM Surya Ghar.) Headline: '\u0c38\u0c4b\u0c32\u0c3e\u0c30\u0c4d \u0c38\u0c2c\u0c4d\u0c38\u0c3f\u0c21\u0c40 \u0c05\u0c30\u0c4d\u0c39\u0c24 \u0c1a\u0c46\u0c15\u0c4d \u0c1a\u0c46\u0c2f\u0c02\u0c21\u0c3f'."),
+                    ad("1441101634676762", "Arcedo Systemss", "Sep 30, 2026",
+                       "https://solar.suryon.in/ (2 ads use this creative)",
+                       "Telugu: \u0c30\u0c3e\u0c2c\u0c4b\u0c2f\u0c47 25 \u0c0f\u0c33\u0c4d\u0c32\u0c41, \u0c28\u0c46\u0c32\u0c15\u0c41 \u0c15\u0c47\u0c35\u0c32\u0c02 \u00e2\u00b9300 \u0c15\u0c30\u0c46\u0c02\u0c1f\u0c4d \u0c2c\u0c3f\u0c32\u0c4d\u0c32\u0c41? Suryon Solar Systems \u0c24\u0c4b \u0c07\u0c26\u0c3f \u0c28\u0c3f\u0c1c\u0c02\u0c17\u0c3e\u0c28\u0c47 \u0c38\u0c3e\u0c27\u0c4d\u0c2f\u0c02. 90% \u0c35\u0c30\u0c15\u0c41 \u0c06\u0c26\u0c3e, \u0c17\u0c35\u0c30\u0c4d\u0c28\u0c2e\u0c46\u0c02\u0c1f\u0c4d \u0c38\u0c2c\u0c4d\u0c38\u0c3f\u0c21\u0c40, 25 \u0c0f\u0c33\u0c4d\u0c32 \u0c2a\u0c30\u0c4d\u0c2b\u0c3e\u0c2e\u0c46\u0c02\u0c38\u0c4d \u0c35\u0c3e\u0c30\u0c02\u0c1f\u0c40, \u0c2b\u0c4d\u0c30\u0c40 \u0c39\u0c4b\u0c2e\u0c4d \u0c38\u0c48\u0c1f\u0c4d \u0c35\u0c3f\u0c1c\u0c3f\u0c1f\u0c4d. (Rs 300 monthly bill in 25 years with Suryon - government subsidy, 25-year performance warranty, free home site visit. Suryon-branded copy running on the Arcedo Systemss page.)"),
+                    ad("1640504621042947", "Arcedo Systemss", "Oct 17, 2026",
+                       "fb.com/messenger_doc/ ('Contact us')",
+                       "CUT YOUR POWER BILLS by up to 50%*, with zero Capex. Get Solar + "
+                       "Battery Storage running at your facility with zero heavy upfront "
+                       "investment. Pay a simple monthly OPEX charges, while clean energy "
+                       "works to lower your costs from day one. Key Benefits: No Big Capex, "
+                       "Just Smart OPEX; Beat Rising Grid Tariffs; 24/7 Power with Battery "
+                       "Backup; Built for Factories & Commercial Sites. Contact Us: "
+                       "+91 844 844 8552."),
+                ],
+            },
+            "summary": (
+                "Arcedo Systems runs three live ads on its 'Arcedo Systemss' page - a Telugu "
+                "PM Surya Ghar subsidy-eligibility ad (23 Sep, fb.me), a Telugu residential "
+                "ad carrying Suryon Solar Systems branding that points at solar.suryon.in "
+                "(30 Sep), and an English commercial OPEX ad for factories pointing at a "
+                "Messenger document (17 Oct). A sibling Facebook page named 'Suryon' runs "
+                "the same brand's residential Telugu ads with Arcedo's own contact details "
+                "in the copy (info@arcedo.net, 844 844 8552) - one company, two pages, two "
+                "brand names. arcedo.net itself is the large-scale-PV EPC site (rooftop, "
+                "ground-mount, floating, O&M); the ads sell Rs 78,000-subsidy homes and "
+                "zero-capex factory OPEX."),
+        },
+        "funnel": {
+            "type": "Split across three destinations",
+            "destination": "fb.me (Telugu subsidy ad), solar.suryon.in (Suryon-branded "
+                           "residential ad), fb.com/messenger_doc/ (commercial OPEX ad)",
+            "meaning": (
+                "Three live ads, three different destinations - and not one of them is a "
+                "page on arcedo.net. The residential click lands on a subdomain of a "
+                "different brand name; the commercial click lands in a Messenger document. "
+                "No single owned funnel, no shared page to test."),
+        },
+        "findings": [
+            "Three live ads (23 Sep, 30 Sep, 17 Oct) with three different destinations: "
+            "fb.me, solar.suryon.in and a Messenger document. None lands on arcedo.net.",
+            "One company, two brands: the Telugu residential ad on the Arcedo page carries "
+            "Suryon Solar Systems branding and points at solar.suryon.in, while a separate "
+            "'Suryon' Facebook page runs the same brand's ads with Arcedo's contact "
+            "details (info@arcedo.net, 844 844 8552) in the copy.",
+            "The commercial OPEX ad - the highest-ticket offer (solar + battery for "
+            "factories, zero capex) - sends its click to a Messenger document rather than "
+            "a page that explains the OPEX model.",
+            "arcedo.net positions as a large-scale solar EPC (rooftop, ground-mounted, "
+            "floating solar, O&M, MEP) while the ads sell Rs 78,000-subsidy homes and "
+            "zero-capex commercial OPEX - the ad-to-site message match is weak in both "
+            "directions.",
+            "The company's empanelment credentials (TGREDCO empanelled supplier and "
+            "TGNPDCL listed vendor, per the Telangana discom supplier lists) appear "
+            "nowhere in the live ad copy.",
+        ],
+        "next_steps": [
+            ("One brand, one funnel",
+             "Decide whether the residential buyer meets Arcedo or Suryon, then point "
+             "every residential ad at one owned page on arcedo.net with the subsidy offer, "
+             "the 25-year performance warranty and the free site visit on it."),
+            ("Give the OPEX offer a real page",
+             "Solar + battery at zero capex for factories is the highest-value offer in "
+             "the account. A page with the OPEX model, the 50% bill-cut claim and the "
+             "+91 844 844 8552 contact converts better than a Messenger document."),
+            ("Put the empanelment in the copy",
+             "TGREDCO-empanelled and discom-listed is the trust asset a subsidy buyer "
+             "looks for - it belongs in the Telugu ad, not only in a supplier PDF."),
+        ],
+        "contact_facts": [
+            ("Email", "info@arcedo.net (site contact page; also in the Suryon-page ad copy)"),
+            ("Phone", "+91 8448448552 (contact page + ads); +91 9866966678 (team page)"),
+            ("Address", "3rd & 6th Floor, Trendz Techpark, Kakatiya Hills, Madhapur, "
+                        "Hyderabad 500081; 4th Floor 401, Vaishnavi Lamani Arcade, Doolapally "
+                        "Rd, Kompally, Hyderabad 500014"),
+            ("Entity", "Arcedo Systems Private Limited - CIN U35105TS2025PTC193163, "
+                       "incorporated 21 Jan 2025, ROC Hyderabad (MCA records)"),
+            ("Credentials", "TGREDCO empanelled supplier; TGNPDCL listed vendor "
+                            "(Telangana discom supplier lists)"),
+            ("Meta pages", "facebook.com/61561703979379 ('Arcedo Systemss'); sibling page "
+                           "'Suryon' facebook.com/61585616331903 runs the same brand's "
+                           "residential ads"),
+        ],
+    },
+    {
+        "company": "Arkahub",
+        "legal": "Interglacial Renewable Technologies Pvt. Ltd.",
+        "city": "Hyderabad",
+        "website": "https://www.arkahub.in/",
+        "email": "care@arkahub.in",
+        "phone": "080 4736 2828",
+        "fb_page": "https://www.facebook.com/61584060508957/",
+        "checked_on": "2026-10-22",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 2,
+                "results_label": "~2 results on the 'Thearkahub' page (9 ads use the first creative)",
+                "query": "Telugu \u0c38\u0c4b\u0c32\u0c3e\u0c30\u0c4d \u0c07\u0c28\u0c4d\u200c\u0c38\u0c4d\u0c1f\u0c3e\u0c32\u0c47\u0b37\u0c28\u0c4d (solar installation)",
+                "ads": [
+                    ad("1102186569459926", "Thearkahub", "Oct 14, 2026",
+                       "https://www.arkahub.in/design-new (9 ads use this creative)",
+                       "Telugu: \u0c38\u0c3e\u0c27\u0c3e\u0c30\u0c23 \u0c30\u0c3e\u0c15\u0c3f\u0c02\u0c17\u0c4d \u0c2e\u0c40 \u0c2a\u0c48\u0c15\u0c2a\u0c4d\u0c2a\u0c41\u0c2a\u0c48 \u0c07\u0c28\u0c41\u0c2a\u0c4d \u0c17\u0c41\u0c1f\u0c4d\u0c32\u0c32\u0c3e \u0c15\u0c28\u0c3f\u0c2a\u0c3f\u0c38\u0c4d\u0c24\u0c41\u0c02\u0c26\u0c3e? Arkahub \u0c15\u0c38\u0c4d\u0c1f\u0c02 GI \u0c28\u0c3f\u0c30\u0c4d\u0c2e\u0c3e\u0c23\u0c02 \u0c2a\u0c48\u0c15\u0c2a\u0c4d\u0c2a\u0c41\u0c32\u0c4b \u0c15\u0c32\u0c3f\u0c38\u0c3f\u0c2a\u0c4b\u0c24\u0c41\u0c02\u0c26\u0c3f, \u0c35\u0c48\u0c30\u0c4d\u0c32\u0c41 \u0c2a\u0c42\u0c30\u0c4d\u0c24\u0c3f\u0c17\u0c3e \u0c26\u0c3e\u0c1a\u0c2c\u0c21\u0c24\u0c3e\u0c2f\u0c3f. \u0c05\u0c02\u0c26\u0c02 \u0c24\u0c17\u0c4d\u0c17\u0c26\u0c41, \u0c2c\u0c32\u0c02 \u0c24\u0c17\u0c4d\u0c17\u0c26\u0c41. \u0c2e\u0c40 \u0c07\u0c02\u0c1f\u0c3f\u0c15\u0c3f \u0c09\u0c1a\u0c3f\u0c24 \u0c21\u0c3f\u0c1c\u0c48\u0c28\u0c4d \u0c05\u0c38\u0c46\u0c38\u0c4d\u0c2e\u0c46\u0c02\u0c1f\u0c4d \u0c2c\u0c41\u0c15\u0c4d \u0c1a\u0c46\u0c2f\u0c02\u0c21\u0c3f. (Solar that doesn't spoil the look of your home - hidden-wire flush installation, thirty-year warranty.) Headline: '\u0c2e\u0c40 \u0c07\u0c02\u0c1f\u0c3f \u0c05\u0c02\u0c26\u0c02 \u0c1a\u0c46\u0c21\u0c15\u0c42\u0c02\u0c21\u0c3e \u0c38\u0c4b\u0c32\u0c3e\u0c30\u0c4d. \u0c35\u0c48\u0c30\u0c4d\u0c32\u0c41 \u0c15\u0c28\u0c3f\u0c2a\u0c3f\u0c38\u0c4d\u0c24\u0c3f\u0c2f\u0c32\u0c47\u0c26\u0c41 \u0c2b\u0c4d\u0c32\u0c37\u0c4d \u0c07\u0c28\u0c4d\u200c\u0c38\u0c4d\u0c1f\u0c3e\u0c32\u0c47\u0b37\u0c28\u0c4d, \u0c2e\u0c41\u0c2a\u0c4d\u0c2a\u0c48 \u0c0f\u0c33\u0c4d\u0c32 \u0c35\u0c3e\u0c30\u0c02\u0c1f\u0c40\u0c24\u0c4b.'"),
+                    ad("1098672362787317", "Thearkahub", "Oct 15, 2026",
+                       "https://www.arkahub.in/hyderabad (this ad has multiple versions)",
+                       "Telugu: \u0c1a\u0c3e\u0c32\u0c3e \u0c38\u0c4b\u0c32\u0c3e\u0c30\u0c4d \u0c15\u0c02\u0c2a\u0c46\u0c28\u0c40\u0c32\u0c41 \u0c2e\u0c3e\u0c1f\u0c32\u0c4d\u0c32\u0c4b\u0c28\u0c47 \u0c39\u0c3e\u0c2e\u0c40 \u0c07\u0c38\u0c4d\u0c24\u0c3e\u0c2f\u0c3f. Arkahub \u0c27\u0c30, 30 \u0c0f\u0c33\u0c4d\u0c32 \u0c35\u0c3e\u0c30\u0c02\u0c1f\u0c40, 5 \u0c0f\u0c33\u0c4d\u0c32 \u0c09\u0c1a\u0c3f\u0c24 \u0c2e\u0c46\u0c2f\u0c3f\u0c02\u0c1f\u0c46\u0c28\u0c46\u0c28\u0c4d\u0c38\u0c4d \u0c2e\u0c42\u0c21\u0c3f\u0c02\u0c1f\u0c40\u0c28\u0c40 \u0c30\u0c3e\u0c24\u0c2a\u0c42\u0c30\u0c4d\u0c35\u0c15\u0c02\u0c17\u0c3e \u0c07\u0c38\u0c4d\u0c24\u0c41\u0c02\u0c26\u0c3f. \u0c08\u0c30\u0c4b\u0c1c\u0c47 \u0c09\u0c1a\u0c3f\u0c24 \u0c35\u0c3f\u0c1c\u0c3f\u0c1f\u0c4d \u0c2c\u0c41\u0c15\u0c4d \u0c1a\u0c46\u0c2f\u0c02\u0c21\u0c3f. (Price, 30-year warranty and 5 years free maintenance in writing before you commit.) Headline: '\u0c38\u0c02\u0c24\u0c15\u0c02 \u0c1a\u0c47\u0c38\u0c47 \u0c2e\u0c41\u0c02\u0c21\u0c47 \u0c27\u0c30, \u0c35\u0c3e\u0c30\u0c02\u0c1f\u0c40, \u0c2e\u0c46\u0c2f\u0c3f\u0c02\u0c1f\u0c46\u0c28\u0c46\u0c28\u0c4d\u0c38\u0c4d \u0c2e\u0c42\u0c21\u0c42 \u0c30\u0c3e\u0c24\u0c2a\u0c42\u0c30\u0c4d\u0c35\u0c15\u0c02\u0c17\u0c3e \u0c2e\u0c40 \u0c1a\u0c46\u0c24\u0c3f\u0c32\u0c4b.'"),
+                ],
+            },
+            "summary": (
+                "Arkahub - the consumer brand of Interglacial Renewable Technologies Pvt. "
+                "Ltd., listed on the MNRE portal under that name and backed by Kae Capital, "
+                "Antler and Sparrow after a $2 million seed round - runs two Telugu ads "
+                "into the Hyderabad market (14 and 15 Oct 2026). The second points at a "
+                "dedicated Hyderabad landing page (arkahub.in/hyderabad). The site claims "
+                "900+ happy customers, monthly panel health checks and cleaning for 4 "
+                "years, 12-year panel / 25-year performance / 10-year inverter warranties, "
+                "and lists Hyderabad among its operational cities alongside Bengaluru, Pune "
+                "and Nagpur. Its registered office is in Bengaluru (Marthahalli)."),
+        },
+        "funnel": {
+            "type": "Owned pages (both ads)",
+            "destination": "arkahub.in/design-new and arkahub.in/hyderabad",
+            "meaning": (
+                "Both live ads point at pages on arkahub.in - one generic design page, one "
+                "Hyderabad-specific page. The paid path lands on owned ground, which is "
+                "the right structure; the gap is that the ads speak Telugu while the "
+                "destination pages and the consultation form are English-first."),
+        },
+        "findings": [
+            "Two live Telugu ads (14 and 15 Oct) and both point at owned pages - the "
+            "second at a dedicated Hyderabad landing page (arkahub.in/hyderabad). The paid "
+            "path already lands on owned ground.",
+            "The two ads test two genuinely different angles - aesthetics (hidden wires, "
+            "flush-mount custom GI structure, 'solar that doesn't spoil the look of your "
+            "home') versus trust paperwork (price, 30-year warranty and 5 years free "
+            "maintenance in writing). A real creative test.",
+            "Language mismatch: both ads are Telugu, while arkahub.in's homepage, city "
+            "selector and consultation form are English-first - the click lands in a "
+            "different language from the one that earned it.",
+            "Trust assets that never appear in the ad copy: MNRE-portal listing as "
+            "Interglacial Renewable Technologies Pvt. Ltd., institutional backing (Kae "
+            "Capital, Antler, Sparrow; $2M seed) and the 900+ customers claim.",
+            "Hyderabad is one of four operational cities (Bengaluru, Hyderabad, Pune, "
+            "Nagpur) with a registered office in Bengaluru - the Hyderabad page is doing "
+            "the work of a local presence.",
+        ],
+        "next_steps": [
+            ("Mirror the ad language on the landing page",
+             "Both ads are Telugu; arkahub.in/hyderabad and the consultation form are "
+             "English-first. A Telugu headline and form labels on the Hyderabad page keep "
+             "the click in the language that earned it."),
+            ("Put the paperwork promise on the Hyderabad page",
+             "The winning ad angle is 'price, warranty and maintenance in writing' - the "
+             "Hyderabad page should carry exactly that, plus the MNRE listing and the "
+             "institutional backing."),
+            ("Make the local presence explicit",
+             "Hyderabad is one of four cities on the site - a Hyderabad team page, local "
+             "install photos and a local number turn a city page into a local promise."),
+        ],
+        "contact_facts": [
+            ("Email", "care@arkahub.in (contact page)"),
+            ("Phone", "080 4736 2828 (contact page)"),
+            ("Registered office", "Interglacial Renewable Technologies Pvt. Ltd., Purva "
+                                  "Riviera, Marthahalli, Bengaluru 560037"),
+            ("Operational cities", "Bengaluru, Hyderabad, Pune, Nagpur (site claim); "
+                                   "dedicated landing page arkahub.in/hyderabad"),
+            ("Credentials", "Listed on the MNRE portal as Interglacial Renewable "
+                            "Technologies Pvt. Ltd.; backed by Kae Capital, Antler and "
+                            "Sparrow ($2M seed); claims 900+ happy customers"),
+            ("Meta page", "facebook.com/61584060508957 ('Thearkahub')"),
+        ],
+    },
+    {
+        "company": "Orbit Solar",
+        "legal": "Orbit Solar Energy Systems",
+        "city": "Hyderabad",
+        "website": "https://orbitsolar.in/",
+        "email": "",
+        "phone": "+91 9059806772",
+        "fb_page": "https://www.facebook.com/100093675784835/",
+        "checked_on": "2026-10-22",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 5,
+                "results_label": "~5 results on the ORBIT SOLAR page (21 results matched 'orbitsolar.in' overall)",
+                "query": "orbitsolar.in",
+                "ads": [
+                    ad("2110991659634519", "ORBIT SOLAR", "Dec 10, 2025",
+                       "fb.me 'Sign Up' (6 creatives: 'See How Much You Can Save', 'Save "
+                       "Rs.3,000/Month Like Him', 'Cut Your Bill by 90% Too', 'Get Rs.78K "
+                       "Subsidy - Zero Hassle', 'Get a Solar Pergola Like This', 'Join "
+                       "1000+ Happy Homes')",
+                       "They trusted us. You can too. 5+ years, 1000+ installations across "
+                       "Hyderabad - all with 25-year guarantees. orbitsolar.in. "
+                       "+91-9059806772."),
+                    ad("1569253241154571", "ORBIT SOLAR", "Nov 6, 2025",
+                       "WhatsApp ('Cut Your Industry Energy Bill')",
+                       "Why keep paying Lakhs in power bills every year? Schools, "
+                       "Hospitals, and Offices in Hyderabad are already cutting 60-80% of "
+                       "their electricity costs with Orbit Solar. Save Lakhs in Energy "
+                       "Bills Every Year; Quick ROI - Payback in Just 3-4 Years; 30-Year "
+                       "Panel Warranty + Professional AMC Support; 500+ Successful "
+                       "Installations Across Telangana. Call/WhatsApp: +91-9059806772. "
+                       "Website: https://orbitsolar.in/"),
+                    ad("1956441998642638", "ORBIT SOLAR", "Nov 6, 2025",
+                       "WhatsApp ('Schedule Your Free Site Assessment')",
+                       "Eliminate Your Biggest Energy Expense with Solar Power. Switch to "
+                       "solar and turn your biggest operational cost into a long-term "
+                       "asset. Lock-in energy costs for 25+ years; maximize uptime & "
+                       "operational resilience; industrial-grade durability; backed by a "
+                       "25-year performance guarantee. Strategic Investment with ROI in "
+                       "just 3-5 Years. Trusted by 1,000+ industrial clients across "
+                       "India. Get Your FREE Custom ROI Proposal Today! Visit: "
+                       "orbitsolar.in. Call/WhatsApp: +91-9059806772."),
+                    ad("1327900616150394", "ORBIT SOLAR", "May 14, 2026",
+                       "WhatsApp (industrial ad, multiple versions)",
+                       "Unlock Massive Savings with Solar! Reliable Industrial Solar "
+                       "Solutions by Orbit Solar. 100+ Successful Installations across "
+                       "Telangana. Trusted by Businesses for performance & long-term "
+                       "savings. Sustainable Power, Proven ROI. Click below for a Free ROI "
+                       "Estimate!"),
+                    ad("1276379831189065", "ORBIT SOLAR", "Sep 4, 2026",
+                       "fb.me 'Get quote'",
+                       "Power your home with solar - and stay powered when the grid goes "
+                       "down. Orbit Solar's On-Grid Solar + UPS Combo brings solar savings "
+                       "and reliable backup together in one practical power package. "
+                       "Customized On-Grid Solar System; UPS Power Backup; Smart Auto "
+                       "Switching; Net Metering Assistance; Professional Installation. "
+                       "Call / WhatsApp: 9059806772. orbitsolar.in."),
+                ],
+            },
+            "summary": (
+                "Orbit Solar is the longest continuously-running advertiser in this batch: "
+                "five live ads, the oldest started 6 November 2025 - residential "
+                "('They trusted us. You can too', 10 Dec 2025, six creatives), two "
+                "commercial/industrial ROI ads (6 Nov 2025), an industrial Telangana ad "
+                "(14 May 2026) and a new On-Grid Solar + UPS combo (4 Sep 2026). Every ad "
+                "funnels to fb.me or WhatsApp - none points at a specific page on "
+                "orbitsolar.in. The site itself (fetched 2026-10-22) claims MNRE-approved "
+                "vendor status, carries residential and commercial brochures, a savings "
+                "calculator and an enquiry form, and lists a Mehdipatnam address - none of "
+                "which the ad copy uses beyond printing 'orbitsolar.in'."),
+        },
+        "funnel": {
+            "type": "Split - fb.me links and WhatsApp",
+            "destination": "fb.me 'Sign Up' / 'Get quote' on the residential and UPS-combo "
+                           "ads; WhatsApp (wa.me/919059806772) on the commercial and "
+                           "industrial ads",
+            "meaning": (
+                "No ad sends its click to a page on orbitsolar.in. The commercial and "
+                "industrial spend - the highest-ticket offers - lands in a WhatsApp chat, "
+                "and the residential spend lands behind an fb.me wrapper. The site's "
+                "calculator, brochures and enquiry form sit outside the paid path "
+                "entirely."),
+        },
+        "findings": [
+            "Five live ads and the oldest has run since 6 November 2025 - a year of "
+            "continuous spend across residential, commercial and industrial angles, plus "
+            "a new On-Grid + UPS combo (4 Sep 2026).",
+            "Not one ad points at a page on orbitsolar.in - residential and UPS-combo ads "
+            "go to fb.me, the commercial and industrial ads go straight to WhatsApp.",
+            "The install-count claims differ across live ads: '1000+ installations across "
+            "Hyderabad' (residential), '500+ Successful Installations Across Telangana' "
+            "(commercial) and '1,000+ industrial clients across India' (industrial) - a "
+            "prospect who sees two ads sees two different companies.",
+            "No email address is published anywhere on the live site - enquiries only via "
+            "the form (name, mobile, email, location, monthly bill), phone or WhatsApp.",
+            "The newest offer - On-Grid Solar + UPS Combo with smart auto-switching - has "
+            "no page of its own on orbitsolar.in; the ad is the only place it exists.",
+        ],
+        "next_steps": [
+            ("Give each angle its own owned page",
+             "Residential, commercial/industrial and the new UPS combo are three "
+             "different buyers. One landing page per angle on orbitsolar.in - each with "
+             "its own form - turns a year of fb.me and WhatsApp spend into a funnel you "
+             "own and can test."),
+            ("Reconcile the numbers",
+             "1000+ installations, 500+ across Telangana and 1,000+ industrial clients "
+             "cannot all be the headline. One verified number, used everywhere, is worth "
+             "more than three that contradict."),
+            ("Publish an email",
+             "A business spending on Meta for a year with no email on its site loses "
+             "every enquiry that prefers to write. A care@ address on the form, the "
+             "footer and the ads."),
+            ("Build the UPS combo page",
+             "On-grid + UPS with auto-switching is a differentiated product with a live "
+             "ad behind it - it deserves a page with the combo, the switching logic and "
+             "the net-metering assistance explained."),
+        ],
+        "contact_facts": [
+            ("Email", "None published on the live site - enquiry form, phone and WhatsApp "
+                      "only"),
+            ("Phone", "+91 9059806772 (site tel/WhatsApp links and every ad)"),
+            ("Address", "12-2-800/216, Pillar no. 54, Dilshad Nagar, Mehdipatnam, "
+                        "Hyderabad, Telangana 500028"),
+            ("Site claims", "MNRE-Approved Vendor / Govt. Certified Solar Partner; "
+                            "residential and commercial brochures; savings calculator; "
+                            "5+ years, 1000+ installations across Hyderabad"),
+            ("Meta page", "facebook.com - page ID 100093675784835 ('ORBIT SOLAR')"),
+        ],
+    },
+
 ]
 
 

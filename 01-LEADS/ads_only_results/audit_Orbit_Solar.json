@@ -1,0 +1,124 @@
+{
+  "company": "Orbit Solar",
+  "legal": "Orbit Solar Energy Systems",
+  "city": "Hyderabad",
+  "website": "https://orbitsolar.in/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-22",
+  "generated_at": "2026-10-22 13:52",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 5,
+      "results_label": "~5 results on the ORBIT SOLAR page (21 results matched 'orbitsolar.in' overall)",
+      "query": "orbitsolar.in",
+      "ads": [
+        {
+          "library_id": "2110991659634519",
+          "library_url": "https://www.facebook.com/ads/library/?id=2110991659634519",
+          "page_name": "ORBIT SOLAR",
+          "started": "Dec 10, 2025",
+          "destination": "fb.me 'Sign Up' (6 creatives: 'See How Much You Can Save', 'Save Rs.3,000/Month Like Him', 'Cut Your Bill by 90% Too', 'Get Rs.78K Subsidy - Zero Hassle', 'Get a Solar Pergola Like This', 'Join 1000+ Happy Homes')",
+          "text": "They trusted us. You can too. 5+ years, 1000+ installations across Hyderabad - all with 25-year guarantees. orbitsolar.in. +91-9059806772.",
+          "images": []
+        },
+        {
+          "library_id": "1569253241154571",
+          "library_url": "https://www.facebook.com/ads/library/?id=1569253241154571",
+          "page_name": "ORBIT SOLAR",
+          "started": "Nov 6, 2025",
+          "destination": "WhatsApp ('Cut Your Industry Energy Bill')",
+          "text": "Why keep paying Lakhs in power bills every year? Schools, Hospitals, and Offices in Hyderabad are already cutting 60-80% of their electricity costs with Orbit Solar. Save Lakhs in Energy Bills Every Year; Quick ROI - Payback in Just 3-4 Years; 30-Year Panel Warranty + Professional AMC Support; 500+ Successful Installations Across Telangana. Call/WhatsApp: +91-9059806772. Website: https://orbitsolar.in/",
+          "images": []
+        },
+        {
+          "library_id": "1956441998642638",
+          "library_url": "https://www.facebook.com/ads/library/?id=1956441998642638",
+          "page_name": "ORBIT SOLAR",
+          "started": "Nov 6, 2025",
+          "destination": "WhatsApp ('Schedule Your Free Site Assessment')",
+          "text": "Eliminate Your Biggest Energy Expense with Solar Power. Switch to solar and turn your biggest operational cost into a long-term asset. Lock-in energy costs for 25+ years; maximize uptime & operational resilience; industrial-grade durability; backed by a 25-year performance guarantee. Strategic Investment with ROI in just 3-5 Years. Trusted by 1,000+ industrial clients across India. Get Your FREE Custom ROI Proposal Today! Visit: orbitsolar.in. Call/WhatsApp: +91-9059806772.",
+          "images": []
+        },
+        {
+          "library_id": "1327900616150394",
+          "library_url": "https://www.facebook.com/ads/library/?id=1327900616150394",
+          "page_name": "ORBIT SOLAR",
+          "started": "May 14, 2026",
+          "destination": "WhatsApp (industrial ad, multiple versions)",
+          "text": "Unlock Massive Savings with Solar! Reliable Industrial Solar Solutions by Orbit Solar. 100+ Successful Installations across Telangana. Trusted by Businesses for performance & long-term savings. Sustainable Power, Proven ROI. Click below for a Free ROI Estimate!",
+          "images": []
+        },
+        {
+          "library_id": "1276379831189065",
+          "library_url": "https://www.facebook.com/ads/library/?id=1276379831189065",
+          "page_name": "ORBIT SOLAR",
+          "started": "Sep 4, 2026",
+          "destination": "fb.me 'Get quote'",
+          "text": "Power your home with solar - and stay powered when the grid goes down. Orbit Solar's On-Grid Solar + UPS Combo brings solar savings and reliable backup together in one practical power package. Customized On-Grid Solar System; UPS Power Backup; Smart Auto Switching; Net Metering Assistance; Professional Installation. Call / WhatsApp: 9059806772. orbitsolar.in.",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Orbit Solar is the longest continuously-running advertiser in this batch: five live ads, the oldest started 6 November 2025 - residential ('They trusted us. You can too', 10 Dec 2025, six creatives), two commercial/industrial ROI ads (6 Nov 2025), an industrial Telangana ad (14 May 2026) and a new On-Grid Solar + UPS combo (4 Sep 2026). Every ad funnels to fb.me or WhatsApp - none points at a specific page on orbitsolar.in. The site itself (fetched 2026-10-22) claims MNRE-approved vendor status, carries residential and commercial brochures, a savings calculator and an enquiry form, and lists a Mehdipatnam address - none of which the ad copy uses beyond printing 'orbitsolar.in'."
+  },
+  "funnel": {
+    "type": "Split - fb.me links and WhatsApp",
+    "destination": "fb.me 'Sign Up' / 'Get quote' on the residential and UPS-combo ads; WhatsApp (wa.me/919059806772) on the commercial and industrial ads",
+    "meaning": "No ad sends its click to a page on orbitsolar.in. The commercial and industrial spend - the highest-ticket offers - lands in a WhatsApp chat, and the residential spend lands behind an fb.me wrapper. The site's calculator, brochures and enquiry form sit outside the paid path entirely."
+  },
+  "findings": [
+    "Five live ads and the oldest has run since 6 November 2025 - a year of continuous spend across residential, commercial and industrial angles, plus a new On-Grid + UPS combo (4 Sep 2026).",
+    "Not one ad points at a page on orbitsolar.in - residential and UPS-combo ads go to fb.me, the commercial and industrial ads go straight to WhatsApp.",
+    "The install-count claims differ across live ads: '1000+ installations across Hyderabad' (residential), '500+ Successful Installations Across Telangana' (commercial) and '1,000+ industrial clients across India' (industrial) - a prospect who sees two ads sees two different companies.",
+    "No email address is published anywhere on the live site - enquiries only via the form (name, mobile, email, location, monthly bill), phone or WhatsApp.",
+    "The newest offer - On-Grid Solar + UPS Combo with smart auto-switching - has no page of its own on orbitsolar.in; the ad is the only place it exists."
+  ],
+  "next_steps": [
+    [
+      "Give each angle its own owned page",
+      "Residential, commercial/industrial and the new UPS combo are three different buyers. One landing page per angle on orbitsolar.in - each with its own form - turns a year of fb.me and WhatsApp spend into a funnel you own and can test."
+    ],
+    [
+      "Reconcile the numbers",
+      "1000+ installations, 500+ across Telangana and 1,000+ industrial clients cannot all be the headline. One verified number, used everywhere, is worth more than three that contradict."
+    ],
+    [
+      "Publish an email",
+      "A business spending on Meta for a year with no email on its site loses every enquiry that prefers to write. A care@ address on the form, the footer and the ads."
+    ],
+    [
+      "Build the UPS combo page",
+      "On-grid + UPS with auto-switching is a differentiated product with a live ad behind it - it deserves a page with the combo, the switching logic and the net-metering assistance explained."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "None published on the live site - enquiry form, phone and WhatsApp only"
+    ],
+    [
+      "Phone",
+      "+91 9059806772 (site tel/WhatsApp links and every ad)"
+    ],
+    [
+      "Address",
+      "12-2-800/216, Pillar no. 54, Dilshad Nagar, Mehdipatnam, Hyderabad, Telangana 500028"
+    ],
+    [
+      "Site claims",
+      "MNRE-Approved Vendor / Govt. Certified Solar Partner; residential and commercial brochures; savings calculator; 5+ years, 1000+ installations across Hyderabad"
+    ],
+    [
+      "Meta page",
+      "facebook.com - page ID 100093675784835 ('ORBIT SOLAR')"
+    ]
+  ],
+  "contact": {
+    "email": "",
+    "phone": "+91 9059806772",
+    "fb_page": "https://www.facebook.com/100093675784835/"
+  }
+}

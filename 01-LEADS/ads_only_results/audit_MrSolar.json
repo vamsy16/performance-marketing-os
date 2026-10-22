@@ -1,0 +1,83 @@
+{
+  "company": "MrSolar",
+  "legal": "MrSolar (mrsolar.in)",
+  "city": "Hyderabad",
+  "website": "https://mrsolar.in/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-22",
+  "generated_at": "2026-10-22 13:49",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "~1 result (a separate Nagpur 'Mr.Solar' page also matched the query and is a different company)",
+      "query": "rooftop solar Hyderabad",
+      "ads": [
+        {
+          "library_id": "2766978160319102",
+          "library_url": "https://www.facebook.com/ads/library/?id=2766978160319102",
+          "page_name": "mrsolar.in",
+          "started": "May 5, 2026",
+          "destination": "fb.me 'Book now' (video ad)",
+          "text": "Thinking about rooftop solar but not sure whom to trust? Watch this Hyderabad customer share their real experience - from site survey to installation and subsidy guidance. No sales talk. Just facts, uncut customer review. CTA line: 'Real Solar Experience uncut - Hyderabad | uncut Customer review | Rooftop solar | Subsidy support'.",
+          "images": []
+        }
+      ]
+    },
+    "summary": "mrsolar.in has exactly one active Meta ad - a Hyderabad customer-review video that has been running since 5 May 2026, over five months on the same creative. The click goes to an fb.me link, not to a specific page on mrsolar.in. The site itself (fetched 2026-10-22) is the fullest asset in this batch: an ISO 9001:2015 badge, PM Surya Ghar subsidy content including the Rs 78,000 central subsidy and 300 free units, a savings calculator, an eligibility form, a WhatsApp button (wa.me/918500911912) and city pages for Hyderabad plus seven other Telangana towns. None of that machinery is referenced by the ad copy beyond a passing 'subsidy guidance'."
+  },
+  "funnel": {
+    "type": "fb.me link wrapper",
+    "destination": "fb.me 'Book now' - Facebook's link wrapper, not a page on mrsolar.in",
+    "meaning": "The only live ad sends its click through an fb.me wrapper instead of to the subsidy page, calculator or eligibility form that already exist on mrsolar.in. After five months on one creative there is no second angle, no retargeting creative and no owned page behind the spend."
+  },
+  "findings": [
+    "One live ad, running since 5 May 2026 - over five months on a single customer-review video with no second creative angle behind it.",
+    "The ad's click goes to an fb.me wrapper, while mrsolar.in already has the landing assets a subsidy-motivated click wants: the PM Surya Ghar Rs 78,000 subsidy page, the savings calculator and the eligibility form.",
+    "The site positions itself as an 'unbiased consumer reviews of Telangana & AP solar companies' destination with an ISO 9001:2015 badge and city pages for Hyderabad, Karimnagar, Warangal, Siddipet, Nalgonda, Rangareddy, Medchal and Malkajgiri - a trust story the one ad never tells.",
+    "Contact paths on the live site are split three ways: the contact page lists info@mrsolar.in and contact@mrsolar.in with +91 8500225885, while the floating WhatsApp button uses a different number, +91 85009 11912."
+  ],
+  "next_steps": [
+    [
+      "Point the ad at the subsidy page",
+      "The video promises 'subsidy guidance' - send the click to the PM Surya Ghar Rs 78,000 page with the calculator and eligibility form on it, so five months of spend finally lands on the page built to convert it."
+    ],
+    [
+      "Add a second creative angle",
+      "One testimonial video for five months is the whole account. A calculator-led or eligibility-check creative gives the same audience a different door in."
+    ],
+    [
+      "Unify the contact numbers",
+      "info@mrsolar.in / contact@mrsolar.in / +91 8500225885 on the contact page against +91 85009 11912 on the WhatsApp button - one enquiry path, one number."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@mrsolar.in / contact@mrsolar.in (contact page)"
+    ],
+    [
+      "Phone",
+      "+91 8500225885 (contact page); WhatsApp +91 85009 11912 (site button)"
+    ],
+    [
+      "Address",
+      "1-128/4, Pochammagadda, Kompally, Hyderabad, Secunderabad, Telangana 500100"
+    ],
+    [
+      "Site claims",
+      "ISO 9001:2015; PM Surya Ghar Rs 78,000 subsidy + 300 free units content; savings calculator; city pages for Hyderabad and 7 other Telangana towns"
+    ],
+    [
+      "Meta page",
+      "facebook.com/mrsolarin"
+    ]
+  ],
+  "contact": {
+    "email": "info@mrsolar.in",
+    "phone": "+91 8500225885",
+    "fb_page": "https://www.facebook.com/mrsolarin/"
+  }
+}
