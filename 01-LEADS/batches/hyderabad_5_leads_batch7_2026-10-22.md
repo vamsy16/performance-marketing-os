@@ -111,6 +111,42 @@ company sizes.
 - Orbit Solar has **no published email**; its only enquiry paths are the site form, phone and WhatsApp. Outreach for that lead will need the form/phone route, not an email draft.
 - Telugu ad copy is quoted in the reports with an English gloss beside it; nothing was translated or paraphrased into a claim the ad does not make.
 
+## Step-0 outreach drafts — prepared 2026-10-22 (awaiting your schedule/send)
+
+Outreach emails generated with `ads_only_outreach.py --export` (same templates as
+the sent batch-5/6 emails; each carries the ads-only PDF, never a full-audit
+PDF) and Gmail drafts created with the PDFs attached. Registered in
+`02-OUTREACH/generated_emails/sequence_manifest.json` at step 0
+(`report_kind=ads_only`). **Nothing was sent** — you review and schedule them in
+the Gmail UI yourself.
+
+| Lead | To | Subject | Draft ID | Thread |
+|---|---|---|---|---|
+| MrSolar | info@mrsolar.in | MrSolar: 1 live Hyderabad ad since May - where the clicks land | r-1164586820850053341 | 1a163e53b42765d9 |
+| Arcedo Systems | info@arcedo.net | Arcedo Systems: 3 live Hyderabad ads, 3 different destinations | r-315798432579919374 | 1a163e5661ececcb |
+| Arkahub | care@arkahub.in | Arkahub: 2 live Telugu ads into Hyderabad - what they show | r-3781039558763888632 | 1a163e590a0600f9 |
+
+Subjects were hand-corrected from the generated template ("3 live Hyderabad
+ads, one funnel") because Arcedo's three ads use three different destinations —
+the subject now says what the report says. Follow-up 1 for each is due 2 days
+after you send the initial (threaded as a `Re:` reply inside the same Gmail
+thread — never a new email). When you send one, mark it with
+`python sequence.py mark-sent --company "<Company>" --step 0`.
+
+**Orbit Solar has no published email**, so no email draft was created for it —
+its only enquiry paths are the site form, phone and WhatsApp (+91 9059806772).
+
+## Follow-up reconciliation (2026-10-22, 19:24 IST)
+
+Of the 8 step-1 follow-ups you scheduled tonight (12-min gaps, 19:05–20:29
+IST), three have fired and are now marked sent in the manifest (real Gmail
+IDs): **Ksquare** 18:50 IST (`1a163c5a722aee11` / thread `1a14f7346f5232f1`,
+recorded in `a2bddfc`), **Venus** 19:02 IST (`1a163cfb93eed94b` / thread
+`1a1548e33069b440`), **AB Solar** 19:13 IST (`1a163d9ca5b9ee07` / thread
+`1a1548778b6c59c4`). Step 2 for all three is due 2026-10-24. The remaining
+five (Evergrid, Punarvi, Solox, Truzon, Varahi) fire through 20:29 IST — mark
+them sent after they fire.
+
 ## Next steps (owner)
 
 1. Rebuild these four reports locally (creatives + full audit) when convenient:

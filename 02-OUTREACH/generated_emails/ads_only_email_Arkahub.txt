@@ -1,0 +1,41 @@
+=== EMAIL FOR: Arkahub ===
+City: Hyderabad
+To: care@arkahub.in
+Phone: 080 4736 2828
+Website: https://www.arkahub.in/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Arkahub.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-22 13:54
+
+--- SUBJECT ---
+Arkahub: 2 live Hyderabad ads, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Arkahub is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-22):
+
+  - 2 live ads on Meta, running since 14 October 2026
+  - every click lands in Owned pages (both ads)
+  - Two live Telugu ads (14 and 15 Oct) and both point at owned pages - the second at a dedicated Hyderabad landing page (arkahub.in/hyderabad). The paid path already lands on owned ground.
+  - The two ads test two genuinely different angles - aesthetics (hidden wires, flush-mount custom GI structure, 'solar that doesn't spoil the look of your home') versus trust paperwork (price, 30-year warranty and 5 years free maintenance in writing). A real creative test.
+
+You can verify every line yourself:
+
+  Library ID 1102186569459926: https://www.facebook.com/ads/library/?id=1102186569459926
+  Library ID 1098672362787317: https://www.facebook.com/ads/library/?id=1098672362787317
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

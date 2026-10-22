@@ -1,0 +1,42 @@
+=== EMAIL FOR: Arcedo Systems ===
+City: Hyderabad
+To: info@arcedo.net
+Phone: +91 8448448552
+Website: https://arcedo.net/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Arcedo_Systems.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-22 13:54
+
+--- SUBJECT ---
+Arcedo Systems: 3 live Hyderabad ads, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Arcedo Systems is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-22):
+
+  - 3 live ads on Meta, running since 23 September 2026
+  - every click lands in Split across three destinations
+  - Three live ads (23 Sep, 30 Sep, 17 Oct) with three different destinations: fb.me, solar.suryon.in and a Messenger document. None lands on arcedo.net.
+  - One company, two brands: the Telugu residential ad on the Arcedo page carries Suryon Solar Systems branding and points at solar.suryon.in, while a separate 'Suryon' Facebook page runs the same brand's ads with Arcedo's contact details (info@arcedo.net, 844 844 8552) in the copy.
+
+You can verify every line yourself:
+
+  Library ID 2518444838650356: https://www.facebook.com/ads/library/?id=2518444838650356
+  Library ID 1441101634676762: https://www.facebook.com/ads/library/?id=1441101634676762
+  Library ID 1640504621042947: https://www.facebook.com/ads/library/?id=1640504621042947
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===
