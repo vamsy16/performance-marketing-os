@@ -1,0 +1,119 @@
+{
+  "company": "3S Solutions",
+  "legal": "3S Solutions India Pvt. Ltd.",
+  "city": "Hyderabad",
+  "website": "https://3ssol.in/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-23",
+  "generated_at": "2026-10-23 02:55",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 7,
+      "results_label": "~7 results for '3ssol.in'; 6 active ads on the 3S Solutions page",
+      "query": "3ssol.in",
+      "ads": [
+        {
+          "library_id": "1283230217176481",
+          "library_url": "https://www.facebook.com/ads/library/?id=1283230217176481",
+          "page_name": "3S Solutions",
+          "started": "Sep 11, 2026",
+          "destination": "Video ad on the 3S Solutions page (no CTA destination captured)",
+          "text": "Go Solar. Save More. Power Your Future! Get up to Rs. 78,000 PM Surya Ghar subsidy from the Government of India + an additional offer up to Rs. 10,000. Make the switch to clean energy with 3S Solutions India Pvt. Ltd. - your trusted solar partner for residential solar solutions, expert installation, genuine products & reliable service. Call us: 9000121084 | 9581177119. www.3ssol.in. Kukatpally, Hyderabad, Telangana.",
+          "images": []
+        },
+        {
+          "library_id": "2035989101138405",
+          "library_url": "https://www.facebook.com/ads/library/?id=2035989101138405",
+          "page_name": "3S Solutions",
+          "started": "Oct 11, 2026",
+          "destination": "fb.me 'See details' (inside Facebook)",
+          "text": "Thinking about going solar? Start with a FREE Site Consultation. Our solar experts will assess your rooftop, electricity usage and installation requirements and help you understand the right solar solution for your property. No guesswork. No consultation fee. Available across Andhra Pradesh & Telangana.",
+          "images": []
+        },
+        {
+          "library_id": "4590054947908510",
+          "library_url": "https://www.facebook.com/ads/library/?id=4590054947908510",
+          "page_name": "3S Solutions",
+          "started": "Oct 19, 2026",
+          "destination": "fb.me 'See details' (inside Facebook)",
+          "text": "Why pay more for electricity when your rooftop can generate power? Rs. 4,280 electricity bill? That was our customer's bill last month in Hyderabad. Now it's Rs. 187. Your roof can do the same. Calculate your FREE savings in 60 sec: 3scalculator.vercel.app. (2 ads use this creative and text.)",
+          "images": []
+        },
+        {
+          "library_id": "1088110834213698",
+          "library_url": "https://www.facebook.com/ads/library/?id=1088110834213698",
+          "page_name": "3S Solutions",
+          "started": "Oct 19, 2026",
+          "destination": "fb.me 'See details' (inside Facebook)",
+          "text": "Get a FREE Solar Site Consultation - explore rooftop solar options, subsidy eligibility and potential electricity savings. Switch to Solar and Save on Electricity Bills! Government subsidy eligibility guidance under PM Surya Ghar Yojana; free solar site consultation; quality panels and trusted equipment; professional installation and support. Subsidy up to Rs. 78,000 subject to scheme guidelines. Serving Andhra Pradesh & Telangana.",
+          "images": []
+        }
+      ]
+    },
+    "summary": "3S Solutions is running 6 active Meta ads (5 captured with full copy here), started between 11 September and 19 October 2026. Four different hooks are live: the Rs. 78,000 subsidy + Rs. 10,000 offer, the free site consultation, a Hyderabad customer's Rs. 4,280-to-Rs. 187 bill story, and subsidy-eligibility guidance. The newest clicks land on fb.me links, and the bill-saving creative pushes a savings calculator hosted off-domain at 3scalculator.vercel.app. No Google Ads advertiser record was checked for this report - that requires the full pipeline."
+  },
+  "funnel": {
+    "type": "Facebook Messenger link (fb.me) + off-domain calculator",
+    "destination": "fb.me 'See details'; one creative sends to 3scalculator.vercel.app",
+    "meaning": "The newest clicks land inside Facebook or on a calculator hosted on a third-party Vercel domain - not on 3ssol.in. That traffic cannot be retargeted from your own site, the calculator's visitors never see your contact form, and the measurement lives outside your analytics."
+  },
+  "findings": [
+    "The newest ads (19 Oct) drive to fb.me links, and the Rs. 4,280-to-Rs. 187 bill-saving creative pushes a savings calculator at 3scalculator.vercel.app - a third-party host, not 3ssol.in. That is your best hook sending your best prospects to somebody else's domain.",
+    "3ssol.in itself is content-rich - on-grid and off-grid system guides, Hyderabad locality pages (Jubilee Hills, Miyapur, Gachibowli, Uppal, LB Nagar, Kukatpally, Ameerpet, Balanagar, Hitec City) and a real contact form - and none of the six ads sends anyone there.",
+    "Six ads, four hooks in five weeks: the testing instinct is there, but with the clicks inside Facebook or on a Vercel app there is no first-party data to tell you which hook actually converts.",
+    "Contact splits across numbers - the ad promotes 9000121084 and 9581177119, the site footer lists +91 7075441637 (Telangana) and +91 7075441638 (AP), all feeding one inbox, praveen@3ssol.in.",
+    "The distributor positioning - Growatt distributor in India, Vikram Solar distributor for AP & TG, TGREDCO-empanelled - is the strongest trust asset on the site and appears in no ad."
+  ],
+  "next_steps": [
+    [
+      "Bring the calculator home",
+      "Move the 60-second savings calculator onto 3ssol.in (or a subdomain you own) with the Meta Pixel installed, so the bill-saving ad's traffic becomes your retargetable audience."
+    ],
+    [
+      "Point every ad at a page you own",
+      "Swap the fb.me destinations for dedicated landing pages - one per hook (subsidy offer, free consultation, bill savings) - each with a form and pixel."
+    ],
+    [
+      "Lead with the distributor badge",
+      "Growatt and Vikram distributorships plus TGREDCO empanelment are proof competitors cannot copy in a headline. Put them in the creative."
+    ],
+    [
+      "Unify the contact numbers",
+      "Publish one Hyderabad number and one AP number across ads, site and forms, and add a second inbox so praveen@3ssol.in is never the single point of failure."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "praveen@3ssol.in"
+    ],
+    [
+      "Phone",
+      "+91 9581177119 / +91 90001 21084 (site: Telangana +91 7075441637, Andhra Pradesh +91 7075441638)"
+    ],
+    [
+      "Address",
+      "Plot No. 196, 3rd Floor, Road Number 20, Vivekananda Nagar, Kukatpally, Hyderabad, Telangana 500072"
+    ],
+    [
+      "Entity",
+      "3S Solutions India Pvt. Ltd. - TGREDCO-empanelled; Growatt distributor (India), Vikram Solar distributor (AP & TG)"
+    ],
+    [
+      "Meta page",
+      "facebook.com/3SSolutionsSolarServices"
+    ],
+    [
+      "Service area",
+      "3ssol.in - Hyderabad localities plus Andhra Pradesh & Telangana"
+    ]
+  ],
+  "contact": {
+    "email": "praveen@3ssol.in",
+    "phone": "+91 9581177119",
+    "fb_page": "https://www.facebook.com/3SSolutionsSolarServices/"
+  }
+}

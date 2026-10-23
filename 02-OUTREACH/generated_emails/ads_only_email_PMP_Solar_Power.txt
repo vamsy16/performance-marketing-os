@@ -1,0 +1,40 @@
+=== EMAIL FOR: PMP Solar Power ===
+City: Hyderabad
+To: sreepooji27@gmail.com
+Phone: +91 70324 67979
+Website: https://pmpsolar.com/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_PMP_Solar_Power.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-23 02:56
+
+--- SUBJECT ---
+PMP Solar Power: 1 live Hyderabad ad, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what PMP Solar Power is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-23):
+
+  - 1 live ad on Meta, running since 09 October 2026
+  - every click lands in Facebook Messenger link (fb.me)
+  - The one live ad sends the click to an fb.me link inside Facebook - pmpsolar.com, its 36 documented projects and its quote form never see the paid traffic.
+  - The ad's fixed festive pricing (3 kW Rs. 2.10L / 5 kW Rs. 3.10L, subsidy-inclusive, 'no negotiation') is the sharpest offer in this lead set - and today there is nowhere on your own site that a clicker can land and act on it.
+
+You can verify every line yourself:
+
+  Library ID 29275328785392295: https://www.facebook.com/ads/library/?id=29275328785392295
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

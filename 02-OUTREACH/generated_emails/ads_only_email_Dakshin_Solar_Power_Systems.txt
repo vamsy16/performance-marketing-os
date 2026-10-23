@@ -1,0 +1,40 @@
+=== EMAIL FOR: Dakshin Solar Power Systems ===
+City: Hyderabad
+To: dakshinsolar@gmail.com
+Phone: +91 82476 79592
+Website: https://www.dakshinsolar.com/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Dakshin_Solar_Power_Systems.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-23 02:56
+
+--- SUBJECT ---
+Dakshin Solar Power Systems: 1 live Hyderabad ad, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Dakshin Solar Power Systems is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-23):
+
+  - 1 live ad on Meta, running since 16 October 2026
+  - every click lands in WhatsApp chat
+  - The single live ad routes to WhatsApp - the site's full component breakdown (TOPCon panels, Polycab/Growatt inverters, DCDB/ACDB boxes, elevated galvanised structures, MC4 connectors, lightning arrestor, chemical earthing pits) never gets seen by the click.
+  - The site's strongest asset - 'What's Included in Your Solar System', an 8-component turnkey list with a 30-year panel warranty, 10-year inverter warranty and 5-year free service - is not reflected anywhere in the ad copy.
+
+You can verify every line yourself:
+
+  Library ID 1100117022614568: https://www.facebook.com/ads/library/?id=1100117022614568
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

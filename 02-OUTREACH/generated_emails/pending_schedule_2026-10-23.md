@@ -1,6 +1,6 @@
 # Pending sends 2026-10-23 — owner schedules in the Gmail UI
 
-Everything below is **in Gmail as drafts right now** (12 drafts, all verified
+Everything below is **in Gmail as drafts right now** (17 drafts, all verified
 live). Nothing has been sent. Gmail's scheduled send is UI-only, so pick a time
 on each draft — suggested slots follow last night's pattern (12-minute gaps).
 
@@ -30,6 +30,19 @@ First contact works better in the morning; send whenever suits:
 | MrSolar | info@mrsolar.in | r-1164586820850053341 | audit_MrSolar.pdf |
 | Arcedo Systems | info@arcedo.net | r-315798432579919374 | audit_Arcedo_Systems.pdf |
 | Arkahub | care@arkahub.in | r-3781039558763888632 | audit_Arkahub.pdf |
+
+## Batch-8 first contacts (5) — new threads, PDF attached
+
+Added 2026-10-23 after this evening's table was written. All five are
+ads-only live-ad reports (no website audit run — the PDF says so on page 1):
+
+| Company | To | Draft ID | PDF attached |
+|---|---|---|---|
+| Krisol Solar | sales@krisolsolar.com | r-8249548030083204998 | audit_Krisol_Solar.pdf |
+| PMP Solar Power | sreepooji27@gmail.com | r6071778764438726540 | audit_PMP_Solar_Power.pdf |
+| Dakshin Solar Power Systems | dakshinsolar@gmail.com | r1833948473957777594 | audit_Dakshin_Solar_Power_Systems.pdf |
+| 3S Solutions | praveen@3ssol.in | r1459020982860151007 | audit_3S_Solutions.pdf |
+| Hydromo | info@hydromo.in | r-490954975402821851 | audit_Hydromo.pdf |
 
 ## Not in drafts — and why
 

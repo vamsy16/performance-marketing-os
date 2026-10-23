@@ -1,0 +1,101 @@
+{
+  "company": "Hydromo",
+  "legal": "Hydromo",
+  "city": "Hyderabad",
+  "website": "https://hydromo.in/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-23",
+  "generated_at": "2026-10-23 02:55",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 170,
+      "results_label": "~170 results for 'Hydromo' (mostly water-treatment ads); 2 active solar ads captured on the hydromo.in page",
+      "query": "Hydromo",
+      "ads": [
+        {
+          "library_id": "1107398778509314",
+          "library_url": "https://www.facebook.com/ads/library/?id=1107398778509314",
+          "page_name": "Hydromo",
+          "started": "Sep 9, 2026",
+          "destination": "Video ad on the Hydromo page (2 ads use this creative)",
+          "text": "Same grid. Different decision. Commercial solar cuts electricity costs by 70-80%. Free site assessment across AP & Telangana.",
+          "images": []
+        },
+        {
+          "library_id": "2409434686477632",
+          "library_url": "https://www.facebook.com/ads/library/?id=2409434686477632",
+          "page_name": "Hydromo",
+          "started": "Oct 11, 2026",
+          "destination": "fb.me 'Get quote' (inside Facebook)",
+          "text": "Running a cold storage, rice mill or food processing business? Then you already know how quickly electricity costs can add up. Refrigeration, processing and production demand consistent power every day. Hydromo Solar helps high-consumption businesses generate their own electricity. Explore commercial solar solutions built for energy-intensive operations. Creative line: 'Built For High-Power Businesses - Solar for cold storage & food businesses'.",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Hydromo - a water and wastewater treatment company by core trade - is running 2 active commercial-solar ads into Andhra Pradesh and Telangana, started 9 September and 11 October 2026. The newest click lands on an fb.me link inside Facebook; the site's own solar pages (solar-commercial, renewable-energy-solutions, solar-panel-installation-in-hyderabad) never see the paid traffic. No Google Ads advertiser record was checked for this report - that requires the full pipeline."
+  },
+  "funnel": {
+    "type": "Facebook Messenger link (fb.me)",
+    "destination": "fb.me 'Get quote' (inside Facebook)",
+    "meaning": "The commercial-solar click opens Facebook, not hydromo.in. The site's solar service pages, its free-consultation form and its client proof stay invisible to the spend, and nobody who clicks without enquiring can be retargeted."
+  },
+  "findings": [
+    "Solar is a division of a water-treatment company - the site's own title is 'Best Water Treatment and Waste Water Management Company in India' - yet it is buying commercial-solar ads across AP & Telangana. The ads and the site's centre of gravity do not match, and a buyer comparing vendors will notice.",
+    "Both solar ads route to fb.me links; hydromo.in's solar pages (solar-commercial, renewable-energy-solutions, solar-panel-installation-in-hyderabad) and its free-consultation form never see the paid click.",
+    "The trust assets are enormous and unused in the ads: Toyota, ITC, Larsen & Toubro, TATA, GMR, Dr Reddy's, HPCL, Cyient, Avantel, GVK, Auro Realty, DPS and Ankura Hospital logos, plus IGBC and ISO certification and 2025 sustainability awards.",
+    "Two solar ads only (9 Sep, 11 Oct), both commercial. Residential rooftop - where the Rs. 78,000 PM Surya Ghar subsidy drives most Hyderabad demand - has no creative at all.",
+    "The site runs an active technical blog (hybrid solar sizing, cost and payback; STP electricity consumption) - real expertise that could feed retargeting content nobody is currently being retargeted into."
+  ],
+  "next_steps": [
+    [
+      "Give the solar division its own front door",
+      "Build a solar-first landing page on hydromo.in for the AP & Telangana commercial offer, with the Meta Pixel, and point both ads at it - so the division does not borrow trust from a water-treatment homepage."
+    ],
+    [
+      "Spend the client list in the creative",
+      "Toyota, ITC, L&T, TATA, GMR, Dr Reddy's - one line of named industrial references in a cold-storage or food-processing ad outperforms any generic savings claim."
+    ],
+    [
+      "Open the residential angle",
+      "One residential creative built around the Rs. 78,000 PM Surya Ghar subsidy would test a market your two commercial-only ads never touch."
+    ],
+    [
+      "Turn the blog into retargeting fuel",
+      "The hybrid-solar sizing/payback guide is exactly the content a clicked but unconverted commercial buyer should be retargeted with - once a pixel gives you that audience."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@hydromo.in / nandita@hydromo.in (business@hydromo.in for channel partners)"
+    ],
+    [
+      "Phone / WhatsApp",
+      "+91 7995201717"
+    ],
+    [
+      "Address",
+      "8-2-293/82/A/89/B, 2nd Floor, Road No. 09, Jubilee Hills Lane (adjacent TV5), Hyderabad, Telangana 500033"
+    ],
+    [
+      "Entity",
+      "Hydromo - offices in Hyderabad (corporate), Vijayawada and Visakhapatnam"
+    ],
+    [
+      "Meta page",
+      "facebook.com/hydromo.in"
+    ],
+    [
+      "Proof",
+      "hydromo.in - client logos incl. Toyota, ITC, L&T, TATA, GMR, Dr Reddy's, HPCL, Cyient, Avantel, GVK; IGBC & ISO certified; 2 sustainability awards in 2025"
+    ]
+  ],
+  "contact": {
+    "email": "info@hydromo.in",
+    "phone": "+91 7995201717",
+    "fb_page": "https://www.facebook.com/hydromo.in/"
+  }
+}

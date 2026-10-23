@@ -1995,6 +1995,517 @@ LEADS = [
                             "residential and commercial brochures; savings calculator; "
                             "5+ years, 1000+ installations across Hyderabad"),
             ("Meta page", "facebook.com - page ID 100093675784835 ('ORBIT SOLAR')"),
+        ],    },
+    {
+        "company": "Krisol Solar",
+        "legal": "Krisol Solar Infra Private Limited (subsidiary of Satya Enterprises)",
+        "city": "Hyderabad",
+        "website": "https://www.krisolsolar.com/",
+        "email": "sales@krisolsolar.com",
+        "phone": "+91 7337337677",
+        "fb_page": "https://www.facebook.com/krisolsolar/",
+        "checked_on": "2026-10-23",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 3,
+                "results_label": "~3 results on the Krisol Solar page",
+                "query": "Krisol Solar",
+                "ads": [
+                    ad("1645269633918455", "Krisol Solar", "Oct 16, 2026",
+                       "fb.me 'Get offer' (inside Facebook)",
+                       "Breakthrough in Hyderabad! Save Rs. 1 Lakh on rooftop solar "
+                       "installation with: Govt Subsidy of Rs. 78,000 + Exclusive "
+                       "Rs. 22,000 Krisol Discount. Join thousands who've gone green & "
+                       "cut their bills! Call 7337337677 or visit www.krisolsolar.com. "
+                       "Creative line: 'Claim Rs. 22,000 Solar Discount'."),
+                    ad("1853676722478455", "Krisol Solar", "Oct 16, 2026",
+                       "fb.me 'Get offer' (inside Facebook)",
+                       "Tired of paying skyrocketing electricity bills every single "
+                       "month? Switch to clean, independent energy with a rooftop solar "
+                       "system from Krisol Solar Infra Pvt Ltd: Save Rs. 3,000 to "
+                       "Rs. 20,000+ on your monthly electricity bill; Save Rs. 30,000 to "
+                       "Rs. 2-3 Lakhs every single year; 10+ Years Industry Expertise "
+                       "across Telangana & Andhra Pradesh; Professional Consultation & "
+                       "Free Expert Site Survey. Call: 73373 37677. Website: "
+                       "www.krisolsolar.com. Creative line: 'Slash Your Monthly Power "
+                       "Bill by Rs. 3,000 to Rs. 20,000+'."),
+                    ad("1384204040458816", "Krisol Solar", "Oct 21, 2026",
+                       "fb.me 'Get offer' (inside Facebook)",
+                       "Same bill-saving copy as the 16 Oct ad (Save Rs. 3,000 to "
+                       "Rs. 20,000+ per month, 10+ years across Telangana & Andhra "
+                       "Pradesh, free expert site survey, call 73373 37677) running with "
+                       "a new creative - the newest ad in the set."),
+                ],
+            },
+            "summary": (
+                "Krisol Solar is running 3 active Meta ads (Facebook and Instagram), all "
+                "started between 16 and 21 October 2026. Two offer angles are live: the "
+                "stacked Rs. 78,000 government subsidy + Rs. 22,000 Krisol discount, and "
+                "the Rs. 3,000-20,000 monthly bill-saving story. Every ad's click lands "
+                "on an fb.me link inside Facebook, so none of the spend reaches "
+                "krisolsolar.com. No Google Ads advertiser record was checked for this "
+                "report - that requires the full pipeline."),
+        },
+        "funnel": {
+            "type": "Facebook Messenger link (fb.me)",
+            "destination": "fb.me 'Get offer' (inside Facebook)",
+            "meaning": (
+                "Every click opens a Facebook surface, not krisolsolar.com. You own no "
+                "pixel on the landing experience, you cannot retarget the people who "
+                "clicked and did not enquire, and there is no page you can test a "
+                "different headline or price on."),
+        },
+        "findings": [
+            "All 3 live ads point to fb.me links inside Facebook - the click never "
+            "lands on krisolsolar.com, so no pixel, no retargeting pool, no testable "
+            "landing page.",
+            "Your own site already has the pieces the ads need: a contact form, a "
+            "'Government Subsidy Available' popup form (name, phone, city, email, "
+            "message), an FAQ that explains the Rs. 78,000 PM Surya Ghar subsidy, and "
+            "a services carousel (rooftops, water heaters, street lights, pumps). None "
+            "of the paid traffic ever sees any of it.",
+            "The contact page lists krisolsolarinfra@gmail.com while the site footer "
+            "publishes sales@krisolsolar.com - two inboxes for the same enquiry, so "
+            "leads can land where nobody is watching.",
+            "3 ads, all launched within 5 days (16-21 Oct), all cold traffic. There is "
+            "no second creative angle and no retargeting ad behind them yet.",
+            "The 'Save Rs. 1 Lakh' stacked-offer ad is your sharpest hook and it is "
+            "only 5 days old - the measurement to know which of the two angles works "
+            "does not exist while the clicks stay inside Facebook.",
+        ],
+        "next_steps": [
+            ("Move the click onto a page you own",
+             "Point all 3 ads at a dedicated Kompally landing page carrying the same "
+             "Rs. 78,000 + Rs. 22,000 offer, an enquiry form and the Meta Pixel - so "
+             "every click is measurable and retargetable."),
+            ("Install pixel + conversions API",
+             "One pixel plus the Conversions API gives you the audience of everyone who "
+             "clicked but did not enquire - usually 10-20x the people who fill a form."),
+            ("Settle on one inbox",
+             "Publish sales@krisolsolar.com everywhere (ads, forms, footer) and retire "
+             "or forward the Gmail address so an enquiry can never sit unread."),
+            ("Give the bill-saving angle somewhere to land",
+             "The Rs. 3,000-20,000/month story deserves a savings calculator or "
+             "before/after bill section on the landing page - it is the ad's whole "
+             "promise and today it dead-ends at fb.me."),
+        ],
+        "contact_facts": [
+            ("Email", "sales@krisolsolar.com (contact page: krisolsolarinfra@gmail.com)"),
+            ("Phone / WhatsApp", "+91 7337337677"),
+            ("Address", "Fairmount Square, 3rd Floor, Unit No. 312, Kompally, Medchal "
+                        "Malkajgiri district, Telangana 500014"),
+            ("Entity", "Krisol Solar Infra Private Limited - subsidiary of Satya "
+                       "Enterprises, a solar dealer in Hyderabad"),
+            ("Meta page", "facebook.com/krisolsolar"),
+            ("Service area", "krisolsolar.com - 'Serving Telangana, Andhra Pradesh, "
+                             "Karnataka & Maharashtra'"),
+        ],
+    },
+    {
+        "company": "PMP Solar Power",
+        "legal": "PMP Group (PMP Solar / PMP Fabrication / PMP Electrical)",
+        "city": "Hyderabad",
+        "website": "https://pmpsolar.com/",
+        "email": "sreepooji27@gmail.com",
+        "phone": "+91 70324 67979",
+        "fb_page": "https://www.facebook.com/61587366280305/",
+        "checked_on": "2026-10-23",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 5,
+                "results_label": "~5 results for 'PMP Solar' (other matches are unrelated pages)",
+                "query": "PMP Solar",
+                "ads": [
+                    ad("29275328785392295", "PMP Solar Power", "Oct 9, 2026",
+                       "fb.me 'Get quote' (inside Facebook)",
+                       "Hyderabad homeowners - this Dasara x Diwali, make the switch to "
+                       "solar. Rs. 20,000 cash reward on 5 kW; Rs. 15,000 cash reward on "
+                       "3 kW; 3 kW: Rs. 2,10,000; 5 kW: Rs. 3,10,000. Prices inclusive "
+                       "of Rs. 78,000 PM Surya Ghar subsidy. Fixed festive pricing. No "
+                       "negotiation. For Hyderabad homes only. Call / WhatsApp "
+                       "7032467979 or check pmpsolar.com. Creative line: 'Rs. 20,000 "
+                       "Cash Reward on 5 kW Solar | 3 kW Rs. 2.10L | 5 kW Rs. 3.10L | "
+                       "Fixed Pricing'."),
+                ],
+            },
+            "summary": (
+                "PMP Solar Power is running 1 active Meta ad, started 9 October 2026, "
+                "with the most concrete pricing in this lead set: 3 kW at Rs. 2,10,000 "
+                "and 5 kW at Rs. 3,10,000, subsidy-inclusive, fixed festive pricing, "
+                "Hyderabad homes only. The click lands on an fb.me link inside "
+                "Facebook, so the spend never reaches pmpsolar.com. No Google Ads "
+                "advertiser record was checked for this report - that requires the full "
+                "pipeline."),
+        },
+        "funnel": {
+            "type": "Facebook Messenger link (fb.me)",
+            "destination": "fb.me 'Get quote' (inside Facebook)",
+            "meaning": (
+                "The click opens Facebook, not pmpsolar.com. The fixed festive pricing "
+                "that makes the ad credible has no page to live on, no form to capture "
+                "the enquiry, and no pixel to measure or retarget with."),
+        },
+        "findings": [
+            "The one live ad sends the click to an fb.me link inside Facebook - "
+            "pmpsolar.com, its 36 documented projects and its quote form never see the "
+            "paid traffic.",
+            "The ad's fixed festive pricing (3 kW Rs. 2.10L / 5 kW Rs. 3.10L, "
+            "subsidy-inclusive, 'no negotiation') is the sharpest offer in this lead "
+            "set - and today there is nowhere on your own site that a clicker can land "
+            "and act on it.",
+            "The site's proof is strong and invisible to the ad: 36 projects delivered, "
+            "420 kW solar installed, 24 localities served, largest single plant 230 kW "
+            "(D-Mart, Manneguda), plus named residential installs in Kompally, "
+            "Bachupally, Alwal, Rampally, Bandlaguda and Nizamabad.",
+            "PMP sells three businesses from one Kapra office - Solar, Fabrication and "
+            "Electrical - but the only creative speaks to homeowners. Commercial and "
+            "factory buyers (the D-Mart 230 kW audience) have no ad at all.",
+            "Enquiries depend on a personal Gmail inbox (sreepooji27@gmail.com) plus "
+            "+91 70324 67979 / WhatsApp - one mailbox between the ad and the site.",
+        ],
+        "next_steps": [
+            ("Give the festive pricing a page of its own",
+             "Build a Dasara-Diwali landing page on pmpsolar.com with the 3 kW / 5 kW "
+             "fixed prices, the subsidy note, an enquiry form and the Meta Pixel - then "
+             "point the ad at it."),
+            ("Run a second creative for commercial buyers",
+             "The 230 kW D-Mart plant and the fabrication + electrical divisions are a "
+             "different product for a different buyer. One ad cannot carry both."),
+            ("Put the project cards to work",
+             "36 documented installs with locations are real proof. They belong next to "
+             "the offer on the landing page, not only in the site's project grid."),
+            ("Move enquiries off a personal inbox",
+             "Add a role address (sales@pmpsolar.com or hello@pmpsolar.com) on the "
+             "domain and point the form and the ad at it, so no enquiry depends on one "
+             "person's Gmail."),
+        ],
+        "contact_facts": [
+            ("Email", "sreepooji27@gmail.com"),
+            ("Phone / WhatsApp", "+91 70324 67979 / wa.me/917032467979"),
+            ("Address", "Kapra, Secunderabad, Hyderabad (Mon-Sat, 9:30 am - 6:30 pm)"),
+            ("Entity", "PMP Group - PMP Solar, PMP Fabrication, PMP Electrical"),
+            ("Meta page", "facebook.com/61587366280305 (PMP Solar Power)"),
+            ("Track record", "pmpsolar.com - 36 projects delivered, 420 kW installed, "
+                             "24 localities served, largest plant 230 kW"),
+        ],
+    },
+    {
+        "company": "Dakshin Solar Power Systems",
+        "legal": "Dakshin Solar Power Systems",
+        "city": "Hyderabad",
+        "website": "https://www.dakshinsolar.com/",
+        "email": "dakshinsolar@gmail.com",
+        "phone": "+91 82476 79592",
+        "fb_page": "https://www.facebook.com/61583923866617/",
+        "checked_on": "2026-10-23",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 4,
+                "results_label": "~4 results for 'Dakshin Solar' (other matches are unrelated pages)",
+                "query": "Dakshin Solar",
+                "ads": [
+                    ad("1100117022614568", "Dakshin Solar Power Systems", "Oct 16, 2026",
+                       "WhatsApp ('Send WhatsApp message')",
+                       "Switch to Solar. Save More. Power Your Future! Looking for a "
+                       "reliable way to reduce your electricity bills? Dakshin Solar "
+                       "Power Systems helps you make the smart switch to clean, "
+                       "affordable solar energy. High-quality Solar Power Systems; "
+                       "Residential & Commercial Solutions; Professional Installation; "
+                       "Reliable & Long-Lasting Performance; Reduce Your Dependence on "
+                       "Rising Electricity Costs. Contact Dakshin Solar Power Systems "
+                       "today for a free consultation!"),
+                ],
+            },
+            "summary": (
+                "Dakshin Solar Power Systems is running 1 active Meta ad, started 16 "
+                "October 2026 - a generic awareness ad whose click opens a WhatsApp "
+                "chat rather than dakshinsolar.com. The site itself is detailed and "
+                "specific (TOPCon panels, Polycab/Growatt inverters, an 8-component "
+                "turnkey list with warranties, a completed-projects grid), none of "
+                "which the paid click ever sees. No Google Ads advertiser record was "
+                "checked for this report - that requires the full pipeline."),
+        },
+        "funnel": {
+            "type": "WhatsApp chat",
+            "destination": "WhatsApp ('Send WhatsApp message')",
+            "meaning": (
+                "The click opens a chat, not dakshinsolar.com. There is no page you "
+                "own, no form that captures the enquiry in writing, no pixel, and no "
+                "way to retarget everyone who started a chat and never replied."),
+        },
+        "findings": [
+            "The single live ad routes to WhatsApp - the site's full component "
+            "breakdown (TOPCon panels, Polycab/Growatt inverters, DCDB/ACDB boxes, "
+            "elevated galvanised structures, MC4 connectors, lightning arrestor, "
+            "chemical earthing pits) never gets seen by the click.",
+            "The site's strongest asset - 'What's Included in Your Solar System', an "
+            "8-component turnkey list with a 30-year panel warranty, 10-year inverter "
+            "warranty and 5-year free service - is not reflected anywhere in the ad "
+            "copy.",
+            "One ad, one generic angle, live since 16 Oct. There is no subsidy "
+            "creative even though the site leads with PM Surya Ghar (up to Rs. 78,000) "
+            "and a 'Subsidy Scheme Ends 31st March 2027' countdown.",
+            "The homepage's stat block (panel warranty, inverter warranty, free "
+            "service, savings %, satisfaction %) ships as '0 Yrs' and '0%' in the page "
+            "source and depends on script animation to fill in - if the animation does "
+            "not run for a visitor, the page argues against itself. Worth verifying on "
+            "a real phone.",
+            "The completed-projects grid (residential and commercial installs across "
+            "Hyderabad and Telangana) is exactly the proof a WhatsApp-clicking "
+            "homeowner asks for next - and it is one tap further away than it needs "
+            "to be.",
+        ],
+        "next_steps": [
+            ("Send the ad to a page you own",
+             "Point the ad at a Dakshin landing page with the TOPCon + warranty story, "
+             "a quote form and the Meta Pixel, and keep WhatsApp as the second click - "
+             "not the first."),
+            ("Run the subsidy angle you already sell",
+             "The site's PM Surya Ghar Rs. 78,000 section and the 31 March 2027 "
+             "deadline are a ready-made second creative with real urgency behind it."),
+            ("Put the 8-component list in front of the click",
+             "Panels, inverter, structures, cables, connectors, arrestor, earthing - "
+             "that list is the answer to 'what am I actually paying for'. It belongs on "
+             "the landing page."),
+            ("Fix the stat block",
+             "Make the warranty and savings numbers render as real values in the HTML "
+             "so no visitor - or no slow connection - ever sees 0 Yrs / 0%."),
+        ],
+        "contact_facts": [
+            ("Email", "dakshinsolar@gmail.com"),
+            ("Phone / WhatsApp", "+91 82476 79592 / wa.me/918247679592; +91 93810 89778"),
+            ("Address", "Hyderabad, Telangana, India"),
+            ("Entity", "Dakshin Solar Power Systems"),
+            ("Meta page", "facebook.com/61583923866617 (Dakshin Solar Power Systems)"),
+            ("Offer", "dakshinsolar.com - PM Surya Ghar subsidy up to Rs. 78,000, "
+                      "'Scheme Ends 31st March 2027', save up to 90% on bills"),
+        ],
+    },
+    {
+        "company": "3S Solutions",
+        "legal": "3S Solutions India Pvt. Ltd.",
+        "city": "Hyderabad",
+        "website": "https://3ssol.in/",
+        "email": "praveen@3ssol.in",
+        "phone": "+91 9581177119",
+        "fb_page": "https://www.facebook.com/3SSolutionsSolarServices/",
+        "checked_on": "2026-10-23",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 7,
+                "results_label": "~7 results for '3ssol.in'; 6 active ads on the 3S Solutions page",
+                "query": "3ssol.in",
+                "ads": [
+                    ad("1283230217176481", "3S Solutions", "Sep 11, 2026",
+                       "Video ad on the 3S Solutions page (no CTA destination captured)",
+                       "Go Solar. Save More. Power Your Future! Get up to Rs. 78,000 PM "
+                       "Surya Ghar subsidy from the Government of India + an additional "
+                       "offer up to Rs. 10,000. Make the switch to clean energy with 3S "
+                       "Solutions India Pvt. Ltd. - your trusted solar partner for "
+                       "residential solar solutions, expert installation, genuine "
+                       "products & reliable service. Call us: 9000121084 | 9581177119. "
+                       "www.3ssol.in. Kukatpally, Hyderabad, Telangana."),
+                    ad("2035989101138405", "3S Solutions", "Oct 11, 2026",
+                       "fb.me 'See details' (inside Facebook)",
+                       "Thinking about going solar? Start with a FREE Site "
+                       "Consultation. Our solar experts will assess your rooftop, "
+                       "electricity usage and installation requirements and help you "
+                       "understand the right solar solution for your property. No "
+                       "guesswork. No consultation fee. Available across Andhra Pradesh "
+                       "& Telangana."),
+                    ad("4590054947908510", "3S Solutions", "Oct 19, 2026",
+                       "fb.me 'See details' (inside Facebook)",
+                       "Why pay more for electricity when your rooftop can generate "
+                       "power? Rs. 4,280 electricity bill? That was our customer's bill "
+                       "last month in Hyderabad. Now it's Rs. 187. Your roof can do the "
+                       "same. Calculate your FREE savings in 60 sec: "
+                       "3scalculator.vercel.app. (2 ads use this creative and text.)"),
+                    ad("1088110834213698", "3S Solutions", "Oct 19, 2026",
+                       "fb.me 'See details' (inside Facebook)",
+                       "Get a FREE Solar Site Consultation - explore rooftop solar "
+                       "options, subsidy eligibility and potential electricity savings. "
+                       "Switch to Solar and Save on Electricity Bills! Government "
+                       "subsidy eligibility guidance under PM Surya Ghar Yojana; free "
+                       "solar site consultation; quality panels and trusted equipment; "
+                       "professional installation and support. Subsidy up to Rs. 78,000 "
+                       "subject to scheme guidelines. Serving Andhra Pradesh & "
+                       "Telangana."),
+                ],
+            },
+            "summary": (
+                "3S Solutions is running 6 active Meta ads (5 captured with full copy "
+                "here), started between 11 September and 19 October 2026. Four "
+                "different hooks are live: the Rs. 78,000 subsidy + Rs. 10,000 offer, "
+                "the free site consultation, a Hyderabad customer's Rs. 4,280-to-Rs. 187 "
+                "bill story, and subsidy-eligibility guidance. The newest clicks land "
+                "on fb.me links, and the bill-saving creative pushes a savings "
+                "calculator hosted off-domain at 3scalculator.vercel.app. No Google Ads "
+                "advertiser record was checked for this report - that requires the full "
+                "pipeline."),
+        },
+        "funnel": {
+            "type": "Facebook Messenger link (fb.me) + off-domain calculator",
+            "destination": "fb.me 'See details'; one creative sends to 3scalculator.vercel.app",
+            "meaning": (
+                "The newest clicks land inside Facebook or on a calculator hosted on a "
+                "third-party Vercel domain - not on 3ssol.in. That traffic cannot be "
+                "retargeted from your own site, the calculator's visitors never see "
+                "your contact form, and the measurement lives outside your analytics."),
+        },
+        "findings": [
+            "The newest ads (19 Oct) drive to fb.me links, and the Rs. 4,280-to-Rs. 187 "
+            "bill-saving creative pushes a savings calculator at 3scalculator.vercel.app "
+            "- a third-party host, not 3ssol.in. That is your best hook sending your "
+            "best prospects to somebody else's domain.",
+            "3ssol.in itself is content-rich - on-grid and off-grid system guides, "
+            "Hyderabad locality pages (Jubilee Hills, Miyapur, Gachibowli, Uppal, LB "
+            "Nagar, Kukatpally, Ameerpet, Balanagar, Hitec City) and a real contact "
+            "form - and none of the six ads sends anyone there.",
+            "Six ads, four hooks in five weeks: the testing instinct is there, but with "
+            "the clicks inside Facebook or on a Vercel app there is no first-party data "
+            "to tell you which hook actually converts.",
+            "Contact splits across numbers - the ad promotes 9000121084 and 9581177119, "
+            "the site footer lists +91 7075441637 (Telangana) and +91 7075441638 (AP), "
+            "all feeding one inbox, praveen@3ssol.in.",
+            "The distributor positioning - Growatt distributor in India, Vikram Solar "
+            "distributor for AP & TG, TGREDCO-empanelled - is the strongest trust asset "
+            "on the site and appears in no ad.",
+        ],
+        "next_steps": [
+            ("Bring the calculator home",
+             "Move the 60-second savings calculator onto 3ssol.in (or a subdomain you "
+             "own) with the Meta Pixel installed, so the bill-saving ad's traffic "
+             "becomes your retargetable audience."),
+            ("Point every ad at a page you own",
+             "Swap the fb.me destinations for dedicated landing pages - one per hook "
+             "(subsidy offer, free consultation, bill savings) - each with a form and "
+             "pixel."),
+            ("Lead with the distributor badge",
+             "Growatt and Vikram distributorships plus TGREDCO empanelment are proof "
+             "competitors cannot copy in a headline. Put them in the creative."),
+            ("Unify the contact numbers",
+             "Publish one Hyderabad number and one AP number across ads, site and "
+             "forms, and add a second inbox so praveen@3ssol.in is never the single "
+             "point of failure."),
+        ],
+        "contact_facts": [
+            ("Email", "praveen@3ssol.in"),
+            ("Phone", "+91 9581177119 / +91 90001 21084 (site: Telangana +91 7075441637, "
+                      "Andhra Pradesh +91 7075441638)"),
+            ("Address", "Plot No. 196, 3rd Floor, Road Number 20, Vivekananda Nagar, "
+                        "Kukatpally, Hyderabad, Telangana 500072"),
+            ("Entity", "3S Solutions India Pvt. Ltd. - TGREDCO-empanelled; Growatt "
+                       "distributor (India), Vikram Solar distributor (AP & TG)"),
+            ("Meta page", "facebook.com/3SSolutionsSolarServices"),
+            ("Service area", "3ssol.in - Hyderabad localities plus Andhra Pradesh & "
+                             "Telangana"),
+        ],
+    },
+    {
+        "company": "Hydromo",
+        "legal": "Hydromo",
+        "city": "Hyderabad",
+        "website": "https://hydromo.in/",
+        "email": "info@hydromo.in",
+        "phone": "+91 7995201717",
+        "fb_page": "https://www.facebook.com/hydromo.in/",
+        "checked_on": "2026-10-23",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 170,
+                "results_label": "~170 results for 'Hydromo' (mostly water-treatment ads); 2 active solar ads captured on the hydromo.in page",
+                "query": "Hydromo",
+                "ads": [
+                    ad("1107398778509314", "Hydromo", "Sep 9, 2026",
+                       "Video ad on the Hydromo page (2 ads use this creative)",
+                       "Same grid. Different decision. Commercial solar cuts electricity "
+                       "costs by 70-80%. Free site assessment across AP & Telangana."),
+                    ad("2409434686477632", "Hydromo", "Oct 11, 2026",
+                       "fb.me 'Get quote' (inside Facebook)",
+                       "Running a cold storage, rice mill or food processing business? "
+                       "Then you already know how quickly electricity costs can add up. "
+                       "Refrigeration, processing and production demand consistent "
+                       "power every day. Hydromo Solar helps high-consumption businesses "
+                       "generate their own electricity. Explore commercial solar "
+                       "solutions built for energy-intensive operations. Creative line: "
+                       "'Built For High-Power Businesses - Solar for cold storage & "
+                       "food businesses'."),
+                ],
+            },
+            "summary": (
+                "Hydromo - a water and wastewater treatment company by core trade - is "
+                "running 2 active commercial-solar ads into Andhra Pradesh and "
+                "Telangana, started 9 September and 11 October 2026. The newest click "
+                "lands on an fb.me link inside Facebook; the site's own solar pages "
+                "(solar-commercial, renewable-energy-solutions, "
+                "solar-panel-installation-in-hyderabad) never see the paid traffic. No "
+                "Google Ads advertiser record was checked for this report - that "
+                "requires the full pipeline."),
+        },
+        "funnel": {
+            "type": "Facebook Messenger link (fb.me)",
+            "destination": "fb.me 'Get quote' (inside Facebook)",
+            "meaning": (
+                "The commercial-solar click opens Facebook, not hydromo.in. The site's "
+                "solar service pages, its free-consultation form and its client proof "
+                "stay invisible to the spend, and nobody who clicks without enquiring "
+                "can be retargeted."),
+        },
+        "findings": [
+            "Solar is a division of a water-treatment company - the site's own title is "
+            "'Best Water Treatment and Waste Water Management Company in India' - yet "
+            "it is buying commercial-solar ads across AP & Telangana. The ads and the "
+            "site's centre of gravity do not match, and a buyer comparing vendors will "
+            "notice.",
+            "Both solar ads route to fb.me links; hydromo.in's solar pages "
+            "(solar-commercial, renewable-energy-solutions, "
+            "solar-panel-installation-in-hyderabad) and its free-consultation form "
+            "never see the paid click.",
+            "The trust assets are enormous and unused in the ads: Toyota, ITC, Larsen & "
+            "Toubro, TATA, GMR, Dr Reddy's, HPCL, Cyient, Avantel, GVK, Auro Realty, "
+            "DPS and Ankura Hospital logos, plus IGBC and ISO certification and 2025 "
+            "sustainability awards.",
+            "Two solar ads only (9 Sep, 11 Oct), both commercial. Residential rooftop "
+            "- where the Rs. 78,000 PM Surya Ghar subsidy drives most Hyderabad demand "
+            "- has no creative at all.",
+            "The site runs an active technical blog (hybrid solar sizing, cost and "
+            "payback; STP electricity consumption) - real expertise that could feed "
+            "retargeting content nobody is currently being retargeted into.",
+        ],
+        "next_steps": [
+            ("Give the solar division its own front door",
+             "Build a solar-first landing page on hydromo.in for the AP & Telangana "
+             "commercial offer, with the Meta Pixel, and point both ads at it - so the "
+             "division does not borrow trust from a water-treatment homepage."),
+            ("Spend the client list in the creative",
+             "Toyota, ITC, L&T, TATA, GMR, Dr Reddy's - one line of named industrial "
+             "references in a cold-storage or food-processing ad outperforms any "
+             "generic savings claim."),
+            ("Open the residential angle",
+             "One residential creative built around the Rs. 78,000 PM Surya Ghar "
+             "subsidy would test a market your two commercial-only ads never touch."),
+            ("Turn the blog into retargeting fuel",
+             "The hybrid-solar sizing/payback guide is exactly the content a clicked "
+             "but unconverted commercial buyer should be retargeted with - once a "
+             "pixel gives you that audience."),
+        ],
+        "contact_facts": [
+            ("Email", "info@hydromo.in / nandita@hydromo.in (business@hydromo.in for "
+                      "channel partners)"),
+            ("Phone / WhatsApp", "+91 7995201717"),
+            ("Address", "8-2-293/82/A/89/B, 2nd Floor, Road No. 09, Jubilee Hills Lane "
+                        "(adjacent TV5), Hyderabad, Telangana 500033"),
+            ("Entity", "Hydromo - offices in Hyderabad (corporate), Vijayawada and "
+                       "Visakhapatnam"),
+            ("Meta page", "facebook.com/hydromo.in"),
+            ("Proof", "hydromo.in - client logos incl. Toyota, ITC, L&T, TATA, GMR, "
+                      "Dr Reddy's, HPCL, Cyient, Avantel, GVK; IGBC & ISO certified; "
+                      "2 sustainability awards in 2025"),
         ],
     },
 

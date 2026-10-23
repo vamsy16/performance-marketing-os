@@ -1,0 +1,92 @@
+{
+  "company": "PMP Solar Power",
+  "legal": "PMP Group (PMP Solar / PMP Fabrication / PMP Electrical)",
+  "city": "Hyderabad",
+  "website": "https://pmpsolar.com/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-23",
+  "generated_at": "2026-10-23 02:55",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 5,
+      "results_label": "~5 results for 'PMP Solar' (other matches are unrelated pages)",
+      "query": "PMP Solar",
+      "ads": [
+        {
+          "library_id": "29275328785392295",
+          "library_url": "https://www.facebook.com/ads/library/?id=29275328785392295",
+          "page_name": "PMP Solar Power",
+          "started": "Oct 9, 2026",
+          "destination": "fb.me 'Get quote' (inside Facebook)",
+          "text": "Hyderabad homeowners - this Dasara x Diwali, make the switch to solar. Rs. 20,000 cash reward on 5 kW; Rs. 15,000 cash reward on 3 kW; 3 kW: Rs. 2,10,000; 5 kW: Rs. 3,10,000. Prices inclusive of Rs. 78,000 PM Surya Ghar subsidy. Fixed festive pricing. No negotiation. For Hyderabad homes only. Call / WhatsApp 7032467979 or check pmpsolar.com. Creative line: 'Rs. 20,000 Cash Reward on 5 kW Solar | 3 kW Rs. 2.10L | 5 kW Rs. 3.10L | Fixed Pricing'.",
+          "images": []
+        }
+      ]
+    },
+    "summary": "PMP Solar Power is running 1 active Meta ad, started 9 October 2026, with the most concrete pricing in this lead set: 3 kW at Rs. 2,10,000 and 5 kW at Rs. 3,10,000, subsidy-inclusive, fixed festive pricing, Hyderabad homes only. The click lands on an fb.me link inside Facebook, so the spend never reaches pmpsolar.com. No Google Ads advertiser record was checked for this report - that requires the full pipeline."
+  },
+  "funnel": {
+    "type": "Facebook Messenger link (fb.me)",
+    "destination": "fb.me 'Get quote' (inside Facebook)",
+    "meaning": "The click opens Facebook, not pmpsolar.com. The fixed festive pricing that makes the ad credible has no page to live on, no form to capture the enquiry, and no pixel to measure or retarget with."
+  },
+  "findings": [
+    "The one live ad sends the click to an fb.me link inside Facebook - pmpsolar.com, its 36 documented projects and its quote form never see the paid traffic.",
+    "The ad's fixed festive pricing (3 kW Rs. 2.10L / 5 kW Rs. 3.10L, subsidy-inclusive, 'no negotiation') is the sharpest offer in this lead set - and today there is nowhere on your own site that a clicker can land and act on it.",
+    "The site's proof is strong and invisible to the ad: 36 projects delivered, 420 kW solar installed, 24 localities served, largest single plant 230 kW (D-Mart, Manneguda), plus named residential installs in Kompally, Bachupally, Alwal, Rampally, Bandlaguda and Nizamabad.",
+    "PMP sells three businesses from one Kapra office - Solar, Fabrication and Electrical - but the only creative speaks to homeowners. Commercial and factory buyers (the D-Mart 230 kW audience) have no ad at all.",
+    "Enquiries depend on a personal Gmail inbox (sreepooji27@gmail.com) plus +91 70324 67979 / WhatsApp - one mailbox between the ad and the site."
+  ],
+  "next_steps": [
+    [
+      "Give the festive pricing a page of its own",
+      "Build a Dasara-Diwali landing page on pmpsolar.com with the 3 kW / 5 kW fixed prices, the subsidy note, an enquiry form and the Meta Pixel - then point the ad at it."
+    ],
+    [
+      "Run a second creative for commercial buyers",
+      "The 230 kW D-Mart plant and the fabrication + electrical divisions are a different product for a different buyer. One ad cannot carry both."
+    ],
+    [
+      "Put the project cards to work",
+      "36 documented installs with locations are real proof. They belong next to the offer on the landing page, not only in the site's project grid."
+    ],
+    [
+      "Move enquiries off a personal inbox",
+      "Add a role address (sales@pmpsolar.com or hello@pmpsolar.com) on the domain and point the form and the ad at it, so no enquiry depends on one person's Gmail."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "sreepooji27@gmail.com"
+    ],
+    [
+      "Phone / WhatsApp",
+      "+91 70324 67979 / wa.me/917032467979"
+    ],
+    [
+      "Address",
+      "Kapra, Secunderabad, Hyderabad (Mon-Sat, 9:30 am - 6:30 pm)"
+    ],
+    [
+      "Entity",
+      "PMP Group - PMP Solar, PMP Fabrication, PMP Electrical"
+    ],
+    [
+      "Meta page",
+      "facebook.com/61587366280305 (PMP Solar Power)"
+    ],
+    [
+      "Track record",
+      "pmpsolar.com - 36 projects delivered, 420 kW installed, 24 localities served, largest plant 230 kW"
+    ]
+  ],
+  "contact": {
+    "email": "sreepooji27@gmail.com",
+    "phone": "+91 70324 67979",
+    "fb_page": "https://www.facebook.com/61587366280305/"
+  }
+}

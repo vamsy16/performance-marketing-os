@@ -1,0 +1,92 @@
+{
+  "company": "Dakshin Solar Power Systems",
+  "legal": "Dakshin Solar Power Systems",
+  "city": "Hyderabad",
+  "website": "https://www.dakshinsolar.com/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-23",
+  "generated_at": "2026-10-23 02:55",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 4,
+      "results_label": "~4 results for 'Dakshin Solar' (other matches are unrelated pages)",
+      "query": "Dakshin Solar",
+      "ads": [
+        {
+          "library_id": "1100117022614568",
+          "library_url": "https://www.facebook.com/ads/library/?id=1100117022614568",
+          "page_name": "Dakshin Solar Power Systems",
+          "started": "Oct 16, 2026",
+          "destination": "WhatsApp ('Send WhatsApp message')",
+          "text": "Switch to Solar. Save More. Power Your Future! Looking for a reliable way to reduce your electricity bills? Dakshin Solar Power Systems helps you make the smart switch to clean, affordable solar energy. High-quality Solar Power Systems; Residential & Commercial Solutions; Professional Installation; Reliable & Long-Lasting Performance; Reduce Your Dependence on Rising Electricity Costs. Contact Dakshin Solar Power Systems today for a free consultation!",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Dakshin Solar Power Systems is running 1 active Meta ad, started 16 October 2026 - a generic awareness ad whose click opens a WhatsApp chat rather than dakshinsolar.com. The site itself is detailed and specific (TOPCon panels, Polycab/Growatt inverters, an 8-component turnkey list with warranties, a completed-projects grid), none of which the paid click ever sees. No Google Ads advertiser record was checked for this report - that requires the full pipeline."
+  },
+  "funnel": {
+    "type": "WhatsApp chat",
+    "destination": "WhatsApp ('Send WhatsApp message')",
+    "meaning": "The click opens a chat, not dakshinsolar.com. There is no page you own, no form that captures the enquiry in writing, no pixel, and no way to retarget everyone who started a chat and never replied."
+  },
+  "findings": [
+    "The single live ad routes to WhatsApp - the site's full component breakdown (TOPCon panels, Polycab/Growatt inverters, DCDB/ACDB boxes, elevated galvanised structures, MC4 connectors, lightning arrestor, chemical earthing pits) never gets seen by the click.",
+    "The site's strongest asset - 'What's Included in Your Solar System', an 8-component turnkey list with a 30-year panel warranty, 10-year inverter warranty and 5-year free service - is not reflected anywhere in the ad copy.",
+    "One ad, one generic angle, live since 16 Oct. There is no subsidy creative even though the site leads with PM Surya Ghar (up to Rs. 78,000) and a 'Subsidy Scheme Ends 31st March 2027' countdown.",
+    "The homepage's stat block (panel warranty, inverter warranty, free service, savings %, satisfaction %) ships as '0 Yrs' and '0%' in the page source and depends on script animation to fill in - if the animation does not run for a visitor, the page argues against itself. Worth verifying on a real phone.",
+    "The completed-projects grid (residential and commercial installs across Hyderabad and Telangana) is exactly the proof a WhatsApp-clicking homeowner asks for next - and it is one tap further away than it needs to be."
+  ],
+  "next_steps": [
+    [
+      "Send the ad to a page you own",
+      "Point the ad at a Dakshin landing page with the TOPCon + warranty story, a quote form and the Meta Pixel, and keep WhatsApp as the second click - not the first."
+    ],
+    [
+      "Run the subsidy angle you already sell",
+      "The site's PM Surya Ghar Rs. 78,000 section and the 31 March 2027 deadline are a ready-made second creative with real urgency behind it."
+    ],
+    [
+      "Put the 8-component list in front of the click",
+      "Panels, inverter, structures, cables, connectors, arrestor, earthing - that list is the answer to 'what am I actually paying for'. It belongs on the landing page."
+    ],
+    [
+      "Fix the stat block",
+      "Make the warranty and savings numbers render as real values in the HTML so no visitor - or no slow connection - ever sees 0 Yrs / 0%."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "dakshinsolar@gmail.com"
+    ],
+    [
+      "Phone / WhatsApp",
+      "+91 82476 79592 / wa.me/918247679592; +91 93810 89778"
+    ],
+    [
+      "Address",
+      "Hyderabad, Telangana, India"
+    ],
+    [
+      "Entity",
+      "Dakshin Solar Power Systems"
+    ],
+    [
+      "Meta page",
+      "facebook.com/61583923866617 (Dakshin Solar Power Systems)"
+    ],
+    [
+      "Offer",
+      "dakshinsolar.com - PM Surya Ghar subsidy up to Rs. 78,000, 'Scheme Ends 31st March 2027', save up to 90% on bills"
+    ]
+  ],
+  "contact": {
+    "email": "dakshinsolar@gmail.com",
+    "phone": "+91 82476 79592",
+    "fb_page": "https://www.facebook.com/61583923866617/"
+  }
+}

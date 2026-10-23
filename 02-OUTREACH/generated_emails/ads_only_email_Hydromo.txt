@@ -1,0 +1,41 @@
+=== EMAIL FOR: Hydromo ===
+City: Hyderabad
+To: info@hydromo.in
+Phone: +91 7995201717
+Website: https://hydromo.in/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Hydromo.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-23 02:56
+
+--- SUBJECT ---
+Hydromo: 2 live Hyderabad ads, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Hydromo is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-23):
+
+  - 2 live ads on Meta, running since 09 September 2026
+  - every click lands in Facebook Messenger link (fb.me)
+  - Solar is a division of a water-treatment company - the site's own title is 'Best Water Treatment and Waste Water Management Company in India' - yet it is buying commercial-solar ads across AP & Telangana. The ads and the site's centre of gravity do not match, and a buyer comparing vendors will notice.
+  - Both solar ads route to fb.me links; hydromo.in's solar pages (solar-commercial, renewable-energy-solutions, solar-panel-installation-in-hyderabad) and its free-consultation form never see the paid click.
+
+You can verify every line yourself:
+
+  Library ID 1107398778509314: https://www.facebook.com/ads/library/?id=1107398778509314
+  Library ID 2409434686477632: https://www.facebook.com/ads/library/?id=2409434686477632
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

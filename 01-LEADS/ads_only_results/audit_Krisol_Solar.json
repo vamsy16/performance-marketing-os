@@ -1,0 +1,110 @@
+{
+  "company": "Krisol Solar",
+  "legal": "Krisol Solar Infra Private Limited (subsidiary of Satya Enterprises)",
+  "city": "Hyderabad",
+  "website": "https://www.krisolsolar.com/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-23",
+  "generated_at": "2026-10-23 02:55",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 3,
+      "results_label": "~3 results on the Krisol Solar page",
+      "query": "Krisol Solar",
+      "ads": [
+        {
+          "library_id": "1645269633918455",
+          "library_url": "https://www.facebook.com/ads/library/?id=1645269633918455",
+          "page_name": "Krisol Solar",
+          "started": "Oct 16, 2026",
+          "destination": "fb.me 'Get offer' (inside Facebook)",
+          "text": "Breakthrough in Hyderabad! Save Rs. 1 Lakh on rooftop solar installation with: Govt Subsidy of Rs. 78,000 + Exclusive Rs. 22,000 Krisol Discount. Join thousands who've gone green & cut their bills! Call 7337337677 or visit www.krisolsolar.com. Creative line: 'Claim Rs. 22,000 Solar Discount'.",
+          "images": []
+        },
+        {
+          "library_id": "1853676722478455",
+          "library_url": "https://www.facebook.com/ads/library/?id=1853676722478455",
+          "page_name": "Krisol Solar",
+          "started": "Oct 16, 2026",
+          "destination": "fb.me 'Get offer' (inside Facebook)",
+          "text": "Tired of paying skyrocketing electricity bills every single month? Switch to clean, independent energy with a rooftop solar system from Krisol Solar Infra Pvt Ltd: Save Rs. 3,000 to Rs. 20,000+ on your monthly electricity bill; Save Rs. 30,000 to Rs. 2-3 Lakhs every single year; 10+ Years Industry Expertise across Telangana & Andhra Pradesh; Professional Consultation & Free Expert Site Survey. Call: 73373 37677. Website: www.krisolsolar.com. Creative line: 'Slash Your Monthly Power Bill by Rs. 3,000 to Rs. 20,000+'.",
+          "images": []
+        },
+        {
+          "library_id": "1384204040458816",
+          "library_url": "https://www.facebook.com/ads/library/?id=1384204040458816",
+          "page_name": "Krisol Solar",
+          "started": "Oct 21, 2026",
+          "destination": "fb.me 'Get offer' (inside Facebook)",
+          "text": "Same bill-saving copy as the 16 Oct ad (Save Rs. 3,000 to Rs. 20,000+ per month, 10+ years across Telangana & Andhra Pradesh, free expert site survey, call 73373 37677) running with a new creative - the newest ad in the set.",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Krisol Solar is running 3 active Meta ads (Facebook and Instagram), all started between 16 and 21 October 2026. Two offer angles are live: the stacked Rs. 78,000 government subsidy + Rs. 22,000 Krisol discount, and the Rs. 3,000-20,000 monthly bill-saving story. Every ad's click lands on an fb.me link inside Facebook, so none of the spend reaches krisolsolar.com. No Google Ads advertiser record was checked for this report - that requires the full pipeline."
+  },
+  "funnel": {
+    "type": "Facebook Messenger link (fb.me)",
+    "destination": "fb.me 'Get offer' (inside Facebook)",
+    "meaning": "Every click opens a Facebook surface, not krisolsolar.com. You own no pixel on the landing experience, you cannot retarget the people who clicked and did not enquire, and there is no page you can test a different headline or price on."
+  },
+  "findings": [
+    "All 3 live ads point to fb.me links inside Facebook - the click never lands on krisolsolar.com, so no pixel, no retargeting pool, no testable landing page.",
+    "Your own site already has the pieces the ads need: a contact form, a 'Government Subsidy Available' popup form (name, phone, city, email, message), an FAQ that explains the Rs. 78,000 PM Surya Ghar subsidy, and a services carousel (rooftops, water heaters, street lights, pumps). None of the paid traffic ever sees any of it.",
+    "The contact page lists krisolsolarinfra@gmail.com while the site footer publishes sales@krisolsolar.com - two inboxes for the same enquiry, so leads can land where nobody is watching.",
+    "3 ads, all launched within 5 days (16-21 Oct), all cold traffic. There is no second creative angle and no retargeting ad behind them yet.",
+    "The 'Save Rs. 1 Lakh' stacked-offer ad is your sharpest hook and it is only 5 days old - the measurement to know which of the two angles works does not exist while the clicks stay inside Facebook."
+  ],
+  "next_steps": [
+    [
+      "Move the click onto a page you own",
+      "Point all 3 ads at a dedicated Kompally landing page carrying the same Rs. 78,000 + Rs. 22,000 offer, an enquiry form and the Meta Pixel - so every click is measurable and retargetable."
+    ],
+    [
+      "Install pixel + conversions API",
+      "One pixel plus the Conversions API gives you the audience of everyone who clicked but did not enquire - usually 10-20x the people who fill a form."
+    ],
+    [
+      "Settle on one inbox",
+      "Publish sales@krisolsolar.com everywhere (ads, forms, footer) and retire or forward the Gmail address so an enquiry can never sit unread."
+    ],
+    [
+      "Give the bill-saving angle somewhere to land",
+      "The Rs. 3,000-20,000/month story deserves a savings calculator or before/after bill section on the landing page - it is the ad's whole promise and today it dead-ends at fb.me."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "sales@krisolsolar.com (contact page: krisolsolarinfra@gmail.com)"
+    ],
+    [
+      "Phone / WhatsApp",
+      "+91 7337337677"
+    ],
+    [
+      "Address",
+      "Fairmount Square, 3rd Floor, Unit No. 312, Kompally, Medchal Malkajgiri district, Telangana 500014"
+    ],
+    [
+      "Entity",
+      "Krisol Solar Infra Private Limited - subsidiary of Satya Enterprises, a solar dealer in Hyderabad"
+    ],
+    [
+      "Meta page",
+      "facebook.com/krisolsolar"
+    ],
+    [
+      "Service area",
+      "krisolsolar.com - 'Serving Telangana, Andhra Pradesh, Karnataka & Maharashtra'"
+    ]
+  ],
+  "contact": {
+    "email": "sales@krisolsolar.com",
+    "phone": "+91 7337337677",
+    "fb_page": "https://www.facebook.com/krisolsolar/"
+  }
+}

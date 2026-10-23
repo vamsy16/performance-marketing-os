@@ -1,0 +1,43 @@
+=== EMAIL FOR: 3S Solutions ===
+City: Hyderabad
+To: praveen@3ssol.in
+Phone: +91 9581177119
+Website: https://3ssol.in/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_3S_Solutions.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-23 02:56
+
+--- SUBJECT ---
+3S Solutions: 4 live Hyderabad ads, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what 3S Solutions is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-23):
+
+  - 4 live ads on Meta, running since 11 September 2026
+  - every click lands in Facebook Messenger link (fb.me) + off-domain calculator
+  - The newest ads (19 Oct) drive to fb.me links, and the Rs. 4,280-to-Rs. 187 bill-saving creative pushes a savings calculator at 3scalculator.vercel.app - a third-party host, not 3ssol.in. That is your best hook sending your best prospects to somebody else's domain.
+  - 3ssol.in itself is content-rich - on-grid and off-grid system guides, Hyderabad locality pages (Jubilee Hills, Miyapur, Gachibowli, Uppal, LB Nagar, Kukatpally, Ameerpet, Balanagar, Hitec City) and a real contact form - and none of the six ads sends anyone there.
+
+You can verify every line yourself:
+
+  Library ID 1283230217176481: https://www.facebook.com/ads/library/?id=1283230217176481
+  Library ID 2035989101138405: https://www.facebook.com/ads/library/?id=2035989101138405
+  Library ID 4590054947908510: https://www.facebook.com/ads/library/?id=4590054947908510
+  Library ID 1088110834213698: https://www.facebook.com/ads/library/?id=1088110834213698
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===
