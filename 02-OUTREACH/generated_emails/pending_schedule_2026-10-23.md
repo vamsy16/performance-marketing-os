@@ -1,6 +1,6 @@
 # Pending sends 2026-10-23 — owner schedules in the Gmail UI
 
-Everything below is **in Gmail as drafts right now** (17 drafts, all verified
+Everything below is **in Gmail as drafts right now** (21 drafts, all verified
 live). Nothing has been sent. Gmail's scheduled send is UI-only, so pick a time
 on each draft — suggested slots follow last night's pattern (12-minute gaps).
 
@@ -43,6 +43,19 @@ ads-only live-ad reports (no website audit run — the PDF says so on page 1):
 | Dakshin Solar Power Systems | dakshinsolar@gmail.com | r1833948473957777594 | audit_Dakshin_Solar_Power_Systems.pdf |
 | 3S Solutions | praveen@3ssol.in | r1459020982860151007 | audit_3S_Solutions.pdf |
 | Hydromo | info@hydromo.in | r-490954975402821851 | audit_Hydromo.pdf |
+
+## Batch-9 first contacts (4) — new threads, PDF attached
+
+Added 2026-10-23 (batch 9). All four are ads-only live-ad reports (no website
+audit run — the PDF says so on page 1). Freyr Energy is the big one: a
+~300-result Ad Library set with 9 live Telugu ads, all clicking out to fb.me.
+
+| Company | To | Draft ID | PDF attached |
+|---|---|---|---|
+| Freyr Energy | info@freyrenergy.com | r4073229830171604447 | audit_Freyr_Energy.pdf |
+| Vanguard Energy | info@vanguardenergysystems.com | r-5519094373057590916 | audit_Vanguard_Energy.pdf |
+| Bhanu PV Solar | info@bhanupvsolar.in | r-8589525829074466851 | audit_Bhanu_PV_Solar.pdf |
+| VajraSimha Industries | info@vajrasimhaindustries.com | r4471985646435117683 | audit_VajraSimha_Industries.pdf |
 
 ## Not in drafts — and why
 

@@ -1,0 +1,40 @@
+=== EMAIL FOR: Vanguard Energy ===
+City: Hyderabad
+To: info@vanguardenergysystems.com
+Phone: +91 87120 37245
+Website: https://vanguardenergy.in/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Vanguard_Energy.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-23 03:32
+
+--- SUBJECT ---
+Vanguard Energy: 1 live Hyderabad ad, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Vanguard Energy is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-23):
+
+  - 1 live ad on Meta, running since 09 October 2026
+  - every click lands in Facebook lead form (fb.me)
+  - The one live ad points to an fb.me link inside Facebook - the click never lands on vanguardenergy.in, so no pixel, no retargeting pool, no testable landing page.
+  - The ad's promise (Rs. 78,000 subsidy + Rs. 22,000 offer + up to 100% finance) is fully substantiated on the site - TGREDCO-empanelled supplier, on-grid rooftop EPC, net metering and solar-loan pages - but the paid traffic never sees any of that proof.
+
+You can verify every line yourself:
+
+  Library ID 4706406469596073: https://www.facebook.com/ads/library/?id=4706406469596073
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

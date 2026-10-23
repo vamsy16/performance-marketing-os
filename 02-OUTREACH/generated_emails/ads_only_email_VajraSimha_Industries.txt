@@ -1,0 +1,40 @@
+=== EMAIL FOR: VajraSimha Industries ===
+City: Hyderabad
+To: info@vajrasimhaindustries.com
+Phone: +91 99881 83456
+Website: https://www.vajrasimhaindustries.com/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_VajraSimha_Industries.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-23 03:32
+
+--- SUBJECT ---
+VajraSimha Industries: 1 live Hyderabad ad, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what VajraSimha Industries is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-23):
+
+  - 1 live ad on Meta, running since 21 October 2026
+  - every click lands in Instagram profile link
+  - The one live ad points to an Instagram profile link - the click never lands on vajrasimhaindustries.com, so no pixel, no retargeting pool, no testable landing page.
+  - The ad's whole proof (1,20,000+ rooftop structures, 85,000+ pump structures, 650+ MW solar MMS, 180 km/h wind rating) lives on the site catalogue - and the paid traffic never sees any of it.
+
+You can verify every line yourself:
+
+  Library ID 2972264096463621: https://www.facebook.com/ads/library/?id=2972264096463621
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

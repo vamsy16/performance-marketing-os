@@ -1,0 +1,92 @@
+{
+  "company": "Vanguard Energy",
+  "legal": "Vanguard Energy Systems India Private Limited",
+  "city": "Hyderabad",
+  "website": "https://vanguardenergy.in/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-23",
+  "generated_at": "2026-10-23 03:31",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "1 live ad seen in the Telugu 'ସୋଲାର୍ ଆଫର୍' (solar offer) search",
+      "query": "ସୋଲାର୍ ଆଫର୍",
+      "ads": [
+        {
+          "library_id": "4706406469596073",
+          "library_url": "https://www.facebook.com/ads/library/?id=4706406469596073",
+          "page_name": "Vanguard Energy",
+          "started": "Oct 9, 2026",
+          "destination": "fb.me (inside Facebook)",
+          "text": "Telugu: 'ప్రతి నెల పెరుగుతున్న కరెంట్ బిల్లులకు ఇక గుడ్‌బై! మీ ఇంటిపై సోలార୍ పానెల్స్ ఏర్పాటు చేసుకుని పొందం: ✅ ₹78,000 వరకు ప్రభుత్వ సబ్సిడీ / ✅ ₹22,000 వరకు Vanguard ప్రత్యేక ஆଫର୍* / ✅ 100% వరకు ఫైనాన్స్ సౌకర్యం. ఈ ஆଫର୍ పరిమిత కాలం మాత్రమే. ఇప్పుడే కాల్ చేసి ఉచిత సైట్ విజిట్ & కోట్ పొందం.' - limited-period offer with a free site visit and quote.",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Vanguard Energy is running 1 active Telugu Meta ad (Facebook), started 9 October 2026. The ad stacks up to Rs. 78,000 government subsidy, a Rs. 22,000 Vanguard offer and up to 100% finance, and pushes a free site visit and quote. The click lands on an fb.me link inside Facebook, so the spend never reaches vanguardenergy.in. No Google Ads advertiser record was checked for this report - that requires the full pipeline."
+  },
+  "funnel": {
+    "type": "Facebook lead form (fb.me)",
+    "destination": "fb.me (inside Facebook)",
+    "meaning": "Every click opens a Facebook surface, not vanguardenergy.in. You own no pixel on the landing experience, you cannot retarget the people who clicked and did not enquire, and there is no page you can test a different headline or price on. With a single ad live there is also no second creative angle to learn from."
+  },
+  "findings": [
+    "The one live ad points to an fb.me link inside Facebook - the click never lands on vanguardenergy.in, so no pixel, no retargeting pool, no testable landing page.",
+    "The ad's promise (Rs. 78,000 subsidy + Rs. 22,000 offer + up to 100% finance) is fully substantiated on the site - TGREDCO-empanelled supplier, on-grid rooftop EPC, net metering and solar-loan pages - but the paid traffic never sees any of that proof.",
+    "Two domains are live (vanguardenergy.in and vanguardenergysystems.com) with two inboxes (info@ and a Gmail address) - a split identity that can send the same enquiry to two places or none.",
+    "1 ad, live since 9 Oct, all cold traffic. There is no retargeting ad behind it and no second creative to test the finance angle against the subsidy angle.",
+    "The '100% finance' promise is the sharpest hook in the ad - and it is only measurable if the click lands on a page you own."
+  ],
+  "next_steps": [
+    [
+      "Move the click onto a page you own",
+      "Point the ad at a dedicated Hyderabad landing page carrying the same Rs. 78,000 + Rs. 22,000 + 100% finance offer, an enquiry form and the Meta Pixel - so every click is measurable and retargetable."
+    ],
+    [
+      "Install pixel + conversions API",
+      "One pixel plus the Conversions API gives you the audience of everyone who clicked but did not enquire - usually 10-20x the people who fill a form."
+    ],
+    [
+      "Settle on one domain and one inbox",
+      "Publish vanguardenergy.in and info@vanguardenergysystems.com everywhere (ads, forms, footer) so an enquiry can never sit unread or land on the wrong domain."
+    ],
+    [
+      "Give the finance angle somewhere to land",
+      "A simple EMI/loan section on the landing page turns the '100% finance' hook into a form fill instead of a dead-end fb.me click."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@vanguardenergysystems.com (also vanguardenergyindia@gmail.com)"
+    ],
+    [
+      "Phone / WhatsApp",
+      "+91 87120 37245"
+    ],
+    [
+      "Address",
+      "301, Inspire Horizon Tech Park, Puppalaguda / Nanakramguda, Hyderabad 500089"
+    ],
+    [
+      "Entity",
+      "Vanguard Energy Systems India Pvt Ltd, CIN U40107TG2022PTC162170 (incorporated 28 Apr 2022) - TGREDCO-empanelled supplier, on-grid rooftop EPC, net metering, solar loans"
+    ],
+    [
+      "Meta page",
+      "facebook.com - page ID 100093719866479 ('Vanguard Energy')"
+    ],
+    [
+      "Service area",
+      "vanguardenergy.in - Telangana, Andhra Pradesh, Maharashtra, Karnataka; Mon-Sat 9:30-17:30"
+    ]
+  ],
+  "contact": {
+    "email": "info@vanguardenergysystems.com",
+    "phone": "+91 87120 37245",
+    "fb_page": "https://www.facebook.com/100093719866479/"
+  }
+}

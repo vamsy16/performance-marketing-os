@@ -1,0 +1,48 @@
+=== EMAIL FOR: Freyr Energy ===
+City: Hyderabad
+To: info@freyrenergy.com
+Phone: +91 90000 82833
+Website: https://freyrenergy.com/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Freyr_Energy.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-23 03:32
+
+--- SUBJECT ---
+Freyr Energy: 9 live Hyderabad ads, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Freyr Energy is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-23):
+
+  - 9 live ads on Meta, running since 05 October 2026
+  - every click lands in Facebook lead form (fb.me)
+  - All 9 live Telugu ads point to fb.me links inside Facebook - the click never lands on freyrenergy.com, so no pixel, no retargeting pool, no testable landing page.
+  - Your own site already has the pieces the ads need: city pages across Telangana (Hyderabad first), MNRE-empanelment proof, 24,000+ customers since 2014, and the Rs. 78,000 subsidy FAQ. None of the paid traffic ever sees any of it.
+
+You can verify every line yourself:
+
+  Library ID 1713440576391806: https://www.facebook.com/ads/library/?id=1713440576391806
+  Library ID 1080304414811103: https://www.facebook.com/ads/library/?id=1080304414811103
+  Library ID 2168882354034499: https://www.facebook.com/ads/library/?id=2168882354034499
+  Library ID 2274643036665215: https://www.facebook.com/ads/library/?id=2274643036665215
+  Library ID 1780576756189985: https://www.facebook.com/ads/library/?id=1780576756189985
+  Library ID 4223543587937194: https://www.facebook.com/ads/library/?id=4223543587937194
+  Library ID 1836869750657253: https://www.facebook.com/ads/library/?id=1836869750657253
+  Library ID 2348789735869128: https://www.facebook.com/ads/library/?id=2348789735869128
+  Library ID 1097618436576477: https://www.facebook.com/ads/library/?id=1097618436576477
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

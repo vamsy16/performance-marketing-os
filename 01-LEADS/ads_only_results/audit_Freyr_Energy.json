@@ -1,0 +1,164 @@
+{
+  "company": "Freyr Energy",
+  "legal": "Freyr Energy Services Private Limited",
+  "city": "Hyderabad",
+  "website": "https://freyrenergy.com/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-23",
+  "generated_at": "2026-10-23 03:31",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 300,
+      "results_label": "~300 results on the FreyrEnergy page (Hindi/English/Telugu ad set)",
+      "query": "FreyrEnergy",
+      "ads": [
+        {
+          "library_id": "1713440576391806",
+          "library_url": "https://www.facebook.com/ads/library/?id=1713440576391806",
+          "page_name": "FreyrEnergy",
+          "started": "Oct 5, 2026",
+          "destination": "fb.me 'Get Quote' (inside Facebook)",
+          "text": "Telugu bill-saving ad: 'మీ బిల్లు తగ్గింపు కేవలం ఒక్క అడుగు దూరం!' - up to Rs. 1 lakh offer on solar, Rs. 78,000 government subsidy plus Rs. 22,000 extra discount. Creative lines: 'సోలార్ పానెల్‌పై ₹1 లక్ష ప్రయోజనం!' and 'బిల్లు సమస్యలకు గుడ్‌బై చెప్పండి!'",
+          "images": []
+        },
+        {
+          "library_id": "1080304414811103",
+          "library_url": "https://www.facebook.com/ads/library/?id=1080304414811103",
+          "page_name": "FreyrEnergy",
+          "started": "Oct 5, 2026",
+          "destination": "fb.me 'Get Quote' (inside Facebook)",
+          "text": "Same Telugu Rs. 1 lakh offer set (Rs. 78,000 subsidy + Rs. 22,000 extra discount) running with a second creative from 5 Oct 2026.",
+          "images": []
+        },
+        {
+          "library_id": "2168882354034499",
+          "library_url": "https://www.facebook.com/ads/library/?id=2168882354034499",
+          "page_name": "FreyrEnergy",
+          "started": "Oct 5, 2026",
+          "destination": "fb.me 'Get Quote' (inside Facebook)",
+          "text": "Telugu rooftop-solar offer ad from the FreyrEnergy page, part of the same Rs. 78,000 + Rs. 22,000 stacked-offer set.",
+          "images": []
+        },
+        {
+          "library_id": "2274643036665215",
+          "library_url": "https://www.facebook.com/ads/library/?id=2274643036665215",
+          "page_name": "FreyrEnergy",
+          "started": "Oct 6, 2026",
+          "destination": "fb.me 'Get Quote' (inside Facebook)",
+          "text": "Telugu bill-saving ad ('say goodbye to bill problems - save up to 90% monthly with solar investment'), Rs. 78,000 subsidy + Rs. 22,000 extra discount.",
+          "images": []
+        },
+        {
+          "library_id": "1780576756189985",
+          "library_url": "https://www.facebook.com/ads/library/?id=1780576756189985",
+          "page_name": "FreyrEnergy",
+          "started": "Oct 6, 2026",
+          "destination": "fb.me 'Get Quote' (inside Facebook)",
+          "text": "Telugu Rs. 1 lakh benefit ad running since 6 Oct 2026 - same stacked subsidy-plus-discount promise, new creative.",
+          "images": []
+        },
+        {
+          "library_id": "4223543587937194",
+          "library_url": "https://www.facebook.com/ads/library/?id=4223543587937194",
+          "page_name": "FreyrEnergy",
+          "started": "Oct 6, 2026",
+          "destination": "fb.me 'Get Quote' (inside Facebook)",
+          "text": "Telugu rooftop-solar offer ad from the FreyrEnergy page, part of the same Rs. 78,000 + Rs. 22,000 stacked-offer set.",
+          "images": []
+        },
+        {
+          "library_id": "1836869750657253",
+          "library_url": "https://www.facebook.com/ads/library/?id=1836869750657253",
+          "page_name": "FreyrEnergy",
+          "started": "Oct 6, 2026",
+          "destination": "fb.me 'Get Quote' (inside Facebook)",
+          "text": "Telugu subsidy-and-EMI offer ad from the FreyrEnergy page, part of the same stacked-offer set.",
+          "images": []
+        },
+        {
+          "library_id": "2348789735869128",
+          "library_url": "https://www.facebook.com/ads/library/?id=2348789735869128",
+          "page_name": "FreyrEnergy",
+          "started": "Oct 7, 2026",
+          "destination": "fb.me 'Get Quote' (inside Facebook)",
+          "text": "Telugu bill-saving ad running since 7 Oct 2026 - Rs. 78,000 government subsidy plus Rs. 22,000 additional Freyr discount.",
+          "images": []
+        },
+        {
+          "library_id": "1097618436576477",
+          "library_url": "https://www.facebook.com/ads/library/?id=1097618436576477",
+          "page_name": "FreyrEnergy",
+          "started": "Oct 10, 2026",
+          "destination": "fb.me 'Get Quote' (inside Facebook)",
+          "text": "Telugu Rs. 1 lakh benefit ad, the newest angle in the set, live since 10 Oct 2026.",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Freyr Energy is running a large active Meta ad set - the advertiser page returns ~300 results across Hindi, English and Telugu, and the Telugu 'ସୋଲାର୍ ଆଫର୍' (solar offer) search alone surfaces 9 live ads started between 5 and 10 October 2026. Every ad pushes the same stacked offer: up to Rs. 78,000 PM Surya Ghar subsidy plus a Rs. 22,000 Freyr discount, marketed as 'up to Rs. 1 lakh benefit on solar'. Every click lands on an fb.me link inside Facebook, so none of the spend reaches freyrenergy.com. No Google Ads advertiser record was checked for this report - that requires the full pipeline."
+  },
+  "funnel": {
+    "type": "Facebook lead form (fb.me)",
+    "destination": "fb.me 'Get Quote' (inside Facebook)",
+    "meaning": "Every click opens a Facebook surface, not freyrenergy.com. You own no pixel on the landing experience, you cannot retarget the people who clicked and did not enquire, and there is no page you can test a different headline or price on."
+  },
+  "findings": [
+    "All 9 live Telugu ads point to fb.me links inside Facebook - the click never lands on freyrenergy.com, so no pixel, no retargeting pool, no testable landing page.",
+    "Your own site already has the pieces the ads need: city pages across Telangana (Hyderabad first), MNRE-empanelment proof, 24,000+ customers since 2014, and the Rs. 78,000 subsidy FAQ. None of the paid traffic ever sees any of it.",
+    "Three inboxes are published across the site (info@, sales@ and support@freyrenergy.com) - an enquiry can land where nobody is watching.",
+    "9 ads, all launched within 6 days (5-10 Oct), all cold traffic, all the same offer angle. There is no second creative angle and no retargeting ad behind them yet.",
+    "The 'up to Rs. 1 lakh benefit' stacked offer is the sharpest hook in the Hyderabad market right now - and the measurement to know which creative works does not exist while the clicks stay inside Facebook."
+  ],
+  "next_steps": [
+    [
+      "Move the click onto a page you own",
+      "Point the Telugu ads at a dedicated Hyderabad landing page carrying the same Rs. 78,000 + Rs. 22,000 offer, an enquiry form and the Meta Pixel - so every click is measurable and retargetable."
+    ],
+    [
+      "Install pixel + conversions API",
+      "One pixel plus the Conversions API gives you the audience of everyone who clicked but did not enquire - usually 10-20x the people who fill a form."
+    ],
+    [
+      "Settle on one inbox",
+      "Publish info@freyrenergy.com everywhere (ads, forms, footer) and forward or retire the other inboxes so an enquiry can never sit unread."
+    ],
+    [
+      "Give the Telugu creative a Telugu landing page",
+      "The ads are Telugu-first; a matching Telugu offer page with the same Rs. 1 lakh promise keeps the message continuous from click to form."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@freyrenergy.com (site also lists sales@ and support@freyrenergy.com)"
+    ],
+    [
+      "Phone / WhatsApp",
+      "+91 90000 82833 / +91 70325 41991"
+    ],
+    [
+      "Address",
+      "301, 3rd Floor, KKR Square, Kavuri Hills, Hyderabad 500033"
+    ],
+    [
+      "Entity",
+      "Freyr Energy Services Pvt Ltd, CIN U40101TG2014PTC094154 - MNRE-empanelled rooftop solar & EPC company, 24,000+ customers since 2014"
+    ],
+    [
+      "Meta page",
+      "facebook.com/FREYRSOLAR"
+    ],
+    [
+      "Service area",
+      "freyrenergy.com - Telangana cities led by Hyderabad; India-wide rooftop solar and EPC"
+    ]
+  ],
+  "contact": {
+    "email": "info@freyrenergy.com",
+    "phone": "+91 90000 82833",
+    "fb_page": "https://www.facebook.com/FREYRSOLAR/"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "company": "VajraSimha Industries",
+  "legal": "Vajrasimha Industries (established 2023)",
+  "city": "Hyderabad",
+  "website": "https://www.vajrasimhaindustries.com/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-23",
+  "generated_at": "2026-10-23 03:31",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "1 live ad seen in the 'solar pump Hyderabad' search",
+      "query": "solar pump Hyderabad",
+      "ads": [
+        {
+          "library_id": "2972264096463621",
+          "library_url": "https://www.facebook.com/ads/library/?id=2972264096463621",
+          "page_name": "VajraSimha Industries",
+          "started": "Oct 21, 2026",
+          "destination": "Instagram profile link (instagram.com/vajrasimhaindustries)",
+          "text": "B2B ad: 'Powering India's Solar with Vajrasimha Mounting Structures! Looking for reliable, heavy-duty solar rooftop structures for PM Surya Ghar Yojana? 180 km/h wind resistance, HDG/GP/Galvalume, quick delivery across India, multiple models in ready stock. Delivery milestones: 1,20,000+ solar rooftop structures, 85,000+ solar water pump sets, 50+ solar power plants, 650+ MW solar MMS. Gandimaisamma, Hyderabad. www.vajrasimhaindustries.com. 9988 58 5678 | 9989 22 5514.'",
+          "images": []
+        }
+      ]
+    },
+    "summary": "VajraSimha Industries is running 1 active B2B Meta ad (Facebook and Instagram), started 21 October 2026, promoting heavy-duty solar rooftop mounting structures for PM Surya Ghar installers. The click lands on an Instagram profile link, not vajrasimhaindustries.com. The advertiser is a Hyderabad manufacturer (Dundigal, Gandimaisamma) founded in 2023 with 1,20,000+ rooftop structures and 650+ MW of solar MMS delivered. No Google Ads advertiser record was checked for this report - that requires the full pipeline."
+  },
+  "funnel": {
+    "type": "Instagram profile link",
+    "destination": "instagram.com/vajrasimhaindustries",
+    "meaning": "The click opens an Instagram profile, not vajrasimhaindustries.com. You own no pixel on the landing experience, you cannot retarget the EPCs and installers who clicked and did not enquire, and there is no page you can test a different structure spec or price on. For a manufacturer selling ready-stock structures, the enquiry path also adds a DM step before anyone reaches info@vajrasimhaindustries.com."
+  },
+  "findings": [
+    "The one live ad points to an Instagram profile link - the click never lands on vajrasimhaindustries.com, so no pixel, no retargeting pool, no testable landing page.",
+    "The ad's whole proof (1,20,000+ rooftop structures, 85,000+ pump structures, 650+ MW solar MMS, 180 km/h wind rating) lives on the site catalogue - and the paid traffic never sees any of it.",
+    "The site is a full PHP catalogue (rooftop, water-pump, power-plant and carport structures; poles) with 'Request a Quote' forms on every product family - none of the paid traffic reaches them.",
+    "1 ad, live since 21 Oct, all cold traffic. There is no retargeting ad behind it and no second creative to test the rooftop-structures angle against the pump-structures angle.",
+    "The ad drives Instagram DMs while the site publishes info@vajrasimhaindustries.com and two phone lines - two enquiry channels with no shared tracking."
+  ],
+  "next_steps": [
+    [
+      "Move the click onto a page you own",
+      "Point the ad at the rooftop-structures product page (or a dedicated PM Surya Ghar installer page) with an enquiry form and the Meta Pixel - so every click is measurable and retargetable."
+    ],
+    [
+      "Install pixel + conversions API",
+      "One pixel plus the Conversions API gives you the audience of EPCs and installers who clicked but did not enquire - usually 10-20x the people who fill a form."
+    ],
+    [
+      "Route DMs and site forms to one inbox",
+      "Publish info@vajrasimhaindustries.com on the ad and the Instagram profile, and connect the DM inbox to the same place, so an enquiry can never sit unread."
+    ],
+    [
+      "Add a second creative for the pump-structures line",
+      "The 85,000+ water-pump structures milestone is a separate buying trigger from rooftop structures - a second creative tells you which audience converts."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@vajrasimhaindustries.com"
+    ],
+    [
+      "Phone / WhatsApp",
+      "+91 99881 83456 (Solar Rooftop MMS) / +91 95026 11697 (other products; the ad also lists 9988 58 5678 | 9989 22 5514)"
+    ],
+    [
+      "Address",
+      "Sy. No 450/A2, 449/E2, Dundigal Village, Gandimaisamma, Dundigal Mandal, Medchal Malkajgiri District, Hyderabad 500043"
+    ],
+    [
+      "Entity",
+      "Vajrasimha Industries - Hyderabad manufacturer established 2023 by Mr. Rajasekhar Reddy Avuthu, on a decade of solar project and mounting-structure experience"
+    ],
+    [
+      "Meta page",
+      "facebook.com/vajrasimhaindustriesofficial"
+    ],
+    [
+      "Service area",
+      "vajrasimhaindustries.com - India-wide delivery; 1,20,000+ rooftop structures, 85,000+ pump sets, 650+ MW solar MMS delivered"
+    ]
+  ],
+  "contact": {
+    "email": "info@vajrasimhaindustries.com",
+    "phone": "+91 99881 83456",
+    "fb_page": "https://www.facebook.com/vajrasimhaindustriesofficial/"
+  }
+}

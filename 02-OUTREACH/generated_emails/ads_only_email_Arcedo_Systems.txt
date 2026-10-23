@@ -6,7 +6,7 @@ Website: https://arcedo.net/
 Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
 ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Arcedo_Systems.pdf
 Template: ads_only_live_ad_report
-Generated: 2026-10-23 02:56
+Generated: 2026-10-23 03:32
 
 --- SUBJECT ---
 Arcedo Systems: 3 live Hyderabad ads, one funnel

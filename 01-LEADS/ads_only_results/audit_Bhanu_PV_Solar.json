@@ -1,0 +1,92 @@
+{
+  "company": "Bhanu PV Solar",
+  "legal": "Bhanu PV Solar Private Limited",
+  "city": "Hyderabad",
+  "website": "https://bhanupvsolar.com/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-23",
+  "generated_at": "2026-10-23 03:31",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "1 live ad seen in the Telugu 'ସୋଲାର୍ ଆଫର୍' (solar offer) search",
+      "query": "ସୋଲାର୍ ଆଫର୍",
+      "ads": [
+        {
+          "library_id": "1745430353421307",
+          "library_url": "https://www.facebook.com/ads/library/?id=1745430353421307",
+          "page_name": "Bhanu PV Solar AP",
+          "started": "Oct 13, 2026",
+          "destination": "fb.me (inside Facebook)",
+          "text": "Telugu subsidy + EMI + free site visit ad promoting rooftop solar with government subsidy, EMI options and a free site visit booking, aimed at Telangana homeowners.",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Bhanu PV Solar is running 1 active Telugu Meta ad (Facebook), started 13 October 2026, promoting rooftop solar with government subsidy, EMI options and a free site visit. The click lands on an fb.me link inside Facebook, so the spend never reaches bhanupvsolar.com. The advertiser is a national EPC - 50,000+ projects, 90+ MW, #1 Gujarat / #2 India rooftop EPC, 11 states including Telangana - with a Hyderabad office. No Google Ads advertiser record was checked for this report - that requires the full pipeline."
+  },
+  "funnel": {
+    "type": "Facebook lead form (fb.me)",
+    "destination": "fb.me (inside Facebook)",
+    "meaning": "Every click opens a Facebook surface, not bhanupvsolar.com. For a national brand with 50,000+ projects, that means the Hyderabad campaign builds no owned audience: no pixel, no retargeting pool, no page to test a Hyderabad-specific offer on."
+  },
+  "findings": [
+    "The one live ad points to an fb.me link inside Facebook - the click never lands on bhanupvsolar.com, so no pixel, no retargeting pool, no testable landing page.",
+    "The site carries the scale proof the ad needs - 50,000+ projects, 90+ MW, #1 Gujarat / #2 India rooftop EPC, 11 states, 500+ dealers, MNRE-approved components - and none of the paid traffic ever sees it.",
+    "Three contact routes are published (toll-free 1800 889 2353, the Hyderabad office number +91 70132 10502 and info@bhanupvsolar.in) while the ad click dead-ends inside Facebook before reaching any of them.",
+    "1 ad, live since 13 Oct, all cold traffic. There is no retargeting ad behind it and no second creative to test the subsidy angle against the EMI angle.",
+    "The free-site-visit CTA matches the site's own offer - the journey breaks only at the last step, where the click leaves for fb.me."
+  ],
+  "next_steps": [
+    [
+      "Move the click onto a page you own",
+      "Point the ad at a dedicated Hyderabad landing page carrying the same subsidy + EMI + free site visit offer, the local Laxmiguda office details, an enquiry form and the Meta Pixel - so every click is measurable and retargetable."
+    ],
+    [
+      "Install pixel + conversions API",
+      "One pixel plus the Conversions API gives you the audience of everyone who clicked but did not enquire - usually 10-20x the people who fill a form."
+    ],
+    [
+      "Give the national scale a local page",
+      "A Hyderabad section (office address, local installs, Telangana service promise) turns the 50,000+ projects proof into a reason to enquire locally."
+    ],
+    [
+      "Add a second creative for the EMI angle",
+      "The EMI promise is a separate buying trigger from the subsidy promise - a second creative plus its own landing section tells you which one converts."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@bhanupvsolar.in"
+    ],
+    [
+      "Phone / WhatsApp",
+      "1800 889 2353 (toll-free) / +91 70132 10502 (Hyderabad office) / WhatsApp +91 92743 72956"
+    ],
+    [
+      "Address",
+      "Hyderabad office: Laxmiguda, Rajendra Nagar, Rangareddy 500077"
+    ],
+    [
+      "Entity",
+      "Bhanu PV Solar Pvt Ltd - 50,000+ projects, 90+ MW, #1 Gujarat / #2 India rooftop EPC, 11 states including Telangana, 500+ dealers, MNRE-approved components"
+    ],
+    [
+      "Meta page",
+      "facebook.com/BhanuSolarAP"
+    ],
+    [
+      "Service area",
+      "bhanupvsolar.com - 11 states including Telangana; Hyderabad office serves the city"
+    ]
+  ],
+  "contact": {
+    "email": "info@bhanupvsolar.in",
+    "phone": "+91 70132 10502",
+    "fb_page": "https://www.facebook.com/BhanuSolarAP/"
+  }
+}

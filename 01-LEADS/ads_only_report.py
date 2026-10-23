@@ -2508,7 +2508,422 @@ LEADS = [
                       "2 sustainability awards in 2025"),
         ],
     },
-
+    {
+        "company": "Freyr Energy",
+        "legal": "Freyr Energy Services Private Limited",
+        "city": "Hyderabad",
+        "website": "https://freyrenergy.com/",
+        "email": "info@freyrenergy.com",
+        "phone": "+91 90000 82833",
+        "fb_page": "https://www.facebook.com/FREYRSOLAR/",
+        "checked_on": "2026-10-23",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 300,
+                "results_label": "~300 results on the FreyrEnergy page (Hindi/English/Telugu ad set)",
+                "query": "FreyrEnergy",
+                "ads": [
+                    ad("1713440576391806", "FreyrEnergy", "Oct 5, 2026",
+                       "fb.me 'Get Quote' (inside Facebook)",
+                       "Telugu bill-saving ad: '\u0c2e\u0c40 \u0c2c\u0c3f\u0c32\u0c4d\u0c32\u0c41 \u0c24\u0c17\u0c4d\u0c17\u0c3f\u0c02\u0c2a\u0c41 \u0c15\u0c47\u0c35\u0c32\u0c02 \u0c12\u0c15\u0c4d\u0c15 \u0c05\u0c21\u0c41\u0c17\u0c41 \u0c26\u0c42\u0c30\u0c02!' - up to Rs. 1 lakh offer on "
+                       "solar, Rs. 78,000 government subsidy plus Rs. 22,000 extra "
+                       "discount. Creative lines: '\u0c38\u0c4b\u0c32\u0c3e\u0c30\u0c4d \u0c2a\u0c3e\u0c28\u0c46\u0c32\u0c4d\u200c\u0c2a\u0c48 \u20b91 \u0c32\u0c15\u0c4d\u0c37 \u0c2a\u0c4d\u0c30\u0c2f\u0c4b\u0c1c\u0c28\u0c02!' and "
+                       "'\u0c2c\u0c3f\u0c32\u0c4d\u0c32\u0c41 \u0c38\u0c2e\u0c38\u0c4d\u0c2f\u0c32\u0c15\u0c41 \u0c17\u0c41\u0c21\u0c4d\u200c\u0c2c\u0c48 \u0c1a\u0c46\u0c2a\u0c4d\u0c2a\u0c02\u0c21\u0c3f!'"),
+                    ad("1080304414811103", "FreyrEnergy", "Oct 5, 2026",
+                       "fb.me 'Get Quote' (inside Facebook)",
+                       "Same Telugu Rs. 1 lakh offer set (Rs. 78,000 subsidy + Rs. 22,000 "
+                       "extra discount) running with a second creative from 5 Oct 2026."),
+                    ad("2168882354034499", "FreyrEnergy", "Oct 5, 2026",
+                       "fb.me 'Get Quote' (inside Facebook)",
+                       "Telugu rooftop-solar offer ad from the FreyrEnergy page, part of "
+                       "the same Rs. 78,000 + Rs. 22,000 stacked-offer set."),
+                    ad("2274643036665215", "FreyrEnergy", "Oct 6, 2026",
+                       "fb.me 'Get Quote' (inside Facebook)",
+                       "Telugu bill-saving ad ('say goodbye to bill problems - save up to "
+                       "90% monthly with solar investment'), Rs. 78,000 subsidy + "
+                       "Rs. 22,000 extra discount."),
+                    ad("1780576756189985", "FreyrEnergy", "Oct 6, 2026",
+                       "fb.me 'Get Quote' (inside Facebook)",
+                       "Telugu Rs. 1 lakh benefit ad running since 6 Oct 2026 - same "
+                       "stacked subsidy-plus-discount promise, new creative."),
+                    ad("4223543587937194", "FreyrEnergy", "Oct 6, 2026",
+                       "fb.me 'Get Quote' (inside Facebook)",
+                       "Telugu rooftop-solar offer ad from the FreyrEnergy page, part of "
+                       "the same Rs. 78,000 + Rs. 22,000 stacked-offer set."),
+                    ad("1836869750657253", "FreyrEnergy", "Oct 6, 2026",
+                       "fb.me 'Get Quote' (inside Facebook)",
+                       "Telugu subsidy-and-EMI offer ad from the FreyrEnergy page, part "
+                       "of the same stacked-offer set."),
+                    ad("2348789735869128", "FreyrEnergy", "Oct 7, 2026",
+                       "fb.me 'Get Quote' (inside Facebook)",
+                       "Telugu bill-saving ad running since 7 Oct 2026 - Rs. 78,000 "
+                       "government subsidy plus Rs. 22,000 additional Freyr discount."),
+                    ad("1097618436576477", "FreyrEnergy", "Oct 10, 2026",
+                       "fb.me 'Get Quote' (inside Facebook)",
+                       "Telugu Rs. 1 lakh benefit ad, the newest angle in the set, live "
+                       "since 10 Oct 2026."),
+                ],
+            },
+            "summary": (
+                "Freyr Energy is running a large active Meta ad set - the advertiser "
+                "page returns ~300 results across Hindi, English and Telugu, and the "
+                "Telugu '\u0b38\u0b4b\u0b32\u0b3e\u0b30\u0b4d \u0b06\u0b2b\u0b30\u0b4d' (solar offer) search alone surfaces 9 live ads "
+                "started between 5 and 10 October 2026. Every ad pushes the same "
+                "stacked offer: up to Rs. 78,000 PM Surya Ghar subsidy plus a "
+                "Rs. 22,000 Freyr discount, marketed as 'up to Rs. 1 lakh benefit on "
+                "solar'. Every click lands on an fb.me link inside Facebook, so none "
+                "of the spend reaches freyrenergy.com. No Google Ads advertiser record "
+                "was checked for this report - that requires the full pipeline."),
+        },
+        "funnel": {
+            "type": "Facebook lead form (fb.me)",
+            "destination": "fb.me 'Get Quote' (inside Facebook)",
+            "meaning": (
+                "Every click opens a Facebook surface, not freyrenergy.com. You own no "
+                "pixel on the landing experience, you cannot retarget the people who "
+                "clicked and did not enquire, and there is no page you can test a "
+                "different headline or price on."),
+        },
+        "findings": [
+            "All 9 live Telugu ads point to fb.me links inside Facebook - the click "
+            "never lands on freyrenergy.com, so no pixel, no retargeting pool, no "
+            "testable landing page.",
+            "Your own site already has the pieces the ads need: city pages across "
+            "Telangana (Hyderabad first), MNRE-empanelment proof, 24,000+ customers "
+            "since 2014, and the Rs. 78,000 subsidy FAQ. None of the paid traffic "
+            "ever sees any of it.",
+            "Three inboxes are published across the site (info@, sales@ and "
+            "support@freyrenergy.com) - an enquiry can land where nobody is watching.",
+            "9 ads, all launched within 6 days (5-10 Oct), all cold traffic, all the "
+            "same offer angle. There is no second creative angle and no retargeting "
+            "ad behind them yet.",
+            "The 'up to Rs. 1 lakh benefit' stacked offer is the sharpest hook in "
+            "the Hyderabad market right now - and the measurement to know which "
+            "creative works does not exist while the clicks stay inside Facebook.",
+        ],
+        "next_steps": [
+            ("Move the click onto a page you own",
+             "Point the Telugu ads at a dedicated Hyderabad landing page carrying the "
+             "same Rs. 78,000 + Rs. 22,000 offer, an enquiry form and the Meta Pixel - "
+             "so every click is measurable and retargetable."),
+            ("Install pixel + conversions API",
+             "One pixel plus the Conversions API gives you the audience of everyone "
+             "who clicked but did not enquire - usually 10-20x the people who fill a "
+             "form."),
+            ("Settle on one inbox",
+             "Publish info@freyrenergy.com everywhere (ads, forms, footer) and forward "
+             "or retire the other inboxes so an enquiry can never sit unread."),
+            ("Give the Telugu creative a Telugu landing page",
+             "The ads are Telugu-first; a matching Telugu offer page with the same "
+             "Rs. 1 lakh promise keeps the message continuous from click to form."),
+        ],
+        "contact_facts": [
+            ("Email", "info@freyrenergy.com (site also lists sales@ and "
+                      "support@freyrenergy.com)"),
+            ("Phone / WhatsApp", "+91 90000 82833 / +91 70325 41991"),
+            ("Address", "301, 3rd Floor, KKR Square, Kavuri Hills, Hyderabad 500033"),
+            ("Entity", "Freyr Energy Services Pvt Ltd, CIN U40101TG2014PTC094154 - "
+                       "MNRE-empanelled rooftop solar & EPC company, 24,000+ "
+                       "customers since 2014"),
+            ("Meta page", "facebook.com/FREYRSOLAR"),
+            ("Service area", "freyrenergy.com - Telangana cities led by Hyderabad; "
+                             "India-wide rooftop solar and EPC"),
+        ],
+    },
+    {
+        "company": "Vanguard Energy",
+        "legal": "Vanguard Energy Systems India Private Limited",
+        "city": "Hyderabad",
+        "website": "https://vanguardenergy.in/",
+        "email": "info@vanguardenergysystems.com",
+        "phone": "+91 87120 37245",
+        "fb_page": "https://www.facebook.com/100093719866479/",
+        "checked_on": "2026-10-23",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 1,
+                "results_label": "1 live ad seen in the Telugu '\u0b38\u0b4b\u0b32\u0b3e\u0b30\u0b4d \u0b06\u0b2b\u0b30\u0b4d' (solar offer) search",
+                "query": "\u0b38\u0b4b\u0b32\u0b3e\u0b30\u0b4d \u0b06\u0b2b\u0b30\u0b4d",
+                "ads": [
+                    ad("4706406469596073", "Vanguard Energy", "Oct 9, 2026",
+                       "fb.me (inside Facebook)",
+                       "Telugu: '\u0c2a\u0c4d\u0c30\u0c24\u0c3f \u0c28\u0c46\u0c32 \u0c2a\u0c46\u0c30\u0c41\u0c17\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28 \u0c15\u0c30\u0c46\u0c02\u0c1f\u0c4d \u0c2c\u0c3f\u0c32\u0c4d\u0c32\u0c41\u0c32\u0c15\u0c41 \u0c07\u0c15 \u0c17\u0c41\u0c21\u0c4d\u200c\u0c2c\u0c48! "
+                       "\u0c2e\u0c40 \u0c07\u0c02\u0c1f\u0c3f\u0c2a\u0c48 \u0c38\u0c4b\u0c32\u0c3e\u0c30\u0b4d \u0c2a\u0c3e\u0c28\u0c46\u0c32\u0c4d\u0c38\u0c4d \u0c0f\u0c30\u0c4d\u0c2a\u0c3e\u0c1f\u0c41 \u0c1a\u0c47\u0c38\u0c41\u0c15\u0c41\u0c28\u0c3f \u0c2a\u0c4a\u0c02\u0c26\u0c02: "
+                       "\u2705 \u20b978,000 \u0c35\u0c30\u0c15\u0c41 \u0c2a\u0c4d\u0c30\u0c2d\u0c41\u0c24\u0c4d\u0c35 \u0c38\u0c2c\u0c4d\u0c38\u0c3f\u0c21\u0c40 / "
+                       "\u2705 \u20b922,000 \u0c35\u0c30\u0c15\u0c41 Vanguard \u0c2a\u0c4d\u0c30\u0c24\u0c4d\u0c2f\u0c47\u0c15 \u0b86\u0b2b\u0b30\u0b4d* / "
+                       "\u2705 100% \u0c35\u0c30\u0c15\u0c41 \u0c2b\u0c48\u0c28\u0c3e\u0c28\u0c4d\u0c38\u0c4d \u0c38\u0c4c\u0c15\u0c30\u0c4d\u0c2f\u0c02. "
+                       "\u0c08 \u0b86\u0b2b\u0b30\u0b4d \u0c2a\u0c30\u0c3f\u0c2e\u0c3f\u0c24 \u0c15\u0c3e\u0c32\u0c02 \u0c2e\u0c3e\u0c24\u0c4d\u0c30\u0c2e\u0c47. "
+                       "\u0c07\u0c2a\u0c4d\u0c2a\u0c41\u0c21\u0c47 \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c38\u0c3f \u0c09\u0c1a\u0c3f\u0c24 \u0c38\u0c48\u0c1f\u0c4d \u0c35\u0c3f\u0c1c\u0c3f\u0c1f\u0c4d & \u0c15\u0c4b\u0c1f\u0c4d \u0c2a\u0c4a\u0c02\u0c26\u0c02.' - "
+                       "limited-period offer with a free site visit and quote."),
+                ],
+            },
+            "summary": (
+                "Vanguard Energy is running 1 active Telugu Meta ad (Facebook), "
+                "started 9 October 2026. The ad stacks up to Rs. 78,000 government "
+                "subsidy, a Rs. 22,000 Vanguard offer and up to 100% finance, and "
+                "pushes a free site visit and quote. The click lands on an fb.me link "
+                "inside Facebook, so the spend never reaches vanguardenergy.in. No "
+                "Google Ads advertiser record was checked for this report - that "
+                "requires the full pipeline."),
+        },
+        "funnel": {
+            "type": "Facebook lead form (fb.me)",
+            "destination": "fb.me (inside Facebook)",
+            "meaning": (
+                "Every click opens a Facebook surface, not vanguardenergy.in. You own "
+                "no pixel on the landing experience, you cannot retarget the people "
+                "who clicked and did not enquire, and there is no page you can test a "
+                "different headline or price on. With a single ad live there is also "
+                "no second creative angle to learn from."),
+        },
+        "findings": [
+            "The one live ad points to an fb.me link inside Facebook - the click "
+            "never lands on vanguardenergy.in, so no pixel, no retargeting pool, no "
+            "testable landing page.",
+            "The ad's promise (Rs. 78,000 subsidy + Rs. 22,000 offer + up to 100% "
+            "finance) is fully substantiated on the site - TGREDCO-empanelled "
+            "supplier, on-grid rooftop EPC, net metering and solar-loan pages - but "
+            "the paid traffic never sees any of that proof.",
+            "Two domains are live (vanguardenergy.in and "
+            "vanguardenergysystems.com) with two inboxes (info@ and a Gmail "
+            "address) - a split identity that can send the same enquiry to two "
+            "places or none.",
+            "1 ad, live since 9 Oct, all cold traffic. There is no retargeting ad "
+            "behind it and no second creative to test the finance angle against the "
+            "subsidy angle.",
+            "The '100% finance' promise is the sharpest hook in the ad - and it is "
+            "only measurable if the click lands on a page you own.",
+        ],
+        "next_steps": [
+            ("Move the click onto a page you own",
+             "Point the ad at a dedicated Hyderabad landing page carrying the same "
+             "Rs. 78,000 + Rs. 22,000 + 100% finance offer, an enquiry form and the "
+             "Meta Pixel - so every click is measurable and retargetable."),
+            ("Install pixel + conversions API",
+             "One pixel plus the Conversions API gives you the audience of everyone "
+             "who clicked but did not enquire - usually 10-20x the people who fill a "
+             "form."),
+            ("Settle on one domain and one inbox",
+             "Publish vanguardenergy.in and info@vanguardenergysystems.com everywhere "
+             "(ads, forms, footer) so an enquiry can never sit unread or land on the "
+             "wrong domain."),
+            ("Give the finance angle somewhere to land",
+             "A simple EMI/loan section on the landing page turns the '100% finance' "
+             "hook into a form fill instead of a dead-end fb.me click."),
+        ],
+        "contact_facts": [
+            ("Email", "info@vanguardenergysystems.com (also "
+                      "vanguardenergyindia@gmail.com)"),
+            ("Phone / WhatsApp", "+91 87120 37245"),
+            ("Address", "301, Inspire Horizon Tech Park, Puppalaguda / Nanakramguda, "
+                        "Hyderabad 500089"),
+            ("Entity", "Vanguard Energy Systems India Pvt Ltd, CIN "
+                       "U40107TG2022PTC162170 (incorporated 28 Apr 2022) - "
+                       "TGREDCO-empanelled supplier, on-grid rooftop EPC, net "
+                       "metering, solar loans"),
+            ("Meta page", "facebook.com - page ID 100093719866479 ('Vanguard "
+                          "Energy')"),
+            ("Service area", "vanguardenergy.in - Telangana, Andhra Pradesh, "
+                             "Maharashtra, Karnataka; Mon-Sat 9:30-17:30"),
+        ],
+    },
+    {
+        "company": "Bhanu PV Solar",
+        "legal": "Bhanu PV Solar Private Limited",
+        "city": "Hyderabad",
+        "website": "https://bhanupvsolar.com/",
+        "email": "info@bhanupvsolar.in",
+        "phone": "+91 70132 10502",
+        "fb_page": "https://www.facebook.com/BhanuSolarAP/",
+        "checked_on": "2026-10-23",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 1,
+                "results_label": "1 live ad seen in the Telugu '\u0b38\u0b4b\u0b32\u0b3e\u0b30\u0b4d \u0b06\u0b2b\u0b30\u0b4d' (solar offer) search",
+                "query": "\u0b38\u0b4b\u0b32\u0b3e\u0b30\u0b4d \u0b06\u0b2b\u0b30\u0b4d",
+                "ads": [
+                    ad("1745430353421307", "Bhanu PV Solar AP", "Oct 13, 2026",
+                       "fb.me (inside Facebook)",
+                       "Telugu subsidy + EMI + free site visit ad promoting rooftop "
+                       "solar with government subsidy, EMI options and a free site "
+                       "visit booking, aimed at Telangana homeowners."),
+                ],
+            },
+            "summary": (
+                "Bhanu PV Solar is running 1 active Telugu Meta ad (Facebook), "
+                "started 13 October 2026, promoting rooftop solar with government "
+                "subsidy, EMI options and a free site visit. The click lands on an "
+                "fb.me link inside Facebook, so the spend never reaches "
+                "bhanupvsolar.com. The advertiser is a national EPC - 50,000+ "
+                "projects, 90+ MW, #1 Gujarat / #2 India rooftop EPC, 11 states "
+                "including Telangana - with a Hyderabad office. No Google Ads "
+                "advertiser record was checked for this report - that requires the "
+                "full pipeline."),
+        },
+        "funnel": {
+            "type": "Facebook lead form (fb.me)",
+            "destination": "fb.me (inside Facebook)",
+            "meaning": (
+                "Every click opens a Facebook surface, not bhanupvsolar.com. For a "
+                "national brand with 50,000+ projects, that means the Hyderabad "
+                "campaign builds no owned audience: no pixel, no retargeting pool, "
+                "no page to test a Hyderabad-specific offer on."),
+        },
+        "findings": [
+            "The one live ad points to an fb.me link inside Facebook - the click "
+            "never lands on bhanupvsolar.com, so no pixel, no retargeting pool, no "
+            "testable landing page.",
+            "The site carries the scale proof the ad needs - 50,000+ projects, 90+ MW, "
+            "#1 Gujarat / #2 India rooftop EPC, 11 states, 500+ dealers, "
+            "MNRE-approved components - and none of the paid traffic ever sees it.",
+            "Three contact routes are published (toll-free 1800 889 2353, the "
+            "Hyderabad office number +91 70132 10502 and info@bhanupvsolar.in) while "
+            "the ad click dead-ends inside Facebook before reaching any of them.",
+            "1 ad, live since 13 Oct, all cold traffic. There is no retargeting ad "
+            "behind it and no second creative to test the subsidy angle against the "
+            "EMI angle.",
+            "The free-site-visit CTA matches the site's own offer - the journey "
+            "breaks only at the last step, where the click leaves for fb.me.",
+        ],
+        "next_steps": [
+            ("Move the click onto a page you own",
+             "Point the ad at a dedicated Hyderabad landing page carrying the same "
+             "subsidy + EMI + free site visit offer, the local Laxmiguda office "
+             "details, an enquiry form and the Meta Pixel - so every click is "
+             "measurable and retargetable."),
+            ("Install pixel + conversions API",
+             "One pixel plus the Conversions API gives you the audience of everyone "
+             "who clicked but did not enquire - usually 10-20x the people who fill a "
+             "form."),
+            ("Give the national scale a local page",
+             "A Hyderabad section (office address, local installs, Telangana service "
+             "promise) turns the 50,000+ projects proof into a reason to enquire "
+             "locally."),
+            ("Add a second creative for the EMI angle",
+             "The EMI promise is a separate buying trigger from the subsidy promise - "
+             "a second creative plus its own landing section tells you which one "
+             "converts."),
+        ],
+        "contact_facts": [
+            ("Email", "info@bhanupvsolar.in"),
+            ("Phone / WhatsApp", "1800 889 2353 (toll-free) / +91 70132 10502 "
+                                 "(Hyderabad office) / WhatsApp +91 92743 72956"),
+            ("Address", "Hyderabad office: Laxmiguda, Rajendra Nagar, Rangareddy "
+                        "500077"),
+            ("Entity", "Bhanu PV Solar Pvt Ltd - 50,000+ projects, 90+ MW, #1 "
+                       "Gujarat / #2 India rooftop EPC, 11 states including "
+                       "Telangana, 500+ dealers, MNRE-approved components"),
+            ("Meta page", "facebook.com/BhanuSolarAP"),
+            ("Service area", "bhanupvsolar.com - 11 states including Telangana; "
+                             "Hyderabad office serves the city"),
+        ],
+    },
+    {
+        "company": "VajraSimha Industries",
+        "legal": "Vajrasimha Industries (established 2023)",
+        "city": "Hyderabad",
+        "website": "https://www.vajrasimhaindustries.com/",
+        "email": "info@vajrasimhaindustries.com",
+        "phone": "+91 99881 83456",
+        "fb_page": "https://www.facebook.com/vajrasimhaindustriesofficial/",
+        "checked_on": "2026-10-23",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 1,
+                "results_label": "1 live ad seen in the 'solar pump Hyderabad' search",
+                "query": "solar pump Hyderabad",
+                "ads": [
+                    ad("2972264096463621", "VajraSimha Industries", "Oct 21, 2026",
+                       "Instagram profile link (instagram.com/vajrasimhaindustries)",
+                       "B2B ad: 'Powering India's Solar with Vajrasimha Mounting "
+                       "Structures! Looking for reliable, heavy-duty solar rooftop "
+                       "structures for PM Surya Ghar Yojana? 180 km/h wind "
+                       "resistance, HDG/GP/Galvalume, quick delivery across India, "
+                       "multiple models in ready stock. Delivery milestones: "
+                       "1,20,000+ solar rooftop structures, 85,000+ solar water pump "
+                       "sets, 50+ solar power plants, 650+ MW solar MMS. Gandimaisamma, "
+                       "Hyderabad. www.vajrasimhaindustries.com. 9988 58 5678 | "
+                       "9989 22 5514.'"),
+                ],
+            },
+            "summary": (
+                "VajraSimha Industries is running 1 active B2B Meta ad (Facebook and "
+                "Instagram), started 21 October 2026, promoting heavy-duty solar "
+                "rooftop mounting structures for PM Surya Ghar installers. The click "
+                "lands on an Instagram profile link, not vajrasimhaindustries.com. "
+                "The advertiser is a Hyderabad manufacturer (Dundigal, Gandimaisamma) "
+                "founded in 2023 with 1,20,000+ rooftop structures and 650+ MW of "
+                "solar MMS delivered. No Google Ads advertiser record was checked "
+                "for this report - that requires the full pipeline."),
+        },
+        "funnel": {
+            "type": "Instagram profile link",
+            "destination": "instagram.com/vajrasimhaindustries",
+            "meaning": (
+                "The click opens an Instagram profile, not "
+                "vajrasimhaindustries.com. You own no pixel on the landing "
+                "experience, you cannot retarget the EPCs and installers who clicked "
+                "and did not enquire, and there is no page you can test a different "
+                "structure spec or price on. For a manufacturer selling ready-stock "
+                "structures, the enquiry path also adds a DM step before anyone "
+                "reaches info@vajrasimhaindustries.com."),
+        },
+        "findings": [
+            "The one live ad points to an Instagram profile link - the click never "
+            "lands on vajrasimhaindustries.com, so no pixel, no retargeting pool, "
+            "no testable landing page.",
+            "The ad's whole proof (1,20,000+ rooftop structures, 85,000+ pump "
+            "structures, 650+ MW solar MMS, 180 km/h wind rating) lives on the site "
+            "catalogue - and the paid traffic never sees any of it.",
+            "The site is a full PHP catalogue (rooftop, water-pump, power-plant and "
+            "carport structures; poles) with 'Request a Quote' forms on every "
+            "product family - none of the paid traffic reaches them.",
+            "1 ad, live since 21 Oct, all cold traffic. There is no retargeting ad "
+            "behind it and no second creative to test the rooftop-structures angle "
+            "against the pump-structures angle.",
+            "The ad drives Instagram DMs while the site publishes "
+            "info@vajrasimhaindustries.com and two phone lines - two enquiry "
+            "channels with no shared tracking.",
+        ],
+        "next_steps": [
+            ("Move the click onto a page you own",
+             "Point the ad at the rooftop-structures product page (or a dedicated "
+             "PM Surya Ghar installer page) with an enquiry form and the Meta Pixel "
+             "- so every click is measurable and retargetable."),
+            ("Install pixel + conversions API",
+             "One pixel plus the Conversions API gives you the audience of EPCs and "
+             "installers who clicked but did not enquire - usually 10-20x the people "
+             "who fill a form."),
+            ("Route DMs and site forms to one inbox",
+             "Publish info@vajrasimhaindustries.com on the ad and the Instagram "
+             "profile, and connect the DM inbox to the same place, so an enquiry can "
+             "never sit unread."),
+            ("Add a second creative for the pump-structures line",
+             "The 85,000+ water-pump structures milestone is a separate buying "
+             "trigger from rooftop structures - a second creative tells you which "
+             "audience converts."),
+        ],
+        "contact_facts": [
+            ("Email", "info@vajrasimhaindustries.com"),
+            ("Phone / WhatsApp", "+91 99881 83456 (Solar Rooftop MMS) / +91 95026 "
+                                 "11697 (other products; the ad also lists 9988 58 "
+                                 "5678 | 9989 22 5514)"),
+            ("Address", "Sy. No 450/A2, 449/E2, Dundigal Village, Gandimaisamma, "
+                        "Dundigal Mandal, Medchal Malkajgiri District, Hyderabad "
+                        "500043"),
+            ("Entity", "Vajrasimha Industries - Hyderabad manufacturer established "
+                       "2023 by Mr. Rajasekhar Reddy Avuthu, on a decade of solar "
+                       "project and mounting-structure experience"),
+            ("Meta page", "facebook.com/vajrasimhaindustriesofficial"),
+            ("Service area", "vajrasimhaindustries.com - India-wide delivery; "
+                             "1,20,000+ rooftop structures, 85,000+ pump sets, "
+                             "650+ MW solar MMS delivered"),
+        ],
+    },
 ]
 
 
