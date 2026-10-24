@@ -6,7 +6,7 @@ Website: https://kapilpower.com/
 Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
 ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Kapil_Power_Infra.pdf
 Template: ads_only_live_ad_report
-Generated: 2026-10-23 03:32
+Generated: 2026-10-24 05:20
 
 --- SUBJECT ---
 Kapil Power & Infra: 2 live Hyderabad ads, one funnel

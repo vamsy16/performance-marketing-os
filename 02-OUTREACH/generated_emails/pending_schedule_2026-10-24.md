@@ -78,3 +78,19 @@ Mark it so the next step dates correctly (next follow-up = send date + 2 days):
 cd 02-OUTREACH
 python sequence.py mark-sent --company "<Company>" --step <1|2> --date 2026-10-24
 ```
+
+## Batch 10 — 4 new step-0 drafts ready (created 2026-10-24, NOT yet sent)
+
+First contact for the four new leads, each with its live-ad PDF attached
+(ads-only report + claude-ads control review). Suggested slots below.
+
+| # | Company | To | Draft ID | Suggested send (IST) |
+|---|---|---|---|---|
+| 1 | Sunova Green Energy | sunovagreenenergy@gmail.com | r8672245658090296228 | 21:30 |
+| 2 | Wisda Energy | connect@wisda.in | r-6911418009660809427 | 21:42 |
+| 3 | SolarSquare Energy | welisten@solarsquare.in | r-1045940870714107417 | 21:54 |
+| 4 | Rayzon Solar | contact@rayzonenergies.com | r-2836600481260964329 | 22:06 |
+
+Gmail now holds **12 drafts** in total (the 8 step-2 follow-ups above plus
+these 4). Once these are sent, step 1 for each falls due **2026-10-26** and
+the batch-10 sequence runs on the same 2-day cadence.

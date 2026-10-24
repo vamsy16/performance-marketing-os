@@ -1,0 +1,233 @@
+{
+  "company": "SolarSquare Energy",
+  "legal": "Solar Square Energy Pvt. Ltd.",
+  "city": "Hyderabad",
+  "website": "https://www.solarsquare.in/rooftop-solar-in-hyderabad-1",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-24",
+  "generated_at": "2026-10-24 05:19",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 3,
+      "results_label": "3 live ads seen in the 'solar company Hyderabad' and 'solar installation Hyderabad' searches (creatives shared across 2, 6 and 2 ads)",
+      "query": "solar company Hyderabad",
+      "ads": [
+        {
+          "library_id": "2146365376089965",
+          "library_url": "https://www.facebook.com/ads/library/?id=2146365376089965",
+          "page_name": "SolarSquare Energy",
+          "started": "Oct 12, 2026",
+          "destination": "https://www.solarsquare.in/rooftop-solar-in-hyderabad-1",
+          "text": "Hyderabad residents, tired of high electricity bills every summer? Enjoy up to 90% lower electricity bills with SolarSquare! Guaranteed Savings. Trusted by 36,000+ Homes. Book your free consultation today!",
+          "images": []
+        },
+        {
+          "library_id": "1472241928117694",
+          "library_url": "https://www.facebook.com/ads/library/?id=1472241928117694",
+          "page_name": "SolarSquare Energy",
+          "started": "Oct 13, 2026",
+          "destination": "https://www.solarsquare.in/rooftop-solar-in-hyderabad-1",
+          "text": "Think solar is only for the rich? Hyderabad, what if your solar savings came with a money-back guarantee? Guaranteed Savings. Trusted by 36,000+ Homes. India's No. 1 Home Solar Company. Switch to SolarSquare! (6 ads use this creative and text.)",
+          "images": []
+        },
+        {
+          "library_id": "2463859894143954",
+          "library_url": "https://www.facebook.com/ads/library/?id=2463859894143954",
+          "page_name": "SolarSquare Energy",
+          "started": "Oct 16, 2026",
+          "destination": "https://www.solarsquare.in/rooftop-solar-in-hyderabad-1",
+          "text": "Don't go Solar before having a FREE consultation from India's Solar Experts. Book today. (2 ads use this creative and text.)",
+          "images": []
+        }
+      ]
+    },
+    "summary": "SolarSquare Energy is running at least 3 active Meta ads targeting Hyderabad (creatives shared across 2, 6 and 2 ads), started 12, 13 and 16 October 2026. Unlike the local installers, these ads land on a page SolarSquare owns - solarsquare.in/rooftop-solar-in-hyderabad-1 - which carries Hyderabad-specific pricing (2 kW about Rs. 1.07 lakh to 5 kW about Rs. 2.65 lakh with subsidy, dated 01 October 2026), an EMI calculator, a free-consultation form and the GoodZero money-back savings plan. SolarSquare is a national brand (36,000+ homes, 31 cities across 10 states) and the Hyderabad landing page is one of many city pages. No Google Ads advertiser record was checked for this report - that requires the full pipeline."
+  },
+  "funnel": {
+    "type": "Own website landing page",
+    "destination": "https://www.solarsquare.in/rooftop-solar-in-hyderabad-1",
+    "meaning": "The click lands on a page SolarSquare owns and controls, which is the right shape: the page can carry a pixel, UTMs, a form and a testable headline. The open questions public data cannot answer are whether the pixel and UTM scheme are actually installed, and whether the Hyderabad page converts better than the 30 other city pages competing for the same spend."
+  },
+  "findings": [
+    "The ads land on SolarSquare's own Hyderabad landing page - the only lead in this batch where paid clicks reach a page the advertiser owns and can measure.",
+    "Multiple live creatives are running (bill-savings angle, money-back guarantee angle, free-consultation angle), so the account is already testing messages against each other.",
+    "The Hyderabad page carries a full pricing table dated 01 October 2026 with a 'subject to change' note - worth confirming those numbers still match current DISCOM charges before the next spend cycle.",
+    "The ads captured in these searches are all in English, while most Hyderabad competitors run Telugu-language creatives for the same subsidy audience - a language test is an obvious gap.",
+    "Public data cannot show whether the Hyderabad page carries the Meta Pixel and UTM scheme, what the spend is, or which creative is winning - that needs account access and is marked unknown in the control review."
+  ],
+  "next_steps": [
+    [
+      "Verify pixel + UTM scheme on the Hyderabad page",
+      "Confirm the Meta Pixel fires on the Hyderabad landing page and that every ad carries UTMs, so the bill-savings, money-back and free-consultation creatives can be compared against each other on form fills, not clicks."
+    ],
+    [
+      "Run a Telugu creative for the Hyderabad market",
+      "Every ad captured is English while local competitors run Telugu subsidy ads - a Telugu version of the strongest creative tests an untapped audience."
+    ],
+    [
+      "Keep the Hyderabad pricing table current",
+      "The page's subsidy pricing is dated 01 October 2026 and flagged 'subject to change'; refreshing it (and dating it) keeps the offer credible."
+    ],
+    [
+      "Put the money-back guarantee above the fold",
+      "The GoodZero guarantee is the sharpest differentiator in the ad set - the landing page should lead with it, not bury it below the calculator."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "welisten@solarsquare.in (contact page)"
+    ],
+    [
+      "Phone / WhatsApp",
+      "+91 98300 03000 / +91 70300 03000"
+    ],
+    [
+      "Address",
+      "Offices across India including Hyderabad (city list on the contact page); Hyderabad landing page at solarsquare.in/rooftop-solar-in-hyderabad-1"
+    ],
+    [
+      "Entity",
+      "Solar Square Energy Pvt. Ltd. - national rooftop solar company, 36,000+ homes solarised, 200 MW+ installed, 31 cities across 10 states"
+    ],
+    [
+      "Meta page",
+      "facebook.com/SolarSquareEnergy"
+    ],
+    [
+      "Service area",
+      "solarsquare.in - Hyderabad, Rangareddy, Sangareddy, Trimulgherry, Warangal plus 26 other cities"
+    ]
+  ],
+  "contact": {
+    "email": "welisten@solarsquare.in",
+    "phone": "+91 98300 03000 / +91 70300 03000",
+    "fb_page": "https://www.facebook.com/SolarSquareEnergy/"
+  },
+  "site_evidence": {
+    "pixel": null,
+    "utm": null,
+    "checked_on": "2026-10-24",
+    "note": "Landing page read through a text proxy that strips scripts, so Meta Pixel and UTM parameters could not be confirmed either way; graded unknown per the catalog's runtime contract."
+  },
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "Only 1 offer angle in live copy (social proof) - every ad says the same thing."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "pass",
+        "evidence": "Live ad copy carries a social-proof claim (customer count / testimonial framing)."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Oct 16, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "3 distinct live ads visible - enough running to compare messages against each other."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: Own website landing page."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 4,
+      "fail": 1,
+      "unknown": 10,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

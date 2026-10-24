@@ -1,0 +1,40 @@
+=== EMAIL FOR: Rayzon Solar ===
+City: Hyderabad
+To: contact@rayzonenergies.com
+Phone: +91 96380 00461 / +91 96380 00462 (toll-free 1800-123-1232)
+Website: https://rayzonsolar.com
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Rayzon_Solar.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-24 05:20
+
+--- SUBJECT ---
+Rayzon Solar: 1 live Hyderabad ad, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Rayzon Solar is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-24):
+
+  - 1 live ad on Meta, running since 13 October 2026
+  - every click lands in Instagram profile (off-site social)
+  - The single live ad (since 13 Oct 2026) clicks to an Instagram profile - not rayzonsolar.com. No landing page, no enquiry form, no pixel, no retargeting pool.
+  - The copy is scheme-branded ('PM Surya Ghar') with no offer, no number and no call to action. For a manufacturer this may be deliberate brand awareness, but it produces no measurable enquiries.
+
+You can verify every line yourself:
+
+  Library ID 2046407626037554: https://www.facebook.com/ads/library/?id=2046407626037554
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

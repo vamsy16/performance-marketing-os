@@ -2924,6 +2924,402 @@ LEADS = [
                              "650+ MW solar MMS delivered"),
         ],
     },
+    {
+        "company": "Sunova Green Energy",
+        "legal": "Sunova Green Energy Pvt Ltd",
+        "city": "Hyderabad",
+        "website": "https://sunovagreenenergy.com",
+        "email": "sunovagreenenergy@gmail.com",
+        "phone": "+91 99128 48596 / +91 98497 63391",
+        "fb_page": "https://www.facebook.com/61560712570253/",
+        "checked_on": "2026-10-24",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 1,
+                "results_label": "1 live ad seen in the 'rooftop solar Hyderabad' and 'solar AMC Hyderabad' searches",
+                "query": "rooftop solar Hyderabad",
+                "ads": [
+                    ad("1091780746736140", "Sunova Green Energy Private Limited", "Aug 31, 2026",
+                       "fb.me (inside Facebook)",
+                       "Install a Solar Rooftop System for your home and save up to Rs. 1,00,000 with "
+                       "Government Subsidy + Special Discount Offers. Up to Rs. 78,000 Subsidy "
+                       "Available. Additional Rs. 22,000 Discount. 30 Years Performance Life. 7+ "
+                       "Years Industry Experience. 5 Years Comprehensive AMC Support. Trusted by 500+ "
+                       "Homes Across Hyderabad. Get FREE Site Visit, Installation Guidance & Complete "
+                       "Warranty Support. Sunova Green Energy Pvt. Ltd. - Banjara Hills, Hyderabad. "
+                       "Call Now: 9912848596 / 9849763391."),
+                ],
+            },
+            "summary": (
+                "Sunova Green Energy is running 1 active Meta ad (Facebook), started 31 August 2026. "
+                "The ad stacks a Rs. 1,00,000 saving claim - Rs. 78,000 government subsidy plus a "
+                "Rs. 22,000 discount - with 30-year performance life, 7+ years of experience, 5-year "
+                "AMC and 'Trusted by 500+ Homes Across Hyderabad'. The click lands on an fb.me lead "
+                "form inside Facebook, so the spend never reaches sunovagreenenergy.com. The site "
+                "itself is a WordPress/Elementor build covering residential, commercial and "
+                "housing-society rooftop solar, on-grid / off-grid / hybrid systems, solar water "
+                "heaters, fencing and street lights, with a Banjara Hills corporate office and a "
+                "Gmail contact address. No Google Ads advertiser record was checked for this report "
+                "- that requires the full pipeline."),
+        },
+        "funnel": {
+            "type": "Facebook lead form (fb.me)",
+            "destination": "fb.me (inside Facebook)",
+            "meaning": (
+                "Every click opens a Facebook surface, not sunovagreenenergy.com. You own no pixel "
+                "on the landing experience, you cannot retarget the people who clicked and did not "
+                "enquire, and there is no page you can test a different headline or price on. With "
+                "a single ad live there is also no second creative angle to learn from."),
+        },
+        "findings": [
+            "The one live ad (since 31 Aug 2026) clicks to an fb.me lead form inside Facebook - "
+            "the spend never reaches sunovagreenenergy.com, so no pixel, no retargeting pool, no "
+            "testable landing page.",
+            "The ad's claim set (Rs. 78,000 subsidy + Rs. 22,000 discount + 5-year AMC + 500+ "
+            "homes + 7+ years) is backed by the site's service pages - on-grid, off-grid and "
+            "hybrid systems, housing-society installs, solar water heaters, fencing, street "
+            "lights - but the paid traffic never sees any of that proof.",
+            "One ad, one angle (subsidy + discount), all cold traffic. There is no retargeting ad "
+            "behind it and no second creative to test the AMC angle against the subsidy angle.",
+            "Contact identity is split: the site publishes a Gmail address "
+            "(sunovagreenenergy@gmail.com) as the enquiry route while the ad points to an "
+            "in-Facebook form - an enquiry can land in two places or none.",
+            "The ad is 7+ weeks old with no newer creative visible in the Ad Library - a refresh "
+            "is due before fatigue sets in.",
+        ],
+        "next_steps": [
+            ("Move the click onto a page you own",
+             "Point the ad at a dedicated Hyderabad landing page carrying the same Rs. 78,000 + "
+             "Rs. 22,000 + 5-year AMC offer, an enquiry form and the Meta Pixel - so every click "
+             "is measurable and retargetable."),
+            ("Install pixel + conversions API",
+             "One pixel plus the Conversions API gives you the audience of everyone who clicked "
+             "but did not submit the fb.me form - usually 10-20x the people who fill a form."),
+            ("Test the AMC angle as a second creative",
+             "5-year comprehensive AMC support is a different buying trigger from the subsidy - a "
+             "second creative tells you which one actually converts."),
+            ("Publish one inbox everywhere",
+             "Route the fb.me form alerts and the site contact address to the same inbox so an "
+             "enquiry can never sit unread."),
+        ],
+        "contact_facts": [
+            ("Email", "sunovagreenenergy@gmail.com (site contact page)"),
+            ("Phone / WhatsApp", "+91 99128 48596 / +91 98497 63391"),
+            ("Address", "Corporate Office, Road No-10, Banjara Hills, Hyderabad"),
+            ("Entity", "Sunova Green Energy Pvt Ltd - Banjara Hills installer; the ad claims 7+ "
+                      "years of experience and 500+ homes served"),
+            ("Meta page", "facebook.com - page ID 61560712570253 ('Sunova Green Energy Private "
+                          "Limited')"),
+            ("Service area", "sunovagreenenergy.com - residential, commercial and "
+                             "housing-society rooftop solar; on-grid, off-grid and hybrid; solar "
+                             "water heaters, fencing, street lights"),
+        ],
+        "site_evidence": {
+            "pixel": None,
+            "utm": None,
+            "checked_on": "2026-10-24",
+            "note": "Landing page read through a text proxy that strips scripts, so Meta Pixel "
+                    "code could not be confirmed either way; graded unknown per the catalog's "
+                    "runtime contract.",
+        },
+    },
+    {
+        "company": "Wisda Energy",
+        "legal": "Wisda Ventures Pvt Ltd",
+        "city": "Hyderabad",
+        "website": "https://wisda.in",
+        "email": "connect@wisda.in",
+        "phone": "+91 91000 47301 / +91 91001 26750",
+        "fb_page": "https://www.facebook.com/Wisdaenergy/",
+        "checked_on": "2026-10-24",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 1,
+                "results_label": "1 live ad seen in the 'rooftop solar Hyderabad' search",
+                "query": "rooftop solar Hyderabad",
+                "ads": [
+                    ad("1653176663099926", "Wisda Energy", "Oct 10, 2026",
+                       "fb.me (inside Facebook)",
+                       "Video ad: 'Hyderabad homeowners - Ready to go solar? Own a home in "
+                       "Hyderabad? Go Solar. Save More. Get a FREE home survey and subsidy "
+                       "assistance. Call us at 9100126750.' Creative text: 'Hyderabad "
+                       "Homeowners: Go Solar and Get Subsidy - Reduce your monthly electricity "
+                       "bill with a customized rooftop solar solution. Government subsidy "
+                       "assistance available.'"),
+                ],
+            },
+            "summary": (
+                "Wisda Energy (Wisda Ventures Pvt Ltd) is running 1 active Meta video ad, started "
+                "10 October 2026, offering Hyderabad homeowners a free home survey and subsidy "
+                "assistance. The click lands on an fb.me lead form inside Facebook, so the spend "
+                "never reaches wisda.in. The site is a Secunderabad (Tarnaka) office serving "
+                "Hyderabad with rooftop and ground-mount solar plus AMC, showcases Miyapur "
+                "installations at 3 kW and 5 kW, claims 1k+ happy customers, and lists TGREDCO "
+                "empanelment (TSRE240457). No Google Ads advertiser record was checked for this "
+                "report - that requires the full pipeline."),
+        },
+        "funnel": {
+            "type": "Facebook lead form (fb.me)",
+            "destination": "fb.me (inside Facebook)",
+            "meaning": (
+                "Every click opens a Facebook surface, not wisda.in. You own no pixel on the "
+                "landing experience, you cannot retarget the people who clicked and did not "
+                "enquire, and there is no page you can test a different headline or price on. "
+                "With a single video ad live there is also no second creative angle to learn "
+                "from."),
+        },
+        "findings": [
+            "The one live ad (since 10 Oct 2026) clicks to an fb.me lead form inside Facebook - "
+            "the spend never reaches wisda.in, so no pixel, no retargeting pool, no testable "
+            "landing page.",
+            "The ad's offer (free home survey + subsidy assistance) is backed on the site by the "
+            "TGREDCO empanelment number, the Miyapur 3 kW / 5 kW installation case studies and "
+            "the AMC service line - none of which the paid traffic ever sees.",
+            "One video ad, one angle (subsidy assistance), all cold traffic. No retargeting ad "
+            "behind it and no second creative to test the ground-mount or AMC angles.",
+            "Three inboxes are published across the site and the ad (connect@wisda.in plus two "
+            "Gmail addresses) with two phone numbers - an enquiry can land in any of them.",
+            "The ad is the only creative visible in the Ad Library and has been live about two "
+            "weeks - the account is dependent on one video holding its performance.",
+        ],
+        "next_steps": [
+            ("Move the click onto a page you own",
+             "Point the ad at a dedicated Hyderabad landing page carrying the free home survey + "
+             "subsidy assistance offer, an enquiry form and the Meta Pixel - so every click is "
+             "measurable and retargetable."),
+            ("Install pixel + conversions API",
+             "One pixel plus the Conversions API gives you the audience of everyone who clicked "
+             "but did not submit the fb.me form - usually 10-20x the people who fill a form."),
+            ("Test a second creative around ground-mount and AMC",
+             "The site's ground-mount and AMC lines are a separate buying trigger from the "
+             "subsidy - a second creative tells you which audience converts."),
+            ("Settle on one inbox and one number",
+             "Publish connect@wisda.in and one phone number everywhere (ads, forms, footer) so "
+             "an enquiry can never sit unread or land on the wrong address."),
+        ],
+        "contact_facts": [
+            ("Email", "connect@wisda.in (site also lists wisdaenergy@gmail.com and "
+                      "wisda.ramesh@gmail.com)"),
+            ("Phone / WhatsApp", "+91 91000 47301 / +91 91001 26750 (the ad lists 9100126750)"),
+            ("Address", "12-13-1146, Street No 11, Tarnaka, Secunderabad, Hyderabad 500017"),
+            ("Entity", "Wisda Ventures Pvt Ltd - TGREDCO-empanelled supplier (TSRE240457); "
+                      "rooftop and ground-mount solar plus AMC; 1k+ customers claimed"),
+            ("Meta page", "facebook.com/Wisdaenergy"),
+            ("Service area", "wisda.in - Hyderabad and Secunderabad; installations shown at "
+                             "Miyapur (3 kW and 5 kW)"),
+        ],
+        "site_evidence": {
+            "pixel": None,
+            "utm": None,
+            "checked_on": "2026-10-24",
+            "note": "Landing page read through a text proxy that strips scripts, so Meta Pixel "
+                    "code could not be confirmed either way; graded unknown per the catalog's "
+                    "runtime contract.",
+        },
+    },
+    {
+        "company": "SolarSquare Energy",
+        "legal": "Solar Square Energy Pvt. Ltd.",
+        "city": "Hyderabad",
+        "website": "https://www.solarsquare.in/rooftop-solar-in-hyderabad-1",
+        "email": "welisten@solarsquare.in",
+        "phone": "+91 98300 03000 / +91 70300 03000",
+        "fb_page": "https://www.facebook.com/SolarSquareEnergy/",
+        "checked_on": "2026-10-24",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 3,
+                "results_label": "3 live ads seen in the 'solar company Hyderabad' and 'solar installation Hyderabad' searches (creatives shared across 2, 6 and 2 ads)",
+                "query": "solar company Hyderabad",
+                "ads": [
+                    ad("2146365376089965", "SolarSquare Energy", "Oct 12, 2026",
+                       "https://www.solarsquare.in/rooftop-solar-in-hyderabad-1",
+                       "Hyderabad residents, tired of high electricity bills every summer? Enjoy "
+                       "up to 90% lower electricity bills with SolarSquare! Guaranteed Savings. "
+                       "Trusted by 36,000+ Homes. Book your free consultation today!"),
+                    ad("1472241928117694", "SolarSquare Energy", "Oct 13, 2026",
+                       "https://www.solarsquare.in/rooftop-solar-in-hyderabad-1",
+                       "Think solar is only for the rich? Hyderabad, what if your solar savings "
+                       "came with a money-back guarantee? Guaranteed Savings. Trusted by 36,000+ "
+                       "Homes. India's No. 1 Home Solar Company. Switch to SolarSquare! (6 ads "
+                       "use this creative and text.)"),
+                    ad("2463859894143954", "SolarSquare Energy", "Oct 16, 2026",
+                       "https://www.solarsquare.in/rooftop-solar-in-hyderabad-1",
+                       "Don't go Solar before having a FREE consultation from India's Solar "
+                       "Experts. Book today. (2 ads use this creative and text.)"),
+                ],
+            },
+            "summary": (
+                "SolarSquare Energy is running at least 3 active Meta ads targeting Hyderabad "
+                "(creatives shared across 2, 6 and 2 ads), started 12, 13 and 16 October 2026. "
+                "Unlike the local installers, these ads land on a page SolarSquare owns - "
+                "solarsquare.in/rooftop-solar-in-hyderabad-1 - which carries Hyderabad-specific "
+                "pricing (2 kW about Rs. 1.07 lakh to 5 kW about Rs. 2.65 lakh with subsidy, "
+                "dated 01 October 2026), an EMI calculator, a free-consultation form and the "
+                "GoodZero money-back savings plan. SolarSquare is a national brand (36,000+ "
+                "homes, 31 cities across 10 states) and the Hyderabad landing page is one of "
+                "many city pages. No Google Ads advertiser record was checked for this report - "
+                "that requires the full pipeline."),
+        },
+        "funnel": {
+            "type": "Own website landing page",
+            "destination": "https://www.solarsquare.in/rooftop-solar-in-hyderabad-1",
+            "meaning": (
+                "The click lands on a page SolarSquare owns and controls, which is the right "
+                "shape: the page can carry a pixel, UTMs, a form and a testable headline. The "
+                "open questions public data cannot answer are whether the pixel and UTM scheme "
+                "are actually installed, and whether the Hyderabad page converts better than the "
+                "30 other city pages competing for the same spend."),
+        },
+        "findings": [
+            "The ads land on SolarSquare's own Hyderabad landing page - the only lead in this "
+            "batch where paid clicks reach a page the advertiser owns and can measure.",
+            "Multiple live creatives are running (bill-savings angle, money-back guarantee "
+            "angle, free-consultation angle), so the account is already testing messages "
+            "against each other.",
+            "The Hyderabad page carries a full pricing table dated 01 October 2026 with a "
+            "'subject to change' note - worth confirming those numbers still match current "
+            "DISCOM charges before the next spend cycle.",
+            "The ads captured in these searches are all in English, while most Hyderabad "
+            "competitors run Telugu-language creatives for the same subsidy audience - a "
+            "language test is an obvious gap.",
+            "Public data cannot show whether the Hyderabad page carries the Meta Pixel and UTM "
+            "scheme, what the spend is, or which creative is winning - that needs account "
+            "access and is marked unknown in the control review.",
+        ],
+        "next_steps": [
+            ("Verify pixel + UTM scheme on the Hyderabad page",
+             "Confirm the Meta Pixel fires on the Hyderabad landing page and that every ad "
+             "carries UTMs, so the bill-savings, money-back and free-consultation creatives can "
+             "be compared against each other on form fills, not clicks."),
+            ("Run a Telugu creative for the Hyderabad market",
+             "Every ad captured is English while local competitors run Telugu subsidy ads - a "
+             "Telugu version of the strongest creative tests an untapped audience."),
+            ("Keep the Hyderabad pricing table current",
+             "The page's subsidy pricing is dated 01 October 2026 and flagged 'subject to "
+             "change'; refreshing it (and dating it) keeps the offer credible."),
+            ("Put the money-back guarantee above the fold",
+             "The GoodZero guarantee is the sharpest differentiator in the ad set - the landing "
+             "page should lead with it, not bury it below the calculator."),
+        ],
+        "contact_facts": [
+            ("Email", "welisten@solarsquare.in (contact page)"),
+            ("Phone / WhatsApp", "+91 98300 03000 / +91 70300 03000"),
+            ("Address", "Offices across India including Hyderabad (city list on the contact "
+                        "page); Hyderabad landing page at "
+                        "solarsquare.in/rooftop-solar-in-hyderabad-1"),
+            ("Entity", "Solar Square Energy Pvt. Ltd. - national rooftop solar company, 36,000+ "
+                      "homes solarised, 200 MW+ installed, 31 cities across 10 states"),
+            ("Meta page", "facebook.com/SolarSquareEnergy"),
+            ("Service area", "solarsquare.in - Hyderabad, Rangareddy, Sangareddy, Trimulgherry, "
+                             "Warangal plus 26 other cities"),
+        ],
+        "site_evidence": {
+            "pixel": None,
+            "utm": None,
+            "checked_on": "2026-10-24",
+            "note": "Landing page read through a text proxy that strips scripts, so Meta Pixel "
+                    "and UTM parameters could not be confirmed either way; graded unknown per "
+                    "the catalog's runtime contract.",
+        },
+    },
+    {
+        "company": "Rayzon Solar",
+        "legal": "Rayzon Solar Ltd",
+        "city": "Hyderabad",
+        "website": "https://rayzonsolar.com",
+        "email": "contact@rayzonenergies.com",
+        "phone": "+91 96380 00461 / +91 96380 00462 (toll-free 1800-123-1232)",
+        "fb_page": "https://www.facebook.com/RayzonSolar/",
+        "checked_on": "2026-10-24",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 1,
+                "results_label": "1 live ad seen in the Telugu solar-subsidy search",
+                "query": "\u0b38\u0b4b\u0b32\u0b3e\u0b30\u0b4d \u0b38\u0b2c\u0b4d\u0b38\u0b3f\u0b21\u0bc0",
+                "ads": [
+                    ad("2046407626037554", "Rayzon Solar", "Oct 13, 2026",
+                       "Instagram profile (instagram.com/rayzon_solar)",
+                       "Scheme-branded creative reading 'PM Surya Ghar', linking to the Rayzon "
+                       "Solar Instagram profile."),
+                ],
+            },
+            "summary": (
+                "Rayzon Solar is running 1 active Meta ad, started 13 October 2026. The creative "
+                "is scheme-branded ('PM Surya Ghar') and the click goes to an Instagram profile "
+                "- not rayzonsolar.com - so there is no landing page, no form and no pixel "
+                "behind the spend. Rayzon is a Surat-based module manufacturer (Rayzon Solar "
+                "Ltd, Millennium Business Hub, Varachha Road, with factories at Kim and Kosamba) "
+                "whose site carries the proof stack the ad never shows: 6 GW capacity, ALMM "
+                "listing, Ecovadis certificate and a 360-degree factory tour. No Google Ads "
+                "advertiser record was checked for this report - that requires the full "
+                "pipeline."),
+        },
+        "funnel": {
+            "type": "Instagram profile (off-site social)",
+            "destination": "https://instagram.com/rayzon_solar",
+            "meaning": (
+                "The click leaves Meta for Instagram - a profile, not a page you can measure or "
+                "test. There is no landing page, no enquiry form, no pixel and no retargeting "
+                "pool, so the spend produces profile visits and nothing that can be optimised "
+                "against a lead."),
+        },
+        "findings": [
+            "The single live ad (since 13 Oct 2026) clicks to an Instagram profile - not "
+            "rayzonsolar.com. No landing page, no enquiry form, no pixel, no retargeting pool.",
+            "The copy is scheme-branded ('PM Surya Ghar') with no offer, no number and no call "
+            "to action. For a manufacturer this may be deliberate brand awareness, but it "
+            "produces no measurable enquiries.",
+            "rayzonsolar.com carries the full proof stack - 6 GW manufacturing capacity, ALMM "
+            "listing, Ecovadis certificate, 360-degree factory tour - none of which the ad "
+            "shows.",
+            "One ad, one creative, one destination, all cold traffic - there is no second "
+            "creative to test and no retargeting ad behind it.",
+            "Public data cannot show the spend, the audience or the objective behind the ad - "
+            "those controls are marked unknown in the control review.",
+        ],
+        "next_steps": [
+            ("Point the ad at a page you own",
+             "Send the PM Surya Ghar ad to a landing page on rayzonsolar.com with an enquiry "
+             "form and the Meta Pixel, so the click can be measured and retargeted."),
+            ("Turn the manufacturer proof into the creative",
+             "6 GW capacity, ALMM listing and the Ecovadis certificate are stronger "
+             "differentiators than a scheme logo - they are already on the site, just not in "
+             "the ad."),
+            ("Add a second creative to test",
+             "A distributor / EPC-facing angle tested against the PM Surya Ghar angle tells you "
+             "which audience the spend is actually reaching."),
+            ("Decide what the ad is for",
+             "If the objective is enquiries, the Instagram destination cannot deliver them; if "
+             "it is awareness, the objective and reporting need to be set that way in the "
+             "account."),
+        ],
+        "contact_facts": [
+            ("Email", "contact@rayzonenergies.com (contact page)"),
+            ("Phone / WhatsApp", "+91 96380 00461 / +91 96380 00462; toll-free 1800-123-1232"),
+            ("Address", "1104-1107 & 1109-1110, 11th Floor, Millennium Business Hub, Opp. Deep "
+                        "Kamal Mall, Varachha Road, Sarthana Jakatnaka, Surat 395006; factories "
+                        "at Kim (394110) and Kosamba (394120), Surat"),
+            ("Entity", "Rayzon Solar Ltd - Surat module manufacturer, 6 GW capacity, ALMM-listed, "
+                      "Ecovadis-rated; Mon-Sat 9am-7pm"),
+            ("Meta page", "facebook.com/RayzonSolar"),
+            ("Service area", "rayzonsolar.com - India-wide module manufacturer; the live ad "
+                             "clicks to instagram.com/rayzon_solar"),
+        ],
+        "site_evidence": {
+            "pixel": None,
+            "utm": None,
+            "checked_on": "2026-10-24",
+            "note": "Contact page read through a text proxy that strips scripts, so Meta Pixel "
+                    "code could not be confirmed either way; graded unknown per the catalog's "
+                    "runtime contract. The live ad does not link to the site at all - it links "
+                    "to Instagram.",
+        },
+    },
 ]
 
 

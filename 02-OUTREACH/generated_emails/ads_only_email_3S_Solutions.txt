@@ -6,7 +6,7 @@ Website: https://3ssol.in/
 Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
 ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_3S_Solutions.pdf
 Template: ads_only_live_ad_report
-Generated: 2026-10-23 03:32
+Generated: 2026-10-24 05:20
 
 --- SUBJECT ---
 3S Solutions: 4 live Hyderabad ads, one funnel

@@ -1,0 +1,40 @@
+=== EMAIL FOR: Wisda Energy ===
+City: Hyderabad
+To: connect@wisda.in
+Phone: +91 91000 47301 / +91 91001 26750
+Website: https://wisda.in
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Wisda_Energy.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-24 05:20
+
+--- SUBJECT ---
+Wisda Energy: 1 live Hyderabad ad, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Wisda Energy is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-24):
+
+  - 1 live ad on Meta, running since 10 October 2026
+  - every click lands in Facebook lead form (fb.me)
+  - The one live ad (since 10 Oct 2026) clicks to an fb.me lead form inside Facebook - the spend never reaches wisda.in, so no pixel, no retargeting pool, no testable landing page.
+  - The ad's offer (free home survey + subsidy assistance) is backed on the site by the TGREDCO empanelment number, the Miyapur 3 kW / 5 kW installation case studies and the AMC service line - none of which the paid traffic ever sees.
+
+You can verify every line yourself:
+
+  Library ID 1653176663099926: https://www.facebook.com/ads/library/?id=1653176663099926
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

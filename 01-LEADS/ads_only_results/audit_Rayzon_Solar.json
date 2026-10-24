@@ -1,0 +1,215 @@
+{
+  "company": "Rayzon Solar",
+  "legal": "Rayzon Solar Ltd",
+  "city": "Hyderabad",
+  "website": "https://rayzonsolar.com",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-24",
+  "generated_at": "2026-10-24 05:19",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "1 live ad seen in the Telugu solar-subsidy search",
+      "query": "ସୋଲାର୍ ସବ୍ସିଡீ",
+      "ads": [
+        {
+          "library_id": "2046407626037554",
+          "library_url": "https://www.facebook.com/ads/library/?id=2046407626037554",
+          "page_name": "Rayzon Solar",
+          "started": "Oct 13, 2026",
+          "destination": "Instagram profile (instagram.com/rayzon_solar)",
+          "text": "Scheme-branded creative reading 'PM Surya Ghar', linking to the Rayzon Solar Instagram profile.",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Rayzon Solar is running 1 active Meta ad, started 13 October 2026. The creative is scheme-branded ('PM Surya Ghar') and the click goes to an Instagram profile - not rayzonsolar.com - so there is no landing page, no form and no pixel behind the spend. Rayzon is a Surat-based module manufacturer (Rayzon Solar Ltd, Millennium Business Hub, Varachha Road, with factories at Kim and Kosamba) whose site carries the proof stack the ad never shows: 6 GW capacity, ALMM listing, Ecovadis certificate and a 360-degree factory tour. No Google Ads advertiser record was checked for this report - that requires the full pipeline."
+  },
+  "funnel": {
+    "type": "Instagram profile (off-site social)",
+    "destination": "https://instagram.com/rayzon_solar",
+    "meaning": "The click leaves Meta for Instagram - a profile, not a page you can measure or test. There is no landing page, no enquiry form, no pixel and no retargeting pool, so the spend produces profile visits and nothing that can be optimised against a lead."
+  },
+  "findings": [
+    "The single live ad (since 13 Oct 2026) clicks to an Instagram profile - not rayzonsolar.com. No landing page, no enquiry form, no pixel, no retargeting pool.",
+    "The copy is scheme-branded ('PM Surya Ghar') with no offer, no number and no call to action. For a manufacturer this may be deliberate brand awareness, but it produces no measurable enquiries.",
+    "rayzonsolar.com carries the full proof stack - 6 GW manufacturing capacity, ALMM listing, Ecovadis certificate, 360-degree factory tour - none of which the ad shows.",
+    "One ad, one creative, one destination, all cold traffic - there is no second creative to test and no retargeting ad behind it.",
+    "Public data cannot show the spend, the audience or the objective behind the ad - those controls are marked unknown in the control review."
+  ],
+  "next_steps": [
+    [
+      "Point the ad at a page you own",
+      "Send the PM Surya Ghar ad to a landing page on rayzonsolar.com with an enquiry form and the Meta Pixel, so the click can be measured and retargeted."
+    ],
+    [
+      "Turn the manufacturer proof into the creative",
+      "6 GW capacity, ALMM listing and the Ecovadis certificate are stronger differentiators than a scheme logo - they are already on the site, just not in the ad."
+    ],
+    [
+      "Add a second creative to test",
+      "A distributor / EPC-facing angle tested against the PM Surya Ghar angle tells you which audience the spend is actually reaching."
+    ],
+    [
+      "Decide what the ad is for",
+      "If the objective is enquiries, the Instagram destination cannot deliver them; if it is awareness, the objective and reporting need to be set that way in the account."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "contact@rayzonenergies.com (contact page)"
+    ],
+    [
+      "Phone / WhatsApp",
+      "+91 96380 00461 / +91 96380 00462; toll-free 1800-123-1232"
+    ],
+    [
+      "Address",
+      "1104-1107 & 1109-1110, 11th Floor, Millennium Business Hub, Opp. Deep Kamal Mall, Varachha Road, Sarthana Jakatnaka, Surat 395006; factories at Kim (394110) and Kosamba (394120), Surat"
+    ],
+    [
+      "Entity",
+      "Rayzon Solar Ltd - Surat module manufacturer, 6 GW capacity, ALMM-listed, Ecovadis-rated; Mon-Sat 9am-7pm"
+    ],
+    [
+      "Meta page",
+      "facebook.com/RayzonSolar"
+    ],
+    [
+      "Service area",
+      "rayzonsolar.com - India-wide module manufacturer; the live ad clicks to instagram.com/rayzon_solar"
+    ]
+  ],
+  "contact": {
+    "email": "contact@rayzonenergies.com",
+    "phone": "+91 96380 00461 / +91 96380 00462 (toll-free 1800-123-1232)",
+    "fb_page": "https://www.facebook.com/RayzonSolar/"
+  },
+  "site_evidence": {
+    "pixel": null,
+    "utm": null,
+    "checked_on": "2026-10-24",
+    "note": "Contact page read through a text proxy that strips scripts, so Meta Pixel code could not be confirmed either way; graded unknown per the catalog's runtime contract. The live ad does not link to the site at all - it links to Instagram."
+  },
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad copy could not be read for these ads."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Oct 13, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "fail",
+        "evidence": "A single live ad - no internal comparison, no safety net if it fatigues."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: Instagram profile (off-site social)."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 2,
+      "fail": 2,
+      "unknown": 11,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}
