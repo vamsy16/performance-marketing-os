@@ -741,6 +741,81 @@ def ads_only_tiles(audit):
     return tiles
 
 
+def ads_control_section(audit):
+    """Ads-audit control review - claude-ads methodology (standing owner
+    instruction 2026-10-24). Grades only what public evidence supports; every
+    account-only control is rendered as unknown, never guessed."""
+    try:
+        from ads_audit_controls import evaluate
+    except Exception:
+        return []
+    result = audit.get("ads_audit") or evaluate(audit, audit.get("site_evidence"))
+    controls = result.get("controls") or []
+    if not controls:
+        return []
+    counts = result.get("counts") or {}
+    story = []
+    story.extend(section_bar("Ads audit - control review",
+                             "methodology: claude-ads Meta control catalog"))
+    story.append(Paragraph(
+        "Every control below is graded against what is publicly verifiable - "
+        "the live ad cards in the Meta Ad Library plus this company's own "
+        "landing page. Controls that need Ads Manager access are marked "
+        "<b>unknown</b> on purpose rather than guessed.", ST["body"]))
+    story.append(Spacer(1, 2.5 * mm))
+
+    label = {
+        "pass": ('<font color="#137333"><b>OK</b></font>', GREEN),
+        "fail": ('<font color="#C5221F"><b>GAP</b></font>', RED),
+        "unknown": ('<font color="#5F6380"><b>UNKNOWN</b></font>', GREY),
+        "not_applicable": ('<font color="#5F6380"><b>N/A</b></font>', GREY),
+    }
+    rows = [[
+        Paragraph("<b>ID</b>", ST["cell_b"]),
+        Paragraph("<b>Control</b>", ST["cell_b"]),
+        Paragraph("<b>Status</b>", ST["cell_b"]),
+        Paragraph("<b>Evidence read live</b>", ST["cell_b"]),
+    ]]
+    for c in controls:
+        dispo = c.get("disposition", "unknown")
+        html, _ = label.get(dispo, label["unknown"])
+        rows.append([
+            Paragraph(T(c.get("id", "")), ST["cell_b"]),
+            Paragraph(T(c.get("name", "")), ST["cell"]),
+            Paragraph(html, ST["cell"]),
+            Paragraph(T(c.get("evidence", "")), ST["cell_grey"]),
+        ])
+    table = Table(rows, colWidths=[12 * mm, 40 * mm, 18 * mm,
+                                   CONTENT_W - 70 * mm], repeatRows=1)
+    table.setStyle(TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+        ("LEFTPADDING", (0, 0), (-1, -1), 5),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 5),
+        ("TOPPADDING", (0, 0), (-1, -1), 3.2),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 3.2),
+        ("ROWBACKGROUNDS", (0, 0), (-1, -1), [colors.white, LIGHT]),
+        ("BOX", (0, 0), (-1, -1), 0.5, BORDER),
+        ("LINEBELOW", (0, 0), (-1, -1), 0.4, BORDER),
+        ("BACKGROUND", (0, 0), (-1, 0), LIGHT),
+    ]))
+    story.append(table)
+    story.append(Spacer(1, 2.5 * mm))
+    story.append(Paragraph(
+        f"<b>Control review result:</b> {counts.get('pass', 0)} OK · "
+        f"{counts.get('fail', 0)} gaps · {counts.get('unknown', 0)} unknown "
+        f"(need account access) · {counts.get('not_applicable', 0)} not "
+        f"applicable.", ST["body_b"]))
+    story.append(Spacer(1, 1.5 * mm))
+    story.append(Paragraph(
+        "Still ungraded because they are account-only: " +
+        T(result.get("account_only", "")) + ".", ST["small"]))
+    story.append(Spacer(1, 1.5 * mm))
+    story.append(Paragraph(
+        "Method: " + T(result.get("methodology", "")), ST["small"]))
+    story.append(Spacer(1, 4 * mm))
+    return story
+
+
 def build_ads_only_story(audit):
     story = []
     company = audit.get("company") or audit.get("website", "")
@@ -796,6 +871,8 @@ def build_ads_only_story(audit):
         ]))
     else:
         story.append(empty_box("No ad destination was captured for this lead."))
+
+    story.extend(ads_control_section(audit))
 
     findings = audit.get("findings") or []
     if findings:
@@ -943,6 +1020,8 @@ def build_story(audit):
                 "No Google Ads advertiser record was found for this company or domain. That means nobody is "
                 "bidding on searches like 'solar panel price in " + (city or "your city") +
                 "' in your name - a high-intent demand your competitors can take for free."))
+
+    story.extend(ads_control_section(audit))
 
     story.extend(section_bar("Competitor ad activity", "who is buying attention in your market"))
 

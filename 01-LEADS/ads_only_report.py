@@ -2972,7 +2972,15 @@ def build(lead):
         "contact_facts": lead.get("contact_facts", []),
         "contact": {"email": lead.get("email", ""), "phone": lead.get("phone", ""),
                     "fb_page": lead.get("fb_page", "")},
+        "site_evidence": lead.get("site_evidence", {}),
     }
+    # Ads-audit control review (claude-ads methodology) - stored in the JSON so
+    # the grading is inspectable, and rendered as its own PDF section.
+    try:
+        from ads_audit_controls import evaluate
+        audit["ads_audit"] = evaluate(lead, lead.get("site_evidence"))
+    except Exception as exc:  # never block the build on the control review
+        print(f"    ! control review skipped for {lead['company']}: {exc}")
     os.makedirs(RESULTS_DIR, exist_ok=True)
     json_path = os.path.join(RESULTS_DIR, f"audit_{slug(lead['company'])}.json")
     with open(json_path, "w", encoding="utf-8") as f:

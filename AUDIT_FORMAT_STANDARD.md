@@ -65,6 +65,35 @@ Never hand-roll a different layout, and never feed a partial audit JSON into
 - Footer: auto-generation note + "Website findings reflect the homepage at the
   time of the audit; ad-library data is live public data from Meta and Google."
 
+## Ads-audit control review — claude-ads methodology (standing instruction, 2026-10-24)
+
+**Owner instruction:** "from now please be strictly there ads audit in this repo
+<https://github.com/vamsy16/claude-ads> use those as well while preparing audit…
+don't miss ads audit pdf format like audit_Ksquare_Energy… keep that ads audit
+from claude ads as well in those audit pdf."
+
+Every audit PDF (full audits **and** ads-only reports) now carries an extra
+section — **"Ads audit - control review"** — rendered by
+`ads_control_section()` in `01-LEADS/audit_pdf.py` from data produced by
+`01-LEADS/ads_audit_controls.py`.
+
+- Control IDs and intents come from the claude-ads Meta Ads audit catalog
+  (`ads/references/meta-audit.md`, registry M01–M72). The repo is cloned at
+  `/tmp/claude-ads` for reference.
+- Only controls that **public evidence** can grade are graded: the Meta Ad
+  Library ad cards (copy, formats, start dates, destinations) plus the lead's
+  own landing page when its source was pulled (`site_evidence.pixel`).
+- The catalog's own contract is followed: a control with no evidence is
+  `unknown`, never guessed; no platform-wide thresholds or broad benchmarks
+  are applied. Account-only controls (CAPI, EMQ, bidding, budgets, audiences,
+  learning phase, frequency…) are listed as one explicit "needs account
+  access" row.
+- `evaluate(lead, site_evidence)` runs inside `ads_only_report.py build()` and
+  is stored in the JSON as `ads_audit`, so the grading is inspectable.
+- The Ksquare layout above is unchanged — the section is inserted after the
+  live-ads / funnel content, before findings (ads-only) or before competitor
+  activity (full audits).
+
 ## Honesty rules (unchanged — they apply to every Ksquare-format audit)
 
 - Live data only. No invented audit scores, pixel counts, PageSpeed numbers or
