@@ -65,6 +65,76 @@ Never hand-roll a different layout, and never feed a partial audit JSON into
 - Footer: auto-generation note + "Website findings reflect the homepage at the
   time of the audit; ad-library data is live public data from Meta and Google."
 
+## Ads-only reports use the SAME 5-page Ksquare layout (standing instruction, 2026-10-24)
+
+**Owner instruction:** "New batch Ad audit pdf is not that good. Generate like
+this audit_Ksquare_Energy pdf. You also check all these things and keep the
+pdf's like that strictly. No stimulate or some demo data what you found keep
+that data only audit like that everything should be with real live data."
+
+An ads-only report is no longer a short ad-activity sheet. When the lead's
+website has actually been read, the report is the **full Ksquare 5-page audit**:
+
+- `build_ads_only_story()` in `01-LEADS/audit_pdf.py` detects
+  `audit["site_audit"]` and delegates to `build_story()` — the exact same
+  engine that renders `audit_Ksquare_Energy.pdf`. Same sections, same order,
+  same wording, same CTA. Never hand-roll a second layout.
+- Website findings live **nested under `site_audit`** in the JSON
+  (`pixels`, `seo`, `conversion`, `pagespeed`, `page_count`,
+  `local_signals`, `score`, `ssl`, `final_url`, `audit_date`) so an ads-only
+  record never masquerades as a full-audit JSON.
+- A green **"WHAT WAS READ LIVE FOR THIS REPORT"** panel is inserted under the
+  title rule, naming the ad-library read date, the website read method, and
+  everything that was **not** measured. Where a specific lead has rows that
+  could not be checked, a `site_audit.scope_note` explains why.
+- Reports with **no** `site_audit` keep the old short layout and its
+  "WEBSITE AUDIT NOT RUN" banner — that path is unchanged.
+- The claude-ads control review is still included (see below); real page-source
+  evidence now upgrades `M01 Meta Pixel installed` from `unknown` to a graded
+  pass/fail.
+
+### How the live website data is actually obtained
+
+`ad_library.py` cannot reach arbitrary sites from the sandbox. The working
+channel is the **W3C Nu HTML Checker with `showsource=yes`**:
+
+```
+https://validator.w3.org/nu/?doc=<url>&showsource=yes
+```
+
+It returns the raw served HTML with `<script>` tags intact, which is what makes
+Meta Pixel / GA4 / GTM / Clarity / Hotjar / Google Ads tag detection real rather
+than assumed. Caveats: the error list precedes the source, chunk counts vary
+wildly by site (Wisda 21 chunks, Sunova 94, SolarSquare 31, Rayzon 13), and each
+chunk returns only ~1,500 characters — budget 3–6 chunk fetches per site and
+probe indices to find where the source starts. A direct page fetch of the same
+URL supplies headings, forms, links, CTAs, testimonials, pricing and image alt
+text.
+
+Batch 10 was rebuilt this way by `01-LEADS/build_batch10_ksquare.py` (real data
+for Sunova, Wisda, SolarSquare and Rayzon is recorded in that file with the
+source of every value).
+
+### Never guess a value — the three-state rule
+
+`calculate_audit_score()` in `01-LEADS/ads_audit.py` and the technical-snapshot
+renderer treat a check recorded as `None` as **not measured**: it is neither
+penalised nor counted as a win, and it renders as
+"Not checked in this pass". A check recorded `False` is a real, measured
+absence and renders as MISSING. Confusing the two is how fake audits happen.
+
+- PageSpeed mobile score + LCP → "Not available at audit time (API returned 429)"
+  (the keyless API's quota is 0/day — the same failure the reference Ksquare PDF
+  reports).
+- Server response time, Google Ads Transparency records, sitemap page counts →
+  "Not checked in this pass" when the lookup was not run. `build_story()` now
+  distinguishes "checked, none found" from "not checked" for the Google Ads and
+  competitor sections — an empty `google_own` / `meta_competitors` dict must
+  never render as a "no record found" claim.
+- `verify_report.py --ads-only` enforces the flip: with `site_audit` present the
+  report must prove it is the full 5-page layout and carry no placeholder values;
+  without it, the old "WEBSITE AUDIT NOT RUN" rules apply unchanged.
+
 ## Ads-audit control review — claude-ads methodology (standing instruction, 2026-10-24)
 
 **Owner instruction:** "from now please be strictly there ads audit in this repo

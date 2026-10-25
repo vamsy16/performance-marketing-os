@@ -257,84 +257,100 @@ def generate_ad_check_urls(website, company_name):
 # ---------------------------------------------------------------------------
 
 def calculate_audit_score(checks, pixels, conversion, seo, pagespeed):
-    """Score 0-100. Higher = more problems = better sales opportunity for you."""
+    """Score 0-100. Higher = more problems = better sales opportunity for you.
+
+    A check recorded as None means "not measured" (for example the keyless
+    PageSpeed API returned 429, or a minified page head could not be parsed).
+    An unmeasured check is neither penalised nor counted as a win - it must
+    never be reported as a finding in either direction.
+    """
     score = 0
     issues = []
     wins = []
 
-    # Tracking (20 points available — missing = your opportunity)
-    if not pixels["meta_pixel"]:
+    def flag(section, key):
+        value = section.get(key)
+        return None if value is None else bool(value)
+
+    # Tracking (20 points available - missing = your opportunity)
+    if flag(pixels, "meta_pixel") is False:
         score += 5
         issues.append("No Meta Pixel installed — can't run retargeting or track ad conversions")
-    else:
+    elif flag(pixels, "meta_pixel"):
         wins.append("Meta Pixel is installed")
 
-    if not pixels["google_ads"] and not pixels["google_tag_manager"]:
+    if flag(pixels, "google_ads") is False and flag(pixels, "google_tag_manager") is False:
         score += 5
         issues.append("No Google Ads / GTM tracking — can't measure ad performance")
-    else:
+    elif flag(pixels, "google_ads") or flag(pixels, "google_tag_manager"):
         wins.append("Google tracking is present")
 
-    if not pixels["google_analytics_ga4"] and not pixels["google_analytics_ua"]:
+    if flag(pixels, "google_analytics_ga4") is False and flag(pixels, "google_analytics_ua") is False:
         score += 5
         issues.append("No Google Analytics — flying blind on website traffic")
-    else:
+    elif flag(pixels, "google_analytics_ga4") or flag(pixels, "google_analytics_ua"):
         wins.append("Google Analytics is installed")
 
     # Conversion elements (25 points)
-    if not conversion["has_contact_form"]:
+    if flag(conversion, "has_contact_form") is False:
         score += 8
         issues.append("No contact form on homepage — visitors can't easily enquire")
-    else:
+    elif flag(conversion, "has_contact_form"):
         wins.append("Contact form exists")
 
-    if not conversion["has_whatsapp_link"]:
+    if flag(conversion, "has_whatsapp_link") is False:
         score += 5
         issues.append("No WhatsApp link — losing mobile leads (WhatsApp converts 3x better for Indian home services)")
-    else:
+    elif flag(conversion, "has_whatsapp_link"):
         wins.append("WhatsApp link present")
 
-    if conversion["has_cta_buttons"] == 0:
+    cta = conversion.get("has_cta_buttons")
+    if cta is None:
+        pass
+    elif cta == 0:
         score += 7
         issues.append("No clear call-to-action buttons on homepage")
-    elif conversion["has_cta_buttons"] < 3:
+    elif cta < 3:
         score += 3
         issues.append("Only 1-2 CTA buttons — could be more aggressive")
     else:
-        wins.append(f"Good CTA presence ({conversion['has_cta_buttons']} buttons)")
+        wins.append(f"Good CTA presence ({cta} buttons)")
 
-    if not conversion["has_live_chat"]:
+    if flag(conversion, "has_live_chat") is False:
         score += 3
         issues.append("No live chat — missing after-hours leads")
-    else:
+    elif flag(conversion, "has_live_chat"):
         wins.append("Live chat present")
 
-    if not conversion["has_testimonials"]:
+    if flag(conversion, "has_testimonials") is False:
         score += 2
         issues.append("No visible testimonials/social proof on homepage")
-    else:
+    elif flag(conversion, "has_testimonials"):
         wins.append("Testimonials visible")
 
     # SEO (20 points)
-    if not seo["has_meta_description"]:
+    if flag(seo, "has_meta_description") is False:
         score += 4
         issues.append("No meta description — lower click-through from Google")
-    if seo["h1_count"] == 0:
+
+    h1 = seo.get("h1_count")
+    if h1 == 0:
         score += 4
         issues.append("No H1 tag on homepage")
-    elif seo["h1_count"] > 1:
+    elif h1 is not None and h1 > 1:
         score += 1
-        issues.append(f"Multiple H1 tags ({seo['h1_count']}) — confuses Google")
-    if not seo["has_schema"]:
+        issues.append(f"Multiple H1 tags ({h1}) — confuses Google")
+
+    if flag(seo, "has_schema") is False:
         score += 4
-        issues.append("No structured data (Schema.org) — missing rich results in Google")
-    if not seo["has_og_tags"]:
+        issues.append("No structured data (Schema.org) - missing rich results in Google")
+    if flag(seo, "has_og_tags") is False:
         score += 3
-        issues.append("No Open Graph tags — links look bad when shared on social/WhatsApp")
-    if seo["images_without_alt"] > 0:
+        issues.append("No Open Graph tags - links look bad when shared on social/WhatsApp")
+    if (seo.get("images_without_alt") or 0) > 0:
         score += 2
         issues.append(f"{seo['images_without_alt']} images missing alt text — hurts SEO")
-    if not seo["has_favicon"]:
+    if flag(seo, "has_favicon") is False:
         score += 1
         issues.append("No favicon — looks unprofessional in browser tabs")
 
@@ -350,8 +366,7 @@ def calculate_audit_score(checks, pixels, conversion, seo, pagespeed):
         else:
             wins.append(f"Good mobile speed: {perf}/100")
 
-    # HTTPS
-    # (checked separately)
+    # HTTPS is checked separately (ssl flag on the audit record).
 
     return {
         "score": min(score, 100),

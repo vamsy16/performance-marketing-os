@@ -4,10 +4,10 @@
   "city": "Hyderabad",
   "website": "https://www.solarsquare.in/rooftop-solar-in-hyderabad-1",
   "ads_only": true,
-  "website_audit_run": false,
+  "website_audit_run": true,
   "checked_on": "2026-10-24",
   "generated_at": "2026-10-24 05:19",
-  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website (page source read through the W3C Nu HTML Checker)",
   "ad_library": {
     "meta_own": {
       "found": true,
@@ -44,7 +44,7 @@
         }
       ]
     },
-    "summary": "SolarSquare Energy is running at least 3 active Meta ads targeting Hyderabad (creatives shared across 2, 6 and 2 ads), started 12, 13 and 16 October 2026. Unlike the local installers, these ads land on a page SolarSquare owns - solarsquare.in/rooftop-solar-in-hyderabad-1 - which carries Hyderabad-specific pricing (2 kW about Rs. 1.07 lakh to 5 kW about Rs. 2.65 lakh with subsidy, dated 01 October 2026), an EMI calculator, a free-consultation form and the GoodZero money-back savings plan. SolarSquare is a national brand (36,000+ homes, 31 cities across 10 states) and the Hyderabad landing page is one of many city pages. No Google Ads advertiser record was checked for this report - that requires the full pipeline."
+    "summary": "SolarSquare Energy is running at least 3 active Meta ads targeting Hyderabad (creatives shared across 2, 6 and 2 ads), started 12, 13 and 16 October 2026. Unlike the local installers, these ads land on a page SolarSquare owns - solarsquare.in/rooftop-solar-in-hyderabad-1 - which carries Hyderabad-specific pricing (2 kW about Rs. 1.07 lakh to 5 kW about Rs. 2.65 lakh with subsidy, dated 01 October 2026), an EMI calculator, a free-consultation form and the GoodZero money-back savings plan. SolarSquare is a national brand (36,000+ homes, 31 cities across 10 states) and the Hyderabad landing page is one of many city pages. Google Ads Transparency records were not checked in this pass."
   },
   "funnel": {
     "type": "Own website landing page",
@@ -108,10 +108,12 @@
     "fb_page": "https://www.facebook.com/SolarSquareEnergy/"
   },
   "site_evidence": {
-    "pixel": null,
-    "utm": null,
-    "checked_on": "2026-10-24",
-    "note": "Landing page read through a text proxy that strips scripts, so Meta Pixel and UTM parameters could not be confirmed either way; graded unknown per the catalog's runtime contract."
+    "pixel": false,
+    "ga4": false,
+    "gtm": false,
+    "google_ads_tag": false,
+    "checked_on": "2026-10-25",
+    "note": "Landing-page source read live on 2026-10-25 through the W3C Nu HTML Checker (validator.w3.org/nu/?doc=<url>&showsource=yes), which returns the served HTML with script tags intact, plus a direct fetch of the same pages. Tags found: no Meta Pixel, GA4, GTM or Google Ads tag."
   },
   "ads_audit": {
     "controls": [
@@ -119,8 +121,8 @@
         "id": "M01",
         "name": "Meta Pixel installed",
         "group": "Tracking & measurement",
-        "disposition": "unknown",
-        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+        "disposition": "fail",
+        "evidence": "No Meta Pixel code found in the landing-page source - ad clicks cannot be measured or retargeted."
       },
       {
         "id": "M39",
@@ -223,11 +225,80 @@
     ],
     "counts": {
       "pass": 4,
-      "fail": 1,
-      "unknown": 10,
+      "fail": 2,
+      "unknown": 9,
       "not_applicable": 0
     },
     "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
     "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
-  }
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://www.solarsquare.in/rooftop-solar-in-hyderabad-1",
+    "audit_date": "2026-10-25",
+    "pixels": {
+      "meta_pixel": false,
+      "google_ads": false,
+      "google_analytics_ga4": false,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
+      "microsoft_clarity": false,
+      "hotjar": false,
+      "google_tag_manager": false
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": 6,
+      "has_live_chat": false,
+      "has_popup_optin": true,
+      "has_testimonials": true,
+      "has_pricing_page_link": true
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Top Solar Company in Hyderabad | Solar Panel Price & Installation",
+      "title_length": 66,
+      "has_meta_description": null,
+      "meta_desc_length": null,
+      "h1_count": null,
+      "h1_text": "",
+      "has_og_tags": null,
+      "has_schema": null,
+      "has_favicon": true,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": false
+    },
+    "platform": "WordPress (theme \"sse\"), Bootstrap, Slick, jQuery UI, MoEngage",
+    "scope_note": "SolarSquare serves this city page minified into roughly 125 source lines. Lines 3-125 of the head were read in full, but the doctype/title line could not be isolated, so its meta description, Open Graph tags, structured data, H1 and image alt counts are reported as not checked rather than assumed. The page title IS known and is shown below.",
+    "html_errors": "35 errors, 30 warnings (6 duplicate form IDs, tel: href with illegal space, viewport blocks zoom)",
+    "score": {
+      "score": 18,
+      "issues": [
+        "Three live ads all point at solarsquare.in, yet not one of those paid clicks can be traced to an enquiry.",
+        "No Meta Pixel installed — can't run retargeting or track ad conversions",
+        "No Google Ads / GTM tracking — can't measure ad performance",
+        "No Google Analytics — flying blind on website traffic",
+        "No live chat — missing after-hours leads"
+      ],
+      "wins": [
+        "Contact form exists",
+        "WhatsApp link present",
+        "Good CTA presence (6 buttons)",
+        "Testimonials visible"
+      ]
+    }
+  },
+  "audit_date": "2026-10-25"
 }

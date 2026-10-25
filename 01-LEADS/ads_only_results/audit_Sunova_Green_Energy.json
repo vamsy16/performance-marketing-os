@@ -4,10 +4,10 @@
   "city": "Hyderabad",
   "website": "https://sunovagreenenergy.com",
   "ads_only": true,
-  "website_audit_run": false,
+  "website_audit_run": true,
   "checked_on": "2026-10-24",
   "generated_at": "2026-10-24 05:19",
-  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website (page source read through the W3C Nu HTML Checker)",
   "ad_library": {
     "meta_own": {
       "found": true,
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "summary": "Sunova Green Energy is running 1 active Meta ad (Facebook), started 31 August 2026. The ad stacks a Rs. 1,00,000 saving claim - Rs. 78,000 government subsidy plus a Rs. 22,000 discount - with 30-year performance life, 7+ years of experience, 5-year AMC and 'Trusted by 500+ Homes Across Hyderabad'. The click lands on an fb.me lead form inside Facebook, so the spend never reaches sunovagreenenergy.com. The site itself is a WordPress/Elementor build covering residential, commercial and housing-society rooftop solar, on-grid / off-grid / hybrid systems, solar water heaters, fencing and street lights, with a Banjara Hills corporate office and a Gmail contact address. No Google Ads advertiser record was checked for this report - that requires the full pipeline."
+    "summary": "Sunova Green Energy is running 1 active Meta ad (Facebook), started 31 August 2026. The ad stacks a Rs. 1,00,000 saving claim - Rs. 78,000 government subsidy plus a Rs. 22,000 discount - with 30-year performance life, 7+ years of experience, 5-year AMC and 'Trusted by 500+ Homes Across Hyderabad'. The click lands on an fb.me lead form inside Facebook, so the spend never reaches sunovagreenenergy.com. The site itself is a WordPress/Elementor build covering residential, commercial and housing-society rooftop solar, on-grid / off-grid / hybrid systems, solar water heaters, fencing and street lights, with a Banjara Hills corporate office and a Gmail contact address. Google Ads Transparency records were not checked in this pass."
   },
   "funnel": {
     "type": "Facebook lead form (fb.me)",
@@ -90,10 +90,12 @@
     "fb_page": "https://www.facebook.com/61560712570253/"
   },
   "site_evidence": {
-    "pixel": null,
-    "utm": null,
-    "checked_on": "2026-10-24",
-    "note": "Landing page read through a text proxy that strips scripts, so Meta Pixel code could not be confirmed either way; graded unknown per the catalog's runtime contract."
+    "pixel": false,
+    "ga4": false,
+    "gtm": false,
+    "google_ads_tag": false,
+    "checked_on": "2026-10-25",
+    "note": "Landing-page source read live on 2026-10-25 through the W3C Nu HTML Checker (validator.w3.org/nu/?doc=<url>&showsource=yes), which returns the served HTML with script tags intact, plus a direct fetch of the same pages. Tags found: no Meta Pixel, GA4, GTM or Google Ads tag."
   },
   "ads_audit": {
     "controls": [
@@ -101,8 +103,8 @@
         "id": "M01",
         "name": "Meta Pixel installed",
         "group": "Tracking & measurement",
-        "disposition": "unknown",
-        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+        "disposition": "fail",
+        "evidence": "No Meta Pixel code found in the landing-page source - ad clicks cannot be measured or retargeted."
       },
       {
         "id": "M39",
@@ -205,11 +207,84 @@
     ],
     "counts": {
       "pass": 4,
-      "fail": 2,
-      "unknown": 9,
+      "fail": 3,
+      "unknown": 8,
       "not_applicable": 0
     },
     "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
     "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
-  }
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://sunovagreenenergy.com/",
+    "audit_date": "2026-10-25",
+    "pixels": {
+      "meta_pixel": false,
+      "google_ads": false,
+      "google_analytics_ga4": false,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
+      "microsoft_clarity": false,
+      "hotjar": false,
+      "google_tag_manager": false
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": 10,
+      "has_live_chat": false,
+      "has_popup_optin": false,
+      "has_testimonials": true,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "sunovagreenenergy.com",
+      "title_length": 21,
+      "has_meta_description": false,
+      "meta_desc_length": 0,
+      "h1_count": 0,
+      "h1_text": "",
+      "has_og_tags": false,
+      "has_schema": false,
+      "has_favicon": true,
+      "image_count": 31,
+      "images_without_alt": 26
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": false
+    },
+    "platform": "WordPress + Elementor + Smart Slider 3 + ElementsKit Lite + Premium Addons for Elementor, theme \"sungo\", LiteSpeed Cache 7.9.2",
+    "html_errors": "411 errors (359 HTML, 17 CSS parse, 22 CSS value, 321 style-rule)",
+    "score": {
+      "score": 35,
+      "issues": [
+        "Your live ad clicks through to an fb.me lead form inside Facebook - the spend never reaches sunovagreenenergy.com, so the site cannot be measured, retargeted or tested.",
+        "No Meta Pixel installed — can't run retargeting or track ad conversions",
+        "No Google Ads / GTM tracking — can't measure ad performance",
+        "No Google Analytics — flying blind on website traffic",
+        "No live chat — missing after-hours leads",
+        "No meta description — lower click-through from Google",
+        "No H1 tag on homepage",
+        "No structured data (Schema.org) - missing rich results in Google",
+        "No Open Graph tags - links look bad when shared on social/WhatsApp",
+        "26 images missing alt text — hurts SEO"
+      ],
+      "wins": [
+        "Contact form exists",
+        "WhatsApp link present",
+        "Good CTA presence (10 buttons)",
+        "Testimonials visible"
+      ]
+    }
+  },
+  "audit_date": "2026-10-25"
 }

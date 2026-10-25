@@ -166,7 +166,8 @@ def evaluate(lead, site_evidence=None):
             f"{', '.join(concepts)}.")
     elif concepts:
         add("M26", "Creative concept coverage", "Creative", FAIL,
-            f"Only {len(concepts)} offer angle in live copy ({', '.join(concepts)}) "
+            f"Only {len(concepts)} offer angle{'s' if len(concepts) != 1 else ''} "
+            f"in live copy ({', '.join(concepts)}) "
             "- every ad says the same thing.")
     else:
         add("M26", "Creative concept coverage", "Creative", UNKNOWN,

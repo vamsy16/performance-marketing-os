@@ -4,10 +4,10 @@
   "city": "Hyderabad",
   "website": "https://wisda.in",
   "ads_only": true,
-  "website_audit_run": false,
+  "website_audit_run": true,
   "checked_on": "2026-10-24",
   "generated_at": "2026-10-24 05:19",
-  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website (page source read through the W3C Nu HTML Checker)",
   "ad_library": {
     "meta_own": {
       "found": true,
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "summary": "Wisda Energy (Wisda Ventures Pvt Ltd) is running 1 active Meta video ad, started 10 October 2026, offering Hyderabad homeowners a free home survey and subsidy assistance. The click lands on an fb.me lead form inside Facebook, so the spend never reaches wisda.in. The site is a Secunderabad (Tarnaka) office serving Hyderabad with rooftop and ground-mount solar plus AMC, showcases Miyapur installations at 3 kW and 5 kW, claims 1k+ happy customers, and lists TGREDCO empanelment (TSRE240457). No Google Ads advertiser record was checked for this report - that requires the full pipeline."
+    "summary": "Wisda Energy (Wisda Ventures Pvt Ltd) is running 1 active Meta video ad, started 10 October 2026, offering Hyderabad homeowners a free home survey and subsidy assistance. The click lands on an fb.me lead form inside Facebook, so the spend never reaches wisda.in. The site is a Secunderabad (Tarnaka) office serving Hyderabad with rooftop and ground-mount solar plus AMC, showcases Miyapur installations at 3 kW and 5 kW, claims 1k+ happy customers, and lists TGREDCO empanelment (TSRE240457). Google Ads Transparency records were not checked in this pass."
   },
   "funnel": {
     "type": "Facebook lead form (fb.me)",
@@ -90,10 +90,12 @@
     "fb_page": "https://www.facebook.com/Wisdaenergy/"
   },
   "site_evidence": {
-    "pixel": null,
-    "utm": null,
-    "checked_on": "2026-10-24",
-    "note": "Landing page read through a text proxy that strips scripts, so Meta Pixel code could not be confirmed either way; graded unknown per the catalog's runtime contract."
+    "pixel": true,
+    "ga4": true,
+    "gtm": true,
+    "google_ads_tag": false,
+    "checked_on": "2026-10-25",
+    "note": "Landing-page source read live on 2026-10-25 through the W3C Nu HTML Checker (validator.w3.org/nu/?doc=<url>&showsource=yes), which returns the served HTML with script tags intact, plus a direct fetch of the same pages. Tags found: Meta Pixel, GA4, Google Tag Manager."
   },
   "ads_audit": {
     "controls": [
@@ -101,8 +103,8 @@
         "id": "M01",
         "name": "Meta Pixel installed",
         "group": "Tracking & measurement",
-        "disposition": "unknown",
-        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+        "disposition": "pass",
+        "evidence": "Meta Pixel code (fbq / connect.facebook.net) found in the live landing-page source."
       },
       {
         "id": "M39",
@@ -130,7 +132,7 @@
         "name": "Creative concept coverage",
         "group": "Creative",
         "disposition": "fail",
-        "evidence": "Only 2 offer angle in live copy (government subsidy, bill savings) - every ad says the same thing."
+        "evidence": "Only 2 offer angles in live copy (government subsidy, bill savings) - every ad says the same thing."
       },
       {
         "id": "M30",
@@ -204,12 +206,81 @@
       }
     ],
     "counts": {
-      "pass": 2,
+      "pass": 3,
       "fail": 5,
-      "unknown": 8,
+      "unknown": 7,
       "not_applicable": 0
     },
     "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
     "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
-  }
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://www.wisda.in/",
+    "audit_date": "2026-10-25",
+    "pixels": {
+      "meta_pixel": true,
+      "google_ads": false,
+      "google_analytics_ga4": true,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
+      "microsoft_clarity": false,
+      "hotjar": false,
+      "google_tag_manager": true
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": false,
+      "has_cta_buttons": 3,
+      "has_live_chat": false,
+      "has_popup_optin": false,
+      "has_testimonials": true,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Best Rooftop Solar Company in Hyderabad | Wisda Energy",
+      "title_length": 57,
+      "has_meta_description": true,
+      "meta_desc_length": null,
+      "h1_count": 1,
+      "h1_text": "Together for Future: Empowering India Through Green Energy",
+      "has_og_tags": true,
+      "has_schema": true,
+      "has_favicon": true,
+      "image_count": 18,
+      "images_without_alt": 7
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": false
+    },
+    "platform": "Custom HTML (Tailwind CDN, Swiper 11, Font Awesome 6.5.1, Google Fonts)",
+    "html_errors": "15 errors, 1 warning, 7 info",
+    "score": {
+      "score": 10,
+      "issues": [
+        "Your live ad clicks through to an fb.me lead form inside Facebook - the spend never reaches wisda.in, so no pixel can be measured on the landing experience.",
+        "No WhatsApp link — losing mobile leads (WhatsApp converts 3x better for Indian home services)",
+        "No live chat — missing after-hours leads",
+        "7 images missing alt text — hurts SEO"
+      ],
+      "wins": [
+        "Meta Pixel is installed",
+        "Google tracking is present",
+        "Google Analytics is installed",
+        "Contact form exists",
+        "Good CTA presence (3 buttons)",
+        "Testimonials visible"
+      ]
+    }
+  },
+  "audit_date": "2026-10-25"
 }

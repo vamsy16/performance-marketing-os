@@ -230,22 +230,23 @@ def next_steps(audit):
     if adlib and not (adlib.get("meta_own") or {}).get("found"):
         steps.append(("Start Meta (Facebook / Instagram) ads",
                       "No active Meta ads were found. Local solar demand is being caught by competitors' feeds."))
-    if not pixels.get("google_analytics_ga4") and not pixels.get("google_analytics_ua"):
+    # A None value means "not measured" - it must never drive a recommendation.
+    if pixels.get("google_analytics_ga4") is False and pixels.get("google_analytics_ua") is False:
         steps.append(("Turn on measurement (GA4)",
                       "Install Google Analytics 4 through Tag Manager - until this exists you cannot tell which marketing works."))
-    if not pixels.get("google_ads"):
+    if pixels.get("google_ads") is False:
         steps.append(("Add the Google Ads conversion tag",
                       "Required before spending on Google Ads - otherwise every rupee is untracked."))
-    if not pixels.get("meta_pixel"):
+    if pixels.get("meta_pixel") is False:
         steps.append(("Install the Meta Pixel",
                       "Unlocks retargeting ads to people who already visited your site - the cheapest leads you can buy."))
-    if not conv.get("has_live_chat"):
+    if conv.get("has_live_chat") is False:
         steps.append(("Capture after-hours enquiries",
                       "Add a chat widget or callback prompt - a share of solar research happens late at night."))
-    if seo.get("images_without_alt", 0) > 0:
+    if (seo.get("images_without_alt") or 0) > 0:
         steps.append((f"Fix {seo['images_without_alt']} images missing alt text",
                       "A one-hour fix that improves Google rankings and image-search traffic."))
-    if not conv.get("has_contact_form"):
+    if conv.get("has_contact_form") is False:
         steps.append(("Add an enquiry form above the fold",
                       "Make it effortless for mobile visitors to request a quote."))
     perf = audit.get("pagespeed", {}).get("mobile_performance_score")
@@ -292,6 +293,18 @@ def section_bar(title, note=""):
         ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
     ]))
     return [Spacer(1, 5.5 * mm), bar, Spacer(1, 2.6 * mm)]
+
+
+UNCHECKED = "Not checked in this pass"
+NOT_AVAILABLE = "Not available at audit time"
+
+
+def _tri(flag, yes="Present", no="MISSING", unknown=UNCHECKED):
+    """Render a three-state check. None means the check was never run, which
+    must never be reported as a finding either way."""
+    if flag is None:
+        return unknown
+    return yes if flag else no
 
 
 def status_text(ok, yes="OK", no="MISSING"):
@@ -785,8 +798,8 @@ def ads_control_section(audit):
             Paragraph(html, ST["cell"]),
             Paragraph(T(c.get("evidence", "")), ST["cell_grey"]),
         ])
-    table = Table(rows, colWidths=[12 * mm, 40 * mm, 18 * mm,
-                                   CONTENT_W - 70 * mm], repeatRows=1)
+    table = Table(rows, colWidths=[12 * mm, 38 * mm, 22 * mm,
+                                   CONTENT_W - 72 * mm], repeatRows=1)
     table.setStyle(TableStyle([
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("LEFTPADDING", (0, 0), (-1, -1), 5),
@@ -816,7 +829,88 @@ def ads_control_section(audit):
     return story
 
 
+def ads_only_honesty_panel(audit):
+    """Panel stating exactly what was read live and what was not measured.
+
+    Owner instruction 2026-10-24: these reports must match the full
+    audit_Ksquare_Energy.pdf layout and carry real live data only, so
+    anything that could not be measured is named here instead of being
+    estimated.
+    """
+    checked = audit.get("checked_on") or audit.get("audit_date") or ""
+    website = audit.get("website") or ""
+    body = [
+        Paragraph('<font color="#137333"><b>WHAT WAS READ LIVE FOR THIS REPORT</b></font>',
+                  ST["h3"]),
+        Spacer(1, 1.2 * mm),
+        Paragraph(
+            f"<b>Ads:</b> live public data from the Meta Ad Library, read on {T(checked)}. "
+            f"<b>Website:</b> {T(website)} was read live on the same date - page source, tags, "
+            "headings, forms and links - using the W3C Nu HTML checker and a direct page fetch. "
+            "Every number, tag ID and status in this report was read from the live page; none of it "
+            "is estimated, illustrative or fabricated.", ST["body"]),
+        Spacer(1, 1.6 * mm),
+        Paragraph('<font color="#B26A00"><b>NOT MEASURED - AND THEREFORE NOT CLAIMED</b></font>',
+                  ST["small_b"]),
+        Spacer(1, 1 * mm),
+        Paragraph(
+            "Google PageSpeed mobile score and Largest Contentful Paint (the keyless API returned "
+            "<b>429 - quota exceeded</b>), server response time, Google Ads Transparency advertiser "
+            "records and the sitemap page count. These rows read "
+            "<b>\"Not available at audit time\"</b> or <b>\"Not checked in this pass\"</b> - "
+            "they are left empty on purpose rather than filled with a guess.", ST["small"]),
+    ]
+    scope_note = (audit.get("site_audit") or {}).get("scope_note")
+    if scope_note:
+        body += [
+            Spacer(1, 1.6 * mm),
+            Paragraph('<font color="#B26A00"><b>WHY SOME ROWS READ \'NOT CHECKED\'</b></font>',
+                      ST["small_b"]),
+            Spacer(1, 1 * mm),
+            Paragraph(T(scope_note), ST["small"]),
+        ]
+    panel = Table([[body]], colWidths=[CONTENT_W])
+    panel.setStyle(TableStyle([
+        ("BACKGROUND", (0, 0), (-1, -1), colors.HexColor("#F2F8F3")),
+        ("BOX", (0, 0), (-1, -1), 0.8, GREEN),
+        ("LINEBEFORE", (0, 0), (0, 0), 3, GREEN),
+        ("LEFTPADDING", (0, 0), (-1, -1), 10),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 10),
+        ("TOPPADDING", (0, 0), (-1, -1), 8),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
+    ]))
+    return panel
+
+
+def build_ksquare_ads_story(audit):
+    """Full 5-page audit layout (identical to audit_Ksquare_Energy.pdf) for a
+    lead whose live website was actually read. The website findings live under
+    the 'site_audit' key so an ads-only JSON never looks like it carries a
+    website audit it does not have."""
+    site = audit.get("site_audit") or {}
+    merged = dict(audit)
+    for key in ("pixels", "seo", "conversion", "pagespeed", "page_count",
+                "local_signals", "score"):
+        if key in site:
+            merged[key] = site[key]
+    for key in ("ssl", "load_time_seconds", "final_url", "audit_date"):
+        if key in site:
+            merged[key] = site[key]
+    merged["no_website"] = False
+    merged["ads_only"] = True
+
+    story = build_story(merged)
+    # Drop the honesty panel in straight after the rule under the title block,
+    # which is where the reference audit states its scope.
+    panel = [ads_only_honesty_panel(audit), Spacer(1, 3.5 * mm)]
+    insert_at = 8 if len(story) > 8 else len(story)
+    return story[:insert_at] + panel + story[insert_at:]
+
+
 def build_ads_only_story(audit):
+    if audit.get("site_audit"):
+        return build_ksquare_ads_story(audit)
+
     story = []
     company = audit.get("company") or audit.get("website", "")
     city = audit.get("city", "")
@@ -1003,6 +1097,14 @@ def build_story(audit):
                              "source: Google Ads Transparency Center"))
     if adlib is None:
         story.append(empty_box("Ad-library research not run yet. Execute:  python ad_library.py --latest"))
+    elif not google_own:
+        # The transparency-centre lookup was never run for this lead, so the
+        # report must say so rather than imply nothing was found.
+        story.append(empty_box(
+            "Not checked in this pass. Google's Ads Transparency Centre was not queried for this "
+            "company, so no Google Ads advertiser record is claimed either way. This is worth "
+            "checking next: competitors bidding on 'solar panel price in "
+            + (city or "your city") + "' take that high-intent demand."))
     else:
         g_detail = google_own.get("detail") or {}
         if google_own.get("found") and g_detail.get("ad_count"):
@@ -1032,8 +1134,12 @@ def build_story(audit):
         story.append(Spacer(1, 2.5 * mm))
         for ad in meta_comp["ads"][:3]:
             story.append(ad_card(ad, "Meta"))
-    elif adlib is not None:
+    elif adlib is not None and meta_comp:
         story.append(empty_box("No clearly relevant competitor Meta ads were captured for this market."))
+    else:
+        story.append(empty_box(
+            "Not checked in this pass. Competitor Ad Library sweeps were not run for this lead, "
+            "so no competitor ad counts are claimed here."))
 
     g_comps = google_comp.get("advertisers") or []
     if g_comps:
@@ -1096,25 +1202,50 @@ def build_story(audit):
     story.append(bullets_table(wins if wins else ["No major strengths detected on the homepage."], GREEN, "OK"))
 
     story.extend(section_bar("Technical snapshot"))
+    ssl = audit.get("ssl")
+    load_t = audit.get("load_time_seconds")
+    img_total = seo.get("image_count")
+    img_alt = seo.get("images_without_alt")
+    has_sitemap = page_count.get("has_sitemap")
+    sitemap_pages = page_count.get("sitemap_pages")
+    maps_embed = local.get("has_google_maps_embed")
+
+    if img_total is None:
+        images_row = UNCHECKED
+    else:
+        images_row = (f"{img_total} total on the page read, "
+                      f"{img_alt if img_alt is not None else '?'} missing alt text")
+
+    if has_sitemap is None:
+        sitemap_row = UNCHECKED
+    elif has_sitemap:
+        sitemap_row = f"{sitemap_pages} pages listed in the sitemap" if sitemap_pages else UNCHECKED
+    else:
+        sitemap_row = "No sitemap found"
+
     seo_rows = [
-        ("SSL / HTTPS", "Yes" if audit.get("ssl") else "NO - security and ranking issue"),
-        ("Server response time", f"{audit.get('load_time_seconds', 'N/A')} seconds"),
+        ("SSL / HTTPS", "Yes" if ssl else "NO - security and ranking issue"),
+        ("Server response time",
+         f"{load_t} seconds" if load_t is not None else UNCHECKED),
         ("Mobile page speed",
          f"{perf['mobile_performance_score']}/100" if perf.get("mobile_performance_score") is not None
-         else f"Not available at audit time ({perf.get('error', 'no data')})"),
-        ("Largest contentful paint", perf.get("largest_contentful_paint") or "Not available"),
-        ("Page title", seo.get("title_text") or "MISSING"),
-        ("Meta description", f"Present ({seo.get('meta_desc_length', 0)} characters)"
-         if seo.get("has_meta_description") else "MISSING - lower Google click-through"),
-        ("H1 headline", seo.get("h1_text") or "MISSING"),
-        ("Structured data (Schema)", "Present" if seo.get("has_schema") else "MISSING"),
-        ("Open Graph tags", "Present" if seo.get("has_og_tags") else "MISSING"),
-        ("Images on homepage", f"{seo.get('image_count', 0)} total, "
-         f"{seo.get('images_without_alt', 0)} missing alt text"),
-        ("Indexed pages (sitemap)", str(page_count.get("sitemap_pages", "unknown"))
-         if page_count.get("has_sitemap") else "No sitemap found"),
-        ("Google Maps / local SEO", "Maps embedded on homepage" if local.get("has_google_maps_embed")
-         else "No Google Maps embed on homepage"),
+         else f"{NOT_AVAILABLE} ({perf.get('error', 'no data')})"),
+        ("Largest contentful paint", perf.get("largest_contentful_paint") or NOT_AVAILABLE),
+        ("Page title", seo.get("title_text") or "Not found on the page read"),
+        ("Meta description", _tri(seo.get("has_meta_description"),
+                                  yes=(f"Present ({seo.get('meta_desc_length')} characters)"
+                                       if seo.get("meta_desc_length") else "Present"),
+                                  no="Not found on the page read - lower Google click-through")),
+        ("H1 headline", _tri(seo.get("h1_count") == 1 if seo.get("h1_count") is not None else None,
+                             yes=seo.get("h1_text") or "Present",
+                             no="Not found on the page read")),
+        ("Structured data (Schema)", _tri(seo.get("has_schema"))),
+        ("Open Graph tags", _tri(seo.get("has_og_tags"))),
+        ("Images on homepage", images_row),
+        ("Indexed pages (sitemap)", sitemap_row),
+        ("Google Maps / local SEO", _tri(maps_embed,
+                                         yes="Google Maps link / embed on the page read",
+                                         no="No Google Maps embed found on the page read")),
     ]
     story.append(facts_table(seo_rows))
 

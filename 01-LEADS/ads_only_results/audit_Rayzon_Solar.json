@@ -4,10 +4,10 @@
   "city": "Hyderabad",
   "website": "https://rayzonsolar.com",
   "ads_only": true,
-  "website_audit_run": false,
+  "website_audit_run": true,
   "checked_on": "2026-10-24",
   "generated_at": "2026-10-24 05:19",
-  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website (page source read through the W3C Nu HTML Checker)",
   "ad_library": {
     "meta_own": {
       "found": true,
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "summary": "Rayzon Solar is running 1 active Meta ad, started 13 October 2026. The creative is scheme-branded ('PM Surya Ghar') and the click goes to an Instagram profile - not rayzonsolar.com - so there is no landing page, no form and no pixel behind the spend. Rayzon is a Surat-based module manufacturer (Rayzon Solar Ltd, Millennium Business Hub, Varachha Road, with factories at Kim and Kosamba) whose site carries the proof stack the ad never shows: 6 GW capacity, ALMM listing, Ecovadis certificate and a 360-degree factory tour. No Google Ads advertiser record was checked for this report - that requires the full pipeline."
+    "summary": "Rayzon Solar is running 1 active Meta ad, started 13 October 2026. The creative is scheme-branded ('PM Surya Ghar') and the click goes to an Instagram profile - not rayzonsolar.com - so there is no landing page, no form and no pixel behind the spend. Rayzon is a Surat-based module manufacturer (Rayzon Solar Ltd, Millennium Business Hub, Varachha Road, with factories at Kim and Kosamba) whose site carries the proof stack the ad never shows: 6 GW capacity, ALMM listing, Ecovadis certificate and a 360-degree factory tour. Google Ads Transparency records were not checked in this pass."
   },
   "funnel": {
     "type": "Instagram profile (off-site social)",
@@ -90,10 +90,12 @@
     "fb_page": "https://www.facebook.com/RayzonSolar/"
   },
   "site_evidence": {
-    "pixel": null,
-    "utm": null,
-    "checked_on": "2026-10-24",
-    "note": "Contact page read through a text proxy that strips scripts, so Meta Pixel code could not be confirmed either way; graded unknown per the catalog's runtime contract. The live ad does not link to the site at all - it links to Instagram."
+    "pixel": false,
+    "ga4": false,
+    "gtm": false,
+    "google_ads_tag": false,
+    "checked_on": "2026-10-25",
+    "note": "Landing-page source read live on 2026-10-25 through the W3C Nu HTML Checker (validator.w3.org/nu/?doc=<url>&showsource=yes), which returns the served HTML with script tags intact, plus a direct fetch of the same pages. Tags found: no Meta Pixel, GA4, GTM or Google Ads tag."
   },
   "ads_audit": {
     "controls": [
@@ -101,8 +103,8 @@
         "id": "M01",
         "name": "Meta Pixel installed",
         "group": "Tracking & measurement",
-        "disposition": "unknown",
-        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+        "disposition": "fail",
+        "evidence": "No Meta Pixel code found in the landing-page source - ad clicks cannot be measured or retargeted."
       },
       {
         "id": "M39",
@@ -205,11 +207,80 @@
     ],
     "counts": {
       "pass": 2,
-      "fail": 2,
-      "unknown": 11,
+      "fail": 3,
+      "unknown": 10,
       "not_applicable": 0
     },
     "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
     "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
-  }
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://rayzonsolar.com/contact-us",
+    "audit_date": "2026-10-25",
+    "pixels": {
+      "meta_pixel": false,
+      "google_ads": false,
+      "google_analytics_ga4": false,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
+      "microsoft_clarity": false,
+      "hotjar": false,
+      "google_tag_manager": false
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": false,
+      "has_cta_buttons": 5,
+      "has_live_chat": true,
+      "has_popup_optin": false,
+      "has_testimonials": false,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Rayzon Solar | Contact Us",
+      "title_length": 24,
+      "has_meta_description": true,
+      "meta_desc_length": null,
+      "h1_count": 1,
+      "h1_text": "Let's get in touch",
+      "has_og_tags": true,
+      "has_schema": true,
+      "has_favicon": true,
+      "image_count": 5,
+      "images_without_alt": 2
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": false
+    },
+    "platform": "Custom HTML/PHP (Bootstrap + custom CSS)",
+    "html_errors": "28 errors, 20 warnings, 5 info (no lang attribute on <html>, 13 duplicate IDs, heading-level skips, iframe attribute errors)",
+    "score": {
+      "score": 24,
+      "issues": [
+        "Your live ad clicks through to instagram.com, not rayzonsolar.com - neither destination can be measured.",
+        "No Meta Pixel installed — can't run retargeting or track ad conversions",
+        "No Google Ads / GTM tracking — can't measure ad performance",
+        "No Google Analytics — flying blind on website traffic",
+        "No WhatsApp link — losing mobile leads (WhatsApp converts 3x better for Indian home services)",
+        "No visible testimonials/social proof on homepage",
+        "2 images missing alt text — hurts SEO"
+      ],
+      "wins": [
+        "Contact form exists",
+        "Good CTA presence (5 buttons)",
+        "Live chat present"
+      ]
+    }
+  },
+  "audit_date": "2026-10-25"
 }

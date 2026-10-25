@@ -199,12 +199,29 @@ ADS_ONLY_LABEL = "LIVE AD ACTIVITY"
 ADS_ONLY_PENDING = "WEBSITE AUDIT NOT RUN"
 FORBIDDEN_IN_ADS_ONLY = ("/100", "MISSING", "NO WEBSITE FOUND", "YOUR NAME", "XXXXX")
 
+# Values that must never appear in a report claiming real live data.
+DEMO_PLACEHOLDERS = ("TBD", "TODO", "Lorem ipsum", "sample data", "demo data",
+                     "example.com", "1234567890", "N/A seconds", "xxx")
+
 
 def check_ads_only_json(audit, errs):
     if not audit.get("ads_only"):
         errs.append("JSON: ads_only flag missing - is this really an ads-only report?")
+    # A live website audit is legitimate - but only when its data is attached,
+    # and it must stay nested under 'site_audit' so the record never looks like
+    # a full-audit JSON.
+    site = audit.get("site_audit") or {}
     if audit.get("website_audit_run"):
-        errs.append("JSON: website_audit_run is True but no website audit data is present")
+        if not site:
+            errs.append("JSON: website_audit_run is True but no site_audit data is present")
+        for k in ("pixels", "seo", "conversion", "score"):
+            if k not in site:
+                errs.append(f"JSON: site_audit is missing its '{k}' section")
+    else:
+        for k in ("score", "pixels", "seo", "pagespeed", "conversion", "page_count"):
+            if k in audit:
+                errs.append(f"JSON: report carries a '{k}' section "
+                            "(website audit data it cannot have)")
     if not audit.get("checked_on"):
         errs.append("JSON: checked_on missing - when was the ad data read?")
     if not audit.get("website", "").startswith("http"):
@@ -212,11 +229,10 @@ def check_ads_only_json(audit, errs):
     if audit.get("no_website"):
         errs.append("JSON: no_website set on a lead that has a website")
 
-    # No website-audit sections at all - their absence is the honesty guarantee.
+    # Website-audit data must always be nested, never top level.
     for k in ("score", "pixels", "seo", "pagespeed", "conversion", "page_count"):
         if k in audit:
-            errs.append(f"JSON: ads-only report carries a '{k}' section "
-                        "(website audit data it cannot have)")
+            errs.append(f"JSON: website-audit key '{k}' must be nested under 'site_audit'")
 
     adlib = audit.get("ad_library")
     if not adlib:
@@ -279,8 +295,6 @@ def check_ads_only_pdf(audit, pdf_path, errs):
         (BRAND_PHONE_TAIL, "phone tail"),
         ("ADS AUDIT REPORT", "header 'ADS AUDIT REPORT'"),
         ("Prepared by", "footer 'Prepared by'"),
-        (ADS_ONLY_LABEL, "label 'LIVE AD ACTIVITY'"),
-        (ADS_ONLY_PENDING, "honesty panel 'WEBSITE AUDIT NOT RUN'"),
     ]:
         if needle not in flat:
             errs.append(f"PDF: missing {label}")
@@ -295,10 +309,37 @@ def check_ads_only_pdf(audit, pdf_path, errs):
     if ads and "Open the live ad" not in flat:
         errs.append("PDF: live ads present but no 'Open the live ad' link text")
 
-    for artifact in FORBIDDEN_IN_ADS_ONLY:
-        if artifact in flat:
-            errs.append(f"PDF: forbidden in an ads-only report: '{artifact}' "
-                        "(would imply a website audit that was not run)")
+    site = audit.get("site_audit") or {}
+    if site:
+        # The website WAS read live, so full-audit vocabulary (MISSING, x/100)
+        # is legitimate. The invariant flips: the report must now prove it is
+        # the full 5-page layout and must carry no placeholder values.
+        for needle, label in [
+            ("DIGITAL MARKETING & PAID ADS AUDIT", "audit kicker"),
+            ("Website tracking & pixels", "tracking section"),
+            ("Conversion readiness", "conversion section"),
+            ("Technical snapshot", "technical snapshot section"),
+            ("Ads audit - control review", "claude-ads control review"),
+            ("WHAT WAS READ LIVE FOR THIS REPORT", "live-data scope panel"),
+        ]:
+            if needle not in flat:
+                errs.append(f"PDF: live-audit report missing {label}")
+        for artifact in DEMO_PLACEHOLDERS:
+            if artifact in flat:
+                errs.append(f"PDF: placeholder/demo value '{artifact}' found - "
+                            "only real live data may appear")
+    else:
+        # Ad-activity-only report: it must advertise that fact.
+        for needle, label in [
+            (ADS_ONLY_LABEL, "label 'LIVE AD ACTIVITY'"),
+            (ADS_ONLY_PENDING, "honesty panel 'WEBSITE AUDIT NOT RUN'"),
+        ]:
+            if needle not in flat:
+                errs.append(f"PDF: missing {label}")
+        for artifact in FORBIDDEN_IN_ADS_ONLY:
+            if artifact in flat:
+                errs.append(f"PDF: forbidden in an ads-only report: '{artifact}' "
+                            "(would imply a website audit that was not run)")
 
 
 def verify_ads_only(audit_path, audit):
