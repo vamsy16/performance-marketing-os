@@ -2,55 +2,55 @@
   "company": "Venus home appliances",
   "city": "Hyderabad",
   "website": "https://VENUSHOMEAPPLIANCES.COM",
-  "audit_date": "2026-10-26 09:35",
+  "audit_date": "2026-11-02 11:56",
   "ssl": true,
-  "load_time_seconds": 0.82,
+  "load_time_seconds": 0.89,
   "pixels": {
     "meta_pixel": true,
     "google_ads": true,
     "google_analytics_ga4": true,
     "google_analytics_ua": false,
-    "linkedin_insight": true,
+    "linkedin_insight": false,
     "microsoft_clarity": false,
     "hotjar": false,
-    "google_tag_manager": true
+    "google_tag_manager": false
   },
   "conversion": {
-    "has_contact_form": true,
-    "has_phone_click": false,
+    "has_contact_form": false,
+    "has_phone_click": true,
     "has_whatsapp_link": true,
-    "has_cta_buttons": 21,
+    "has_cta_buttons": 11,
     "has_live_chat": false,
-    "has_popup_optin": true,
+    "has_popup_optin": false,
     "has_testimonials": true,
-    "has_pricing_page_link": true
+    "has_pricing_page_link": false
   },
   "seo": {
     "has_title": true,
-    "title_text": "Venus Water Heater │ Best Geysers, Heat Pumps & Solar Water Heaters in India - Venus Home Appliances",
-    "title_length": 100,
+    "title_text": "Venus Water Heater │ Best Geysers, Heat Pumps & Solar Water Heaters in India",
+    "title_length": 76,
     "has_meta_description": true,
-    "meta_desc_length": 190,
-    "h1_count": 1,
-    "h1_text": "The Hot Water Professionals",
+    "meta_desc_length": 151,
+    "h1_count": 0,
+    "h1_text": "",
     "has_og_tags": true,
     "has_schema": true,
     "has_favicon": true,
-    "image_count": 122,
-    "images_without_alt": 46
+    "image_count": 59,
+    "images_without_alt": 1
   },
   "pagespeed": {
     "error": "API returned 429"
   },
   "page_count": {
-    "linked_pages": 87,
+    "linked_pages": 80,
     "has_sitemap": false
   },
   "local_signals": {
     "has_google_maps_embed": false,
     "has_address_schema": true,
     "mentions_city": false,
-    "company_in_title": true
+    "company_in_title": false
   },
   "ad_check_urls": {
     "google_ads_transparency": "https://adstransparency.google.com/?region=anywhere&q=venushomeappliances.com&country=IN",
@@ -58,22 +58,23 @@
     "note": "Open these URLs in your browser to check if they're running ads and what those ads look like."
   },
   "score": {
-    "score": 5,
+    "score": 17,
     "issues": [
+      "No contact form on homepage — visitors can't easily enquire",
       "No live chat — missing after-hours leads",
-      "46 images missing alt text — hurts SEO"
+      "No H1 tag on homepage",
+      "1 images missing alt text — hurts SEO"
     ],
     "wins": [
       "Meta Pixel is installed",
       "Google tracking is present",
       "Google Analytics is installed",
-      "Contact form exists",
       "WhatsApp link present",
-      "Good CTA presence (21 buttons)",
+      "Good CTA presence (11 buttons)",
       "Testimonials visible"
     ]
   },
-  "final_url": "https://venushomeappliances.com/",
+  "final_url": "https://www.venushomeappliances.com/",
   "discovery": {
     "market_query": "solar Hyderabad",
     "city": "Hyderabad",
@@ -82,11 +83,11 @@
     "whatsapp": ""
   },
   "ad_library": {
-    "checked_at": "2026-10-26 09:35",
+    "checked_at": "2026-11-02 11:57",
     "meta_own": {
       "query": "Venus home appliances",
-      "results_label": "~97 results",
-      "results_count": 97,
+      "results_label": "~96 results",
+      "results_count": 96,
       "ads": [
         {
           "library_id": "1601332488377612",
@@ -94,13 +95,13 @@
           "started": "Aug 9, 2026",
           "text": "The VENUS Experience Centre is now open in Bangalore! Experience India's complete range of Water Heaters, Heat Pumps, Solar Solutions, Tankless Water Heaters and BLDC Fans—all under one roof. Visit today and discover the perfect solution for your home or business.\nHTTPS://WWW.VENUSHOMEAPPLIANCES.COM/\nVisit the New VENUS Experience Centre\nExperience. Compare. Choose with Confidence.\nGet Directions\nExperience. Compare. Choose with Confidence.\nHTTPS://WWW.VENUSHOMEAPPLIANCES.COM/\nEvery Water Heater. One Destination.\nFind the perfect water heater for your needs.\nGet Directions\nFind the perfect water heater for your needs.\nHTTPS://WWW.VENUSHOMEAPPLIANCES.COM/\nExperience Technology Live\nSee it. To",
           "image_urls": [
-            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/771629126_4436200756634439_1546983187229772392_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vWu6GjJ0_ZUQ7kNvwHztDZ7&_nc_oc=Adrs0UrSbX6hFP3iCer-cdbY84tSb0PaWlfkKZrCvXeuZfWTeG9EZJbdUuF9Bx67PyU&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=wwl6UkODzNd4Cjqz0uYBew&_nc_ss=7b289&oh=00_AQOeD0V5xZl4cf2eWmS-ythJ7FgKDHCV79dBAayn9RE1VQ&oe=6AE4F966",
-            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/770093260_1760515538305840_1716614496657730395_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BCnAs4ee9i8Q7kNvwErWdLb&_nc_oc=AdqZ_ONumm-OKCL0OHc6BRU5EOE_zq5nyT5GZQaVGLzD3hBIZ7eCbu7EBaJhP1Y9Baw&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=wwl6UkODzNd4Cjqz0uYBew&_nc_ss=7b289&oh=00_AQPnxWHV0y3U2dFE5GmRdXmgPV4DravaYdmXDQ8KkuRWXw&oe=6AE4E533",
-            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/769222488_1032701162949206_8361600260652764390_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=NthYD0uPzCkQ7kNvwHyxatM&_nc_oc=Adom6_eLfICzMUZCJN1TsnUIpTmHEuhE8Kbci8barZJHUxE4uNlUYSIJ6J3d9y_TTLI&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=wwl6UkODzNd4Cjqz0uYBew&_nc_ss=7b289&oh=00_AQNYH6ilfEgLxIZj7DGCLPvVrkBKXM1XABL6L6_7aC8MqQ&oe=6AE4FED8"
+            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/771629126_4436200756634439_1546983187229772392_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=JUYtfdTPRFQQ7kNvwFCgz0-&_nc_oc=AdoT1n6eKXPsQvNgJ5RyPeh6H1TJO5j-3VmV855wTtX4SqmhnuXoSqk0nzZFQldFt-w&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=XWwlCPsLXNAT3drb5zzjzg&_nc_ss=7b289&oh=00_AQQnf-1Yb3M1SyE7T0Tq3e8PayO65t1irEH76Ya0KqYCEg&oe=6AEE33E6",
+            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/770093260_1760515538305840_1716614496657730395_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=litaha-G8YkQ7kNvwGMibF8&_nc_oc=Adovq8qKQQSm_vuwY9sNVpG8on0WGkytvOne9wpIemGiCz8EVTVTSblQw0xusfnXFFc&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=XWwlCPsLXNAT3drb5zzjzg&_nc_ss=7b289&oh=00_AQRL-rcnVQ9R4Sc-B62wE_LYLJvZEO9nZlEtwUUc0dR8Jw&oe=6AEE57F3",
+            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/769222488_1032701162949206_8361600260652764390_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=a_Sq7aSxv84Q7kNvwF0jIAK&_nc_oc=AdrYNgKGfd6DKNYGeBTyQt_bLELmULMZpeTUsLGlb3luerABPoa9LJ098OxPfo1lrRc&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=XWwlCPsLXNAT3drb5zzjzg&_nc_ss=7b289&oh=00_AQSrWVeneP46GK7wSPFY5Ag_xpxWMQyfcde1GQkj4RqYtw&oe=6AEE3958"
           ],
           "images": [
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/771629126_4436200756634439_154_520551.jpg",
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/770093260_1760515538305840_171_69388252.jpg"
+            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/771629126_4436200756634439_154_8095351.jpg",
+            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/770093260_1760515538305840_171_86437552.jpg"
           ],
           "library_url": "https://www.facebook.com/ads/library/?id=1601332488377612",
           "destination": "",
@@ -123,34 +124,16 @@
           "started": "Aug 19, 2026",
           "text": "Venus - the most reliable name in Home Appliances including Water Heaters, Solar Water Heaters and High-performance Fans.\nVENUSHOMEAPPLIANCES.COM\nVENUS Water Heaters Now in Hyderabad\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nGet Directions\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nVENUSHOMEAPPLIANCES.COM\nVENUS Water Heaters Now in Hyderabad\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nGet Directions\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nVENUSHOMEAPPLIANCES.COM\nVENUS Water Heaters Now in Hyderabad\nVisit GKK Electricals for the latest VENUS range and ",
           "image_urls": [
-            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/772735182_1663495645499486_2474988722221012476_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GswAFczzgWkQ7kNvwFm2nea&_nc_oc=Adoj-Bc6kOXVAFTVMiZzG45Sz_XwMV5o7VzcrNI5VV2CTiotj65_HZevksCs1q2EF_A&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=wwl6UkODzNd4Cjqz0uYBew&_nc_ss=7b289&oh=00_AQMa44CFFmXf88GyYoe-TK1F2E10rIBQ4cBBP7Rsd9LTcA&oe=6AE4D6C7",
-            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/769403501_1045846358303612_8400512787032328291_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-U_tObxB0BYQ7kNvwHsG-hg&_nc_oc=AdogYmCOHdv1FljbUtZ3huf-_sOkphG-9S0iyVrve-99ZiAc8vMTA2sxfLi4ZUNmD_A&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=wwl6UkODzNd4Cjqz0uYBew&_nc_ss=7b289&oh=00_AQNjOchNjzlSAB90BWO0XvtCkJPlaIMLPBHv10CujXVOGg&oe=6AE50635",
-            "https://scontent-iad3-2.xx.fbcdn.net/v/t39.35426-6/772434001_1499243515337989_8726947715847260551_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Wjvwcxx7HacQ7kNvwHOc5Rt&_nc_oc=Ado-g7T_a0f-dk-vGxw2pReyBxCcN7qphgdE3LHah1tvea97J-JJqgPfnRn9LnEUgOE&_nc_zt=14&_nc_ht=scontent-iad3-2.xx&_nc_gid=wwl6UkODzNd4Cjqz0uYBew&_nc_ss=7b289&oh=00_AQOqmBPBCAwni3R2r8CTfyNbYbprjnxDEYol1whp3hpBog&oe=6AE50D45"
+            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/772735182_1663495645499486_2474988722221012476_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=U5syHgwiAqMQ7kNvwGCDJbB&_nc_oc=AdryryF3zIFDoxxCS95RcAG6ANQ_fz0dcxYT-XBHPsfX_tMxYzwPSuIMEllHfjZZ4V4&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=XWwlCPsLXNAT3drb5zzjzg&_nc_ss=7b289&oh=00_AQTDjT82CKs1FzEKxFQOhSj0cs6eRgTbWCCVH5fMiW-SFQ&oe=6AEE4987",
+            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/769403501_1045846358303612_8400512787032328291_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s-FRLTU0ixEQ7kNvwE2QPyN&_nc_oc=AdqjK6WjNfLFB_5DEgf9oU11oKUqCx29Z_cCOMTiHin5G_aASjhHLcrmmlswsq2z0KI&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=XWwlCPsLXNAT3drb5zzjzg&_nc_ss=7b289&oh=00_AQRh1kWDqVoeBDqX__ZysEQouL4s5Pqb98udGA35qjrSHQ&oe=6AEE40B5",
+            "https://scontent-iad3-2.xx.fbcdn.net/v/t39.35426-6/772434001_1499243515337989_8726947715847260551_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zz4gRs9u1GQQ7kNvwGAnBE-&_nc_oc=Adqhpn0p7cFZeJ4l8P7kZwBoqj9lQZCiPKtlDK98ZyqaOOxT6Fpyt7VY9I39HWdf9pY&_nc_zt=14&_nc_ht=scontent-iad3-2.xx&_nc_gid=XWwlCPsLXNAT3drb5zzjzg&_nc_ss=7b289&oh=00_AQSHzMyUeYx3i8Li8t39JFE96zabnR-zJr06MlB1OpSHJw&oe=6AEE47C5"
           ],
           "images": [
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/772735182_1663495645499486_247_51744089.jpg",
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/769403501_1045846358303612_840_91012681.jpg"
+            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/772735182_1663495645499486_247_20296165.jpg",
+            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/769403501_1045846358303612_840_21092241.jpg"
           ],
           "library_url": "https://www.facebook.com/ads/library/?id=1634933028227929",
           "destination": "",
-          "whatsapp": ""
-        },
-        {
-          "library_id": "1022134620582672",
-          "page_name": "Venus home appliances",
-          "started": "Aug 1, 2026",
-          "text": "Why heat and store water when you only need it instantly?\nHTTPS://WWW.VENUSHOMEAPPLIANCES.COM/PRODUCT/TANKLE...\nInstant Hot Water. Zero Waiting\nCompact, energy-efficient & built for continuous hot water.\nShop Now\nCompact, energy-efficient & built for continuous hot water.\nHTTPS://WWW.VENUSHOMEAPPLIANCES.COM/PRODUCT/TANKLE...\nSave Energy with Tankless Technology\nHot water only when you need it.\nShop Now\nHot water only when you need it.\nHTTPS://WWW.VENUSHOMEAPPLIANCES.COM/PRODUCT/TANKLE...\nUpgrade to Smart Hot Water\nFast heating. Compact design. Reliable performance.\nShop Now\nFast heating. Compact design. Reliable performance.\nHTTPS://WWW.VENUSHOMEAPPLIANCES.COM/PRODUCT/TANKLE...\nCompact Desig",
-          "image_urls": [
-            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/762276280_27713128891685251_2990382106435138395_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XMonDi-zc4gQ7kNvwEIQJe9&_nc_oc=Adrt2pcSkq7Fs5afBVzHm3qf5ysAhfYfdupC5SdGQ9hulq8fhVO8fPPASzorxb5A-GU&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=wwl6UkODzNd4Cjqz0uYBew&_nc_ss=7b289&oh=00_AQPbxvERR-ZcVd4fVLYtvlu8mrdLeL5Cr5hDVBCtAVSTOA&oe=6AE50299",
-            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/763701385_1592015422519138_9799658591181291_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=O8-ddoK5GBIQ7kNvwEvrcsX&_nc_oc=AdqVpM--kV3zSIpfDgBuVD_WRbFnVn1Yg7UIRhWFwOxvP3TS4OihZobf8pfIHwEQ_3k&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=wwl6UkODzNd4Cjqz0uYBew&_nc_ss=7b289&oh=00_AQMHaHLu2Kb3wYlXPqYMO2IEhaiVQs8e1CQr7uUYK9PRcg&oe=6AE4F36F",
-            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/759810009_27175787448766944_1404147249111069918_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Mn6MffN2VpcQ7kNvwF7mHQF&_nc_oc=AdouYpBNGz1iYpoXjfrzL1_0UkJ1gg9CGeOzLH7B6n1uAXNsgQ5M6fv3zTQVU63jYlQ&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=wwl6UkODzNd4Cjqz0uYBew&_nc_ss=7b289&oh=00_AQOfSqBth4MQDxRNxTbqrl4CcWmwiN6gTK1UpSyhgQlFKg&oe=6AE4FA38"
-          ],
-          "images": [
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/762276280_27713128891685251_29_81466780.jpg",
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/763701385_1592015422519138_979_50563142.jpg"
-          ],
-          "library_url": "https://www.facebook.com/ads/library/?id=1022134620582672",
-          "destination": "https://www.venushomeappliances.com/product/tankless-water-heater",
           "whatsapp": ""
         },
         {
@@ -163,6 +146,24 @@
           "library_url": "https://www.facebook.com/ads/library/?id=1621604429303607",
           "destination": "https://api.whatsapp.com/send",
           "whatsapp": ""
+        },
+        {
+          "library_id": "1022134620582672",
+          "page_name": "Venus home appliances",
+          "started": "Aug 1, 2026",
+          "text": "Why heat and store water when you only need it instantly?\nHTTPS://WWW.VENUSHOMEAPPLIANCES.COM/PRODUCT/TANKLE...\nInstant Hot Water. Zero Waiting\nCompact, energy-efficient & built for continuous hot water.\nShop Now\nCompact, energy-efficient & built for continuous hot water.\nHTTPS://WWW.VENUSHOMEAPPLIANCES.COM/PRODUCT/TANKLE...\nSave Energy with Tankless Technology\nHot water only when you need it.\nShop Now\nHot water only when you need it.\nHTTPS://WWW.VENUSHOMEAPPLIANCES.COM/PRODUCT/TANKLE...\nUpgrade to Smart Hot Water\nFast heating. Compact design. Reliable performance.\nShop Now\nFast heating. Compact design. Reliable performance.\nHTTPS://WWW.VENUSHOMEAPPLIANCES.COM/PRODUCT/TANKLE...\nCompact Desig",
+          "image_urls": [
+            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/762276280_27713128891685251_2990382106435138395_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pSMZL5RWZpwQ7kNvwH9lS7T&_nc_oc=AdoJ88o6HMoOneRPcPuBkMRmvCRxuooT18t_bihKu7AyN3_nmIc0P2N84XulVhTsuD0&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=XWwlCPsLXNAT3drb5zzjzg&_nc_ss=7b289&oh=00_AQRzJhELXflFcQFxN0rJy6bRZjmg9EOfboFewo8Ilh5GbQ&oe=6AEE3D19",
+            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/763701385_1592015422519138_9799658591181291_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=mverESnZ0yYQ7kNvwHMYxCI&_nc_oc=Adr28dEmCKFFm_njM-xrUmPfP-OJcVonxexk_4AIw9RJHiyHthJ9OvFiYabbsMY17pw&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=XWwlCPsLXNAT3drb5zzjzg&_nc_ss=7b289&oh=00_AQQ4yItkhXvCWFpWIiW47CozyT8CqCAIlJnIXPJCUsN7MA&oe=6AEE662F",
+            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/759810009_27175787448766944_1404147249111069918_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gqnjyTqBJ80Q7kNvwFaC_bu&_nc_oc=Ado-0HJ_4xLkVD5KO__Xi33VSSj0uF-sI-ZV4ZX7U1wRa0i5HSsckV6oNxCrqC0r-4E&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=XWwlCPsLXNAT3drb5zzjzg&_nc_ss=7b289&oh=00_AQT6vGy1TITRwXnx_0augdx2rxAXLoRkvp63UApTqd7AIQ&oe=6AEE34B8"
+          ],
+          "images": [
+            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/762276280_27713128891685251_29_91314231.jpg",
+            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/763701385_1592015422519138_979_75227648.jpg"
+          ],
+          "library_url": "https://www.facebook.com/ads/library/?id=1022134620582672",
+          "destination": "https://www.venushomeappliances.com/product/tankless-water-heater",
+          "whatsapp": ""
         }
       ],
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Venus+home+appliances&search_type=keyword_unordered",
@@ -170,8 +171,8 @@
     },
     "meta_competitors": {
       "query": "solar Hyderabad",
-      "results_label": "~300 results",
-      "results_count": 300,
+      "results_label": "~320 results",
+      "results_count": 320,
       "ads": [
         {
           "library_id": "942037648839408",
@@ -179,10 +180,10 @@
           "started": "May 29, 2026",
           "text": "🌞 ఇకపై కరెంట్ బిల్లు కట్టే పని లేదు!\nమీ ఇంటిపై సోలార్ సిస్టమ్ అమర్చుకోండి... ₹0 (సున్నా) ముందస్తు ఖర్చుతో!*\nశ్రీ బాలాజీ సోలార్ ఎనర్జీస్ (Sri Balaji Solar Energies) - 14 సంవత్సరాల నమ్మకం. 🏛\nమా ప్రత్యేకతలు: \n✅ కేంద్ర ప్రభుత్వం నుండి ₹78,000/- వరకు సబ్సిడీ! ✅ నెలకు కరెంట్ బిల్లు బదులు, కేవలం ₹1355/- EMI కట్టండి. \n✅ 10,000+ సంతృప్తికరమైన కస్టమర్లు. \n✅ ప్రభుత్వ ఉద్యోగులకు కూడా సబ్సిడీ వర్తిస్తుంది.\n⚡  కొత్తగూడెం , నర్సంపేట, వరంగల్ (Warangal) , హన్మకొండ (Hanumakonda), రాజమహేంద్రవరం, భద్రాచలం, ఘట్‌కేసర్ హుజూరాబాద్ and hyderabad మరియు చుట్టుపక్కల జిల్లాల్లో సర్వీస్ కలదు.\n\n👇 ఈ రోజే ఫ్రీ సైట్ విజిట్ (Free Site Visit) లభిస్తుంది\nFB.ME\n🌞 ఇకపై కరెంట్ బిల్లు కట్టే పని లేదు!\n✅ కేవలం ₹1355/- EMI కట్టండి. ✅ ",
           "image_urls": [
-            "https://scontent-iad3-1.xx.fbcdn.net/v/t39.35426-6/612709264_1552468135986225_1240266142572683594_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=TdyxL0n_Bl8Q7kNvwF7oZBs&_nc_oc=AdoCk1kTc9CwSibEZzH10XffZd_ufYI8iumvsiAFyqw8-WdFVsq_kh4Blcmqwcvr17Q&_nc_zt=14&_nc_ht=scontent-iad3-1.xx&_nc_gid=9RK9hMOqCfxN5bBXyxdwAw&_nc_ss=7b289&oh=00_AQO9W8ug4rap_rMEp1FKBpwzm_vaDUmZVIOezVal3wAOCw&oe=6AE4F9E4"
+            "https://scontent-iad3-1.xx.fbcdn.net/v/t39.35426-6/612709264_1552468135986225_1240266142572683594_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=81FRwvSTm0oQ7kNvwFgxhII&_nc_oc=AdqUhzQO0jKPyOObcp9fTvMWcPREUSNPFHhMm0_rV6JIcSGI81cL-Krb8oeZsHBoNH0&_nc_zt=14&_nc_ht=scontent-iad3-1.xx&_nc_gid=p1Ti5IU6ajsbr4hJq3rUWA&_nc_ss=7b289&oh=00_AQQCkR4BDPVGw82DGcQH7pkwcSMNjtyvEZzKOj3HVv1u4g&oe=6AEE3464"
           ],
           "images": [
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/612709264_1552468135986225_124_41081755.jpg"
+            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/612709264_1552468135986225_124_64135198.jpg"
           ],
           "library_url": "https://www.facebook.com/ads/library/?id=942037648839408",
           "destination": "http://fb.me/",
@@ -194,10 +195,10 @@
           "started": "Oct 11, 2026",
           "text": "This Dussehra, Hyderabad homes can go solar with ₹0 down payment on eligible EMI plans, ₹22,000 off from AB Solar, and up to ₹78,000 government subsidy*. Book a free site visit.\n\n📞 Call us: +91 80990 40600 | 9121 9121 35\n🌐 Visit: www.absolar.in\n📍 Serving Hyderabad & surrounding areas.\nFB.ME\nDussehra Offer: ₹22,000 Off\nGet offer",
           "image_urls": [
-            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/841439167_1424386869844643_2611946368120982355_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3LX6m1KxydgQ7kNvwER3VgM&_nc_oc=AdpY_jEodxznEwyZi8OUGAmr0h3a16YVHy5pfPPTIkHzksdM008kk7lgvQMXBFteaIU&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=9RK9hMOqCfxN5bBXyxdwAw&_nc_ss=7b289&oh=00_AQOLCCKcyGqjqFiN0fC75xCbq7qwV4trdv-KmnErQLPcrg&oe=6AE4FE73"
+            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/841439167_1424386869844643_2611946368120982355_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tUUQN9GM7HkQ7kNvwEYPCMN&_nc_oc=Adr--7cx3M66Uu9X1PBOwVlrNYvMJfIL__uAa3kMppEBWU5X4vZpDuXUaSmY-zppu7I&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=p1Ti5IU6ajsbr4hJq3rUWA&_nc_ss=7b289&oh=00_AQSA_t3F0sreDT0Xp2dfTnxrGuFLUKm3GzG5cMGcOpDV6g&oe=6AEE38F3"
           ],
           "images": [
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/841439167_1424386869844643_261_33732093.jpg"
+            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/841439167_1424386869844643_261_3708165.jpg"
           ],
           "library_url": "https://www.facebook.com/ads/library/?id=1970895137170804",
           "destination": "http://www.absolar.in/",
@@ -209,10 +210,10 @@
           "started": "Oct 1, 2026",
           "text": "📢 TRIPURA – ADMISSION OPEN!\n\nLooking for a skill development opportunity in Tripura?\n\nEnroll now for Solar Lighting Assembler (SGL/Q0201) under DDU-GKY with 3 Months FREE Residential Training.\n\n✅ Free skill training\n✅ Residential training\n✅ On-the-Job Training (OJT)\n✅ Soft Skills, English & IT training\n✅ Free uniform & training materials\n✅ Job placement assistance\n\nEligibility:\n👤 Age: 18–35 years\n🎓 Education: 10th Pass & Above\n👨‍🔧👩‍🔧 Open to Male & Female candidates\n\n📍 Training Centre: Agartala, Tripura\n📞 Enrol Now: +91 90638 04472\n\nLimited seats available. Apply now!\n\n#Tripura #Agartala #DDUGKY #TRLM #SkillDevelopment #SkillTraining #SolarTraining #SolarJobs #JobTraining #FreeTraining\nTripu",
           "image_urls": [
-            "https://scontent-iad3-1.xx.fbcdn.net/v/t39.35426-6/828650288_1621385709339618_7745118690618188227_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ZeS_OBjrc-0Q7kNvwGoQpu4&_nc_oc=Adro4BOOnXxn_bKEPx5ggGg3LUXVV0Rfgv22jH-SrWYwwegK_fenv8nkI5OrekB5uhk&_nc_zt=14&_nc_ht=scontent-iad3-1.xx&_nc_gid=9RK9hMOqCfxN5bBXyxdwAw&_nc_ss=7b289&oh=00_AQMsY9i2KVSGmQMT9Wm-kdi8S9c8sTM3Uu9V_DFL2DxTTw&oe=6AE4F753"
+            "https://scontent-iad3-1.xx.fbcdn.net/v/t39.35426-6/828650288_1621385709339618_7745118690618188227_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hQL2ZlvsDmUQ7kNvwHI2JU0&_nc_oc=AdqgMGqd3r66YLSugbtQbChsmEdOcaJz1FFFyDXKDvuGiz-snM0vp4CcioYHwObx4Yg&_nc_zt=14&_nc_ht=scontent-iad3-1.xx&_nc_gid=p1Ti5IU6ajsbr4hJq3rUWA&_nc_ss=7b289&oh=00_AQQwHEtTnsW-m4uhjpmUu2W2W972A1sxCagEdlgEKEvMXg&oe=6AEE31D3"
           ],
           "images": [
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/828650288_1621385709339618_774_12222886.jpg"
+            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Venus_home_appliances/828650288_1621385709339618_774_70994873.jpg"
           ],
           "library_url": "https://www.facebook.com/ads/library/?id=1744843273407353",
           "destination": "http://fb.me/",
@@ -235,7 +236,7 @@
         "name": "Venus Home Appliances Pvt Ltd",
         "advertiser_id": "",
         "country": "IN",
-        "ad_count": 72,
+        "ad_count": 78,
         "url": "https://adstransparency.google.com/?hl=en&region=anywhere",
         "images": [],
         "found": true,
@@ -249,7 +250,7 @@
         {
           "name": "WAAREE ENERGIES LIMITED",
           "country": "IN",
-          "ad_count": 200,
+          "ad_count": 300,
           "detail": {
             "name": "WAAREE ENERGIES LIMITED",
             "advertiser_id": "",
@@ -269,7 +270,7 @@
             "name": "AB SOLAR POWER SYSTEMS",
             "advertiser_id": "",
             "country": "IN",
-            "ad_count": 7,
+            "ad_count": 6,
             "url": "https://adstransparency.google.com/advertiser/AR00983201834636148737?hl=en&region=anywhere",
             "images": [],
             "found": true,
@@ -285,6 +286,6 @@
       "query": "Sri Balaji Solar Energies, AB Solar Power Systems, New Directions Educational Society - Skill Development"
     },
     "notes": [],
-    "summary": "Venus home appliances is running active ads on Meta (Facebook/Instagram) — about 97 live results in the Ad Library. On Google's network, the transparency centre shows roughly 72 live ads. Meanwhile ~300 live Meta ads from competitors in Hyderabad and 3 Indian advertisers on Google Ads in the solar category are capturing the same customers."
+    "summary": "Venus home appliances is running active ads on Meta (Facebook/Instagram) — about 96 live results in the Ad Library. On Google's network, the transparency centre shows roughly 78 live ads. Meanwhile ~320 live Meta ads from competitors in Hyderabad and 3 Indian advertisers on Google Ads in the solar category are capturing the same customers."
   }
 }
