@@ -65,6 +65,15 @@ tagged `report_kind` so the Gmail workflow knows which PDF to attach.
 Always gate before delivering: `python 01-LEADS/verify_report.py --all` for full
 reports, `python 01-LEADS/verify_report.py --ads-only` for the live-ad ones.
 
+Then run the **third check** — `python 01-LEADS/verify_live.py` — which re-fetches
+the live Meta Ad Library and the lead's live website and confirms every stored
+figure is still real, live data. The first two gates only compare files against
+each other; this one goes to the source.
+
+**`AGENTS.md` at the repo root is the standing contract for every agent working
+here** — format rules, real-data rules, lead qualification, Gmail rules, and the
+three gates. Read it first.
+
 ---
 
 *Built for inconsistent schedules — every system here is designed to work in 30-minute bursts.*
