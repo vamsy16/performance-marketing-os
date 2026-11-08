@@ -1,6 +1,6 @@
 # Every audit PDF in this repo — index
 
-**49 PDFs** covering **46 companies** (21 of them scored), on branch `arena/de53294b-performance-marketing-os` (tip `a4545a4`).
+**49 PDFs** covering **46 companies** (21 of them scored), on branch `arena/de53294b-performance-marketing-os` (tip `aa56dfe`).
 
 They live in **two folders**, which is why looking at one folder makes the total look small:
 
