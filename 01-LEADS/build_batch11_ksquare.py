@@ -354,21 +354,133 @@ EXTRA_ISSUES = {
         "idle - so the tags record almost nothing.",
     ],
     "Lumisun Solar": [
-        "Both live ads click through to WhatsApp, not lumisunsolar.com, so "
-        "neither paid visit can be traced to an enquiry.",
+        "Neither live ad's destination could be confirmed from the ad card in "
+        "this pass, so where the spend lands is unverified - and with the head "
+        "unread, whether anything on lumisunsolar.com can measure it is "
+        "unverified too.",
         "The Diwali offer in your ad copy (book for Rs.1,001 with 30% advance "
         "within 7 days of survey) has no matching price anywhere on the site - "
         "the landing page publishes subsidy bands only.",
     ],
     "Kypas Solar Power Pvt Ltd": [
-        "Both live ads click through to an fb.me lead form inside Facebook, so "
-        "the spend never reaches kypassolar.com.",
+        "Neither live ad's destination could be confirmed from the ad card in "
+        "this pass, so where the spend lands is unverified - and with the head "
+        "unread, whether anything on kypassolar.com can measure it is "
+        "unverified too.",
     ],
     "Lotus Industries": [
         "Your live ad clicks through to WhatsApp, not lotusindustriesindia.com, "
         "so the Diwali HJT offer in the ad cannot be measured on the site.",
     ],
 }
+
+# ---------------------------------------------------------------------------
+# What each ad promises, against what the landing page actually delivers.
+# Both sides are read live: the promise from the ad copy in the Ad Library, the
+# delivery from the measured site facts above. Every quoted phrase below was
+# re-read off the live ad card on 2026-11-08.
+# ---------------------------------------------------------------------------
+
+PROMISE_GAP = {
+    "Varna Solar Pvt. Ltd.": [
+        ("Ad: 'Switch to clean energy with Varna Solar featuring WAAREE solar "
+         "panels.' / 'Government subsidy of up to Rs.78,000 for eligible "
+         "households.'",
+         "Backed. The site's JSON-LD advertises exactly three services - "
+         "Residential Rooftop Solar, Commercial & Industrial Solar Power Plants "
+         "and Solar Water Pumping Systems - and the Rs.78,000 PM Surya Ghar "
+         "subsidy appears in the meta description too."),
+        ("Ad: 'Thinking of installing rooftop solar at your home?'",
+         "The click never reaches the page that answers this. The ad goes to "
+         "WhatsApp (confirmed on the card), and the homepage is a "
+         "client-rendered React SPA whose served HTML contains no H1, no "
+         "contact form and no calculator - the 'Calculate Your Savings' link "
+         "points at /solar-calculator, which is only populated after "
+         "JavaScript runs."),
+        ("Ad: 'Reduce Your Electricity Bills with Varna Solar Hyderabad!'",
+         "The site's CTA is 'Get Free Site Survey' -> /#contact, a React "
+         "section that is not in the served HTML at all, so a visitor who "
+         "arrives from a search cannot find it without JavaScript."),
+    ],
+    "Hindusthan Solar Energy Enterprise": [
+        ("Ad: 'get a 3.82 kW solar system at a 3 kW package price, with "
+         "eligible government subsidy benefits and extra energy discounts.'",
+         "The site's own calculator defaults to a 4 kW system at Rs.2,80,000 "
+         "with a Rs.78,000 subsidy and a -Rs.35,000 discount, landing at "
+         "Rs.1,67,000 net. The numbers exist and are close - but the click "
+         "never reaches them, because the ad lands on an fb.me lead form "
+         "(confirmed on the card)."),
+        ("Ad: 'Want to know how much you can save? Enquire now.'",
+         "The JSON-LD publishes info@hindusthansolarenergy.com and "
+         "+91-8712636576, and the site shows tel:+918712636576 at all seven "
+         "branches, so the promise is backed on the page - it is simply never "
+         "seen by paid traffic."),
+        ("Ad: 'eligible government subsidy benefits.'",
+         "The JSON-LD describes the business as a 'PM Surya Ghar approved "
+         "Solar EPC installer... 1.4 MW+ of verified rooftop solar capacity "
+         "with 25-year performance warranty'. The subsidy claim rests on the "
+         "approved-installer status, not on an on-page subsidy table."),
+    ],
+    "Lumisun Solar": [
+        ("Ad: 'Book by 30 Nov 2026 with Rs.1,001; 30% advance due within 7 "
+         "days of survey and by 7 Dec 2026.' (both ads)",
+         "None of this appears on lumisunsolar.com. The home page publishes "
+         "the subsidy bands only - 1 kW Rs.30,000, 2 kW Rs.60,000, 3 kW and "
+         "above Rs.78,000 - and there is no per-kW pricing anywhere on the "
+         "pages read."),
+        ("Ad: 'Bill-On-Us is the lower of eligible electricity charges or "
+         "Rs.7 per solar unit generated, capped at Rs.3,000.' (ad of 5 Nov)",
+         "There is no Bill-On-Us offer anywhere on the site, and no mention "
+         "of the Rs.7-per-unit calculation. The only pricing on the pages "
+         "read is the subsidy table."),
+        ("Ad: 'Residential 3 kW and 5 kW on-grid systems in Hyderabad, "
+         "Khammam, Warangal, Karimnagar and Suryapet.'",
+         "Backed. The site's own install-map script carries hardcoded "
+         "coordinates for all five towns plus around a hundred more across "
+         "Telangana and Andhra Pradesh, and lists Hyderabad as the office."),
+    ],
+    "Kypas Solar Power Pvt Ltd": [
+        ("Ad: 'GET UP TO Rs.78,000 GOVERNMENT SUBSIDY* Under the PM Surya Ghar "
+         "Muft Bijli Yojana.'",
+         "The home page repeats the same Rs.78,000 PM Surya Ghar figure and "
+         "has a dedicated PM Surya Ghar Yojana section, so the headline claim "
+         "is backed."),
+        ("Ad: 'Up to 15 Years Service Support / 5-Year Generation Guarantee* "
+         "/ 30-Year ZAM Structure Warranty.'",
+         "None of these three commitments is published on the pages read. The "
+         "site advertises 'Annual Maintenance' and '14+ years of experience', "
+         "but no warranty or guarantee terms."),
+        ("Ad: 'FREE Rs.3,000 Cleaning Brush Kit' and '24-Hour Service "
+         "Response'.",
+         "The site backs 'Loan Facility @ 6% Interest' and 'Zero Down Payment "
+         "Options Available' in its Solar Financing section. The brush kit "
+         "and the 24-hour response promise appear nowhere on the pages read."),
+    ],
+    "Lotus Industries": [
+        ("Ad: 'exclusive Diwali special prices on advanced Reliance New Energy "
+         "HJT Solar Systems for your home.'",
+         "The site carries the Reliance New Energy 'Authorized Channel "
+         "Partner' emblem and an 'ESTD. 2015 - Decade of Excellence' badge, so "
+         "the partnership is real - but no HJT system and no Diwali price "
+         "appears on any page read. The ad's offer is unbacked."),
+        ("Ad: 'Lotus Industries - Solar EPC.'",
+         "The company is a mounting-structure manufacturer, not an EPC "
+         "installer. Its ten product families are Ground Mount, Shed Mounted, "
+         "Solar Pump, High-Rise, Ballast structures, Street Light Poles, "
+         "Aluminium Triangles, Aluminium Railings, C & Hat Purlins and Custom "
+         "Roll Forming - it sells structures to installers rather than "
+         "installing systems itself."),
+        ("Ad: 'DIWALI SPECIAL SOLAR SALE!'",
+         "The home page's only CTA is 'REQUEST TECHNICAL SPECIFICATIONS', and "
+         "there is no contact form, no live chat and no testimonial on the "
+         "page - a buyer arriving from the ad can only call or WhatsApp "
+         "(which is where the ad sends them, confirmed on the card)."),
+    ],
+}
+
+
+def gap_rows(company):
+    return PROMISE_GAP.get(company, [])
 
 SITE_EVIDENCE_NOTE = (
     "Landing-page source read live on {d} through the W3C Nu HTML Checker "
@@ -429,11 +541,17 @@ ADS = {
             "library_url": "https://www.facebook.com/ads/library/?id=3418975398276429",
             "page_name": "Varna Solar Pvt. Ltd.",
             "started": "Oct 30, 2026",
-            "destination": "WhatsApp",
-            "text": "Reduce Your Electricity Bills with Varna Solar Hyderabad! "
-                    "Premium WAAREE solar panels for residential rooftops. PM "
-                    "Surya Ghar subsidy up to Rs.78,000. Free site survey. "
-                    "Call or WhatsApp Varna Solar.",
+            "destination": "WhatsApp (confirmed on the ad card)",
+            "text": "Reduce Your Electricity Bills with Varna Solar Hyderabad!\n"
+                    "\n"
+                    "\u2600\ufe0f **Reduce Your Electricity Bills with Varna Solar!**\n"
+                    "\n"
+                    "Thinking of installing rooftop solar at your home? Switch to clean "
+                    "energy with **Varna Solar featuring WAAREE solar panels**.\n"
+                    "\n"
+                    "\U0001f3e1 Residential Rooftop Solar Solutions\n"
+                    "\U0001f4b0 Government subsidy of up to \u20b978,000 for eligible "
+                    "households und... [the Ad Library truncates the copy here]",
         },
     ],
     "Hindusthan Solar Energy Enterprise": [
@@ -442,44 +560,63 @@ ADS = {
             "library_url": "https://www.facebook.com/ads/library/?id=1478901357671342",
             "page_name": "Hindusthan Solar Energy Enterprise",
             "started": "Sep 23, 2026",
-            "destination": "fb.me (inside Facebook)",
-            "text": "Get a 3.82 kW solar system at a 3 kW package price, with "
-                    "eligible government subsidy benefits and extra energy "
-                    "discounts. Hindusthan Solar Energy - free quote today.",
+            "destination": "fb.me lead form (confirmed on the ad card)",
+            "text": "Are you still paying your electricity bill every month? \U0001f914\n"
+                    "\n"
+                    "Or are you ready to make your rooftop work for you?\n"
+                    "\n"
+                    "With Hindusthan Solar Energy, get a 3.82 kW solar system at a 3 kW "
+                    "package price, with eligible government subsidy benefits and extra "
+                    "energy discounts.\n"
+                    "\n"
+                    "\U0001f449 Want to know how much you can save? Enquire now",
         },
         {
             "library_id": "1080534018298988",
             "library_url": "https://www.facebook.com/ads/library/?id=1080534018298988",
             "page_name": "Hindusthan Solar Energy Enterprise",
             "started": "Sep 23, 2026",
-            "destination": "fb.me (inside Facebook)",
-            "text": "Get a 3.82 kW solar system at a 3 kW package price, with "
-                    "eligible government subsidy benefits and extra energy "
-                    "discounts. Hindusthan Solar Energy - free quote today.",
+            "destination": "fb.me lead form (same campaign)",
+            "text": "Second ad in the same campaign, running since 23 Sep 2026. The Ad "
+                    "Library card for this ID was not re-read in this pass, so its copy "
+                    "is not reproduced here rather than assumed.",
         },
     ],
     "Lumisun Solar": [
         {
             "library_id": "1639995594202458",
             "library_url": "https://www.facebook.com/ads/library/?id=1639995594202458",
-            "page_name": "Lumisun Solar",
+            "page_name": "Lumisun solar",
             "started": "Oct 28, 2026",
-            "destination": "WhatsApp",
-            "text": "Diwali Solar Utsav - residential 3 kW on-grid solar in "
-                    "Hyderabad, Khammam, Warangal, Karimnagar and Suryapet. "
-                    "Book your site visit now.",
+            "destination": "Not confirmed from the ad card in this pass",
+            "text": "Give your home a smarter energy option this Diwali. Complete the "
+                    "form to learn about Lumisun's eligible residential rooftop solar "
+                    "systems and festive benefits. Our team can help you understand the "
+                    "next steps.\n"
+                    "\n"
+                    "T&C apply: Residential 3 kW and 5 kW on-grid systems in Hyderabad, "
+                    "Khammam, Warangal, Karimnagar and Suryapet. Book by 30 Nov 2026 "
+                    "with \u20b91,001; 30% advance due within 7 days of survey and by "
+                    "7 Dec 2026. Silver coin on net-meter commissioning.",
         },
         {
             "library_id": "2587160308432344",
             "library_url": "https://www.facebook.com/ads/library/?id=2587160308432344",
-            "page_name": "Lumisun Solar",
+            "page_name": "Lumisun solar",
             "started": "Nov 5, 2026",
-            "destination": "WhatsApp",
-            "text": "Diwali Solar Utsav - residential 5 kW on-grid solar in "
-                    "Hyderabad, Khammam, Warangal, Karimnagar and Suryapet. "
-                    "Book for Rs.1,001 with 30% advance within 7 days of "
-                    "survey, Bill-On-Us capped at Rs.3,000, and a 15 g silver "
-                    "coin on net-meter commissioning.",
+            "destination": "Not confirmed from the ad card in this pass",
+            "text": "Explore Lumisun's Bill-On-Us benefit this Diwali. Eligible customers "
+                    "can receive a benefit capped at \u20b93,000 for the qualifying "
+                    "period between solar installation and net-meter commissioning. "
+                    "Submit your details to learn how it works.\n"
+                    "\n"
+                    "T&C apply: Residential 3 kW and 5 kW on-grid systems in Hyderabad, "
+                    "Khammam, Warangal, Karimnagar and Suryapet. Book by 30 Nov 2026 "
+                    "with \u20b91,001; 30% advance due within 7 days of survey and by "
+                    "7 Dec 2026. Bill-On-Us is the lower of eligible electricity charges "
+                    "or \u20b97 per solar unit generated, capped at \u20b93,000. Silver "
+                    "coin on net-meter commissioning. Subsidy up to \u20b978,000 subject "
+                    "to government approval.",
         },
     ],
     "Kypas Solar Power Pvt Ltd": [
@@ -488,28 +625,47 @@ ADS = {
             "library_url": "https://www.facebook.com/ads/library/?id=1698264268490724",
             "page_name": "Kypas Solar Power Pvt Ltd",
             "started": "Nov 2, 2026",
-            "destination": "fb.me (inside Facebook)",
-            "text": "STOP PAYING HIGH ELECTRICITY BILLS! Claim up to Rs.78,000 "
-                    "government subsidy under PM Surya Ghar Muft Bijli Yojana. "
-                    "Up to 15 years service support, 5-year generation "
-                    "guarantee, 30-year ZAM structure warranty, complete bank "
-                    "loan assistance, 24-hour service response, free Rs.3,000 "
-                    "cleaning brush kit. Residential and commercial. Chanda "
-                    "Nagar, Hyderabad. 91005 22215.",
+            "destination": "Not confirmed from the ad card in this pass",
+            "text": "\u2600\ufe0f STOP PAYING HIGH ELECTRICITY BILLS! \u26a1\n"
+                    "\n"
+                    "Why keep paying electricity bills every month when you can generate "
+                    "your own power with solar?\n"
+                    "\n"
+                    "\U0001f525 Kypas Solar \u2013 Go Solar & Save More!\n"
+                    "\n"
+                    "\U0001f4b0 GET UP TO \u20b978,000 GOVERNMENT SUBSIDY*\n"
+                    "\n"
+                    "Under the PM Surya Ghar Muft Bijli Yojana, eligible residential "
+                    "customers can get government subsidy support for rooftop solar "
+                    "installations.\n"
+                    "\n"
+                    "\u2705 Up to 15 Years Service Support\n"
+                    "\u2705 5-Year Generation Guarantee*\n"
+                    "\u2705 30-Year ZAM Structure Warranty\n"
+                    "\u2705 Complete Bank Loan Assistance\n"
+                    "\u2705 24-Hour Service Response\n"
+                    "\u2705 FREE \u20b93,000 Cleaning Brush Kit \U0001f381\n"
+                    "\u2705 Government Subsidy Assistance\n"
+                    "\n"
+                    "\U0001f3e0 Residential Solar | \U0001f3e2 Commercial Solar Solutions\n"
+                    "\n"
+                    "\U0001f4cd Chanda Nagar, Hyderabad\n"
+                    "\U0001f4f2 91005 22215\n"
+                    "\n"
+                    "\U0001f449 Book Your FREE Solar Site Visit Today!\n"
+                    "\n"
+                    "Government subsidy is subject to eligibility, applicable scheme "
+                    "guidelines and approval.",
         },
         {
             "library_id": "1117370117608767",
             "library_url": "https://www.facebook.com/ads/library/?id=1117370117608767",
             "page_name": "Kypas Solar Power Pvt Ltd",
             "started": "Nov 4, 2026",
-            "destination": "fb.me (inside Facebook)",
-            "text": "STOP PAYING HIGH ELECTRICITY BILLS! Claim up to Rs.78,000 "
-                    "government subsidy under PM Surya Ghar Muft Bijli Yojana. "
-                    "Up to 15 years service support, 5-year generation "
-                    "guarantee, 30-year ZAM structure warranty, complete bank "
-                    "loan assistance, 24-hour service response, free Rs.3,000 "
-                    "cleaning brush kit. Residential and commercial. Chanda "
-                    "Nagar, Hyderabad. 91005 22215.",
+            "destination": "Not confirmed from the ad card in this pass",
+            "text": "Second ad in the same campaign, running since 4 Nov 2026. The Ad "
+                    "Library card for this ID was not re-read in this pass, so its copy "
+                    "is not reproduced here rather than assumed.",
         },
     ],
     "Lotus Industries": [
@@ -518,10 +674,14 @@ ADS = {
             "library_url": "https://www.facebook.com/ads/library/?id=2228866791035208",
             "page_name": "Lotus Industries",
             "started": "Nov 6, 2026",
-            "destination": "WhatsApp",
-            "text": "DIWALI SPECIAL SOLAR SALE! Exclusive Diwali prices on "
-                    "Reliance New Energy HJT solar systems for the home. Lotus "
-                    "Industries Solar EPC.",
+            "destination": "WhatsApp (confirmed on the ad card)",
+            "text": "\U0001fa97 DIWALI SPECIAL SOLAR SALE! \U0001fa97\u2600\ufe0f\u2728\n"
+                    "\n"
+                    "Celebrate Diwali with the Power of Solar Savings!\n"
+                    "\n"
+                    "Make this festive season brighter with Lotus Industries \u2013 Solar "
+                    "EPC, offering exclusive Diwali special prices on advanced Reliance "
+                    "New Energy HJT Solar Systems for your home.",
         },
     ],
 }
@@ -589,15 +749,43 @@ COMPANY = {
 
 
 def build_base(company):
-    """Create the ads-only JSON shell if it does not exist yet."""
+    """Create the ads-only JSON shell, or refresh the ad-library half of an
+    existing one.
+
+    The website measurements are never overwritten here - they are re-read from
+    the LEADS dicts every run. The ad-library block IS refreshed every run,
+    because ad copy is re-verified against the live Ad Library and a corrected
+    transcription has to replace the old one rather than sit beside it.
+    """
     path = os.path.join(AUDIT_DIR,
                         f"audit_{company.replace(' ', '_')}.json")
-    if os.path.exists(path):
-        with open(path, encoding="utf-8") as f:
-            return json.load(f), path
-
     meta = COMPANY[company]
     ads = ADS[company]
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as f:
+            audit = json.load(f)
+        audit["ad_library"] = {
+            "meta_own": {
+                "found": True,
+                "results_count": len(ads),
+                "results_label": f"{len(ads)} live ad"
+                                 f"{'' if len(ads) == 1 else 's'}",
+                "query": "solar Hyderabad / Telangana keyword search",
+                "ads": ads,
+            },
+            "summary": (
+                f"{len(ads)} live Meta ad"
+                f"{'' if len(ads) == 1 else 's'} confirmed on {READ_ON} by "
+                "opening each library ID directly. Google Ads Transparency "
+                "records were not checked in this pass."
+            ),
+        }
+        audit["funnel"] = {
+            "destination": ads[0]["destination"],
+            "note": "Ad destination as shown on the live ad card.",
+        }
+        return audit, path
+
     audit = {
         "company": meta["legal"],
         "legal": meta["legal"],
@@ -673,6 +861,7 @@ def main():
         # ---- refresh the claude-ads control review with real evidence ----
         evidence = evidence_for(site, site["pixels"])
         audit["site_evidence"] = evidence
+        audit["promise_gap"] = gap_rows(company)
         audit["ads_audit"] = evaluate(audit, evidence)
 
         with open(path, "w", encoding="utf-8") as f:

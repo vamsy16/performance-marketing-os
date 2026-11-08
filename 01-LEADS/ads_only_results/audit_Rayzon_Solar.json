@@ -282,5 +282,15 @@
       ]
     }
   },
-  "audit_date": "2026-10-25"
+  "audit_date": "2026-10-25",
+  "promise_gap": [
+    [
+      "Ad: 'Rayzon Solar' rooftop ad, clicking through to instagram.com",
+      "The click never reaches rayzonsolar.com at all - it lands on Instagram, so the site's contact form, its four JSON-LD blocks and its Tawk.to live chat are all invisible to paid traffic. Neither destination can be measured, because no pixel of any kind is installed on the site."
+    ],
+    [
+      "Ad: contact / enquiry intent",
+      "The page answers it well once a visitor arrives: tel:+919638000461 and tel:18001231232, a contact form with Submit, and a live Tawk.to chat widget. The gap is purely that nothing sends paid traffic there."
+    ]
+  ]
 }

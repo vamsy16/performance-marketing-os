@@ -20,15 +20,15 @@
           "library_url": "https://www.facebook.com/ads/library/?id=2228866791035208",
           "page_name": "Lotus Industries",
           "started": "Nov 6, 2026",
-          "destination": "WhatsApp",
-          "text": "DIWALI SPECIAL SOLAR SALE! Exclusive Diwali prices on Reliance New Energy HJT solar systems for the home. Lotus Industries Solar EPC."
+          "destination": "WhatsApp (confirmed on the ad card)",
+          "text": "🪗 DIWALI SPECIAL SOLAR SALE! 🪗☀️✨\n\nCelebrate Diwali with the Power of Solar Savings!\n\nMake this festive season brighter with Lotus Industries – Solar EPC, offering exclusive Diwali special prices on advanced Reliance New Energy HJT Solar Systems for your home."
         }
       ]
     },
     "summary": "1 live Meta ad confirmed on 2026-11-08 by opening each library ID directly. Google Ads Transparency records were not checked in this pass."
   },
   "funnel": {
-    "destination": "WhatsApp",
+    "destination": "WhatsApp (confirmed on the ad card)",
     "note": "Ad destination as shown on the live ad card."
   },
   "findings": [],
@@ -231,5 +231,19 @@
     },
     "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
     "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
-  }
+  },
+  "promise_gap": [
+    [
+      "Ad: 'exclusive Diwali special prices on advanced Reliance New Energy HJT Solar Systems for your home.'",
+      "The site carries the Reliance New Energy 'Authorized Channel Partner' emblem and an 'ESTD. 2015 - Decade of Excellence' badge, so the partnership is real - but no HJT system and no Diwali price appears on any page read. The ad's offer is unbacked."
+    ],
+    [
+      "Ad: 'Lotus Industries - Solar EPC.'",
+      "The company is a mounting-structure manufacturer, not an EPC installer. Its ten product families are Ground Mount, Shed Mounted, Solar Pump, High-Rise, Ballast structures, Street Light Poles, Aluminium Triangles, Aluminium Railings, C & Hat Purlins and Custom Roll Forming - it sells structures to installers rather than installing systems itself."
+    ],
+    [
+      "Ad: 'DIWALI SPECIAL SOLAR SALE!'",
+      "The home page's only CTA is 'REQUEST TECHNICAL SPECIFICATIONS', and there is no contact form, no live chat and no testimonial on the page - a buyer arriving from the ad can only call or WhatsApp (which is where the ad sends them, confirmed on the card)."
+    ]
+  ]
 }

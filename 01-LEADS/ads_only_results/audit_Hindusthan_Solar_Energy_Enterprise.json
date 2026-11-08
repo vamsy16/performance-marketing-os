@@ -20,23 +20,23 @@
           "library_url": "https://www.facebook.com/ads/library/?id=1478901357671342",
           "page_name": "Hindusthan Solar Energy Enterprise",
           "started": "Sep 23, 2026",
-          "destination": "fb.me (inside Facebook)",
-          "text": "Get a 3.82 kW solar system at a 3 kW package price, with eligible government subsidy benefits and extra energy discounts. Hindusthan Solar Energy - free quote today."
+          "destination": "fb.me lead form (confirmed on the ad card)",
+          "text": "Are you still paying your electricity bill every month? 🤔\n\nOr are you ready to make your rooftop work for you?\n\nWith Hindusthan Solar Energy, get a 3.82 kW solar system at a 3 kW package price, with eligible government subsidy benefits and extra energy discounts.\n\n👉 Want to know how much you can save? Enquire now"
         },
         {
           "library_id": "1080534018298988",
           "library_url": "https://www.facebook.com/ads/library/?id=1080534018298988",
           "page_name": "Hindusthan Solar Energy Enterprise",
           "started": "Sep 23, 2026",
-          "destination": "fb.me (inside Facebook)",
-          "text": "Get a 3.82 kW solar system at a 3 kW package price, with eligible government subsidy benefits and extra energy discounts. Hindusthan Solar Energy - free quote today."
+          "destination": "fb.me lead form (same campaign)",
+          "text": "Second ad in the same campaign, running since 23 Sep 2026. The Ad Library card for this ID was not re-read in this pass, so its copy is not reproduced here rather than assumed."
         }
       ]
     },
     "summary": "2 live Meta ads confirmed on 2026-11-08 by opening each library ID directly. Google Ads Transparency records were not checked in this pass."
   },
   "funnel": {
-    "destination": "fb.me (inside Facebook)",
+    "destination": "fb.me lead form (confirmed on the ad card)",
     "note": "Ad destination as shown on the live ad card."
   },
   "findings": [],
@@ -155,8 +155,8 @@
         "id": "M26",
         "name": "Creative concept coverage",
         "group": "Creative",
-        "disposition": "fail",
-        "evidence": "Only 2 offer angles in live copy (government subsidy, discount offer) - every ad says the same thing."
+        "disposition": "pass",
+        "evidence": "3 distinct offer angles in live copy: government subsidy, discount offer, bill savings."
       },
       {
         "id": "M30",
@@ -230,12 +230,26 @@
       }
     ],
     "counts": {
-      "pass": 3,
-      "fail": 4,
+      "pass": 4,
+      "fail": 3,
       "unknown": 8,
       "not_applicable": 0
     },
     "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
     "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
-  }
+  },
+  "promise_gap": [
+    [
+      "Ad: 'get a 3.82 kW solar system at a 3 kW package price, with eligible government subsidy benefits and extra energy discounts.'",
+      "The site's own calculator defaults to a 4 kW system at Rs.2,80,000 with a Rs.78,000 subsidy and a -Rs.35,000 discount, landing at Rs.1,67,000 net. The numbers exist and are close - but the click never reaches them, because the ad lands on an fb.me lead form (confirmed on the card)."
+    ],
+    [
+      "Ad: 'Want to know how much you can save? Enquire now.'",
+      "The JSON-LD publishes info@hindusthansolarenergy.com and +91-8712636576, and the site shows tel:+918712636576 at all seven branches, so the promise is backed on the page - it is simply never seen by paid traffic."
+    ],
+    [
+      "Ad: 'eligible government subsidy benefits.'",
+      "The JSON-LD describes the business as a 'PM Surya Ghar approved Solar EPC installer... 1.4 MW+ of verified rooftop solar capacity with 25-year performance warranty'. The subsidy claim rests on the approved-installer status, not on an on-page subsidy table."
+    ]
+  ]
 }

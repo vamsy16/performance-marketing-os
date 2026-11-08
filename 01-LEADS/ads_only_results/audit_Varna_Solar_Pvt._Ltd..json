@@ -20,15 +20,15 @@
           "library_url": "https://www.facebook.com/ads/library/?id=3418975398276429",
           "page_name": "Varna Solar Pvt. Ltd.",
           "started": "Oct 30, 2026",
-          "destination": "WhatsApp",
-          "text": "Reduce Your Electricity Bills with Varna Solar Hyderabad! Premium WAAREE solar panels for residential rooftops. PM Surya Ghar subsidy up to Rs.78,000. Free site survey. Call or WhatsApp Varna Solar."
+          "destination": "WhatsApp (confirmed on the ad card)",
+          "text": "Reduce Your Electricity Bills with Varna Solar Hyderabad!\n\n☀️ **Reduce Your Electricity Bills with Varna Solar!**\n\nThinking of installing rooftop solar at your home? Switch to clean energy with **Varna Solar featuring WAAREE solar panels**.\n\n🏡 Residential Rooftop Solar Solutions\n💰 Government subsidy of up to ₹78,000 for eligible households und... [the Ad Library truncates the copy here]"
         }
       ]
     },
     "summary": "1 live Meta ad confirmed on 2026-11-08 by opening each library ID directly. Google Ads Transparency records were not checked in this pass."
   },
   "funnel": {
-    "destination": "WhatsApp",
+    "destination": "WhatsApp (confirmed on the ad card)",
     "note": "Ad destination as shown on the live ad card."
   },
   "findings": [],
@@ -146,8 +146,8 @@
         "id": "M26",
         "name": "Creative concept coverage",
         "group": "Creative",
-        "disposition": "pass",
-        "evidence": "3 distinct offer angles in live copy: government subsidy, subsidy amount, EMI / financing."
+        "disposition": "fail",
+        "evidence": "Only 2 offer angles in live copy (government subsidy, subsidy amount) - every ad says the same thing."
       },
       {
         "id": "M30",
@@ -221,12 +221,26 @@
       }
     ],
     "counts": {
-      "pass": 3,
-      "fail": 3,
+      "pass": 2,
+      "fail": 4,
       "unknown": 9,
       "not_applicable": 0
     },
     "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
     "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
-  }
+  },
+  "promise_gap": [
+    [
+      "Ad: 'Switch to clean energy with Varna Solar featuring WAAREE solar panels.' / 'Government subsidy of up to Rs.78,000 for eligible households.'",
+      "Backed. The site's JSON-LD advertises exactly three services - Residential Rooftop Solar, Commercial & Industrial Solar Power Plants and Solar Water Pumping Systems - and the Rs.78,000 PM Surya Ghar subsidy appears in the meta description too."
+    ],
+    [
+      "Ad: 'Thinking of installing rooftop solar at your home?'",
+      "The click never reaches the page that answers this. The ad goes to WhatsApp (confirmed on the card), and the homepage is a client-rendered React SPA whose served HTML contains no H1, no contact form and no calculator - the 'Calculate Your Savings' link points at /solar-calculator, which is only populated after JavaScript runs."
+    ],
+    [
+      "Ad: 'Reduce Your Electricity Bills with Varna Solar Hyderabad!'",
+      "The site's CTA is 'Get Free Site Survey' -> /#contact, a React section that is not in the served HTML at all, so a visitor who arrives from a search cannot find it without JavaScript."
+    ]
+  ]
 }

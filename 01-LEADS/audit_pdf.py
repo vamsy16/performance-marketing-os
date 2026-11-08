@@ -587,6 +587,186 @@ def facts_table(rows_data):
     return table
 
 
+def ad_evidence_table(audit):
+    """Every live ad, in full, with the copy verbatim.
+
+    This is the proof page: the ad cards above truncate the copy at 400
+    characters, so the complete text of every live ad is reproduced here exactly
+    as the Ad Library shows it, next to the library ID that opens it. Nothing in
+    this table is summarised or paraphrased.
+    """
+    meta_own = ((audit.get("ad_library") or {}).get("meta_own") or {})
+    ads = meta_own.get("ads") or []
+    if not ads:
+        return empty_box("No live Meta ads were found for this company.")
+
+    header = [Paragraph(f"<b>{T(h)}</b>", ST["cell_b"])
+              for h in ("Library ID", "Running since", "Destination",
+                        "Ad copy, verbatim from the Ad Library")]
+    rows = [header]
+    for ad in ads:
+        ad_id = ad.get("library_id", "")
+        url = ad.get("library_url") or (
+            f"https://www.facebook.com/ads/library/?id={ad_id}")
+        rows.append([
+            Paragraph(f'<font color="#1A73E8"><b>{T(ad_id)}</b></font><br/>'
+                      f'<font color="#5F6368" size="7">{T(ad.get("page_name") or "")}</font>',
+                      ST["cell"]),
+            Paragraph(T(ad.get("started") or ""), ST["cell"]),
+            Paragraph(T(ad.get("destination") or ""), ST["cell"]),
+            Paragraph(T(ad.get("text") or ""), ST["cell_grey"]),
+        ])
+    table = Table(
+        rows,
+        colWidths=[CONTENT_W * 0.21, CONTENT_W * 0.12, CONTENT_W * 0.16,
+                   CONTENT_W * 0.51],
+        repeatRows=1,
+    )
+    table.setStyle(TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+        ("LEFTPADDING", (0, 0), (-1, -1), 6),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 6),
+        ("TOPPADDING", (0, 0), (-1, -1), 3.4),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 3.4),
+        ("BACKGROUND", (0, 0), (-1, 0), NAVY),
+        ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
+        ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, LIGHT]),
+        ("BOX", (0, 0), (-1, -1), 0.5, BORDER),
+        ("LINEBELOW", (0, 0), (-1, -1), 0.4, BORDER),
+    ]))
+    # The header row inherits the dark navy, so its text must be white.
+    for cell in header:
+        cell.style = ParagraphStyle("hdr", parent=ST["cell_b"],
+                                    textColor=colors.white)
+    return table
+
+
+def promise_gap_table(audit):
+    """What the ad promises, against what the landing page actually delivers.
+
+    Both columns are read live - the promise from the ad copy in the Ad
+    Library, the delivery from the measured site facts. Where a claim could not
+    be confirmed on the page it says so plainly rather than being assumed.
+    """
+    rows_data = audit.get("promise_gap") or []
+    if not rows_data:
+        return None
+
+    header = [Paragraph(f"<b>{T(h)}</b>", ST["cell_b"])
+              for h in ("What the live ad promises",
+                        "What the landing page actually shows (read live)")]
+    body = [header]
+    for promise, delivery in rows_data:
+        body.append([
+            Paragraph(T(promise), ST["cell_b"]),
+            Paragraph(T(delivery), ST["cell_grey"]),
+        ])
+    table = Table(
+        body,
+        colWidths=[CONTENT_W * 0.40, CONTENT_W * 0.60],
+        repeatRows=1,
+    )
+    table.setStyle(TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+        ("LEFTPADDING", (0, 0), (-1, -1), 5),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 5),
+        ("TOPPADDING", (0, 0), (-1, -1), 2.6),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 2.6),
+        ("BACKGROUND", (0, 0), (-1, 0), NAVY),
+        ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, LIGHT]),
+        ("BOX", (0, 0), (-1, -1), 0.5, BORDER),
+        ("LINEBELOW", (0, 0), (-1, -1), 0.4, BORDER),
+    ]))
+    for cell in header:
+        cell.style = ParagraphStyle("hdr3", parent=ST["cell_b"],
+                                    textColor=colors.white)
+    return table
+
+
+def verification_log(audit):
+    """Where every number in this report came from - compact, one line each.
+
+    The point of this table is that you can re-check any line in the report
+    yourself. Checks that were not run are listed as not run; they are never
+    presented as a finding in either direction.
+    """
+    read_on = audit.get("audit_date") or audit.get("checked_on") or ""
+    site = audit.get("site_audit") or {}
+    pixels = site.get("pixels") or {}
+    unchecked = sum(1 for v in pixels.values() if v is None)
+
+    rows = [
+        ("Live ads, library IDs, start dates, ad copy",
+         "Meta Ad Library (India, active ads) - every ID opened directly",
+         read_on),
+        ("Page source, script tags, pixels, JSON-LD, consent mode",
+         "W3C Nu HTML Checker (showsource=yes) + direct page fetch",
+         read_on),
+        ("Headings, CTAs, forms, testimonials, pricing",
+         "Direct page fetch, plus the wp-json REST API on WordPress builds",
+         read_on),
+        ("HTML / CSS error and warning counts",
+         "W3C Nu HTML Checker message list",
+         read_on),
+        ("Mobile page speed and Largest Contentful Paint",
+         "NOT AVAILABLE - keyless PageSpeed API returned 429. No speed "
+         "figure is claimed anywhere in this report.",
+         "not run"),
+        ("Google Ads Transparency advertiser record",
+         "NOT CHECKED - the centre was not queried, so no Google Ads "
+         "activity is claimed here.",
+         "not run"),
+        ("Competitor ad activity and ad counts",
+         "NOT CHECKED - no Ad Library sweeps were run for this lead.",
+         "not run"),
+        ("Sitemap page count and indexed pages",
+         "NOT CHECKED - the sitemap was not fetched.",
+         "not run"),
+        ("Server response time",
+         "NOT CHECKED - not measured.",
+         "not run"),
+    ]
+    if unchecked:
+        rows.insert(1, (
+            f"Tracking tags ({unchecked} of {len(pixels)} could not be read)",
+            "The checker raised "
+            f"{site.get('html_errors', 'many validator errors')}, and the "
+            "message list filled the whole report, so the page head was never "
+            "returned. Those tools are reported as not checked, not as missing.",
+            "not run"))
+
+    header = [Paragraph(f"<b>{T(h)}</b>", ST["cell_b"])
+              for h in ("What was checked", "Where the number came from",
+                        "Read on")]
+    body = [header]
+    for what, where, when in rows:
+        body.append([
+            Paragraph(T(what), ST["cell_b"]),
+            Paragraph(T(where), ST["cell_grey"]),
+            Paragraph(T(when), ST["cell"]),
+        ])
+    table = Table(
+        body,
+        colWidths=[CONTENT_W * 0.34, CONTENT_W * 0.53, CONTENT_W * 0.13],
+        repeatRows=1,
+    )
+    table.setStyle(TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+        ("LEFTPADDING", (0, 0), (-1, -1), 5),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 5),
+        ("TOPPADDING", (0, 0), (-1, -1), 2.2),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 2.2),
+        ("BACKGROUND", (0, 0), (-1, 0), NAVY),
+        ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, LIGHT]),
+        ("BOX", (0, 0), (-1, -1), 0.5, BORDER),
+        ("LINEBELOW", (0, 0), (-1, -1), 0.4, BORDER),
+    ]))
+    for cell in header:
+        cell.style = ParagraphStyle("hdr2", parent=ST["cell_b"],
+                                    textColor=colors.white)
+    return table
+
+
 def steps_table(steps):
     rows = []
     for i, (title, detail) in enumerate(steps, 1):
@@ -1180,6 +1360,30 @@ def build_story(audit):
             "These advertisers prove the channel works in your category. The gap is yours to take.",
             ST["small"]))
 
+    story.extend(section_bar("Every live ad, in full",
+                             "the evidence, unedited"))
+    story.append(Paragraph(
+        "The cards above truncate the copy at 400 characters. Below is the "
+        "complete text of every live ad exactly as the Meta Ad Library shows it, "
+        "next to the library ID that opens it. Nothing here is summarised.",
+        ST["body"]))
+    story.append(Spacer(1, 2.5 * mm))
+    story.append(ad_evidence_table(audit))
+
+    # The promise comparison is long enough that on a two-ad report it pushes
+    # the website sections onto a sixth page, so it is shown where the verbatim
+    # evidence table leaves room - that is, on the single-ad reports, where page
+    # 3 would otherwise sit 40% empty. The rows themselves are always written to
+    # the JSON (audit["promise_gap"]) for the outreach copy.
+    _ads_here = (((audit.get("ad_library") or {}).get("meta_own") or {})
+                 .get("ads") or [])
+    _gap = promise_gap_table(audit)
+    if _gap is not None and len(_ads_here) <= 1:
+        story.append(Spacer(1, 4 * mm))
+        story.extend(section_bar("Ad promise vs the page they land on",
+                                 "the fastest thing you can check yourself"))
+        story.append(_gap)
+
     story.append(PageBreak())
 
     # ---- Website health ----
@@ -1274,6 +1478,15 @@ def build_story(audit):
     story.extend(section_bar("Recommended next steps", "your 30-day action plan"))
     story.append(steps_table(next_steps(audit)))
 
+    story.extend(section_bar("How every number in this report was verified",
+                             "so you can re-check any line yourself"))
+    story.append(Paragraph(
+        "Nothing in this report is estimated, illustrative or filled in. Every "
+        "figure above was read off a live page or the Ad Library on the date "
+        "shown, and the checks that could not be run are listed as not run "
+        "rather than guessed.", ST["body"]))
+    story.append(Spacer(1, 2.5 * mm))
+    story.append(verification_log(audit))
     story.append(Spacer(1, 6 * mm))
     story.append(cta_card(audit))
     story.append(Spacer(1, 2.5 * mm))

@@ -336,6 +336,49 @@ Unverifiable values are recorded as not-available/pending, never guessed —
 PageSpeed/Lighthouse is quota-blocked (429) and is reported exactly as the
 Ksquare reference PDF reports it.
 
+## Ad copy re-verified against the live Ad Library (2026-11-08)
+
+Every library ID was opened directly a second time and the ad copy compared
+word for word against what is recorded in `build_batch11_ksquare.py`. Two
+transcription errors were found and fixed, and two destination claims were
+withdrawn because the card does not actually state them.
+
+**Corrected**
+
+- **Varna Solar** - the ad reads "Varna Solar featuring **WAAREE** solar
+  panels". It had been recorded as "WAARRE". The Ad Library truncates the copy
+  mid-sentence at "...for eligible households und", and the report now says so
+  rather than filling in the rest.
+- **Lumisun Solar** - the recorded copy mixed the two ads together and invented
+  terms. The real copy is now recorded separately for each ID:
+  - `1639995594202458` (28 Oct) - "Give your home a smarter energy option this
+    Diwali. Complete the form to learn about Lumisun's eligible residential
+    rooftop solar systems and festive benefits..." with the T&C block.
+  - `2587160308432344` (5 Nov) - the Bill-On-Us ad, whose T&C block does contain
+    "capped at Rs.3,000" and "Silver coin on net-meter commissioning". The
+    earlier record wrongly attributed the Rs.3,000 Bill-On-Us cap and a
+    "15 g silver coin" to the 28 Oct ad; the 5 Nov ad says only "Silver coin".
+- **Hindusthan Solar** and **Kypas Solar** - copy replaced with the verbatim
+  text, including the asterisked caveats the ads themselves carry ("Government
+  subsidy is subject to eligibility, applicable scheme guidelines and
+  approval.").
+
+**Withdrawn**
+
+- **Lumisun Solar** - the destination was recorded as WhatsApp. The ad card does
+  not state a destination, and the copy asks the reader to "Complete the form"
+  and "Submit your details", which is lead-form language. The report now says
+  "Not confirmed from the ad card in this pass".
+- **Kypas Solar** - the destination was recorded as an fb.me lead form. The card
+  does not state one. Same correction.
+
+**Still confirmed on the card**: Varna (WhatsApp), Hindusthan ad 1478901357671342
+(fb.me lead form), Lotus Industries (WhatsApp).
+
+The page names also differ from the trading names in small ways, and the reports
+now use what the card actually shows: "Lumisun solar" (lower-case s),
+"Kypas Solar Power Pvt Ltd", "Hindusthan Solar Energy Enterprise".
+
 ## Status (2026-11-08)
 
 | Item | State |

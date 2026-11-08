@@ -18,25 +18,25 @@
         {
           "library_id": "1639995594202458",
           "library_url": "https://www.facebook.com/ads/library/?id=1639995594202458",
-          "page_name": "Lumisun Solar",
+          "page_name": "Lumisun solar",
           "started": "Oct 28, 2026",
-          "destination": "WhatsApp",
-          "text": "Diwali Solar Utsav - residential 3 kW on-grid solar in Hyderabad, Khammam, Warangal, Karimnagar and Suryapet. Book your site visit now."
+          "destination": "Not confirmed from the ad card in this pass",
+          "text": "Give your home a smarter energy option this Diwali. Complete the form to learn about Lumisun's eligible residential rooftop solar systems and festive benefits. Our team can help you understand the next steps.\n\nT&C apply: Residential 3 kW and 5 kW on-grid systems in Hyderabad, Khammam, Warangal, Karimnagar and Suryapet. Book by 30 Nov 2026 with ₹1,001; 30% advance due within 7 days of survey and by 7 Dec 2026. Silver coin on net-meter commissioning."
         },
         {
           "library_id": "2587160308432344",
           "library_url": "https://www.facebook.com/ads/library/?id=2587160308432344",
-          "page_name": "Lumisun Solar",
+          "page_name": "Lumisun solar",
           "started": "Nov 5, 2026",
-          "destination": "WhatsApp",
-          "text": "Diwali Solar Utsav - residential 5 kW on-grid solar in Hyderabad, Khammam, Warangal, Karimnagar and Suryapet. Book for Rs.1,001 with 30% advance within 7 days of survey, Bill-On-Us capped at Rs.3,000, and a 15 g silver coin on net-meter commissioning."
+          "destination": "Not confirmed from the ad card in this pass",
+          "text": "Explore Lumisun's Bill-On-Us benefit this Diwali. Eligible customers can receive a benefit capped at ₹3,000 for the qualifying period between solar installation and net-meter commissioning. Submit your details to learn how it works.\n\nT&C apply: Residential 3 kW and 5 kW on-grid systems in Hyderabad, Khammam, Warangal, Karimnagar and Suryapet. Book by 30 Nov 2026 with ₹1,001; 30% advance due within 7 days of survey and by 7 Dec 2026. Bill-On-Us is the lower of eligible electricity charges or ₹7 per solar unit generated, capped at ₹3,000. Silver coin on net-meter commissioning. Subsidy up to ₹78,000 subject to government approval."
         }
       ]
     },
     "summary": "2 live Meta ads confirmed on 2026-11-08 by opening each library ID directly. Google Ads Transparency records were not checked in this pass."
   },
   "funnel": {
-    "destination": "WhatsApp",
+    "destination": "Not confirmed from the ad card in this pass",
     "note": "Ad destination as shown on the live ad card."
   },
   "findings": [],
@@ -100,7 +100,7 @@
     "score": {
       "score": 3,
       "issues": [
-        "Both live ads click through to WhatsApp, not lumisunsolar.com, so neither paid visit can be traced to an enquiry.",
+        "Neither live ad's destination could be confirmed from the ad card in this pass, so where the spend lands is unverified - and with the head unread, whether anything on lumisunsolar.com can measure it is unverified too.",
         "The Diwali offer in your ad copy (book for Rs.1,001 with 30% advance within 7 days of survey) has no matching price anywhere on the site - the landing page publishes subsidy bands only.",
         "No live chat — missing after-hours leads"
       ],
@@ -155,8 +155,8 @@
         "id": "M26",
         "name": "Creative concept coverage",
         "group": "Creative",
-        "disposition": "fail",
-        "evidence": "Only 1 offer angle in live copy (free site visit) - every ad says the same thing."
+        "disposition": "pass",
+        "evidence": "3 distinct offer angles in live copy: government subsidy, subsidy amount, installation speed."
       },
       {
         "id": "M30",
@@ -230,12 +230,26 @@
       }
     ],
     "counts": {
-      "pass": 3,
-      "fail": 3,
+      "pass": 4,
+      "fail": 2,
       "unknown": 9,
       "not_applicable": 0
     },
     "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
     "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
-  }
+  },
+  "promise_gap": [
+    [
+      "Ad: 'Book by 30 Nov 2026 with Rs.1,001; 30% advance due within 7 days of survey and by 7 Dec 2026.' (both ads)",
+      "None of this appears on lumisunsolar.com. The home page publishes the subsidy bands only - 1 kW Rs.30,000, 2 kW Rs.60,000, 3 kW and above Rs.78,000 - and there is no per-kW pricing anywhere on the pages read."
+    ],
+    [
+      "Ad: 'Bill-On-Us is the lower of eligible electricity charges or Rs.7 per solar unit generated, capped at Rs.3,000.' (ad of 5 Nov)",
+      "There is no Bill-On-Us offer anywhere on the site, and no mention of the Rs.7-per-unit calculation. The only pricing on the pages read is the subsidy table."
+    ],
+    [
+      "Ad: 'Residential 3 kW and 5 kW on-grid systems in Hyderabad, Khammam, Warangal, Karimnagar and Suryapet.'",
+      "Backed. The site's own install-map script carries hardcoded coordinates for all five towns plus around a hundred more across Telangana and Andhra Pradesh, and lists Hyderabad as the office."
+    ]
+  ]
 }

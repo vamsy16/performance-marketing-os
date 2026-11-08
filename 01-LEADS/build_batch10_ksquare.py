@@ -265,6 +265,76 @@ EXTRA_ISSUES = {
     ],
 }
 
+# ---------------------------------------------------------------------------
+# What each ad promises, against what the landing page actually delivers.
+# Both sides are read live - the promise from the ad copy in the Ad Library,
+# the delivery from the measured site facts above.
+# ---------------------------------------------------------------------------
+
+PROMISE_GAP = {
+    "Sunova Green Energy": [
+        ("Ad: 'Install a Solar Rooftop System for your home and save up to "
+         "Rs.1,00,000 with Government Subsidy + Special Discount Offers. Up to "
+         "Rs.78,000 Subsidy Available. Additional Rs.22,000 Discount.'",
+         "The click never reaches a page that answers this. The ad lands on an "
+         "fb.me lead form inside Facebook, and sunovagreenenergy.com's own "
+         "comparison table lists cost bands only - no prices are published "
+         "anywhere on the pages read."),
+        ("Ad: '30 Years Performance Life. 7+ Years Industry Experience. 5 Years "
+         "Comprehensive AMC Support. Trusted by 500+ Homes Across Hyderabad.'",
+         "None of these four claims is verifiable on the page. The site's "
+         "served HTML has no H1, no meta description, no Open Graph tags and no "
+         "structured data, and the page raises 411 validator errors - so a "
+         "visitor who does arrive has nothing to check the claims against."),
+    ],
+    "Wisda Energy": [
+        ("Ad: 'Save up to Rs.1,00,000 with Government Subsidy + Special "
+         "Discount Offers. Up to Rs.78,000 Subsidy Available.'",
+         "The site's own copy promises 'transparent pricing models' but "
+         "publishes no prices at all, so the subsidy and discount figures in "
+         "the ad cannot be checked against anything on wisda.in - and the ad "
+         "lands on an fb.me lead form, so paid visitors never reach the page "
+         "regardless."),
+        ("Ad: 'Trusted by 500+ Homes Across Hyderabad.'",
+         "The tracking that would prove this is in place - Meta Pixel "
+         "1494048391894940, GA4 G-SYCFTFNH0N and GTM-PTPCLJ5R are all installed "
+         "- which is exactly why the fb.me destination is costing you: the "
+         "pixel is measuring a Facebook form, not your own site."),
+    ],
+    "SolarSquare Energy": [
+        ("Ad: three live ads all pointing at solarsquare.in",
+         "The site has the strongest measurement stack of the batch - MoEngage "
+         "is installed and reads utm_source, utm_campaign and fbclid from "
+         "cookies, and there is a #leadFormModal lead-form popup plus a full "
+         "Hyderabad price table marked indicative as of 01 Oct 2026. Not one of "
+         "those paid clicks can currently be traced to an enquiry, though, "
+         "because the destination is the site itself with no conversion event "
+         "wired to the ad."),
+        ("Ad: residential rooftop solar in Hyderabad",
+         "Backed on the page by the Hyderabad price table and the 'Book a FREE "
+         "Solar Consultation' form posting to admin-ajax.php. Two defects under "
+         "cut it: the viewport blocks zoom, and the tel: link carries an "
+         "illegal space after the scheme, so the click-to-call number does not "
+         "dial on some phones."),
+    ],
+    "Rayzon Solar": [
+        ("Ad: 'Rayzon Solar' rooftop ad, clicking through to instagram.com",
+         "The click never reaches rayzonsolar.com at all - it lands on "
+         "Instagram, so the site's contact form, its four JSON-LD blocks and "
+         "its Tawk.to live chat are all invisible to paid traffic. Neither "
+         "destination can be measured, because no pixel of any kind is "
+         "installed on the site."),
+        ("Ad: contact / enquiry intent",
+         "The page answers it well once a visitor arrives: tel:+919638000461 and "
+         "tel:18001231232, a contact form with Submit, and a live Tawk.to chat "
+         "widget. The gap is purely that nothing sends paid traffic there."),
+    ],
+}
+
+
+def gap_rows(company):
+    return PROMISE_GAP.get(company, [])
+
 SITE_EVIDENCE_NOTE = (
     "Landing-page source read live on {d} through the W3C Nu HTML Checker "
     "(validator.w3.org/nu/?doc=<url>&showsource=yes), which returns the served "
@@ -334,6 +404,7 @@ def main():
         # ---- refresh the claude-ads control review with real evidence ----
         evidence = evidence_for(site, site["pixels"])
         audit["site_evidence"] = evidence
+        audit["promise_gap"] = gap_rows(company)
         audit["ads_audit"] = evaluate(audit, evidence)
 
         with open(path, "w", encoding="utf-8") as f:

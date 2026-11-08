@@ -282,5 +282,15 @@
       ]
     }
   },
-  "audit_date": "2026-10-25"
+  "audit_date": "2026-10-25",
+  "promise_gap": [
+    [
+      "Ad: 'Save up to Rs.1,00,000 with Government Subsidy + Special Discount Offers. Up to Rs.78,000 Subsidy Available.'",
+      "The site's own copy promises 'transparent pricing models' but publishes no prices at all, so the subsidy and discount figures in the ad cannot be checked against anything on wisda.in - and the ad lands on an fb.me lead form, so paid visitors never reach the page regardless."
+    ],
+    [
+      "Ad: 'Trusted by 500+ Homes Across Hyderabad.'",
+      "The tracking that would prove this is in place - Meta Pixel 1494048391894940, GA4 G-SYCFTFNH0N and GTM-PTPCLJ5R are all installed - which is exactly why the fb.me destination is costing you: the pixel is measuring a Facebook form, not your own site."
+    ]
+  ]
 }

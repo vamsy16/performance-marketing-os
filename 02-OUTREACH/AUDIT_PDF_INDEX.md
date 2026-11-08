@@ -63,11 +63,11 @@ They live in **two folders**, which is why looking at one folder makes the total
 | Valcan Solar | 4 | 18 KB | — | 2026-10-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Valcan_Solar.pdf) |
 | Vanguard Energy | 3 | 16 KB | — | 2026-10-23 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Vanguard_Energy.pdf) |
 | Varahi Energies | 3 | 15 KB | — | 2026-10-18 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Varahi_Energies.pdf) |
-| Hindusthan Solar Energy Enterprise | 5 | 20 KB | 5/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Hindusthan_Solar_Energy_Enterprise.pdf) |
-| Kypas Solar Power Pvt Ltd | 5 | 20 KB | 3/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Kypas_Solar_Power_Pvt_Ltd.pdf) |
-| Lotus Industries | 5 | 20 KB | 27/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Lotus_Industries.pdf) |
-| Lumisun Solar | 5 | 20 KB | 3/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Lumisun_Solar.pdf) |
-| Varna Solar Pvt. Ltd. | 5 | 20 KB | 19/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Varna_Solar_Pvt_Ltd_.pdf) |
+| Hindusthan Solar Energy Enterprise | 5 | 23 KB | 5/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Hindusthan_Solar_Energy_Enterprise.pdf) |
+| Kypas Solar Power Pvt Ltd | 5 | 23 KB | 3/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Kypas_Solar_Power_Pvt_Ltd.pdf) |
+| Lotus Industries | 5 | 23 KB | 27/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Lotus_Industries.pdf) |
+| Lumisun Solar | 5 | 23 KB | 3/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Lumisun_Solar.pdf) |
+| Varna Solar Pvt. Ltd. | 5 | 23 KB | 19/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Varna_Solar_Pvt_Ltd_.pdf) |
 | Wisda Energy | 5 | 21 KB | 10/100 | 2026-10-25 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Wisda_Energy.pdf) |
 
 ## Notes

@@ -286,5 +286,15 @@
       ]
     }
   },
-  "audit_date": "2026-10-25"
+  "audit_date": "2026-10-25",
+  "promise_gap": [
+    [
+      "Ad: 'Install a Solar Rooftop System for your home and save up to Rs.1,00,000 with Government Subsidy + Special Discount Offers. Up to Rs.78,000 Subsidy Available. Additional Rs.22,000 Discount.'",
+      "The click never reaches a page that answers this. The ad lands on an fb.me lead form inside Facebook, and sunovagreenenergy.com's own comparison table lists cost bands only - no prices are published anywhere on the pages read."
+    ],
+    [
+      "Ad: '30 Years Performance Life. 7+ Years Industry Experience. 5 Years Comprehensive AMC Support. Trusted by 500+ Homes Across Hyderabad.'",
+      "None of these four claims is verifiable on the page. The site's served HTML has no H1, no meta description, no Open Graph tags and no structured data, and the page raises 411 validator errors - so a visitor who does arrive has nothing to check the claims against."
+    ]
+  ]
 }

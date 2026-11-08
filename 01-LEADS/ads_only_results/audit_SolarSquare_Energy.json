@@ -300,5 +300,15 @@
       ]
     }
   },
-  "audit_date": "2026-10-25"
+  "audit_date": "2026-10-25",
+  "promise_gap": [
+    [
+      "Ad: three live ads all pointing at solarsquare.in",
+      "The site has the strongest measurement stack of the batch - MoEngage is installed and reads utm_source, utm_campaign and fbclid from cookies, and there is a #leadFormModal lead-form popup plus a full Hyderabad price table marked indicative as of 01 Oct 2026. Not one of those paid clicks can currently be traced to an enquiry, though, because the destination is the site itself with no conversion event wired to the ad."
+    ],
+    [
+      "Ad: residential rooftop solar in Hyderabad",
+      "Backed on the page by the Hyderabad price table and the 'Book a FREE Solar Consultation' form posting to admin-ajax.php. Two defects under cut it: the viewport blocks zoom, and the tel: link carries an illegal space after the scheme, so the click-to-call number does not dial on some phones."
+    ]
+  ]
 }
