@@ -1,8 +1,8 @@
 # Pending sends 2026-11-08 — owner schedules in the Gmail UI
 
-Gmail holds **10 drafts** (verified live): the 9 below, plus Valcan Solar's step-1 draft
-`r-4135467498809954457` which is still sitting in **trash**. Gmail's scheduled send is
-UI-only, so pick a time on each draft.
+Gmail holds **9 live drafts** to send (verified this session), plus Valcan Solar's step-1 draft
+`r-4135467498809954457` which is in **trash** and now **parked by owner decision — ignore it**.
+Gmail's scheduled send is UI-only, so pick a time on each draft.
 
 ## Sent 2026-11-07 by the owner (reconciled into the manifest)
 
@@ -60,11 +60,21 @@ from the true send date.
   auto-acknowledgement on 22 Oct. No human follow-up ever came, so the draft is now made —
   but it is the one to **delete instead of send** if you would rather close the thread.
 
-## Still not actionable
+## Parked by owner decision — ignore
 
 | Company | Step | State | Note |
 |---|---|---|---|
-| Valcan Solar | 1 | **IN TRASH** | `r-4135467498809954457` is in Gmail trash. It must be untrashed before it can be sent — until then the sequence is stuck. |
+| Valcan Solar | 1 | **IN TRASH — PARKED** | `r-4135467498809954457` sits in Gmail trash. **Owner decision 2026-11-08: leave it there and ignore it.** Do not untrash, do not re-create, do not flag again. The sequence stays closed at step 0. |
+
+## Due tomorrow, 2026-11-09 (23 — not drafted yet)
+
+The tool refuses to draft a follow-up before its due date, so these are created on the day:
+
+**Step 1 (first follow-up) — 4:** Sunova Green Energy, Wisda Energy, SolarSquare Energy, Rayzon Solar
+
+**Step 2 (second follow-up) — 11:** 3S Solutions, Arcedo Systems, Bhanu PV Solar, Dakshin Solar Power Systems, Freyr Energy, Hydromo, Krisol Solar, MrSolar, PMP Solar Power, VajraSimha Industries, Vanguard Energy
+
+**Step 3 (breakup, final) — 8:** Eastman New Energy, Ecolt Energy, Ellvin Energy, Kapil Power & Infra, Orizen Solar Innovations, Ray On Solar Systems, Solar6, Twilight Solar
 
 ## Replies received (both auto-acknowledgements, no human response yet)
 
