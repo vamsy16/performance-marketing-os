@@ -1,0 +1,196 @@
+{
+  "company": "Mamindla Energy Solutions",
+  "legal": "Mamindla Energy Solutions LLP",
+  "city": "Hyderabad",
+  "website": "https://www.m-e-solutions.co.in/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-20",
+  "generated_at": "2026-10-24 05:19",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": false,
+      "results_count": 0,
+      "results_label": "No ads match your search criteria",
+      "query": "Mamindla Energy Solutions",
+      "ads": []
+    },
+    "summary": "No active Meta ads were found for Mamindla Energy Solutions (Ad Library probe 'Mamindla Energy Solutions', 2026-10-20). Meanwhile five Hyderabad installers - Evergrid Energy (Library IDs 1642242114211409 and 1079793338257084), Solox Energies (2023601181805342), Truzon Solar (1522258176260844), Punarvi Energies (1122725223617884 and 994804120334409) and Twilight Solar (3823689667771361 and 28023952863910719) - are all live this month buying the same homeowner with Rs. 78,000-subsidy offers. Mamindla's govt-empanelled credentials are not in front of any paid traffic."
+  },
+  "funnel": {
+    "type": "Own website form + phone",
+    "destination": "Free-quote form on the homepage + one phone number",
+    "meaning": "The site is built to convert: quote form, savings calculator, named case studies. The problem is that nothing paid drives into it, so traffic depends entirely on someone already searching."
+  },
+  "findings": [
+    "No active Meta ads under your name - five Hyderabad installers (Evergrid, Solox, Truzon, Punarvi, Twilight) are live this month buying the same homeowner with the same Rs. 78,000-subsidy message.",
+    "The site claims 100+ installations, 10+ MW delivered and 500+ happy customers, with an interactive savings calculator (bill + roof size in, system size, subsidy and payback out) and three named case studies: 8 kW residential in Kondapur, 25 kW commercial at a Hanamkonda school and 50 kW industrial in LB Nagar. Trust material, already built.",
+    "Govt-empanelled vendor positioning, Tier-1 panel claims (Waaree, TATA, Adani) and full PM Surya Ghar paperwork handling - exactly the proof a homeowner wants after seeing three competitor ads.",
+    "The Hyderabad branch sits in Madhapur, right in the commercial heart of the city - but there is no Hyderabad-specific paid targeting anywhere.",
+    "Everything on the site is in English. Telugu creative is the language of the Telangana homeowner your competitors are buying."
+  ],
+  "next_steps": [
+    [
+      "Test paid lead gen in Hyderabad",
+      "A small Meta budget on one residential offer, targeted around the Madhapur/Hitech City side of the city, would sit right next to your branch office."
+    ],
+    [
+      "Turn the calculator into a landing page hook",
+      "The savings calculator is already the best asset on the site. Put it at the top of a dedicated paid landing page."
+    ],
+    [
+      "Run Telugu creative",
+      "Test a Telugu version of the Rs. 78,000-subsidy offer against English."
+    ],
+    [
+      "Use the case studies as ad proof",
+      "The Kondapur, Hanamkonda and LB Nagar projects are named, specific and local - most competitor ads cannot show that."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@m-e-solutions.co.in"
+    ],
+    [
+      "Phone",
+      "+91 99498 75868"
+    ],
+    [
+      "Hyderabad branch",
+      "4th Floor, Krishna Towers, Plot 527, 100 Feet Rd, Madhapur, Hyderabad 500081"
+    ],
+    [
+      "Head office",
+      "47-5-706, Paidipally, Warangal 506006"
+    ],
+    [
+      "Site counters",
+      "100+ installations, 10+ MW delivered, 500+ happy customers"
+    ]
+  ],
+  "contact": {
+    "email": "info@m-e-solutions.co.in",
+    "phone": "+91 99498 75868",
+    "fb_page": ""
+  },
+  "site_evidence": {},
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad copy could not be read for these ads."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Ad start dates were not captured."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "No live ads captured."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: Own website form + phone."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 1,
+      "fail": 1,
+      "unknown": 13,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

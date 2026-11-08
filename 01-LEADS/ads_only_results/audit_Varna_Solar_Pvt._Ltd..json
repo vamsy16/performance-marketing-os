@@ -1,0 +1,246 @@
+{
+  "company": "Varna Solar Pvt. Ltd.",
+  "legal": "Varna Solar Pvt. Ltd.",
+  "city": "Ameerpet, Hyderabad 500038",
+  "website": "https://www.varnasolar.com/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-08",
+  "generated_at": "2026-11-08",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website (page source read through the W3C Nu HTML Checker)",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "1 live ad",
+      "query": "solar Hyderabad / Telangana keyword search",
+      "ads": [
+        {
+          "library_id": "3418975398276429",
+          "library_url": "https://www.facebook.com/ads/library/?id=3418975398276429",
+          "page_name": "Varna Solar Pvt. Ltd.",
+          "started": "Oct 30, 2026",
+          "destination": "WhatsApp (confirmed on the ad card)",
+          "text": "Reduce Your Electricity Bills with Varna Solar Hyderabad!\n\n☀️ **Reduce Your Electricity Bills with Varna Solar!**\n\nThinking of installing rooftop solar at your home? Switch to clean energy with **Varna Solar featuring WAAREE solar panels**.\n\n🏡 Residential Rooftop Solar Solutions\n💰 Government subsidy of up to ₹78,000 for eligible households und... [the Ad Library truncates the copy here]"
+        }
+      ]
+    },
+    "summary": "1 live Meta ad confirmed on 2026-11-08 by opening each library ID directly. Google Ads Transparency records were not checked in this pass."
+  },
+  "funnel": {
+    "destination": "WhatsApp (confirmed on the ad card)",
+    "note": "Ad destination as shown on the live ad card."
+  },
+  "findings": [],
+  "next_steps": [],
+  "contact_facts": "8-3-214/7/1A, 2nd Floor, Pillar No. 1036, Sanjeeva Reddy Nagar, Hyderabad 500038 (Ameerpet) | info@varnasolar.com | +91 91824 45679",
+  "contact": {
+    "phone": "+91 91824 45679",
+    "email": "info@varnasolar.com",
+    "whatsapp": "+91 917207730803"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://www.varnasolar.com/",
+    "audit_date": "2026-11-08",
+    "pixels": {
+      "meta_pixel": false,
+      "google_ads": false,
+      "google_analytics_ga4": false,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
+      "microsoft_clarity": false,
+      "hotjar": false,
+      "google_tag_manager": false
+    },
+    "conversion": {
+      "has_contact_form": null,
+      "has_phone_click": true,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": null,
+      "has_live_chat": null,
+      "has_popup_optin": null,
+      "has_testimonials": null,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Varna Solar | Top Solar EPC Company in Hyderabad & Telangana",
+      "title_length": 56,
+      "has_meta_description": true,
+      "meta_desc_length": null,
+      "h1_count": 0,
+      "h1_text": "",
+      "has_og_tags": true,
+      "has_schema": true,
+      "has_favicon": true,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": false
+    },
+    "platform": "React single-page app (Create React App build: /static/js/main.fbb7979e.js, /static/css/main.ca667578.css), Google Fonts Inter 400-900",
+    "html_errors": "0 errors, 0 warnings, 23 info",
+    "score": {
+      "score": 19,
+      "issues": [
+        "Your live ad clicks through to WhatsApp, not varnasolar.com - every rupee of that spend buys a chat thread you cannot retarget, and with no Meta Pixel on the site the visitor who does arrive is untraceable.",
+        "No Meta Pixel installed — can't run retargeting or track ad conversions",
+        "No Google Ads / GTM tracking — can't measure ad performance",
+        "No Google Analytics — flying blind on website traffic",
+        "No H1 tag on homepage"
+      ],
+      "wins": [
+        "WhatsApp link present"
+      ]
+    }
+  },
+  "audit_date": "2026-11-08",
+  "site_evidence": {
+    "pixel": false,
+    "ga4": false,
+    "gtm": false,
+    "google_ads_tag": false,
+    "checked_on": "2026-11-08",
+    "note": "Landing-page source read live on 2026-11-08 through the W3C Nu HTML Checker (validator.w3.org/nu/?doc=<url>&showsource=yes), which returns the served HTML with script tags intact, plus a direct fetch of the same pages. Tags found: no Meta Pixel, GA4, GTM or Google Ads tag."
+  },
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "No Meta Pixel code found in the landing-page source - ad clicks cannot be measured or retargeted."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "Only 2 offer angles in live copy (government subsidy, subsidy amount) - every ad says the same thing."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Oct 30, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "fail",
+        "evidence": "A single live ad - no internal comparison, no safety net if it fatigues."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: captured destination."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 2,
+      "fail": 4,
+      "unknown": 9,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  },
+  "promise_gap": [
+    [
+      "Ad: 'Switch to clean energy with Varna Solar featuring WAAREE solar panels.' / 'Government subsidy of up to Rs.78,000 for eligible households.'",
+      "Backed. The site's JSON-LD advertises exactly three services - Residential Rooftop Solar, Commercial & Industrial Solar Power Plants and Solar Water Pumping Systems - and the Rs.78,000 PM Surya Ghar subsidy appears in the meta description too."
+    ],
+    [
+      "Ad: 'Thinking of installing rooftop solar at your home?'",
+      "The click never reaches the page that answers this. The ad goes to WhatsApp (confirmed on the card), and the homepage is a client-rendered React SPA whose served HTML contains no H1, no contact form and no calculator - the 'Calculate Your Savings' link points at /solar-calculator, which is only populated after JavaScript runs."
+    ],
+    [
+      "Ad: 'Reduce Your Electricity Bills with Varna Solar Hyderabad!'",
+      "The site's CTA is 'Get Free Site Survey' -> /#contact, a React section that is not in the served HTML at all, so a visitor who arrives from a search cannot find it without JavaScript."
+    ]
+  ]
+}

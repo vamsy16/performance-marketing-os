@@ -6,8 +6,16 @@ name: Ads Audit Pipeline
 # their ads + conversion pages -> QA-verify every PDF -> generate outreach
 # emails + the threaded-follow-up sequence manifest -> commit results back.
 #
-# NOTE: for the "Run workflow" button / `gh workflow run` to work, this
-# file must be on the default branch (main) — standard GitHub rule.
+# BRANCH TARGET — read before editing
+# -----------------------------------
+# Every run checks out and commits back to ARENA_BRANCH below, no matter
+# which branch triggered it. The weekly schedule uses the workflow file from
+# the DEFAULT branch (main), and the Actions-tab branch picker defaults to
+# main too, so without this pin the pipeline would silently run the stale
+# main snapshot and commit its output back to main, where the Arena session
+# can never see it. That is exactly what happened on 2026-11-02.
+#
+# If you move the working branch, change ARENA_BRANCH in both places below.
 
 on:
   workflow_dispatch:
@@ -52,13 +60,22 @@ concurrency:
   group: ads-audit-pipeline
   cancel-in-progress: false
 
+env:
+  ARENA_BRANCH: arena/de53294b-performance-marketing-os
+
 jobs:
   pipeline:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
-      - name: Checkout
+      - name: Checkout the working branch (not the trigger branch)
         uses: actions/checkout@v4
+        with:
+          # Always run the session branch's code. The schedule fires from
+          # main, and a manual dispatch defaults to main, so pinning the ref
+          # is what stops a stale snapshot from being pipelined.
+          ref: ${{ env.ARENA_BRANCH }}
+          fetch-depth: 0
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
@@ -107,22 +124,32 @@ jobs:
           name: ads-audit-results-${{ github.run_id }}
           path: |
             01-LEADS/audit_results/*.json
+            01-LEADS/ads_only_results/*.json
             01-LEADS/leads.csv
             02-OUTREACH/audit_pdfs/*.pdf
+            02-OUTREACH/ads_only_pdfs/*.pdf
             02-OUTREACH/generated_emails/*
           if-no-files-found: ignore
           retention-days: 30
 
-      - name: Commit results back
+      - name: Commit results back to the working branch
         if: success()
         run: |
           git config user.name "smart-pursuit-bot"
           git config user.email "actions@github.com"
-          git add 01-LEADS/audit_results 01-LEADS/leads.csv \
-                  02-OUTREACH/audit_pdfs 02-OUTREACH/generated_emails || true
+          # ads_only_results / ads_only_pdfs are where every current report
+          # lives — they used to be missing here, so a run would strand them.
+          git add 01-LEADS/audit_results 01-LEADS/ads_only_results \
+                  01-LEADS/leads.csv 01-LEADS/batches \
+                  02-OUTREACH/audit_pdfs 02-OUTREACH/ads_only_pdfs \
+                  02-OUTREACH/generated_emails || true
           if git diff --cached --quiet; then
             echo "No new results to commit."
           else
             git commit -m "Pipeline run: ${{ inputs.mode }} '${{ inputs.query }}${{ inputs.company }}' (run ${{ github.run_id }})"
-            git push
+            # Push to the working branch explicitly. actions/checkout already
+            # checked it out, so this is a normal push — but naming the branch
+            # means a future edit to the checkout step cannot silently
+            # redirect the output to main again.
+            git push origin "HEAD:refs/heads/${ARENA_BRANCH}"
           fi

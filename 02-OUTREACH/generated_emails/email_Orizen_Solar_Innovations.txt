@@ -1,0 +1,40 @@
+=== EMAIL FOR: Orizen Solar Innovations ===
+City: Hyderabad
+To: info.orizensolar@gmail.com
+Phone: +91 9962039859
+Website: https://www.orizensolar.com/
+Audit Score: 23/100
+Template: audit_hook
+Generated: 2026-10-21 03:17
+
+--- SUBJECT ---
+Quick question about Orizen Solar Innovations' website
+
+--- BODY ---
+Hi,
+
+I was looking at solar companies in Hyderabad and came across Orizen Solar Innovations.
+
+I ran a quick check on your website and found a couple of things that might be costing you leads:
+
+  • No Google Ads / GTM tracking — can't measure ad performance
+  • No Google Analytics — flying blind on website traffic
+
+Your current website score is 23/100 — there's some quick wins available that could help convert more visitors into enquiries.
+
+I recorded a short video walking through exactly what I found and what I'd fix. Want me to send it over?
+
+No strings attached — it's yours to keep whether we ever work together or not.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+--- MANUAL AD CHECK URLS ---
+Open these to see if they're running ads:
+  Google: https://adstransparency.google.com/?region=anywhere&q=www.orizensolar.com&country=IN
+  Meta:   https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Orizen Solar Innovations
+
+=== END ===

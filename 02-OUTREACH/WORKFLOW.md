@@ -40,8 +40,19 @@ This is your complete workflow: find companies → audit their ads/website → s
 │    → Fills in company name, city, specific issues               │
 │    → Saves ready-to-send emails as .txt files                   │
 │                                                                  │
+│  STEP 4b: NO WEBSITE AUDIT YET? → LIVE-AD REPORT INSTEAD        │
+│  $ python 01-LEADS/ads_only_report.py                           │
+│    → Real Meta Ad Library data only (Library IDs, start dates,  │
+│      ad copy, where clicks land, action plan)                   │
+│    → PDF states on page 1 that no website audit was run        │
+│  $ python 02-OUTREACH/ads_only_outreach.py --export             │
+│    → Same 4-step sequence, tagged report_kind=ads_only, and     │
+│      the Gmail draft attaches the live-ad PDF                   │
+│    → No score / pixel / page-speed claims anywhere              │
+│                                                                  │
 │  STEP 5: DRAFT IN GMAIL (agent does this — GMAIL_DRAFT_WORKFLOW)│
-│    → ONLY the initial draft is created (audit PDF attached)     │
+│    → ONLY the initial draft is created (audit PDF attached —    │
+│      the live-ad PDF for report_kind=ads_only rows)             │
 │    → Tracked columns: thread_id, mails_sent, next_followup_date │
 │    → You review in Gmail and SEND manually (never auto-sent)    │
 │    → Tell Arena "I sent <company>" → send is recorded           │
@@ -150,6 +161,11 @@ python 02-OUTREACH/audit_outreach.py --top 10
 python 02-OUTREACH/audit_outreach.py --top 10 --export   # Files + sequence_manifest.json
 python 02-OUTREACH/audit_outreach.py --name "SunTech"    # Specific company
 python 02-OUTREACH/audit_outreach.py --template speed_urgent  # Force template
+
+# === LIVE-AD REPORTS (no website audit available yet) ===
+python 01-LEADS/ads_only_report.py --list          # which leads have a live-ad report
+python 02-OUTREACH/ads_only_outreach.py --export   # emails + manifest (report_kind=ads_only)
+PYTHONPATH=... python 01-LEADS/verify_report.py --ads-only   # QA gate before delivering
 
 # === GMAIL DRAFTS + THREADED FOLLOW-UPS (+2 days, same thread) ===
 python 02-OUTREACH/sequence.py status    # all sequences, draft/sent state, due dates

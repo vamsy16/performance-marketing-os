@@ -1,0 +1,296 @@
+{
+  "company": "Wisda Energy",
+  "legal": "Wisda Ventures Pvt Ltd",
+  "city": "Hyderabad",
+  "website": "https://wisda.in",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-10-24",
+  "generated_at": "2026-10-24 05:19",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website (page source read through the W3C Nu HTML Checker)",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "1 live ad seen in the 'rooftop solar Hyderabad' search",
+      "query": "rooftop solar Hyderabad",
+      "ads": [
+        {
+          "library_id": "1653176663099926",
+          "library_url": "https://www.facebook.com/ads/library/?id=1653176663099926",
+          "page_name": "Wisda Energy",
+          "started": "Oct 10, 2026",
+          "destination": "fb.me (inside Facebook)",
+          "text": "Video ad: 'Hyderabad homeowners - Ready to go solar? Own a home in Hyderabad? Go Solar. Save More. Get a FREE home survey and subsidy assistance. Call us at 9100126750.' Creative text: 'Hyderabad Homeowners: Go Solar and Get Subsidy - Reduce your monthly electricity bill with a customized rooftop solar solution. Government subsidy assistance available.'",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Wisda Energy (Wisda Ventures Pvt Ltd) is running 1 active Meta video ad, started 10 October 2026, offering Hyderabad homeowners a free home survey and subsidy assistance. The click lands on an fb.me lead form inside Facebook, so the spend never reaches wisda.in. The site is a Secunderabad (Tarnaka) office serving Hyderabad with rooftop and ground-mount solar plus AMC, showcases Miyapur installations at 3 kW and 5 kW, claims 1k+ happy customers, and lists TGREDCO empanelment (TSRE240457). Google Ads Transparency records were not checked in this pass."
+  },
+  "funnel": {
+    "type": "Facebook lead form (fb.me)",
+    "destination": "fb.me (inside Facebook)",
+    "meaning": "Every click opens a Facebook surface, not wisda.in. You own no pixel on the landing experience, you cannot retarget the people who clicked and did not enquire, and there is no page you can test a different headline or price on. With a single video ad live there is also no second creative angle to learn from."
+  },
+  "findings": [
+    "The one live ad (since 10 Oct 2026) clicks to an fb.me lead form inside Facebook - the spend never reaches wisda.in, so no pixel, no retargeting pool, no testable landing page.",
+    "The ad's offer (free home survey + subsidy assistance) is backed on the site by the TGREDCO empanelment number, the Miyapur 3 kW / 5 kW installation case studies and the AMC service line - none of which the paid traffic ever sees.",
+    "One video ad, one angle (subsidy assistance), all cold traffic. No retargeting ad behind it and no second creative to test the ground-mount or AMC angles.",
+    "Three inboxes are published across the site and the ad (connect@wisda.in plus two Gmail addresses) with two phone numbers - an enquiry can land in any of them.",
+    "The ad is the only creative visible in the Ad Library and has been live about two weeks - the account is dependent on one video holding its performance."
+  ],
+  "next_steps": [
+    [
+      "Move the click onto a page you own",
+      "Point the ad at a dedicated Hyderabad landing page carrying the free home survey + subsidy assistance offer, an enquiry form and the Meta Pixel - so every click is measurable and retargetable."
+    ],
+    [
+      "Install pixel + conversions API",
+      "One pixel plus the Conversions API gives you the audience of everyone who clicked but did not submit the fb.me form - usually 10-20x the people who fill a form."
+    ],
+    [
+      "Test a second creative around ground-mount and AMC",
+      "The site's ground-mount and AMC lines are a separate buying trigger from the subsidy - a second creative tells you which audience converts."
+    ],
+    [
+      "Settle on one inbox and one number",
+      "Publish connect@wisda.in and one phone number everywhere (ads, forms, footer) so an enquiry can never sit unread or land on the wrong address."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "connect@wisda.in (site also lists wisdaenergy@gmail.com and wisda.ramesh@gmail.com)"
+    ],
+    [
+      "Phone / WhatsApp",
+      "+91 91000 47301 / +91 91001 26750 (the ad lists 9100126750)"
+    ],
+    [
+      "Address",
+      "12-13-1146, Street No 11, Tarnaka, Secunderabad, Hyderabad 500017"
+    ],
+    [
+      "Entity",
+      "Wisda Ventures Pvt Ltd - TGREDCO-empanelled supplier (TSRE240457); rooftop and ground-mount solar plus AMC; 1k+ customers claimed"
+    ],
+    [
+      "Meta page",
+      "facebook.com/Wisdaenergy"
+    ],
+    [
+      "Service area",
+      "wisda.in - Hyderabad and Secunderabad; installations shown at Miyapur (3 kW and 5 kW)"
+    ]
+  ],
+  "contact": {
+    "email": "connect@wisda.in",
+    "phone": "+91 91000 47301 / +91 91001 26750",
+    "fb_page": "https://www.facebook.com/Wisdaenergy/"
+  },
+  "site_evidence": {
+    "pixel": true,
+    "ga4": true,
+    "gtm": true,
+    "google_ads_tag": false,
+    "checked_on": "2026-10-25",
+    "note": "Landing-page source read live on 2026-10-25 through the W3C Nu HTML Checker (validator.w3.org/nu/?doc=<url>&showsource=yes), which returns the served HTML with script tags intact, plus a direct fetch of the same pages. Tags found: Meta Pixel, GA4, Google Tag Manager."
+  },
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "pass",
+        "evidence": "Meta Pixel code (fbq / connect.facebook.net) found in the live landing-page source."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "Live ads click to a Facebook lead form (fb.me) - traffic never reaches a page you own, so no URL can carry UTMs and click data stays inside Meta."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "All 1 live ads use a single format (video) - no format variety to test what converts."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "Only 2 offer angles in live copy (government subsidy, bill savings) - every ad says the same thing."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Oct 10, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "fail",
+        "evidence": "A single live ad - no internal comparison, no safety net if it fatigues."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: Facebook lead form (fb.me)."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 3,
+      "fail": 5,
+      "unknown": 7,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://www.wisda.in/",
+    "audit_date": "2026-10-25",
+    "pixels": {
+      "meta_pixel": true,
+      "google_ads": false,
+      "google_analytics_ga4": true,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
+      "microsoft_clarity": false,
+      "hotjar": false,
+      "google_tag_manager": true
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": false,
+      "has_cta_buttons": 3,
+      "has_live_chat": false,
+      "has_popup_optin": false,
+      "has_testimonials": true,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Best Rooftop Solar Company in Hyderabad | Wisda Energy",
+      "title_length": 57,
+      "has_meta_description": true,
+      "meta_desc_length": null,
+      "h1_count": 1,
+      "h1_text": "Together for Future: Empowering India Through Green Energy",
+      "has_og_tags": true,
+      "has_schema": true,
+      "has_favicon": true,
+      "image_count": 18,
+      "images_without_alt": 7
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": false
+    },
+    "platform": "Custom HTML (Tailwind CDN, Swiper 11, Font Awesome 6.5.1, Google Fonts)",
+    "html_errors": "15 errors, 1 warning, 7 info",
+    "score": {
+      "score": 10,
+      "issues": [
+        "Your live ad clicks through to an fb.me lead form inside Facebook - the spend never reaches wisda.in, so no pixel can be measured on the landing experience.",
+        "No WhatsApp link — losing mobile leads (WhatsApp converts 3x better for Indian home services)",
+        "No live chat — missing after-hours leads",
+        "7 images missing alt text — hurts SEO"
+      ],
+      "wins": [
+        "Meta Pixel is installed",
+        "Google tracking is present",
+        "Google Analytics is installed",
+        "Contact form exists",
+        "Good CTA presence (3 buttons)",
+        "Testimonials visible"
+      ]
+    }
+  },
+  "audit_date": "2026-10-25",
+  "promise_gap": [
+    [
+      "Ad: 'Save up to Rs.1,00,000 with Government Subsidy + Special Discount Offers. Up to Rs.78,000 Subsidy Available.'",
+      "The site's own copy promises 'transparent pricing models' but publishes no prices at all, so the subsidy and discount figures in the ad cannot be checked against anything on wisda.in - and the ad lands on an fb.me lead form, so paid visitors never reach the page regardless."
+    ],
+    [
+      "Ad: 'Trusted by 500+ Homes Across Hyderabad.'",
+      "The tracking that would prove this is in place - Meta Pixel 1494048391894940, GA4 G-SYCFTFNH0N and GTM-PTPCLJ5R are all installed - which is exactly why the fb.me destination is costing you: the pixel is measuring a Facebook form, not your own site."
+    ]
+  ]
+}

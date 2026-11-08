@@ -133,8 +133,24 @@ After ANY discovery/pipeline run, before reporting done or delivering:
    on the generated reports. It re-checks branding, live-data honesty, ad
    links, score consistency, no-website handling, and staleness. Only a
    `REPORT REVIEW: PASS` verdict means the output is deliverable.
+3. Invoke the **live-data-auditor** agent
+   (`.opencode/agent/live-data-auditor.md`) and run
+   ```
+   python verify_live.py --offline
+   python verify_live.py
+   ```
+   Gates 1 and 2 only compare files against each other. Gate 3 re-fetches the
+   live Meta Ad Library and the lead's live website and re-verifies every
+   stored figure — it is the only gate that catches a number that was never
+   live or has since gone stale. It also cross-checks every step body in
+   `sequence_manifest.json` against its report, which is how the Lumisun and
+   Kypas destination mismatch was caught. Exit 0 required; exit 1 = DRIFT
+   (re-run the pipeline), exit 2 = UNREACHABLE (do not deliver).
 
-A report that has not passed both gates must not be sent to anyone.
+A report that has not passed all three gates must not be sent to anyone.
+
+**Every rule above is written up in `AGENTS.md` at the repo root — read it
+before starting any run.**
 
 ## The output (what you produce / what gets delivered)
 

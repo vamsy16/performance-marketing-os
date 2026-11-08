@@ -1,0 +1,196 @@
+{
+  "company": "Origian Power",
+  "legal": "Origian Power",
+  "city": "Hyderabad",
+  "website": "https://origianpower.com/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-20",
+  "generated_at": "2026-10-24 05:19",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": false,
+      "results_count": 0,
+      "results_label": "No ads match your search criteria",
+      "query": "Origian Power",
+      "ads": []
+    },
+    "summary": "No active Meta ads were found for Origian Power (Ad Library probe 'Origian Power', 2026-10-20). Meanwhile five Hyderabad installers - Evergrid Energy (Library IDs 1642242114211409 and 1079793338257084), Solox Energies (2023601181805342), Truzon Solar (1522258176260844), Punarvi Energies (1122725223617884 and 994804120334409) and Twilight Solar (3823689667771361 and 28023952863910719) - are all live this month buying the same homeowner with Rs. 78,000-subsidy offers. Origian's location-page content is not in front of any paid traffic."
+  },
+  "funnel": {
+    "type": "Own website form + phone",
+    "destination": "WPForms contact form (with reCAPTCHA) + three phone lines",
+    "meaning": "The site already answers the 'where do I click' question, but the form runs behind reCAPTCHA and JavaScript - extra friction for someone who just tapped a paid ad. Nothing paid currently drives into it at all."
+  },
+  "findings": [
+    "No active Meta ads under your name - five Hyderabad installers (Evergrid, Solox, Truzon, Punarvi, Twilight) are live this month buying the same homeowner with the same Rs. 78,000-subsidy message.",
+    "You already run a location-page farm: Hyderabad, Warangal, Nizamabad, Karimnagar and Suryapet in Telangana, plus Nellore, Vijayawada, Visakhapatam, Guntur, Tirupati, Kurnool, Kadapa and Nandyal in Andhra Pradesh. Real, ranking content - with zero paid traffic pointing at it.",
+    "The only contact email published is a personal Gmail (origian.ei@gmail.com), even though you own origianpower.com AND origianpower.in. No company-domain inbox is advertised anywhere.",
+    "Two Hyderabad offices (Nizampet 500090 and Hitech City 500081) but no Hyderabad-specific paid targeting - the pages exist, nothing buys into them.",
+    "The contact form is WPForms behind reCAPTCHA. For a paid click that is one more step between the ad and the phone call."
+  ],
+  "next_steps": [
+    [
+      "Point a small budget at the pages you already have",
+      "You do not need new pages to start. A modest Meta budget aimed at the existing Hyderabad and Nizampet pages is the fastest test."
+    ],
+    [
+      "Move to a company-domain email",
+      "Publish info@origianpower.com - you already own the domain. A Gmail address on a solar EPC site reads smaller than the service list next to it."
+    ],
+    [
+      "Reduce form friction",
+      "Offer WhatsApp alongside the form, or drop the reCAPTCHA step, so a paid click reaches you in one tap."
+    ],
+    [
+      "Run Telugu creative",
+      "Your location pages are in English only. Telugu creative is the language of the Telangana homeowner your competitors are buying."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "origian.ei@gmail.com (the only address published on the site)"
+    ],
+    [
+      "Phone",
+      "+91 8121766831 / +91 8121 3668 32 / +91 8121 7668 34"
+    ],
+    [
+      "Hyderabad offices",
+      "Flat B-106, Adithya Wizz Lagoon, Nizampet, Hyderabad 500090; 3rd Floor, Lakeview Co-Working, InOrbit Mall Road, Hitech City, Hyderabad 500081"
+    ],
+    [
+      "Head office",
+      "18-5, Indira Gandhi Nagar, Papampeta, Anantapur 515004"
+    ],
+    [
+      "Domains",
+      "origianpower.com and origianpower.in both live"
+    ]
+  ],
+  "contact": {
+    "email": "origian.ei@gmail.com",
+    "phone": "+91 8121766831",
+    "fb_page": ""
+  },
+  "site_evidence": {},
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad copy could not be read for these ads."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Ad start dates were not captured."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "No live ads captured."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: Own website form + phone."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 1,
+      "fail": 1,
+      "unknown": 13,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

@@ -1,14 +1,14 @@
 === EMAIL FOR: Venus home appliances ===
 City: Hyderabad
-To: (no email found)
-Phone: N/A
+To: enquiry@venushomeappliances.com
+Phone: +91 8144666999
 Website: https://VENUSHOMEAPPLIANCES.COM
-Audit Score: 17/100
+Audit Score: 5/100
 Template: audit_hook
-Generated: 2026-11-02 12:10
+Generated: 2026-10-19 14:24
 
 --- SUBJECT ---
-Quick question about Venus home appliances's website
+Quick question about Venus home appliances' website
 
 --- BODY ---
 Hi,
@@ -17,10 +17,10 @@ I was looking at solar companies in Hyderabad and came across Venus home applian
 
 I ran a quick check on your website and found a couple of things that might be costing you leads:
 
-  • No contact form on homepage — visitors can't easily enquire
   • No live chat — missing after-hours leads
+  • 46 images missing alt text — hurts SEO
 
-Your current website score is 17/100 — there's some quick wins available that could help convert more visitors into enquiries.
+Your current website score is 5/100 — there's some quick wins available that could help convert more visitors into enquiries.
 
 I recorded a short video walking through exactly what I found and what I'd fix. Want me to send it over?
 

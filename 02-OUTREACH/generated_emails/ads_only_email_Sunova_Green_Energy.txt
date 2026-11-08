@@ -1,0 +1,40 @@
+=== EMAIL FOR: Sunova Green Energy ===
+City: Hyderabad
+To: sunovagreenenergy@gmail.com
+Phone: +91 99128 48596 / +91 98497 63391
+Website: https://sunovagreenenergy.com
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Sunova_Green_Energy.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-10-24 05:20
+
+--- SUBJECT ---
+Sunova Green Energy: 1 live Hyderabad ad, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Sunova Green Energy is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-10-24):
+
+  - 1 live ad on Meta, running since 31 August 2026
+  - every click lands in Facebook lead form (fb.me)
+  - The one live ad (since 31 Aug 2026) clicks to an fb.me lead form inside Facebook - the spend never reaches sunovagreenenergy.com, so no pixel, no retargeting pool, no testable landing page.
+  - The ad's claim set (Rs. 78,000 subsidy + Rs. 22,000 discount + 5-year AMC + 500+ homes + 7+ years) is backed by the site's service pages - on-grid, off-grid and hybrid systems, housing-society installs, solar water heaters, fencing, street lights - but the paid traffic never sees any of that proof.
+
+You can verify every line yourself:
+
+  Library ID 1091780746736140: https://www.facebook.com/ads/library/?id=1091780746736140
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

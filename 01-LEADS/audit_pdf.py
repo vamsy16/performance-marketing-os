@@ -33,6 +33,7 @@ from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (
+    CondPageBreak,
     HRFlowable,
     Image,
     KeepTogether,
@@ -74,9 +75,14 @@ FONT_BOLD = "Helvetica-Bold"
 BASE14 = True
 
 _SAFE_MAP = {
-    "\u20b9": "Rs. ", "\u2013": "-", "\u2014": "-", "\u2018": "'", "\u2019": "'",
+    "\u20b9": "Rs. ",          # Indian rupee - real money in live ad copy
+    "\u2013": "-", "\u2014": "-", "\u2018": "'", "\u2019": "'",
     "\u201c": '"', "\u201d": '"', "\u2022": "-", "\u2192": "->", "\u2197": "↗",
     "\u2713": "OK", "\u2717": "X", "\u00a0": " ", "\u25cf": "-", "\u2026": "...",
+    "\u2082": "2", "\u2083": "3",   # subscripts (CO2 in ad copy)
+    "\u20ac": "EUR ", "\u00a3": "GBP ", "\u00a5": "JPY ",
+    "\u2265": ">=", "\u2264": "<=", "\u00b0": " deg ", "\u00d7": "x",
+    "\u200b": "", "\u200c": "", "\u200d": "", "\ufeff": "",
 }
 
 
@@ -102,6 +108,12 @@ def T(text):
     return escape(text)
 
 
+# Characters that _SAFE_MAP can transliterate. latin_safe() has to let these
+# through, otherwise the strip below turns a rupee sign into a blank and the
+# PDF silently shows "1,001" where the ad really says "Rs. 1,001".
+_TRANSLITERABLE = frozenset(_SAFE_MAP)
+
+
 def latin_safe(text, placeholder="[Ad copy in regional language - open the ad via the link below]"):
     """Keep only Latin-script ad copy; Indic scripts cannot render in the PDF fonts."""
     if not text:
@@ -112,6 +124,8 @@ def latin_safe(text, placeholder="[Ad copy in regional language - open the ad vi
     latin = [c for c in letters if ord(c) < 0x250]
     if len(latin) / max(len(letters), 1) < 0.4:
         return placeholder
+    # Map the transliterables first, then strip what is genuinely unrenderable.
+    text = "".join(_SAFE_MAP.get(ch, ch) for ch in text)
     text = re.sub(r"[^\x20-\x7E\u00A0-\u024F]", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
     return text
@@ -224,28 +238,36 @@ def next_steps(audit):
     seo = audit.get("seo", {})
     adlib = audit.get("ad_library") or {}
 
-    if adlib and not (adlib.get("google_own") or {}).get("found"):
+    # Only claim a channel is absent when it was actually looked for. A missing
+    # google_own block means the Transparency Centre was never checked - saying
+    # "no Google Ads presence was found" in that case would be a claim we cannot
+    # support, which is exactly what this report must never do.
+    _google = (adlib.get("google_own") or {}) if adlib else {}
+    if _google.get("found") is False:
         steps.append(("Open a Google Ads channel",
-                      "No Google Ads presence was found, while competitors bid on the same 'solar + city' searches all day."))
-    if adlib and not (adlib.get("meta_own") or {}).get("found"):
+                      "The Google Ads Transparency Centre was checked and shows no record for you, "
+                      "while competitors bid on the same 'solar + city' searches all day."))
+    _meta = (adlib.get("meta_own") or {}) if adlib else {}
+    if _meta.get("found") is False:
         steps.append(("Start Meta (Facebook / Instagram) ads",
                       "No active Meta ads were found. Local solar demand is being caught by competitors' feeds."))
-    if not pixels.get("google_analytics_ga4") and not pixels.get("google_analytics_ua"):
+    # A None value means "not measured" - it must never drive a recommendation.
+    if pixels.get("google_analytics_ga4") is False and pixels.get("google_analytics_ua") is False:
         steps.append(("Turn on measurement (GA4)",
                       "Install Google Analytics 4 through Tag Manager - until this exists you cannot tell which marketing works."))
-    if not pixels.get("google_ads"):
+    if pixels.get("google_ads") is False:
         steps.append(("Add the Google Ads conversion tag",
                       "Required before spending on Google Ads - otherwise every rupee is untracked."))
-    if not pixels.get("meta_pixel"):
+    if pixels.get("meta_pixel") is False:
         steps.append(("Install the Meta Pixel",
                       "Unlocks retargeting ads to people who already visited your site - the cheapest leads you can buy."))
-    if not conv.get("has_live_chat"):
+    if conv.get("has_live_chat") is False:
         steps.append(("Capture after-hours enquiries",
                       "Add a chat widget or callback prompt - a share of solar research happens late at night."))
-    if seo.get("images_without_alt", 0) > 0:
+    if (seo.get("images_without_alt") or 0) > 0:
         steps.append((f"Fix {seo['images_without_alt']} images missing alt text",
                       "A one-hour fix that improves Google rankings and image-search traffic."))
-    if not conv.get("has_contact_form"):
+    if conv.get("has_contact_form") is False:
         steps.append(("Add an enquiry form above the fold",
                       "Make it effortless for mobile visitors to request a quote."))
     perf = audit.get("pagespeed", {}).get("mobile_performance_score")
@@ -256,11 +278,38 @@ def next_steps(audit):
     if not steps:
         steps.append(("Scale with Google + Meta ads",
                       "Tracking and conversion basics are in place - paid ads can be launched and measured confidently."))
+
+    # Top up to the 4-step plan the reference layout uses. Each extra step has
+    # to cite something actually measured - never generic advice.
+    _dest = str((audit.get("funnel") or {}).get("destination") or "")
+    _own_site = (audit.get("final_url") or audit.get("website") or "").replace("www.", "")
+    _lands_offsite = bool(_dest) and (
+        "fb.me" in _dest or "whatsapp" in _dest.lower()
+        or "not confirmed" in _dest.lower()
+        or (_own_site and _own_site.split("/")[-1] not in _dest and "http" in _dest))
+    if len(steps) < 4 and _lands_offsite:
+        steps.append(("Point the live ads at a page you own",
+                      f"Right now the click lands on {_dest or 'an unverified destination'} - "
+                      "a landing page on your own domain can be measured, retargeted and tested."))
+    if len(steps) < 4 and any(v is None for v in pixels.values()):
+        _n = sum(1 for v in pixels.values() if v is None)
+        steps.append((f"Finish the {_n} tracking checks this pass could not run",
+                      "This report refused to guess at them. Re-reading the page head with those "
+                      "checks run turns 'not checked' into a decision you can act on."))
+    if len(steps) < 4 and audit.get("audit_date"):
+        steps.append((f"Re-run this audit after 30 days (this one is dated {audit['audit_date']})",
+                      "Ad creative, destination and site tags all move. A second read shows whether "
+                      "the first fixes actually landed."))
+    while len(steps) < 4:
+        steps.append(("Book a 10-minute call to walk through this report",
+                      "Bring the report - every line in it can be re-checked live while we talk."))
     return steps[:4]
 
 
 def days_running(started):
-    for fmt in ("%d %b %Y", "%d %B %Y"):
+    # Meta's Ad Library prints both "13 Oct 2026" (card DOM) and
+    # "Oct 13, 2026" (page text) - accept either.
+    for fmt in ("%d %b %Y", "%d %B %Y", "%b %d, %Y", "%B %d, %Y"):
         try:
             start = datetime.strptime(started.strip(), fmt)
             return (datetime.now() - start).days
@@ -292,7 +341,24 @@ def section_bar(title, note=""):
     return [Spacer(1, 5.5 * mm), bar, Spacer(1, 2.6 * mm)]
 
 
+UNCHECKED = "Not checked in this pass"
+NOT_AVAILABLE = "Not available at audit time"
+
+
+def _tri(flag, yes="Present", no="MISSING", unknown=UNCHECKED):
+    """Render a three-state check. None means the check was never run, which
+    must never be reported as a finding either way."""
+    if flag is None:
+        return unknown
+    return yes if flag else no
+
+
 def status_text(ok, yes="OK", no="MISSING"):
+    if ok is None:
+        # Unmeasured: it is neither a finding nor a win, so it must never be
+        # rendered as MISSING (which would claim a problem we did not observe).
+        return Paragraph(f'<font color="#5F6368"><b>{T(UNCHECKED)}</b></font>',
+                         ST["cell"])
     color = "#137333" if ok else "#C5221F"
     return Paragraph(f'<font color="{color}"><b>{T(yes if ok else no)}</b></font>', ST["cell"])
 
@@ -473,6 +539,25 @@ def bullets_table(items, color, marker):
     return table
 
 
+# Live ad copy is shown in full whenever it fits. Only genuinely long copy is
+# trimmed, and then only at a sentence boundary, with the cut stated in the
+# card - never silently mid-word or mid-sentence the way a fixed [:400] slice
+# was, which used to drop the payment terms off the end of real ad copy.
+_COPY_LIMIT = 900
+
+
+def _trim_copy(copy):
+    if not copy or len(copy) <= _COPY_LIMIT:
+        return copy
+    window = copy[:_COPY_LIMIT]
+    cut = max(window.rfind(". "), window.rfind("! "), window.rfind("? "))
+    if cut < _COPY_LIMIT * 0.5:
+        cut = window.rfind(" ")
+    if cut <= 0:
+        cut = _COPY_LIMIT
+    return window[:cut + 1].rstrip() + " [...full terms continue on the live ad]"
+
+
 def ad_card(ad, platform="Meta"):
     """One live-ad sample: creative image + copy + metadata."""
     img_cell = []
@@ -499,6 +584,7 @@ def ad_card(ad, platform="Meta"):
         meta_bits.append(f"~{ad['ad_count']} live ads on Google")
 
     copy = latin_safe(ad.get("text", ""))
+    copy = _trim_copy(copy)
     copy_html = f'"{T(copy)}"' if copy and not copy.startswith("[") else T(copy)
 
     link = ad.get("library_url") or ad.get("url") or ""
@@ -509,7 +595,7 @@ def ad_card(ad, platform="Meta"):
         Paragraph(f'<b>{T(name)}</b>', ST["cell_b"]),
         Paragraph("  |  ".join(meta_bits) if meta_bits else platform, ST["small"]),
         Spacer(1, 1 * mm),
-        Paragraph(copy_html[:400], ST["cell_grey"]),
+        Paragraph(copy_html, ST["cell_grey"]),
     ]
     if link_html:
         text_cell += [Spacer(1, 1 * mm), Paragraph(link_html, ST["link"])]
@@ -564,6 +650,185 @@ def facts_table(rows_data):
         ("BOX", (0, 0), (-1, -1), 0.5, BORDER),
         ("LINEBELOW", (0, 0), (-1, -1), 0.4, BORDER),
     ]))
+    return table
+
+
+def ad_evidence_table(audit):
+    """Every live ad, in full, with the copy verbatim.
+
+    This is the proof page: the complete text of every live ad is reproduced
+    here exactly as the Ad Library shows it, next to the library ID that opens
+    it. Nothing in this table is summarised or paraphrased.
+    """
+    meta_own = ((audit.get("ad_library") or {}).get("meta_own") or {})
+    ads = meta_own.get("ads") or []
+    if not ads:
+        return empty_box("No live Meta ads were found for this company.")
+
+    header = [Paragraph(f"<b>{T(h)}</b>", ST["cell_b"])
+              for h in ("Library ID", "Running since", "Destination",
+                        "Ad copy, verbatim from the Ad Library")]
+    rows = [header]
+    for ad in ads:
+        ad_id = ad.get("library_id", "")
+        url = ad.get("library_url") or (
+            f"https://www.facebook.com/ads/library/?id={ad_id}")
+        rows.append([
+            Paragraph(f'<font color="#1A73E8"><b>{T(ad_id)}</b></font><br/>'
+                      f'<font color="#5F6368" size="7">{T(ad.get("page_name") or "")}</font>',
+                      ST["cell"]),
+            Paragraph(T(ad.get("started") or ""), ST["cell"]),
+            Paragraph(T(ad.get("destination") or ""), ST["cell"]),
+            Paragraph(T(ad.get("text") or ""), ST["cell_grey"]),
+        ])
+    table = Table(
+        rows,
+        colWidths=[CONTENT_W * 0.21, CONTENT_W * 0.12, CONTENT_W * 0.16,
+                   CONTENT_W * 0.51],
+        repeatRows=1,
+    )
+    table.setStyle(TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+        ("LEFTPADDING", (0, 0), (-1, -1), 6),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 6),
+        ("TOPPADDING", (0, 0), (-1, -1), 3.4),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 3.4),
+        ("BACKGROUND", (0, 0), (-1, 0), NAVY),
+        ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
+        ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, LIGHT]),
+        ("BOX", (0, 0), (-1, -1), 0.5, BORDER),
+        ("LINEBELOW", (0, 0), (-1, -1), 0.4, BORDER),
+    ]))
+    # The header row inherits the dark navy, so its text must be white.
+    for cell in header:
+        cell.style = ParagraphStyle("hdr", parent=ST["cell_b"],
+                                    textColor=colors.white)
+    return table
+
+
+def promise_gap_table(audit):
+    """What the ad promises, against what the landing page actually delivers.
+
+    Both columns are read live - the promise from the ad copy in the Ad
+    Library, the delivery from the measured site facts. Where a claim could not
+    be confirmed on the page it says so plainly rather than being assumed.
+    """
+    rows_data = audit.get("promise_gap") or []
+    if not rows_data:
+        return None
+
+    header = [Paragraph(f"<b>{T(h)}</b>", ST["cell_b"])
+              for h in ("What the live ad promises",
+                        "What the landing page actually shows (read live)")]
+    body = [header]
+    for promise, delivery in rows_data:
+        body.append([
+            Paragraph(T(promise), ST["cell_b"]),
+            Paragraph(T(delivery), ST["cell_grey"]),
+        ])
+    table = Table(
+        body,
+        colWidths=[CONTENT_W * 0.40, CONTENT_W * 0.60],
+        repeatRows=1,
+    )
+    table.setStyle(TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+        ("LEFTPADDING", (0, 0), (-1, -1), 5),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 5),
+        ("TOPPADDING", (0, 0), (-1, -1), 2.6),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 2.6),
+        ("BACKGROUND", (0, 0), (-1, 0), NAVY),
+        ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, LIGHT]),
+        ("BOX", (0, 0), (-1, -1), 0.5, BORDER),
+        ("LINEBELOW", (0, 0), (-1, -1), 0.4, BORDER),
+    ]))
+    for cell in header:
+        cell.style = ParagraphStyle("hdr3", parent=ST["cell_b"],
+                                    textColor=colors.white)
+    return table
+
+
+def verification_log(audit):
+    """Where every number in this report came from - compact, one line each.
+
+    The point of this table is that you can re-check any line in the report
+    yourself. Checks that were not run are listed as not run; they are never
+    presented as a finding in either direction.
+    """
+    read_on = audit.get("audit_date") or audit.get("checked_on") or ""
+    site = audit.get("site_audit") or {}
+    pixels = site.get("pixels") or {}
+    unchecked = sum(1 for v in pixels.values() if v is None)
+
+    rows = [
+        ("Live ads, library IDs, start dates, ad copy",
+         "Meta Ad Library (India, active ads) - every ID opened directly",
+         read_on),
+        ("Page source, script tags, pixels, JSON-LD, consent mode",
+         "W3C Nu HTML Checker (showsource=yes) + direct page fetch",
+         read_on),
+        ("Headings, CTAs, forms, testimonials, pricing",
+         "Direct page fetch, plus the wp-json REST API on WordPress builds",
+         read_on),
+        ("HTML / CSS error and warning counts",
+         "W3C Nu HTML Checker message list",
+         read_on),
+        ("Mobile page speed and Largest Contentful Paint",
+         "NOT AVAILABLE - keyless PageSpeed API returned 429. No speed "
+         "figure is claimed anywhere in this report.",
+         "not run"),
+        ("Google Ads Transparency advertiser record",
+         "NOT CHECKED - the centre was not queried, so no Google Ads "
+         "activity is claimed here.",
+         "not run"),
+        ("Competitor ad activity and ad counts",
+         "NOT CHECKED - no Ad Library sweeps were run for this lead.",
+         "not run"),
+        ("Sitemap page count and indexed pages",
+         "NOT CHECKED - the sitemap was not fetched.",
+         "not run"),
+        ("Server response time",
+         "NOT CHECKED - not measured.",
+         "not run"),
+    ]
+    if unchecked:
+        rows.insert(1, (
+            f"Tracking tags ({unchecked} of {len(pixels)} could not be read)",
+            "The checker raised "
+            f"{site.get('html_errors', 'many validator errors')}, and the "
+            "message list filled the whole report, so the page head was never "
+            "returned. Those tools are reported as not checked, not as missing.",
+            "not run"))
+
+    header = [Paragraph(f"<b>{T(h)}</b>", ST["cell_b"])
+              for h in ("What was checked", "Where the number came from",
+                        "Read on")]
+    body = [header]
+    for what, where, when in rows:
+        body.append([
+            Paragraph(T(what), ST["cell_b"]),
+            Paragraph(T(where), ST["cell_grey"]),
+            Paragraph(T(when), ST["cell"]),
+        ])
+    table = Table(
+        body,
+        colWidths=[CONTENT_W * 0.34, CONTENT_W * 0.53, CONTENT_W * 0.13],
+        repeatRows=1,
+    )
+    table.setStyle(TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+        ("LEFTPADDING", (0, 0), (-1, -1), 5),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 5),
+        ("TOPPADDING", (0, 0), (-1, -1), 2.2),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 2.2),
+        ("BACKGROUND", (0, 0), (-1, 0), NAVY),
+        ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, LIGHT]),
+        ("BOX", (0, 0), (-1, -1), 0.5, BORDER),
+        ("LINEBELOW", (0, 0), (-1, -1), 0.4, BORDER),
+    ]))
+    for cell in header:
+        cell.style = ParagraphStyle("hdr2", parent=ST["cell_b"],
+                                    textColor=colors.white)
     return table
 
 
@@ -655,8 +920,386 @@ def cta_card(audit):
 
 
 # ---------------------------------------------------------------------------
+# Ads-only story (live ad activity, website audit NOT run)
+# ---------------------------------------------------------------------------
+
+ADS_ONLY_LABEL = "LIVE AD ACTIVITY"
+
+
+def honesty_banner(audit):
+    """The panel that keeps an ads-only report from looking like a full audit.
+
+    An ads-only report is built ONLY from public Meta Ad Library data. The
+    website half of the audit (pixels, tracking, PageSpeed, conversion
+    elements, score) is not run, so it must be stated - never implied.
+    """
+    checked = audit.get("checked_on") or audit.get("generated_at") or ""
+    website = audit.get("website") or ""
+    company = audit.get("company") or "this company"
+    body = [
+        Paragraph('<font color="#B26A00"><b>WEBSITE AUDIT NOT RUN</b></font>', ST["h3"]),
+        Spacer(1, 1.2 * mm),
+        Paragraph(
+            f"This report covers <b>live ad activity only</b>, read from the public Meta Ad "
+            f"Library on {T(checked)}. No website was fetched, so it contains "
+            f"<b>no audit score, no tracking/pixel findings, no page-speed data and no "
+            f"conversion checklist</b> - those numbers are only real once the full pipeline "
+            f"runs. The complete report for {T(company)} is produced with:<br/>"
+            f"<font color='#1B6EC2'>python run_pipeline.py {T(website)} \"{T(company)}\" "
+            f"--city {T(audit.get('city') or 'Hyderabad')}</font>", ST["body"]),
+    ]
+    banner = Table([[body]], colWidths=[CONTENT_W])
+    banner.setStyle(TableStyle([
+        ("BACKGROUND", (0, 0), (-1, -1), colors.HexColor("#FFF7E6")),
+        ("BOX", (0, 0), (-1, -1), 0.8, AMBER),
+        ("LINEBEFORE", (0, 0), (0, 0), 3, AMBER),
+        ("LEFTPADDING", (0, 0), (-1, -1), 10),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 10),
+        ("TOPPADDING", (0, 0), (-1, -1), 8),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
+    ]))
+    return banner
+
+
+def ads_only_tiles(audit):
+    adlib = audit.get("ad_library") or {}
+    meta_own = adlib.get("meta_own") or {}
+    ads = meta_own.get("ads") or []
+    n_ads = len(ads)
+    started = [a.get("started", "") for a in ads if a.get("started")]
+    oldest = None
+    days = []
+    for s in started:
+        d = days_running(s)
+        if d is not None:
+            days.append(d)
+    if days:
+        oldest = max(days)
+    funnel = audit.get("funnel") or {}
+    funnel_txt = funnel.get("type") or "Not determined"
+
+    def tile(num, label, num_color=NAVY):
+        return [
+            Paragraph(f'<font color="{num_color.hexval()}">{T(num)}</font>', ST["tile_num"]),
+            Spacer(1, 0.8 * mm),
+            Paragraph(T(label), ST["tile_lbl"]),
+        ]
+
+    ads_color = GREEN if n_ads else RED
+    tiles = Table([[
+        tile(n_ads, "LIVE ADS RUNNING", ads_color),
+        tile(f"{oldest} days" if oldest is not None else "-", "LONGEST-RUNNING AD"),
+        tile(funnel_txt, "WHERE CLICKS LAND", AMBER if "form" in funnel_txt.lower() else NAVY),
+        tile("Meta", "SOURCE"),
+    ]], colWidths=[CONTENT_W / 4] * 4)
+    tiles.setStyle(TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+        ("ALIGN", (0, 0), (-1, -1), "CENTER"),
+        ("BACKGROUND", (0, 0), (-1, -1), CARD),
+        ("BOX", (0, 0), (-1, -1), 0.6, BORDER),
+        ("INNERGRID", (0, 0), (-1, -1), 0.6, BORDER),
+        ("TOPPADDING", (0, 0), (-1, -1), 7),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 7),
+    ]))
+    return tiles
+
+
+def ads_control_section(audit):
+    """Ads-audit control review - claude-ads methodology (standing owner
+    instruction 2026-10-24). Grades only what public evidence supports; every
+    account-only control is rendered as unknown, never guessed."""
+    try:
+        from ads_audit_controls import evaluate
+    except Exception:
+        return []
+    result = audit.get("ads_audit") or evaluate(audit, audit.get("site_evidence"))
+    controls = result.get("controls") or []
+    if not controls:
+        return []
+    counts = result.get("counts") or {}
+    story = []
+    story.extend(section_bar("Ads audit - control review",
+                             "methodology: claude-ads Meta control catalog"))
+    story.append(Paragraph(
+        "Every control below is graded against what is publicly verifiable - "
+        "the live ad cards in the Meta Ad Library plus this company's own "
+        "landing page. Controls that need Ads Manager access are marked "
+        "<b>unknown</b> on purpose rather than guessed.", ST["body"]))
+    story.append(Spacer(1, 2.5 * mm))
+
+    label = {
+        "pass": ('<font color="#137333"><b>OK</b></font>', GREEN),
+        "fail": ('<font color="#C5221F"><b>GAP</b></font>', RED),
+        "unknown": ('<font color="#5F6380"><b>UNKNOWN</b></font>', GREY),
+        "not_applicable": ('<font color="#5F6380"><b>N/A</b></font>', GREY),
+    }
+    rows = [[
+        Paragraph("<b>ID</b>", ST["cell_b"]),
+        Paragraph("<b>Control</b>", ST["cell_b"]),
+        Paragraph("<b>Status</b>", ST["cell_b"]),
+        Paragraph("<b>Evidence read live</b>", ST["cell_b"]),
+    ]]
+    for c in controls:
+        dispo = c.get("disposition", "unknown")
+        html, _ = label.get(dispo, label["unknown"])
+        rows.append([
+            Paragraph(T(c.get("id", "")), ST["cell_b"]),
+            Paragraph(T(c.get("name", "")), ST["cell"]),
+            Paragraph(html, ST["cell"]),
+            Paragraph(T(c.get("evidence", "")), ST["cell_grey"]),
+        ])
+    table = Table(rows, colWidths=[12 * mm, 38 * mm, 22 * mm,
+                                   CONTENT_W - 72 * mm], repeatRows=1)
+    table.setStyle(TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+        ("LEFTPADDING", (0, 0), (-1, -1), 5),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 5),
+        ("TOPPADDING", (0, 0), (-1, -1), 3.2),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 3.2),
+        ("ROWBACKGROUNDS", (0, 0), (-1, -1), [colors.white, LIGHT]),
+        ("BOX", (0, 0), (-1, -1), 0.5, BORDER),
+        ("LINEBELOW", (0, 0), (-1, -1), 0.4, BORDER),
+        ("BACKGROUND", (0, 0), (-1, 0), LIGHT),
+    ]))
+    story.append(table)
+    story.append(Spacer(1, 2.5 * mm))
+    story.append(Paragraph(
+        f"<b>Control review result:</b> {counts.get('pass', 0)} OK · "
+        f"{counts.get('fail', 0)} gaps · {counts.get('unknown', 0)} unknown "
+        f"(need account access) · {counts.get('not_applicable', 0)} not "
+        f"applicable.", ST["body_b"]))
+    story.append(Spacer(1, 1.5 * mm))
+    story.append(Paragraph(
+        "Still ungraded because they are account-only: " +
+        T(result.get("account_only", "")) + ".", ST["small"]))
+    story.append(Spacer(1, 1.5 * mm))
+    story.append(Paragraph(
+        "Method: " + T(result.get("methodology", "")), ST["small"]))
+    story.append(Spacer(1, 4 * mm))
+    return story
+
+
+def ads_only_honesty_panel(audit):
+    """Panel stating exactly what was read live and what was not measured.
+
+    Owner instruction 2026-10-24: these reports must match the full
+    audit_Ksquare_Energy.pdf layout and carry real live data only, so
+    anything that could not be measured is named here instead of being
+    estimated.
+    """
+    checked = audit.get("checked_on") or audit.get("audit_date") or ""
+    website = audit.get("website") or ""
+    body = [
+        Paragraph('<font color="#137333"><b>WHAT WAS READ LIVE FOR THIS REPORT</b></font>',
+                  ST["h3"]),
+        Spacer(1, 1.2 * mm),
+        Paragraph(
+            f"<b>Ads:</b> live public data from the Meta Ad Library, read on {T(checked)}. "
+            f"<b>Website:</b> {T(website)} was read live on the same date - page source, tags, "
+            "headings, forms and links - using the W3C Nu HTML checker and a direct page fetch. "
+            "Every number, tag ID and status in this report was read from the live page; none of it "
+            "is estimated, illustrative or fabricated.", ST["body"]),
+        Spacer(1, 1.6 * mm),
+        Paragraph('<font color="#B26A00"><b>NOT MEASURED - AND THEREFORE NOT CLAIMED</b></font>',
+                  ST["small_b"]),
+        Spacer(1, 1 * mm),
+        Paragraph(
+            "Google PageSpeed mobile score and Largest Contentful Paint (the keyless API returned "
+            "<b>429 - quota exceeded</b>), server response time, Google Ads Transparency advertiser "
+            "records and the sitemap page count. These rows read "
+            "<b>\"Not available at audit time\"</b> or <b>\"Not checked in this pass\"</b> - "
+            "they are left empty on purpose rather than filled with a guess.", ST["small"]),
+    ]
+    scope_note = (audit.get("site_audit") or {}).get("scope_note")
+    if scope_note:
+        body += [
+            Spacer(1, 1.6 * mm),
+            Paragraph('<font color="#B26A00"><b>WHY SOME ROWS READ \'NOT CHECKED\'</b></font>',
+                      ST["small_b"]),
+            Spacer(1, 1 * mm),
+            Paragraph(T(scope_note), ST["small"]),
+        ]
+    panel = Table([[body]], colWidths=[CONTENT_W])
+    panel.setStyle(TableStyle([
+        ("BACKGROUND", (0, 0), (-1, -1), colors.HexColor("#F2F8F3")),
+        ("BOX", (0, 0), (-1, -1), 0.8, GREEN),
+        ("LINEBEFORE", (0, 0), (0, 0), 3, GREEN),
+        ("LEFTPADDING", (0, 0), (-1, -1), 10),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 10),
+        ("TOPPADDING", (0, 0), (-1, -1), 8),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
+    ]))
+    return panel
+
+
+def build_ksquare_ads_story(audit):
+    """Full 5-page audit layout (identical to audit_Ksquare_Energy.pdf) for a
+    lead whose live website was actually read. The website findings live under
+    the 'site_audit' key so an ads-only JSON never looks like it carries a
+    website audit it does not have."""
+    site = audit.get("site_audit") or {}
+    merged = dict(audit)
+    for key in ("pixels", "seo", "conversion", "pagespeed", "page_count",
+                "local_signals", "score"):
+        if key in site:
+            merged[key] = site[key]
+    for key in ("ssl", "load_time_seconds", "final_url", "audit_date"):
+        if key in site:
+            merged[key] = site[key]
+    merged["no_website"] = False
+    merged["ads_only"] = True
+
+    story = build_story(merged)
+    # Drop the honesty panel in straight after the rule under the title block,
+    # which is where the reference audit states its scope.
+    panel = [ads_only_honesty_panel(audit), Spacer(1, 3.5 * mm)]
+    insert_at = 8 if len(story) > 8 else len(story)
+    return story[:insert_at] + panel + story[insert_at:]
+
+
+def build_ads_only_story(audit):
+    if audit.get("site_audit"):
+        return build_ksquare_ads_story(audit)
+
+    story = []
+    company = audit.get("company") or audit.get("website", "")
+    city = audit.get("city", "")
+    adlib = audit.get("ad_library") or {}
+    meta_own = adlib.get("meta_own") or {}
+    ads = meta_own.get("ads") or []
+    funnel = audit.get("funnel") or {}
+
+    story.append(Spacer(1, 3 * mm))
+    story.append(Paragraph(ADS_ONLY_LABEL, ST["kicker"]))
+    story.append(Spacer(1, 1.5 * mm))
+    story.append(Paragraph(T(company), ST["h1"]))
+    story.append(Spacer(1, 1.5 * mm))
+    meta_line = " &nbsp;·&nbsp; ".join(
+        T(x) for x in [city, audit.get("website", ""),
+                       f"Ad data pulled {audit.get('checked_on', '')}"] if x)
+    story.append(Paragraph(meta_line, ParagraphStyle(
+        "metaline", parent=ST["small"], fontSize=8.4, leading=11)))
+    story.append(Spacer(1, 2 * mm))
+    story.append(HRFlowable(width="100%", thickness=1.4, color=AMBER, spaceBefore=1, spaceAfter=3))
+
+    story.append(honesty_banner(audit))
+    story.append(Spacer(1, 3.5 * mm))
+
+    if adlib.get("summary"):
+        story.append(Paragraph(f"<b>Executive summary.</b> {T(adlib['summary'])}", ST["body"]))
+    story.append(Spacer(1, 3.5 * mm))
+    story.append(ads_only_tiles(audit))
+    story.append(Spacer(1, 3.5 * mm))
+
+    story.extend(section_bar("Your live ads - Meta (Facebook / Instagram)",
+                             "source: Meta Ad Library"))
+    if ads:
+        shown = len(ads[:4])
+        story.append(Paragraph(
+            f"<b>{len(ads)} live ad{'s' if len(ads) != 1 else ''} verified.</b> "
+            f"These are publicly visible in the Ad Library right now - click any ad to open it.",
+            ST["body"]))
+        if len(ads) > shown:
+            story.append(Paragraph(
+                f"All {len(ads)} are live; the {shown} most recent are reproduced below. "
+                f"The rest can be opened from the Ad Library.", ST["small"]))
+        story.append(Spacer(1, 2.5 * mm))
+        for ad in ads[:4]:
+            story.append(ad_card(ad, "Meta"))
+    else:
+        story.append(empty_box(
+            "No active Meta ads were found for this company. Competitors in your city are buying "
+            "this attention instead - which is itself the finding worth acting on."))
+
+    story.extend(section_bar("Where your ad clicks land", "the funnel behind the spend"))
+    if funnel:
+        story.append(facts_table([
+            ("Destination type", funnel.get("type", "Not determined")),
+            ("Destination", funnel.get("destination", "Not determined")),
+            ("What that means", funnel.get("meaning", "")),
+        ]))
+    else:
+        story.append(empty_box("No ad destination was captured for this lead."))
+
+    story.extend(ads_control_section(audit))
+
+    findings = audit.get("findings") or []
+    if findings:
+        story.extend(section_bar("What I found", "read live, not guessed"))
+        story.append(bullets_table(findings, RED, "!"))
+
+    steps = audit.get("next_steps") or []
+    if steps:
+        story.extend(section_bar("Recommended next steps", "what I would do first"))
+        story.append(steps_table(steps))
+
+    facts = audit.get("contact_facts") or []
+    if facts:
+        story.extend(section_bar("Verified contact details", "read from the live site / ad"))
+        story.append(facts_table(facts))
+
+    # A compact proof list: every live ad by library ID, with the link that
+    # opens it. This is real Ad Library data and it is what the reader needs to
+    # re-check any line in this report themselves.
+    _ads = (((audit.get("ad_library") or {}).get("meta_own") or {}).get("ads") or [])
+    if _ads:
+        story.extend(section_bar("Check every claim yourself",
+                                 "each live ad, and the link that opens it"))
+        story.append(facts_table([
+            (f"Ad {i + 1} - {a.get('library_id', '')}",
+             f"{a.get('page_name') or ''} - running since {a.get('started') or 'date not captured'}"
+             + (f" - {a['library_url']}" if a.get("library_url") else ""))
+            for i, a in enumerate(_ads)
+        ]))
+
+    # The CTA and the scope disclaimer travel together. Left ungrouped the
+    # disclaimer used to strand itself on a fresh page, leaving a page whose only
+    # content was two lines of footer text.
+    closing = [
+        Spacer(1, 5 * mm),
+        cta_card(audit),
+        Spacer(1, 2.5 * mm),
+        Paragraph(
+            f"Ad-library data is live public data from the Meta Ad Library, read on "
+            f"{audit.get('checked_on', '')}. No website audit, tracking check or page-speed test was "
+            f"performed for this report - run the full pipeline for the complete audit. Generated by "
+            f"the {YOUR_AGENCY} audit engine.", ST["small"]),
+    ]
+    story.append(KeepTogether(closing))
+    return story
+
+
+def generate_ads_only_pdf(audit, out_path=None):
+    """Render an ads-only (live ad activity) report. Returns the output path."""
+    company = audit.get("company") or audit.get("website", "audit")
+    slug = re.sub(r"[^a-zA-Z0-9]+", "_", company)[:50]
+    ads_only_dir = os.path.join(os.path.dirname(BASE_DIR), "02-OUTREACH", "ads_only_pdfs")
+    if out_path is None:
+        os.makedirs(ads_only_dir, exist_ok=True)
+        out_path = os.path.join(ads_only_dir, f"audit_{slug}.pdf")
+
+    doc = SimpleDocTemplate(
+        out_path, pagesize=A4,
+        leftMargin=MARGIN, rightMargin=MARGIN, topMargin=32 * mm, bottomMargin=15 * mm,
+        title=f"Ads Audit (live ad activity) - {company}",
+        author=f"{YOUR_NAME} - {YOUR_AGENCY}",
+        subject="Live Meta ad activity report - website audit not included",
+    )
+    doc.build(build_ads_only_story(audit), onFirstPage=header_footer, onLaterPages=header_footer)
+    return out_path
+
+
+# ---------------------------------------------------------------------------
 # Story
 # ---------------------------------------------------------------------------
+
+# Minimum room, in points, before a section is allowed to start on the current
+# page. Section bar (16.6 mm) + the intro paragraph + one ad card or the first
+# status table. Below this the section moves to the next page; above it, the
+# page fills instead of ending early.
+_AD_SECTION_MIN = 100
+_WEBSITE_SECTION_MIN = 108
+
 
 def build_story(audit):
     story = []
@@ -704,10 +1347,25 @@ def build_story(audit):
             "Build a landing page with enquiry form + Meta Pixel + GA4 to start converting this ad traffic you already pay for",
         ]))
     else:
-        story.append(priorities_table(issues if issues else
-                                      ["No critical issues detected - focus on scaling ads with clean tracking in place."]))
+        _shown = priorities_table(issues if issues else
+                                  ["No critical issues detected - focus on scaling ads with clean tracking in place."])
+        story.append(_shown)
+        # The stat tile counts every issue, but the table above shows the four
+        # that matter most. Say so plainly, and say where the rest live, rather
+        # than leaving the reader to reconcile a count of 8 against a list of 4.
+        _rest = len(issues) - 4
+        if _rest > 0:
+            story.append(Paragraph(
+                f"These are the {min(4, len(issues))} that matter most. The other "
+                f"{_rest} are itemised, one per row, in the "
+                f"\"Website tracking & pixels\" and \"Conversion readiness\" tables "
+                f"further down - nothing found is left out of this report.", ST["small"]))
 
-    story.append(PageBreak())
+    # Conditional, not hard: if page 1 has room for the ad section it continues
+    # there instead of leaving a third of the page blank. The reference layout
+    # starts ads on page 2, and that is still what happens whenever the room is
+    # not there.
+    story.append(CondPageBreak(_AD_SECTION_MIN))
 
     # ---- Ad intelligence ----
     meta_own = (adlib or {}).get("meta_own") or {}
@@ -722,9 +1380,14 @@ def build_story(audit):
     else:
         if meta_own.get("ads"):
             n = meta_own.get("results_count", len(meta_own["ads"]))
+            shown = len(meta_own["ads"][:3])
             story.append(Paragraph(
                 f"<b>{n} active ad results found.</b> Your Meta presence is live - the creatives below are "
                 f"publicly visible in the Ad Library right now.", ST["body"]))
+            if n > shown:
+                story.append(Paragraph(
+                    f"All {n} are live; the {shown} most recent are reproduced below. "
+                    f"Every one of them can be opened from the Ad Library.", ST["small"]))
             story.append(Spacer(1, 2.5 * mm))
             for ad in meta_own["ads"][:3]:
                 story.append(ad_card(ad, "Meta"))
@@ -737,6 +1400,14 @@ def build_story(audit):
                              "source: Google Ads Transparency Center"))
     if adlib is None:
         story.append(empty_box("Ad-library research not run yet. Execute:  python ad_library.py --latest"))
+    elif not google_own:
+        # The transparency-centre lookup was never run for this lead, so the
+        # report must say so rather than imply nothing was found.
+        story.append(empty_box(
+            "Not checked in this pass. Google's Ads Transparency Centre was not queried for this "
+            "company, so no Google Ads advertiser record is claimed either way. This is worth "
+            "checking next: competitors bidding on 'solar panel price in "
+            + (city or "your city") + "' take that high-intent demand."))
     else:
         g_detail = google_own.get("detail") or {}
         if google_own.get("found") and g_detail.get("ad_count"):
@@ -755,6 +1426,8 @@ def build_story(audit):
                 "bidding on searches like 'solar panel price in " + (city or "your city") +
                 "' in your name - a high-intent demand your competitors can take for free."))
 
+    story.extend(ads_control_section(audit))
+
     story.extend(section_bar("Competitor ad activity", "who is buying attention in your market"))
 
     if meta_comp.get("ads"):
@@ -764,8 +1437,12 @@ def build_story(audit):
         story.append(Spacer(1, 2.5 * mm))
         for ad in meta_comp["ads"][:3]:
             story.append(ad_card(ad, "Meta"))
-    elif adlib is not None:
+    elif adlib is not None and meta_comp:
         story.append(empty_box("No clearly relevant competitor Meta ads were captured for this market."))
+    else:
+        story.append(empty_box(
+            "Not checked in this pass. Competitor Ad Library sweeps were not run for this lead, "
+            "so no competitor ad counts are claimed here."))
 
     g_comps = google_comp.get("advertisers") or []
     if g_comps:
@@ -801,58 +1478,132 @@ def build_story(audit):
             "These advertisers prove the channel works in your category. The gap is yours to take.",
             ST["small"]))
 
-    story.append(PageBreak())
+    story.extend(section_bar("Every live ad, in full",
+                             "the evidence, unedited"))
+    story.append(Paragraph(
+        "Below is the complete text of every live ad exactly as the Meta Ad "
+        "Library shows it, next to the library ID that opens it. Nothing here "
+        "is summarised.",
+        ST["body"]))
+    story.append(Spacer(1, 2.5 * mm))
+    story.append(ad_evidence_table(audit))
+
+    # The promise comparison is long enough that on a multi-ad report it pushes
+    # the document to a sixth page, so it is shown on the single-ad reports where
+    # it also fills the page. The rows are always written to the JSON
+    # (audit["promise_gap"]) and used by the outreach copy either way.
+    _ads_here = (((audit.get("ad_library") or {}).get("meta_own") or {})
+                 .get("ads") or [])
+    _gap = promise_gap_table(audit)
+    if _gap is not None and len(_ads_here) <= 1:
+        story.append(Spacer(1, 3 * mm))
+        story.extend(section_bar("Ad promise vs the page they land on",
+                                 "the fastest thing you can check yourself"))
+        story.append(_gap)
+
+    story.append(CondPageBreak(_WEBSITE_SECTION_MIN))
 
     # ---- Website health ----
     story.extend(section_bar("Website tracking & pixels", "can you measure anything at all?"))
-    pixel_items = [(label, bool(audit.get("pixels", {}).get(key)))
+    pixel_items = [(label, audit.get("pixels", {}).get(key))
                    for key, label in PIXEL_LABELS.items()]
     story.append(two_col_status(pixel_items))
     story.append(Spacer(1, 2.2 * mm))
-    missing = [label for label, ok in pixel_items if not ok]
-    if missing:
+    missing = [label for label, ok in pixel_items if ok is False]
+    unchecked = [label for label, ok in pixel_items if ok is None]
+    if missing or unchecked:
+        parts = []
+        if missing:
+            parts.append(f"{len(missing)} of {len(pixel_items)} tracking tools "
+                         "are missing")
+        if unchecked:
+            parts.append(f"{len(unchecked)} could not be checked in this pass")
+        _consequence = (
+            "Without them you cannot retarget past visitors, and you cannot tell "
+            "which campaign produced a lead - which is exactly what stops paid ads "
+            "from scaling profitably."
+            if missing else
+            "Until they are checked you cannot tell whether the spend behind these "
+            "ads is being measured at all, and you cannot retarget past visitors."
+        )
         story.append(Paragraph(
-            f"<b>{len(missing)} of {len(pixel_items)} tracking tools are missing.</b> Without them you cannot "
-            "retarget past visitors, and you cannot tell which campaign produced a lead - which is exactly "
-            "what stops paid ads from scaling profitably.", ST["body"]))
+            f"<b>{' and '.join(parts)}.</b> {_consequence}", ST["body"]))
     else:
         story.append(Paragraph("Full tracking stack detected - paid campaigns can be measured accurately.", ST["body"]))
 
     story.extend(section_bar("Conversion readiness", "how easily a visitor becomes an enquiry"))
-    conv_items = [(label, bool(conv.get(key))) for key, label in CONVERSION_LABELS.items()]
-    conv_items.insert(3, (f"Call-to-action buttons: {conv.get('has_cta_buttons', 0)} on homepage",
-                          conv.get("has_cta_buttons", 0) >= 3))
+    conv_items = [(label, conv.get(key)) for key, label in CONVERSION_LABELS.items()]
+    _cta = conv.get("has_cta_buttons")
+    if _cta is None:
+        _cta_label = "Call-to-action buttons: not checked in this pass"
+    else:
+        _cta_label = f"Call-to-action buttons: {_cta} on homepage"
+    conv_items.insert(3, (_cta_label, None if _cta is None else _cta >= 3))
     story.append(two_col_status(conv_items))
 
     story.extend(section_bar("What is already working"))
     story.append(bullets_table(wins if wins else ["No major strengths detected on the homepage."], GREEN, "OK"))
 
     story.extend(section_bar("Technical snapshot"))
+    ssl = audit.get("ssl")
+    load_t = audit.get("load_time_seconds")
+    img_total = seo.get("image_count")
+    img_alt = seo.get("images_without_alt")
+    has_sitemap = page_count.get("has_sitemap")
+    sitemap_pages = page_count.get("sitemap_pages")
+    maps_embed = local.get("has_google_maps_embed")
+
+    if img_total is None:
+        images_row = UNCHECKED
+    else:
+        images_row = (f"{img_total} total on the page read, "
+                      f"{img_alt if img_alt is not None else '?'} missing alt text")
+
+    if has_sitemap is None:
+        sitemap_row = UNCHECKED
+    elif has_sitemap:
+        sitemap_row = f"{sitemap_pages} pages listed in the sitemap" if sitemap_pages else UNCHECKED
+    else:
+        sitemap_row = "No sitemap found"
+
     seo_rows = [
-        ("SSL / HTTPS", "Yes" if audit.get("ssl") else "NO - security and ranking issue"),
-        ("Server response time", f"{audit.get('load_time_seconds', 'N/A')} seconds"),
+        ("SSL / HTTPS", "Yes" if ssl else "NO - security and ranking issue"),
+        ("Server response time",
+         f"{load_t} seconds" if load_t is not None else UNCHECKED),
         ("Mobile page speed",
          f"{perf['mobile_performance_score']}/100" if perf.get("mobile_performance_score") is not None
-         else f"Not available at audit time ({perf.get('error', 'no data')})"),
-        ("Largest contentful paint", perf.get("largest_contentful_paint") or "Not available"),
-        ("Page title", seo.get("title_text") or "MISSING"),
-        ("Meta description", f"Present ({seo.get('meta_desc_length', 0)} characters)"
-         if seo.get("has_meta_description") else "MISSING - lower Google click-through"),
-        ("H1 headline", seo.get("h1_text") or "MISSING"),
-        ("Structured data (Schema)", "Present" if seo.get("has_schema") else "MISSING"),
-        ("Open Graph tags", "Present" if seo.get("has_og_tags") else "MISSING"),
-        ("Images on homepage", f"{seo.get('image_count', 0)} total, "
-         f"{seo.get('images_without_alt', 0)} missing alt text"),
-        ("Indexed pages (sitemap)", str(page_count.get("sitemap_pages", "unknown"))
-         if page_count.get("has_sitemap") else "No sitemap found"),
-        ("Google Maps / local SEO", "Maps embedded on homepage" if local.get("has_google_maps_embed")
-         else "No Google Maps embed on homepage"),
+         else f"{NOT_AVAILABLE} ({perf.get('error', 'no data')})"),
+        ("Largest contentful paint", perf.get("largest_contentful_paint") or NOT_AVAILABLE),
+        ("Page title", seo.get("title_text") or "Not found on the page read"),
+        ("Meta description", _tri(seo.get("has_meta_description"),
+                                  yes=(f"Present ({seo.get('meta_desc_length')} characters)"
+                                       if seo.get("meta_desc_length") else "Present"),
+                                  no="Not found on the page read - lower Google click-through")),
+        ("H1 headline", _tri(seo.get("h1_count") == 1 if seo.get("h1_count") is not None else None,
+                             yes=seo.get("h1_text") or "Present",
+                             no="Not found on the page read")),
+        ("Structured data (Schema)", _tri(seo.get("has_schema"))),
+        ("Open Graph tags", _tri(seo.get("has_og_tags"))),
+        ("Images on homepage", images_row),
+        ("Indexed pages (sitemap)", sitemap_row),
+        ("Google Maps / local SEO", _tri(maps_embed,
+                                         yes="Google Maps link / embed on the page read",
+                                         no="No Google Maps embed found on the page read")),
     ]
     story.append(facts_table(seo_rows))
 
     story.extend(section_bar("Recommended next steps", "your 30-day action plan"))
     story.append(steps_table(next_steps(audit)))
 
+    story.extend(section_bar("How every number in this report was verified",
+                             "so you can re-check any line yourself"))
+    story.append(Paragraph(
+        "Nothing in this report is estimated, illustrative or filled in. Every "
+        "figure above was read off a live page or the Ad Library on the date "
+        "shown, and the checks that could not be run are listed as not run "
+        "rather than guessed.", ST["body"]))
+    story.append(Spacer(1, 2.5 * mm))
+    story.append(verification_log(audit))
     story.append(Spacer(1, 6 * mm))
     story.append(cta_card(audit))
     story.append(Spacer(1, 2.5 * mm))

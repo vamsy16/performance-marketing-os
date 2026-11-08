@@ -1,0 +1,195 @@
+{
+  "company": "Varahi Energies",
+  "legal": "Varahi Energies",
+  "city": "Hyderabad",
+  "website": "https://varahienergies.in",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-10-18",
+  "generated_at": "2026-10-24 05:19",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": false,
+      "results_count": 0,
+      "results_label": "No ads match your search criteria",
+      "query": "Varahi Energies",
+      "ads": []
+    },
+    "summary": "No active Meta ads were found for Varahi Energies. Meanwhile four Hyderabad installers - Evergrid Energy, Solox Energies, Truzon Solar and Punarvi Energies - are all live this week buying the same homeowner with Rs. 78,000-subsidy offers. Varahi's MNRE-approved track record (250+ projects, 700 kW+ PM Surya Ghar, 80 MW PM-KUSUM assistance) is not in front of any paid traffic."
+  },
+  "funnel": {
+    "type": "WhatsApp only",
+    "destination": "wa.me/919666120045 on every call-to-action",
+    "meaning": "Every enquiry arrives as a chat message. There is no email capture anywhere on the site, so nobody who does not reply can be followed up with, and nothing can be retargeted or measured."
+  },
+  "findings": [
+    "No active Meta ads under your name - four Hyderabad installers are buying the same homeowner this week with the same Rs. 78,000-subsidy message.",
+    "Every CTA on the site is a WhatsApp deep link. There is no email capture, so a visitor who does not reply cannot be followed up with, and no audience can be built.",
+    "MNRE-approved vendor with 250+ projects, 700 kW+ of PM Surya Ghar work, a 545 kW commercial rice-industry plant and 80 MW of PM-KUSUM assistance - the proof exists, it just is not in front of paid traffic.",
+    "Head office is in Nizamabad with the Hyderabad branch in Kompally, but there is very little Hyderabad-specific content for local search demand (Kompally, Secunderabad, Kukatpally)."
+  ],
+  "next_steps": [
+    [
+      "Turn WhatsApp into a funnel, not a dead end",
+      "Keep WhatsApp as the reply channel, but capture name, phone and locality on the site first, so non-repliers can be followed up."
+    ],
+    [
+      "Test paid lead gen in Hyderabad",
+      "Start with a small Meta budget on one residential offer. Your four competitors are already proving the demand exists in this city."
+    ],
+    [
+      "Build Hyderabad location pages",
+      "Kompally, Secunderabad and Kukatpalli pages with real project photos - free local search traffic sitting next to the traffic you would be buying."
+    ],
+    [
+      "Show the live generation data",
+      "Your site already displays a live generation widget (8.4 kW, 94%, 32 units today). That is a trust asset most installers do not have - put it on the homepage."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "varahienergies@gmail.com"
+    ],
+    [
+      "Phone / WhatsApp",
+      "+91 9666120045 / wa.me/919666120045 (Mon-Sat 9AM-7PM)"
+    ],
+    [
+      "Head office",
+      "Kanteshwar, Beside Bajrang Tiles, Nizamabad, Telangana 503002"
+    ],
+    [
+      "Hyderabad branch",
+      "Lane No. 4, Panchasheel Enclave St, Kompally, Hyderabad-Secunderabad 500067"
+    ],
+    [
+      "Credentials",
+      "MNRE approved vendor - 250+ projects, 700 kW+ PM Surya Ghar, 80 MW PM-KUSUM assistance"
+    ]
+  ],
+  "contact": {
+    "email": "varahienergies@gmail.com",
+    "phone": "+91 9666120045",
+    "fb_page": ""
+  },
+  "site_evidence": {},
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad copy could not be read for these ads."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Ad start dates were not captured."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "No live ads captured."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: WhatsApp only."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 1,
+      "fail": 1,
+      "unknown": 13,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}
