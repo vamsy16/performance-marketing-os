@@ -1,14 +1,14 @@
 # Every audit PDF in this repo — index
 
-**44 PDFs** covering **41 companies** (16 of them scored), on branch `arena/de53294b-performance-marketing-os` (tip `9b2fc15`).
+**49 PDFs** covering **46 companies** (21 of them scored), on branch `arena/de53294b-performance-marketing-os` (tip `9b2fc15`).
 
 They live in **two folders**, which is why looking at one folder makes the total look small:
 
 1. [`02-OUTREACH/audit_pdfs/`](https://github.com/vamsy16/performance-marketing-os/tree/arena/de53294b-performance-marketing-os/02-OUTREACH/audit_pdfs) — **9 full audits**. The complete 5-page DIGITAL MARKETING & PAID ADS AUDIT: website tracking, conversion readiness, technical snapshot and audit score.
 
-2. [`02-OUTREACH/ads_only_pdfs/`](https://github.com/vamsy16/performance-marketing-os/tree/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs) — **35 ads reports**. Since 2026-10-25 these use the *same* 5-page Ksquare layout and carry live website data; before that date they were the shorter ad-activity sheet.
+2. [`02-OUTREACH/ads_only_pdfs/`](https://github.com/vamsy16/performance-marketing-os/tree/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs) — **40 ads reports**. Since 2026-10-25 these use the *same* 5-page Ksquare layout and carry live website data; before that date they were the shorter ad-activity sheet.
 
-> Three companies — Ecolt Energy, Orizen Solar Innovations and Ray On Solar Systems — have **both** a full audit and an ads report. That is why 44 files cover 41 companies.
+> Three companies — Ecolt Energy, Orizen Solar Innovations and Ray On Solar Systems — have **both** a full audit and an ads report. That is why 49 files cover 46 companies.
 
 
 ## Full audits — `02-OUTREACH/audit_pdfs/`
@@ -63,6 +63,11 @@ They live in **two folders**, which is why looking at one folder makes the total
 | Valcan Solar | 4 | 18 KB | — | 2026-10-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Valcan_Solar.pdf) |
 | Vanguard Energy | 3 | 16 KB | — | 2026-10-23 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Vanguard_Energy.pdf) |
 | Varahi Energies | 3 | 15 KB | — | 2026-10-18 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Varahi_Energies.pdf) |
+| Hindusthan Solar Energy Enterprise | 5 | 20 KB | 5/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Hindusthan_Solar_Energy_Enterprise.pdf) |
+| Kypas Solar Power Pvt Ltd | 5 | 20 KB | 3/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Kypas_Solar_Power_Pvt_Ltd.pdf) |
+| Lotus Industries | 5 | 20 KB | 27/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Lotus_Industries.pdf) |
+| Lumisun Solar | 5 | 20 KB | 3/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Lumisun_Solar.pdf) |
+| Varna Solar Pvt. Ltd. | 5 | 20 KB | 19/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Varna_Solar_Pvt_Ltd_.pdf) |
 | Wisda Energy | 5 | 21 KB | 10/100 | 2026-10-25 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Wisda_Energy.pdf) |
 
 ## Notes
@@ -71,4 +76,4 @@ They live in **two folders**, which is why looking at one folder makes the total
 - `audit_Ksquare_Energy.pdf` is the **format reference** — it still predates the claude-ads control-review section, so your local rebuild of it will differ slightly.
 - A score appears only where the website was actually read and scored with the repo's own formula. `—` means ad-activity only, or the score section was not run.
 - Every PDF's underlying numbers are in the matching JSON: [`01-LEADS/audit_results/`](https://github.com/vamsy16/performance-marketing-os/tree/arena/de53294b-performance-marketing-os/01-LEADS/audit_results) for full audits and [`01-LEADS/ads_only_results/`](https://github.com/vamsy16/performance-marketing-os/tree/arena/de53294b-performance-marketing-os/01-LEADS/ads_only_results) for ads reports.
-- Regenerate with `cd 01-LEADS && PYTHONPATH=/tmp/pdflibs python3 run_pipeline.py`, or `build_batch10_ksquare.py` for the batch-10 live-data rebuild.
+- Regenerate with `cd 01-LEADS && PYTHONPATH=/tmp/pdflibs python3 run_pipeline.py`, `build_batch10_ksquare.py` for the batch-10 live-data rebuild, or `build_batch11_ksquare.py` for the batch-11 (Hyderabad / Telangana) rebuild.

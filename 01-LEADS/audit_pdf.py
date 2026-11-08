@@ -308,6 +308,11 @@ def _tri(flag, yes="Present", no="MISSING", unknown=UNCHECKED):
 
 
 def status_text(ok, yes="OK", no="MISSING"):
+    if ok is None:
+        # Unmeasured: it is neither a finding nor a win, so it must never be
+        # rendered as MISSING (which would claim a problem we did not observe).
+        return Paragraph(f'<font color="#5F6368"><b>{T(UNCHECKED)}</b></font>',
+                         ST["cell"])
     color = "#137333" if ok else "#C5221F"
     return Paragraph(f'<font color="{color}"><b>{T(yes if ok else no)}</b></font>', ST["cell"])
 
@@ -1179,23 +1184,40 @@ def build_story(audit):
 
     # ---- Website health ----
     story.extend(section_bar("Website tracking & pixels", "can you measure anything at all?"))
-    pixel_items = [(label, bool(audit.get("pixels", {}).get(key)))
+    pixel_items = [(label, audit.get("pixels", {}).get(key))
                    for key, label in PIXEL_LABELS.items()]
     story.append(two_col_status(pixel_items))
     story.append(Spacer(1, 2.2 * mm))
-    missing = [label for label, ok in pixel_items if not ok]
-    if missing:
+    missing = [label for label, ok in pixel_items if ok is False]
+    unchecked = [label for label, ok in pixel_items if ok is None]
+    if missing or unchecked:
+        parts = []
+        if missing:
+            parts.append(f"{len(missing)} of {len(pixel_items)} tracking tools "
+                         "are missing")
+        if unchecked:
+            parts.append(f"{len(unchecked)} could not be checked in this pass")
+        _consequence = (
+            "Without them you cannot retarget past visitors, and you cannot tell "
+            "which campaign produced a lead - which is exactly what stops paid ads "
+            "from scaling profitably."
+            if missing else
+            "Until they are checked you cannot tell whether the spend behind these "
+            "ads is being measured at all, and you cannot retarget past visitors."
+        )
         story.append(Paragraph(
-            f"<b>{len(missing)} of {len(pixel_items)} tracking tools are missing.</b> Without them you cannot "
-            "retarget past visitors, and you cannot tell which campaign produced a lead - which is exactly "
-            "what stops paid ads from scaling profitably.", ST["body"]))
+            f"<b>{' and '.join(parts)}.</b> {_consequence}", ST["body"]))
     else:
         story.append(Paragraph("Full tracking stack detected - paid campaigns can be measured accurately.", ST["body"]))
 
     story.extend(section_bar("Conversion readiness", "how easily a visitor becomes an enquiry"))
-    conv_items = [(label, bool(conv.get(key))) for key, label in CONVERSION_LABELS.items()]
-    conv_items.insert(3, (f"Call-to-action buttons: {conv.get('has_cta_buttons', 0)} on homepage",
-                          conv.get("has_cta_buttons", 0) >= 3))
+    conv_items = [(label, conv.get(key)) for key, label in CONVERSION_LABELS.items()]
+    _cta = conv.get("has_cta_buttons")
+    if _cta is None:
+        _cta_label = "Call-to-action buttons: not checked in this pass"
+    else:
+        _cta_label = f"Call-to-action buttons: {_cta} on homepage"
+    conv_items.insert(3, (_cta_label, None if _cta is None else _cta >= 3))
     story.append(two_col_status(conv_items))
 
     story.extend(section_bar("What is already working"))

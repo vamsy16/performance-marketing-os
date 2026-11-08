@@ -1,0 +1,241 @@
+{
+  "company": "Hindusthan Solar Energy Enterprise",
+  "legal": "Hindusthan Solar Energy Enterprise",
+  "city": "Secunderabad (Tarnaka) 500017",
+  "website": "https://hindusthansolarenergy.com/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-08",
+  "generated_at": "2026-11-08",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website (page source read through the W3C Nu HTML Checker)",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 2,
+      "results_label": "2 live ads",
+      "query": "solar Hyderabad / Telangana keyword search",
+      "ads": [
+        {
+          "library_id": "1478901357671342",
+          "library_url": "https://www.facebook.com/ads/library/?id=1478901357671342",
+          "page_name": "Hindusthan Solar Energy Enterprise",
+          "started": "Sep 23, 2026",
+          "destination": "fb.me (inside Facebook)",
+          "text": "Get a 3.82 kW solar system at a 3 kW package price, with eligible government subsidy benefits and extra energy discounts. Hindusthan Solar Energy - free quote today."
+        },
+        {
+          "library_id": "1080534018298988",
+          "library_url": "https://www.facebook.com/ads/library/?id=1080534018298988",
+          "page_name": "Hindusthan Solar Energy Enterprise",
+          "started": "Sep 23, 2026",
+          "destination": "fb.me (inside Facebook)",
+          "text": "Get a 3.82 kW solar system at a 3 kW package price, with eligible government subsidy benefits and extra energy discounts. Hindusthan Solar Energy - free quote today."
+        }
+      ]
+    },
+    "summary": "2 live Meta ads confirmed on 2026-11-08 by opening each library ID directly. Google Ads Transparency records were not checked in this pass."
+  },
+  "funnel": {
+    "destination": "fb.me (inside Facebook)",
+    "note": "Ad destination as shown on the live ad card."
+  },
+  "findings": [],
+  "next_steps": [],
+  "contact_facts": "Lalapet, Tarnaka, Secunderabad 500017 (head office: Vijayawada, Andhra Pradesh) | info@hindusthansolarenergy.com | +91 87126 36576",
+  "contact": {
+    "phone": "+91 87126 36576",
+    "email": "info@hindusthansolarenergy.com",
+    "whatsapp": "+91 93915 85484"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://hindusthansolarenergy.com/",
+    "audit_date": "2026-11-08",
+    "pixels": {
+      "meta_pixel": false,
+      "google_ads": true,
+      "google_analytics_ga4": true,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
+      "microsoft_clarity": false,
+      "hotjar": false,
+      "google_tag_manager": false
+    },
+    "conversion": {
+      "has_contact_form": null,
+      "has_phone_click": true,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": null,
+      "has_live_chat": null,
+      "has_popup_optin": null,
+      "has_testimonials": true,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Rooftop Solar in AP & Telangana | Hindusthan Solar",
+      "title_length": 44,
+      "has_meta_description": true,
+      "meta_desc_length": null,
+      "h1_count": null,
+      "h1_text": "",
+      "has_og_tags": true,
+      "has_schema": true,
+      "has_favicon": true,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": false
+    },
+    "platform": "React single-page app (react + motion/Framer Motion + Supabase client), Cloudflare, fonts Plus Jakarta Sans + Inter",
+    "html_errors": "1 error (meta charset declared after the first 1024 bytes, line 49), 0 warnings, 5 info",
+    "score": {
+      "score": 5,
+      "issues": [
+        "Your two live ads click through to an fb.me lead form inside Facebook, so the spend never reaches hindusthansolarenergy.com at all.",
+        "GA4 (G-LGSB5RQG1R) and the Google Ads tag (AW-18521456304) are both installed, but consent-mode v2 defaults ad_storage, ad_user_data, ad_personalization and analytics_storage to 'denied' and the gtag library is only appended after the first interaction or 5 s after idle - so the tags record almost nothing.",
+        "No Meta Pixel installed — can't run retargeting or track ad conversions"
+      ],
+      "wins": [
+        "Google tracking is present",
+        "Google Analytics is installed",
+        "WhatsApp link present",
+        "Testimonials visible"
+      ]
+    }
+  },
+  "audit_date": "2026-11-08",
+  "site_evidence": {
+    "pixel": false,
+    "ga4": true,
+    "gtm": false,
+    "google_ads_tag": true,
+    "checked_on": "2026-11-08",
+    "note": "Landing-page source read live on 2026-11-08 through the W3C Nu HTML Checker (validator.w3.org/nu/?doc=<url>&showsource=yes), which returns the served HTML with script tags intact, plus a direct fetch of the same pages. Tags found: GA4, Google Ads conversion tag."
+  },
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "No Meta Pixel code found in the landing-page source - ad clicks cannot be measured or retargeted."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "Live ads click to a Facebook lead form (fb.me) - traffic never reaches a page you own, so no URL can carry UTMs and click data stays inside Meta."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "Only 2 offer angles in live copy (government subsidy, discount offer) - every ad says the same thing."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Sep 23, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "2 distinct live ads visible - a comparison is at least possible."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: captured destination."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 3,
+      "fail": 4,
+      "unknown": 8,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

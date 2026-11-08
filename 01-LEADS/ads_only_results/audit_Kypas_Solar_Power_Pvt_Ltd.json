@@ -1,0 +1,239 @@
+{
+  "company": "Kypas Solar Power Pvt Ltd",
+  "legal": "Kypas Solar Power Pvt Ltd",
+  "city": "Chanda Nagar, Hyderabad",
+  "website": "https://kypassolar.com/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-08",
+  "generated_at": "2026-11-08",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website (page source read through the W3C Nu HTML Checker)",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 2,
+      "results_label": "2 live ads",
+      "query": "solar Hyderabad / Telangana keyword search",
+      "ads": [
+        {
+          "library_id": "1698264268490724",
+          "library_url": "https://www.facebook.com/ads/library/?id=1698264268490724",
+          "page_name": "Kypas Solar Power Pvt Ltd",
+          "started": "Nov 2, 2026",
+          "destination": "fb.me (inside Facebook)",
+          "text": "STOP PAYING HIGH ELECTRICITY BILLS! Claim up to Rs.78,000 government subsidy under PM Surya Ghar Muft Bijli Yojana. Up to 15 years service support, 5-year generation guarantee, 30-year ZAM structure warranty, complete bank loan assistance, 24-hour service response, free Rs.3,000 cleaning brush kit. Residential and commercial. Chanda Nagar, Hyderabad. 91005 22215."
+        },
+        {
+          "library_id": "1117370117608767",
+          "library_url": "https://www.facebook.com/ads/library/?id=1117370117608767",
+          "page_name": "Kypas Solar Power Pvt Ltd",
+          "started": "Nov 4, 2026",
+          "destination": "fb.me (inside Facebook)",
+          "text": "STOP PAYING HIGH ELECTRICITY BILLS! Claim up to Rs.78,000 government subsidy under PM Surya Ghar Muft Bijli Yojana. Up to 15 years service support, 5-year generation guarantee, 30-year ZAM structure warranty, complete bank loan assistance, 24-hour service response, free Rs.3,000 cleaning brush kit. Residential and commercial. Chanda Nagar, Hyderabad. 91005 22215."
+        }
+      ]
+    },
+    "summary": "2 live Meta ads confirmed on 2026-11-08 by opening each library ID directly. Google Ads Transparency records were not checked in this pass."
+  },
+  "funnel": {
+    "destination": "fb.me (inside Facebook)",
+    "note": "Ad destination as shown on the live ad card."
+  },
+  "findings": [],
+  "next_steps": [],
+  "contact_facts": "Chanda Nagar, Hyderabad | +91 91005 22215 | PM Surya Ghar Muft Bijli Yojana, bank loan at 6% interest",
+  "contact": {
+    "phone": "+91 91005 22215",
+    "email": "",
+    "whatsapp": "+91 91005 22215"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://kypassolar.com/",
+    "audit_date": "2026-11-08",
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": null,
+      "has_live_chat": false,
+      "has_popup_optin": false,
+      "has_testimonials": true,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": null,
+      "title_text": "",
+      "title_length": null,
+      "has_meta_description": null,
+      "meta_desc_length": null,
+      "h1_count": 1,
+      "h1_text": "Keep Your Power As Solar",
+      "has_og_tags": null,
+      "has_schema": null,
+      "has_favicon": null,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": false
+    },
+    "platform": "WordPress + Elementor 4.3.x + Royal Elementor Addons (elementor-319, wpr- classes), WPForms, LiteSpeed Cache, GTM Kit plugin active, Trustindex, Hostinger hosting",
+    "html_errors": "337 errors on the homepage (270 style rules outside @scope in a <style> element in body, plus 4 <style> placement errors); 279 errors on /contact-us/",
+    "score": {
+      "score": 3,
+      "issues": [
+        "Both live ads click through to an fb.me lead form inside Facebook, so the spend never reaches kypassolar.com.",
+        "No live chat — missing after-hours leads"
+      ],
+      "wins": [
+        "Contact form exists",
+        "WhatsApp link present",
+        "Testimonials visible"
+      ]
+    }
+  },
+  "audit_date": "2026-11-08",
+  "site_evidence": {
+    "pixel": false,
+    "ga4": false,
+    "gtm": false,
+    "google_ads_tag": false,
+    "checked_on": "2026-11-08",
+    "note": "The landing page's <head> could not be read on 2026-11-08: the W3C Nu HTML Checker raised 337 errors on the homepage (270 style rules outside @scope in a <style> element in body, plus 4 <style> placement errors); 279 errors on /contact-us/ validator errors and the message list filled the whole report, so the source section - and with it the title, meta description, Open Graph tags, structured data and any pixel - was never returned. Those checks are reported as not checked, not as failures. Tags found: no Meta Pixel, GA4, GTM or Google Ads tag."
+  },
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "No Meta Pixel code found in the landing-page source - ad clicks cannot be measured or retargeted."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "Live ads click to a Facebook lead form (fb.me) - traffic never reaches a page you own, so no URL can carry UTMs and click data stays inside Meta."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "pass",
+        "evidence": "5 distinct offer angles in live copy: government subsidy, subsidy amount, warranty, experience claim, loan assistance."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Nov 4, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "2 distinct live ads visible - a comparison is at least possible."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: captured destination."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 4,
+      "fail": 3,
+      "unknown": 8,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

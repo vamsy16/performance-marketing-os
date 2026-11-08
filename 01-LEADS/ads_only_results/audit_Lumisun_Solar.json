@@ -1,0 +1,241 @@
+{
+  "company": "Lumisun Solar",
+  "legal": "Lumisun Solar",
+  "city": "Hyderabad, Telangana",
+  "website": "https://lumisunsolar.com/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-08",
+  "generated_at": "2026-11-08",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website (page source read through the W3C Nu HTML Checker)",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 2,
+      "results_label": "2 live ads",
+      "query": "solar Hyderabad / Telangana keyword search",
+      "ads": [
+        {
+          "library_id": "1639995594202458",
+          "library_url": "https://www.facebook.com/ads/library/?id=1639995594202458",
+          "page_name": "Lumisun Solar",
+          "started": "Oct 28, 2026",
+          "destination": "WhatsApp",
+          "text": "Diwali Solar Utsav - residential 3 kW on-grid solar in Hyderabad, Khammam, Warangal, Karimnagar and Suryapet. Book your site visit now."
+        },
+        {
+          "library_id": "2587160308432344",
+          "library_url": "https://www.facebook.com/ads/library/?id=2587160308432344",
+          "page_name": "Lumisun Solar",
+          "started": "Nov 5, 2026",
+          "destination": "WhatsApp",
+          "text": "Diwali Solar Utsav - residential 5 kW on-grid solar in Hyderabad, Khammam, Warangal, Karimnagar and Suryapet. Book for Rs.1,001 with 30% advance within 7 days of survey, Bill-On-Us capped at Rs.3,000, and a 15 g silver coin on net-meter commissioning."
+        }
+      ]
+    },
+    "summary": "2 live Meta ads confirmed on 2026-11-08 by opening each library ID directly. Google Ads Transparency records were not checked in this pass."
+  },
+  "funnel": {
+    "destination": "WhatsApp",
+    "note": "Ad destination as shown on the live ad card."
+  },
+  "findings": [],
+  "next_steps": [],
+  "contact_facts": "Hyderabad, Telangana | +91 81799 92229 (WhatsApp) | PM Surya Ghar registered vendor, serves Telangana and Andhra Pradesh",
+  "contact": {
+    "phone": "+91 81799 92229",
+    "email": "",
+    "whatsapp": "+91 81799 92229"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://lumisunsolar.com/",
+    "audit_date": "2026-11-08",
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": 4,
+      "has_live_chat": false,
+      "has_popup_optin": false,
+      "has_testimonials": true,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": null,
+      "title_text": "",
+      "title_length": null,
+      "has_meta_description": null,
+      "meta_desc_length": null,
+      "h1_count": 1,
+      "h1_text": "Rooftop solar for your home, with the government subsidy handled for you.",
+      "has_og_tags": null,
+      "has_schema": null,
+      "has_favicon": true,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": false
+    },
+    "platform": "WordPress 7.1.4 + Elementor 4.3.6 + Elementor Pro 4.3.1, Google Fonts Outfit + Manrope, Trustindex Google-review widget, LiteSpeed Cache",
+    "html_errors": "92 errors, 3 warnings, 117 info on the homepage; 15 errors, 6 warnings, 50 info on /contact-us/",
+    "score": {
+      "score": 3,
+      "issues": [
+        "Both live ads click through to WhatsApp, not lumisunsolar.com, so neither paid visit can be traced to an enquiry.",
+        "The Diwali offer in your ad copy (book for Rs.1,001 with 30% advance within 7 days of survey) has no matching price anywhere on the site - the landing page publishes subsidy bands only.",
+        "No live chat — missing after-hours leads"
+      ],
+      "wins": [
+        "Contact form exists",
+        "WhatsApp link present",
+        "Good CTA presence (4 buttons)",
+        "Testimonials visible"
+      ]
+    }
+  },
+  "audit_date": "2026-11-08",
+  "site_evidence": {
+    "pixel": false,
+    "ga4": false,
+    "gtm": false,
+    "google_ads_tag": false,
+    "checked_on": "2026-11-08",
+    "note": "The landing page's <head> could not be read on 2026-11-08: the W3C Nu HTML Checker raised 92 errors, 3 warnings, 117 info on the homepage; 15 errors, 6 warnings, 50 info on /contact-us/ validator errors and the message list filled the whole report, so the source section - and with it the title, meta description, Open Graph tags, structured data and any pixel - was never returned. Those checks are reported as not checked, not as failures. Tags found: no Meta Pixel, GA4, GTM or Google Ads tag."
+  },
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "No Meta Pixel code found in the landing-page source - ad clicks cannot be measured or retargeted."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "Only 1 offer angle in live copy (free site visit) - every ad says the same thing."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Oct 28, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "2 distinct live ads visible - a comparison is at least possible."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: captured destination."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 3,
+      "fail": 3,
+      "unknown": 9,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

@@ -335,3 +335,49 @@ control review**, built from measured data only. Site data captured verbatim in
 Unverifiable values are recorded as not-available/pending, never guessed —
 PageSpeed/Lighthouse is quota-blocked (429) and is reported exactly as the
 Ksquare reference PDF reports it.
+
+## Status (2026-11-08)
+
+| Item | State |
+|---|---|
+| Lead discovery | Done - 5 leads, all confirmed with live Meta ads and a resolvable website |
+| Duplicate check | Done - none of the 5 is among the 41 existing leads |
+| Ad-ID attribution | Done - every ID confirmed by a direct `?id=` fetch |
+| Website measurement | Done - real measured data only, unmeasured checks stored as `None` |
+| Ads audit (5-page Ksquare layout + claude-ads control review) | Done - `01-LEADS/build_batch11_ksquare.py` |
+| PDFs | Done - `02-OUTREACH/ads_only_pdfs/` (5 files, 5 pages each) |
+| `verify_report.py --ads-only` | Done - 5/5 PASS (40/40 ads reports pass overall) |
+| `01-LEADS/leads.csv` | Done - 46 leads (was 41) |
+| `sequence_manifest.json` | Done - 46 sequences / 184 steps (76 sent / 10 draft / 98 pending) |
+| `02-OUTREACH/AUDIT_PDF_INDEX.md` | Done - 49 PDFs / 46 companies |
+| Step-0 Gmail drafts | **Owner to create and send** - bodies and subjects are in the manifest, all `pending` |
+
+### Audit scores (real, from the repo's own formula)
+
+| Lead | Score /100 | Issues | Wins | Controls pass/fail/unknown |
+|---|---|---|---|---|
+| Varna Solar Pvt. Ltd. | 19 | 5 | 1 | 3 / 3 / 9 |
+| Hindusthan Solar Energy Enterprise | 5 | 3 | 4 | 3 / 4 / 8 |
+| Lumisun Solar | 3 | 3 | 4 | 3 / 3 / 9 |
+| Kypas Solar Power Pvt Ltd | 3 | 2 | 3 | 4 / 3 / 8 |
+| Lotus Industries | 27 | 8 | 1 | 2 / 3 / 10 |
+
+Lower is better. Where a check could not be run (PageSpeed keyless API returns
+429; Lumisun's and Kypas's `<head>` could not be reached through the Nu checker)
+the value is stored as `None`, which renders as "Not checked in this pass" and
+scores neither as a problem nor as a win.
+
+### What each audit actually found
+
+- **Varna (19/100)** - no tracking of any kind on a site whose head is otherwise
+  immaculate, and the homepage is a client-rendered React SPA with no H1 and no
+  contact form in the served HTML.
+- **Hindusthan (5/100)** - GA4 and the Google Ads tag are installed but
+  consent-mode v2 denies all four storage signals and defers the gtag library,
+  and there is no Meta Pixel or GTM.
+- **Lumisun (3/100)** - the only confirmed failure is the missing live chat; the
+  head could not be read, so tracking is reported as not checked.
+- **Kypas (3/100)** - same: live chat is the only confirmed failure, and 337
+  validator errors on the homepage are the real story.
+- **Lotus (27/100)** - no tracking, no contact form, no testimonials, no schema,
+  despite a genuinely strong SEO head.
