@@ -19,8 +19,8 @@ All five leads below are **new** — none is among the 41 already in
 |---|---|---|---|---|---|
 | Varna Solar Pvt. Ltd. | varnasolar.com | info@varnasolar.com | +91 91824 45679 | 3418975398276429 (Oct 30, 2026) | WhatsApp |
 | Hindusthan Solar Energy Enterprise | hindusthansolarenergy.com | info@hindusthansolarenergy.com | +91 87126 36576 | 1478901357671342 (Sep 23), 1080534018298988 (Sep 23) | fb.me lead form |
-| Lumisun Solar | lumisunsolar.com | (contact form only) | +91 81799 92229 | 1639995594202458 (Oct 28), 2587160308432344 (Nov 5) | WhatsApp |
-| Kypas Solar Power Pvt Ltd | kypassolar.com | (contact form only) | +91 91005 22215 | 1698264268490724 (Nov 2), 1117370117608767 (Nov 4) | fb.me lead form |
+| Lumisun Solar | lumisunsolar.com | service.info@lumisunsolar.com | +91 81799 92229 / 81799 93339 | 1639995594202458 (Oct 28), 2587160308432344 (Nov 5) | Not confirmed (card states none) |
+| Kypas Solar Power Pvt Ltd | kypassolar.com | Info@kypassolar.in (footer: saikypa@kypassolar.com) | +91 91005 22215 | 1698264268490724 (Nov 2), 1117370117608767 (Nov 4) | Not confirmed (card states none) |
 | Lotus Industries | lotusindustriesindia.com | lotusindustries95@gmail.com | +91 79895 00747 / 83095 28763 / 90321 61817 | 2228866791035208 (Nov 6) | WhatsApp |
 
 ### Company detail captured during discovery
@@ -477,3 +477,39 @@ build_batch11_ksquare.py` (the five new leads) or `rereder_ads_only.py` (all 40,
 from the JSON, no network needed). `measure_gaps.py` renders a PDF and reports the
 vertical ink fill per page, which is how every number above was measured rather
 than eyeballed.
+
+## Outreach status (2026-11-08)
+
+All five leads now have a working email address, so all five step-0 audit emails
+were drafted in Gmail with the 5-page audit PDF attached.
+
+| Company | To | Gmail draft ID | Attached PDF |
+|---|---|---|---|
+| Varna Solar Pvt. Ltd. | info@varnasolar.com | `r-4921543361042515887` | audit_Varna_Solar_Pvt_Ltd_.pdf |
+| Hindusthan Solar Energy Enterprise | info@hindusthansolarenergy.com | `r3575070414984087925` | audit_Hindusthan_Solar_Energy_Enterprise.pdf |
+| Lumisun Solar | service.info@lumisunsolar.com | `r6871011317025618216` | audit_Lumisun_Solar.pdf |
+| Kypas Solar Power Pvt Ltd | Info@kypassolar.in | `r4535824669128984920` | audit_Kypas_Solar_Power_Pvt_Ltd.pdf |
+| Lotus Industries | lotusindustries95@gmail.com | `r-3419916325158255271` | audit_Lotus_Industries.pdf |
+
+Emails found after the initial discovery pass, both read off the live contact
+pages on 2026-11-08:
+
+- **Lumisun Solar** - the home and inner pages carry no address, but
+  `/contact-us/` publishes `service.info@lumisunsolar.com` under an "Email"
+  heading, plus a second phone (+91 81799 93339), the Somajiguda office address
+  (303, 3rd Floor, Olbee Center, Rajbhavan Road, Hyderabad 500082) and hours of
+  Monday-Saturday 9:30 am - 6:30 pm.
+- **Kypas Solar** - `/contact-us/` publishes `Info@kypassolar.in` under "Email
+  us"; the page footer additionally lists `saikypa@kypassolar.com`. The `.in`
+  address is the one the site itself designates for enquiries, so it is the
+  recipient on the draft.
+
+The Lumisun and Kypas email bodies were rewritten before drafting: the earlier
+draft text asserted a destination (WhatsApp for Lumisun, an fb.me lead form for
+Kypas) that the audit itself records as "Not confirmed from the ad card in this
+pass". Sending an unverified destination claim to the client would have cost
+credibility, so both bodies now state plainly that the destination could not be
+confirmed and that the checks which could not be run are marked not checked.
+
+No follow-up steps have been pre-created. Each sequence advances to step 1 only
+after the step-0 email is actually sent and threaded.
