@@ -33,6 +33,7 @@ from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (
+    CondPageBreak,
     HRFlowable,
     Image,
     KeepTogether,
@@ -74,9 +75,14 @@ FONT_BOLD = "Helvetica-Bold"
 BASE14 = True
 
 _SAFE_MAP = {
-    "\u20b9": "Rs. ", "\u2013": "-", "\u2014": "-", "\u2018": "'", "\u2019": "'",
+    "\u20b9": "Rs. ",          # Indian rupee - real money in live ad copy
+    "\u2013": "-", "\u2014": "-", "\u2018": "'", "\u2019": "'",
     "\u201c": '"', "\u201d": '"', "\u2022": "-", "\u2192": "->", "\u2197": "↗",
     "\u2713": "OK", "\u2717": "X", "\u00a0": " ", "\u25cf": "-", "\u2026": "...",
+    "\u2082": "2", "\u2083": "3",   # subscripts (CO2 in ad copy)
+    "\u20ac": "EUR ", "\u00a3": "GBP ", "\u00a5": "JPY ",
+    "\u2265": ">=", "\u2264": "<=", "\u00b0": " deg ", "\u00d7": "x",
+    "\u200b": "", "\u200c": "", "\u200d": "", "\ufeff": "",
 }
 
 
@@ -102,6 +108,12 @@ def T(text):
     return escape(text)
 
 
+# Characters that _SAFE_MAP can transliterate. latin_safe() has to let these
+# through, otherwise the strip below turns a rupee sign into a blank and the
+# PDF silently shows "1,001" where the ad really says "Rs. 1,001".
+_TRANSLITERABLE = frozenset(_SAFE_MAP)
+
+
 def latin_safe(text, placeholder="[Ad copy in regional language - open the ad via the link below]"):
     """Keep only Latin-script ad copy; Indic scripts cannot render in the PDF fonts."""
     if not text:
@@ -112,6 +124,8 @@ def latin_safe(text, placeholder="[Ad copy in regional language - open the ad vi
     latin = [c for c in letters if ord(c) < 0x250]
     if len(latin) / max(len(letters), 1) < 0.4:
         return placeholder
+    # Map the transliterables first, then strip what is genuinely unrenderable.
+    text = "".join(_SAFE_MAP.get(ch, ch) for ch in text)
     text = re.sub(r"[^\x20-\x7E\u00A0-\u024F]", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
     return text
@@ -224,10 +238,17 @@ def next_steps(audit):
     seo = audit.get("seo", {})
     adlib = audit.get("ad_library") or {}
 
-    if adlib and not (adlib.get("google_own") or {}).get("found"):
+    # Only claim a channel is absent when it was actually looked for. A missing
+    # google_own block means the Transparency Centre was never checked - saying
+    # "no Google Ads presence was found" in that case would be a claim we cannot
+    # support, which is exactly what this report must never do.
+    _google = (adlib.get("google_own") or {}) if adlib else {}
+    if _google.get("found") is False:
         steps.append(("Open a Google Ads channel",
-                      "No Google Ads presence was found, while competitors bid on the same 'solar + city' searches all day."))
-    if adlib and not (adlib.get("meta_own") or {}).get("found"):
+                      "The Google Ads Transparency Centre was checked and shows no record for you, "
+                      "while competitors bid on the same 'solar + city' searches all day."))
+    _meta = (adlib.get("meta_own") or {}) if adlib else {}
+    if _meta.get("found") is False:
         steps.append(("Start Meta (Facebook / Instagram) ads",
                       "No active Meta ads were found. Local solar demand is being caught by competitors' feeds."))
     # A None value means "not measured" - it must never drive a recommendation.
@@ -257,6 +278,31 @@ def next_steps(audit):
     if not steps:
         steps.append(("Scale with Google + Meta ads",
                       "Tracking and conversion basics are in place - paid ads can be launched and measured confidently."))
+
+    # Top up to the 4-step plan the reference layout uses. Each extra step has
+    # to cite something actually measured - never generic advice.
+    _dest = str((audit.get("funnel") or {}).get("destination") or "")
+    _own_site = (audit.get("final_url") or audit.get("website") or "").replace("www.", "")
+    _lands_offsite = bool(_dest) and (
+        "fb.me" in _dest or "whatsapp" in _dest.lower()
+        or "not confirmed" in _dest.lower()
+        or (_own_site and _own_site.split("/")[-1] not in _dest and "http" in _dest))
+    if len(steps) < 4 and _lands_offsite:
+        steps.append(("Point the live ads at a page you own",
+                      f"Right now the click lands on {_dest or 'an unverified destination'} - "
+                      "a landing page on your own domain can be measured, retargeted and tested."))
+    if len(steps) < 4 and any(v is None for v in pixels.values()):
+        _n = sum(1 for v in pixels.values() if v is None)
+        steps.append((f"Finish the {_n} tracking checks this pass could not run",
+                      "This report refused to guess at them. Re-reading the page head with those "
+                      "checks run turns 'not checked' into a decision you can act on."))
+    if len(steps) < 4 and audit.get("audit_date"):
+        steps.append((f"Re-run this audit after 30 days (this one is dated {audit['audit_date']})",
+                      "Ad creative, destination and site tags all move. A second read shows whether "
+                      "the first fixes actually landed."))
+    while len(steps) < 4:
+        steps.append(("Book a 10-minute call to walk through this report",
+                      "Bring the report - every line in it can be re-checked live while we talk."))
     return steps[:4]
 
 
@@ -493,6 +539,25 @@ def bullets_table(items, color, marker):
     return table
 
 
+# Live ad copy is shown in full whenever it fits. Only genuinely long copy is
+# trimmed, and then only at a sentence boundary, with the cut stated in the
+# card - never silently mid-word or mid-sentence the way a fixed [:400] slice
+# was, which used to drop the payment terms off the end of real ad copy.
+_COPY_LIMIT = 900
+
+
+def _trim_copy(copy):
+    if not copy or len(copy) <= _COPY_LIMIT:
+        return copy
+    window = copy[:_COPY_LIMIT]
+    cut = max(window.rfind(". "), window.rfind("! "), window.rfind("? "))
+    if cut < _COPY_LIMIT * 0.5:
+        cut = window.rfind(" ")
+    if cut <= 0:
+        cut = _COPY_LIMIT
+    return window[:cut + 1].rstrip() + " [...full terms continue on the live ad]"
+
+
 def ad_card(ad, platform="Meta"):
     """One live-ad sample: creative image + copy + metadata."""
     img_cell = []
@@ -519,6 +584,7 @@ def ad_card(ad, platform="Meta"):
         meta_bits.append(f"~{ad['ad_count']} live ads on Google")
 
     copy = latin_safe(ad.get("text", ""))
+    copy = _trim_copy(copy)
     copy_html = f'"{T(copy)}"' if copy and not copy.startswith("[") else T(copy)
 
     link = ad.get("library_url") or ad.get("url") or ""
@@ -529,7 +595,7 @@ def ad_card(ad, platform="Meta"):
         Paragraph(f'<b>{T(name)}</b>', ST["cell_b"]),
         Paragraph("  |  ".join(meta_bits) if meta_bits else platform, ST["small"]),
         Spacer(1, 1 * mm),
-        Paragraph(copy_html[:400], ST["cell_grey"]),
+        Paragraph(copy_html, ST["cell_grey"]),
     ]
     if link_html:
         text_cell += [Spacer(1, 1 * mm), Paragraph(link_html, ST["link"])]
@@ -590,10 +656,9 @@ def facts_table(rows_data):
 def ad_evidence_table(audit):
     """Every live ad, in full, with the copy verbatim.
 
-    This is the proof page: the ad cards above truncate the copy at 400
-    characters, so the complete text of every live ad is reproduced here exactly
-    as the Ad Library shows it, next to the library ID that opens it. Nothing in
-    this table is summarised or paraphrased.
+    This is the proof page: the complete text of every live ad is reproduced
+    here exactly as the Ad Library shows it, next to the library ID that opens
+    it. Nothing in this table is summarised or paraphrased.
     """
     meta_own = ((audit.get("ad_library") or {}).get("meta_own") or {})
     ads = meta_own.get("ads") or []
@@ -1129,10 +1194,15 @@ def build_ads_only_story(audit):
     story.extend(section_bar("Your live ads - Meta (Facebook / Instagram)",
                              "source: Meta Ad Library"))
     if ads:
+        shown = len(ads[:4])
         story.append(Paragraph(
             f"<b>{len(ads)} live ad{'s' if len(ads) != 1 else ''} verified.</b> "
             f"These are publicly visible in the Ad Library right now - click any ad to open it.",
             ST["body"]))
+        if len(ads) > shown:
+            story.append(Paragraph(
+                f"All {len(ads)} are live; the {shown} most recent are reproduced below. "
+                f"The rest can be opened from the Ad Library.", ST["small"]))
         story.append(Spacer(1, 2.5 * mm))
         for ad in ads[:4]:
             story.append(ad_card(ad, "Meta"))
@@ -1168,14 +1238,34 @@ def build_ads_only_story(audit):
         story.extend(section_bar("Verified contact details", "read from the live site / ad"))
         story.append(facts_table(facts))
 
-    story.append(Spacer(1, 6 * mm))
-    story.append(cta_card(audit))
-    story.append(Spacer(1, 2.5 * mm))
-    story.append(Paragraph(
-        f"Ad-library data is live public data from the Meta Ad Library, read on "
-        f"{audit.get('checked_on', '')}. No website audit, tracking check or page-speed test was "
-        f"performed for this report - run the full pipeline for the complete audit. Generated by "
-        f"the {YOUR_AGENCY} audit engine.", ST["small"]))
+    # A compact proof list: every live ad by library ID, with the link that
+    # opens it. This is real Ad Library data and it is what the reader needs to
+    # re-check any line in this report themselves.
+    _ads = (((audit.get("ad_library") or {}).get("meta_own") or {}).get("ads") or [])
+    if _ads:
+        story.extend(section_bar("Check every claim yourself",
+                                 "each live ad, and the link that opens it"))
+        story.append(facts_table([
+            (f"Ad {i + 1} - {a.get('library_id', '')}",
+             f"{a.get('page_name') or ''} - running since {a.get('started') or 'date not captured'}"
+             + (f" - {a['library_url']}" if a.get("library_url") else ""))
+            for i, a in enumerate(_ads)
+        ]))
+
+    # The CTA and the scope disclaimer travel together. Left ungrouped the
+    # disclaimer used to strand itself on a fresh page, leaving a page whose only
+    # content was two lines of footer text.
+    closing = [
+        Spacer(1, 5 * mm),
+        cta_card(audit),
+        Spacer(1, 2.5 * mm),
+        Paragraph(
+            f"Ad-library data is live public data from the Meta Ad Library, read on "
+            f"{audit.get('checked_on', '')}. No website audit, tracking check or page-speed test was "
+            f"performed for this report - run the full pipeline for the complete audit. Generated by "
+            f"the {YOUR_AGENCY} audit engine.", ST["small"]),
+    ]
+    story.append(KeepTogether(closing))
     return story
 
 
@@ -1202,6 +1292,14 @@ def generate_ads_only_pdf(audit, out_path=None):
 # ---------------------------------------------------------------------------
 # Story
 # ---------------------------------------------------------------------------
+
+# Minimum room, in points, before a section is allowed to start on the current
+# page. Section bar (16.6 mm) + the intro paragraph + one ad card or the first
+# status table. Below this the section moves to the next page; above it, the
+# page fills instead of ending early.
+_AD_SECTION_MIN = 100
+_WEBSITE_SECTION_MIN = 108
+
 
 def build_story(audit):
     story = []
@@ -1249,10 +1347,25 @@ def build_story(audit):
             "Build a landing page with enquiry form + Meta Pixel + GA4 to start converting this ad traffic you already pay for",
         ]))
     else:
-        story.append(priorities_table(issues if issues else
-                                      ["No critical issues detected - focus on scaling ads with clean tracking in place."]))
+        _shown = priorities_table(issues if issues else
+                                  ["No critical issues detected - focus on scaling ads with clean tracking in place."])
+        story.append(_shown)
+        # The stat tile counts every issue, but the table above shows the four
+        # that matter most. Say so plainly, and say where the rest live, rather
+        # than leaving the reader to reconcile a count of 8 against a list of 4.
+        _rest = len(issues) - 4
+        if _rest > 0:
+            story.append(Paragraph(
+                f"These are the {min(4, len(issues))} that matter most. The other "
+                f"{_rest} are itemised, one per row, in the "
+                f"\"Website tracking & pixels\" and \"Conversion readiness\" tables "
+                f"further down - nothing found is left out of this report.", ST["small"]))
 
-    story.append(PageBreak())
+    # Conditional, not hard: if page 1 has room for the ad section it continues
+    # there instead of leaving a third of the page blank. The reference layout
+    # starts ads on page 2, and that is still what happens whenever the room is
+    # not there.
+    story.append(CondPageBreak(_AD_SECTION_MIN))
 
     # ---- Ad intelligence ----
     meta_own = (adlib or {}).get("meta_own") or {}
@@ -1267,9 +1380,14 @@ def build_story(audit):
     else:
         if meta_own.get("ads"):
             n = meta_own.get("results_count", len(meta_own["ads"]))
+            shown = len(meta_own["ads"][:3])
             story.append(Paragraph(
                 f"<b>{n} active ad results found.</b> Your Meta presence is live - the creatives below are "
                 f"publicly visible in the Ad Library right now.", ST["body"]))
+            if n > shown:
+                story.append(Paragraph(
+                    f"All {n} are live; the {shown} most recent are reproduced below. "
+                    f"Every one of them can be opened from the Ad Library.", ST["small"]))
             story.append(Spacer(1, 2.5 * mm))
             for ad in meta_own["ads"][:3]:
                 story.append(ad_card(ad, "Meta"))
@@ -1363,28 +1481,27 @@ def build_story(audit):
     story.extend(section_bar("Every live ad, in full",
                              "the evidence, unedited"))
     story.append(Paragraph(
-        "The cards above truncate the copy at 400 characters. Below is the "
-        "complete text of every live ad exactly as the Meta Ad Library shows it, "
-        "next to the library ID that opens it. Nothing here is summarised.",
+        "Below is the complete text of every live ad exactly as the Meta Ad "
+        "Library shows it, next to the library ID that opens it. Nothing here "
+        "is summarised.",
         ST["body"]))
     story.append(Spacer(1, 2.5 * mm))
     story.append(ad_evidence_table(audit))
 
-    # The promise comparison is long enough that on a two-ad report it pushes
-    # the website sections onto a sixth page, so it is shown where the verbatim
-    # evidence table leaves room - that is, on the single-ad reports, where page
-    # 3 would otherwise sit 40% empty. The rows themselves are always written to
-    # the JSON (audit["promise_gap"]) for the outreach copy.
+    # The promise comparison is long enough that on a multi-ad report it pushes
+    # the document to a sixth page, so it is shown on the single-ad reports where
+    # it also fills the page. The rows are always written to the JSON
+    # (audit["promise_gap"]) and used by the outreach copy either way.
     _ads_here = (((audit.get("ad_library") or {}).get("meta_own") or {})
                  .get("ads") or [])
     _gap = promise_gap_table(audit)
     if _gap is not None and len(_ads_here) <= 1:
-        story.append(Spacer(1, 4 * mm))
+        story.append(Spacer(1, 3 * mm))
         story.extend(section_bar("Ad promise vs the page they land on",
                                  "the fastest thing you can check yourself"))
         story.append(_gap)
 
-    story.append(PageBreak())
+    story.append(CondPageBreak(_WEBSITE_SECTION_MIN))
 
     # ---- Website health ----
     story.extend(section_bar("Website tracking & pixels", "can you measure anything at all?"))

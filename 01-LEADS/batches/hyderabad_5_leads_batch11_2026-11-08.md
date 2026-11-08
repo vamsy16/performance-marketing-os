@@ -424,3 +424,56 @@ scores neither as a problem nor as a win.
   validator errors on the homepage are the real story.
 - **Lotus (27/100)** - no tracking, no contact form, no testimonials, no schema,
   despite a genuinely strong SEO head.
+
+## Layout and data-integrity pass (2026-11-08)
+
+A second pass over the rendered PDFs found and fixed five real defects. The
+first three were **silently corrupting real data**, which is the one thing these
+reports cannot do:
+
+1. **The rupee sign was being deleted.** `latin_safe()` stripped every character
+   outside Latin-1 *before* `T()` could transliterate it, and `U+20B9` sits
+   outside that range. A live ad that really says "Rs. 1,001" rendered as
+   "1,001" - which reads as one thousand and one, not a price. `latin_safe()` now
+   maps the transliterables first, and `_SAFE_MAP` gained the subscripts and
+   other currency symbols seen in live copy. 25 rupee figures across the reports
+   now render as "Rs. ".
+2. **Ad copy was cut mid-sentence.** `ad_card()` applied a hard `[:400]` slice to
+   the copy string, so Lumisun's payment terms ("...30% advance due within 7 days
+   of survey **and**") ended in the middle of a clause. Copy is now shown in full,
+   and only genuinely long copy is trimmed - at a sentence boundary, with the cut
+   stated in the card.
+3. **Two steps claimed things that were never checked.** `next_steps()` said "No
+   Google Ads presence was found" whenever the Transparency Centre had simply not
+   been queried, and "No active Meta ads were found" on the same logic. Both now
+   fire only when the channel was actually looked for and came back empty.
+
+Two more were honesty gaps rather than corruption:
+
+4. **The issue count did not match the list.** The stat tile said "8 ISSUES
+   FOUND" while "Top priorities" showed four. The report now states how many are
+   shown and where the rest are itemised.
+5. **Freyr (9 ads) and Orbit (5 ads) showed four cards** without saying so. Both
+   reports now state the full count and that the most recent four are reproduced.
+
+### White-space pass
+
+Mid-document gaps are gone. The two hard `PageBreak()` calls became
+`CondPageBreak()`, so a section starts on the current page whenever there is room
+for it instead of always starting a fresh one. That fixed a page in Kypas's report
+that held a single table row (86.6% empty) and pulled every section up where it
+fit. The legacy ad-activity sheets also had pages whose only content was the
+closing disclaimer; the CTA and disclaimer now travel together, and a compact
+"check every claim yourself" table of live ad IDs and links was added.
+
+Across the 40 ads-only reports the median worst gap went from **42.2% to 23.9%**,
+and reports with a gap over 12% fell from 35 to 30. The five batch-11 reports are
+5 pages each with fills of 84-98% on every page except the last, which ends the
+document (16-34% unused) - the same shape as the reference
+`audit_Ksquare_Energy.pdf`, whose own last page is 50.7% empty.
+
+Regenerate with `cd 01-LEADS && PYTHONPATH=/tmp/pdflibs python3
+build_batch11_ksquare.py` (the five new leads) or `rereder_ads_only.py` (all 40,
+from the JSON, no network needed). `measure_gaps.py` renders a PDF and reports the
+vertical ink fill per page, which is how every number above was measured rather
+than eyeballed.
