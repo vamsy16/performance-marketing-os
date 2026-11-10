@@ -79,9 +79,9 @@
       "website": "http://www.absolar.in/",
       "thread_subject": "Noticed something about AB Solar Power Systems's online presence",
       "thread_id": "1a1548778b6c59c4",
-      "mails_sent": 3,
-      "next_followup_date": "2026-10-26",
-      "next_step": 3,
+      "mails_sent": 4,
+      "next_followup_date": "",
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -131,12 +131,12 @@
           "subject": "Re: Noticed something about AB Solar Power Systems' online presence",
           "body": "Hi,\n\nI've reached out a couple of times about helping AB Solar Power Systems get more leads through Google — no response, so I'll assume the timing isn't right and close the loop.\n\nIf that changes (or you ever want a second opinion on your marketing), my door is open.\n\nWishing you a strong quarter.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 2,
-          "status": "draft",
+          "status": "sent",
           "draft_id": "r-8377335657971069796",
-          "message_id": "1a1b8b421e612486",
+          "message_id": "1a1b98e66708c5c3",
           "thread_id": "1a1548778b6c59c4",
           "draft_created_at": "2026-11-08",
-          "sent_at": "",
+          "sent_at": "2026-11-08",
           "due_date": "2026-10-26"
         }
       ],
@@ -219,9 +219,9 @@
       "website": "https://www.arkahub.in/",
       "thread_subject": "Arkahub: 2 live Hyderabad ads, one funnel",
       "thread_id": "1a163e590a0600f9",
-      "mails_sent": 1,
-      "next_followup_date": "2026-10-25",
-      "next_step": 1,
+      "mails_sent": 2,
+      "next_followup_date": "2026-11-10",
+      "next_step": 2,
       "steps": [
         {
           "step": 0,
@@ -243,12 +243,12 @@
           "subject": "Re: Arkahub: 2 live Hyderabad ads, one funnel",
           "body": "Hi,\n\nFollowing up on the live-ad report I sent for Arkahub.\n\nRight now 2 of your ads are live on Meta, and every click lands\nin Owned pages (both ads). That means anyone who clicks and doesn't enquire is gone\nfor good, and there is no way to tell which creative actually produces a\nbooking.\n\nTwo live Telugu ads (14 and 15 Oct) and both point at owned pages - the second at a dedicated Hyderabad landing page (arkahub.in/hyderabad). The paid path already lands on owned ground.\n\nHappy to walk you through the 3 changes I'd make first on a 10-minute call -\nor just keep the report, no strings attached.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 2,
-          "status": "draft",
+          "status": "sent",
           "draft_id": "r8152235057281483652",
-          "message_id": "1a1b8b420d5635ce",
+          "message_id": "1a1b9c8ff49a9225",
           "thread_id": "1a163e590a0600f9",
           "draft_created_at": "2026-11-08",
-          "sent_at": "",
+          "sent_at": "2026-11-08",
           "due_date": "2026-10-25"
         },
         {
@@ -263,7 +263,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": ""
+          "due_date": "2026-11-10"
         },
         {
           "step": 3,
@@ -639,9 +639,9 @@
       "website": "https://www.evergridenergy.in",
       "thread_subject": "Evergrid Energy: 2 live Hyderabad ads, one funnel",
       "thread_id": "1a1548250791ea62",
-      "mails_sent": 3,
-      "next_followup_date": "2026-10-26",
-      "next_step": 3,
+      "mails_sent": 4,
+      "next_followup_date": "",
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -691,12 +691,12 @@
           "subject": "Re: Evergrid Energy: 2 live Hyderabad ads, one funnel",
           "body": "Hi,\n\nI have reached out a couple of times about the ad report for Evergrid Energy with no\nresponse, so I will assume the timing is not right and close the loop.\n\nThe report is yours to keep. If paid acquisition ever becomes a priority, my\ndoor is open.\n\nWishing you a strong quarter.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 2,
-          "status": "draft",
+          "status": "sent",
           "draft_id": "r533036898005335820",
-          "message_id": "1a1b8b422067a776",
+          "message_id": "1a1b9836aeb19afa",
           "thread_id": "1a1548250791ea62",
           "draft_created_at": "2026-11-08",
-          "sent_at": "",
+          "sent_at": "2026-11-08",
           "due_date": "2026-10-26"
         }
       ],
@@ -919,8 +919,8 @@
       "website": "https://hindusthansolarenergy.com/",
       "thread_subject": "Hindusthan Solar Energy Enterprise: 2 live Secunderabad ads, one funnel",
       "thread_id": "1a1b96e4e23fedab",
-      "mails_sent": 0,
-      "next_followup_date": "",
+      "mails_sent": 1,
+      "next_followup_date": "2026-11-10",
       "next_step": 1,
       "report_kind": "ads_only",
       "steps": [
@@ -930,12 +930,12 @@
           "subject": "Hindusthan Solar Energy Enterprise: 2 live Secunderabad ads, one funnel",
           "body": "Hi,\n\nI spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Hindusthan Solar Energy Enterprise is doing right now.\n\nWhat it covers (pulled from the Ad Library on 2026-11-08):\n\n  - 2 live ads on Meta, running since 23 September 2026\n  - every click lands in Facebook lead form (fb.me)\n  - Both live ads (since 23 Sep 2026) click to an fb.me lead form inside Facebook - the spend never reaches hindusthansolarenergy.com at all.\n  - GA4 (G-LGSB5RQG1R) and the Google Ads tag (AW-18521456304) are installed, but consent-mode v2 defaults all four storage signals to 'denied' and the gtag library only loads after the first interaction or 5 s after idle - so the tags record almost nothing.\n  - There is no Meta Pixel and no GTM on the site, and your JSON-LD still points at the Vijayawada head office even though the ads sell into Secunderabad and Hyderabad.\n\nYou can verify every line yourself:\n\n  1478901357671342: https://www.facebook.com/ads/library/?id=1478901357671342\n  1080534018298988: https://www.facebook.com/ads/library/?id=1080534018298988\n\nTo be clear about what this is not: it is not a pitch dressed up as a report. Everything in it was read off your live website and the Ad Library, nothing is estimated, and the checks I could not run are marked as not checked rather than filled in.\n\nHappy to walk you through what I found on a 10-minute call - or just keep the report, no strings attached.\n\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 0,
-          "status": "draft",
+          "status": "sent",
           "draft_id": "r3575070414984087925",
-          "message_id": "1a1b96e4e23fedab",
+          "message_id": "1a1ba0aea736f565",
           "thread_id": "1a1b96e4e23fedab",
           "draft_created_at": "2026-11-08",
-          "sent_at": "",
+          "sent_at": "2026-11-08",
           "due_date": ""
         },
         {
@@ -950,7 +950,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": ""
+          "due_date": "2026-11-10"
         },
         {
           "step": 2,
@@ -1317,19 +1317,19 @@
           "subject": "Re: Quick question about Ksquare Energy's website",
           "body": "Hi,\n\nI've reached out a couple of times about helping Ksquare Energy get more leads through Google — no response, so I'll assume the timing isn't right and close the loop.\n\nIf that changes (or you ever want a second opinion on your marketing), my door is open.\n\nWishing you a strong quarter.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 2,
-          "status": "draft",
+          "status": "sent",
           "draft_id": "r-2404618550959716627",
-          "message_id": "1a1b8b4215252d06",
+          "message_id": "1a1b9b306e32c69e",
           "thread_id": "1a14f7346f5232f1",
           "draft_created_at": "2026-11-08",
-          "sent_at": "",
+          "sent_at": "2026-11-08",
           "due_date": "2026-10-26"
         }
       ],
       "thread_id": "1a14f7346f5232f1",
-      "mails_sent": 3,
-      "next_followup_date": "2026-10-26",
-      "next_step": 3,
+      "mails_sent": 4,
+      "next_followup_date": "",
+      "next_step": null,
       "report_kind": "full_audit"
     },
     {
@@ -1339,8 +1339,8 @@
       "website": "https://kypassolar.com/",
       "thread_subject": "Kypas Solar Power Pvt Ltd: 2 live Hyderabad ads, one funnel",
       "thread_id": "1a1b96e4fc02c231",
-      "mails_sent": 0,
-      "next_followup_date": "",
+      "mails_sent": 1,
+      "next_followup_date": "2026-11-10",
       "next_step": 1,
       "report_kind": "ads_only",
       "steps": [
@@ -1350,12 +1350,12 @@
           "subject": "Kypas Solar Power Pvt Ltd: 2 live Hyderabad ads, one funnel",
           "body": "Hi,\n\nI spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Kypas Solar Power Pvt Ltd is doing right now.\n\nWhat it covers (pulled from the Ad Library on 2026-11-08):\n\n  - 2 live ads on Meta, running since 2 November 2026\n  - neither ad's destination could be confirmed from the ad card in this pass, so where the spend lands is not verified here\n  - The homepage raises 337 validator errors, almost all of them Elementor style rules emitted into the body instead of the head, which is the single biggest drag on load time for paid traffic.\n  - The site has no published pricing, and the Rs.78,000 subsidy, 5-year generation guarantee and 30-year structure warranty in the ad copy are nowhere on the landing page to back them up.\n  - The page head could not be read in this pass, so the report says \"not checked\" rather than guessing at your tracking.\n\nYou can verify every line yourself:\n\n  1698264268490724: https://www.facebook.com/ads/library/?id=1698264268490724\n  1117370117608767: https://www.facebook.com/ads/library/?id=1117370117608767\n\nTo be clear about what this is not: it is not a pitch dressed up as a report. Everything in it was read off your live website and the Ad Library, nothing is estimated, and the checks I could not run are marked as not checked rather than filled in.\n\nHappy to walk you through what I found on a 10-minute call - or just keep the report, no strings attached.\n\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 0,
-          "status": "draft",
+          "status": "sent",
           "draft_id": "r4535824669128984920",
-          "message_id": "1a1b96e4fc02c231",
+          "message_id": "1a1b9ffef3225525",
           "thread_id": "1a1b96e4fc02c231",
           "draft_created_at": "2026-11-08",
-          "sent_at": "",
+          "sent_at": "2026-11-08",
           "due_date": ""
         },
         {
@@ -1370,7 +1370,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": ""
+          "due_date": "2026-11-10"
         },
         {
           "step": 2,
@@ -1410,8 +1410,8 @@
       "website": "https://www.lotusindustriesindia.com/",
       "thread_subject": "Lotus Industries: 1 live Hyderabad ad, one funnel",
       "thread_id": "1a1b96e50a8f2457",
-      "mails_sent": 0,
-      "next_followup_date": "",
+      "mails_sent": 1,
+      "next_followup_date": "2026-11-10",
       "next_step": 1,
       "report_kind": "ads_only",
       "steps": [
@@ -1421,12 +1421,12 @@
           "subject": "Lotus Industries: 1 live Hyderabad ad, one funnel",
           "body": "Hi,\n\nI spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Lotus Industries is doing right now.\n\nWhat it covers (pulled from the Ad Library on 2026-11-08):\n\n  - 1 live ad on Meta, running since 6 November 2026\n  - every click lands in WhatsApp (wa.me)\n  - The live ad (since 6 Nov 2026) clicks to WhatsApp, not lotusindustriesindia.com, so the Diwali HJT offer in the ad cannot be measured on the site.\n  - The site's SEO is genuinely strong - full Open Graph and Twitter cards, 31 clean validator messages and a keyword-rich title - but not a single pixel, GA4, GTM or Google Ads tag is installed anywhere on it.\n  - There is no contact form, no live chat and no testimonials: a B2B buyer who arrives from the ad can only call or WhatsApp, which loses the written enquiry trail.\n\nYou can verify every line yourself:\n\n  2228866791035208: https://www.facebook.com/ads/library/?id=2228866791035208\n\nTo be clear about what this is not: it is not a pitch dressed up as a report. Everything in it was read off your live website and the Ad Library, nothing is estimated, and the checks I could not run are marked as not checked rather than filled in.\n\nHappy to walk you through what I found on a 10-minute call - or just keep the report, no strings attached.\n\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 0,
-          "status": "draft",
+          "status": "sent",
           "draft_id": "r-3419916325158255271",
-          "message_id": "1a1b96e50a8f2457",
+          "message_id": "1a1b9f23234fd4b8",
           "thread_id": "1a1b96e50a8f2457",
           "draft_created_at": "2026-11-08",
-          "sent_at": "",
+          "sent_at": "2026-11-08",
           "due_date": ""
         },
         {
@@ -1441,7 +1441,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": ""
+          "due_date": "2026-11-10"
         },
         {
           "step": 2,
@@ -1480,8 +1480,8 @@
       "website": "https://lumisunsolar.com/",
       "thread_subject": "Lumisun Solar: 2 live Hyderabad ads, one funnel",
       "thread_id": "1a1b96e59632d7c1",
-      "mails_sent": 0,
-      "next_followup_date": "",
+      "mails_sent": 1,
+      "next_followup_date": "2026-11-10",
       "next_step": 1,
       "report_kind": "ads_only",
       "steps": [
@@ -1491,12 +1491,12 @@
           "subject": "Lumisun Solar: 2 live Hyderabad ads, one funnel",
           "body": "Hi,\n\nI spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Lumisun Solar is doing right now.\n\nWhat it covers (pulled from the Ad Library on 2026-11-08):\n\n  - 2 live ads on Meta, running since 28 October 2026\n  - neither ad's destination could be confirmed from the ad card in this pass, so where the spend lands is not verified here\n  - The Diwali offer in your ad copy - book for Rs.1,001 with 30% advance due within 7 days of survey and by 7 Dec 2026, plus Bill-On-Us capped at Rs.3,000 - has no matching price anywhere on the site; the landing page publishes subsidy bands only.\n  - The contact page repeats six form field IDs (form-field-name, -phone, -district, -bill_type, -bill, -interest) and the homepage raises 92 validator errors, so the enquiry form that does exist is fragile.\n  - The page head could not be read in this pass, so the report says \"not checked\" rather than guessing at your tracking.\n\nYou can verify every line yourself:\n\n  1639995594202458: https://www.facebook.com/ads/library/?id=1639995594202458\n  2587160308432344: https://www.facebook.com/ads/library/?id=2587160308432344\n\nTo be clear about what this is not: it is not a pitch dressed up as a report. Everything in it was read off your live website and the Ad Library, nothing is estimated, and the checks I could not run are marked as not checked rather than filled in.\n\nHappy to walk you through what I found on a 10-minute call - or just keep the report, no strings attached.\n\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 0,
-          "status": "draft",
+          "status": "sent",
           "draft_id": "r6871011317025618216",
-          "message_id": "1a1b96e59632d7c1",
+          "message_id": "1a1b9d7a481e9334",
           "thread_id": "1a1b96e59632d7c1",
           "draft_created_at": "2026-11-08",
-          "sent_at": "",
+          "sent_at": "2026-11-08",
           "due_date": ""
         },
         {
@@ -1511,7 +1511,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": ""
+          "due_date": "2026-11-10"
         },
         {
           "step": 2,
@@ -1971,9 +1971,9 @@
       "website": "https://www.punarvienergies.com",
       "thread_subject": "Punarvi Energies: 2 live Hyderabad ads, one funnel",
       "thread_id": "1a15482b564e18fd",
-      "mails_sent": 3,
-      "next_followup_date": "2026-10-26",
-      "next_step": 3,
+      "mails_sent": 4,
+      "next_followup_date": "",
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -2023,12 +2023,12 @@
           "subject": "Re: Punarvi Energies: 2 live Hyderabad ads, one funnel",
           "body": "Hi,\n\nI have reached out a couple of times about the ad report for Punarvi Energies with no\nresponse, so I will assume the timing is not right and close the loop.\n\nThe report is yours to keep. If paid acquisition ever becomes a priority, my\ndoor is open.\n\nWishing you a strong quarter.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 2,
-          "status": "draft",
+          "status": "sent",
           "draft_id": "r6173281034272019459",
-          "message_id": "1a1b8b421283fe5a",
+          "message_id": "1a1b9bd19bfcb076",
           "thread_id": "1a15482b564e18fd",
           "draft_created_at": "2026-11-08",
-          "sent_at": "",
+          "sent_at": "2026-11-08",
           "due_date": "2026-10-26"
         }
       ],
@@ -2321,9 +2321,9 @@
       "website": "https://solox.in",
       "thread_subject": "Solox Energies: 1 live Hyderabad ad, one funnel",
       "thread_id": "1a15482ea841990b",
-      "mails_sent": 3,
-      "next_followup_date": "2026-10-26",
-      "next_step": 3,
+      "mails_sent": 4,
+      "next_followup_date": "",
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -2373,12 +2373,12 @@
           "subject": "Re: Solox Energies: 1 live Hyderabad ad, one funnel",
           "body": "Hi,\n\nI have reached out a couple of times about the ad report for Solox Energies with no\nresponse, so I will assume the timing is not right and close the loop.\n\nThe report is yours to keep. If paid acquisition ever becomes a priority, my\ndoor is open.\n\nWishing you a strong quarter.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 2,
-          "status": "draft",
+          "status": "sent",
           "draft_id": "r3515787183786373393",
-          "message_id": "1a1b8b4221e990e2",
+          "message_id": "1a1b977850e79203",
           "thread_id": "1a15482ea841990b",
           "draft_created_at": "2026-11-08",
-          "sent_at": "",
+          "sent_at": "2026-11-08",
           "due_date": "2026-10-26"
         }
       ],
@@ -2601,9 +2601,9 @@
       "website": "https://www.truzonsolar.com",
       "thread_subject": "Truzon Solar: 3 live Hyderabad ads, one funnel",
       "thread_id": "1a1548288ba322d4",
-      "mails_sent": 3,
-      "next_followup_date": "2026-10-26",
-      "next_step": 3,
+      "mails_sent": 4,
+      "next_followup_date": "",
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -2653,12 +2653,12 @@
           "subject": "Re: Truzon Solar: 3 live Hyderabad ads, one funnel",
           "body": "Hi,\n\nI have reached out a couple of times about the ad report for Truzon Solar with no\nresponse, so I will assume the timing is not right and close the loop.\n\nThe report is yours to keep. If paid acquisition ever becomes a priority, my\ndoor is open.\n\nWishing you a strong quarter.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 2,
-          "status": "draft",
+          "status": "sent",
           "draft_id": "r2023172809387181280",
-          "message_id": "1a1b8b4265feca59",
+          "message_id": "1a1b96c4708e2393",
           "thread_id": "1a1548288ba322d4",
           "draft_created_at": "2026-11-08",
-          "sent_at": "",
+          "sent_at": "2026-11-08",
           "due_date": "2026-10-26"
         }
       ],
@@ -2951,9 +2951,9 @@
       "website": "https://varahienergies.in",
       "thread_subject": "Varahi Energies: no live ads while Hyderabad competitors buy the same homeowner",
       "thread_id": "1a15483125a2db5c",
-      "mails_sent": 3,
-      "next_followup_date": "2026-10-26",
-      "next_step": 3,
+      "mails_sent": 4,
+      "next_followup_date": "",
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -3003,12 +3003,12 @@
           "subject": "Re: Varahi Energies: no live ads while Hyderabad competitors buy the same homeowner",
           "body": "Hi,\n\nI have reached out a couple of times about the ad report for Varahi Energies with no\nresponse, so I will assume the timing is not right and close the loop.\n\nThe report is yours to keep. If paid acquisition ever becomes a priority, my\ndoor is open.\n\nWishing you a strong quarter.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 2,
-          "status": "draft",
+          "status": "sent",
           "draft_id": "r-76794755592319113",
-          "message_id": "1a1b8b421836c04e",
+          "message_id": "1a1b99a4e75e6f27",
           "thread_id": "1a15483125a2db5c",
           "draft_created_at": "2026-11-08",
-          "sent_at": "",
+          "sent_at": "2026-11-08",
           "due_date": "2026-10-26"
         }
       ],
@@ -3021,8 +3021,8 @@
       "website": "https://www.varnasolar.com/",
       "thread_subject": "Varna Solar Pvt. Ltd.: 1 live Hyderabad ad, one funnel",
       "thread_id": "1a1b96e5281d2907",
-      "mails_sent": 0,
-      "next_followup_date": "",
+      "mails_sent": 1,
+      "next_followup_date": "2026-11-10",
       "next_step": 1,
       "report_kind": "ads_only",
       "steps": [
@@ -3032,12 +3032,12 @@
           "subject": "Varna Solar Pvt. Ltd.: 1 live Hyderabad ad, one funnel",
           "body": "Hi,\n\nI spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Varna Solar Pvt. Ltd. is doing right now.\n\nWhat it covers (pulled from the Ad Library on 2026-11-08):\n\n  - 1 live ad on Meta, running since 30 October 2026\n  - every click lands in WhatsApp (wa.me)\n  - The live ad (since 30 Oct 2026) clicks to WhatsApp, not varnasolar.com - the spend never reaches the site, so there is no retargeting pool and no testable landing page.\n  - The site's head is spotless (complete Open Graph, Twitter cards and a LocalBusiness JSON-LD with your Vengal Rao Nagar address, coordinates and Mon-Sat hours) yet not one pixel, GA4 or GTM tag is installed anywhere on it.\n  - The homepage is a client-rendered React SPA, so the served HTML has no H1 and no contact form - and the 'Our Impact in Numbers' counters all render as 0 without JavaScript.\n\nYou can verify every line yourself:\n\n  3418975398276429: https://www.facebook.com/ads/library/?id=3418975398276429\n\nTo be clear about what this is not: it is not a pitch dressed up as a report. Everything in it was read off your live website and the Ad Library, nothing is estimated, and the checks I could not run are marked as not checked rather than filled in.\n\nHappy to walk you through what I found on a 10-minute call - or just keep the report, no strings attached.\n\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 0,
-          "status": "draft",
+          "status": "sent",
           "draft_id": "r-4921543361042515887",
-          "message_id": "1a1b96e5281d2907",
+          "message_id": "1a1b9e560b904f8f",
           "thread_id": "1a1b96e5281d2907",
           "draft_created_at": "2026-11-08",
-          "sent_at": "",
+          "sent_at": "2026-11-08",
           "due_date": ""
         },
         {
@@ -3052,7 +3052,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": ""
+          "due_date": "2026-11-10"
         },
         {
           "step": 2,
@@ -3139,19 +3139,19 @@
           "subject": "Re: Quick question about Venus home appliances' website",
           "body": "Hi,\n\nI've reached out a couple of times about helping Venus home appliances get more leads through Google — no response, so I'll assume the timing isn't right and close the loop.\n\nIf that changes (or you ever want a second opinion on your marketing), my door is open.\n\nWishing you a strong quarter.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 2,
-          "status": "draft",
+          "status": "sent",
           "draft_id": "r570539585608650525",
-          "message_id": "1a1b8b42172b1776",
+          "message_id": "1a1b9a377a09c90b",
           "thread_id": "1a1548e33069b440",
           "draft_created_at": "2026-11-08",
-          "sent_at": "",
+          "sent_at": "2026-11-08",
           "due_date": "2026-10-26"
         }
       ],
       "thread_id": "1a1548e33069b440",
-      "mails_sent": 3,
-      "next_followup_date": "2026-10-26",
-      "next_step": 3,
+      "mails_sent": 4,
+      "next_followup_date": "",
+      "next_step": null,
       "report_kind": "full_audit"
     },
     {
