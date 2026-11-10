@@ -1,0 +1,255 @@
+{
+  "company": "Aadithya Solar Energies",
+  "legal": "Aadithya Solar Energies",
+  "city": "Gandipet, Hyderabad 500086",
+  "website": "https://aadithyasolarenergies.com/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-10",
+  "generated_at": "2026-11-10",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website (page source read through the W3C Nu HTML Checker)",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "1 live ad",
+      "query": "solar Hyderabad / Telangana keyword search",
+      "ads": [
+        {
+          "library_id": "1596852225147259",
+          "library_url": "https://www.facebook.com/ads/library/?id=1596852225147259",
+          "page_name": "Aadithya Solar Energies",
+          "started": "Sep 11, 2026",
+          "destination": "fb.me (http://fb.me/), confirmed on the ad card",
+          "text": "Video ad, copy in Telugu script, which this report's fonts cannot render - given below by meaning. Latin-script lines are verbatim from the card; open the live ad to read the original.\n\nVerbatim: \"Rs.78,000 Solar Subsidy\", \"Rs.78,000 Solar!\", \"Power Plant!\", \"Rooftop Solar Installation\", \"Solar Power\", \"Savings\", \"Aadithya Solar Energies\", \"Call: 94910 32828\".\n\nTranslated: register your details for solar subsidy information up to Rs.78,000; your own power plant on your own roof; check on electricity bills that rise every month; under the PM Surya Ghar Muft Bijli Yojana eligible households can get up to Rs.78,000 subsidy, with help through the process.\n\nCTA on the card: 'Book now'"
+        }
+      ]
+    },
+    "summary": "1 live Meta ad confirmed on 2026-11-10 by opening each library ID directly. Google Ads Transparency records were not checked in this pass."
+  },
+  "funnel": {
+    "destination": "fb.me (http://fb.me/), confirmed on the ad card",
+    "note": "Ad destination as shown on the live ad card."
+  },
+  "findings": [],
+  "next_steps": [],
+  "contact_facts": "Sy.No.186, Near Water Tank, Kismatpur, Gandipet Mandal, Ranga Reddy District, Telangana 500086 (the /contact/ page also prints Plot No. 42, Himayath Sagar, Bandlaguda Jagir, Gandipet Mandal) | info@aadithyasolarenergies.com | +91 94910 32828",
+  "contact": {
+    "phone": "+91 94910 32828",
+    "email": "info@aadithyasolarenergies.com",
+    "whatsapp": ""
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://aadithyasolarenergies.com/",
+    "audit_date": "2026-11-10",
+    "pixels": {
+      "meta_pixel": false,
+      "google_ads": false,
+      "google_analytics_ga4": false,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
+      "microsoft_clarity": false,
+      "hotjar": false,
+      "google_tag_manager": false
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": false,
+      "has_cta_buttons": 4,
+      "has_live_chat": false,
+      "has_popup_optin": false,
+      "has_testimonials": false,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Aadithya Solar Energies",
+      "title_length": 24,
+      "has_meta_description": true,
+      "meta_desc_length": 27,
+      "h1_count": 4,
+      "h1_text": "",
+      "has_og_tags": false,
+      "has_schema": false,
+      "has_favicon": true,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": true
+    },
+    "platform": "WordPress 7.0.8, theme 'eergx' (themexriver.com/wp/eergx/), Elementor, Contact Form 7 6.1.6, Table Addons for Elementor, Bootstrap, Font Awesome, Google Fonts Inter / AR One Sans / Roboto / Roboto Slab",
+    "html_errors": "55 errors, 10 warnings, 59 info on the homepage",
+    "score": {
+      "score": 33,
+      "issues": [
+        "Your live ad's 'Book now' button goes to http://fb.me/ - a Facebook link shortener - not to aadithyasolarenergies.com, so the spend never reaches the site you are paying to advertise.",
+        "With no Meta Pixel, no GA4 and no Google Ads tag anywhere in the site's <head>, nothing on aadithyasolarenergies.com can record who clicked, so even a visitor who does arrive cannot be counted or retargeted.",
+        "The <head> still carries the theme's default meta description, 'Solar Energy WordPress Theme' - the text Google shows under your listing has never been written for your business.",
+        "The theme is unfinished: the header prints the placeholder phone (229) 555-0109, the email link is labelled 'example@email.com', the service and 'About' links point at the theme demo on themexriver.com, and the footer shows two different addresses.",
+        "No Meta Pixel installed — can't run retargeting or track ad conversions",
+        "No Google Ads / GTM tracking — can't measure ad performance",
+        "No Google Analytics — flying blind on website traffic",
+        "No WhatsApp link — losing mobile leads (WhatsApp converts 3x better for Indian home services)",
+        "No live chat — missing after-hours leads",
+        "No visible testimonials/social proof on homepage",
+        "Multiple H1 tags (4) — confuses Google",
+        "No structured data (Schema.org) - missing rich results in Google",
+        "No Open Graph tags - links look bad when shared on social/WhatsApp"
+      ],
+      "wins": [
+        "Contact form exists",
+        "Good CTA presence (4 buttons)"
+      ]
+    }
+  },
+  "audit_date": "2026-11-10",
+  "site_evidence": {
+    "pixel": false,
+    "ga4": false,
+    "gtm": false,
+    "google_ads_tag": false,
+    "checked_on": "2026-11-10",
+    "note": "Landing-page source read live on 2026-11-10 through the W3C Nu HTML Checker (validator.w3.org/nu/?doc=<url>&showsource=yes), which returns the served HTML with script tags intact, plus a direct fetch of the same pages. Tags found: no Meta Pixel, GA4, GTM or Google Ads tag."
+  },
+  "promise_gap": [
+    [
+      "Ad: 'Rs.78,000 వరకు Solar Subsidy వివరాల కోసం మీ వివరాలు నమోదు చేయండి' - register your details for solar subsidy information up to Rs.78,000, under the PM Surya Ghar Muft Bijli Yojana, with rooftop installation, bill savings and bank-loan help listed as tick-box benefits.",
+      "The subsidy figure and the service list are real and are on the site - EPC Services, Solar Rooftop Solutions, Residential Solar Installations and Solar Street Light and Fencing, with 5KW / 20KW / 45KW system sizes. But the ad's 'Book now' button goes to fb.me, so the visitor is asked to register on a Facebook page instead of the page that lists those services."
+    ],
+    [
+      "Ad: 'Aadithya Solar Energies ను ఈరోజే సంప్రదించండి, Call: 94910 32828'.",
+      "That number is on the site (tel:+91-9491032828 in the footer) - but the header of the same page still prints the theme's placeholder (229) 555-0109 above it, so a visitor sees two different phone numbers before they reach the real one."
+    ],
+    [
+      "Ad: 'మీ ఇంటి మీదే మీ సొంత Power Plant' - your own power plant on your own roof.",
+      "The site does describe rooftop solar and a Google Maps embed of the Gandipet office is on /contact/. Nothing on the site answers the question the ad raises - there is no savings calculator, no subsidy table and no price, and the only CTA is a 'Discover More' link that leaves the site for the theme vendor's homepage."
+    ]
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "No Meta Pixel code found in the landing-page source - ad clicks cannot be measured or retargeted."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "Live ads click to a Facebook lead form (fb.me) - traffic never reaches a page you own, so no URL can carry UTMs and click data stays inside Meta."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "All 1 live ads use a single format (video) - no format variety to test what converts."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "pass",
+        "evidence": "3 distinct offer angles in live copy: government subsidy, subsidy amount, installation speed."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Sep 11, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "fail",
+        "evidence": "A single live ad - no internal comparison, no safety net if it fatigues."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: captured destination."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 3,
+      "fail": 5,
+      "unknown": 7,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

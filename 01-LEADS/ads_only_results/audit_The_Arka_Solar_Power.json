@@ -1,0 +1,238 @@
+{
+  "company": "The Arka Solar Power",
+  "legal": "The Arka Solar Power",
+  "city": "Nacharam, Hyderabad 500076",
+  "website": "https://arkasolarpower.com/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-10",
+  "generated_at": "2026-11-10",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website (page source read through the W3C Nu HTML Checker)",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "1 live ad",
+      "query": "solar Hyderabad / Telangana keyword search",
+      "ads": [
+        {
+          "library_id": "1557646593071478",
+          "library_url": "https://www.facebook.com/ads/library/?id=1557646593071478",
+          "page_name": "The ARKA SOLAR POWER",
+          "started": "Oct 30, 2026",
+          "destination": "an fb.me link, confirmed on the ad card",
+          "text": "Mixed Telugu / English copy:\n\nAttention home owners of Hyderabad! … switch to Rooftop Solar with 'ARKA Solar Power' and reduce your electricity bill by more than 90%.\n\n✅ Subsidy Benefits Available\n✅ Easy EMI / Loan Options\n✅ 25+ Years Performance\n✅ Govt. Approved Installation\n✅ Free Site Inspection"
+        }
+      ]
+    },
+    "summary": "1 live Meta ad confirmed on 2026-11-10 by opening each library ID directly. Google Ads Transparency records were not checked in this pass."
+  },
+  "funnel": {
+    "destination": "an fb.me link, confirmed on the ad card",
+    "note": "Ad destination as shown on the live ad card."
+  },
+  "findings": [],
+  "next_steps": [],
+  "contact_facts": "HMT Nagar, Nacharam, Hyderabad 500076 (TGREDCO registration TSRE240412; registered office 8-1-293/A/71/1, Dwaraka Nagar Colony, Shaikpet, Hyderabad 500081) | info@arkasolarpower.com | +91 91330 41888 (Telangana)",
+  "contact": {
+    "phone": "+91 91330 41888",
+    "email": "info@arkasolarpower.com",
+    "whatsapp": ""
+  },
+  "site_audit": {
+    "ssl": null,
+    "scope_note": "arkasolarpower.com is live and its Meta ad has run since 30 Oct 2026, but the site could not be retrieved while this audit was prepared: the W3C checker returned an IO error for the homepage, the www host and an inner page, and a direct fetch returned HTTP 500, all on 2026-11-10. Every website row below therefore reads 'not checked in this pass', and no audit score, pixel finding, page-speed figure or error count is claimed for this site anywhere in this report. Re-running the audit on a working connection is the first action on the last page.",
+    "load_time_seconds": null,
+    "final_url": "https://arkasolarpower.com/",
+    "audit_date": "2026-11-10",
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": null,
+      "has_phone_click": null,
+      "has_whatsapp_link": null,
+      "has_cta_buttons": null,
+      "has_live_chat": null,
+      "has_popup_optin": null,
+      "has_testimonials": null,
+      "has_pricing_page_link": null
+    },
+    "seo": {
+      "has_title": null,
+      "title_text": "",
+      "title_length": null,
+      "has_meta_description": null,
+      "meta_desc_length": null,
+      "h1_count": null,
+      "h1_text": "",
+      "has_og_tags": null,
+      "has_schema": null,
+      "has_favicon": null,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": null
+    },
+    "platform": "Not read - Not checked - the site could not be read on 2026-11-10. The W3C Nu HTML Checker returned an IO error (java.io.EOFException) for https://arkasolarpower.com/, the www host and an inner page, and a direct fetch returned HTTP 500. No figure is claimed for this check.",
+    "html_errors": "Not checked - the site could not be read on 2026-11-10. The W3C Nu HTML Checker returned an IO error (java.io.EOFException) for https://arkasolarpower.com/, the www host and an inner page, and a direct fetch returned HTTP 500. No figure is claimed for this check.",
+    "score": {
+      "score": null,
+      "issues": [
+        "Your live ad's destination is an fb.me link, so the click does not reach arkasolarpower.com and the site's own claims - 'No.1 Solar Company in Telangana', '700+ happy homes' - are never shown to the person who paid attention to the ad.",
+        "arkasolarpower.com could not be read on 2026-11-10 (the W3C checker returned an IO error and a direct fetch returned HTTP 500), so this audit records the site's tracking, SEO and conversion setup as not checked rather than guessing. Re-running the check on a working connection is the first thing to do before this report is sent."
+      ],
+      "wins": []
+    }
+  },
+  "audit_date": "2026-11-10",
+  "site_evidence": {
+    "pixel": false,
+    "ga4": false,
+    "gtm": false,
+    "google_ads_tag": false,
+    "checked_on": "2026-11-10",
+    "note": "The landing page's <head> could not be read on 2026-11-10: the W3C Nu HTML Checker returned an IO error (java.io.EOFException) for https://arkasolarpower.com/ and its inner pages, and a direct fetch returned HTTP 500, so the title, meta description, Open Graph tags, structured data and any pixel were never returned. Those checks are reported as not checked, not as failures. Tags found: no Meta Pixel, GA4, GTM or Google Ads tag."
+  },
+  "promise_gap": [
+    [
+      "Ad: 'reduce your electricity bill by more than 90%', 'Subsidy Benefits Available', 'Easy EMI / Loan Options', '25+ Years Performance', 'Govt. Approved Installation', 'Free Site Inspection'.",
+      "Six specific claims in one ad. The site backs the segment and the subsidy angle - 'No.1 Solar Company in Telangana', industrial, commercial and residential solar plus solar water heaters - but the ad's destination is an fb.me link, so none of the supporting detail is shown to the person reading the ad, and nothing on this pass verified which of the six the site substantiates."
+    ],
+    [
+      "Ad: 'Attention home owners of Hyderabad!'",
+      "The TGREDCO empanelled-supplier register carries Arka Solar Power at HMT Nagar, Nacharam, Hyderabad 500076 (registration TSRE240412, phone 7989343107) and the company is registered as ARKA SOLAR POWER (INDIA) PRIVATE LIMITED, CIN U40102TG2015PTC101798, incorporated 20 Nov 2015 - so the Hyderabad EPC claim is independently confirmed. The registration number alone is not enough: the same TSRE240412 is also listed against 'M/s. ARKA ENTERPRISES' of Yusufguda, so only the website and Facebook page identify the advertiser."
+    ]
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "No Meta Pixel code found in the landing-page source - ad clicks cannot be measured or retargeted."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "Live ads click to a Facebook lead form (fb.me) - traffic never reaches a page you own, so no URL can carry UTMs and click data stays inside Meta."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "pass",
+        "evidence": "5 distinct offer angles in live copy: government subsidy, EMI / financing, experience claim, installation speed, loan assistance."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Oct 30, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "fail",
+        "evidence": "A single live ad - no internal comparison, no safety net if it fatigues."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: captured destination."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 3,
+      "fail": 4,
+      "unknown": 8,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

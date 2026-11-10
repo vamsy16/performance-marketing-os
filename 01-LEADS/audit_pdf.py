@@ -220,7 +220,19 @@ def suggest_fix(issue):
     return ""
 
 
+SITE_UNREADABLE_VERDICT = (
+    "Site not readable this pass",
+    GREY,
+    "The website could not be retrieved while this audit was being prepared, "
+    "so no audit score is claimed for it. Every website row in this report "
+    "reads 'not checked' rather than being filled with a guess - the rows that "
+    "are filled in were read live.",
+)
+
+
 def score_verdict(score):
+    if score is None:
+        return SITE_UNREADABLE_VERDICT
     if score >= 50:
         return ("Significant gaps found", RED,
                 "Several issues on this page are actively costing you enquiries. Every one of them is fixable within days.")
@@ -237,6 +249,22 @@ def next_steps(audit):
     conv = audit.get("conversion", {})
     seo = audit.get("seo", {})
     adlib = audit.get("ad_library") or {}
+
+    # Does the live ad send its click somewhere other than the advertiser's own
+    # domain? This is the single highest-value finding in most of these
+    # reports, so it is computed first and never dropped for space. The host
+    # has to be parsed out of the URL: every one of these site URLs ends in a
+    # trailing slash, so splitting on "/" and taking the last element yields an
+    # empty string and silently breaks the comparison.
+    _dest = str((audit.get("funnel") or {}).get("destination") or "")
+    _site_url = str(audit.get("final_url") or audit.get("website") or "")
+    _host_m = re.search(r"https?://([^/\s]+)", _site_url)
+    _own_host = _host_m.group(1).lower().replace("www.", "") if _host_m else ""
+    _lands_offsite = bool(_dest) and (
+        "fb.me" in _dest or "whatsapp" in _dest.lower()
+        or "instagram" in _dest.lower()
+        or "not confirmed" in _dest.lower()
+        or (bool(_own_host) and _own_host not in _dest.lower() and "http" in _dest))
 
     # Only claim a channel is absent when it was actually looked for. A missing
     # google_own block means the Transparency Centre was never checked - saying
@@ -276,21 +304,26 @@ def next_steps(audit):
                       "Every extra second of load time cuts conversions by roughly 7%."))
 
     if not steps:
-        steps.append(("Scale with Google + Meta ads",
-                      "Tracking and conversion basics are in place - paid ads can be launched and measured confidently."))
+        if any(v is None for v in pixels.values()):
+            _n_unread = sum(1 for v in pixels.values() if v is None)
+            steps.append((f"Finish the {_n_unread} tracking checks this pass could not run",
+                          "No tracking row could be read on this page, so this report claims "
+                          "nothing about them in either direction - they have to be run "
+                          "before any of them can be recommended or ruled out."))
+        else:
+            steps.append(("Scale with Google + Meta ads",
+                          "Tracking and conversion basics are in place - paid ads can be "
+                          "launched and measured confidently."))
+
+    # The destination fix goes first: it is the top priority in this report's
+    # own "Top priorities" table, so the action plan has to lead with it.
+    if _lands_offsite:
+        steps.insert(0, ("Point the live ads at a page you own",
+                         f"Right now the click lands on {_dest or 'an unverified destination'} - "
+                         "a landing page on your own domain can be measured, retargeted and tested."))
 
     # Top up to the 4-step plan the reference layout uses. Each extra step has
     # to cite something actually measured - never generic advice.
-    _dest = str((audit.get("funnel") or {}).get("destination") or "")
-    _own_site = (audit.get("final_url") or audit.get("website") or "").replace("www.", "")
-    _lands_offsite = bool(_dest) and (
-        "fb.me" in _dest or "whatsapp" in _dest.lower()
-        or "not confirmed" in _dest.lower()
-        or (_own_site and _own_site.split("/")[-1] not in _dest and "http" in _dest))
-    if len(steps) < 4 and _lands_offsite:
-        steps.append(("Point the live ads at a page you own",
-                      f"Right now the click lands on {_dest or 'an unverified destination'} - "
-                      "a landing page on your own domain can be measured, retargeted and tested."))
     if len(steps) < 4 and any(v is None for v in pixels.values()):
         _n = sum(1 for v in pixels.values() if v is None)
         steps.append((f"Finish the {_n} tracking checks this pass could not run",
@@ -300,6 +333,19 @@ def next_steps(audit):
         steps.append((f"Re-run this audit after 30 days (this one is dated {audit['audit_date']})",
                       "Ad creative, destination and site tags all move. A second read shows whether "
                       "the first fixes actually landed."))
+    while len(steps) < 4:
+        steps.append(("Book a 10-minute call to walk through this report",
+                      "Bring the report - every line in it can be re-checked live while we talk."))
+
+    # The unread-head fallback and the tracking top-up can name the same
+    # action; keep the first of each title so the plan never repeats itself.
+    _seen, _unique = set(), []
+    for _title, _body in steps:
+        if _title in _seen:
+            continue
+        _seen.add(_title)
+        _unique.append((_title, _body))
+    steps = _unique
     while len(steps) < 4:
         steps.append(("Book a 10-minute call to walk through this report",
                       "Bring the report - every line in it can be re-checked live while we talk."))
@@ -388,8 +434,12 @@ def two_col_status(items):
 
 
 def score_bar(score):
-    filled = max(2, min(CONTENT_W - 4, CONTENT_W * score / 100))
-    color = GREEN if score < 25 else (AMBER if score < 50 else RED)
+    if score is None:
+        filled = 0
+        color = GREY
+    else:
+        filled = max(2, min(CONTENT_W - 4, CONTENT_W * score / 100))
+        color = GREEN if score < 25 else (AMBER if score < 50 else RED)
     bar = Table([[""]], colWidths=[filled, CONTENT_W - filled], rowHeights=[3.2 * mm])
     bar.setStyle(TableStyle([
         ("BACKGROUND", (0, 0), (0, 0), color),
@@ -428,8 +478,11 @@ def stat_tiles(audit):
         score_cell = tile("N/A", "WEBSITE AUDIT", RED)
         issue_cell = tile("0", "ISSUES FOUND", RED)
     else:
-        score_cell = tile(str(score) + "/100", "AUDIT SCORE (LOWER IS BETTER)",
-                          GREEN if score < 25 else (AMBER if score < 50 else RED))
+        if score is None:
+            score_cell = tile("N/A", "AUDIT SCORE (SITE NOT READ)", GREY)
+        else:
+            score_cell = tile(str(score) + "/100", "AUDIT SCORE (LOWER IS BETTER)",
+                              GREEN if score < 25 else (AMBER if score < 50 else RED))
         issue_cell = tile(str(issues), "ISSUES FOUND")
 
     tiles = Table([[score_cell, issue_cell,
@@ -479,16 +532,17 @@ def score_panel(audit):
     score = audit.get("score", {}).get("score", 0)
     headline, color, verdict = score_verdict(score)
     left = [
-        Paragraph(f'{score}', ParagraphStyle("scn", parent=ST["score_num"], textColor=color)),
+        Paragraph('N/A' if score is None else f'{score}',
+                  ParagraphStyle("scn", parent=ST["score_num"], textColor=color)),
         Paragraph("ISSUES / 100", ST["tile_lbl"]),
     ]
     right = [
         Paragraph(f'<font color="{color.hexval()}"><b>{T(headline)}</b></font>', ST["h3"]),
         Spacer(1, 1.2 * mm),
         Paragraph(T(verdict), ST["body"]),
-        Spacer(1, 2 * mm),
-        score_bar(score),
     ]
+    if score is not None:
+        right += [Spacer(1, 2 * mm), score_bar(score)]
     card = Table([[left, right]], colWidths=[CONTENT_W * 0.22, CONTENT_W * 0.78])
     card.setStyle(TableStyle([
         ("BACKGROUND", (0, 0), (-1, -1), LIGHT),
@@ -792,12 +846,20 @@ def verification_log(audit):
          "not run"),
     ]
     if unchecked:
+        _errs = str(site.get("html_errors") or "")
+        if _errs and len(_errs) < 90:
+            _why = (f"The checker raised {_errs}, and the message list filled "
+                    "the whole report, so the page head was never returned. "
+                    "Those tools are reported as not checked, not as missing.")
+        else:
+            _why = ("The page itself could not be retrieved in this pass - the "
+                    "W3C checker returned an IO error and a direct fetch "
+                    "returned HTTP 500 - so no tag, error count or figure is "
+                    "claimed for it. Those tools are reported as not checked, "
+                    "not as missing.")
         rows.insert(1, (
             f"Tracking tags ({unchecked} of {len(pixels)} could not be read)",
-            "The checker raised "
-            f"{site.get('html_errors', 'many validator errors')}, and the "
-            "message list filled the whole report, so the page head was never "
-            "returned. Those tools are reported as not checked, not as missing.",
+            _why,
             "not run"))
 
     header = [Paragraph(f"<b>{T(h)}</b>", ST["cell_b"])
@@ -1604,14 +1666,17 @@ def build_story(audit):
         "rather than guessed.", ST["body"]))
     story.append(Spacer(1, 2.5 * mm))
     story.append(verification_log(audit))
-    story.append(Spacer(1, 6 * mm))
-    story.append(cta_card(audit))
-    story.append(Spacer(1, 2.5 * mm))
-    story.append(Paragraph(
-        f"Report generated automatically on {datetime.now().strftime('%d %b %Y, %H:%M')} by the {YOUR_AGENCY} "
-        "audit engine. Website findings reflect the homepage at the time of the audit; ad-library data is live "
-        "public data from Meta and Google. Provided free of charge for evaluation purposes.",
-        ST["small"]))
+    closing = [
+        Spacer(1, 6 * mm),
+        cta_card(audit),
+        Spacer(1, 2.5 * mm),
+        Paragraph(
+            f"Report generated automatically on {datetime.now().strftime('%d %b %Y, %H:%M')} by the {YOUR_AGENCY} "
+            "audit engine. Website findings reflect the homepage at the time of the audit; ad-library data is live "
+            "public data from Meta and Google. Provided free of charge for evaluation purposes.",
+            ST["small"]),
+    ]
+    story.append(KeepTogether(closing))
     return story
 
 
@@ -1759,6 +1824,8 @@ def main():
             continue
         out = generate_pdf(audit, args.out if len(jobs) == 1 else None)
         score = audit.get("score", {}).get("score", "?")
+        if score is None:
+            score = "n/a (site not readable)"
         has_ads = bool(audit.get("ad_library"))
         print(f"\n  Lead:    {name}")
         print(f"  Score:   {score}/100 | ad-library data: {'YES' if has_ads else 'MISSING - run ad_library.py'}")

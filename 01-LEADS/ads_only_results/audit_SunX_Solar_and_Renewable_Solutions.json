@@ -1,0 +1,248 @@
+{
+  "company": "SunX Solar and Renewable Solutions",
+  "legal": "SunX Solar and Renewable Solutions",
+  "city": "Serilingampally, Hyderabad 500032",
+  "website": "https://sunxsolarsolutions.in/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-10",
+  "generated_at": "2026-11-10",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website (page source read through the W3C Nu HTML Checker)",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "1 live ad",
+      "query": "solar Hyderabad / Telangana keyword search",
+      "ads": [
+        {
+          "library_id": "1113916408287479",
+          "library_url": "https://www.facebook.com/ads/library/?id=1113916408287479",
+          "page_name": "SunX Solutions",
+          "started": "Nov 6, 2026",
+          "destination": "Instagram (instagram.com/sunxsolarsolutions), confirmed on the ad card",
+          "text": "Video ad. Telugu copy:\n\nDiwali special offer pomdheyandi ………. E pamduganu marintha special cheskondi❤️\n\nSilver coin🪙\n\nFridge 😍\n\nWashing machine 💕\n\nWater purifier\n\nSmart phone 📱\n\nFor more details about sunx solar solutions please call 8333075151\n\n#diwaligifting #solarenergy #diwalispecial #offer #fyp\n\nCTA on the card: 'Send message'"
+        }
+      ]
+    },
+    "summary": "1 live Meta ad confirmed on 2026-11-10 by opening each library ID directly. Google Ads Transparency records were not checked in this pass."
+  },
+  "funnel": {
+    "destination": "Instagram (instagram.com/sunxsolarsolutions), confirmed on the ad card",
+    "note": "Ad destination as shown on the live ad card."
+  },
+  "findings": [],
+  "next_steps": [],
+  "contact_facts": "H.No. 1152, 1st Floor, BHEL Old MIG Colony, Serilingampally, Ranga Reddy District, Hyderabad 500032 | nitish@sunxsolarsolutions.in | +91 99121 27174 | Mon-Sat 09:30-19:00",
+  "contact": {
+    "phone": "+91 99121 27174",
+    "email": "nitish@sunxsolarsolutions.in",
+    "whatsapp": ""
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://sunxsolarsolutions.in/",
+    "audit_date": "2026-11-10",
+    "pixels": {
+      "meta_pixel": false,
+      "google_ads": false,
+      "google_analytics_ga4": false,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
+      "microsoft_clarity": false,
+      "hotjar": false,
+      "google_tag_manager": false
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": null,
+      "has_cta_buttons": 4,
+      "has_live_chat": null,
+      "has_popup_optin": null,
+      "has_testimonials": null,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Solar & Wind Energy Company in Hyderabad | SunX Solar and Renewable Solutions",
+      "title_length": 74,
+      "has_meta_description": true,
+      "meta_desc_length": null,
+      "h1_count": 1,
+      "h1_text": "Clean power your building makes for itself",
+      "has_og_tags": true,
+      "has_schema": true,
+      "has_favicon": true,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": true
+    },
+    "platform": "Hand-written static HTML site (assets/css/style.css, site.webmanifest, inline SVG icons), Plus Jakarta Sans + Inter from Google Fonts, LocalBusiness JSON-LD",
+    "html_errors": "2 errors, 1 warning, 0 info on the homepage; the same 2 errors and 1 warning on /contact",
+    "score": {
+      "score": 15,
+      "issues": [
+        "Your live ad's 'Send message' button goes to instagram.com/sunxsolarsolutions, not to sunxsolarsolutions.in, so the click lands in a social inbox instead of on the site that explains the offer.",
+        "The ad tells people to call 8333075151, but the number published on the website is +91 99121 27174 - a caller who reaches one and not the other has no way to tell they reached the same company.",
+        "sunxsolarsolutions.in has no Meta Pixel, no GA4 and no Google Ads conversion tag, so the Diwali offer cannot be measured from click to enquiry even once the destination is fixed.",
+        "No Meta Pixel installed — can't run retargeting or track ad conversions",
+        "No Google Ads / GTM tracking — can't measure ad performance",
+        "No Google Analytics — flying blind on website traffic"
+      ],
+      "wins": [
+        "Contact form exists",
+        "Good CTA presence (4 buttons)"
+      ]
+    }
+  },
+  "audit_date": "2026-11-10",
+  "site_evidence": {
+    "pixel": false,
+    "ga4": false,
+    "gtm": false,
+    "google_ads_tag": false,
+    "checked_on": "2026-11-10",
+    "note": "Landing-page source read live on 2026-11-10 through the W3C Nu HTML Checker (validator.w3.org/nu/?doc=<url>&showsource=yes), which returns the served HTML with script tags intact, plus a direct fetch of the same pages. Tags found: no Meta Pixel, GA4, GTM or Google Ads tag."
+  },
+  "promise_gap": [
+    [
+      "Ad: 'Diwali special offer ... Silver coin, Fridge, Washing machine, Water purifier, Smart phone. For more details about sunx solar solutions please call 8333075151'.",
+      "The offer itself is only on Facebook. sunxsolarsolutions.in publishes no Diwali promotion anywhere in its served HTML, and the number it publishes is +91 99121 27174 - so a visitor who lands on the site cannot find the offer they were shown, and the number in the ad does not match the one on the page."
+    ],
+    [
+      "Ad destination: instagram.com/sunxsolarsolutions, 'Send message'.",
+      "The site is the better asset - it has a LocalBusiness JSON-LD block with both phone numbers, the Serilingampally address, Mon-Sat 09:30-19:00 hours, a /calculator savings tool and a /sales quote form - but the ad never sends anyone to any of it."
+    ],
+    [
+      "Ad: 'solarenergy #diwalispecial #offer'.",
+      "The site is built for exactly this traffic: rooftop grid-tied, hybrid + storage, ground-mount, C&I and O&M pages, a wind-energy page and a projects page. The only thing standing between the ad and those pages is the destination - and, once that is fixed, the absence of any pixel to measure it."
+    ]
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "No Meta Pixel code found in the landing-page source - ad clicks cannot be measured or retargeted."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "All 1 live ads use a single format (video) - no format variety to test what converts."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad copy could not be read for these ads."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Nov 6, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "fail",
+        "evidence": "A single live ad - no internal comparison, no safety net if it fatigues."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: captured destination."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 2,
+      "fail": 4,
+      "unknown": 9,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}
