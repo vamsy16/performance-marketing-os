@@ -156,3 +156,106 @@ pass the resolvable-website gate.
 4. Three gates: `verify_report.py --ads-only`, report-reviewer, `verify_live.py`.
 5. Add 5 rows to `01-LEADS/leads.csv`, regenerate `AUDIT_PDF_INDEX.md`, build 5
    manifest sequences, then draft step-0 emails (owner sends).
+
+---
+
+# BATCH 17 — BUILD AND DELIVERY COMPLETE (2026-11-10)
+
+## Audits built — all five in the Ksquare 5-page format with the claude-ads control review
+
+| Lead | PDF | Pages | Score | Issues | Wins | Controls |
+|---|---|---|---|---|---|---|
+| Zenith Energy Services Private Limited | `audit_Zenith_Energy_Services_Private_Limited.pdf` | 5 | 10/100 | 7 | 3 | 1P/2F/12U |
+| SunWorks Energy Private Limited | `audit_SunWorks_Energy_Private_Limited.pdf` | 5 | **not claimed** | 5 | 3 | 1P/2F/12U |
+| Nature Power Solar | `audit_Nature_Power_Solar.pdf` | 5 | 8/100 | 7 | 5 | 1P/2F/12U |
+| Surya Renewable Energies | `audit_Surya_Renewable_Energies.pdf` | 5 | 23/100 | 12 | 4 | 1P/2F/12U |
+| Milestone Solarcom Private Limited | `audit_Milestone_Solarcom_Private_Limited.pdf` | 5 | 3/100 | 6 | 5 | 2P/1F/12U |
+
+All five are 5 pages. Worst unused tail 13.4%-16.3%, and every one of those tails
+falls on page 3 or page 5, which in the reference `audit_Ksquare_Energy.pdf`
+carry 31.2% and 50.7% unused tails respectively — so all five sit inside the
+format's own norms.
+
+## Measured tracking per lead (read live 2026-11-10)
+
+| Lead | Meta Pixel | GA4 | Google Ads tag | GTM | W3C counts |
+|---|---|---|---|---|---|
+| Zenith Energy | not found | not found | not found | **GTM-NGZ8TG9J** | 158 err / 5 warn / 146 info |
+| SunWorks Energy | **not checked** | **not checked** | **not checked** | **not checked** | 298 err / 47 warn / 101 info |
+| Nature Power Solar | not found | **G-9MMYLNMH9T** | **AW-609769092** (+ GT-5TQ454D4) | not found | 6 err / 0 warn / 0 info |
+| Surya Renewable | not found | not found | **AW-18243186763** (label broken) | not found | 1 err / 0 warn / 0 info |
+| Milestone Solar | **1132764258717771** | not checked | not checked | not found | 128 err / 10 warn / 53 info |
+
+**SunWorks Energy carries no score, and that is deliberate.** The served HTML is
+large enough that the W3C Nu checker's response ran past what could be read here,
+so the eight tracking rows are unknown in *both* directions. Scoring a page on
+tracking that could not be read would be a guess, so the score is withdrawn and
+the report says exactly that on page 1 ("Page read, <head> script tags not
+returned") and again in the verification log. What *was* confirmed in the
+SunWorks head: Site Kit by Google's gtag.js loader at source line 706, so Site
+Kit is installed. Every other check on that page - title, meta description, Open
+Graph, plugin stack, validator counts, all content checks - was measured.
+
+The same honesty rule produced one new code path in `audit_pdf.py`:
+`HEAD_UNREAD_VERDICT`, used only when `audit["head_unread"]` is set, so the
+report distinguishes "the site could not be retrieved" from "the site was read,
+its <head> script tags were not returned". A `status_compact` flag (batch-17
+reports only) renders unmeasured rows as "Not checked" instead of the full
+"Not checked in this pass" - the full phrase still appears under each table and
+in the verification log, so nothing is lost, and the existing 46 reports keep
+their layout byte for byte.
+
+## Gates — all three pass
+
+1. `verify_report.py --ads-only` — **ALL ADS-ONLY REPORTS PASS** (51 reports:
+   live ad evidence, branding, honesty panel, no fake website-audit data).
+2. Report-reviewer manual pass — every figure in all five PDFs traced back to a
+   live source read on 2026-11-10; no PageSpeed figure anywhere (the keyless API
+   returns 429 and every report says so); no Google Transparency count beyond
+   what the advertiser record itself showed.
+3. `verify_live.py --offline` — **MATCH 51 | DRIFT 0 | UNREACHABLE 0 of 51**.
+   `tests_sequence.py` — **17/17 OK**.
+
+## Register and index
+
+- `01-LEADS/leads.csv` — **57 rows** (was 52; +5).
+- `02-OUTREACH/generated_emails/sequence_manifest.json` — **57 sequences**
+  (was 52; +5), each with a hand-written step-0 body.
+- `02-OUTREACH/AUDIT_PDF_INDEX.md` — regenerated: **60 PDFs / 57 companies /
+  27 scored**. All five new entries matched their PDFs on the normalised
+  company-name fallback with zero mismatches.
+
+## Step-0 drafts created (owner sends all five; none sent)
+
+Replies checked first with two independent Gmail queries (a five-domain OR query
+and a single-domain sanity check) — **zero replies and zero pre-existing drafts
+for all five domains**, both searches returning `complete: true`. From Smart
+Pursuit <smartpursuit3@gmail.com>.
+
+| Lead | To | Draft ID | Message / thread | Attachment |
+|---|---|---|---|---|
+| Zenith Energy Services | zenith@zenithenergy.com | `r-3878433413792714614` | `1a1c50f94fa693c8` | audit_Zenith_Energy_Services_Private_Limited.pdf (24,005 B) |
+| SunWorks Energy | gosolar@sunworks.in | `r2405761400166566565` | `1a1c50f93d9989f5` | audit_SunWorks_Energy_Private_Limited.pdf (24,321 B) |
+| Nature Power Solar | info@naturepowersolar.com | `r1690600454264569063` | `1a1c50f9358e5419` | audit_Nature_Power_Solar.pdf (24,313 B) |
+| Surya Renewable Energies | info@suryarenewable.com | `r-3144666388732160745` | `1a1c50f92c8f4ee8` | audit_Surya_Renewable_Energies.pdf (24,252 B) |
+| Milestone Solarcom | milestonesolarcomsales@gmail.com | `r-2848616652024196182` | `1a1c50f925f30304` | audit_Milestone_Solarcom_Private_Limited.pdf (24,291 B) |
+
+Each draft was read back with `get_draft(format: "full")` and the `To:` header
+matched before it was recorded — the parallel `create_draft` calls return out of
+order. Every PDF part was confirmed present with the correct filename and size.
+
+## Tally against the "5 leads" ask
+
+Batch 13 = 3 leads built, batch 14 = 3 built (2 dropped), batch 15 = 0,
+batch 16 = 0, **batch 17 = 5 built**. Running total this session = **11
+qualifying leads**, of which 8 have audit PDFs and step-0 drafts. The "5 leads"
+ask is met and exceeded.
+
+## What this batch proved about the discovery problem
+
+Four of the five leads are Google-only advertisers that no Meta Ad Library sweep
+would ever have surfaced. Zenith Energy in particular was probed on 2026-10-23 in
+batch 9 and written off as a zero-ad company — it had nine live Google ads at the
+time. The TGREDCO register remains the highest-yield source for *names*, but the
+Google Ads Transparency Centre is the only way found so far to tell which of
+those names actually buy media. Any future Telangana sweep should run both.
