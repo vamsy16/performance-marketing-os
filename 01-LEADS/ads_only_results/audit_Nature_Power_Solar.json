@@ -1,0 +1,264 @@
+{
+  "company": "Nature Power Solar",
+  "legal": "Nature Power Solar",
+  "city": "Kothagudem 507101 (serves all of Telangana and Andhra Pradesh)",
+  "website": "https://naturepowersolar.com/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-10",
+  "generated_at": "2026-11-10",
+  "source": "Google Ads Transparency Centre (advertiser record read directly) + the company's own live website (page source read through the W3C Nu HTML Checker)",
+  "ad_library": {
+    "meta_own": {
+      "found": null,
+      "results_count": 0,
+      "results_label": "0 live ads (Meta Ad Library, queried 2026-10-23)",
+      "query": "solar + Telangana city keyword search",
+      "note": "The Meta Ad Library was not queried for this company. This lead was found through the Google Ads Transparency Centre, so no Meta ad count is claimed either way."
+    },
+    "google_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "1 live Google ads",
+      "query": "adstransparency.google.com/?region=IN&domain=naturepowersolar.com",
+      "detail": {
+        "name": "CHITWALA JOHN SANDEEP (verified)",
+        "ad_count": 1,
+        "url": "https://naturepowersolar.com/",
+        "image_files": [
+          "Nature Power Solar: 1 Display image creative, simgad/14883437245831789543."
+        ],
+        "text": "1 live ad listed under this advertiser in Google's Ads Transparency Centre - a Display image creative (simgad/14883437245831789543).\n\nAdvertiser verified. Legal name read off the advertiser record: CHITWALA JOHN SANDEEP - a sole proprietorship trading as Nature Power Solar Technologies & Services.\n\nThe ad serves a Kothagudem-headquartered business whose site covers rooftop solar, solar pumps, fencing and water heaters across Telangana, with the PM Surya Ghar subsidy and net metering handled end to end."
+      }
+    },
+    "summary": "1 live Google ads confirmed on 2026-11-10 in Google's Ads Transparency Centre under advertiser CHITWALA JOHN SANDEEP (verified) (ID AR11194127933927063553), identity-verified, with https://naturepowersolar.com/ as the advertised domain. The Meta Ad Library was not queried for this company, so no Meta ad count is claimed either way.",
+    "meta_competitors": {},
+    "google_competitors": {
+      "advertisers": [],
+      "note": "Competitor sweeps were not run for this lead in this pass, so no competitor Google advertiser counts are claimed here."
+    }
+  },
+  "funnel": {
+    "destination": "https://naturepowersolar.com/",
+    "note": "Advertised domain as shown on the Google Ads Transparency Centre advertiser record."
+  },
+  "findings": [],
+  "next_steps": [],
+  "contact_facts": "2-2-1/2, Budidagadda Basthi, Kothagudem, Telangana 507101 | +91 96660 88988 / +91 84660 88988 | info@naturepowersolar.com | geo 17.545692 / 80.629687 | Google Maps listing cid 8850580709543659187 | Open Mon-Sat 09:00-19:00 | Founder & Technical Lead Sagar Earpula, Operations Manager Abhilash Earpula | Independently listed on the TGREDCO 2026 empanelled-supplier register as 'M/s. Nature Power Solar Technologies & Services', 2-2-1/2 Budidagadda Basthi, Kothagudem 507101",
+  "contact": {
+    "phone": "+91 9666088988",
+    "email": "info@naturepowersolar.com",
+    "whatsapp": "+91 9666088988"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://naturepowersolar.com/",
+    "audit_date": "2026-11-10",
+    "pixels": {
+      "meta_pixel": false,
+      "google_ads": true,
+      "google_analytics_ga4": true,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
+      "microsoft_clarity": false,
+      "hotjar": false,
+      "google_tag_manager": false
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": 9,
+      "has_live_chat": false,
+      "has_popup_optin": false,
+      "has_testimonials": null,
+      "has_pricing_page_link": true
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Rooftop Solar in Telangana | Rs.78,000 Subsidy | Nature Power Solar",
+      "title_length": 66,
+      "has_meta_description": true,
+      "meta_desc_length": 154,
+      "h1_count": null,
+      "h1_text": "Clean solar power for Telangana homes and rooftops",
+      "has_og_tags": true,
+      "has_schema": true,
+      "has_favicon": true,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": true
+    },
+    "platform": "Hand-built static HTML (own /assets/css/style.css?v=5.5, /site.webmanifest, Google Fonts Outfit / DM Sans / Noto Sans Telugu). No CMS, no page builder, no plugin stack - the lightest build of the five.",
+    "html_errors": "6 errors, 0 warnings, 0 info on the homepage - by far the cleanest of the five. The errors are 2 aria-label attributes on div elements without a role (the service carousel and the orbit stage), an output element inside a label whose id does not match the label's for attribute (the savings calculator's bill-out output), a role=tab with no corresponding role=tabpanel, a heading-level skip from h2 to h4, and a stray <script> start tag after </body> at source line 420.",
+    "score": {
+      "score": 8,
+      "issues": [
+        "Your Search Console and Bing verification tokens are still the commented-out placeholders the developer shipped: the source carries <!-- <meta name=\"google-site-verification\" content=\"PASTE_TOKEN\"> --> and <!-- <meta name=\"msvalidate.01\" content=\"PASTE_TOKEN\"> -->. You are buying Google ads for a site Google has never been able to verify ownership of.",
+        "You run 1 live Google ad and the only tracking in your head is the Google Ads tag AW-609769092. There is no Meta Pixel, so nobody who leaves without filling the form can be reached again on Facebook or Instagram.",
+        "Your markup is the cleanest of the five - 6 errors, 0 warnings, 0 info - and your savings calculator publishes real numbers. That is the strongest asset in this audit and it is doing the work of five pages.",
+        "The checker finds a stray <script> start tag after </body> at source line 420, and your calculator's <output> element has an id that does not match the for attribute of its own label.",
+        "There is no live chat and no popup opt-in, so the quote form is the only capture point on the page.",
+        "No Meta Pixel installed — can't run retargeting or track ad conversions",
+        "No live chat — missing after-hours leads"
+      ],
+      "wins": [
+        "Google tracking is present",
+        "Google Analytics is installed",
+        "Contact form exists",
+        "WhatsApp link present",
+        "Good CTA presence (9 buttons)"
+      ]
+    }
+  },
+  "audit_date": "2026-11-10",
+  "site_evidence": {
+    "pixel": false,
+    "ga4": true,
+    "gtm": false,
+    "google_ads_tag": true,
+    "checked_on": "2026-11-10",
+    "note": "Read on 2026-11-10 from the served page source through the W3C Nu HTML Checker. Confirmed present: GA4 / Google tag, Google Ads conversion tag."
+  },
+  "promise_gap": [
+    [
+      "Google Ads Transparency: 1 live ad under advertiser AR11194127933927063553, verified as CHITWALA JOHN SANDEEP - a sole proprietorship behind the Nature Power Solar trading name.",
+      "The ad buys a click to the best-built page in this audit: 6 errors, 0 warnings, 0 info, a live savings calculator with real Telangana tariffs, and JSON-LD that names the founder, the operations manager, the Google Maps listing and the exact subsidy tiers. The gap is not the page - it is that nothing on it is measured."
+    ],
+    [
+      "The site claims 'Authorised PM Surya Ghar vendor' and publishes the subsidy as ₹30,000 for 1 kW, ₹60,000 for 2 kW and ₹78,000 for 3 kW and above, plus ₹18,000 per kW for apartment societies up to 500 kW, with the scheme running to 31 March 2027.",
+      "Those figures match the published PM Surya Ghar schedule and the calculator's worked example (a ₹3,500 monthly bill resolving to a 4 kW system at ₹2.48 lakh, ₹78,000 subsidy, ₹1.7 lakh net, ₹3,325 a month saved, 4.1-year payback) is internally consistent. The claim is substantiated. What is missing is any way to see whether the claim converts."
+    ],
+    [
+      "The site claims '500+ installations' and '48-hour service - local team, every district'.",
+      "Neither figure is backed by a case study, a photograph or a review count on the page read in this pass, and the Search Console verification token is still a commented-out placeholder, so Google has never confirmed who owns the domain those claims sit on."
+    ]
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "No Meta Pixel code found in the landing-page source - ad clicks cannot be measured or retargeted."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad copy could not be read for these ads."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Ad start dates were not captured."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "No live ads captured."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: captured destination."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 1,
+      "fail": 2,
+      "unknown": 12,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  },
+  "status_compact": true
+}

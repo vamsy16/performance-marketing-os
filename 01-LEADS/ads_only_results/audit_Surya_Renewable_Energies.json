@@ -1,0 +1,272 @@
+{
+  "company": "Surya Renewable Energies",
+  "legal": "Surya Renewable Energies",
+  "city": "Kothapet, Hyderabad",
+  "website": "http://suryarenewable.com/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-10",
+  "generated_at": "2026-11-10",
+  "source": "Google Ads Transparency Centre (advertiser record read directly) + the company's own live website (page source read through the W3C Nu HTML Checker)",
+  "ad_library": {
+    "meta_own": {
+      "found": null,
+      "results_count": 0,
+      "results_label": "0 live ads (Meta Ad Library, queried 2026-10-23)",
+      "query": "solar + Telangana city keyword search",
+      "note": "The Meta Ad Library was not queried for this company. This lead was found through the Google Ads Transparency Centre, so no Meta ad count is claimed either way."
+    },
+    "google_own": {
+      "found": true,
+      "results_count": 2,
+      "results_label": "2 live Google ads",
+      "query": "adstransparency.google.com/?region=IN&domain=suryarenewable.com",
+      "detail": {
+        "name": "LANKA V K PHANI VISWANATH (verified)",
+        "ad_count": 2,
+        "url": "http://suryarenewable.com/",
+        "image_files": [
+          "Surya Renewable: 1 YouTube video creative (ytimg/24H234ft0Yk) plus 1 Display image creative (simgad/10231766854828954333)."
+        ],
+        "text": "2 live ads listed under this advertiser in Google's Ads Transparency Centre - one YouTube video creative (ytimg/24H234ft0Yk) and one Display image creative (simgad/10231766854828954333).\n\nAdvertiser verified. Legal name read off the advertiser record: LANKA V K PHANI VISWANATH.\n\nThe site the ads point at sells rooftop solar, ground-mount systems, net metering, battery storage and AMC for residential and commercial plants, plus wind and micro-hydro equipment trading."
+      }
+    },
+    "summary": "2 live Google ads confirmed on 2026-11-10 in Google's Ads Transparency Centre under advertiser LANKA V K PHANI VISWANATH (verified) (ID AR08105928276372881409), identity-verified, with http://suryarenewable.com/ as the advertised domain. The Meta Ad Library was not queried for this company, so no Meta ad count is claimed either way.",
+    "meta_competitors": {},
+    "google_competitors": {
+      "advertisers": [],
+      "note": "Competitor sweeps were not run for this lead in this pass, so no competitor Google advertiser counts are claimed here."
+    }
+  },
+  "funnel": {
+    "destination": "http://suryarenewable.com/",
+    "note": "Advertised domain as shown on the Google Ads Transparency Centre advertiser record."
+  },
+  "findings": [],
+  "next_steps": [],
+  "contact_facts": "Alkapuri Colony, Kothapet, Hyderabad, Telangana | info@suryarenewable.com | +91 91823 11739 | WhatsApp wa.me/919182311739 | Serves Telangana and Andhra Pradesh | Self-described on the homepage as 'a new bee in this energy sector'",
+  "contact": {
+    "phone": "+91 9182311739",
+    "email": "info@suryarenewable.com",
+    "whatsapp": "+91 9182311739"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "http://suryarenewable.com/",
+    "audit_date": "2026-11-10",
+    "pixels": {
+      "meta_pixel": false,
+      "google_ads": true,
+      "google_analytics_ga4": false,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
+      "microsoft_clarity": false,
+      "hotjar": false,
+      "google_tag_manager": false
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": 4,
+      "has_live_chat": false,
+      "has_popup_optin": false,
+      "has_testimonials": false,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Surya Renewable Energies | Solar Power, Wind Power, Hydro Power Trader, Supplier and Service Provider",
+      "title_length": 108,
+      "has_meta_description": true,
+      "meta_desc_length": 137,
+      "h1_count": 3,
+      "h1_text": "Solar Power & Solar Energy Experts / Wind Power & Wind Energy Solutions / Hydro Power & Hydro Energy Plants",
+      "has_og_tags": false,
+      "has_schema": false,
+      "has_favicon": true,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": false
+    },
+    "platform": "Hand-built static HTML (own style.css, Inter from Google Fonts, images/logo.png). No CMS, no page builder, no plugin stack. Three Pexels stock videos are hot-linked as the hero slider background.",
+    "html_errors": "1 error, 0 warnings, 0 info on the homepage - a single stray <script> start tag after </body> at source line 138. This is the only one of the five whose markup is close to clean, and the trade-off is that almost nothing else is present either: no canonical, no Open Graph, no Twitter card, no JSON-LD, no sitemap reference and only one tracking tag in the whole document.",
+    "score": {
+      "score": 23,
+      "issues": [
+        "Your Google Ads conversion event can never record a conversion. The head still carries the template's placeholder label - gtag('event', 'conversion', {'send_to': 'AW-18243186763/WHATSAPP_LABEL'}) with the comment 'Replace with your WhatsApp conversion label' - so every WhatsApp click you pay for is sent to a label that does not exist in your Google Ads account.",
+        "Your hero slider is three Pexels stock videos hot-linked straight from pexels.com/download/video/7040278/, /19202862/ and /18680290/. The first thing a prospect sees on a page you pay to send them to is somebody else's stock footage.",
+        "The page has no Open Graph tags, no Twitter card, no canonical, no JSON-LD and no sitemap reference, so every link shared anywhere renders as a bare URL with no image and no description.",
+        "Your <title> is 108 characters and your three hero slides each carry their own <h1>, so the page competes with itself for three different queries at once.",
+        "Your contact page is a single enquiry.html with no phone validation, no email field confirmation and no thank-you state read in this pass.",
+        "No Meta Pixel installed — can't run retargeting or track ad conversions",
+        "No Google Analytics — flying blind on website traffic",
+        "No live chat — missing after-hours leads",
+        "No visible testimonials/social proof on homepage",
+        "Multiple H1 tags (3) — confuses Google",
+        "No structured data (Schema.org) - missing rich results in Google",
+        "No Open Graph tags - links look bad when shared on social/WhatsApp"
+      ],
+      "wins": [
+        "Google tracking is present",
+        "Contact form exists",
+        "WhatsApp link present",
+        "Good CTA presence (4 buttons)"
+      ]
+    }
+  },
+  "audit_date": "2026-11-10",
+  "site_evidence": {
+    "pixel": false,
+    "ga4": false,
+    "gtm": false,
+    "google_ads_tag": true,
+    "checked_on": "2026-11-10",
+    "note": "Read on 2026-11-10 from the served page source through the W3C Nu HTML Checker. Confirmed present: Google Ads conversion tag."
+  },
+  "promise_gap": [
+    [
+      "Google Ads Transparency: 2 live ads under advertiser AR08105928276372881409, verified as LANKA V K PHANI VISWANATH - one of them a YouTube video creative.",
+      "The video ad buys attention and the page it lands on opens with three Pexels stock videos, not the advertiser's own installations. The strongest asset - a YouTube creative the company paid to produce - is immediately undercut by the stock footage above it."
+    ],
+    [
+      "The head installs the Google Ads tag AW-18243186763 and defines a WhatsApp conversion event against it.",
+      "The event still sends to 'AW-18243186763/WHATSAPP_LABEL' with the template's own comment 'Replace with your WhatsApp conversion label' above it. Google Ads will never record a conversion from this page, so the advertiser is paying for clicks with no measurement of what they produce."
+    ],
+    [
+      "The site presents solar, wind and hydro as three equal service lines, each with its own hero slide, its own <h1> and its own CTA.",
+      "The solar line is a genuine rooftop and ground-mount EPC - rooftop solar, ground-mount systems, net metering, battery storage and AMC for residential and commercial plants, with feasibility studies, site surveys and net-metering approvals handled. The wind and hydro lines are described only as equipment trading. The page asks the same attention for all three, and the company describes itself as 'a new bee in this energy sector'."
+    ],
+    [
+      "The page carries a floating WhatsApp button pre-filled with 'Hi Surya Renewable Energies, I need quote for solar power'.",
+      "That is the only working conversion path on the site, and because the Google Ads conversion label is a placeholder, the one action the page is built to produce is the one action Google Ads cannot count."
+    ]
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "No Meta Pixel code found in the landing-page source - ad clicks cannot be measured or retargeted."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad copy could not be read for these ads."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Ad start dates were not captured."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "No live ads captured."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: captured destination."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 1,
+      "fail": 2,
+      "unknown": 12,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  },
+  "status_compact": true
+}

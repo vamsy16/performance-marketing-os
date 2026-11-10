@@ -1,0 +1,262 @@
+{
+  "company": "Zenith Energy Services Private Limited",
+  "legal": "Zenith Energy Services Private Limited",
+  "city": "Shaikpet, Hyderabad 500081 (serves Karimnagar, Khammam and Nizamabad)",
+  "website": "https://zenithenergy.com/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-10",
+  "generated_at": "2026-11-10",
+  "source": "Google Ads Transparency Centre (advertiser record read directly) + the company's own live website (page source read through the W3C Nu HTML Checker)",
+  "ad_library": {
+    "meta_own": {
+      "found": false,
+      "results_count": 0,
+      "results_label": "0 live ads (Meta Ad Library, queried 2026-10-23)",
+      "query": "solar + Telangana city keyword search",
+      "note": "Queried on 2026-10-23 in batch 9 and recorded as a zero-ad website probe; that probe covered Meta only. The advertiser's paid activity is on Google, not Meta."
+    },
+    "google_own": {
+      "found": true,
+      "results_count": 9,
+      "results_label": "9 live Google ads",
+      "query": "adstransparency.google.com/?region=IN&domain=zenithenergy.com",
+      "detail": {
+        "name": "ZENITH ENERGY SERVICES PRIVATE LIMITED (verified)",
+        "ad_count": 9,
+        "url": "https://zenithenergy.com/",
+        "image_files": [
+          "Zenith: 4 image creatives visible on the advertiser page plus 5 further creatives, including 1 YouTube video creative (oeb4Qg-89OQ)."
+        ],
+        "text": "9 live ads listed under this advertiser in Google's Ads Transparency Centre - the highest count of any lead in this audit. 4 image creatives were visible on the advertiser page plus 5 further creatives, including 1 YouTube video creative (oeb4Qg-89OQ).\n\nAdvertiser verified. Legal name read off the advertiser record: ZENITH ENERGY SERVICES PRIVATE LIMITED.\n\nThe ads serve Karimnagar, Khammam and Nizamabad through location pages on the site (/solar-company-in-karimnagar/, /solar-company-in-khammam/), covering commercial, industrial, residential and institutional rooftop solar, EPC, battery energy storage, O&M and customised financing."
+      }
+    },
+    "summary": "9 live Google ads confirmed on 2026-11-10 in Google's Ads Transparency Centre under advertiser ZENITH ENERGY SERVICES PRIVATE LIMITED (verified) (ID AR02278013072834560001), identity-verified, with https://zenithenergy.com/ as the advertised domain. The Meta Ad Library was queried on 2026-10-23 and returned zero results for this company.",
+    "meta_competitors": {},
+    "google_competitors": {
+      "advertisers": [],
+      "note": "Competitor sweeps were not run for this lead in this pass, so no competitor Google advertiser counts are claimed here."
+    }
+  },
+  "funnel": {
+    "destination": "https://zenithenergy.com/",
+    "note": "Advertised domain as shown on the Google Ads Transparency Centre advertiser record."
+  },
+  "findings": [],
+  "next_steps": [],
+  "contact_facts": "Registered office D.NO. 1-89/A/8/C/2&3, P. NO. 2P &3P C1, Vittal Rao Nagar, M3 Block, Shaikpet, Telangana 500081 | +91 70757 56795 | zenith@zenithenergy.com | CIN U74140TG1990PTC011583, incorporated 10 Aug 1990 | Directors Sindhu Jannareddy and Vindhya Pulicherla | ZoomInfo lists a second Hyderabad address at 10-5-6/b My Home Plz, Masab Tank | Location pages published for Karimnagar, Khammam and Nizamabad",
+  "contact": {
+    "phone": "+91 7075756795",
+    "email": "zenith@zenithenergy.com",
+    "whatsapp": ""
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://zenithenergy.com/",
+    "audit_date": "2026-11-10",
+    "pixels": {
+      "meta_pixel": false,
+      "google_ads": false,
+      "google_analytics_ga4": false,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
+      "microsoft_clarity": false,
+      "hotjar": false,
+      "google_tag_manager": true
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": null,
+      "has_cta_buttons": 4,
+      "has_live_chat": null,
+      "has_popup_optin": null,
+      "has_testimonials": null,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Zenith Energy - Renewable Energy & Net-Zero Solutions",
+      "title_length": 53,
+      "has_meta_description": true,
+      "meta_desc_length": 122,
+      "h1_count": null,
+      "h1_text": "Crafting Unique sustainable solutions for better Future World",
+      "has_og_tags": true,
+      "has_schema": true,
+      "has_favicon": true,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": false
+    },
+    "platform": "WordPress 7.1.4, hello-elementor theme 3.5.1, Elementor 4.4.0 + Elementor Pro (pro-elements 4.3.2), ElementsKit Lite 4.0.9, Essential Addons for Elementor Lite 6.8.8, TablePress 3.4.1, All in One SEO (AIOSEO) 5.0.4, locally-hosted Google Fonts (roboto, robotoslab, poppins, intertight), Elementor post CSS 6 / 15347 / 8840, plus a custom interactive-India-map plugin",
+    "html_errors": "158 errors (155 HTML), 5 warnings, 146 info on the homepage. The most serious finding is structural: a complete second HTML document - doctype, <html lang=\"en\">, <head>, <meta charset=\"UTF-8\">, viewport and a <title> - is embedded inside the body at source line 417, shipped by the India-map plugin. That single defect produces the checker's 'Stray doctype', 'Stray start tag html', 'Stray start tag head', 'A charset attribute on a meta element found after the first 1024 bytes', 'A document must not include more than one meta element with a charset attribute', 'Element title not allowed as child of element div', 'Stray end tag head / div', 'Start tag body seen but an element of the same type was already open', 'End tag for body seen, but there were unclosed elements' and 'Unclosed element div (5) / header' errors. The rest are 7 'style element in body must be the first child of its parent', 121 style rules outside an @scope rule, a stray @import in a body style element, 5 role=group children of role=list, and 4 duplicate IDs on loop-dynamic-12687.",
+    "score": {
+      "score": 10,
+      "issues": [
+        "A complete second HTML document is embedded inside your homepage body: the checker finds a doctype, <html lang=\"en\">, <head>, <meta charset=\"UTF-8\">, a viewport meta and a <title> at source line 417. Your India-map plugin ships its own whole page inside yours.",
+        "All four of your hero counters read zero - 'Energy audits 0+', 'Carbon reduction projects 0+', 'Renewable projects supported 0 GW' and 'Net Zero projects completed 0+' - on a page that separately claims 180+ major projects across 28 states and 8 union territories.",
+        "The checker reports 158 errors on the homepage, more than any other site in this audit, and 121 of them are style rules sitting outside an @scope rule.",
+        "You are running 9 live Google ads - the highest count of any lead in this audit - and the ad destination is a page whose head carries no conversion tracking that could be confirmed in this pass.",
+        "There is no price list anywhere on the site, so every enquiry arrives without a number attached to it.",
+        "No Meta Pixel installed — can't run retargeting or track ad conversions",
+        "No Google Analytics — flying blind on website traffic"
+      ],
+      "wins": [
+        "Google tracking is present",
+        "Contact form exists",
+        "Good CTA presence (4 buttons)"
+      ]
+    }
+  },
+  "audit_date": "2026-11-10",
+  "site_evidence": {
+    "pixel": false,
+    "ga4": false,
+    "gtm": true,
+    "google_ads_tag": false,
+    "checked_on": "2026-11-10",
+    "note": "Read on 2026-11-10 from the served page source through the W3C Nu HTML Checker. Confirmed present: Google Tag Manager."
+  },
+  "promise_gap": [
+    [
+      "Google Ads Transparency: 9 live ads under advertiser AR02278013072834560001, verified as ZENITH ENERGY SERVICES PRIVATE LIMITED, including a YouTube video creative.",
+      "The site behind those 9 ads carries 158 HTML errors on the homepage, a complete second HTML document embedded in the body, and four hero counters that all read zero. The ad buys the click; the page has to carry it."
+    ],
+    [
+      "The advertiser's service pages promise ESCO retrofits, energy audits, solar, water management and net-zero programmes for industries and businesses across India.",
+      "The homepage substantiates the ESCO claim (an empanelled ESCO with the Bureau of Energy Efficiency) and names three real case studies - Basavatarakam Indo American Cancer Hospital, a clean-cooking project in Koraput, Odisha, and a net-zero roadmap for VPCL Visakha Pharmacity - plus a client carousel. But there is no price list, no published capacity figure and no case-study metric, so a prospect cannot size the offer from the page."
+    ],
+    [
+      "The site positions Zenith as a national net-zero consultancy with 180+ major projects across 28 states and 8 union territories.",
+      "The India map that carries those numbers also carries the structural defect: its plugin ships a whole second HTML document inside the homepage body. The interactive widget is the most distinctive asset on the page and it is also the largest single source of validation errors."
+    ]
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "No Meta Pixel code found in the landing-page source - ad clicks cannot be measured or retargeted."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad copy could not be read for these ads."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Ad start dates were not captured."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "No live ads captured."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: captured destination."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 1,
+      "fail": 2,
+      "unknown": 12,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  },
+  "status_compact": true
+}

@@ -230,9 +230,19 @@ SITE_UNREADABLE_VERDICT = (
 )
 
 
-def score_verdict(score):
+HEAD_UNREAD_VERDICT = (
+    "Page read, <head> script tags not returned",
+    GREY,
+    "The page itself was retrieved and every visible check below was measured. "
+    "The <head> script tags were not returned in readable form, so the eight "
+    "tracking-tag rows read 'not checked' and no audit score is claimed - "
+    "scoring a page on tracking that could not be read would be a guess.",
+)
+
+
+def score_verdict(score, head_unread=False):
     if score is None:
-        return SITE_UNREADABLE_VERDICT
+        return HEAD_UNREAD_VERDICT if head_unread else SITE_UNREADABLE_VERDICT
     if score >= 50:
         return ("Significant gaps found", RED,
                 "Several issues on this page are actively costing you enquiries. Every one of them is fixable within days.")
@@ -426,13 +436,27 @@ def status_text(ok, yes="OK", no="MISSING"):
     return Paragraph(f'<font color="{color}"><b>{T(yes if ok else no)}</b></font>', ST["cell"])
 
 
-def two_col_status(items):
+def two_col_status(items, compact=False):
+    """Two label/status pairs per row.
+
+    ``compact`` renders an unmeasured row as "Not checked" instead of the full
+    "Not checked in this pass". The full phrase still appears in the sentence
+    directly under the table and in the verification log, so nothing is lost -
+    it is purely a width decision for pages that carry many unmeasured rows.
+    Only reports that ask for it (audit["status_compact"]) get it, so the
+    existing 46 reports keep their current layout byte for byte.
+    """
     rows = []
     for i in range(0, len(items), 2):
         chunk = items[i:i + 2]
         row = []
         for label, ok in chunk:
-            row.extend([Paragraph(T(label), ST["cell"]), status_text(ok)])
+            if compact and ok is None:
+                cell = Paragraph('<font color="#5F6368"><b>Not checked</b></font>',
+                                 ST["cell"])
+            else:
+                cell = status_text(ok)
+            row.extend([Paragraph(T(label), ST["cell"]), cell])
         while len(row) < 4:
             row.extend([Paragraph("", ST["cell"]), Paragraph("", ST["cell"])])
         rows.append(row)
@@ -547,7 +571,8 @@ def score_panel(audit):
         return card
 
     score = audit.get("score", {}).get("score", 0)
-    headline, color, verdict = score_verdict(score)
+    headline, color, verdict = score_verdict(
+        score, head_unread=bool(audit.get("head_unread")))
     left = [
         Paragraph('N/A' if score is None else f'{score}',
                   ParagraphStyle("scn", parent=ST["score_num"], textColor=color)),
@@ -870,12 +895,11 @@ def verification_log(audit):
         #   score_unavailable- the page could not be retrieved at all
         #   neither          - some other reason the tags were not read
         if site.get("head_unread"):
-            _why = ("The page itself was read - title, meta description, Open "
-                    "Graph tags, error counts, plugin stack and every content "
-                    "check below are measured. But the served HTML carries "
-                    "very large inline stylesheets, so the <head> script tags "
-                    "ran past what could be returned. Those tracking-tag "
-                    "checks are reported as not checked, not as missing.")
+            _why = ("The page itself was read in full - title, meta "
+                    "description, Open Graph tags, error counts, plugin stack "
+                    "and every content check are measured. Only the <head> "
+                    "script tags ran past what could be returned, so the "
+                    "tracking-tag checks read not checked, not missing.")
         elif site.get("score_unavailable"):
             _why = ("The page itself could not be retrieved in this pass - the "
                     "W3C checker returned an IO error and a direct fetch "
@@ -1481,6 +1505,14 @@ def build_story(audit):
             story.append(Spacer(1, 2.5 * mm))
             for ad in meta_own["ads"][:3]:
                 story.append(ad_card(ad, "Meta"))
+        elif meta_own.get("found") is None:
+            # The Ad Library was never queried for this lead, so the report must
+            # say that rather than imply a zero count was measured.
+            story.append(empty_box(
+                "Not checked in this pass. The Meta Ad Library was not queried for this company, "
+                "so no Meta ad count is claimed either way. This advertiser's paid activity was "
+                "confirmed on Google's Ads Transparency Centre instead - see the section "
+                "below."))
         else:
             story.append(empty_box(
                 "No active Meta ads were found for this company. Competitors in your city are buying this "
@@ -1597,7 +1629,7 @@ def build_story(audit):
     story.extend(section_bar("Website tracking & pixels", "can you measure anything at all?"))
     pixel_items = [(label, audit.get("pixels", {}).get(key))
                    for key, label in PIXEL_LABELS.items()]
-    story.append(two_col_status(pixel_items))
+    story.append(two_col_status(pixel_items, compact=bool(audit.get("status_compact"))))
     story.append(Spacer(1, 2.2 * mm))
     missing = [label for label, ok in pixel_items if ok is False]
     unchecked = [label for label, ok in pixel_items if ok is None]
@@ -1629,7 +1661,7 @@ def build_story(audit):
     else:
         _cta_label = f"Call-to-action buttons: {_cta} on homepage"
     conv_items.insert(3, (_cta_label, None if _cta is None else _cta >= 3))
-    story.append(two_col_status(conv_items))
+    story.append(two_col_status(conv_items, compact=bool(audit.get("status_compact"))))
 
     story.extend(section_bar("What is already working"))
     story.append(bullets_table(wins if wins else ["No major strengths detected on the homepage."], GREEN, "OK"))

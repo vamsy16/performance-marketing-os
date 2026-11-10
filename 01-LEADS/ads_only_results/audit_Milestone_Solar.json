@@ -1,0 +1,267 @@
+{
+  "company": "Milestone Solarcom Private Limited",
+  "legal": "Milestone Solarcom Private Limited",
+  "city": "Hyderabad",
+  "website": "https://www.milestonesolar.in/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-10",
+  "generated_at": "2026-11-10",
+  "source": "Google Ads Transparency Centre (advertiser record read directly) + the company's own live website (page source read through the W3C Nu HTML Checker)",
+  "ad_library": {
+    "meta_own": {
+      "found": null,
+      "results_count": 0,
+      "results_label": "0 live ads (Meta Ad Library, queried 2026-10-23)",
+      "query": "solar + Telangana city keyword search",
+      "note": "The Meta Ad Library was not queried for this company. This lead was found through the Google Ads Transparency Centre, so no Meta ad count is claimed either way."
+    },
+    "google_own": {
+      "found": true,
+      "results_count": 6,
+      "results_label": "6 live Google ads",
+      "query": "adstransparency.google.com/?region=IN&domain=www.milestonesolar.in",
+      "detail": {
+        "name": "ZAHEERUDDIN JAVEED MOHAMMED (verified)",
+        "ad_count": 6,
+        "url": "https://www.milestonesolar.in/",
+        "image_files": [
+          "Milestone Solar: 4 image creatives visible on the advertiser page plus 2 further creatives."
+        ],
+        "text": "6 live ads listed under this advertiser in Google's Ads Transparency Centre - 4 image creatives were visible on the advertiser page plus 2 further creatives.\n\nAdvertiser verified. Legal name read off the advertiser record: ZAHEERUDDIN JAVEED MOHAMMED, trading as Milestone Solarcom.\n\nThe site the ads point at sells off-grid and on-grid SPV plants, hybrid plants, solar micro and mini grids, street lighting, fencing, water heating and water pumping, and is empanelled with TGREDCO under TSRE180047."
+      }
+    },
+    "summary": "6 live Google ads confirmed on 2026-11-10 in Google's Ads Transparency Centre under advertiser ZAHEERUDDIN JAVEED MOHAMMED (verified) (ID AR10713925876992442369), identity-verified, with https://www.milestonesolar.in/ as the advertised domain. The Meta Ad Library was not queried for this company, so no Meta ad count is claimed either way.",
+    "meta_competitors": {},
+    "google_competitors": {
+      "advertisers": [],
+      "note": "Competitor sweeps were not run for this lead in this pass, so no competitor Google advertiser counts are claimed here."
+    }
+  },
+  "funnel": {
+    "destination": "https://www.milestonesolar.in/",
+    "note": "Advertised domain as shown on the Google Ads Transparency Centre advertiser record."
+  },
+  "findings": [],
+  "next_steps": [],
+  "contact_facts": "+91 9030005033 / +91 9246527527 | milestonesolarcomsales@gmail.com (published on the site) and milestonesolarcom@gmail.com (registered address) | TGREDCO empanelled supplier registration TSRE180047, listed on the 2026 register as 'M/s. Milestone Solarcom Pvt. Ltd.' | Claims 1,248 Google reviews | Trading name on the site: Milestone Solar / Milestone Solarcom",
+  "contact": {
+    "phone": "+91 9030005033",
+    "email": "milestonesolarcomsales@gmail.com",
+    "whatsapp": "+91 9030005033"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://www.milestonesolar.in/",
+    "audit_date": "2026-11-10",
+    "pixels": {
+      "meta_pixel": true,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": 3,
+      "has_live_chat": false,
+      "has_popup_optin": false,
+      "has_testimonials": true,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Best Solar Company in Hyderabad - Solar Installation & EPC | Milestone Solar",
+      "title_length": 78,
+      "has_meta_description": true,
+      "meta_desc_length": 122,
+      "h1_count": null,
+      "h1_text": "",
+      "has_og_tags": true,
+      "has_schema": null,
+      "has_favicon": true,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": false
+    },
+    "platform": "WordPress, Astra theme (ast-primary-menu-enabled, ast-logo-title-inline, masthead), Elementor (elementor-top-section, data-element_type=\"section\"), All in One SEO (AIOSEO) 5.0.2.1, Site Kit by Google 1.187.0, MyStickyMenu (mystickymenu), Click to Chat for WhatsApp (ht_ctc_*), and a third-party form plugin whose markup injects page / page_id attributes onto the <form> element (wpr-form)",
+    "html_errors": "128 errors, 10 warnings, 53 info on the homepage. The single biggest cause is malformed nesting: 100 elements are not allowed where they sit - 55 <p> inside <span>, 22 <h3> inside <span>, 15 <h2> inside <span>, 7 <ul> inside <span> and 1 <div> inside <button> - which also produces 3 stray </p> end tags, 1 end tag for div with open elements, and unclosed article / main elements. Beyond that: 2 itemid attributes on elements with no itemscope or itemtype, 2 tabindex elements nested inside <a>, 3 illegal attributes on form and div elements (page, page_id, us'), 2 places with no space between attributes, 2 inputs with size=\"1\", a role=tab with no role=tabpanel, a heading-level skip from h2 to h6, 2 style elements in body that are not the first child of their parent, and 3 style rules outside an @scope rule. The click-to-call link is also broken: the checker reports 'Bad value tel:+91 9030005033 for attribute href on element a: Illegal character after tel:. Space is not allowed.'",
+    "score": {
+      "score": 3,
+      "issues": [
+        "Every trust counter on your homepage reads zero: 'Years of experience 0+', 'Installations 0+', 'Happy Customers 0%' and 'Customer Support 0/7'. A visitor who scrolls to the proof section sees four zeros.",
+        "Your click-to-call link is broken. The checker reports 'Bad value tel:+91 9030005033 for attribute href on element a: Illegal character after tel:. Space is not allowed' - there is a space inside the href, so the number cannot be dialled from the page.",
+        "The checker reports 128 errors, and 100 of them are elements sitting where they are not allowed - 55 <p> inside <span>, 22 <h3> inside <span>, 15 <h2> inside <span> and 7 <ul> inside <span>.",
+        "og:site_name is set to \"-\", so every share of your homepage is attributed to a hyphen.",
+        "You run 6 live Google ads and your only confirmed tracking is a Meta Pixel. Site Kit by Google is installed but no GA4 or Google Ads measurement ID could be read in this pass, so your Google spend has no confirmed measurement behind it.",
+        "No live chat — missing after-hours leads"
+      ],
+      "wins": [
+        "Meta Pixel is installed",
+        "Contact form exists",
+        "WhatsApp link present",
+        "Good CTA presence (3 buttons)",
+        "Testimonials visible"
+      ]
+    }
+  },
+  "audit_date": "2026-11-10",
+  "site_evidence": {
+    "pixel": true,
+    "ga4": false,
+    "gtm": false,
+    "google_ads_tag": false,
+    "checked_on": "2026-11-10",
+    "note": "Read on 2026-11-10 from the served page source through the W3C Nu HTML Checker. Confirmed present: Meta Pixel."
+  },
+  "promise_gap": [
+    [
+      "Google Ads Transparency: 6 live ads under advertiser AR10713925876992442369, verified as ZAHEERUDDIN JAVEED MOHAMMED.",
+      "The ads land on a homepage reporting 128 errors, where every trust counter reads zero and the click-to-call link has a space inside its href so the number cannot be dialled. The page pays for six ads' worth of clicks and then fails the two things a buyer does first."
+    ],
+    [
+      "The homepage presents 'Years of experience 0+', 'Installations 0+', 'Happy Customers 0%' and 'Customer Support 0/7' next to a '1,248 reviews' Google badge.",
+      "The four counters and the review badge contradict each other on the same screen, and the checker reports 100 elements sitting where they are not allowed - 55 <p> inside <span>, 22 <h3> inside <span>, 15 <h2> inside <span> and 7 <ul> inside <span> - which is what breaks the counters' markup."
+    ],
+    [
+      "The site lists off-grid and on-grid SPV plants, hybrid plants, solar-powered micro and mini grids, street lighting, fencing, water heating and water pumping, and is empanelled with TGREDCO under registration TSRE180047.",
+      "The TGREDCO register independently confirms Milestone Solarcom Pvt Ltd and that registration number, so the capability claim is substantiated by a government source. The page itself publishes no price, no system size and no project photograph in this pass, so a prospect cannot size the offer."
+    ],
+    [
+      "The site's copy carries 'top solar comapy in hyderabad', 'This Shceme' and 'Sustanability Focused'.",
+      "Three spelling errors in the primary conversion copy, on a page whose meta description opens 'Looking for best solar company in Hyderabad?' - the exact phrase six live ads are buying."
+    ]
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "pass",
+        "evidence": "Meta Pixel code (fbq / connect.facebook.net) found in the live landing-page source."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad copy could not be read for these ads."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Ad start dates were not captured."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "No live ads captured."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: captured destination."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 2,
+      "fail": 1,
+      "unknown": 12,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  },
+  "status_compact": true
+}

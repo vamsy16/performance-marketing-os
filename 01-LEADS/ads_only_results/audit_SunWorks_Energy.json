@@ -1,0 +1,266 @@
+{
+  "company": "SunWorks Energy Private Limited",
+  "legal": "SunWorks Energy Private Limited",
+  "city": "Jubilee Hills, Hyderabad",
+  "website": "https://sunworks.in/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-10",
+  "generated_at": "2026-11-10",
+  "source": "Google Ads Transparency Centre (advertiser record read directly) + the company's own live website (page source read through the W3C Nu HTML Checker)",
+  "ad_library": {
+    "meta_own": {
+      "found": null,
+      "results_count": 0,
+      "results_label": "0 live ads (Meta Ad Library, queried 2026-10-23)",
+      "query": "solar + Telangana city keyword search",
+      "note": "The Meta Ad Library was not queried for this company. This lead was found through the Google Ads Transparency Centre, so no Meta ad count is claimed either way."
+    },
+    "google_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "1 live Google ads",
+      "query": "adstransparency.google.com/?region=IN&domain=sunworks.in",
+      "detail": {
+        "name": "SUNWORKS ENERGY PRIVATE LIMITED (verified)",
+        "ad_count": 1,
+        "url": "https://sunworks.in/",
+        "image_files": [
+          "SunWorks: 1 Display image creative, simgad/8721599813200798262."
+        ],
+        "text": "1 live ad listed under this advertiser in Google's Ads Transparency Centre - a Display image creative (simgad/8721599813200798262).\n\nAdvertiser verified. Legal name read off the advertiser record: SUNWORKS ENERGY PRIVATE LIMITED.\n\nThe site the ad points at sells four services - Consultancy & Advisory, Design & Engineering, Solar EPC and Operations & Maintenance - and positions the company as a 'Top Solar EPC Company in India'."
+      }
+    },
+    "summary": "1 live Google ads confirmed on 2026-11-10 in Google's Ads Transparency Centre under advertiser SUNWORKS ENERGY PRIVATE LIMITED (verified) (ID AR07942131426432909313), identity-verified, with https://sunworks.in/ as the advertised domain. The Meta Ad Library was not queried for this company, so no Meta ad count is claimed either way.",
+    "meta_competitors": {},
+    "google_competitors": {
+      "advertisers": [],
+      "note": "Competitor sweeps were not run for this lead in this pass, so no competitor Google advertiser counts are claimed here."
+    }
+  },
+  "funnel": {
+    "destination": "https://sunworks.in/",
+    "note": "Advertised domain as shown on the Google Ads Transparency Centre advertiser record."
+  },
+  "findings": [],
+  "next_steps": [],
+  "contact_facts": "2nd Floor, Plot 126, Road Number 11, Jubilee Hills, Hyderabad | +91 86883 26316 | gosolar@sunworks.in | Facebook publisher link https://www.facebook.com/SunWorks.India | Awards published on the homepage: 'Best Engineering team of the Year 2024 - Telangana', 'Best Engineering team of the year 2024 - Andhra Pradesh', 'Woman of the year for Tech competence in Solar Project, Engineering, Design & Tech Consultancy - Karnataka' | Directors named on the homepage: Rajyalakshmi Kola and Arjun Penumatsa",
+  "contact": {
+    "phone": "+91 8688326316",
+    "email": "gosolar@sunworks.in",
+    "whatsapp": ""
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://sunworks.in/",
+    "audit_date": "2026-11-10",
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": null,
+      "has_whatsapp_link": null,
+      "has_cta_buttons": 4,
+      "has_live_chat": null,
+      "has_popup_optin": null,
+      "has_testimonials": true,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "SunWorks Energy | Top Solar EPC Company in India",
+      "title_length": 48,
+      "has_meta_description": true,
+      "meta_desc_length": 141,
+      "h1_count": null,
+      "h1_text": "Top Solar EPC Company in India",
+      "has_og_tags": true,
+      "has_schema": null,
+      "has_favicon": true,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": false
+    },
+    "platform": "WordPress, Astra theme, Elementor 4.3.2 + Elementor Pro 3.34.0 (post IDs 36 and 1586), Swiper 8.4.5, Site Kit by Google, Elementor Pro mega-menu / sticky / icon-list / slides / call-to-action widgets, plus a script and CSS optimiser that rewrites the markup with bv-* attributes",
+    "html_errors": "298 errors (294 HTML), 47 warnings, 101 info on the homepage - the highest error count in this audit. The dominant cause is the site's own script and CSS optimiser, which rewrites the served markup and leaves 70 illegal bv-* attributes, 16 scripts with type=\"bv_inline_delayed_js\", 10 style elements with a non-text/css type, 32 style rules outside an @scope rule and 46 duplicate IDs. The same optimiser breaks the images: 29 <img> elements are missing both src and srcset and 5 more carry sizes without srcset, so they cannot load at all. Also present: 6 inputs with an empty min/max, 2 required selects with no placeholder option, 10 element-in-element nesting errors, 6 summary elements missing aria-checked/aria-level/role, 6 aria-expanded on a summary for its parent details, 2 CSS parse errors and 2 heading-level skips (h1 to h3, h2 to h4).",
+    "score": {
+      "score": null,
+      "issues": [
+        "Your years-in-business figure contradicts itself three times on one page: 'Since 2015' (11 years in 2026), then '10+ Years of Experience', then '15+ Years Solar Experience' a few lines further down.",
+        "Three of your four service cards point at the wrong page. 'Solar EPC 03' and 'Operations and Maintenance 04' both link to /consultancy-advisory/, while the slider directly above the same block links correctly to /epc-services/ and /operations-maintenance/. The two blocks disagree with each other.",
+        "The optimiser on your site is breaking your own images: the checker reports 29 <img> elements missing both src and srcset, and 5 more carrying sizes without srcset. Those images cannot load at all.",
+        "og:site_name is set to \"Home\" instead of SunWorks Energy, so every share of your homepage is attributed to a page called 'Home'.",
+        "The checker reports 298 errors and 47 warnings on the homepage - the highest error count in this audit - and 46 of them are duplicate IDs."
+      ],
+      "wins": [
+        "Contact form exists",
+        "Good CTA presence (4 buttons)",
+        "Testimonials visible"
+      ]
+    },
+    "head_unread": true
+  },
+  "audit_date": "2026-11-10",
+  "site_evidence": {
+    "pixel": false,
+    "ga4": false,
+    "gtm": false,
+    "google_ads_tag": false,
+    "checked_on": "2026-11-10",
+    "note": "Read on 2026-11-10. The <head> script tags of this page were not returned in readable form, so tracking-tag presence is unknown in both directions and is reported as not checked rather than as absent. Confirmed in the head: no Meta Pixel, GA4, GTM or Google Ads tag confirmed. Every other check on this page - the title, the meta description, the Open Graph tags, the plugin stack, the validator counts and all content checks - was measured."
+  },
+  "promise_gap": [
+    [
+      "Google Ads Transparency: 1 live ad under advertiser AR07942131426432909313, verified as SUNWORKS ENERGY PRIVATE LIMITED.",
+      "The ad lands on a homepage reporting 298 errors and 47 warnings, where 29 images cannot load because the optimiser stripped their src and srcset attributes. The page's own evidence is being deleted by its own performance plugin."
+    ],
+    [
+      "The homepage claims 'Since 2015' and '10+ Years of Experience' and, a few lines later, '15+ Years Solar Experience'.",
+      "2015 to 2026 is 11 years. Neither figure matches the founding date on the same page, and the two counters contradict each other, so a prospect who reads both has no reason to trust either."
+    ],
+    [
+      "The homepage presents four services - Consultancy & Advisory, Design & Engineering, Solar EPC, Operations & Maintenance - each with a 'Know More' link and a numbered card.",
+      "Three of the four numbered cards link to /consultancy-advisory/, including 'Solar EPC 03' and 'Operations and Maintenance 04'. The slider above them links correctly to /epc-services/ and /operations-maintenance/, so the two blocks disagree and the EPC service - the one the ad is about - is unreachable from the card."
+    ],
+    [
+      "The site publishes a 25-logo clientele wall, five awards and two named testimonials (Presidency Schools, Vasantha Industries Pvt Ltd) with project names such as Viswateja Spinning Mills 3.6 MWp.",
+      "That is genuine, specific proof and it is the strongest asset on the page. It sits below the broken counters and the contradictory experience figures, and none of it is connected to a tracking pixel that could be confirmed in this pass."
+    ]
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "No Meta Pixel code found in the landing-page source - ad clicks cannot be measured or retargeted."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad copy could not be read for these ads."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Ad start dates were not captured."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "No live ads captured."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: captured destination."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 1,
+      "fail": 2,
+      "unknown": 12,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  },
+  "head_unread": true,
+  "status_compact": true
+}

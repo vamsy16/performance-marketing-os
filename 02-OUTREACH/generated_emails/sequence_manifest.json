@@ -3524,6 +3524,151 @@
           "due_date": ""
         }
       ]
+    },
+    {
+      "city": "Shaikpet, Hyderabad (serves Karimnagar, Khammam, Nizamabad)",
+      "company": "Zenith Energy Services Private Limited",
+      "contact_note": "Email and phone read live on 2026-11-10: zenith@zenithenergy.com, +91 70757 56795. Registered office D.NO. 1-89/A/8/C/2&3, P. NO. 2P &3P C1, Vittal Rao Nagar, M3 Block, Shaikpet, Telangana 500081. CIN U74140TG1990PTC011583, incorporated 10 Aug 1990; directors Sindhu Jannareddy and Vindhya Pulicherla.",
+      "mails_sent": 0,
+      "next_followup_date": "",
+      "next_step": null,
+      "report_kind": "ads_only",
+      "steps": [
+        {
+          "body": "Hi,\n\nI spend my week reading the public ad-transparency records for the Telangana solar market, and I put together a short report on what Zenith Energy is doing right now.\n\nWhat it covers (pulled from Google's Ads Transparency Centre on 2026-11-10):\n\n  - 9 live ads under your advertiser record, identity-verified as ZENITH ENERGY SERVICES PRIVATE LIMITED, including a YouTube video creative - the highest ad count of any company I looked at this month\n  - the ads serve Karimnagar, Khammam and Nizamabad through location pages on your site, and the click does reach zenithenergy.com, so that part is right\n  - worth saying plainly: I had you down as a zero-ad company from an earlier sweep. That sweep only covered Meta. You have been running nine Google ads the whole time, which is exactly why I opened this channel.\n\nThe thing I would fix first is not the ads. It is the page underneath them.\n\nA complete second HTML document is embedded inside your homepage body - a doctype, an <html> tag, a <head>, a meta charset, a viewport and a <title>, all sitting at source line 417. Your India-map plugin ships its own whole page inside yours. That one defect is what produces most of the 158 validation errors on the homepage, including the stray doctype, the duplicate charset and the unclosed elements.\n\nSecond, all four of your hero counters read zero. 'Energy audits 0+', 'Carbon reduction projects 0+', 'Renewable projects supported 0 GW' and 'Net Zero projects completed 0+'. On the same page that claims 180+ major projects across 28 states and 8 union territories. A prospect who scrolls to the proof section sees four zeros.\n\nThird, on measurement: the only tracking script in your head is a Google Tag Manager container, GTM-NGZ8TG9J. A container is a box, not a measurement - nothing is counted until tags are published inside it. So at the moment nine ads are buying clicks and nothing on the page can tell you what they produced.\n\nTo be fair to you, the site has real substance underneath: three named case studies (Basavatarakam Indo American Cancer Hospital, the clean-cooking project in Koraput, and the net-zero roadmap for VPCL Visakha Pharmacity), a client carousel that includes Indian Oil, HP, NALCO, Epiroc and Medicare, a full Open Graph and Twitter card set, and Search Console verification already in place. The bones are good. The execution has drifted.\n\nOne more thing worth saying plainly: I have written this as an energy-efficiency and net-zero lead rather than a pure rooftop-solar lead, because that is what your site actually sells - ESCO retrofits, energy audits, water management and carbon offsets alongside the solar.\n\nYou can verify every line yourself:\n\n  https://adstransparency.google.com/advertiser/AR02278013072834560001?region=IN\n  https://validator.w3.org/nu/?doc=https://zenithenergy.com/&showsource=yes\n\nHappy to walk you through what I found on a 10-minute call - or just keep the report, no strings attached.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
+          "delay_after_previous_days": 0,
+          "draft_created_at": "",
+          "draft_id": "",
+          "due_date": "",
+          "kind": "initial",
+          "message_id": "",
+          "sent_at": "",
+          "status": "pending",
+          "step": 0,
+          "subject": "Zenith Energy: 9 live Google ads landing on a page with a second HTML document inside it",
+          "thread_id": ""
+        }
+      ],
+      "thread_id": "",
+      "thread_subject": "Zenith Energy: 9 live Google ads landing on a page with a second HTML document inside it",
+      "to": "zenith@zenithenergy.com",
+      "website": "https://zenithenergy.com/"
+    },
+    {
+      "city": "Jubilee Hills, Hyderabad",
+      "company": "SunWorks Energy Private Limited",
+      "contact_note": "Email and phone read live on 2026-11-10: gosolar@sunworks.in, +91 86883 26316. 2nd Floor, Plot 126, Road Number 11, Jubilee Hills, Hyderabad. Facebook publisher link https://www.facebook.com/SunWorks.India.",
+      "mails_sent": 0,
+      "next_followup_date": "",
+      "next_step": null,
+      "report_kind": "ads_only",
+      "steps": [
+        {
+          "body": "Hi,\n\nI spend my week reading the public ad-transparency records for the Telangana solar market, and I put together a short report on what SunWorks Energy is doing right now.\n\nWhat it covers (pulled from Google's Ads Transparency Centre on 2026-11-10):\n\n  - 1 live ad under your advertiser record, identity-verified as SUNWORKS ENERGY PRIVATE LIMITED\n  - the ad's destination is sunworks.in, which I confirmed on the advertiser record, so the click does reach your site\n\nThe first thing I would fix is not the ad. It is a number on your own homepage.\n\nYour page says 'Since 2015, we've been helping businesses, institutions, and homeowners' - that is 11 years. A few lines below it, your milestones block says '10+ Years of Experience'. A few lines below that, the same page says '15+ Years Solar Experience'. Three different answers to the same question on one screen, and none of them matches the founding date printed above them.\n\nThe second thing is quieter and more expensive. Your site runs a script and CSS optimiser, and the optimiser is deleting your own images: 29 <img> elements on the homepage are missing both their src and srcset attributes, and five more carry a sizes attribute with no srcset. Those images cannot load at all. The W3C checker reports 298 errors and 47 warnings on the page - the highest count I recorded this month - and 46 of them are duplicate IDs.\n\nThird, three of your four service cards point at the wrong page. 'Solar EPC 03' and 'Operations and Maintenance 04' both link to /consultancy-advisory/. The slider directly above the same block links correctly to /epc-services/ and /operations-maintenance/, so the two blocks disagree with each other - and the EPC service your ad is about is unreachable from the card.\n\nTo be fair to you, the site has genuine proof on it: a 25-logo clientele wall including BSF, Meil, SRK Infra, Aparna Industries, R.S. Brothers, Katuri Medical College and Presidency High School; five awards, among them 'Best Engineering team of the Year 2024 - Telangana'; and seven named projects with capacities attached, such as Viswateja Spinning Mills 3.6 MWp and SVLN 1.5 MWp. That is real, specific evidence and it is the strongest asset on the page.\n\nOne honest caveat on the report: I could not read your site's tracking tags. The served HTML carries very large inline stylesheets, so the eight tracking rows in the report read 'not checked' rather than 'missing' - I am not going to claim a problem I did not observe. What I can confirm is that Site Kit by Google is installed, so something is likely measuring. That is the first thing to verify.\n\nYou can verify every line yourself:\n\n  https://adstransparency.google.com/advertiser/AR07942131426432909313?region=IN\n  https://validator.w3.org/nu/?doc=https://sunworks.in/&showsource=yes\n\nHappy to walk you through what I found on a 10-minute call - or just keep the report, no strings attached.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
+          "delay_after_previous_days": 0,
+          "draft_created_at": "",
+          "draft_id": "",
+          "due_date": "",
+          "kind": "initial",
+          "message_id": "",
+          "sent_at": "",
+          "status": "pending",
+          "step": 0,
+          "subject": "SunWorks Energy: your homepage gives three different answers on how old the company is",
+          "thread_id": ""
+        }
+      ],
+      "thread_id": "",
+      "thread_subject": "SunWorks Energy: your homepage gives three different answers on how old the company is",
+      "to": "gosolar@sunworks.in",
+      "website": "https://sunworks.in/"
+    },
+    {
+      "city": "Kothagudem 507101 (serves Telangana and Andhra Pradesh)",
+      "company": "Nature Power Solar",
+      "contact_note": "Email and phone read live on 2026-11-10: info@naturepowersolar.com, +91 96660 88988 / +91 84660 88988. 2-2-1/2, Budidagadda Basthi, Kothagudem, Telangana 507101; geo 17.545692 / 80.629687; open Mon-Sat 09:00-19:00. Founder & Technical Lead Sagar Earpula, Operations Manager Abhilash Earpula. Independently listed on the TGREDCO 2026 empanelled-supplier register.",
+      "mails_sent": 0,
+      "next_followup_date": "",
+      "next_step": null,
+      "report_kind": "ads_only",
+      "steps": [
+        {
+          "body": "Hi,\n\nI spend my week reading the public ad-transparency records for the Telangana solar market, and I put together a short report on what Nature Power Solar is doing right now.\n\nWhat it covers (pulled from Google's Ads Transparency Centre on 2026-11-10):\n\n  - 1 live ad under your advertiser record, identity-verified as CHITWALA JOHN SANDEEP\n  - the ad's destination is naturepowersolar.com, which I confirmed on the advertiser record\n  - I also found you independently on the TGREDCO 2026 empanelled-supplier register as Nature Power Solar Technologies & Services at the Kothagudem address, which is the third-party confirmation I look for\n\nI want to start with the good news, because it is unusual: your site is the best-built page I read this month. Six validation errors, no warnings, no info messages, no plugin stack, no page builder. Your savings calculator publishes real numbers - a Rs.3,500 monthly bill resolving to a 4 kW system at Rs.2.48 lakh, Rs.78,000 of subsidy, Rs.1.7 lakh net, Rs.3,325 a month saved and a 4.1-year payback - and those figures hold up. Your PM Surya Ghar tiers are correct, your JSON-LD names your founder and operations manager and links your Google Maps listing, and your six service pages carry real specifications. Most solar sites in Telangana do not.\n\nSo the gap is not the page. It is that nothing on it is measured, and one specific thing is missing.\n\nYour Search Console verification token is still the placeholder your developer shipped. The source carries <!-- <meta name=\"google-site-verification\" content=\"PASTE_TOKEN\"> --> and the Bing equivalent, both commented out. You are buying Google ads for a domain Google has never been able to confirm you own. That is a five-minute fix and it gates everything else.\n\nSecond, you have no Meta Pixel at all. You do have GA4 (G-9MMYLNMH9T), a Google tag (GT-5TQ454D4) and a Google Ads conversion ID (AW-609769092) - you are actually ahead of most of the leads I write to on that. But there is no way to reach the person who reads your calculator, does not fill the form, and leaves.\n\nThird, there is no live chat and no popup opt-in, so the quote form is the only capture point on a page that clearly knows how to hold attention.\n\nYou can verify every line yourself:\n\n  https://adstransparency.google.com/advertiser/AR11194127933927063553?region=IN\n  https://validator.w3.org/nu/?doc=https://naturepowersolar.com/&showsource=yes\n\nHappy to walk you through what I found on a 10-minute call - or just keep the report, no strings attached.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
+          "delay_after_previous_days": 0,
+          "draft_created_at": "",
+          "draft_id": "",
+          "due_date": "",
+          "kind": "initial",
+          "message_id": "",
+          "sent_at": "",
+          "status": "pending",
+          "step": 0,
+          "subject": "Nature Power Solar: the best-built solar site I read this month, and Google cannot verify you own it",
+          "thread_id": ""
+        }
+      ],
+      "thread_id": "",
+      "thread_subject": "Nature Power Solar: the best-built solar site I read this month, and Google cannot verify you own it",
+      "to": "info@naturepowersolar.com",
+      "website": "https://naturepowersolar.com/"
+    },
+    {
+      "city": "Kothapet, Hyderabad",
+      "company": "Surya Renewable Energies",
+      "contact_note": "Email and phone read live on 2026-11-10: info@suryarenewable.com, +91 91823 11739. Alkapuri Colony, Kothapet, Hyderabad, Telangana. WhatsApp wa.me/919182311739.",
+      "mails_sent": 0,
+      "next_followup_date": "",
+      "next_step": null,
+      "report_kind": "ads_only",
+      "steps": [
+        {
+          "body": "Hi,\n\nI spend my week reading the public ad-transparency records for the Telangana solar market, and I put together a short report on what Surya Renewable Energies is doing right now.\n\nWhat it covers (pulled from Google's Ads Transparency Centre on 2026-11-10):\n\n  - 2 live ads under your advertiser record, identity-verified as LANKA V K PHANI VISWANATH - one YouTube video creative and one Display image\n  - both point at suryarenewable.com, which I confirmed on the advertiser record\n\nYou have made a YouTube video ad, which puts you ahead of most rooftop companies in the state. So it is a shame that the first thing a visitor sees when they arrive is not your work.\n\nYour hero slider is three stock videos pulled straight from Pexels - pexels.com/download/video/7040278/, /19202862/ and /18680290/, hot-linked into your page. The video you paid to produce is immediately undercut by somebody else's footage above it. Your own installations are the asset here and they are not on the page.\n\nThe second thing is the one that costs you money directly. Your head installs the Google Ads tag AW-18243186763 and defines a WhatsApp conversion event against it - but the event still sends to 'AW-18243186763/WHATSAPP_LABEL', with the template's own comment 'Replace with your WhatsApp conversion label' sitting above it. Google Ads will never record a conversion from your site. You are paying for clicks with no measurement of what they produce, and the one action your page is built to create - the floating WhatsApp button, pre-filled with the enquiry - is the one action Google cannot count.\n\nThird, the page has no Open Graph tags, no Twitter card, no canonical and no structured data at all, so any link shared anywhere renders as a bare URL with no image and no description. Your title is 108 characters and your three hero slides each carry their own <h1>, so the page competes with itself for three different queries.\n\nTo be fair to you, the markup is the cleanest I recorded this month - one error, no warnings - and the solar scope underneath is a real EPC business: rooftop solar, ground-mount systems, net metering, battery storage and AMC for residential and commercial plants, with feasibility studies, site surveys and net-metering approvals handled. You also say on your own homepage that you are 'a new bee in this energy sector', which I would keep - it reads as honest rather than as a weakness.\n\nOne thing to flag plainly: your site sells solar, wind and hydro as three equal lines, and the wind and hydro lines read as equipment trading rather than installation. The report is written for the solar business, which is the one the ads are about.\n\nYou can verify every line yourself:\n\n  https://adstransparency.google.com/advertiser/AR08105928276372881409?region=IN\n  https://validator.w3.org/nu/?doc=http://suryarenewable.com/&showsource=yes\n\nHappy to walk you through what I found on a 10-minute call - or just keep the report, no strings attached.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
+          "delay_after_previous_days": 0,
+          "draft_created_at": "",
+          "draft_id": "",
+          "due_date": "",
+          "kind": "initial",
+          "message_id": "",
+          "sent_at": "",
+          "status": "pending",
+          "step": 0,
+          "subject": "Surya Renewable: your Google Ads conversion label is still the template placeholder",
+          "thread_id": ""
+        }
+      ],
+      "thread_id": "",
+      "thread_subject": "Surya Renewable: your Google Ads conversion label is still the template placeholder",
+      "to": "info@suryarenewable.com",
+      "website": "http://suryarenewable.com/"
+    },
+    {
+      "city": "Hyderabad",
+      "company": "Milestone Solarcom Private Limited",
+      "contact_note": "Email and phone read live on 2026-11-10: milestonesolarcomsales@gmail.com (published on the site) and milestonesolarcom@gmail.com (registered address), +91 9030005033 / +91 9246527527. TGREDCO empanelled supplier registration TSRE180047.",
+      "mails_sent": 0,
+      "next_followup_date": "",
+      "next_step": null,
+      "report_kind": "ads_only",
+      "steps": [
+        {
+          "body": "Hi,\n\nI spend my week reading the public ad-transparency records for the Telangana solar market, and I put together a short report on what Milestone Solar is doing right now.\n\nWhat it covers (pulled from Google's Ads Transparency Centre on 2026-11-10):\n\n  - 6 live ads under your advertiser record, identity-verified as ZAHEERUDDIN JAVEED MOHAMMED, trading as Milestone Solarcom\n  - the ads point at milestonesolar.in, which I confirmed on the advertiser record\n  - I also found you independently on the TGREDCO 2026 empanelled-supplier register under registration TSRE180047, which is the third-party confirmation I look for\n\nSix live ads is real commitment, so I will be direct about what happens after the click.\n\nYour homepage presents four trust counters, and all four read zero. 'Years of experience 0+'. 'Installations 0+'. 'Happy Customers 0%'. 'Customer Support 0/7'. They sit directly beside a '1,248 reviews' Google badge, so the two halves of the same screen contradict each other. A buyer who scrolls to the proof section sees four zeros and then a review count they cannot click through to.\n\nSecond, your click-to-call link is broken. The W3C checker reports 'Bad value tel:+91 9030005033 for attribute href on element a: Illegal character after tel:. Space is not allowed'. There is a space inside the href, so the number cannot be dialled from the page. On a site whose meta description opens 'Looking for best solar company in Hyderabad?' - the exact phrase your six ads are buying - the phone number does not work.\n\nThird, the checker reports 128 errors, and 100 of them are elements sitting where they are not allowed: 55 <p> tags inside <span>, 22 <h3> inside <span>, 15 <h2> inside <span> and 7 <ul> inside <span>. That is what is breaking the counters.\n\nOn measurement: your Meta Pixel (1132764258717771) is confirmed and working, which is more than most of the leads I write to. Site Kit by Google is installed too, but I could not read a GA4 or Google Ads measurement ID in your head, so the spend behind six Google ads has no confirmed measurement behind it. That is the first thing worth checking.\n\nTo be fair to you, the capability underneath is real and unusually broad: off-grid and on-grid SPV plants, hybrid plants, solar micro and mini grids, street lighting, fencing, water heating and water pumping - and a government empanelment registration to back it, which most competitors cannot show. The offer is not the problem. The page that has to carry it is.\n\nTwo small things that undermine the rest: your Open Graph site name is set to a hyphen, so every share of your homepage is attributed to '-', and your conversion copy carries 'top solar comapy in hyderabad', 'This Shceme' and 'Sustanability Focused'.\n\nYou can verify every line yourself:\n\n  https://adstransparency.google.com/advertiser/AR10713925876992442369?region=IN\n  https://validator.w3.org/nu/?doc=https://www.milestonesolar.in/&showsource=yes\n\nHappy to walk you through what I found on a 10-minute call - or just keep the report, no strings attached.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
+          "delay_after_previous_days": 0,
+          "draft_created_at": "",
+          "draft_id": "",
+          "due_date": "",
+          "kind": "initial",
+          "message_id": "",
+          "sent_at": "",
+          "status": "pending",
+          "step": 0,
+          "subject": "Milestone Solar: 6 live Google ads, and every trust counter on the landing page reads zero",
+          "thread_id": ""
+        }
+      ],
+      "thread_id": "",
+      "thread_subject": "Milestone Solar: 6 live Google ads, and every trust counter on the landing page reads zero",
+      "to": "milestonesolarcomsales@gmail.com",
+      "website": "https://www.milestonesolar.in/"
     }
   ]
 }
