@@ -260,10 +260,100 @@ appear there with matching details. This is exactly the kind of second source
 the standing "everything real live data" rule requires, and it should be
 cited in each audit PDF.
 
-## Next step
+## Done — audits, drafts and gates (2026-11-10)
 
-Build Ksquare 5-page ads-only audits + claude-ads control reviews for the
-three leads above, following `AUDIT_FORMAT_STANDARD.md` and the batch-11
-pattern (`build_batch11_ksquare.py`). Measure each site fresh — do not reuse
-batch-11 figures. All three sites need their own W3C validator run and pixel
-scan.
+`01-LEADS/build_batch13_ksquare.py` holds every measurement below as the single
+source of truth; re-run it rather than re-fetching.
+
+| Lead | Score | Issues | Controls (P/F/U) | Pages |
+|---|---|---|---|---|
+| Aadithya Solar Energies | 33/100 | 13 | 3/5/7 | 5 |
+| SunX Solar and Renewable Solutions | 15/100 | 6 | 2/4/9 | 5 |
+| The Arka Solar Power | **n/a — site not read** | 2 | 3/4/8 | 5 |
+
+**Site measurements taken fresh on 2026-11-10** (W3C Nu checker with
+`showsource=yes` + direct fetches):
+
+- **Aadithya** — WordPress 7.0.8, `eergx` theme, Elementor, Contact Form 7 6.1.6.
+  Whole `<head>` read (source lines 1–122): **no Meta Pixel, GA4, GTM, Google Ads
+  tag, Open Graph block or JSON-LD**. Meta description is the theme default
+  `"Solar Energy WordPress Theme"`. 4 separate `<h1>` elements. **55 errors, 10
+  warnings, 59 info.** `/contact/` still prints the placeholder phone
+  **(229) 555-0109**, labels the email link `example@email.com`, points
+  "explore more" / "Discover More" / the service and "About" links at
+  `themexriver.com`, serves images from the theme demo's uploads folder, exposes
+  a Google Maps Static API key in the page, and lists two different addresses.
+  Ad `1596852225147259` is a **Telugu video** whose "Book now" goes to
+  `http://fb.me/`.
+- **SunX** — hand-written static HTML. **2 errors, 1 warning.** Full Open Graph +
+  Twitter cards, favicons, webmanifest and a `LocalBusiness` JSON-LD block with
+  both phones, the Serilingampally address, Mon–Sat 09:30–19:00 hours and
+  `sameAs` links — but **no pixel of any kind**. H1 "Clean power your building
+  makes for itself". A `/calculator` savings tool and a `/sales` quote form.
+  Ad `1113916408287479` goes to **Instagram**, and tells people to call
+  8333075151 while the site publishes +91 99121 27174.
+- **Arka** — **could not be read at all**: the W3C checker returned
+  `java.io.EOFException` for the homepage, the `www` host and an inner page, and
+  a direct fetch returned HTTP 500 for the homepage and two inner pages. Every
+  website field is therefore stored as `None` and renders as "not checked in this
+  pass". **No score is claimed** — `calculate_audit_score()` returns `0` when
+  nothing is measurable, and a `0/100` would have read as "this site is
+  flawless", the opposite of the truth. `audit_pdf.py` now renders `N/A` for a
+  `None` score.
+
+### Defects found and fixed in `audit_pdf.py` while building these
+
+1. **`score_verdict()` / `score_bar()` / `stat_tiles()` / `score_panel()`** crashed
+   or mis-rendered a `None` score. A `None` score now renders `N/A` with the
+   label "AUDIT SCORE (SITE NOT READ)" and no bar.
+2. **`verification_log()`** interpolated `html_errors` into a sentence that
+   assumes it is a short count ("The checker raised *55 errors, 10 warnings…*").
+   For Arka it is a whole sentence, which produced gibberish. It now branches on
+   length.
+3. **`next_steps()`** fell back to *"Scale with Google + Meta ads — tracking and
+   conversion basics are in place"* when nothing was measurable, which is a claim
+   the data cannot support. It now recommends finishing the unread checks instead.
+4. **`next_steps()` off-site detection was broken**: it split the site URL on
+   `/` and took the last element, which is `""` for every one of these URLs
+   (they all end in a trailing slash) — so the single most important finding
+   never reached the action plan. It now parses the hostname out with a regex,
+   also treats `instagram.com` as off-site, and inserts the destination fix
+   **first** because it is priority #1 in "Top priorities".
+5. **`build_story()`'s closing block was not grouped**, so the disclaimer stranded
+   itself alone on a 6th page (the bug already fixed in `build_ads_only_story()`).
+   Wrapped in `KeepTogether`.
+6. **Duplicate step** — the unread-head fallback and the tracking top-up produced
+   the same recommendation twice. De-duplicated by title.
+
+### Gmail drafts created (owner sends them)
+
+| Lead | To | Draft ID | Thread ID | Attachment |
+|---|---|---|---|---|
+| Aadithya Solar Energies | info@aadithyasolarenergies.com | `r8177193688100792771` | `1a1c31262722f32b` | PDF attached |
+| SunX Solar and Renewable Solutions | nitish@sunxsolarsolutions.in | `r1703710028004618988` | `1a1c312cd345bd63` | **none — see below** |
+| The Arka Solar Power | info@arkasolarpower.com | `r-4579480920326830086` | `1a1c3126393dd49f` | PDF attached |
+
+**SunX's PDF was blocked by the Gmail connector's security filter** when the
+draft was created. The draft exists and is complete except for the attachment;
+attach `02-OUTREACH/ads_only_pdfs/audit_SunX_Solar_and_Renewable_Solutions.pdf`
+manually in Gmail before sending. The reason is also recorded in
+`sequence_manifest.json` under the sequence's `attachment_note`.
+
+### Gate results
+
+- `verify_report.py --ads-only` — **ALL 43 PASS**
+- `verify_live.py --offline` — **MATCH 43 / DRIFT 0 / UNREACHABLE 0**
+- `tests_sequence.py` — **17/17 OK**
+- Report-reviewer content review — **no defects** in the three new reports
+- Page-fit (`measure_gaps.py`): Aadithya worst tail 14.1%, SunX 19.7%,
+  Arka 9.6% — all 5 pages. Batch-10/11 reports re-rendered unchanged in page
+  count (Lotus and Rayzon improved from 33.6% to 29.5%).
+- `verify_report.py --all` reports 3 pre-existing FAILs — Ecolt Energy, Orizen
+  Solar Innovations and Ray On Solar Systems, all in `audit_pdfs/`, all flagged
+  only for being 18–19 KB text-only sandbox builds. **Untouched by this batch**
+  and already documented in `AUDIT_PDF_INDEX.md`.
+
+**Still blocked for the owner:** the sandbox has no outbound TLS, so
+`verify_live.py`'s network checks (Meta `?id=` liveness, site re-fetch, W3C
+error counts) cannot run here. Run the full live re-check before anything is
+sent.
