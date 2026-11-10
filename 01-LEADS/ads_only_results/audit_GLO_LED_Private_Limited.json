@@ -1,0 +1,250 @@
+{
+  "company": "GLO LED Private Limited",
+  "legal": "GLO LED Private Limited",
+  "city": "Kukatpally, Hyderabad 500072 (Khammam outlet)",
+  "website": "https://gloled.co/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-10",
+  "generated_at": "2026-11-10",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website (page source read through the W3C Nu HTML Checker)",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "1 live ad",
+      "query": "solar + Telangana city keyword search",
+      "ads": [
+        {
+          "library_id": "2177815426280429",
+          "library_url": "https://www.facebook.com/ads/library/?id=2177815426280429",
+          "page_name": "GloledKhammam",
+          "started": "Oct 29, 2026",
+          "destination": "https://gloled.co/ - confirmed on the ad card",
+          "text": "Video ad. Copy verbatim from the card:\n\nNeed Solar Street Lights in Bulk in Khammam?\n\nGLOLED Solar Street Lights are suitable for contractors, builders, layouts, industries, institutions and large project requirements.\n\nBulk Orders Welcome\nMultiple Wattages Available\nSuitable for Roads, Layouts & Projects\nReliable Solar Lighting Solutions\nSpecial Pricing for Bulk Requirements\nKhammam & Nearby Areas\n\nHave a bulk requirement? Send your requirement today and get a quotation from our team.\n\nCall / WhatsApp: 70365 33794\n\nHeadline on the card: 'Solar Street Lights - Bulk Orders in Khammam | Bulk & Project Requirements | Call 70365 33794'"
+        }
+      ]
+    },
+    "summary": "1 live Meta ad confirmed on 2026-11-10 by opening each library ID directly. Google Ads Transparency records were not checked in this pass."
+  },
+  "funnel": {
+    "destination": "https://gloled.co/ - confirmed on the ad card",
+    "note": "Ad destination as shown on the live ad card, or recorded as unconfirmed where the card did not render."
+  },
+  "findings": [],
+  "next_steps": [],
+  "contact_facts": "Corporate office 5-5-35/45, Prasanthi Nagar, Kukatpally, Hyderabad, Telangana 500072 | Factory 1A & 1B Type II, TSIIC Prasanthi Nagar, IE Kukatpally, Hyderabad 500072 | SMT unit 5-5-35/40, Prasanthi Nagar, Kukatpally, Hyderabad 500072 | Singapore office 107 C Tampines Road The Tembusu Unit 01-20 Singapore 534007 | Khammam outlet 11-10-268/6/A/1, near New RTC Bus Stand, Raparthi Nagar, Khammam, Telangana 507001, +91 7036971733 | care@gloled.co | 9553550700 (India) / +44 7587 011245 (UK) / +91 9441051844 / +91 9989274877",
+  "contact": {
+    "phone": "+91 9553550700",
+    "email": "care@gloled.co",
+    "whatsapp": ""
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://gloled.co/",
+    "audit_date": "2026-11-10",
+    "pixels": {
+      "meta_pixel": false,
+      "google_ads": false,
+      "google_analytics_ga4": false,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
+      "microsoft_clarity": false,
+      "hotjar": false,
+      "google_tag_manager": false
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": null,
+      "has_cta_buttons": 5,
+      "has_live_chat": null,
+      "has_popup_optin": true,
+      "has_testimonials": null,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": false,
+      "title_text": "",
+      "title_length": 0,
+      "has_meta_description": null,
+      "meta_desc_length": null,
+      "h1_count": null,
+      "h1_text": "",
+      "has_og_tags": null,
+      "has_schema": null,
+      "has_favicon": null,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": true
+    },
+    "platform": "WordPress (block-theme --wp--preset--* CSS variables), Elementor, Max Mega Menu, Popup Maker, MyStickyWelcomeBar, 10Web Speed Optimizer, Font Awesome 5, Google Fonts Montserrat / Odor Mean Chey / Roboto",
+    "html_errors": "4 errors, 5 warnings, 0 info on the homepage. Errors: no doctype before the start tag; two CSS negative padding values (-4em and -2px); and the head is missing a required <title> element. Warnings: a redundant type attribute on two style elements, a Unicode Private Use Area glyph, a redundant type attribute on a JavaScript resource, and no lang attribute on the html start tag.",
+    "score": {
+      "score": 15,
+      "issues": [
+        "The homepage has no <title> element at all - the W3C checker reports 'Element head is missing a required instance of child element title'.",
+        "Your Khammam ad sends people to gloled.co, where the only Khammam content is one line in a fourteen-outlet list on /contact-us/.",
+        "The landing page opens with no doctype before the start tag and carries two CSS rules with negative padding values (-4em and -2px).",
+        "The contact form is a Zoho Forms embed that asks for a Sales Rep Name before it will accept an enquiry, and its widget markup carries Zoho's own error strings, including 'Your form has been deactivated.'",
+        "No prices are published anywhere - the catalogue is a PDF and the only pricing language on the site is the ad's 'Special Pricing for Bulk Requirements'.",
+        "No Meta Pixel installed — can't run retargeting or track ad conversions",
+        "No Google Ads / GTM tracking — can't measure ad performance",
+        "No Google Analytics — flying blind on website traffic"
+      ],
+      "wins": [
+        "Contact form exists",
+        "Good CTA presence (5 buttons)"
+      ]
+    }
+  },
+  "audit_date": "2026-11-10",
+  "site_evidence": {
+    "pixel": false,
+    "ga4": false,
+    "gtm": false,
+    "google_ads_tag": false,
+    "checked_on": "2026-11-10",
+    "note": "Landing-page source read live on 2026-11-10 through the W3C Nu HTML Checker (validator.w3.org/nu/?doc=<url>&showsource=yes), which returns the served HTML with script tags intact, plus a direct fetch of the same pages. Tags found: no Meta Pixel, GA4, GTM or Google Ads tag confirmed."
+  },
+  "promise_gap": [
+    [
+      "Ad: 'Need Solar Street Lights in Bulk in Khammam? ... Bulk Orders Welcome, Multiple Wattages Available, Suitable for Roads, Layouts & Projects, Reliable Solar Lighting Solutions, Special Pricing for Bulk Requirements, Khammam & Nearby Areas. Call / WhatsApp: 70365 33794.'",
+      "The bulk, multi-wattage and project claims are backed - gloled.co carries a Solar Lights product line, a Projects page and a catalogue PDF, and the Khammam outlet at 11-10-268/6/A/1 near the New RTC Bus Stand is listed on /contact-us/. But the ad sends the click to https://gloled.co/, where the Khammam address is one line among fourteen outlets and there is no price, no wattage table and no bulk-order form. The phone number in the ad, 70365 33794, is not one of the numbers published on the site."
+    ],
+    [
+      "Ad: 'Send your requirement today and get a quotation from our team.'",
+      "The only route to a quotation is a Zoho Forms embed that asks for a Sales Rep Name and a CAPTCHA before it will accept the enquiry, and whose widget markup carries Zoho's own error strings including 'Your form has been deactivated.' There is no price list to compare against."
+    ],
+    [
+      "Ad destination: https://gloled.co/ - confirmed on the ad card.",
+      "The site itself has no <title> element on the homepage, no doctype before the start tag and two CSS rules with negative padding values, so the page the ad pays for is the least finished asset in the funnel. The Khammam outlet is a real, verifiable presence - it is on /contact-us/ with a Google Maps directions link - but nothing on the landing page points at it."
+    ]
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "No Meta Pixel code found in the landing-page source - ad clicks cannot be measured or retargeted."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "All 1 live ads use a single format (video) - no format variety to test what converts."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad copy could not be read for these ads."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Oct 29, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "fail",
+        "evidence": "A single live ad - no internal comparison, no safety net if it fatigues."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: captured destination."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 2,
+      "fail": 4,
+      "unknown": 9,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

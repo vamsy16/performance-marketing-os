@@ -346,9 +346,26 @@ def next_steps(audit):
         _seen.add(_title)
         _unique.append((_title, _body))
     steps = _unique
-    while len(steps) < 4:
-        steps.append(("Book a 10-minute call to walk through this report",
-                      "Bring the report - every line in it can be re-checked live while we talk."))
+    # Top up to the 4-step plan, never reusing a title already in it. A plain
+    # "while len(steps) < 4" here repeats the same filler step when an earlier
+    # branch already used that title, which is how a plan ends up telling the
+    # reader to book the same call twice.
+    _fillers = [
+        ("Book a 10-minute call to walk through this report",
+         "Bring the report - every line in it can be re-checked live while we "
+         "talk."),
+        (f"Re-run this audit after 30 days (this one is dated "
+         f"{audit.get('audit_date') or ''})",
+         "Ad creative, destination and site tags all move. A second read shows "
+         "whether the first fixes actually landed."),
+    ]
+    for _title, _body in _fillers:
+        if len(steps) >= 4:
+            break
+        if _title in _seen:
+            continue
+        _seen.add(_title)
+        steps.append((_title, _body))
     return steps[:4]
 
 
@@ -846,17 +863,28 @@ def verification_log(audit):
          "not run"),
     ]
     if unchecked:
-        _errs = str(site.get("html_errors") or "")
-        if _errs and len(_errs) < 90:
-            _why = (f"The checker raised {_errs}, and the message list filled "
-                    "the whole report, so the page head was never returned. "
-                    "Those tools are reported as not checked, not as missing.")
-        else:
+        # Three genuinely different situations, told apart by an explicit flag
+        # on the site dict rather than by the length of a free-text field:
+        #   head_unread      - the page WAS read, only the <head> scripts were
+        #                      not returned
+        #   score_unavailable- the page could not be retrieved at all
+        #   neither          - some other reason the tags were not read
+        if site.get("head_unread"):
+            _why = ("The page itself was read - title, meta description, Open "
+                    "Graph tags, error counts, plugin stack and every content "
+                    "check below are measured. But the served HTML carries "
+                    "very large inline stylesheets, so the <head> script tags "
+                    "ran past what could be returned. Those tracking-tag "
+                    "checks are reported as not checked, not as missing.")
+        elif site.get("score_unavailable"):
             _why = ("The page itself could not be retrieved in this pass - the "
                     "W3C checker returned an IO error and a direct fetch "
                     "returned HTTP 500 - so no tag, error count or figure is "
                     "claimed for it. Those tools are reported as not checked, "
                     "not as missing.")
+        else:
+            _why = ("The <head> was not returned in this pass, so those checks "
+                    "are reported as not checked, not as missing.")
         rows.insert(1, (
             f"Tracking tags ({unchecked} of {len(pixels)} could not be read)",
             _why,

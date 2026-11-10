@@ -1,0 +1,260 @@
+{
+  "company": "Microb Energies",
+  "legal": "Microb Energies",
+  "city": "Peerzadiguda, Uppal, Hyderabad 500039",
+  "website": "https://microbenergies.com/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-10",
+  "generated_at": "2026-11-10",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website (page source read through the W3C Nu HTML Checker)",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 2,
+      "results_label": "2 live ads",
+      "query": "solar + Telangana city keyword search",
+      "ads": [
+        {
+          "library_id": "2147291065897730",
+          "library_url": "https://www.facebook.com/ads/library/?id=2147291065897730",
+          "page_name": "microb_energies",
+          "started": "Nov 5, 2026",
+          "destination": "Instagram (instagram.com/microb_energies), confirmed on the ad card",
+          "text": "Video ad. Copy verbatim from the card:\n\n300 FT DEEP. 5 HP POWER. BUILT FOR PERFORMANCE.\n\nAnother successful installation at Siddipet, Telangana!\n\nToday, the MICROB ENERGIES team successfully installed a complete 5HP Solar Water Pumping System, designed to deliver reliable water pumping even at a depth of 300 feet.\n\nDeep borewell. Demanding conditions. Consistent performance.\n\nWhen the challenge goes deeper, MICROB ENERGIES delivers confidence through intelligent solar pump control technology.\n\nMICROB ENERGIES\nEngineered for Performance. Designed for Reliability.\nDesigned. Engineered. Manufactured in India.\n\n#MicrobEnergies #SolarWaterPump #SolarPumpController #5HPSolarPump #Siddipet\n\nCTA on the card: 'Visit Instagram profile'"
+        },
+        {
+          "library_id": "1867351030942485",
+          "library_url": "https://www.facebook.com/ads/library/?id=1867351030942485",
+          "page_name": "microb_energies",
+          "started": "Nov 6, 2026",
+          "destination": "Instagram (instagram.com/microb_energies), confirmed on the ad card",
+          "text": "Video ad. Copy verbatim from the card:\n\nNo need to spend money on a new motor! You can run the motor you already have on your farm with solar.\n\nMicrob Energies brings you the right controller solution tailored to your needs. Options that work with both solar and grid power (electricity) are also available!\n\nComplete Setup & Support: Full installation across Telangana by our expert team.\n5-Year Warranty: No compromise on quality!\n\nCTA on the card: 'Visit Instagram profile'"
+        }
+      ]
+    },
+    "summary": "2 live Meta ads confirmed on 2026-11-10 by opening each library ID directly. Google Ads Transparency records were not checked in this pass."
+  },
+  "funnel": {
+    "destination": "Instagram (instagram.com/microb_energies), confirmed on the ad card",
+    "note": "Ad destination as shown on the live ad card, or recorded as unconfirmed where the card did not render."
+  },
+  "findings": [],
+  "next_steps": [],
+  "contact_facts": "Kuruma Nagar, Plot No. 11 & 12, Street Number 4, Phase II, Peerzadiguda, Uppal, Hyderabad, Telangana 500039 | Info@microbenergies.com | +91 95053 73125 | Mon-Sat 9:30 to 6:00, Sunday closed",
+  "contact": {
+    "phone": "+91 9505373125",
+    "email": "Info@microbenergies.com",
+    "whatsapp": ""
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://microbenergies.com/",
+    "audit_date": "2026-11-10",
+    "pixels": {
+      "meta_pixel": false,
+      "google_ads": false,
+      "google_analytics_ga4": true,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
+      "microsoft_clarity": false,
+      "hotjar": false,
+      "google_tag_manager": false
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": null,
+      "has_cta_buttons": 7,
+      "has_live_chat": true,
+      "has_popup_optin": null,
+      "has_testimonials": true,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Best Solar Water Pump Inverter for Farmers | Microb Energies",
+      "title_length": 57,
+      "has_meta_description": true,
+      "meta_desc_length": null,
+      "h1_count": null,
+      "h1_text": "",
+      "has_og_tags": true,
+      "has_schema": null,
+      "has_favicon": null,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": null
+    },
+    "platform": "WordPress with the 'homefort' theme 1.1.4, Elementor 4.3.6 + Elementor Pro, Royal Elementor Addons 1.7.1070, Slider Revolution 6.7.40, WooCommerce 10.6.2, Contact Form 7 6.1.5, LT Core / LT Ext, Hostinger Reach, The Events Calendar 6.18.3, Site Kit by Google, Trustindex review widget, Tawk.to live chat; Google Fonts Open Sans / Barlow / Roboto / Roboto Slab / Poppins",
+    "html_errors": "21 errors, 81 warnings, 104 info on the homepage. Errors include: two p end tags with no p element in scope; six bad xmlns values (https:// where http:// is required); a stray div end tag; a style element in body that is not its parent's first child; six style rules outside an @scope rule; and five heading-level skips (h3 after h1, h6 after h2 twice, h5 after h2, h5 after h3). Warnings include 68 redundant type attributes on JavaScript resources, nine on style elements, a warning that more than one h1 is in use, and three sections with no heading.",
+    "score": {
+      "score": 10,
+      "issues": [
+        "Your live ad promises a '5-Year Warranty' and the homepage repeats '5 Years Product Warranty', but your own FAQ on /contacts/ says 'We offer 12-24 months warranty depending on the model'.",
+        "Both live ads point at instagram.com/microb_energies, so nobody who clicks an ad about a 5HP pump at Siddipet reaches microbenergies.com.",
+        "Three homepage links go to the wrong page: 'Solar Water Pump Inverter / Controller' to /services/heat-pump/, 'Zero Fuel Cost' to /services/projecting-4/, 'Rooftop Solar' to /services/diagnostic-and-repair/.",
+        "The 'Power Your Future with Rooftop Solar' block reuses the agricultural copy word for word.",
+        "The contact form has no email field at all, and the testimonials heading is spelled 'Cilent Testimonials'.",
+        "No Meta Pixel installed — can't run retargeting or track ad conversions",
+        "No Google Ads / GTM tracking — can't measure ad performance"
+      ],
+      "wins": [
+        "Google Analytics is installed",
+        "Contact form exists",
+        "Good CTA presence (7 buttons)",
+        "Live chat present",
+        "Testimonials visible"
+      ]
+    }
+  },
+  "audit_date": "2026-11-10",
+  "site_evidence": {
+    "pixel": false,
+    "ga4": true,
+    "gtm": false,
+    "google_ads_tag": false,
+    "checked_on": "2026-11-10",
+    "note": "Landing-page source read live on 2026-11-10 through the W3C Nu HTML Checker (validator.w3.org/nu/?doc=<url>&showsource=yes), which returns the served HTML with script tags intact, plus a direct fetch of the same pages. Tags found: GA4 / Google tag."
+  },
+  "promise_gap": [
+    [
+      "Ad: '300 FT DEEP. 5 HP POWER. BUILT FOR PERFORMANCE. Another successful installation at Siddipet, Telangana! ... 5HP Solar Water Pumping System, designed to deliver reliable water pumping even at a depth of 300 feet.'",
+      "The site backs the product: /solar-water-pump-controllers/ covers 1HP-10HP MPPT controllers with dry-run protection, and the FAQ gives panel sizing for 1 HP (~1.2 kW), 3 HP (~3.5 kW) and 5 HP (~5.5 kW). What the site does not back is the warranty. The ad says '5-Year Warranty' and the homepage says '5 Years Product Warranty', but the FAQ on /contacts/ says 'We offer 12-24 months warranty depending on the model' - and separately gives the controller's *lifespan* as '5 years or more'. The ad has turned a lifespan figure into a warranty promise."
+    ],
+    [
+      "Ad destination: instagram.com/microb_energies, on both live ads.",
+      "The website is far the stronger asset: a fifteen-question FAQ, efficiency and protection specifications, hybrid solar-plus-grid models, optional GSM/IoT monitoring, and a 'Get a Free Solar Project Consultation' CTA. None of it is reachable from the ad."
+    ],
+    [
+      "Ad: 'MICROB ENERGIES. Engineered for Performance. Designed for Reliability. Designed. Engineered. Manufactured in India.'",
+      "The site does claim an in-house manufacturing facility in Hyderabad and MNRE certification. But three of the homepage's own service links point at the wrong pages - /services/heat-pump/, /services/projecting-4/ and /services/diagnostic-and-repair/ - so a visitor who tries to read about the product is sent to a heat-pump or a repair page instead."
+    ]
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "No Meta Pixel code found in the landing-page source - ad clicks cannot be measured or retargeted."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "All 2 live ads use a single format (video) - no format variety to test what converts."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "Only 2 offer angles in live copy (warranty, installation speed) - every ad says the same thing."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Nov 6, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "2 distinct live ads visible - a comparison is at least possible."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: captured destination."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 3,
+      "fail": 4,
+      "unknown": 8,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}
