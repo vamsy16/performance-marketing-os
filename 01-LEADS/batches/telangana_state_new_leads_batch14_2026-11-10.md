@@ -239,3 +239,167 @@ are a solar street-light supplier, an LED/solar street-light manufacturer and a
 solar water-pump company. They pass the standing qualification gate but they are
 a different segment from the previous 49 leads, and the owner should know that
 before any of them is pitched.
+
+## Audits built (2026-11-10) — 3 reports, all gates pass
+
+Single source of truth: **`01-LEADS/build_batch14_ksquare.py`**. Re-run it, never
+re-fetch.
+
+| Company | City | Score | Issues | Wins | Controls | Pages |
+|---|---|---|---|---|---|---|
+| GLO LED Private Limited | Khammam | **15/100** | 8 | 2 | 2P/4F/9U | 5 |
+| UDK Electrical Industries Private Limited | Sangareddy | **10/100** | 7 | 6 | 2P/5F/8U | 5 |
+| Microb Energies | Hyderabad | **10/100** | 7 | 5 | 3P/4F/8U | 5 |
+
+### Gate results
+
+| Gate | Command | Result |
+|---|---|---|
+| Gate 1 | `verify_report.py --ads-only` | **PASS — 46/46** |
+| Gate 2 | report-reviewer (run manually against the three new JSONs + PDFs) | **PASS — no defects** |
+| Gate 3 | `verify_live.py --offline` | **MATCH 46/46, DRIFT 0** |
+
+Gate 3 must still be re-run by the owner **without** `--offline` before any
+email goes out — this sandbox has no outbound TLS.
+
+### What was actually measured, per lead
+
+**GLO LED Private Limited — gloled.co**
+- `<head>` fully read (source lines 521-583). **Zero of the 8 tracking tools.**
+  The only analytics script is a cookieless Cloudflare Web Analytics beacon
+  (`static.cloudflareinsights.com/beacon.min.js`, token
+  `7dccf4e368ce442cb6b0b89e5875a997`) — it counts pageviews but cannot retarget
+  anyone or record a conversion.
+- **No `<title>` element on the homepage at all** — the W3C checker reports
+  "Element head is missing a required instance of child element title".
+- 4 HTML errors, 5 warnings, 0 info: no doctype before the start tag; two CSS
+  negative padding values (-4em, -2px); the missing title.
+- WordPress + Elementor + Max Mega Menu + Popup Maker + MyStickyWelcomeBar +
+  10Web Speed Optimizer + Font Awesome 5.
+- Conversion strength: Zoho Forms contact form (Name, Sales Rep Name, Mobile,
+  Email, My Requirements, CAPTCHA), click-to-call on every number, 5 CTAs,
+  popup capture, Google Maps directions links for the corporate office, the
+  factory, the SMT unit, the Singapore office and all 14 outlets.
+- No prices published anywhere.
+
+**UDK Electrical Industries Private Limited — udkindustries.com**
+- `<head>` fully read (source lines 79-340). **Google tag GT-W6XX8MT via Site
+  Kit by Google 1.191.0 is the only tracking present** — 7 of 8 tools missing.
+- WordPress 7.1.4 on GoDaddy managed WordPress, Zakra theme 4.3.3, WooCommerce
+  11.2.2, Elementor + Essential Addons 6.8.8, Yoast SEO, Everest Forms,
+  Magical Products Display 2.1.3, Animated Floating Chat Button 1.0.3, WP
+  Google Places Review Slider 18.11.
+- **`/contact/` is still the Zakra theme's demo content** — address "Moon
+  Street , 446 Jupiter, JP 44600", emails "zakra@demos.com" and
+  "first.last@demos.com", phones "+(123) 456-7890" and "+977 123-456789",
+  lorem-ipsum body copy. The real Sangareddy address and 08455-456614 are
+  nowhere on it.
+- A hard-coded Google Maps API key is exposed in the `/contact/` source
+  (`AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y`).
+- A second JSON-LD Organization block has `"url": "https://yourwebsite.com"`.
+- 7 HTML errors, 0 warnings, 72 info, including a second `<head>` start tag
+  with a `<title>` inside it, a `meta` between head and body, and an illegal
+  `|` in the Google Fonts query string.
+- Google review slider: 4.8 from 63 reviews (place ID
+  ChIJGYW_eKj5yzsRkCDf_ODm78s).
+- The homepage's "South India's No.1 LED Lights Manufacturer" is unverifiable.
+
+**Microb Energies — microbenergies.com**
+- `<head>` fully read (source lines 124-154). **Google tag GT-PZX459FK via Site
+  Kit by Google is the only tracking present** — 7 of 8 tools missing.
+- WordPress with the 'homefort' theme 1.1.4, Elementor 4.3.6 + Pro, Royal
+  Elementor Addons 1.7.1070, Slider Revolution 6.7.40, WooCommerce 10.6.2,
+  Contact Form 7 6.1.5, LT Core / LT Ext, Hostinger Reach, The Events Calendar
+  6.18.3, Trustindex, Tawk.to.
+- **WARRANTY CONTRADICTION** — the live ad says "5-Year Warranty" and the
+  homepage says "5 Years Product Warranty", but the FAQ on `/contacts/` says
+  "We offer 12-24 months warranty depending on the model", and separately gives
+  the controller's *lifespan* as "5 years or more".
+- Three homepage links point at the wrong pages: `/services/heat-pump/`,
+  `/services/projecting-4/`, `/services/diagnostic-and-repair/`.
+- The rooftop-solar block reuses the agricultural copy verbatim.
+- The contact form has no email field. The testimonials heading reads "Cilent
+  Testimonials".
+- 21 HTML errors, 81 warnings, 104 info, including five heading-level skips and
+  more than one h1.
+
+### Bugs found and fixed in `audit_pdf.py` while building these
+
+1. **`verification_log()` told a false story.** It chose its "why the tracking
+   tags are unknown" sentence from the *length* of the `html_errors` string.
+   Any site whose error text ran past 90 characters got the Arka boilerplate —
+   "the W3C checker returned an IO error and a direct fetch returned HTTP 500"
+   — which is simply untrue for GLO LED and MICROB, both of which were read in
+   full. Replaced with an explicit `head_unread` flag so the three genuinely
+   different situations are told apart by fact, not by string length.
+2. **`next_steps()` could print the same step twice.** The dedupe ran, then a
+   trailing `while len(steps) < 4` re-appended the "Book a 10-minute call"
+   filler without checking whether that title was already used, so GLO LED's
+   action plan told the reader to book the same call twice. The top-up now
+   tracks the titles it has already used.
+
+### Defects found and fixed in the new build script
+
+1. The UDK `destination` string (a 200-character explanation) was interpolated
+   verbatim into `next_steps()` step 1, where it read as gibberish
+   mid-sentence. Shortened on the ad card; the full explanation lives in the
+   promise-gap table.
+2. The PDF filename is derived from the company's *legal* name while the JSON
+   filename is derived from the lead key, so
+   `audit_UDK_Electrical_Industries_Private_Limited.pdf` and
+   `audit_Microb_Energies.pdf` had no matching JSON stem. This silently dropped
+   the score and audit date from `AUDIT_PDF_INDEX.md` for both. Fixed in
+   `02-OUTREACH/build_audit_pdf_index.py` with a normalised company-name
+   fallback, and verified across all 46 ads-only PDFs with zero mismatches.
+
+### Files touched
+
+- `01-LEADS/build_batch14_ksquare.py` — new, single source of truth
+- `01-LEADS/ads_only_results/audit_GLO_LED_Private_Limited.json` — new
+- `01-LEADS/ads_only_results/audit_UDK_Electrical_Industries.json` — new
+- `01-LEADS/ads_only_results/audit_MICROB_Energies.json` — new
+- `02-OUTREACH/ads_only_pdfs/audit_GLO_LED_Private_Limited.pdf` — new
+- `02-OUTREACH/ads_only_pdfs/audit_UDK_Electrical_Industries_Private_Limited.pdf` — new
+- `02-OUTREACH/ads_only_pdfs/audit_Microb_Energies.pdf` — new
+- `01-LEADS/audit_pdf.py` — the two bug fixes above
+- `01-LEADS/leads.csv` — 49 → 52 rows
+- `02-OUTREACH/generated_emails/sequence_manifest.json` — 49 → 52 sequences,
+  each with a step-0 email written, then marked `draft` once the Gmail drafts
+  were created and confirmed
+- `02-OUTREACH/AUDIT_PDF_INDEX.md` — regenerated: 55 PDFs / 52 companies /
+  23 scored
+- `02-OUTREACH/build_audit_pdf_index.py` — new index generator
+
+
+### Outreach — 3 step-0 drafts created 2026-11-10 (owner sends all three)
+
+Gmail connector tools were re-loaded with `list_connector_tools` in the same
+turn before use. **Replies were checked first** — `from:gloled.co`,
+`from:udkindustries.com` and `from:microbenergies.com` each returned zero
+messages with `search_scope.complete: true`, and `list_drafts` confirmed no
+draft already existed for any of the three. From address
+`smartpursuit3@gmail.com` (primary, verified).
+
+| Lead | To | Draft ID | Thread ID | Attachment |
+|---|---|---|---|---|
+| GLO LED Private Limited | care@gloled.co | `r170216386970583953` | `1a1c37a6f9f49ada` | audit_GLO_LED_Private_Limited.pdf (24,888 B) — **confirmed attached** |
+| UDK Electrical Industries | contact@udkindustries.com | `r-1697390660388353256` | `1a1c37a6d29317b8` | audit_UDK_Electrical_Industries_Private_Limited.pdf (25,126 B) |
+| MICROB Energies | Info@microbenergies.com | `r-5384001971505321700` | `1a1c37a6f32d43a1` | audit_Microb_Energies.pdf (25,288 B) |
+
+`create_draft` returns out of order and echoes back neither subject nor
+recipient, so **every draft was read back with `get_draft`** and matched to its
+lead by To + Subject before `sequence.py mark-draft` was run. The GLO LED draft
+was additionally read at `format: "full"` to confirm the PDF part — MIME part 1
+is `application/pdf`, filename `audit_GLO_LED_Private_Limited.pdf`, 24,888
+bytes, `Content-Disposition: attachment`.
+
+`mark-draft` run for all three. `tests_sequence.py` 17/17. Manifest now
+**52 sequences / 199 steps — 90 sent / 34 draft / 75 pending**. Follow-ups
+(steps 1–3) are all `pending`, none pre-created.
+
+**Nothing has been sent.** All three drafts are unsent and the owner sends or
+schedules them.
+
+One thing to be aware of when scheduling: `sequence.py due` still lists
+**Valcan Solar step 1** (`r-4135467498809954457`). That draft is in the trash
+and the owner has said to leave it alone, so it has not been touched.
