@@ -856,6 +856,57 @@ def verification_log(audit):
     pixels = site.get("pixels") or {}
     unchecked = sum(1 for v in pixels.values() if v is None)
 
+    # The Google Ads Transparency row has to say what actually happened for
+    # THIS report: the centre was queried for most leads in the current
+    # batches, and a static "NOT CHECKED" line beside a live advertiser record
+    # contradicts the report it sits in.
+    google_own = (audit.get("ad_library") or {}).get("google_own") or {}
+    g_detail = google_own.get("detail") or {}
+    if google_own.get("found") and g_detail.get("ad_count"):
+        _google_row = (
+            "Google Ads Transparency advertiser record",
+            "adstransparency.google.com advertiser record read directly - "
+            + (g_detail.get("name") or "advertiser")
+            + (f" (ID {g_detail['advertiser_id']})"
+               if g_detail.get("advertiser_id") else "")
+            + f", {g_detail['ad_count']} live ads listed",
+            read_on)
+    elif google_own:
+        _google_row = (
+            "Google Ads Transparency advertiser record",
+            "Queried on the advertised domain - no advertiser record was "
+            "found, so zero Google ads are claimed here.",
+            read_on)
+    else:
+        _google_row = (
+            "Google Ads Transparency advertiser record",
+            "NOT CHECKED - the centre was not queried, so no Google Ads "
+            "activity is claimed here.",
+            "not run")
+
+    # Same for the competitor sweep: claim it only when one was captured.
+    meta_comp = (audit.get("ad_library") or {}).get("meta_competitors") or {}
+    comp_ads = meta_comp.get("ads") or []
+    if comp_ads:
+        _comp_row = (
+            "Competitor ad activity and ad counts",
+            "Meta Ad Library competitor sweep - '"
+            + (meta_comp.get("query") or "") + "', "
+            + (meta_comp.get("results_label") or "") + ", "
+            + f"{len(comp_ads)} creatives captured and reproduced",
+            meta_comp.get("captured_on")
+            or (audit.get("ad_library") or {}).get("checked_at") or read_on)
+    elif meta_comp:
+        _comp_row = (
+            "Competitor ad activity and ad counts",
+            "Competitor sweep returned no usable creatives for this market.",
+            read_on)
+    else:
+        _comp_row = (
+            "Competitor ad activity and ad counts",
+            "NOT CHECKED - no Ad Library sweeps were run for this lead.",
+            "not run")
+
     rows = [
         ("Live ads, library IDs, start dates, ad copy",
          "Meta Ad Library (India, active ads) - every ID opened directly",
@@ -873,13 +924,8 @@ def verification_log(audit):
          "NOT AVAILABLE - keyless PageSpeed API returned 429. No speed "
          "figure is claimed anywhere in this report.",
          "not run"),
-        ("Google Ads Transparency advertiser record",
-         "NOT CHECKED - the centre was not queried, so no Google Ads "
-         "activity is claimed here.",
-         "not run"),
-        ("Competitor ad activity and ad counts",
-         "NOT CHECKED - no Ad Library sweeps were run for this lead.",
-         "not run"),
+        _google_row,
+        _comp_row,
         ("Sitemap page count and indexed pages",
          "NOT CHECKED - the sitemap was not fetched.",
          "not run"),

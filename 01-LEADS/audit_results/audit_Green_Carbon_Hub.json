@@ -1,176 +1,360 @@
 {
   "company": "Green Carbon Hub",
+  "legal": "Green Carbon Hub (Google ads verified under ECOILA PRIVATE LIMITED)",
   "city": "Hyderabad",
-  "website": "",
-  "no_website": true,
-  "audit_date": "Aug 30, 2026",
+  "website": "https://greencarbonhub.com/",
+  "ssl": true,
+  "load_time_seconds": null,
+  "final_url": "https://greencarbonhub.com/",
+  "audit_date": "2026-11-10",
+  "pixels": {
+    "meta_pixel": true,
+    "google_ads": false,
+    "google_analytics_ga4": false,
+    "google_analytics_ua": false,
+    "linkedin_insight": false,
+    "microsoft_clarity": false,
+    "hotjar": false,
+    "google_tag_manager": true
+  },
+  "conversion": {
+    "has_contact_form": true,
+    "has_phone_click": true,
+    "has_whatsapp_link": null,
+    "has_cta_buttons": 4,
+    "has_live_chat": true,
+    "has_popup_optin": false,
+    "has_testimonials": false,
+    "has_pricing_page_link": false
+  },
+  "seo": {
+    "has_title": true,
+    "title_text": "GreenCarbonHub",
+    "title_length": 14,
+    "has_meta_description": false,
+    "meta_desc_length": 0,
+    "h1_count": 0,
+    "h1_text": null,
+    "has_og_tags": null,
+    "has_schema": null,
+    "has_favicon": null,
+    "image_count": null,
+    "images_without_alt": null
+  },
+  "pagespeed": {
+    "error": "API returned 429"
+  },
+  "page_count": {
+    "has_sitemap": null
+  },
+  "local_signals": {
+    "has_google_maps_embed": null,
+    "has_address_schema": null,
+    "mentions_city": true,
+    "company_in_title": true
+  },
+  "platform": "Static PHP site (index.php / solar.php / contact.html) with a Bootstrap-style template, jQuery, Google Tag Manager container GTM-TX4XRLT and Meta Pixel 1088807282778475; large blocks of the template - the nav and the call / WhatsApp CSS - are commented out of the served HTML",
+  "html_errors": "34 errors, 1 warning and 1 info message on the homepage. The structural ones: a broken anchor href=\"#\"#> on the Hyderabad contact link, four attributes with no space between them, a <button> inside an <a> at source line 681, an unclosed <main>, a duplicate <body> and two <header> elements (one a sticky clone). 15 of the 34 errors are style elements sitting in the body, and an <h4> follows an <h2> with nothing between them at source line 714.",
+  "scope_note": "The complete <head> was read - source lines 1 to 62 - and it carries two tags, the GTM container GTM-TX4XRLT and Meta Pixel 1088807282778475, so those rows are measured. What reads 'Not checked' is everything the head does not carry and the checker does not report: GA4 measurement inside the GTM container (a container is not a measurement - nothing is counted until a tag is published inside it), Open Graph tags, JSON-LD schema, the favicon, the sitemap and the image alt-text counts.",
   "score": {
-    "score": 0,
-    "issues": [],
-    "wins": []
+    "score": 15,
+    "issues": [
+      "Your 14 live Google ads are booked under a different legal entity: the verified advertiser record reads ECOILA PRIVATE LIMITED, not Green Carbon Hub. Anyone who checks the transparency centre sees a company name that does not match the brand on the ad.",
+      "Your <title> is 'GreenCarbonHub' - 14 characters with no service, no city and no offer - and your meta description element is shipped with an empty content attribute. Both Google ads are buying 'solar rooftop service providers in Hyderabad' and 'subsidy up to Rs 78,000' into a page that says neither.",
+      "The only tracking on the site is GTM container GTM-TX4XRLT and Meta Pixel 1088807282778475. A container is not a measurement - no GA4 measurement ID could be read inside it - so 14 Google ads and 2 Meta ads run with no confirmed analytics behind them.",
+      "The second phone number on your site dials the first one: the offcanvas contact block renders '+91 9182445715' inside an <a href=\"tel:9182445300\">. A buyer who taps the second number reaches the wrong line.",
+      "There is no <h1> anywhere in the served page. The checker reports an <h4> following an <h2> with nothing between them, a <button> inside an <a> at source line 681, an unclosed <main>, a duplicate <body> and two <header> elements (one a sticky clone), on 34 errors total.",
+      "Your navigation is mostly commented out - the live page serves a commented-out menu and a block of commented-out call / WhatsApp CSS - and the 'Login' button in the header points at contact.html. The only working conversion routes are the form, the phone links and the chat widget.",
+      "No Google Analytics — flying blind on website traffic",
+      "No visible testimonials/social proof on homepage",
+      "No meta description — lower click-through from Google",
+      "No H1 tag on homepage"
+    ],
+    "wins": [
+      "Meta Pixel is installed",
+      "Google tracking is present",
+      "Contact form exists",
+      "Good CTA presence (4 buttons)",
+      "Live chat present"
+    ]
   },
-  "discovery": {
-    "market_query": "solar Hyderabad",
-    "city": "Hyderabad",
-    "source_ad": "1387783212859779",
-    "destination": "http://fb.me/",
-    "whatsapp": ""
-  },
+  "status_compact": true,
   "ad_library": {
-    "checked_at": "2026-10-19 09:43",
+    "checked_at": "2026-11-10",
     "meta_own": {
+      "found": true,
+      "results_count": 2,
+      "results_label": "2 live ads",
       "query": "Green Carbon Hub",
-      "results_label": "~9 results",
-      "results_count": 9,
       "ads": [
         {
           "library_id": "1387783212859779",
           "page_name": "Green Carbon Hub",
           "started": "Aug 30, 2026",
-          "text": "☀️ Don’t Just Install Solar. Keep It Performing!\n\nInstalling Solar System is only the beginning. With GreenCarbonHub’s lifetime maintenance support, your solar system stays efficient, reliable and ready to perform at its best.\n\n✅ Long-term solar care\n✅ Better system performance\n✅ Reliable maintenance support\n✅ Complete peace of mind\n\n🌱 Choose GreenCarbonHub for solar care that lasts a lifetime.\n0:00 / 0:28\nFB.ME\n🔋 Keep Your Solar Performing.\n🛠️ Lifetime maintenance support for efficient Solar performance by GreenCarbonHub in Hyderabad.\nGet quote",
+          "destination": "http://fb.me/",
+          "text": "Don't Just Install Solar. Keep It Performing!\n\nInstalling Solar System is only the beginning. With GreenCarbonHub's lifetime maintenance support, your solar system stays efficient, reliable and ready to perform at its best.\n\nLong-term solar care / Better system performance / Reliable maintenance support / Complete peace of mind.\n\nChoose GreenCarbonHub for solar care that lasts a lifetime.",
           "image_urls": [],
           "images": [],
-          "library_url": "https://www.facebook.com/ads/library/?id=1387783212859779",
-          "destination": "http://fb.me/",
-          "whatsapp": ""
+          "library_url": "https://www.facebook.com/ads/library/?id=1387783212859779"
         },
         {
           "library_id": "1031770816527038",
           "page_name": "Green Carbon Hub",
           "started": "Sep 10, 2026",
-          "text": "You invested in Solar to Save Money. But most systems quietly Lose 30% Power because no one maintains them.\n\nWith Free Solar Checkup and Cleaning for your system, we fix it!\n\nStay Efficient and Stay Worry Free.\n\nIf your Solar output is low and facing any issues, remember GreenCarbonHub.\n\nFor Optimum Solar Performance Through Life Time Maintenance.\n\nContact Us Today!\n\nCall: +91 9182445300 / 715\nEmail: info@greencarbonhub.com\nVisit: www.greencarbonhub.com\n0:00 / 0:34\nFB.ME\nGet Free Solar Checkup and Cleaning Today in Hyderabad!\nIf your Solar output is low and facing any issues, remember GreenCarbonHub. For Optimum Solar Performance Through Life Time Maintenance. Contact Us Today!\nGet quote",
-          "image_urls": [],
-          "images": [],
-          "library_url": "https://www.facebook.com/ads/library/?id=1031770816527038",
-          "destination": "http://www.greencarbonhub.com/",
-          "whatsapp": ""
-        },
-        {
-          "library_id": "1412577104411064",
-          "page_name": "Prime Property Hub",
-          "started": "Oct 7, 2026",
-          "text": "New Launch  | 2 Mins from Upcoming Hoskote Metro Station\n\n3 BHK Homes 1.80 Cr.*\n\n✔️ 11-Acre Premium Community\n✔️ 81% Open Green Spaces\n✔️ Grand 62,000 Sq. Ft. Corten Steel Clubhouse\n✔️ Carbon-Healing Sustainable Homes\n✔️ 30+ Lifestyle Amenities & 12+ Sports Facilities\n✔️ Easy Access to Bengaluru–Chennai Expressway \n\nBook Your Preferred Home Today. Enquire Now!\n0:00 / 0:42\nFB.ME\n3 BHK Homes 1.80 Cr.*\nLearn more",
-          "image_urls": [],
-          "images": [],
-          "library_url": "https://www.facebook.com/ads/library/?id=1412577104411064",
           "destination": "http://fb.me/",
-          "whatsapp": ""
+          "text": "You invested in Solar to Save Money. But most systems quietly Lose 30% Power because no one maintains them.\n\nWith Free Solar Checkup and Cleaning for your system, we fix it!\n\nStay Efficient and Stay Worry Free. If your Solar output is low and facing any issues, remember GreenCarbonHub. For Optimum Solar Performance Through Life Time Maintenance.\n\nContact Us Today! Call: +91 9182445300 / 715 | Email: info@greencarbonhub.com | Visit: www.greencarbonhub.com",
+          "image_urls": [],
+          "images": [],
+          "library_url": "https://www.facebook.com/ads/library/?id=1031770816527038"
         }
-      ],
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Green+Carbon+Hub&search_type=keyword_unordered",
-      "found": true
+      ]
     },
+    "google_own": {
+      "found": true,
+      "results_count": 14,
+      "results_label": "14 live Google ads",
+      "query": "adstransparency.google.com/?region=IN&domain=greencarbonhub.com",
+      "detail": {
+        "name": "ECOILA PRIVATE LIMITED (verified)",
+        "advertiser_id": "AR10321845347697033217",
+        "country": "IN",
+        "ad_count": 14,
+        "url": "https://adstransparency.google.com/advertiser/AR10321845347697033217?region=IN",
+        "image_files": [
+          "14 live ads listed under this advertiser in Google's Ads Transparency Centre - 11 Display image creatives were visible on the advertiser page, plus 2 YouTube video creatives (rFydyADZH6U and 4g7BazeEIbw) and one further creative carrying the visible copy 'Get Subsidy Upto Rs 78000 - Solar Panels for Home' (www.greencarbonhub.com) and 'Get affordable solar services from the best solar rooftop service providers in Hyderabad'.\n\nAdvertiser verified. Legal name read off the advertiser record: ECOILA PRIVATE LIMITED - not Green Carbon Hub.\n\nThe site behind the spend is a static PHP site whose title is the bare word 'GreenCarbonHub', whose meta description is empty, and whose services are Solar Installation, Water & Wastewater Management and Bio-Methanation."
+        ]
+      }
+    },
+    "summary": "14 live Google ads confirmed on 2026-11-10 in Google's Ads Transparency Centre under advertiser ECOILA PRIVATE LIMITED (verified) (ID AR10321845347697033217), identity-verified, with https://greencarbonhub.com/ as the advertised domain; and 2 live Meta ads on the Green Carbon Hub page in the Meta Ad Library, read the same day.",
     "meta_competitors": {
       "query": "solar Hyderabad",
       "results_label": "~330 results",
       "results_count": 330,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=solar+Hyderabad&search_type=keyword_unordered",
+      "found": true,
+      "captured_on": "2026-10-19",
       "ads": [
         {
           "library_id": "1634933028227929",
           "page_name": "Venus home appliances",
           "started": "Aug 19, 2026",
-          "text": "Venus - the most reliable name in Home Appliances including Water Heaters, Solar Water Heaters and High-performance Fans.\nVENUSHOMEAPPLIANCES.COM\nVENUS Water Heaters Now in Hyderabad\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nGet Directions\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nVENUSHOMEAPPLIANCES.COM\nVENUS Water Heaters Now in Hyderabad\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nGet Directions\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nVENUSHOMEAPPLIANCES.COM\nVENUS Water Heaters Now in Hyderabad\nVisit GKK Electricals for the latest VENUS range and ",
-          "image_urls": [
-            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/772735182_1663495645499486_2474988722221012476_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=eU4TL5qrFoEQ7kNvwEt37jw&_nc_oc=AdpKJuZKqjQp22WicqzcQLnVKeReVnudgOtT67By1HKD7k20i-q1kndqU5lkfI4Sr3k&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=W6y07DLy5SxbXxHeMzdGBQ&_nc_ss=7b289&oh=00_AQOHc3xsBLSIb6CJ4axvOihLwT03cqGYm1Hsfb7d9UsFSg&oe=6ADBD487",
-            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/769403501_1045846358303612_8400512787032328291_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=f95ReBlcMVkQ7kNvwEM1m0p&_nc_oc=Adpjjb0KXhBLH5kEDsYaF3bJT1BW9kWaT2MaXReFo2I2pnP7gz1sGA7szhJFyb_X9HM&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=W6y07DLy5SxbXxHeMzdGBQ&_nc_ss=7b289&oh=00_AQPwhsEp_3xFuVm-kjWBs1XY8U_wV2KZ68L9C1NRCo554g&oe=6ADBCBB5",
-            "https://scontent-iad3-2.xx.fbcdn.net/v/t39.35426-6/772434001_1499243515337989_8726947715847260551_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=S1qShBHbA-kQ7kNvwGwO4GS&_nc_oc=AdriV3Hv6tELY1mx6SepWyz9v_G4nr6n9uMUa5SBPR9L35R--b8aEGx6TVPIMN1l2J8&_nc_zt=14&_nc_ht=scontent-iad3-2.xx&_nc_gid=W6y07DLy5SxbXxHeMzdGBQ&_nc_ss=7b289&oh=00_AQNGd3m4OxlDgkYqfUCqNB0wayGuwel1zdt91DyQxrMW6A&oe=6ADBD2C5"
-          ],
+          "text": "Venus - the most reliable name in Home Appliances including Water Heaters, Solar Water Heaters and High-performance Fans. VENUS Water Heaters Now in Hyderabad. Visit GKK Electricals for the latest VENUS range and exclusive launch offers.",
+          "image_urls": [],
           "images": [
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Green_Carbon_Hub/772735182_1663495645499486_247_24651394.jpg",
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Green_Carbon_Hub/769403501_1045846358303612_840_58474373.jpg"
+            "/home/user/performance-marketing-os/01-LEADS/audit_results/ad_images/AB_Solar_Power_Systems/772735182_1663495645499486_247_45378210.jpg",
+            "/home/user/performance-marketing-os/01-LEADS/audit_results/ad_images/AB_Solar_Power_Systems/769403501_1045846358303612_840_44041430.jpg"
           ],
           "library_url": "https://www.facebook.com/ads/library/?id=1634933028227929",
-          "destination": "",
-          "whatsapp": ""
+          "destination": ""
         },
         {
           "library_id": "942037648839408",
           "page_name": "Sri Balaji Solar Energies",
           "started": "May 29, 2026",
-          "text": "🌞 ఇకపై కరెంట్ బిల్లు కట్టే పని లేదు!\nమీ ఇంటిపై సోలార్ సిస్టమ్ అమర్చుకోండి... ₹0 (సున్నా) ముందస్తు ఖర్చుతో!*\nశ్రీ బాలాజీ సోలార్ ఎనర్జీస్ (Sri Balaji Solar Energies) - 14 సంవత్సరాల నమ్మకం. 🏛\nమా ప్రత్యేకతలు: \n✅ కేంద్ర ప్రభుత్వం నుండి ₹78,000/- వరకు సబ్సిడీ! ✅ నెలకు కరెంట్ బిల్లు బదులు, కేవలం ₹1355/- EMI కట్టండి. \n✅ 10,000+ సంతృప్తికరమైన కస్టమర్లు. \n✅ ప్రభుత్వ ఉద్యోగులకు కూడా సబ్సిడీ వర్తిస్తుంది.\n⚡  కొత్తగూడెం , నర్సంపేట, వరంగల్ (Warangal) , హన్మకొండ (Hanumakonda), రాజమహేంద్రవరం, భద్రాచలం, ఘట్‌కేసర్ హుజూరాబాద్ and hyderabad మరియు చుట్టుపక్కల జిల్లాల్లో సర్వీస్ కలదు.\n\n👇 ఈ రోజే ఫ్రీ సైట్ విజిట్ (Free Site Visit) లభిస్తుంది\nFB.ME\n🌞 ఇకపై కరెంట్ బిల్లు కట్టే పని లేదు!\n✅ కేవలం ₹1355/- EMI కట్టండి. ✅ ",
-          "image_urls": [
-            "https://scontent-iad3-1.xx.fbcdn.net/v/t39.35426-6/612709264_1552468135986225_1240266142572683594_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=i5b_rLgAUbYQ7kNvwGiJ3qc&_nc_oc=Ado1iWQadVX8MJTIl2zmA4SC6SbOkpajI256FwCl-9XOnSTDEk35fvz-RGOTZg96Ogc&_nc_zt=14&_nc_ht=scontent-iad3-1.xx&_nc_gid=W6y07DLy5SxbXxHeMzdGBQ&_nc_ss=7b289&oh=00_AQOMND9NJvn6Um7nhxNwb7jgOPGh6PvmYDOHW5QH3kcF6Q&oe=6ADBBF64"
-          ],
+          "text": "Telugu: No more current bills to pay! Get a solar system installed on your roof with Rs. 0 upfront cost. Sri Balaji Solar Energies - 14 years of trust. Central government subsidy up to Rs. 78,000; pay just Rs. 1,355 EMI instead of a monthly current bill; 10,000+ satisfied customers; service across Warangal, Hanumakonda, Rajahmundry, Bhadrachalam, Ghatkesar, Huzurabad, Hyderabad and nearby districts. Free site visit today.",
+          "image_urls": [],
           "images": [
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Green_Carbon_Hub/612709264_1552468135986225_124_59919500.jpg"
+            "/home/user/performance-marketing-os/01-LEADS/audit_results/ad_images/AB_Solar_Power_Systems/612709264_1552468135986225_124_12912042.jpg"
           ],
           "library_url": "https://www.facebook.com/ads/library/?id=942037648839408",
-          "destination": "http://fb.me/",
-          "whatsapp": ""
+          "destination": "http://fb.me/"
         },
         {
           "library_id": "2110991659634519",
           "page_name": "ORBIT SOLAR",
           "started": "Dec 10, 2025",
-          "text": "🏡 “They trusted us. You can too.”\n5+ years, 1000+ installations across Hyderabad — all with 25-year guarantees.\n\n🌞 orbitsolar.in\n📱 +91-9059806772\nFB.ME\nSee How Much You Can Save\nSign Up\n \nFB.ME\nSave ₹3,000/Month Like Him\nSign Up\n \nFB.ME\nCut Your Bill by 90% Too\nSign Up\n \nFB.ME\nGet ₹78K Subsidy - Zero Hassle\nSign Up\n \nFB.ME\nGet a Solar Pergola Like This\nSign Up\n \nFB.ME\nJoin 1000+ Happy Homes\nSign Up",
-          "image_urls": [
-            "https://scontent-iad3-1.xx.fbcdn.net/v/t39.35426-6/595637113_843065571766706_2520315710846868498_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Li5OCrGf2bgQ7kNvwEVqUCm&_nc_oc=AdpqvMogvRI2Le3y5DuYYK5Kljm_my2ZbB-dIAevvWFjVrDEdYNIgW91JGO70YpAdZs&_nc_zt=14&_nc_ht=scontent-iad3-1.xx&_nc_gid=W6y07DLy5SxbXxHeMzdGBQ&_nc_ss=7b289&oh=00_AQPUFZOL16IZxwrzAGZglMDzuXwrOPmLGTm8bbBSy_XhfA&oe=6ADBBA20",
-            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/594423875_1532465847848295_2310081715217635639_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_4da1SgcjRwQ7kNvwGkNgh9&_nc_oc=AdpEV8VGYmp1jRuLNCKg7BMVmRCKmGrPLBNOXoMhOADUZZjk3qhLWtpQNW2bVv_iFYU&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=W6y07DLy5SxbXxHeMzdGBQ&_nc_ss=7b289&oh=00_AQMqfRfxZPFscnIw1Te0zgYIPnJp9OSesAhYaj8GCUld_Q&oe=6ADBC112",
-            "https://scontent-iad3-1.xx.fbcdn.net/v/t39.35426-6/594134128_868943678979381_480540375743244641_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1ZDAU7TxN60Q7kNvwGoTCCD&_nc_oc=AdrVzTq92DnShZf8loBUewT_oSdMnmlgYh4Q9s129058bX2v01BMT7paKfQ2EhVvAMc&_nc_zt=14&_nc_ht=scontent-iad3-1.xx&_nc_gid=W6y07DLy5SxbXxHeMzdGBQ&_nc_ss=7b289&oh=00_AQMqWuSgXBy4bYJuI5x6FwGpdUEwY6Rpo8f-WiHhIQtR1g&oe=6ADBBB91"
-          ],
+          "text": "\"They trusted us. You can too.\" 5+ years, 1000+ installations across Hyderabad - all with 25-year guarantees. orbitsolar.in | +91-9059806772. Ad variants: 'Save Rs. 3,000/Month Like Him', 'Cut Your Bill by 90% Too', 'Get Rs. 78K Subsidy - Zero Hassle', 'Get a Solar Pergola Like This', 'Join 1000+ Happy Homes'.",
+          "image_urls": [],
           "images": [
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Green_Carbon_Hub/595637113_843065571766706_2520_5490127.jpg",
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Green_Carbon_Hub/594423875_1532465847848295_231_84847185.jpg"
+            "/home/user/performance-marketing-os/01-LEADS/audit_results/ad_images/Green_Carbon_Hub/595637113_843065571766706_2520_5490127.jpg",
+            "/home/user/performance-marketing-os/01-LEADS/audit_results/ad_images/Green_Carbon_Hub/594423875_1532465847848295_231_84847185.jpg"
           ],
           "library_url": "https://www.facebook.com/ads/library/?id=2110991659634519",
-          "destination": "http://fb.me/",
-          "whatsapp": ""
+          "destination": "http://fb.me/"
         }
-      ],
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=solar+Hyderabad&search_type=keyword_unordered",
-      "found": true
-    },
-    "google_own": {
-      "found": false,
-      "advertisers": [],
-      "detail": null,
-      "query": "Green Carbon Hub"
+      ]
     },
     "google_competitors": {
-      "found": true,
-      "advertisers": [
-        {
-          "name": "Venus Home Appliances Pvt Ltd",
-          "country": "IN",
-          "ad_count": 203,
-          "detail": {
-            "name": "Venus Home Appliances Pvt Ltd",
-            "advertiser_id": "",
-            "country": "IN",
-            "ad_count": 75,
-            "url": "https://adstransparency.google.com/?hl=en&region=anywhere",
-            "images": [],
-            "found": true,
-            "image_files": []
-          }
-        },
-        {
-          "name": "WAAREE ENERGIES LIMITED",
-          "country": "IN",
-          "ad_count": 200,
-          "detail": {
-            "name": "WAAREE ENERGIES LIMITED",
-            "advertiser_id": "",
-            "country": "IN",
-            "ad_count": 200,
-            "url": "https://adstransparency.google.com/advertiser/AR01069449622662938625?hl=en&region=anywhere",
-            "images": [],
-            "found": true,
-            "image_files": []
-          }
-        },
-        {
-          "name": "Orbit Solar Energy System",
-          "country": "IN",
-          "ad_count": 8
-        }
-      ],
-      "query": "Venus home appliances, Venus, Sri Balaji Solar Energies"
+      "advertisers": [],
+      "note": "Competitor Google advertiser sweeps were not run for this lead in this pass, so no competitor Google advertiser counts are claimed here."
     },
     "notes": [
-      "No Google Ads advertiser record found for 'Green Carbon Hub'.",
-      "No active Google ads found for this company."
+      "Google Ads Transparency Centre advertiser record read directly on 2026-11-10. Meta Ad Library (India, active ads) queried the same day. Page source read through the W3C Nu HTML Checker with showsource=yes on 2026-11-10. Competitor Meta creatives were captured on 2026-10-19 from the 'solar Hyderabad' query (~330 results) and are reproduced with their original start dates and library IDs."
+    ]
+  },
+  "ad_check_urls": {
+    "google_ads_transparency": "https://adstransparency.google.com/advertiser/AR10321845347697033217?region=IN",
+    "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Green+Carbon+Hub&search_type=keyword_unordered",
+    "note": "Open these URLs in your browser to check the live ads and re-read every figure in this report yourself."
+  },
+  "promise_gap": [
+    [
+      "Google Ads Transparency: 14 live ads under advertiser AR10321845347697033217, verified as ECOILA PRIVATE LIMITED - 11 Display image creatives, 2 YouTube video creatives (rFydyADZH6U and 4g7BazeEIbw) and one further creative carrying the visible copy 'Get Subsidy Upto Rs 78000 - Solar Panels for Home'.",
+      "The advertiser name on the record is Ecoila Private Limited while the creative and the destination are GreenCarbonHub - the entity behind the spend does not match the brand in front of the buyer. The landing page's own title is the bare word 'GreenCarbonHub'."
     ],
-    "summary": "Green Carbon Hub is running active ads on Meta (Facebook/Instagram) — about 9 live results in the Ad Library. No Google Ads advertiser record was found, so search/YouTube demand is going to competitors. Meanwhile ~330 live Meta ads from competitors in Hyderabad and 3 Indian advertisers on Google Ads in the solar category are capturing the same customers."
+    [
+      "Two Meta ads are live on the GreenCarbonHub page - Library ID 1387783212859779 ('Don't Just Install Solar. Keep It Performing!', running since Aug 30, 2026) and 1031770816527038 ('Get Free Solar Checkup and Cleaning Today in Hyderabad!', since Sep 10, 2026) - both promising lifetime maintenance support.",
+      "Both ads click through to fb.me, not to the site, and the site's only maintenance-related content is a service card. The one thing the ads are selling - lifetime maintenance - has no page of its own, and while Meta Pixel 1088807282778475 is installed, the GA4 measurement inside GTM-TX4XRLT could not be read from the container."
+    ],
+    [
+      "The site positions GCH as 'a B2B2C marketplace offering design, installation and maintenance of various net-zero services', with a 4-step process (site visit, select branded components and check prices, entrust the work, start the net-zero journey) and clients including GE and the AP Food Processing Society.",
+      "The client logos are real and the process is clear, but the page carries no case study, no capacity figure, no price and no review count - and 15 of its 34 errors are style elements sitting in the body, with most of the navigation commented out of the served HTML."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@greencarbonhub.com"
+    ],
+    [
+      "Phone",
+      "+91 9182445300 / +91 9182445715 - note the second number is rendered inside an <a href=\"tel:9182445300\">, so tapping it dials the first"
+    ],
+    [
+      "Google advertiser",
+      "ECOILA PRIVATE LIMITED, AR10321845347697033217 (verified), 14 live ads read 2026-11-10"
+    ],
+    [
+      "Meta",
+      "2 live ads on the GreenCarbonHub page (Ad Library, queried 2026-11-10): 1387783212859779 since Aug 30 2026 and 1031770816527038 since Sep 10 2026"
+    ],
+    [
+      "Tags in the head",
+      "GTM-TX4XRLT and Meta Pixel 1088807282778475 (full init + PageView), read 2026-11-10"
+    ],
+    [
+      "Clients named on the site",
+      "GE and the AP Food Processing Society"
+    ]
+  ],
+  "contact": {
+    "phone": "+91 9182445300",
+    "email": "info@greencarbonhub.com",
+    "whatsapp": ""
+  },
+  "site_evidence": {
+    "pixel": true,
+    "ga4": false,
+    "gtm": true,
+    "google_ads_tag": false,
+    "checked_on": "2026-11-10",
+    "note": "Read on 2026-11-10 from the served page source through the W3C Nu HTML Checker. Confirmed present: Meta Pixel, Google Tag Manager."
+  },
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "pass",
+        "evidence": "Meta Pixel code (fbq / connect.facebook.net) found in the live landing-page source."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "No ad destination captured."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "Only 1 offer angle in live copy (bill savings) - every ad says the same thing."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Sep 10, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "2 distinct live ads visible - a comparison is at least possible."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "No funnel captured."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 3,
+      "fail": 2,
+      "unknown": 10,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
   }
 }

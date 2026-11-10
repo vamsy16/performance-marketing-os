@@ -1,14 +1,15 @@
 {
   "company": "Origian Power",
-  "legal": "Origian Power",
-  "city": "Hyderabad",
+  "legal": "Origian Power (Google ads verified under REDDYMASI SOHITH)",
+  "city": "Nizampet & Hitech City, Hyderabad 500090 / Anantapur 515004 (head office)",
   "website": "https://origianpower.com/",
   "ads_only": true,
-  "website_audit_run": false,
-  "checked_on": "2026-10-20",
-  "generated_at": "2026-10-24 05:19",
-  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "website_audit_run": true,
+  "checked_on": "2026-11-10",
+  "generated_at": "2026-11-10",
+  "source": "Google Ads Transparency Centre (advertiser record read directly) + Meta Ad Library (India, active ads) + the company's own live website (page source read through the W3C Nu HTML Checker)",
   "ad_library": {
+    "checked_at": "2026-11-10",
     "meta_own": {
       "found": false,
       "results_count": 0,
@@ -16,12 +17,35 @@
       "query": "Origian Power",
       "ads": []
     },
-    "summary": "No active Meta ads were found for Origian Power (Ad Library probe 'Origian Power', 2026-10-20). Meanwhile five Hyderabad installers - Evergrid Energy (Library IDs 1642242114211409 and 1079793338257084), Solox Energies (2023601181805342), Truzon Solar (1522258176260844), Punarvi Energies (1122725223617884 and 994804120334409) and Twilight Solar (3823689667771361 and 28023952863910719) - are all live this month buying the same homeowner with Rs. 78,000-subsidy offers. Origian's location-page content is not in front of any paid traffic."
+    "google_own": {
+      "found": true,
+      "results_count": 3,
+      "results_label": "3 live Google ads",
+      "query": "adstransparency.google.com/?region=IN&domain=origianpower.com",
+      "detail": {
+        "name": "REDDYMASI SOHITH (verified)",
+        "advertiser_id": "AR00071167135648317441",
+        "country": "IN",
+        "ad_count": 3,
+        "url": "https://adstransparency.google.com/advertiser/AR00071167135648317441?region=IN",
+        "image_files": [
+          "3 live ads listed under this advertiser in Google's Ads Transparency Centre - 1 YouTube video creative (DTApvXLQPMQ) and 2 Display image creatives (simgad/1038914867575094063 and simgad/12940158876711616666).\n\nAdvertiser verified. Legal name read off the advertiser record: REDDYMASI SOHITH - an individual, not Origian Power.\n\nThe site the ads point at sells on-grid and off-grid solar power plants and solar water heating, promises 'Cut electricity bills by 70-95%' and PM Suryaghar subsidy handling, and serves Hyderabad, Anantapur, Telangana and Andhra Pradesh."
+        ]
+      }
+    },
+    "summary": "3 live Google ads confirmed on 2026-11-10 in Google's Ads Transparency Centre under advertiser REDDYMASI SOHITH (verified) (ID AR00071167135648317441), identity-verified, with https://origianpower.com/ as the advertised domain. The Meta Ad Library was queried the same day and returned no ads for this company.",
+    "meta_competitors": {},
+    "google_competitors": {
+      "advertisers": [],
+      "note": "Competitor Google advertiser sweeps were not run for this lead in this pass, so no competitor Google advertiser counts are claimed here."
+    },
+    "notes": [
+      "Google Ads Transparency Centre advertiser record read directly on 2026-11-10. Meta Ad Library (India, active ads) queried the same day. Page source read through the W3C Nu HTML Checker with showsource=yes on 2026-11-10."
+    ]
   },
   "funnel": {
-    "type": "Own website form + phone",
-    "destination": "WPForms contact form (with reCAPTCHA) + three phone lines",
-    "meaning": "The site already answers the 'where do I click' question, but the form runs behind reCAPTCHA and JavaScript - extra friction for someone who just tapped a paid ad. Nothing paid currently drives into it at all."
+    "destination": "https://origianpower.com/",
+    "note": "Advertised domain as shown on the Google Ads Transparency Centre advertiser record, read live on 2026-11-10."
   },
   "findings": [
     "No active Meta ads under your name - five Hyderabad installers (Evergrid, Solox, Truzon, Punarvi, Twilight) are live this month buying the same homeowner with the same Rs. 78,000-subsidy message.",
@@ -66,24 +90,35 @@
       "18-5, Indira Gandhi Nagar, Papampeta, Anantapur 515004"
     ],
     [
-      "Domains",
-      "origianpower.com and origianpower.in both live"
+      "Google advertiser",
+      "REDDYMASI SOHITH, AR00071167135648317441 (verified), 3 live ads read 2026-11-10"
+    ],
+    [
+      "Meta",
+      "No active Meta ads (Ad Library, queried 2026-11-10)"
     ]
   ],
   "contact": {
-    "email": "origian.ei@gmail.com",
     "phone": "+91 8121766831",
-    "fb_page": ""
+    "email": "origian.ei@gmail.com",
+    "whatsapp": ""
   },
-  "site_evidence": {},
+  "site_evidence": {
+    "pixel": false,
+    "ga4": false,
+    "gtm": false,
+    "google_ads_tag": false,
+    "checked_on": "2026-11-10",
+    "note": "Read on 2026-11-10 from the served page source through the W3C Nu HTML Checker. Confirmed present: no Meta Pixel, GA4, GTM or Google Ads tag confirmed."
+  },
   "ads_audit": {
     "controls": [
       {
         "id": "M01",
         "name": "Meta Pixel installed",
         "group": "Tracking & measurement",
-        "disposition": "unknown",
-        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+        "disposition": "fail",
+        "evidence": "No Meta Pixel code found in the landing-page source - ad clicks cannot be measured or retargeted."
       },
       {
         "id": "M39",
@@ -167,7 +202,7 @@
         "name": "Campaign objective alignment",
         "group": "Structure & delivery",
         "disposition": "pass",
-        "evidence": "Ad CTA and destination agree on one job: Own website form + phone."
+        "evidence": "Ad CTA and destination agree on one job: captured destination."
       },
       {
         "id": "M33",
@@ -186,11 +221,101 @@
     ],
     "counts": {
       "pass": 1,
-      "fail": 1,
-      "unknown": 13,
+      "fail": 2,
+      "unknown": 12,
       "not_applicable": 0
     },
     "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
     "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
-  }
+  },
+  "audit_date": "2026-11-10",
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://origianpower.com/",
+    "audit_date": "2026-11-10",
+    "pixels": {
+      "meta_pixel": false,
+      "google_ads": false,
+      "google_analytics_ga4": false,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
+      "microsoft_clarity": false,
+      "hotjar": false,
+      "google_tag_manager": false
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": false,
+      "has_cta_buttons": null,
+      "has_live_chat": false,
+      "has_popup_optin": false,
+      "has_testimonials": true,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Best Solar Power Systems & Solar Panel Installers | Origian Power",
+      "title_length": 65,
+      "has_meta_description": true,
+      "meta_desc_length": null,
+      "h1_count": null,
+      "h1_text": null,
+      "has_og_tags": true,
+      "has_schema": true,
+      "has_favicon": null,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": null,
+      "has_address_schema": null,
+      "mentions_city": true,
+      "company_in_title": true
+    },
+    "platform": "WordPress 6.9.11, Elementor 4.3.6, Slider Revolution 6.7.34 (sr7-module), greenly theme, Yoast SEO Premium 26.3 with a full schema graph, locally-hosted Google Fonts",
+    "html_errors": "7 errors, 3 warnings and 87 info messages on the homepage. The errors are four stray </br> end tags, an 'image_lists' unknown element inside the Slider Revolution module, an <h4> that follows an <h2> with no <h3> between them, two <section> elements and one <article> with no accessible heading. The served HTML also ships the three service cards (Solar on-grid power plants, Solar off-grid power plants, Solar water heating systems) twice, and the page closes with the stray text 'BESbswy' - Slider Revolution's own demo signature.",
+    "scope_note": "The complete <head> was read - source lines 1 to 182, ending at the favicon and preconnect links - and it carries no tracking tag of any kind, so all eight tracking rows are measured in both directions and every zero is a measurement. The rows that still read 'Not checked' are the ones the checker does not report and the source did not carry in readable form: the meta description length, the h1 count, the favicon, the CTA count, the image alt-text counts and the sitemap.",
+    "score": {
+      "score": 23,
+      "issues": [
+        "Your 3 live Google ads are booked under the personal name REDDYMASI SOHITH, not Origian Power - the verified advertiser record shows an individual, so the brand you are buying for is invisible in the transparency record.",
+        "There is no tracking of any kind on the site: no Meta Pixel, no GA4, no GTM, no Google Ads tag and no LinkedIn, Clarity or Hotjar was read in the complete head. You are paying for clicks with nothing on the page counting them.",
+        "Your own page repeats itself: the three service cards - Solar on-grid power plants, Solar off-grid power plants, Solar water heating systems - appear twice in the served HTML, and the checker reports 4 stray </br> end tags, 2 sections and 1 article with no accessible heading, and an <h4> following an <h2>.",
+        "All three testimonials are from Anantapur and Nandyal in Andhra Pradesh - Mr Ravi (5 kW, Nandyal), Mr Damodar Reddy (2 x 5 kW, Anantapur), Mr Sharath (10 kW, Anantapur) - on a page whose hero says Hyderabad and whose Google ads buy Hyderabad traffic.",
+        "The only published contact routes are a Gmail address (origian.ei@gmail.com) and one phone line, and the page closes with the stray text 'BESbswy' before the footer - Slider Revolution's demo signature, left in production.",
+        "No Meta Pixel installed — can't run retargeting or track ad conversions",
+        "No Google Ads / GTM tracking — can't measure ad performance",
+        "No Google Analytics — flying blind on website traffic",
+        "No WhatsApp link — losing mobile leads (WhatsApp converts 3x better for Indian home services)",
+        "No live chat — missing after-hours leads"
+      ],
+      "wins": [
+        "Contact form exists",
+        "Testimonials visible"
+      ]
+    }
+  },
+  "status_compact": true,
+  "promise_gap": [
+    [
+      "Google Ads Transparency: 3 live ads under advertiser AR00071167135648317441, verified as REDDYMASI SOHITH - one YouTube video creative (DTApvXLQPMQ) and two Display image creatives.",
+      "The advertiser of record is a person, not the company. A prospect who checks the transparency record sees a name that does not match the brand, and the page those ads land on has no tracking that could tell either of you what the spend produced."
+    ],
+    [
+      "The homepage promises 'Cut electricity bills by 70-95%', 'Get PM Suryaghar subsidy for residential rooftop systems', 'Increase home value' and 'reliable backup power with off-grid systems'.",
+      "The PM Suryaghar subsidy section is present and the service descriptions are specific. But the three proofs on the page are all Anantapur-district installations, the three service cards are shipped twice in the HTML, and the page's own article:modified_time is 2025-12-17 - the site has not been touched in eleven months while the ads run."
+    ],
+    [
+      "The site presents solar on-grid power plants, solar off-grid power plants and solar water heating systems as three service lines, with a projects gallery and three named testimonials.",
+      "The gallery and the testimonials are real, and the contact section carries a working tel: link and a WPForms form with reCAPTCHA. What is missing is any measurement at all: no pixel, no GA4, no tag manager, so nobody can say whether the twelve pages of content have ever produced an enquiry."
+    ]
+  ]
 }

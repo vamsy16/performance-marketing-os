@@ -1,27 +1,51 @@
 {
   "company": "Four Solar",
-  "legal": "Four Solar Energy Systems Pvt. Ltd.",
-  "city": "Hyderabad",
+  "legal": "Four Solar Energy Systems Pvt. Ltd",
+  "city": "Somajiguda, Hyderabad 500082 (serves India-wide)",
   "website": "https://www.foursolar.com/",
   "ads_only": true,
-  "website_audit_run": false,
-  "checked_on": "2026-10-20",
-  "generated_at": "2026-10-24 05:19",
-  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "website_audit_run": true,
+  "checked_on": "2026-11-10",
+  "generated_at": "2026-11-10",
+  "source": "Google Ads Transparency Centre (advertiser record read directly) + Meta Ad Library (India, active ads) + the company's own live website (page source read through the W3C Nu HTML Checker)",
   "ad_library": {
+    "checked_at": "2026-11-10",
     "meta_own": {
       "found": false,
       "results_count": 0,
       "results_label": "No ads match your search criteria",
-      "query": "Four Solar Hyderabad",
+      "query": "Four Solar",
       "ads": []
     },
-    "summary": "No active Meta ads were found for Four Solar Energy Systems (Ad Library probe 'Four Solar Hyderabad', 2026-10-20). Meanwhile five Hyderabad installers - Evergrid Energy (Library IDs 1642242114211409 and 1079793338257084), Solox Energies (2023601181805342), Truzon Solar (1522258176260844), Punarvi Energies (1122725223617884 and 994804120334409) and Twilight Solar (3823689667771361 and 28023952863910719) - are all live this month buying the same homeowner with Rs. 78,000-subsidy offers. Four Solar's 13-year track record is not in front of any paid traffic."
+    "google_own": {
+      "found": true,
+      "results_count": 9,
+      "results_label": "9 live Google ads",
+      "query": "adstransparency.google.com/?region=IN&domain=www.foursolar.com",
+      "detail": {
+        "name": "Four Solar Energy Systems Pvt. Ltd (verified)",
+        "advertiser_id": "AR03099108522298703873",
+        "country": "IN",
+        "ad_count": 9,
+        "url": "https://adstransparency.google.com/advertiser/AR03099108522298703873?region=IN",
+        "image_files": [
+          "9 live ads listed under this advertiser in Google's Ads Transparency Centre - 4 image creatives were visible on the advertiser page plus 5 further creatives, including 2 Local ads with DIRECTIONS and CALL buttons headed 'Buy Solar Panels Online' and 'Buy Solar Panels for Homes' with the line 'Get Quality Pre and Post Solar Installation Services by Top Solar Rooftop Company in Hyd'.\n\nAdvertiser verified. Legal name read off the advertiser record: FOUR SOLAR ENERGY SYSTEMS PVT. LTD.\n\nThe Local ads render empty rating stars and placeholder 'Open Hours' and 'Distance' fields - the format leans on a Google Business Profile that is not rated. The site behind the spend sells Industrial & MSME, Commercial & Institutional, Ground-Mounted MW-scale, PM-KUSUM, PM Surya Ghar, Gated Community and Solar Kits EPC."
+        ]
+      }
+    },
+    "summary": "9 live Google ads confirmed on 2026-11-10 in Google's Ads Transparency Centre under advertiser Four Solar Energy Systems Pvt. Ltd (verified) (ID AR03099108522298703873), identity-verified, with https://www.foursolar.com/ as the advertised domain. The Meta Ad Library was queried the same day and returned no ads for this company.",
+    "meta_competitors": {},
+    "google_competitors": {
+      "advertisers": [],
+      "note": "Competitor Google advertiser sweeps were not run for this lead in this pass, so no competitor Google advertiser counts are claimed here."
+    },
+    "notes": [
+      "Google Ads Transparency Centre advertiser record read directly on 2026-11-10. Meta Ad Library (India, active ads) queried the same day. Page source read through the W3C Nu HTML Checker with showsource=yes on 2026-11-10."
+    ]
   },
   "funnel": {
-    "type": "Own website + chat/WhatsApp",
-    "destination": "Site contact form, live chat widget and WhatsApp",
-    "meaning": "The conversion paths are decent - the form takes city and roof details, and there is a chat widget. The gap is that nothing paid drives into them, so every enquiry depends on someone already looking for you by name."
+    "destination": "https://www.foursolar.com/",
+    "note": "Advertised domain as shown on the Google Ads Transparency Centre advertiser record, read live on 2026-11-10."
   },
   "findings": [
     "No active Meta ads under your name - five Hyderabad installers (Evergrid, Solox, Truzon, Punarvi, Twilight) are live this month buying the same homeowner with the same Rs. 78,000-subsidy message.",
@@ -55,7 +79,7 @@
     ],
     [
       "Phone",
-      "+91 8886002221 / 040-23405670 / +91 9248716892"
+      "+91 8886002221 / +91 9248716892 / 040-23405670"
     ],
     [
       "Address",
@@ -63,27 +87,38 @@
     ],
     [
       "Entity",
-      "Four Solar Energy Systems Pvt. Ltd. - TGREDCO empanelled TSRE180027"
+      "Four Solar Energy Systems Pvt. Ltd - TGREDCO empanelled, registration TSRE180027"
     ],
     [
-      "Meta page",
-      "facebook.com/foursolar"
+      "Google advertiser",
+      "Four Solar Energy Systems Pvt. Ltd, AR03099108522298703873 (verified), 9 live ads read 2026-11-10"
+    ],
+    [
+      "Meta",
+      "No active Meta ads (Ad Library, queried 2026-11-10); facebook.com/foursolar"
     ]
   ],
   "contact": {
-    "email": "contact@foursolar.com",
     "phone": "+91 8886002221",
-    "fb_page": "https://www.facebook.com/foursolar/"
+    "email": "contact@foursolar.com",
+    "whatsapp": ""
   },
-  "site_evidence": {},
+  "site_evidence": {
+    "pixel": true,
+    "ga4": false,
+    "gtm": false,
+    "google_ads_tag": false,
+    "checked_on": "2026-11-10",
+    "note": "Read on 2026-11-10 from the served page source through the W3C Nu HTML Checker. Confirmed present: Meta Pixel."
+  },
   "ads_audit": {
     "controls": [
       {
         "id": "M01",
         "name": "Meta Pixel installed",
         "group": "Tracking & measurement",
-        "disposition": "unknown",
-        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+        "disposition": "pass",
+        "evidence": "Meta Pixel code (fbq / connect.facebook.net) found in the live landing-page source."
       },
       {
         "id": "M39",
@@ -167,7 +202,7 @@
         "name": "Campaign objective alignment",
         "group": "Structure & delivery",
         "disposition": "pass",
-        "evidence": "Ad CTA and destination agree on one job: Own website + chat/WhatsApp."
+        "evidence": "Ad CTA and destination agree on one job: captured destination."
       },
       {
         "id": "M33",
@@ -185,12 +220,101 @@
       }
     ],
     "counts": {
-      "pass": 1,
+      "pass": 2,
       "fail": 1,
-      "unknown": 13,
+      "unknown": 12,
       "not_applicable": 0
     },
     "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
     "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
-  }
+  },
+  "audit_date": "2026-11-10",
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://www.foursolar.com/",
+    "audit_date": "2026-11-10",
+    "pixels": {
+      "meta_pixel": true,
+      "google_ads": false,
+      "google_analytics_ga4": false,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
+      "microsoft_clarity": false,
+      "hotjar": false,
+      "google_tag_manager": false
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": 4,
+      "has_live_chat": null,
+      "has_popup_optin": false,
+      "has_testimonials": null,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Four Solar | Leading Residential, Commercial & MW Solar EPC India",
+      "title_length": 65,
+      "has_meta_description": null,
+      "meta_desc_length": null,
+      "h1_count": null,
+      "h1_text": null,
+      "has_og_tags": true,
+      "has_schema": null,
+      "has_favicon": null,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": null,
+      "has_address_schema": null,
+      "mentions_city": true,
+      "company_in_title": true
+    },
+    "platform": "WordPress with the Bricks builder and Automatic CSS, Contact Form 7 plus the wpcf7-redirect plugin and a Google Sheets connector, Click to Chat for WhatsApp, locally-hosted Google Fonts",
+    "html_errors": "38 errors, 2 warnings and 40 info messages on the homepage. The dominant defect is structural: the broken <noscript> element inside the <head> (the Meta Pixel fallback, source line 168) leaves the head unclosed, which cascades into a duplicate <body> start tag, stray end tags for head / div / header and 'End tag for body seen, but there were unclosed elements'. 24 of the 38 errors are style rules sitting outside an @scope rule, and the media queries still use the deprecated min-device-width / max-device-width syntax.",
+    "scope_note": "The complete <head> was read - source lines 1 to 399, ending at the favicon links - so the eight tracking rows are measured in both directions and a zero is a measurement. The rows that still read 'Not checked' are the ones the checker does not report and the source did not carry in readable form in this pass: the meta description length, the h1 count, the favicon, JSON-LD schema and the image alt-text counts. The body past source line 404 was not returned, so the footer scripts could not be read either.",
+    "score": {
+      "score": 10,
+      "issues": [
+        "Your 9 live Google ads point at a homepage whose only tracking is a Meta Pixel that cannot fire: the pixel ID 1513606190140594 appears only inside a <noscript> image fallback at source line 168, and no fbq() initialisation script was read anywhere in the complete head. A visitor with JavaScript enabled - which is nearly all of them - is never counted.",
+        "There is no Google tag of any kind on the site: no GA4 measurement ID, no GTM container and no Google Ads conversion tag was read in the head. You are buying Search, Display, Local and YouTube clicks with no Google-side measurement behind them.",
+        "Your own site contradicts itself on size: the stat tiles claim '250+ MW Solar Capacity Engineered & Executed' and '1,500+ sites', while the About section of the same page says '13+ years in solar EPC and 50 MW+ of projects delivered'. Two capacity figures, five times apart, on one page.",
+        "The checker reports 38 errors on the homepage and the cause is your own pixel: the broken <noscript> in the head leaves the document with a duplicate <body>, stray end tags for head / div / header and 'End tag for body seen, but there were unclosed elements'.",
+        "og:site_name is empty and og:title is 'Home', so every share of your homepage on WhatsApp or Facebook is attributed to a page called 'Home' - the exact channel your ad spend is meant to feed.",
+        "No Google Ads / GTM tracking — can't measure ad performance",
+        "No Google Analytics — flying blind on website traffic"
+      ],
+      "wins": [
+        "Meta Pixel is installed",
+        "Contact form exists",
+        "WhatsApp link present",
+        "Good CTA presence (4 buttons)"
+      ]
+    }
+  },
+  "status_compact": true,
+  "promise_gap": [
+    [
+      "Google Ads Transparency: 9 live ads under advertiser AR03099108522298703873, verified as Four Solar Energy Systems Pvt. Ltd - including Local ads with DIRECTIONS and CALL buttons and image creatives headed 'Buy Solar Panels Online' and 'Buy Solar Panels for Homes'.",
+      "The Local ads carry empty rating stars and placeholder 'Open Hours' and 'Distance' fields - the ad format that leans on a Google Business Profile is running without a rated profile behind it. The click lands on a homepage with no Google-side tracking at all."
+    ],
+    [
+      "The ad copy promises 'Get Quality Pre and Post Solar Installation Services by Top Solar Rooftop Company in Hyd'.",
+      "The site substantiates the pre/post claim better than most: a 4-step process, a 'Book a Site Visit' page, a CF7 form that captures the monthly bill and zipcode, and a WhatsApp click-to-chat. What it cannot do is tell you which of those produced an enquiry, because nothing on the page is measured on the Google side."
+    ],
+    [
+      "The homepage presents '250+ MW Solar Capacity Engineered & Executed', '13+ years' and '1,500+ sites', with segments for Industrial & MSME, Commercial & Institutional, Ground-Mounted MW-Scale, PM-KUSUM, PM Surya Ghar, Gated Communities and Solar Kits, and a brand wall of Renew, Vikram, Pahal, Navgrun, Waaree and Solex.",
+      "The About section of the same page says '50 MW+ of projects delivered'. The six brand logos are shipped three times in a row, so the page reads as padded even where the underlying credentials are real."
+    ]
+  ]
 }

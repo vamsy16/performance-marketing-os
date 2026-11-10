@@ -1,211 +1,389 @@
 {
   "company": "Sri Balaji Solar Energies",
-  "city": "Hyderabad",
-  "website": "",
-  "no_website": true,
-  "audit_date": "May 29, 2026",
+  "legal": "Sri Balaji Solar Energies",
+  "city": "Hanumakonda / Warangal 506001 (head office); Medipally, Hyderabad",
+  "website": "https://www.sribalajisolarenergies.com/",
+  "ssl": true,
+  "load_time_seconds": null,
+  "final_url": "https://www.sribalajisolarenergies.com/",
+  "audit_date": "2026-11-10",
+  "pixels": {
+    "meta_pixel": false,
+    "google_ads": false,
+    "google_analytics_ga4": true,
+    "google_analytics_ua": false,
+    "linkedin_insight": false,
+    "microsoft_clarity": false,
+    "hotjar": false,
+    "google_tag_manager": true
+  },
+  "conversion": {
+    "has_contact_form": null,
+    "has_phone_click": null,
+    "has_whatsapp_link": null,
+    "has_cta_buttons": null,
+    "has_live_chat": null,
+    "has_popup_optin": null,
+    "has_testimonials": null,
+    "has_pricing_page_link": null
+  },
+  "seo": {
+    "has_title": true,
+    "title_text": "Telangana's Top Solar Panel Installation Company | Sri Balaji Solar Energies.",
+    "title_length": 77,
+    "has_meta_description": true,
+    "meta_desc_length": null,
+    "h1_count": 0,
+    "h1_text": null,
+    "has_og_tags": null,
+    "has_schema": null,
+    "has_favicon": null,
+    "image_count": null,
+    "images_without_alt": null
+  },
+  "pagespeed": {
+    "error": "API returned 429"
+  },
+  "page_count": {
+    "has_sitemap": null
+  },
+  "local_signals": {
+    "has_google_maps_embed": null,
+    "has_address_schema": null,
+    "mentions_city": true,
+    "company_in_title": true
+  },
+  "platform": "React single-page application (create-react-app build: static/media bundles, manifest.json, theme-color #000000) with slick, swiper, AOS, GSAP and WOW.js loaded in the shell; GA4 G-C58ZMRZ68Q and GTM container GTM-NCP9G6SM are the only tags in the served head",
+  "html_errors": "0 errors, 1 warning and 11 info messages on the served HTML - the cleanest markup in this audit, because the served page is a shell: one <div id=\"root\"> holding a loader GIF, with the entire site rendered client-side by React. Nothing on the page - no heading, no form, no button, no price, no testimonial - is present in the HTML the server returns.",
+  "scope_note": "www.sribalajisolarenergies.com is a React single-page application. The server returns a shell - doctype, head, a loader GIF and the script bundles - and every heading, form, button, testimonial and price renders only after JavaScript runs. The W3C checker and a direct page fetch therefore see no content, which is why every conversion row reads 'Not checked': those rows are unmeasured, not absent. The two tags that ARE in the shell - GA4 G-C58ZMRZ68Q and GTM GTM-NCP9G6SM - were read directly from the served head.",
   "score": {
-    "score": 0,
-    "issues": [],
-    "wins": []
+    "score": 9,
+    "issues": [
+      "Your entire website is invisible to everything that is not a browser: the served HTML is a React shell with a loader GIF, no h1, no headings, no form and no content. Google's crawler, the W3C checker, every link preview and every accessibility tool see an empty page.",
+      "You run about 8 live Meta ads - every one of them clicking through to fb.me, none to your own site - while your site carries no Meta Pixel. You are paying to reach people and then handing them to Facebook's messenger with no way to bring them back.",
+      "Your live ads contradict each other on your own history: Library ID 942037648839408 says '14 years of trust' while 1454295123168911 and 1541931104220931 say '15 years legacy'. Two ages, running at the same time.",
+      "GA4 (G-C58ZMRZ68Q) and GTM (GTM-NCP9G6SM) are both installed in the shell - real measurement that most leads in this market do not have - but there is no Meta Pixel and no Google Ads tag, so the one measurement you have covers the channel you do not buy.",
+      "Three different phone numbers appear across your live ads (+91-85200 27111, +91-91333 03164) and two more in our own register (+91 9959491774, +91 87024 44646), and every ad lands on the same fb.me redirect - a buyer has no way to tell which number is yours.",
+      "No Meta Pixel installed — can't run retargeting or track ad conversions",
+      "No H1 tag on homepage"
+    ],
+    "wins": [
+      "Google tracking is present",
+      "Google Analytics is installed"
+    ]
   },
-  "discovery": {
-    "market_query": "solar Hyderabad",
-    "city": "Hyderabad",
-    "source_ad": "942037648839408",
-    "destination": "http://fb.me/",
-    "whatsapp": ""
-  },
+  "status_compact": true,
   "ad_library": {
-    "checked_at": "2026-10-19 09:34",
+    "checked_at": "2026-11-10",
     "meta_own": {
-      "query": "Sri Balaji Solar Energies",
-      "results_label": "~8 results",
+      "found": true,
       "results_count": 8,
+      "results_label": "~8 results",
+      "query": "Sri Balaji Solar Energies",
       "ads": [
         {
           "library_id": "942037648839408",
           "page_name": "Sri Balaji Solar Energies",
           "started": "May 29, 2026",
-          "text": "🌞 ఇకపై కరెంట్ బిల్లు కట్టే పని లేదు!\nమీ ఇంటిపై సోలార్ సిస్టమ్ అమర్చుకోండి... ₹0 (సున్నా) ముందస్తు ఖర్చుతో!*\nశ్రీ బాలాజీ సోలార్ ఎనర్జీస్ (Sri Balaji Solar Energies) - 14 సంవత్సరాల నమ్మకం. 🏛\nమా ప్రత్యేకతలు: \n✅ కేంద్ర ప్రభుత్వం నుండి ₹78,000/- వరకు సబ్సిడీ! ✅ నెలకు కరెంట్ బిల్లు బదులు, కేవలం ₹1355/- EMI కట్టండి. \n✅ 10,000+ సంతృప్తికరమైన కస్టమర్లు. \n✅ ప్రభుత్వ ఉద్యోగులకు కూడా సబ్సిడీ వర్తిస్తుంది.\n⚡  కొత్తగూడెం , నర్సంపేట, వరంగల్ (Warangal) , హన్మకొండ (Hanumakonda), రాజమహేంద్రవరం, భద్రాచలం, ఘట్‌కేసర్ హుజూరాబాద్ and hyderabad మరియు చుట్టుపక్కల జిల్లాల్లో సర్వీస్ కలదు.\n\n👇 ఈ రోజే ఫ్రీ సైట్ విజిట్ (Free Site Visit) లభిస్తుంది\nFB.ME\n🌞 ఇకపై కరెంట్ బిల్లు కట్టే పని లేదు!\n✅ కేవలం ₹1355/- EMI కట్టండి. ✅ ",
-          "image_urls": [
-            "https://scontent-iad3-1.xx.fbcdn.net/v/t39.35426-6/612709264_1552468135986225_1240266142572683594_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=i5b_rLgAUbYQ7kNvwGiJ3qc&_nc_oc=Ado1iWQadVX8MJTIl2zmA4SC6SbOkpajI256FwCl-9XOnSTDEk35fvz-RGOTZg96Ogc&_nc_zt=14&_nc_ht=scontent-iad3-1.xx&_nc_gid=x1834M9wEryunkxaRVmSvg&_nc_ss=7b289&oh=00_AQO7oihSGuYTORE0zW65MU46I9mwB-iEVTE2Hg8FIOXKlg&oe=6ADBBF64"
-          ],
-          "images": [
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Sri_Balaji_Solar_Energies/612709264_1552468135986225_124_9599309.jpg"
-          ],
-          "library_url": "https://www.facebook.com/ads/library/?id=942037648839408",
           "destination": "http://fb.me/",
-          "whatsapp": ""
+          "text": "Telugu: No more current bills to pay! Get a solar system installed on your roof with Rs. 0 (zero) upfront cost.* Sri Balaji Solar Energies - 14 years of trust. Central government subsidy up to Rs. 78,000; pay just Rs. 1,355 EMI instead of a monthly current bill; 10,000+ satisfied customers; the subsidy applies to government employees too; service across Warangal, Hanumakonda, Rajahmundry, Bhadrachalam, Ghatkesar, Huzurabad, Hyderabad and nearby districts. Free site visit today.",
+          "image_urls": [],
+          "images": [
+            "/home/user/performance-marketing-os/01-LEADS/audit_results/ad_images/AB_Solar_Power_Systems/612709264_1552468135986225_124_12912042.jpg"
+          ],
+          "library_url": "https://www.facebook.com/ads/library/?id=942037648839408"
         },
         {
           "library_id": "1454295123168911",
           "page_name": "Sri Balaji Solar Energies",
           "started": "May 29, 2026",
-          "text": "నెలకు వచ్చే భారీ కరెంటు బిల్లులకు స్వస్తి చెప్పండి! 🏠\nFB.ME\nమీ ఇంటికి సరిపోయే ఉత్తమ సోలార్ ప్లాన్ మరియు సబ్సిడీ వివరాలు పొందండి!\nశ్రీ బాలాజీ సోలార్ ఎనర్జీస్ (15 ఏళ్ల లెగసీ). మీ వివరాలను నమోదు చేయండి. మా నిపుణులు మీకు కాల్ చేసి పూర్తి సమాచారం అంద...\nGet offer",
-          "image_urls": [
-            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/657034938_1472739317629903_7932454137442148511_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zN5JaOqmAvcQ7kNvwGTI7Fb&_nc_oc=Adqdyc1Ldrq392hQIfoLeJOC8m5sX9Hx4KSiEKPiCNYB7Tdwxn1EkljTVSFhXEkRME8&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=x1834M9wEryunkxaRVmSvg&_nc_ss=7b289&oh=00_AQOP7VU9bRyKZ2aKu8n11ipRkwf85EAxDEhcvhvy6dNhcQ&oe=6ADBBB72"
-          ],
-          "images": [
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Sri_Balaji_Solar_Energies/657034938_1472739317629903_793_25053152.jpg"
-          ],
-          "library_url": "https://www.facebook.com/ads/library/?id=1454295123168911",
           "destination": "http://fb.me/",
-          "whatsapp": ""
+          "text": "Telugu: Say goodbye to heavy monthly current bills! Get the best solar plan and subsidy details for your home. Sri Balaji Solar Energies (15 years legacy). Leave your details - our experts will call you with full information.",
+          "image_urls": [],
+          "images": [
+            "/home/user/performance-marketing-os/01-LEADS/audit_results/ad_images/Sri_Balaji_Solar_Energies/657034938_1472739317629903_793_61628810.jpg"
+          ],
+          "library_url": "https://www.facebook.com/ads/library/?id=1454295123168911"
         },
         {
           "library_id": "1541931104220931",
-          "page_name": "",
-          "started": "",
-          "text": "Library ID: 1541931104220931",
+          "page_name": "Sri Balaji Solar Energies",
+          "started": "May 29, 2026",
+          "destination": "http://fb.me/",
+          "text": "Telugu: Get the details! Sri Balaji Solar Energies (15 years legacy). Leave your details - our experts will call you with full information. (Lead-form ad.)",
           "image_urls": [],
           "images": [],
-          "library_url": "https://www.facebook.com/ads/library/?id=1541931104220931",
-          "destination": "http://fb.me/",
-          "whatsapp": ""
+          "library_url": "https://www.facebook.com/ads/library/?id=1541931104220931"
         },
         {
           "library_id": "2103721667197349",
           "page_name": "Sri Balaji Solar Energies",
           "started": "Aug 18, 2026",
-          "text": "1LAKH ఆదా చేసుకోండి, కరెంట్ బిల్లుకు బదులుగా EMI చెల్లించండి మీ డబ్బులు ఆదా చేసుకోండి.”\nమీరు అధిక కరెంటు బిల్ తో ఇబందిపడుతున్నారా...?\nMNRE అందించే ప్రభుత్వ సబ్సిడీతో మీ ఇంటి పైన SOLAR ONGRID SYSTEM ఏర్పాటు చేసుకొని, నెట్ మీటరింగ్ పథకం ద్వారా మీకు కావలిసిన విద్యుత్ ని వినియోగించి మిగితా విద్యుత్ ని విక్రయించవచ్చు.\n\n“కరెంట్ బిల్లుకు బదులుగా EMI చెల్లించండి మీ డబ్బులు ఆదా చేసుకోండి.”\n\nCONTACT: +91- 91333 03164\nFB.ME\nమీ విద్యుత్ ను మీరే ఉతృత్తి చేసుకొని కరెంట్ బిల్లుకు BYE చెప్పండి.\n1LAKH ఆదా చేసుకోండి, మన తెలంగాణ రాష్ట్రంలో No 1 Solar Company SRI BALAJI SOLAR ENERGIES.\nGet offer",
-          "image_urls": [
-            "https://scontent-iad3-1.xx.fbcdn.net/v/t39.35426-6/774834968_3674322072733699_3492593758862060607_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2So4L7bggNsQ7kNvwF4XLzN&_nc_oc=AdozkTDFHf3ybFePqAlD6tF3iQXZuZwprgyJLlimkyDp6Lchn0oz2KQyirUZEWoit1Y&_nc_zt=14&_nc_ht=scontent-iad3-1.xx&_nc_gid=x1834M9wEryunkxaRVmSvg&_nc_ss=7b289&oh=00_AQOmPxYOP5b1eUbll_cUFw5zl6nEgiNZXWowV2ZNDzY55A&oe=6ADBCE57"
-          ],
-          "images": [
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Sri_Balaji_Solar_Energies/774834968_3674322072733699_349_40074366.jpg"
-          ],
-          "library_url": "https://www.facebook.com/ads/library/?id=2103721667197349",
           "destination": "http://fb.me/",
-          "whatsapp": ""
+          "text": "Telugu: Save 1 LAKH - LIMITED TIME OFFER. Pay EMI instead of your current bill and save your money. Struggling with high current bills? With the MNRE government subsidy, install a SOLAR ONGRID SYSTEM on your roof, use the power you need through net metering and sell the surplus. Contact: +91-91333 03164.",
+          "image_urls": [],
+          "images": [
+            "/home/user/performance-marketing-os/01-LEADS/audit_results/ad_images/Sri_Balaji_Solar_Energies/774834968_3674322072733699_349_28421807.jpg"
+          ],
+          "library_url": "https://www.facebook.com/ads/library/?id=2103721667197349"
         },
         {
           "library_id": "4493621594235361",
           "page_name": "Sri Balaji Solar Energies",
           "started": "Aug 25, 2026",
-          "text": "Thinking about switching to solar? ☀️ Explore rooftop solar with Sri Balaji Solar Energies and check your eligibility for subsidy and affordable EMI options. Book your FREE site visit today.\nFB.ME\nGet Up to ₹78,000 Solar Subsidy in Telangana*\nCheck Your Solar Eligibility\nGet offer",
-          "image_urls": [
-            "https://scontent-iad3-1.xx.fbcdn.net/v/t39.35426-6/773671691_1623652985991006_2449197196272168558_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xs65Tfs_1t8Q7kNvwECnN7I&_nc_oc=Ado651wWcmO7bWorHruxjEWzR1SevFcLEbBU4yNKiWlKO-l5CRzFLPDRWFPndh5L5rw&_nc_zt=14&_nc_ht=scontent-iad3-1.xx&_nc_gid=x1834M9wEryunkxaRVmSvg&_nc_ss=7b289&oh=00_AQPOg7og0FbZGG2d_fD8d51UHKvkIfOOYHN5jM3KbQmbQg&oe=6ADBAE65"
-          ],
-          "images": [
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Sri_Balaji_Solar_Energies/773671691_1623652985991006_244_5486747.jpg"
-          ],
-          "library_url": "https://www.facebook.com/ads/library/?id=4493621594235361",
           "destination": "http://fb.me/",
-          "whatsapp": ""
+          "text": "Thinking about switching to solar? Explore rooftop solar with Sri Balaji Solar Energies and check your eligibility for subsidy and affordable EMI options. Book your FREE site visit today.\n\nGet Up to Rs. 78,000 Solar Subsidy in Telangana* - Check Your Solar Eligibility.",
+          "image_urls": [],
+          "images": [
+            "/home/user/performance-marketing-os/01-LEADS/audit_results/ad_images/Sri_Balaji_Solar_Energies/773671691_1623652985991006_244_21794831.jpg"
+          ],
+          "library_url": "https://www.facebook.com/ads/library/?id=4493621594235361"
         }
-      ],
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Sri+Balaji+Solar+Energies&search_type=keyword_unordered",
-      "found": true
+      ]
     },
+    "google_own": {
+      "found": false,
+      "results_count": 0,
+      "results_label": "0 live Google ads",
+      "query": "adstransparency.google.com/?region=IN&domain=www.sribalajisolarenergies.com",
+      "detail": {
+        "name": "No advertiser record found",
+        "advertiser_id": "",
+        "country": "IN",
+        "ad_count": 0,
+        "url": "https://adstransparency.google.com/?region=IN&domain=sribalajisolarenergies.com",
+        "image_files": []
+      }
+    },
+    "summary": "No Google Ads advertiser record was found for this domain on 2026-11-10 in Google's Ads Transparency Centre. 8 live Meta ads were confirmed the same day in the Meta Ad Library on the Sri Balaji Solar Energies page - all of the paid activity is on Meta.",
     "meta_competitors": {
       "query": "solar Hyderabad",
       "results_label": "~330 results",
       "results_count": 330,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=solar+Hyderabad&search_type=keyword_unordered",
+      "found": true,
+      "captured_on": "2026-10-19",
       "ads": [
         {
           "library_id": "1634933028227929",
           "page_name": "Venus home appliances",
           "started": "Aug 19, 2026",
-          "text": "Venus - the most reliable name in Home Appliances including Water Heaters, Solar Water Heaters and High-performance Fans.\nVENUSHOMEAPPLIANCES.COM\nVENUS Water Heaters Now in Hyderabad\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nGet Directions\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nVENUSHOMEAPPLIANCES.COM\nVENUS Water Heaters Now in Hyderabad\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nGet Directions\nVisit GKK Electricals for the latest VENUS range and exclusive launch offers.\nVENUSHOMEAPPLIANCES.COM\nVENUS Water Heaters Now in Hyderabad\nVisit GKK Electricals for the latest VENUS range and ",
-          "image_urls": [
-            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/772735182_1663495645499486_2474988722221012476_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=eU4TL5qrFoEQ7kNvwEt37jw&_nc_oc=AdpKJuZKqjQp22WicqzcQLnVKeReVnudgOtT67By1HKD7k20i-q1kndqU5lkfI4Sr3k&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=U-6VfEI-aHAVTq9sst7dug&_nc_ss=7b289&oh=00_AQM3kuDwbGP4JbWv4AbexyWYec_HjNGaTZh-pvFuny-_-Q&oe=6ADB9C47",
-            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/769403501_1045846358303612_8400512787032328291_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=f95ReBlcMVkQ7kNvwEM1m0p&_nc_oc=Adpjjb0KXhBLH5kEDsYaF3bJT1BW9kWaT2MaXReFo2I2pnP7gz1sGA7szhJFyb_X9HM&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=U-6VfEI-aHAVTq9sst7dug&_nc_ss=7b289&oh=00_AQNe7qOzbXUt9fxAFb8zbJkM7sNwN7rcC-Huv-jg-GP7IA&oe=6ADBCBB5",
-            "https://scontent-iad3-2.xx.fbcdn.net/v/t39.35426-6/772434001_1499243515337989_8726947715847260551_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=S1qShBHbA-kQ7kNvwGwO4GS&_nc_oc=AdriV3Hv6tELY1mx6SepWyz9v_G4nr6n9uMUa5SBPR9L35R--b8aEGx6TVPIMN1l2J8&_nc_zt=14&_nc_ht=scontent-iad3-2.xx&_nc_gid=U-6VfEI-aHAVTq9sst7dug&_nc_ss=7b289&oh=00_AQMgE7EVHayxZUWeWpqNBbPU8oiykGTtIUu-XvAomOqXeA&oe=6ADBD2C5"
-          ],
+          "text": "Venus - the most reliable name in Home Appliances including Water Heaters, Solar Water Heaters and High-performance Fans. VENUS Water Heaters Now in Hyderabad. Visit GKK Electricals for the latest VENUS range and exclusive launch offers.",
+          "image_urls": [],
           "images": [
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Sri_Balaji_Solar_Energies/772735182_1663495645499486_247_88094707.jpg",
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Sri_Balaji_Solar_Energies/769403501_1045846358303612_840_78324147.jpg"
+            "/home/user/performance-marketing-os/01-LEADS/audit_results/ad_images/AB_Solar_Power_Systems/772735182_1663495645499486_247_45378210.jpg",
+            "/home/user/performance-marketing-os/01-LEADS/audit_results/ad_images/AB_Solar_Power_Systems/769403501_1045846358303612_840_44041430.jpg"
           ],
           "library_url": "https://www.facebook.com/ads/library/?id=1634933028227929",
-          "destination": "",
-          "whatsapp": ""
+          "destination": ""
         },
         {
           "library_id": "1970895137170804",
           "page_name": "AB Solar Power Systems",
           "started": "Oct 11, 2026",
-          "text": "This Dussehra, Hyderabad homes can go solar with ₹0 down payment on eligible EMI plans, ₹22,000 off from AB Solar, and up to ₹78,000 government subsidy*. Book a free site visit.\n\n📞 Call us: +91 80990 40600 | 9121 9121 35\n🌐 Visit: www.absolar.in\n📍 Serving Hyderabad & surrounding areas.\nFB.ME\nDussehra Offer: ₹22,000 Off\nGet offer",
-          "image_urls": [
-            "https://scontent-iad6-1.xx.fbcdn.net/v/t39.35426-6/841439167_1424386869844643_2611946368120982355_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=efO-hbYs6UkQ7kNvwFX_uTf&_nc_oc=Adpgr2TZcWWHizex6fa1cBZkJkdqxrpgZVgjleSHyoDDppHrQnp8aP8dDqLFtJPn6M8&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=U-6VfEI-aHAVTq9sst7dug&_nc_ss=7b289&oh=00_AQMhPQfixDa4gHn-YWTKzuFVpmFDpi3JIrKokS_qgHGlWw&oe=6ADBC3F3"
-          ],
+          "text": "This Dussehra, Hyderabad homes can go solar with Rs. 0 down payment on eligible EMI plans, Rs. 22,000 off from AB Solar, and up to Rs. 78,000 government subsidy*. Book a free site visit. Call us: +91 80990 40600 | 9121 9121 35. Visit: www.absolar.in. Serving Hyderabad & surrounding areas.",
+          "image_urls": [],
           "images": [
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Sri_Balaji_Solar_Energies/841439167_1424386869844643_261_75509363.jpg"
+            "/home/user/performance-marketing-os/01-LEADS/audit_results/ad_images/AB_Solar_Power_Systems/841439167_1424386869844643_261_27806009.jpg"
           ],
           "library_url": "https://www.facebook.com/ads/library/?id=1970895137170804",
-          "destination": "http://www.absolar.in/",
-          "whatsapp": ""
+          "destination": "http://www.absolar.in/"
         },
         {
           "library_id": "1553074916624250",
           "page_name": "Suryon",
           "started": "Oct 1, 2026",
-          "text": "Your Roof Can Save You Money! Go solar, reduce your monthly electricity expenses\nFB.ME\nReduce Your Electricity Bill with Rooftop Solar!\nGenerate your own clean electricity and enjoy long-term savings on your monthly power bills. Check your solar eligibility, subsidy benefits, and suitable system size with our solar experts.\nSign up",
-          "image_urls": [
-            "https://scontent-iad3-1.xx.fbcdn.net/v/t39.35426-6/790509774_1761904034702808_833261644955310676_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Lu0d5kgvYdcQ7kNvwFIZf9C&_nc_oc=AdoEjfW6YnlYtkIFNIp23-jqeis1OTN1-TTA_FK5RNEJQI71jdsxu-0gITBNO_-9JSU&_nc_zt=14&_nc_ht=scontent-iad3-1.xx&_nc_gid=U-6VfEI-aHAVTq9sst7dug&_nc_ss=7b289&oh=00_AQMSjJVQSovBQAsVLngmqlIAUStD2vTSwFDSE3XTXOHOfQ&oe=6ADB9E1D"
-          ],
+          "text": "Your Roof Can Save You Money! Go solar, reduce your monthly electricity expenses. Reduce Your Electricity Bill with Rooftop Solar! Generate your own clean electricity and enjoy long-term savings on your monthly power bills. Check your solar eligibility, subsidy benefits, and suitable system size with our solar experts.",
+          "image_urls": [],
           "images": [
-            "/home/runner/work/performance-marketing-os/performance-marketing-os/01-LEADS/audit_results/ad_images/Sri_Balaji_Solar_Energies/790509774_1761904034702808_833_78008651.jpg"
+            "/home/user/performance-marketing-os/01-LEADS/audit_results/ad_images/AB_Solar_Power_Systems/790509774_1761904034702808_833_56738515.jpg"
           ],
           "library_url": "https://www.facebook.com/ads/library/?id=1553074916624250",
-          "destination": "http://fb.me/",
-          "whatsapp": ""
+          "destination": "http://fb.me/"
         }
-      ],
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=solar+Hyderabad&search_type=keyword_unordered",
-      "found": true
-    },
-    "google_own": {
-      "found": false,
-      "advertisers": [],
-      "detail": null,
-      "query": "Sri Balaji Solar Energies"
+      ]
     },
     "google_competitors": {
-      "found": true,
-      "advertisers": [
-        {
-          "name": "Venus Home Appliances Pvt Ltd",
-          "country": "IN",
-          "ad_count": 203,
-          "detail": {
-            "name": "Venus Home Appliances Pvt Ltd",
-            "advertiser_id": "",
-            "country": "IN",
-            "ad_count": 75,
-            "url": "https://adstransparency.google.com/?hl=en&region=anywhere",
-            "images": [],
-            "found": true,
-            "image_files": []
-          }
-        },
-        {
-          "name": "AB SOLAR POWER SYSTEMS",
-          "country": "IN",
-          "ad_count": 7,
-          "detail": {
-            "name": "AB SOLAR POWER SYSTEMS",
-            "advertiser_id": "",
-            "country": "IN",
-            "ad_count": 7,
-            "url": "https://adstransparency.google.com/advertiser/AR00983201834636148737?hl=en&region=anywhere",
-            "images": [],
-            "found": true,
-            "image_files": []
-          }
-        },
-        {
-          "name": "WAAREE INFRASTRUCTURE & AGRITECH PRIVATE LIMITED",
-          "country": "IN",
-          "ad_count": 1
-        }
-      ],
-      "query": "Venus home appliances, Venus, AB Solar Power Systems"
+      "advertisers": [],
+      "note": "Competitor Google advertiser sweeps were not run for this lead in this pass, so no competitor Google advertiser counts are claimed here."
     },
     "notes": [
-      "No Google Ads advertiser record found for 'Sri Balaji Solar Energies'.",
-      "No active Google ads found for this company."
+      "Google Ads Transparency Centre advertiser record read directly on 2026-11-10. Meta Ad Library (India, active ads) queried the same day. Page source read through the W3C Nu HTML Checker with showsource=yes on 2026-11-10. Competitor Meta creatives were captured on 2026-10-19 from the 'solar Hyderabad' query (~330 results) and are reproduced with their original start dates and library IDs."
+    ]
+  },
+  "ad_check_urls": {
+    "google_ads_transparency": "https://adstransparency.google.com/?region=IN&domain=sribalajisolarenergies.com",
+    "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Sri+Balaji+Solar+Energies&search_type=keyword_unordered",
+    "note": "Open these URLs in your browser to check the live ads and re-read every figure in this report yourself."
+  },
+  "promise_gap": [
+    [
+      "Meta Ad Library: about 8 active ad results on the Sri Balaji Solar Energies page (queried 2026-11-10), including Library IDs 942037648839408 and 1454295123168911 and 1541931104220931 (running since May 29, 2026), 2103721667197349 (since Aug 18, 2026) and 4493621594235361 (since Aug 25, 2026).",
+      "Every one of them clicks to fb.me, not to the site - and the site carries no Meta Pixel. The ads are the entire front door, and the house behind them renders nothing without JavaScript."
     ],
-    "summary": "Sri Balaji Solar Energies is running active ads on Meta (Facebook/Instagram) — about 8 live results in the Ad Library. No Google Ads advertiser record was found, so search/YouTube demand is going to competitors. Meanwhile ~330 live Meta ads from competitors in Hyderabad and 3 Indian advertisers on Google Ads in the solar category are capturing the same customers."
+    [
+      "The Telugu ad copy promises 'no more current bills to pay', 'Rs. 0 (zero) upfront cost', 'central government subsidy up to Rs. 78,000', 'pay just Rs. 1,355 EMI instead of a monthly current bill' and '10,000+ satisfied customers', with service listed across Warangal, Hanumakonda, Rajahmundry, Bhadrachalam, Ghatkesar, Huzurabad, Hyderabad and nearby districts.",
+      "Those are specific, checkable promises - and the page they should lead to cannot be read without JavaScript, so a buyer who taps through to the site instead of fb.me gets a loader. The same ads give the company's age as both 14 years and 15 years."
+    ],
+    [
+      "Google's Ads Transparency Centre returns zero ads for sribalajisolarenergies.com (queried 2026-11-10) - all of the paid activity is on Meta.",
+      "That is a defensible channel choice for a Telugu-first residential offer, and GA4 (G-C58ZMRZ68Q) plus GTM (GTM-NCP9G6SM) are both installed in the shell, so the measurement side is the strongest of the four leads in this audit. What is missing is any way to measure the Meta side: no Meta Pixel was read in the served head."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "sbse4444@gmail.com (TGREDCO empanelled-supplier register)"
+    ],
+    [
+      "Phone",
+      "+91 9959491774 / +91 87024 44646 (register); the live ads carry +91-85200 27111 and +91-91333 03164"
+    ],
+    [
+      "Meta",
+      "About 8 active ad results on the Sri Balaji Solar Energies page (Ad Library, queried 2026-11-10); every ad clicks to fb.me"
+    ],
+    [
+      "Google",
+      "Zero ads for sribalajisolarenergies.com in the transparency centre (queried 2026-11-10)"
+    ],
+    [
+      "Tags in the head",
+      "GA4 G-C58ZMRZ68Q and GTM-NCP9G6SM, read 2026-11-10 from the served React shell"
+    ],
+    [
+      "Site",
+      "React single-page app - the served HTML is a shell with a loader GIF and no content"
+    ]
+  ],
+  "contact": {
+    "phone": "+91 9959491774",
+    "email": "sbse4444@gmail.com",
+    "whatsapp": ""
+  },
+  "site_evidence": {
+    "pixel": false,
+    "ga4": true,
+    "gtm": true,
+    "google_ads_tag": false,
+    "checked_on": "2026-11-10",
+    "note": "Read on 2026-11-10 from the served page source through the W3C Nu HTML Checker. Confirmed present: GA4 / Google tag, Google Tag Manager."
+  },
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "No Meta Pixel code found in the landing-page source - ad clicks cannot be measured or retargeted."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "No ad destination captured."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "All 5 live ads use a single format (image) - no format variety to test what converts."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "pass",
+        "evidence": "6 distinct offer angles in live copy: government subsidy, subsidy amount, EMI / financing, bill savings, experience claim, free site visit."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started May 29, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "5 distinct live ads visible - enough running to compare messages against each other."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "No funnel captured."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 3,
+      "fail": 3,
+      "unknown": 9,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
   }
 }
