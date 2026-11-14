@@ -3,21 +3,32 @@
 Lead Discovery Engine — starts from the Meta Ad Library, not from you.
 
 Give ONE input: your market (e.g. "solar Hyderabad"). The pipeline then:
-  1. Searches the LIVE Meta Ad Library for active advertisers in that market
-  2. Extracts each advertiser's real destination/conversion page from their ad
+  1. Loads the known-leads registry (leads.csv + sequence manifest + audit JSONs)
+     and drops every advertiser we have already touched — a re-run of the same
+     market therefore returns NEW businesses only, never duplicates
+  2. Searches the LIVE Meta Ad Library for active advertisers in that market
+  3. Extracts each advertiser's real destination/conversion page from their ad
      (the exact URL the ad sends customers to - or WhatsApp if that's the funnel)
-  3. Audits that conversion page + pulls their full live ad activity (Meta + Google)
-  4. Generates a branded Smart Pursuit PDF per lead
+  4. Audits that conversion page + pulls their full live ad activity (Meta + Google)
+  5. Generates a branded Smart Pursuit PDF per lead
 
 No website URLs, no company names, no city typing — all derived from the ads.
+
+Duplicate guard:
+  ON by default. Override with --allow-known (useful for re-auditing a lead
+  whose site changed) or inspect any candidate first with:
+      python 01-LEADS/known_leads.py "Some Company" theirsite.in
 
 Usage:
   python discover_leads.py "solar Hyderabad"
   python discover_leads.py "rooftop solar Delhi" --limit 5
   python discover_leads.py "solar Hyderabad" --city Hyderabad --competitors 3
+  python discover_leads.py "solar Hyderabad" --limit 5 --pool 60
 """
 
 import argparse
+import json
+import json
 import os
 import re
 import sys
@@ -28,6 +39,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from ad_library import meta_search, run_research, save_audit, UA
 from ads_audit import run_audit, print_audit_report
 from audit_pdf import generate_pdf
+from known_leads import KnownLeads
 
 MARKET_WORDS = {
     "solar", "panel", "panels", "rooftop", "company", "companies", "installer",
@@ -82,8 +94,25 @@ def resolve_website(ad):
     return website_from_text(ad.get("text", ""))
 
 
-def discover(query, max_ads):
-    """One Meta Ad Library search — returns ads with destinations attached."""
+def discover(query, max_ads, feed=None):
+    """One Meta Ad Library search — returns ads with destinations attached.
+
+    With `feed`, cards captured live from the Meta Ad Library are replayed from
+    disk instead of launching Playwright, so discovery + the duplicate guard
+    run identically in a headless sandbox with no browser. The cards themselves
+    were still captured from the live library.
+    """
+    if feed:
+        with open(feed, encoding="utf-8") as fh:
+            result = json.load(fh)
+        result.setdefault("ads", [])
+        print("\n[discover] replaying saved ad feed: %s (%d cards, "
+              "captured for '%s')" % (feed, len(result["ads"]), query))
+        print("  -> %s, %d ad cards with destination data"
+              % (result.get("results_label") or "no results",
+                 len(result["ads"])))
+        return result
+
     from playwright.sync_api import sync_playwright
 
     print(f"\n[discover] Meta Ad Library search: '{query}'")
@@ -102,18 +131,30 @@ def discover(query, max_ads):
     return result
 
 
-def group_leads(ads, limit):
-    """One lead per advertiser (page name), keeping the first ad seen."""
+def group_leads(ads, limit, known=None):
+    """One lead per advertiser (page name), keeping the first ad seen.
+
+    Duplicate guard: any advertiser already in the known-leads registry is
+    skipped and reported, and the scan keeps going until `limit` genuinely new
+    advertisers have been collected. Returns (leads, skipped) where skipped is
+    an OrderedDict of name -> (source, matched_name).
+    """
     leads = OrderedDict()
+    skipped = OrderedDict()
     for ad in ads:
         name = (ad.get("page_name") or "").strip()
-        if not name:
+        if not name or name in leads or name in skipped:
             continue
-        if name not in leads:
-            leads[name] = ad
+        if known is not None:
+            verdict, source, matched = known.verdict(
+                name=name, website=resolve_website(ad), email=ad.get("email", ""))
+            if verdict:
+                skipped[name] = (verdict, source, matched or name)
+                continue
+        leads[name] = ad
         if len(leads) >= limit:
             break
-    return leads
+    return leads, skipped
 
 
 def main():
@@ -125,6 +166,14 @@ def main():
     parser.add_argument("--competitors", type=int, default=3, help="Competitor ads per report")
     parser.add_argument("--pool", type=int, default=0,
                         help="Ad cards to scan in discovery (default: limit x 5)")
+    parser.add_argument("--feed", default="",
+                        help="Replay a saved JSON ad feed instead of launching "
+                             "Playwright (same shape as meta_search() output). "
+                             "Useful when no browser is available, or to re-run a "
+                             "captured sweep deterministically.")
+    parser.add_argument("--allow-known", action="store_true",
+                        help="Include advertisers already in the pipeline "
+                             "(re-audit an existing lead)")
     args = parser.parse_args()
 
     city = args.city or city_from_query(args.query)
@@ -135,17 +184,38 @@ def main():
     print(f"City: {city or '(derived per lead)'} | Leads: {args.limit}")
     print("=" * 60)
 
-    search = discover(args.query, max_ads=pool)
+    # ---- duplicate guard: never re-fetch a business we already touched -------
+    known = None
+    if not args.allow_known:
+        known = KnownLeads(quiet=True)
+        stats = known.summary()
+        print(f"[dedupe] known-leads registry: {stats['total']} entries "
+              f"({stats['unique_domains']} domains, {stats['unique_names']} names) "
+              f"from {', '.join(sorted(stats['by_source']))}")
+    else:
+        print("[dedupe] --allow-known set: existing pipeline leads will be included")
+
+    search = discover(args.query, max_ads=pool, feed=args.feed or None)
     if not search["ads"]:
         print("No active ads found for this market — try a broader query.")
         sys.exit(1)
 
-    leads = group_leads(search["ads"], args.limit)
-    print(f"\n[discover] {len(leads)} unique advertisers found:")
+    leads, skipped = group_leads(search["ads"], args.limit, known=known)
+    if skipped:
+        print(f"\n[dedupe] {len(skipped)} advertiser(s) skipped — already in the pipeline:")
+        for name, (verdict, source, matched) in skipped.items():
+            flag = "" if verdict == "known" else "  [REVIEW — confirm before clearing]"
+            print(f"  - {name}  (matches '{matched}' in {source}){flag}")
+    print(f"\n[discover] {len(leads)} NEW advertisers found:")
     for name, ad in leads.items():
         site = resolve_website(ad) or ("WhatsApp conversion" if ad.get("whatsapp")
                                        else "no website in ad")
         print(f"  - {name}  ->  {site}")
+    if not leads:
+        print("\nNo new advertisers in this sweep — every active advertiser for "
+              f"'{args.query}' is already in the pipeline. Raise --pool to scan "
+              "more ad cards, or move to a different market.")
+        sys.exit(0)
 
     results = []
     for i, (name, ad) in enumerate(leads.items(), 1):

@@ -1,0 +1,149 @@
+{
+  "captured": "2026-11-14",
+  "query": "solar panel Hyderabad",
+  "source": "Meta Ad Library (live), captured via fetch_page this session",
+  "note": "Every card below was seen live in the Meta Ad Library on 2026-11-14. KehanSri and Hysun were captured from their live Google Ads Transparency accounts (AR07894673884648046593, AR08880526109242818561) and are appended so the sweep sees the whole candidate set. Google ad counts cannot be scraped by this tool, so the google_advertisers field is left empty and the Google evidence lives in the leads.csv snippets.",
+  "ads": [
+    {
+      "library_id": "1489241276343354",
+      "page_name": "Shree Adithya Solar",
+      "started": "2026-09-10",
+      "text": "Rs.78,000 subsidy PM Surya Ghar solar rooftop Hyderabad",
+      "destination": "https://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "",
+      "page_name": "Solar Power Experts",
+      "started": "",
+      "text": "Heat-resistant solar panels Hyderabad",
+      "destination": "https://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1176536348031731",
+      "page_name": "Teramor Developers",
+      "started": "2026-11-12",
+      "text": "Solar EMI Hyderabad",
+      "destination": "https://www.facebook.com/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1112082124557653",
+      "page_name": "Tadepalligudem.updates",
+      "started": "2026-10-13",
+      "text": "TATA panels solar EMI Hyderabad",
+      "destination": "https://api.whatsapp.com/",
+      "whatsapp": "https://api.whatsapp.com/",
+      "email": ""
+    },
+    {
+      "library_id": "1472594724842045",
+      "page_name": "SunSolarhyd",
+      "started": "2026-11-10",
+      "text": "solar EMI Hyderabad",
+      "destination": "https://www.facebook.com/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "2152229662052110",
+      "page_name": "Eastman New Energy",
+      "started": "",
+      "text": "solar Telangana",
+      "destination": "https://eastmansolar.in/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "",
+      "page_name": "Sri Balaji Solar Energies",
+      "started": "",
+      "text": "rooftop solar Telangana",
+      "destination": "",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "",
+      "page_name": "Valcan Solar",
+      "started": "",
+      "text": "MEGA UTSAV bumper draw solar company Secunderabad",
+      "destination": "https://valcansolar.com/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "",
+      "page_name": "Hysun Solar",
+      "started": "",
+      "text": "Hyderabad solar 500091, PM Surya Ghar Rs.78,000, on-grid/off-grid/hybrid, EMI",
+      "destination": "",
+      "whatsapp": "https://api.whatsapp.com/",
+      "email": "info@hysunsolar.com",
+      "google_advertiser": "AR08880526109242818561",
+      "google_ads": 1
+    },
+    {
+      "library_id": "",
+      "page_name": "KehanSri Technologies & Service Pvt Ltd",
+      "started": "",
+      "text": "Solar rooftop Hyderabad Gachibowli",
+      "destination": "https://kehansrisolar.com/",
+      "whatsapp": "",
+      "email": "info@kehansri.com",
+      "google_advertiser": "AR07894673884648046593",
+      "google_ads": 24
+    },
+    {
+      "library_id": "1446165934284837",
+      "page_name": "V1 Solar Solutions",
+      "started": "2026-10-12",
+      "text": "Solar water heater repair, servicing and installation across Bengaluru and Hyderabad",
+      "destination": "https://api.whatsapp.com/",
+      "whatsapp": "https://api.whatsapp.com/",
+      "email": "info@v1solarsolutions.com",
+      "google_advertiser": "AR09270299175948386305",
+      "google_ads": 4
+    },
+    {
+      "library_id": "28807326382303186",
+      "page_name": "PNR Sunrise Energies Pvt Ltd",
+      "started": "2026-11-12",
+      "text": "Join PNR Sunrise Energies as a solar channel partner, Hyderabad",
+      "destination": "https://api.whatsapp.com/",
+      "whatsapp": "https://api.whatsapp.com/",
+      "email": ""
+    },
+    {
+      "library_id": "2216955152329459",
+      "page_name": "Surya Shakti Solar Energy",
+      "started": "2026-11-11",
+      "text": "Rooftop solar, on-grid/off-grid/hybrid, solar water pumps, Rs.78,000 subsidy, Hyderabad",
+      "destination": "https://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "3823689667771361",
+      "page_name": "Twilight Solar Pvt Ltd",
+      "started": "2026-07-30",
+      "text": "Hyderabad residential and commercial solar, 280+ customers",
+      "destination": "https://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "826884287112902",
+      "page_name": "ManasaEnterprises",
+      "started": "2026-08-22",
+      "text": "Solar master distributor, domestic and commercial systems, Kakinada and Hyderabad",
+      "destination": "https://api.whatsapp.com/",
+      "whatsapp": "https://api.whatsapp.com/",
+      "email": "manasaaenterprises2024@gmail.com"
+    }
+  ]
+}

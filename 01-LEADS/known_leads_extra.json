@@ -1,0 +1,265 @@
+{
+  "_comment": "Manual additions to the known-leads registry (see known_leads.py). 'known' entries are hard blocks - the business is in the pipeline or must never be contacted. 'vetted' entries were checked against a gate on 'checked' and failed; they are skipped only until checked + veto_days, so a company that starts buying ads later becomes eligible again instead of being blocked forever.",
+  "version": 1,
+  "veto_days": 45,
+  "known": [
+    {
+      "name": "Suryon",
+      "website": "https://suryon.in/",
+      "city": "Hyderabad",
+      "note": "DUPLICATE of Arcedo Systems (same business, info@arcedo.net). Already sequenced - never contact separately."
+    },
+    {
+      "name": "Kehan Sri Solar",
+      "website": "https://kehansrisolar.com/",
+      "city": "Hyderabad",
+      "note": "Trading name of KehanSri Technologies & Service Pvt Ltd (24 live Google ads, AR07894673884648046593). Rowed in leads.csv 2026-11-14."
+    },
+    {
+      "name": "KehanSri Solar",
+      "website": "https://kehansrisolar.com/",
+      "city": "Hyderabad",
+      "note": "Spelling variant of KehanSri Technologies & Service Pvt Ltd."
+    },
+    {
+      "name": "Mega Solar India",
+      "website": "https://megasolarindia.com/",
+      "city": "Hyderabad",
+      "note": "Short trading name of Mega Creations / Mega Solar India. Rowed in leads.csv 2026-11-14; no published email (demo contact page)."
+    },
+    {
+      "name": "Mega Creations",
+      "website": "https://megasolarindia.com/",
+      "city": "Hyderabad",
+      "note": "Legal/other name behind megasolarindia.com (Google advertiser AR09804983159320739841, VELPULA INDIRA NIRMALA)."
+    },
+    {
+      "name": "Sunrise Energies",
+      "website": "https://sunriseenergies.in/",
+      "city": "Hyderabad",
+      "note": "Short trading name of PNR Sunrise Energies Pvt Ltd (Meta Library ID 28807326382303186). Rowed 2026-11-14; no published email."
+    },
+    {
+      "name": "V1 Solar",
+      "website": "https://www.v1solarsolutions.com/",
+      "city": "Bengaluru / Hyderabad",
+      "note": "Short trading name of V1 Solar Solutions (Google advertiser AR09270299175948386305). Rowed 2026-11-14."
+    },
+    {
+      "name": "V1 Solar Solutions Bangalore",
+      "website": "https://www.v1solarsolutions.com/",
+      "city": "Bengaluru",
+      "note": "Name as it appears on the v1solarsolutions.com contact page."
+    }
+  ],
+  "vetted": [
+    {
+      "name": "Suntek Energy Systems Pvt Ltd",
+      "website": "https://suntek.co.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=suntek.co.in)"
+    },
+    {
+      "name": "SolarCircuit Energy",
+      "website": "https://solarcircuit.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads; published email is mistyped as info@solarcircuti.in (extra i)"
+    },
+    {
+      "name": "Zyronpro Systems",
+      "website": "https://zyronpro.com/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads"
+    },
+    {
+      "name": "NextGen Solar Power",
+      "website": "https://nextgensolarpower.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads"
+    },
+    {
+      "name": "GOSOLGEN Renewables",
+      "website": "https://gosolgen.com/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads"
+    },
+    {
+      "name": "Greentek India Limited",
+      "website": "https://greentekindia.co.in/",
+      "city": "Secunderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads"
+    },
+    {
+      "name": "Big G Industries",
+      "website": "https://biggsolarsolutions.com/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads; Meta ads sell earthing-pit covers, not rooftop EPC"
+    },
+    {
+      "name": "Argo Solar",
+      "website": "https://argosolar.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads"
+    },
+    {
+      "name": "MVS Solar Solutions",
+      "website": "https://mvssolarsolutions.com/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads; no Meta ads match the advertiser name"
+    },
+    {
+      "name": "UniSolar Power Pvt Ltd",
+      "website": "https://unisolarpower.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads; no Meta ads match the advertiser name"
+    },
+    {
+      "name": "SAS Energy",
+      "website": "https://sasenergy.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads"
+    },
+    {
+      "name": "Zytech Solar",
+      "website": "https://zytechsolar.co.in/",
+      "city": "Secunderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads on zytechsolar.co.in and zytechsolar.in; Meta keyword search returned no ads"
+    },
+    {
+      "name": "Creative Energy Solutions",
+      "website": "https://creativeenergysolutions.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads; Meta keyword results were all unrelated advertisers"
+    },
+    {
+      "name": "Solar Idea",
+      "website": "https://solaridea.com/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads; Meta keyword results were all unrelated advertisers"
+    },
+    {
+      "name": "GigaWatt Solar Private Limited",
+      "website": "https://gigawattsolar.in/",
+      "city": "Secunderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads; Meta keyword results were all unrelated advertisers"
+    },
+    {
+      "name": "AmpliSolar",
+      "website": "https://amplisolar.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads"
+    },
+    {
+      "name": "Aar Pee Solar Systems",
+      "website": "https://aarpeesolar.com/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads"
+    },
+    {
+      "name": "SLN Power Solutions",
+      "website": "https://slnpowersolutions.com/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads"
+    },
+    {
+      "name": "Adithya Solar Tech",
+      "website": "https://adithyasolartech.com/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads"
+    },
+    {
+      "name": "Sri Savitr Solar Pvt Ltd",
+      "website": "https://srisavitrsolar.com/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads"
+    },
+    {
+      "name": "Truveta Solar",
+      "website": "https://truvetasolar.com/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads"
+    },
+    {
+      "name": "Brite Solar",
+      "website": "https://britesolar.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads"
+    },
+    {
+      "name": "Aditi Solar",
+      "website": "https://aditisolar.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads"
+    },
+    {
+      "name": "NH Solar",
+      "website": "https://nhsolar.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads"
+    },
+    {
+      "name": "Photon Solar",
+      "website": "https://photonsolar.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads"
+    },
+    {
+      "name": "Captain Polyplast",
+      "website": "https://captainpolyplast.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-14",
+      "gate": "live-ads",
+      "reason": "0 live Google ads"
+    }
+  ]
+}
