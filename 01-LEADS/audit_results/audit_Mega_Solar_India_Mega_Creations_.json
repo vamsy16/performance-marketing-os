@@ -1,0 +1,218 @@
+{
+  "company": "Mega Solar India (Mega Creations)",
+  "legal": "Mega Creations (Mega Solar India)",
+  "city": "Hyderabad",
+  "website": "https://megasolarindia.com/",
+  "email": "",
+  "phone": "",
+  "audit_date": "2026-11-14",
+  "ssl": true,
+  "load_time_seconds": null,
+  "pixels": {
+    "meta_pixel": null,
+    "google_ads": null,
+    "google_analytics_ga4": null,
+    "google_analytics_ua": null,
+    "linkedin_insight": null,
+    "microsoft_clarity": null,
+    "hotjar": null,
+    "google_tag_manager": null
+  },
+  "conversion": {
+    "has_contact_form": false,
+    "has_phone_click": false,
+    "has_whatsapp_link": true,
+    "has_cta_buttons": 2,
+    "has_live_chat": null,
+    "has_popup_optin": null,
+    "has_testimonials": false,
+    "has_pricing_page_link": null,
+    "has_mailto_published": false
+  },
+  "seo": {
+    "has_title": true,
+    "title_text": "Mega Creations - Get a Solar Today and Get Free Electricity",
+    "title_length": 59,
+    "has_meta_description": null,
+    "meta_desc_length": null,
+    "h1_count": 1,
+    "h1_text": "Why Solar is the Smartest Investment",
+    "has_og_tags": null,
+    "has_schema": null,
+    "has_favicon": null,
+    "image_count": 103,
+    "images_without_alt": 57
+  },
+  "pagespeed": {
+    "error": "not run - no outbound network route to the PageSpeed API from this environment",
+    "provenance": "NOT RUN - this environment has no outbound route to Google's PageSpeed API, so no speed or Largest Contentful Paint figure is claimed anywhere in this report."
+  },
+  "page_count": {
+    "sitemap_pages": 19,
+    "has_sitemap": true
+  },
+  "local_signals": {
+    "has_google_maps_embed": false,
+    "has_address_schema": null,
+    "mentions_city": true,
+    "company_in_title": true
+  },
+  "ad_check_urls": {
+    "google_ads_transparency": "https://adstransparency.google.com/?region=anywhere&q=megasolarindia.com&country=IN",
+    "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Mega Solar India (Mega Creations)&search_type=keyword_unordered",
+    "note": "Open these URLs in your browser to check if they're running ads and what those ads look like."
+  },
+  "final_url": "https://megasolarindia.com/",
+  "score": {
+    "score": 15,
+    "issues": [
+      "The contact page is an unedited WordPress demo",
+      "No real email or phone anywhere on the site",
+      "57 of 103 homepage images carry no alt text",
+      "Theme pages left live and indexed",
+      "The default WordPress post is live",
+      "Two live creatives, one landing page",
+      "A Prime Minister's quote stands in for customer proof",
+      "No contact form on homepage — visitors can't easily enquire",
+      "Only 1-2 CTA buttons — could be more aggressive",
+      "No visible testimonials/social proof on homepage",
+      "57 images missing alt text — hurts SEO"
+    ],
+    "wins": [
+      "WhatsApp link present",
+      "Homepage claims 100+ installations, 15+ years and certified government vendor status",
+      "Rs.78,000 PM Surya Ghar subsidy and no-upfront-cost financing explained on the homepage",
+      "A live franchise page (/apply-for-solar-franchise-zero-fee-mega-solar/)",
+      "Three real blog posts including a Telangana/AP subsidy guide",
+      "16 pages indexed in the sitemap"
+    ],
+    "issue_count": 11,
+    "win_count": 6
+  },
+  "ad_library": {
+    "checked_at": "2026-11-14",
+    "meta_own": {
+      "found": null,
+      "results_count": 0,
+      "results_label": "",
+      "query": "Mega Solar India (Mega Creations)",
+      "ads": [],
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&is_targeted_country=false&media_type=all&q=Mega%20Solar%20India%20(Mega%20Creations)"
+    },
+    "meta_competitors": {
+      "found": null,
+      "results_count": 0,
+      "results_label": "",
+      "query": "",
+      "ads": [],
+      "url": ""
+    },
+    "google_own": {
+      "found": true,
+      "advertisers": [],
+      "detail": {
+        "name": "VELPULA INDIRA NIRMALA",
+        "ad_count": 2,
+        "advertiser_id": "AR09804983159320739841",
+        "creatives": [
+          "CR16648633552560193537",
+          "CR04546876387859890177"
+        ],
+        "started": "Active 2026-11-14",
+        "destination": "megasolarindia.com",
+        "note": "2 live ads in Google's Ads Transparency Centre under identity-verified advertiser AR09804983159320739841 (VELPULA INDIRA NIRMALA), pointing at megasolarindia.com.",
+        "url": "https://adstransparency.google.com/advertiser/AR09804983159320739841/creative/CR16648633552560193537?region=IN"
+      },
+      "query": "https://megasolarindia.com/"
+    },
+    "google_competitors": {
+      "found": null,
+      "advertisers": [],
+      "query": ""
+    },
+    "notes": [
+      "Every figure in this audit was read live on 2026-11-14. Fields the sandbox could not measure are recorded as null and printed as 'could not be checked in this pass' - they are never reported as a pass or a failure.",
+      "Tracking pixels could not be checked: the page HTML source was not retrievable from this environment, only rendered text."
+    ],
+    "summary": "Mega Creations trades as Mega Solar India and runs 2 live Google ads behind an identity-verified account. The homepage pitch is a genuine Hyderabad residential-installer one - Rs.78,000 PM Surya Ghar subsidy, no-upfront-cost and pay-as-you-save financing, 7-day installation, 25-year warranty, and Waaree / Adani / Premier / Panasonic / Polycab / Microtek named as partners. The contact page behind it is an unedited WordPress demo: example.com addresses, a Brooklyn address, +1 123-456-7890 and a preschool enquiry form. Two live ads, and nothing for the click to land on."
+  },
+  "defects": [
+    {
+      "title": "The contact page is an unedited WordPress demo",
+      "detail": "megasolarindia.com/contact/ opens with 'Have questions about our programs?' followed by the lorem-ipsum line 'fells mauris quisque scelerisque, porta placerat pharetra'. It publishes info@example.com, enrollment@example.com and collab@example.com under headings 'General', 'Parents' and 'Vendor'; the address is 'Demo St, Brooklyn, NY 11223, United States'; the phones are +1 123-456-7890 and +1 123-456-7891; and the form asks for a 'Parent's Name' and whether the question is about 'Infant', 'Toddler' or 'Preschool'. A homeowner who clicks a paid ad and tries to make contact lands on a preschool enquiry form in Brooklyn."
+    },
+    {
+      "title": "No real email or phone anywhere on the site",
+      "detail": "Every address and number published is a demo placeholder. The only live contact path is a script-rendered WhatsApp chat widget, so nothing is captured in writing."
+    },
+    {
+      "title": "57 of 103 homepage images carry no alt text",
+      "detail": "The page repeats whole sections - the six brand logos appear twice, the 'Customer Love Us!' testimonial block three times, the 'Recent Projects' gallery three times - and only the first pass carries any alt text at all."
+    },
+    {
+      "title": "Theme pages left live and indexed",
+      "detail": "/admission/ and /sample-page/ are in the sitemap - leftovers from the demo theme, not a solar business."
+    },
+    {
+      "title": "The default WordPress post is live",
+      "detail": "/hello-world/ is published and in the sitemap."
+    },
+    {
+      "title": "Two live creatives, one landing page",
+      "detail": "Both Google ads point at the same homepage, so there is no second page to test a different offer or price against."
+    },
+    {
+      "title": "A Prime Minister's quote stands in for customer proof",
+      "detail": "The only named testimonial on the homepage is a stock photo of PM Narendra Modi over a generic renewable-energy quote, sitting under a '100% of customers recommend us!' heading whose six testimonial images are unnamed files."
+    }
+  ],
+  "wins": [
+    "Homepage claims 100+ installations, 15+ years and certified government vendor status",
+    "Rs.78,000 PM Surya Ghar subsidy and no-upfront-cost financing explained on the homepage",
+    "A live franchise page (/apply-for-solar-franchise-zero-fee-mega-solar/)",
+    "Three real blog posts including a Telangana/AP subsidy guide",
+    "16 pages indexed in the sitemap"
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "none published"
+    ],
+    [
+      "Phone",
+      "none published"
+    ]
+  ],
+  "provenance": [
+    [
+      "Meta Ad Library",
+      "NOT CHECKED for this lead in this pass - no Meta ad count is claimed either way. This advertiser's paid activity was confirmed on Google's Ads Transparency Centre instead.",
+      "not run"
+    ],
+    [
+      "Page text read on the live site",
+      "Direct page fetch through the audit sandbox's page reader. The rendered text was counted mechanically with a fixed regex rather than estimated by reading it, so every count in this report can be re-derived from the page. No page HTML source was available.",
+      "2026-11-14"
+    ],
+    [
+      "Headings, image counts, alt attributes, CTA link text, form fields, testimonials, outbound links",
+      "Counted over the page text read - see the row above.",
+      "2026-11-14"
+    ],
+    [
+      "Tracking tags (8 of 8 could not be read)",
+      "The page HTML source was not retrievable from this environment - script tags are stripped from rendered text - so no pixel, GA4, GTM or Clarity claim is made in either direction. Every tracking row reads not checked rather than missing.",
+      "not run"
+    ],
+    [
+      "Sitemap contents and page counts",
+      "https://megasolarindia.com/wp-sitemap.xml and its sub-sitemaps fetched and counted verbatim.",
+      "2026-11-14"
+    ],
+    [
+      "Meta description, Open Graph, Schema.org, favicon, consent mode",
+      "NOT CHECKED - these live in the <head>, which was not returned in readable form. None is claimed as present or absent.",
+      "not run"
+    ]
+  ]
+}

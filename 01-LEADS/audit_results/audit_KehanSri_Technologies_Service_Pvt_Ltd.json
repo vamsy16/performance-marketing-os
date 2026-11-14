@@ -1,0 +1,250 @@
+{
+  "company": "KehanSri Technologies & Service Pvt Ltd",
+  "legal": "KehanSri Technologies & Service Pvt Ltd",
+  "city": "Gachibowli, Hyderabad",
+  "website": "https://kehansrisolar.com/",
+  "email": "info@kehansri.com",
+  "phone": "+91 888 628 6000 / +91 9985408601",
+  "audit_date": "2026-11-14",
+  "ssl": true,
+  "load_time_seconds": null,
+  "pixels": {
+    "meta_pixel": null,
+    "google_ads": null,
+    "google_analytics_ga4": null,
+    "google_analytics_ua": null,
+    "linkedin_insight": null,
+    "microsoft_clarity": null,
+    "hotjar": null,
+    "google_tag_manager": null
+  },
+  "conversion": {
+    "has_contact_form": false,
+    "has_phone_click": true,
+    "has_whatsapp_link": false,
+    "has_cta_buttons": 9,
+    "has_live_chat": null,
+    "has_popup_optin": null,
+    "has_testimonials": false,
+    "has_pricing_page_link": null,
+    "has_mailto_published": true
+  },
+  "seo": {
+    "has_title": true,
+    "title_text": "Kehan Sri – One stop solution for all your Solar needs.",
+    "title_length": 55,
+    "has_meta_description": null,
+    "meta_desc_length": null,
+    "h1_count": 0,
+    "h1_text": "",
+    "has_og_tags": null,
+    "has_schema": null,
+    "has_favicon": null,
+    "image_count": 26,
+    "images_without_alt": 24
+  },
+  "pagespeed": {
+    "error": "not run - no outbound network route to the PageSpeed API from this environment",
+    "provenance": "NOT RUN - this environment has no outbound route to Google's PageSpeed API, so no speed or Largest Contentful Paint figure is claimed anywhere in this report."
+  },
+  "page_count": {
+    "sitemap_pages": 191,
+    "has_sitemap": true
+  },
+  "local_signals": {
+    "has_google_maps_embed": true,
+    "has_address_schema": null,
+    "mentions_city": true,
+    "company_in_title": true
+  },
+  "ad_check_urls": {
+    "google_ads_transparency": "https://adstransparency.google.com/?region=anywhere&q=kehansrisolar.com&country=IN",
+    "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=KehanSri Technologies & Service Pvt Ltd&search_type=keyword_unordered",
+    "note": "Open these URLs in your browser to check if they're running ads and what those ads look like."
+  },
+  "final_url": "https://kehansrisolar.com/",
+  "score": {
+    "score": 21,
+    "issues": [
+      "Injected casino spam on the homepage",
+      "156 posts created in five days, all inside that window",
+      "The Google listing embedded on the contact page is a preschool",
+      "Five 'Read More' buttons point at a staging host",
+      "Header 'Get a Quote' and 'Contact Us' point at a staging path",
+      "No H1 headline anywhere on the homepage",
+      "No enquiry form on either page read",
+      "24 of 26 homepage images carry no alt text",
+      "Theme demo testimonials are live",
+      "Default WordPress pages are live and indexed",
+      "Sizing table still quotes 300 Wp modules",
+      "A third-party domain serves a homepage image",
+      "No contact form on homepage — visitors can't easily enquire",
+      "No WhatsApp link — losing mobile leads (WhatsApp converts 3x better for Indian home services)",
+      "No visible testimonials/social proof on homepage",
+      "No H1 tag on homepage",
+      "24 images missing alt text — hurts SEO"
+    ],
+    "wins": [
+      "Good CTA presence (9 buttons)",
+      "8 named projects in the portfolio (10/35/45/50 KW and 5 MW in Hyderabad, 1.5 MW Kolar, 100 KW Mumbai, 1 MW Ujjain)",
+      "info@kehansri.com published on the contact page",
+      "Click-to-call phone number on the contact page",
+      "A live embedded Google Map on the contact page",
+      "Gachibowli, Hyderabad 500032 address with a registered office in Bhopal",
+      "Company name appears in the page title",
+      "Founded 2016, with a stated B2B-to-solar history"
+    ],
+    "issue_count": 17,
+    "win_count": 8
+  },
+  "ad_library": {
+    "checked_at": "2026-11-14",
+    "meta_own": {
+      "found": null,
+      "results_count": 0,
+      "results_label": "",
+      "query": "KehanSri Technologies & Service Pvt Ltd",
+      "ads": [],
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&is_targeted_country=false&media_type=all&q=KehanSri%20Technologies%20&%20Service%20Pvt%20Ltd"
+    },
+    "meta_competitors": {
+      "found": null,
+      "results_count": 0,
+      "results_label": "",
+      "query": "",
+      "ads": [],
+      "url": ""
+    },
+    "google_own": {
+      "found": true,
+      "advertisers": [],
+      "detail": {
+        "name": "KehanSri Technologies & Service Pvt Ltd",
+        "ad_count": 24,
+        "advertiser_id": "AR07894673884648046593",
+        "creatives": [
+          "CR13938922639515975681",
+          "CR11649471596325765121",
+          "CR17305277358550286337",
+          "CR08712402672457613313"
+        ],
+        "started": "Active 2026-11-14",
+        "destination": "kehansrisolar.com",
+        "note": "24 live ads in Google's Ads Transparency Centre under identity-verified advertiser AR07894673884648046593, spanning Display image creatives and a YouTube video creative. All four creative IDs above were read off the transparency page on 2026-11-14.",
+        "url": "https://adstransparency.google.com/advertiser/AR07894673884648046593/creative/CR13938922639515975681?region=IN"
+      },
+      "query": "https://kehansrisolar.com/"
+    },
+    "google_competitors": {
+      "found": null,
+      "advertisers": [],
+      "query": ""
+    },
+    "notes": [
+      "Every figure in this audit was read live on 2026-11-14. Fields the sandbox could not measure are recorded as null and printed as 'could not be checked in this pass' - they are never reported as a pass or a failure.",
+      "Tracking pixels could not be checked: the page HTML source was not retrievable from this environment, only rendered text."
+    ],
+    "summary": "KehanSri runs 24 live Google ads behind one identity-verified account - the largest live Google ad count found in this sweep - and, unusually for the Hyderabad field, that spend lands on a domain they own. The site behind it is a 2019 WordPress build with real substance: eight named projects from 10 kW to 5 MW, a 4.9/131 Google rating, and published contact details. It is also carrying an active SEO-spam injection - Polish and German casino copy with quora.com outbound links sits on the homepage the ads point at, next to 156 posts all created between 9 and 13 November 2026. Fixing that, and the five buttons that still point at a staging host, is the cheapest work available to them."
+  },
+  "defects": [
+    {
+      "title": "Injected casino spam on the homepage",
+      "detail": "The homepage carries long blocks of Polish and German online-casino copy with six outbound links, all of them to quora.com \"unanswered\" pages - pl.quora.com, de.quora.com and quora.com. Headings read \"Najlepsze oferty na start dla nowych graczy\", \"Wszystko co warto wiedziec o nowoczesnych platformach hazardowych\", \"Faszination der digitalen Glucksspiele\" and \"Wie Sie seriose und sichere Plattformen im Internet erkennen\", with link text like \"kasyna z bonusem bez depozytu za rejestracje\" and \"neue online casino vodds\". This is a WordPress SEO-spam injection, and it sits on the page 24 paid ads are sending traffic to."
+    },
+    {
+      "title": "156 posts created in five days, all inside that window",
+      "detail": "Every post in the sitemap is dated 2026-11-09 to 2026-11-13. That burst is the injection mechanism, not editorial output."
+    },
+    {
+      "title": "The Google listing embedded on the contact page is a preschool",
+      "detail": "The contact page embeds a live Google Map with a 4.9 rating over 131 reviews - and the embed URL carries gcid:preschool, with the listing named \"Ingenium Foundation School Gachibowli\". The rating shown beside the solar enquiry form belongs to a school."
+    },
+    {
+      "title": "Five 'Read More' buttons point at a staging host",
+      "detail": "Roof Top, Ground Mounted, Operation & Maintenance, Project Management and EPC & Development all link to www.wpstage.a2hosted.com/1411/kehanSri/ - a different machine from the live site."
+    },
+    {
+      "title": "Header 'Get a Quote' and 'Contact Us' point at a staging path",
+      "detail": "Both go to kehansrisolar.com/kehanSri/contact-us/ - a staging subdirectory on the live domain."
+    },
+    {
+      "title": "No H1 headline anywhere on the homepage",
+      "detail": "The page text read on 2026-11-14 has ten H2 headings and no H1 at all. The 'Clean-Pollution Free Power' line is letter-spaced into individual characters rather than marked up as a heading."
+    },
+    {
+      "title": "No enquiry form on either page read",
+      "detail": "Neither the homepage nor the contact page carries a form. The only routes to the business are a mailto link, a tel: link and the two staging-path buttons."
+    },
+    {
+      "title": "24 of 26 homepage images carry no alt text",
+      "detail": "Four product images carry a literal alt=\"null\"; the eight project images, repeated by the carousel, carry none at all."
+    },
+    {
+      "title": "Theme demo testimonials are live",
+      "detail": "The four testimonials in the sitemap are named tiffany-brown-seven-media-group, max-freewind-seven-commerce, miriam-blackwood-seven-beauty-studio and richard-berrington-seven-education - the theme's placeholder content, never replaced."
+    },
+    {
+      "title": "Default WordPress pages are live and indexed",
+      "detail": "/sample-page/ and /the7-web-master-home/ are both in the sitemap."
+    },
+    {
+      "title": "Sizing table still quotes 300 Wp modules",
+      "detail": "The 'Know Your Solar Requirement' table prices 300 Wp and 320 Wp modules and shows 3 kVA saving INR 27,000 a year."
+    },
+    {
+      "title": "A third-party domain serves a homepage image",
+      "detail": "handle.inspiroxindia.com/images/update.png is loaded by the homepage updates feed."
+    }
+  ],
+  "wins": [
+    "8 named projects in the portfolio (10/35/45/50 KW and 5 MW in Hyderabad, 1.5 MW Kolar, 100 KW Mumbai, 1 MW Ujjain)",
+    "info@kehansri.com published on the contact page",
+    "Click-to-call phone number on the contact page",
+    "A live embedded Google Map on the contact page",
+    "Gachibowli, Hyderabad 500032 address with a registered office in Bhopal",
+    "Company name appears in the page title",
+    "Founded 2016, with a stated B2B-to-solar history"
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@kehansri.com"
+    ],
+    [
+      "Phone",
+      "+91 888 628 6000 / +91 9985408601"
+    ]
+  ],
+  "provenance": [
+    [
+      "Meta Ad Library",
+      "NOT CHECKED for this lead in this pass - no Meta ad count is claimed either way. This advertiser's paid activity was confirmed on Google's Ads Transparency Centre instead.",
+      "not run"
+    ],
+    [
+      "Page text read on the live site",
+      "Direct page fetch through the audit sandbox's page reader. The rendered text was counted mechanically with a fixed regex rather than estimated by reading it, so every count in this report can be re-derived from the page. No page HTML source was available.",
+      "2026-11-14"
+    ],
+    [
+      "Headings, image counts, alt attributes, CTA link text, form fields, testimonials, outbound links",
+      "Counted over the page text read - see the row above.",
+      "2026-11-14"
+    ],
+    [
+      "Tracking tags (8 of 8 could not be read)",
+      "The page HTML source was not retrievable from this environment - script tags are stripped from rendered text - so no pixel, GA4, GTM or Clarity claim is made in either direction. Every tracking row reads not checked rather than missing.",
+      "not run"
+    ],
+    [
+      "Sitemap contents and page counts",
+      "https://kehansrisolar.com/wp-sitemap.xml and its sub-sitemaps fetched and counted verbatim.",
+      "2026-11-14"
+    ],
+    [
+      "Meta description, Open Graph, Schema.org, favicon, consent mode",
+      "NOT CHECKED - these live in the <head>, which was not returned in readable form. None is claimed as present or absent.",
+      "not run"
+    ]
+  ]
+}

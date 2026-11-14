@@ -1,0 +1,207 @@
+{
+  "company": "PNR Sunrise Energies Pvt Ltd",
+  "legal": "PNR Sunrise Energies Pvt. Ltd.",
+  "city": "Hyderabad (Telangana & Andhra Pradesh)",
+  "website": "https://sunriseenergies.in/",
+  "email": "",
+  "phone": "+91 6304587145",
+  "audit_date": "2026-11-14",
+  "ssl": true,
+  "load_time_seconds": null,
+  "pixels": {
+    "meta_pixel": null,
+    "google_ads": null,
+    "google_analytics_ga4": null,
+    "google_analytics_ua": null,
+    "linkedin_insight": null,
+    "microsoft_clarity": null,
+    "hotjar": null,
+    "google_tag_manager": null
+  },
+  "conversion": {
+    "has_contact_form": true,
+    "has_phone_click": true,
+    "has_whatsapp_link": true,
+    "has_cta_buttons": 9,
+    "has_live_chat": null,
+    "has_popup_optin": null,
+    "has_testimonials": true,
+    "has_pricing_page_link": null,
+    "has_mailto_published": false
+  },
+  "seo": {
+    "has_title": true,
+    "title_text": "PNR Sunrise Energies Pvt Ltd — Solar EPC & EV Charging Infrastructure | Telangana | Andhra Pradesh",
+    "title_length": 98,
+    "has_meta_description": null,
+    "meta_desc_length": null,
+    "h1_count": 1,
+    "h1_text": "Power Your Future. Naturally.",
+    "has_og_tags": null,
+    "has_schema": null,
+    "has_favicon": null,
+    "image_count": 15,
+    "images_without_alt": 1
+  },
+  "pagespeed": {
+    "error": "not run - no outbound network route to the PageSpeed API from this environment",
+    "provenance": "NOT RUN - this environment has no outbound route to Google's PageSpeed API, so no speed or Largest Contentful Paint figure is claimed anywhere in this report."
+  },
+  "page_count": {
+    "sitemap_pages": null,
+    "has_sitemap": false
+  },
+  "local_signals": {
+    "has_google_maps_embed": false,
+    "has_address_schema": null,
+    "mentions_city": true,
+    "company_in_title": true
+  },
+  "ad_check_urls": {
+    "google_ads_transparency": "https://adstransparency.google.com/?region=anywhere&q=sunriseenergies.in&country=IN",
+    "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=PNR Sunrise Energies Pvt Ltd&search_type=keyword_unordered",
+    "note": "Open these URLs in your browser to check if they're running ads and what those ads look like."
+  },
+  "final_url": "https://sunriseenergies.in/",
+  "score": {
+    "score": 2,
+    "issues": [
+      "Every hero counter reads zero",
+      "No email address published anywhere",
+      "No sitemap",
+      "The only live ad recruits channel partners",
+      "Google Ads Transparency shows 0 ads for the domain",
+      "1 images missing alt text — hurts SEO"
+    ],
+    "wins": [
+      "Contact form exists",
+      "WhatsApp link present",
+      "Good CTA presence (9 buttons)",
+      "Testimonials visible",
+      "A working solar savings calculator capturing monthly bill and locality (Hyderabad / Warangal / Vijayawada / Visakhapatnam)",
+      "Four named projects with capacity and generation figures - 5 kW Hyderabad, 100 kW Telangana, 500 kW Andhra Pradesh, 10 kW Warangal",
+      "Three named testimonials from Hyderabad, Andhra Pradesh and Warangal",
+      "Detailed management bios: Mr KVK Prasad Rao (ITS 1986 batch, Osmania, IIT Delhi, 35+ years DoT/BSNL/TEC/TCIL) and Mr Nagesh Arcot (Managing Director, 22.5 years HSBC)",
+      "Full contact form with property type and monthly bill",
+      "Exactly one H1 headline, with 13 H2 section headings under it - the only lead in this batch whose heading structure is correct"
+    ],
+    "issue_count": 6,
+    "win_count": 10
+  },
+  "ad_library": {
+    "checked_at": "2026-11-14",
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "~1 result",
+      "query": "PNR Sunrise Energies Pvt Ltd",
+      "ads": [
+        {
+          "library_id": "28807326382303186",
+          "page_name": "PNR Sunrise Energies Pvt Ltd",
+          "started": "Nov 12, 2026",
+          "destination": "api.whatsapp.com",
+          "library_url": "https://www.facebook.com/ads/library/?id=28807326382303186",
+          "text": "Turn your business dreams into a growing solar business. Join PNR Sunrise Energies Pvt. Ltd. as a Channel Partner - dedicated business and operational support, residential rooftop, commercial and industrial solar, EV charging stations, solar water pumps and solar fencing. Genuine products, competitive pricing, expert business support, timely service and delivery, long-term partnership. Hyderabad. Call 6304587145."
+        }
+      ],
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&is_targeted_country=false&media_type=all&q=PNR%20Sunrise%20Energies%20Pvt%20Ltd"
+    },
+    "meta_competitors": {
+      "found": null,
+      "results_count": 0,
+      "results_label": "",
+      "query": "",
+      "ads": [],
+      "url": ""
+    },
+    "google_own": {
+      "found": false,
+      "advertisers": [],
+      "detail": null,
+      "query": "https://sunriseenergies.in/"
+    },
+    "google_competitors": {
+      "found": null,
+      "advertisers": [],
+      "query": ""
+    },
+    "notes": [
+      "Every figure in this audit was read live on 2026-11-14. Fields the sandbox could not measure are recorded as null and printed as 'could not be checked in this pass' - they are never reported as a pass or a failure.",
+      "Tracking pixels could not be checked: the page HTML source was not retrievable from this environment, only rendered text."
+    ],
+    "summary": "PNR Sunrise Energies ran its first captured ad on 12 November 2026 - two days before this sweep - and it recruits channel partners rather than homeowners, making them the youngest advertiser in the batch and the only one whose paid message aims at the trade. The site behind it is the most complete of the five: a working solar calculator, a six-step process, four named projects with generation figures, three named testimonials and detailed management bios. It is also the one with every hero counter reading zero, no email address, and no sitemap."
+  },
+  "defects": [
+    {
+      "title": "Every hero counter reads zero",
+      "detail": "The page shows '0+' Projects Delivered, '0 MW' Solar Capacity Installed, '0%' Potential Bill Savings and '0' years of engineering experience - while the same page claims 150+ projects and names management with 35+ years of experience."
+    },
+    {
+      "title": "No email address published anywhere",
+      "detail": "Contact is the request-assessment form, wa.me/+916304587145 and tel:+916304587145 only."
+    },
+    {
+      "title": "No sitemap",
+      "detail": "sunriseenergies.in/sitemap.xml returned an empty body."
+    },
+    {
+      "title": "The only live ad recruits channel partners",
+      "detail": "Nothing in the paid feed is buying homeowner demand, which is the audience the calculator and project showcase are built for."
+    },
+    {
+      "title": "Google Ads Transparency shows 0 ads for the domain",
+      "detail": "All paid presence is one two-day-old Meta creative."
+    }
+  ],
+  "wins": [
+    "A working solar savings calculator capturing monthly bill and locality (Hyderabad / Warangal / Vijayawada / Visakhapatnam)",
+    "Four named projects with capacity and generation figures - 5 kW Hyderabad, 100 kW Telangana, 500 kW Andhra Pradesh, 10 kW Warangal",
+    "Three named testimonials from Hyderabad, Andhra Pradesh and Warangal",
+    "Detailed management bios: Mr KVK Prasad Rao (ITS 1986 batch, Osmania, IIT Delhi, 35+ years DoT/BSNL/TEC/TCIL) and Mr Nagesh Arcot (Managing Director, 22.5 years HSBC)",
+    "Full contact form with property type and monthly bill",
+    "Exactly one H1 headline, with 13 H2 section headings under it - the only lead in this batch whose heading structure is correct"
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "none published"
+    ],
+    [
+      "Phone",
+      "+91 6304587145"
+    ]
+  ],
+  "provenance": [
+    [
+      "Live ads, library IDs, start dates, ad copy",
+      "Meta Ad Library (India, active ads) - every ID opened directly",
+      "2026-11-14"
+    ],
+    [
+      "Page text read on the live site",
+      "Direct page fetch through the audit sandbox's page reader. The rendered text was counted mechanically with a fixed regex rather than estimated by reading it, so every count in this report can be re-derived from the page. No page HTML source was available.",
+      "2026-11-14"
+    ],
+    [
+      "Headings, image counts, alt attributes, CTA link text, form fields, testimonials, outbound links",
+      "Counted over the page text read - see the row above.",
+      "2026-11-14"
+    ],
+    [
+      "Tracking tags (8 of 8 could not be read)",
+      "The page HTML source was not retrievable from this environment - script tags are stripped from rendered text - so no pixel, GA4, GTM or Clarity claim is made in either direction. Every tracking row reads not checked rather than missing.",
+      "not run"
+    ],
+    [
+      "Sitemap contents and page counts",
+      "https://sunriseenergies.in/sitemap.xml and its sub-sitemaps fetched and counted verbatim.",
+      "2026-11-14"
+    ],
+    [
+      "Meta description, Open Graph, Schema.org, favicon, consent mode",
+      "NOT CHECKED - these live in the <head>, which was not returned in readable form. None is claimed as present or absent.",
+      "not run"
+    ]
+  ]
+}

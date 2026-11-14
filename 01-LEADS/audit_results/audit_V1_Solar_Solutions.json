@@ -1,0 +1,237 @@
+{
+  "company": "V1 Solar Solutions",
+  "legal": "V1 Solar Solutions (Solar Sales and Services)",
+  "city": "Kamakshipalya, Bengaluru - advertising into Hyderabad",
+  "website": "https://www.v1solarsolutions.com/",
+  "email": "info@v1solarsolutions.com",
+  "phone": "+91 9066631441",
+  "audit_date": "2026-11-14",
+  "ssl": true,
+  "load_time_seconds": null,
+  "pixels": {
+    "meta_pixel": null,
+    "google_ads": null,
+    "google_analytics_ga4": null,
+    "google_analytics_ua": null,
+    "linkedin_insight": null,
+    "microsoft_clarity": null,
+    "hotjar": null,
+    "google_tag_manager": null
+  },
+  "conversion": {
+    "has_contact_form": false,
+    "has_phone_click": true,
+    "has_whatsapp_link": false,
+    "has_cta_buttons": 7,
+    "has_live_chat": null,
+    "has_popup_optin": null,
+    "has_testimonials": true,
+    "has_pricing_page_link": null,
+    "has_mailto_published": true
+  },
+  "seo": {
+    "has_title": true,
+    "title_text": "V1 Solar Solutions - Solar Water Heaters",
+    "title_length": 40,
+    "has_meta_description": null,
+    "meta_desc_length": null,
+    "h1_count": 2,
+    "h1_text": "SOLAR WATER HEATER",
+    "has_og_tags": null,
+    "has_schema": null,
+    "has_favicon": null,
+    "image_count": 8,
+    "images_without_alt": 7
+  },
+  "pagespeed": {
+    "error": "not run - no outbound network route to the PageSpeed API from this environment",
+    "provenance": "NOT RUN - this environment has no outbound route to Google's PageSpeed API, so no speed or Largest Contentful Paint figure is claimed anywhere in this report."
+  },
+  "page_count": {
+    "sitemap_pages": null,
+    "has_sitemap": false
+  },
+  "local_signals": {
+    "has_google_maps_embed": true,
+    "has_address_schema": null,
+    "mentions_city": true,
+    "company_in_title": true
+  },
+  "ad_check_urls": {
+    "google_ads_transparency": "https://adstransparency.google.com/?region=anywhere&q=v1solarsolutions.com&country=IN",
+    "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=V1 Solar Solutions&search_type=keyword_unordered",
+    "note": "Open these URLs in your browser to check if they're running ads and what those ads look like."
+  },
+  "final_url": "https://www.v1solarsolutions.com/",
+  "score": {
+    "score": 16,
+    "issues": [
+      "No sitemap at all",
+      "A misspelled second domain splits the business",
+      "The second H1 misspells the product",
+      "Google rating 1.0 from 2 reviews",
+      "The Meta ad ends in a WhatsApp chat",
+      "Bengaluru address under Hyderabad-targeted ads",
+      "Product URLs carry typos",
+      "The three testimonials are anonymous",
+      "No contact form on homepage — visitors can't easily enquire",
+      "No WhatsApp link — losing mobile leads (WhatsApp converts 3x better for Indian home services)",
+      "Multiple H1 tags (2) — confuses Google",
+      "7 images missing alt text — hurts SEO"
+    ],
+    "wins": [
+      "Good CTA presence (7 buttons)",
+      "Testimonials visible",
+      "info@v1solarsolutions.com published on the contact page",
+      "Click-to-call phone number on every page",
+      "Google Maps link on the homepage",
+      "Quote form on the contact page captures product type before the callback",
+      "Three customer testimonials on the homepage (headings and quotes, though none names the customer)",
+      "Google Maps place link on the contact page"
+    ],
+    "issue_count": 12,
+    "win_count": 8
+  },
+  "ad_library": {
+    "checked_at": "2026-11-14",
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "~1 result",
+      "query": "V1 Solar Solutions",
+      "ads": [
+        {
+          "library_id": "1446165934284837",
+          "page_name": "99Ad Solutions (for V1 Solar Solutions)",
+          "started": "Oct 12, 2026",
+          "destination": "api.whatsapp.com",
+          "library_url": "https://www.facebook.com/ads/library/?id=1446165934284837",
+          "text": "Is your solar water heater not giving enough hot water like it used to? Expert repair, servicing and installation for all major solar water heater brands. Solar tube deep cleaning and scaling, leakage detection and fixes, full system health checkup and maintenance, new sales and complete setup. Prompt doorstep service available across Bengaluru and Hyderabad. Call +91 90666 31441."
+        }
+      ],
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&is_targeted_country=false&media_type=all&q=V1%20Solar%20Solutions"
+    },
+    "meta_competitors": {
+      "found": null,
+      "results_count": 0,
+      "results_label": "",
+      "query": "",
+      "ads": [],
+      "url": ""
+    },
+    "google_own": {
+      "found": true,
+      "advertisers": [],
+      "detail": {
+        "name": "VIJAYA KUMAR",
+        "ad_count": 4,
+        "advertiser_id": "AR09270299175948386305",
+        "creatives": [
+          "CR16134700652138856449",
+          "CR01961826204797370369",
+          "CR10704294704888938497",
+          "CR07293973505157103617"
+        ],
+        "started": "Active 2026-11-14",
+        "destination": "v1solarsolutions.com",
+        "note": "4 live ads in Google's Ads Transparency Centre under identity-verified advertiser AR09270299175948386305 (VIJAYA KUMAR), all pointing at v1solarsolutions.com.",
+        "url": "https://adstransparency.google.com/advertiser/AR09270299175948386305/creative/CR16134700652138856449?region=IN"
+      },
+      "query": "https://www.v1solarsolutions.com/"
+    },
+    "google_competitors": {
+      "found": null,
+      "advertisers": [],
+      "query": ""
+    },
+    "notes": [
+      "Every figure in this audit was read live on 2026-11-14. Fields the sandbox could not measure are recorded as null and printed as 'could not be checked in this pass' - they are never reported as a pass or a failure.",
+      "Tracking pixels could not be checked: the page HTML source was not retrievable from this environment, only rendered text."
+    ],
+    "summary": "V1 Solar Solutions is the only lead in this batch advertising on both channels with a published email: 4 live Google ads behind a verified account and a Meta ad (Library ID 1446165934284837, live since 12 October 2026) run by the agency 99Ad Solutions. The Meta ad is the only thing putting them in front of Hyderabad, and it ends in a WhatsApp chat. The site is a small, working one - a quote form that captures product type, three named testimonials, a Google Maps link - with two fixable problems: no sitemap at all, and a misspelled second domain splitting the same business in two."
+  },
+  "defects": [
+    {
+      "title": "No sitemap at all",
+      "detail": "v1solarsolutions.com/sitemap.xml returns the homepage HTML. The path is rewritten, so search engines have no sitemap to crawl."
+    },
+    {
+      "title": "A misspelled second domain splits the business",
+      "detail": "v1solarsolutuons.in carries their IndiaMART manufacturer listing while v1solarsolutions.com is the real site - two domains, two presentations, one phone number."
+    },
+    {
+      "title": "The second H1 misspells the product",
+      "detail": "The page has two H1 tags, and the second reads 'COMMECIAL RO PLANT'. The water-heater paragraph opens 'choos V1 Solar'."
+    },
+    {
+      "title": "Google rating 1.0 from 2 reviews",
+      "detail": "Against a Meta ad that leans on 'expert technicians' and 'prompt doorstep service'."
+    },
+    {
+      "title": "The Meta ad ends in a WhatsApp chat",
+      "detail": "api.whatsapp.com - no form, no email capture, nothing to follow up if the chat goes cold."
+    },
+    {
+      "title": "Bengaluru address under Hyderabad-targeted ads",
+      "detail": "7, Magadi Main Rd, Asthagrama Layout, Kamakshipalya, Bengaluru 560079, with the ad promising doorstep service in Hyderabad too."
+    },
+    {
+      "title": "Product URLs carry typos",
+      "detail": "/water-softner.php is linked from the homepage; the softener product is spelled 'softener' in the heading."
+    },
+    {
+      "title": "The three testimonials are anonymous",
+      "detail": "'Great Benefits!', 'Reduced Bills' and 'Money Saver' each carry a quote, but no name, city or system size - nothing a prospect can check."
+    }
+  ],
+  "wins": [
+    "info@v1solarsolutions.com published on the contact page",
+    "Click-to-call phone number on every page",
+    "Google Maps link on the homepage",
+    "Quote form on the contact page captures product type before the callback",
+    "Three customer testimonials on the homepage (headings and quotes, though none names the customer)",
+    "Google Maps place link on the contact page"
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@v1solarsolutions.com"
+    ],
+    [
+      "Phone",
+      "+91 9066631441"
+    ]
+  ],
+  "provenance": [
+    [
+      "Live ads, library IDs, start dates, ad copy",
+      "Meta Ad Library (India, active ads) - every ID opened directly",
+      "2026-11-14"
+    ],
+    [
+      "Page text read on the live site",
+      "Direct page fetch through the audit sandbox's page reader. The rendered text was counted mechanically with a fixed regex rather than estimated by reading it, so every count in this report can be re-derived from the page. No page HTML source was available.",
+      "2026-11-14"
+    ],
+    [
+      "Headings, image counts, alt attributes, CTA link text, form fields, testimonials, outbound links",
+      "Counted over the page text read - see the row above.",
+      "2026-11-14"
+    ],
+    [
+      "Tracking tags (8 of 8 could not be read)",
+      "The page HTML source was not retrievable from this environment - script tags are stripped from rendered text - so no pixel, GA4, GTM or Clarity claim is made in either direction. Every tracking row reads not checked rather than missing.",
+      "not run"
+    ],
+    [
+      "Sitemap contents and page counts",
+      "https://www.v1solarsolutions.com/sitemap.xml and its sub-sitemaps fetched and counted verbatim.",
+      "2026-11-14"
+    ],
+    [
+      "Meta description, Open Graph, Schema.org, favicon, consent mode",
+      "NOT CHECKED - these live in the <head>, which was not returned in readable form. None is claimed as present or absent.",
+      "not run"
+    ]
+  ]
+}

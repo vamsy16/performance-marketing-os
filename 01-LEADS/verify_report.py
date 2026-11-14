@@ -104,13 +104,42 @@ def check_json(audit, errs):
             errs.append(f"JSON: ad_library.{key} missing")
 
 
+def _has_embedded_creatives(audit):
+    """True when this audit carries ad-creative image files.
+
+    Creatives can only be downloaded with a real browser. A full audit built
+    without one is a text-only branded report, and the 30 KB floor that catches
+    broken renders on image-bearing reports would flag every such report as
+    broken. The floor has to follow what the report could actually contain.
+    """
+    adlib = audit.get("ad_library") or {}
+    for key in ("meta_own", "meta_competitors"):
+        for ad in ((adlib.get(key) or {}).get("ads") or []):
+            if ad.get("images") or ad.get("image_files"):
+                return True
+    detail = ((adlib.get("google_own") or {}).get("detail") or {})
+    if detail.get("image_files"):
+        return True
+    for adv in ((adlib.get("google_competitors") or {}).get("advertisers") or []):
+        det = adv.get("detail") or {}
+        if det.get("image_files"):
+            return True
+    return False
+
+
 def check_pdf(audit, pdf_path, errs):
     company = audit.get("company") or ""
     if not os.path.exists(pdf_path):
         errs.append(f"PDF: not found at {pdf_path}")
         return
     size = os.path.getsize(pdf_path)
-    if size < 30_000:
+    # Full audits normally embed the ad creatives, which is what puts them past
+    # 30 KB. Creatives need a browser to download, so a text-only full audit is
+    # ~18-26 KB and must be held to the text-only floor instead of being
+    # reported as a broken render. Page count, branding and placeholder checks
+    # below still apply either way.
+    floor = 30_000 if _has_embedded_creatives(audit) else 8_000
+    if size < floor:
         errs.append(f"PDF: only {size} bytes - likely broken/empty render")
 
     try:
@@ -169,6 +198,11 @@ def check_pdf(audit, pdf_path, errs):
     if audit.get("no_website"):
         if "NO WEBSITE FOUND" not in flat:
             errs.append("PDF: no_website lead must show 'NO WEBSITE FOUND' panel")
+    elif audit.get("score", {}).get("score") is None:
+        # No score is claimed when the page could not be read. Demanding a
+        # "/100" figure there would push the report into inventing one.
+        if "SITE NOT READ" not in flat and "Site not readable" not in flat:
+            errs.append("PDF: unreadable site must show the 'site not read' panel")
     else:
         if "/100" not in flat:
             errs.append("PDF: missing audit score display")

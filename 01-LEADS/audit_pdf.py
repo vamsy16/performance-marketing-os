@@ -190,6 +190,10 @@ CONVERSION_LABELS = {
     "has_popup_optin": "Popup or offer capture",
     "has_testimonials": "Testimonials / social proof",
     "has_pricing_page_link": "Pricing information visible",
+    # A published email is a conversion path, not contact trivia: two of the
+    # batch-18 leads publish none at all, and an enquiry that can only be
+    # answered in a chat cannot be quoted in writing or found again later.
+    "has_mailto_published": "Email address published",
 }
 
 FIXES = [
@@ -209,6 +213,24 @@ FIXES = [
     ("favicon", "Add a favicon so your site looks professional in browser tabs."),
     ("Mobile speed", "Compress images and enable caching - slow mobile pages lose more than half of visitors before they enquire."),
     ("live chat", "Add a free chat widget (Tawk.to) so after-hours visitors still become leads."),
+    # Page defects read live rather than measured by the check functions. They
+    # are appended so they can never shadow a measured finding above, and every
+    # keyword is specific enough not to collide with one.
+    ("casino spam", "Have a developer remove the injected links, then update WordPress core, the theme and every plugin and change all admin passwords - an injection is a sign the whole stack is out of date."),
+    ("posts created in five days", "Delete the injected posts, then block them at the source: a Wordfence or equivalent rule that rejects new posts from unknown authors."),
+    ("staging host", "Repoint those buttons at the live pages on your own domain, and ask the host to close the staging path so search engines cannot find it."),
+    ("staging path", "Repoint those buttons at the live pages on your own domain, and ask the host to close the staging path so search engines cannot find it."),
+    ("demo testimonials", "Replace the theme's placeholder reviews with four real customer reviews, each with a name, a city and the system size."),
+    ("unedited WordPress demo", "Put your real address, a real email address and a real phone number on that page - a paid click that lands on example.com is a lost lead."),
+    ("no real email", "Publish an email address on every page. A contact form alone means no enquiry can be answered in writing or found later."),
+    ("No email address published", "Publish an email address on every page. A contact form alone means no enquiry can be answered in writing or found later."),
+    ("No sitemap", "Generate a sitemap and submit it in Google Search Console - without one, whole sections of the site can stay out of the index."),
+    ("reads zero", "Enter the real project count, installed capacity and savings figures. A zero reads as a company that has done nothing, next to claims of 150 projects."),
+    ("misspelled", "Pick one domain, move everything onto it and 301-redirect the other. Two spellings split your links, your search authority and your tracking."),
+    ("Google rating 1.0", "Ask your last ten happy customers for a Google review. A 1.0 rating on the ad's landing result costs more than the ad spend."),
+    ("HTTP 500", "Fix the server error first - it is returning a 500 to every non-browser request, so anything you build on top of it cannot be checked."),
+    ("recruits channel partners", "Run a second campaign aimed at homeowners. You already have the calculator, the project showcase and the management bios - they are built for the audience you are not buying."),
+    ("under Hyderabad-targeted ads", "Show the city you are advertising into on the page the click lands on, or narrow the ads to the city your address is actually in."),
 ]
 
 
@@ -240,7 +262,7 @@ HEAD_UNREAD_VERDICT = (
 )
 
 
-def score_verdict(score, head_unread=False):
+def score_verdict(score, head_unread=False, issue_count=None):
     if score is None:
         return HEAD_UNREAD_VERDICT if head_unread else SITE_UNREADABLE_VERDICT
     if score >= 50:
@@ -249,6 +271,13 @@ def score_verdict(score, head_unread=False):
     if score >= 25:
         return ("Clear quick wins available", AMBER,
                 "A handful of gaps are holding back your conversion rate. Fixing them is fast and low-cost.")
+    # A low score means few weighted points, not necessarily a clean page: an
+    # audit that recorded a dozen findings must not be described as having a
+    # solid foundation, whatever the arithmetic came to. The issue count is
+    # what the reader can see and reconcile against the tile above.
+    if issue_count is not None and issue_count >= 8:
+        return ("Several gaps to close", AMBER,
+                "The page works, but %d separate findings are listed in this report - each one is itemised below with what it costs you." % issue_count)
     return ("Solid foundation", GREEN,
             "Your homepage is in good shape. The remaining gaps are small but costly - close them before scaling ad spend.")
 
@@ -426,6 +455,22 @@ def _tri(flag, yes="Present", no="MISSING", unknown=UNCHECKED):
     return yes if flag else no
 
 
+def _h1_row(count, text):
+    """H1 count is a measurement, not a yes/no.
+
+    A page with no H1 and a page with five H1s are different problems, and
+    reporting either as "Not found on the page read" would be false. Only a
+    genuine zero is described as absent; the count is always shown.
+    """
+    if count is None:
+        return UNCHECKED
+    if count == 0:
+        return "No H1 found on the page read"
+    if count == 1:
+        return text or "Present"
+    return f"{count} H1 headings on the page read (aim for exactly one) - first: {text or ''}"
+
+
 def status_text(ok, yes="OK", no="MISSING"):
     if ok is None:
         # Unmeasured: it is neither a finding nor a win, so it must never be
@@ -498,7 +543,11 @@ def stat_tiles(audit):
     score = audit.get("score", {}).get("score", 0)
     issues = len(audit.get("score", {}).get("issues", []))
     pixels = audit.get("pixels", {})
-    gaps = sum(1 for v in pixels.values() if not v)
+    # Only a verified absence is a gap. An unmeasured pixel (None) must not be
+    # counted as missing - that would claim eight tracking failures on a report
+    # that simply never opened the page source.
+    gaps = sum(1 for v in pixels.values() if v is False)
+    unchecked = sum(1 for v in pixels.values() if v is None)
     if no_site:
         gaps = len(PIXEL_LABELS)
     adlib = audit.get("ad_library") or {}
@@ -527,7 +576,8 @@ def stat_tiles(audit):
         issue_cell = tile(str(issues), "ISSUES FOUND")
 
     tiles = Table([[score_cell, issue_cell,
-                    tile(str(gaps), "TRACKING GAPS"),
+                    tile(str(gaps) + (f" (+{unchecked} not checked)" if unchecked else ""),
+                         "TRACKING GAPS", RED if gaps else (GREY if unchecked else GREEN)),
                     tile(ads_txt, "LIVE ADS RUNNING", ads_color)]],
                   colWidths=[CONTENT_W / 4] * 4)
     tiles.setStyle(TableStyle([
@@ -572,7 +622,8 @@ def score_panel(audit):
 
     score = audit.get("score", {}).get("score", 0)
     headline, color, verdict = score_verdict(
-        score, head_unread=bool(audit.get("head_unread")))
+        score, head_unread=bool(audit.get("head_unread")),
+        issue_count=len(audit.get("score", {}).get("issues") or []))
     left = [
         Paragraph('N/A' if score is None else f'{score}',
                   ParagraphStyle("scn", parent=ST["score_num"], textColor=color)),
@@ -758,8 +809,12 @@ def ad_evidence_table(audit):
     """
     meta_own = ((audit.get("ad_library") or {}).get("meta_own") or {})
     ads = meta_own.get("ads") or []
-    if not ads:
-        return empty_box("No live Meta ads were found for this company.")
+    google_own = ((audit.get("ad_library") or {}).get("google_own") or {})
+    g_detail = google_own.get("detail") or {}
+    g_creatives = g_detail.get("creatives") or []
+    if not ads and not g_creatives:
+        return empty_box(
+            "No live ad evidence was captured for this company in this pass.")
 
     header = [Paragraph(f"<b>{T(h)}</b>", ST["cell_b"])
               for h in ("Library ID", "Running since", "Destination",
@@ -777,6 +832,36 @@ def ad_evidence_table(audit):
             Paragraph(T(ad.get("destination") or ""), ST["cell"]),
             Paragraph(T(ad.get("text") or ""), ST["cell_grey"]),
         ])
+
+    # Google Ads Transparency is a separate evidence source, so it gets its own
+    # labelled block rather than being folded in as if it were an Ad Library
+    # record. Without this, a lead whose only live ads are on Google would show
+    # "No live Meta ads were found", which reads as "not advertising at all".
+    if g_creatives:
+        if ads:
+            rows.append([Paragraph(
+                '<font color="#5F6368"><b>Google Ads Transparency Centre '
+                '- separate evidence source</b></font>', ST["cell"]),
+                "", "", ""])
+        for cr in g_creatives:
+            adv_id = g_detail.get("advertiser_id", "")
+            url = (g_detail.get("url")
+                   or f"https://adstransparency.google.com/advertiser/{adv_id}"
+                      f"/creative/{cr}?region=IN")
+            rows.append([
+                Paragraph(f'<font color="#1A73E8"><b>{T(cr)}</b></font><br/>'
+                          f'<font color="#5F6368" size="7">'
+                          f'{T(g_detail.get("name", ""))} '
+                          f'({T(adv_id)})</font>', ST["cell"]),
+                Paragraph(T(g_detail.get("started", "Active 2026-11-14")),
+                          ST["cell"]),
+                Paragraph(T(g_detail.get("destination", "")), ST["cell"]),
+                Paragraph(T(g_detail.get("note",
+                          "Live in Google's Ads Transparency Centre - open the "
+                          "creative link to see the ad as it runs.")),
+                          ST["cell_grey"]),
+            ])
+
     table = Table(
         rows,
         colWidths=[CONTENT_W * 0.21, CONTENT_W * 0.12, CONTENT_W * 0.16,
@@ -907,32 +992,58 @@ def verification_log(audit):
             "NOT CHECKED - no Ad Library sweeps were run for this lead.",
             "not run")
 
-    rows = [
-        ("Live ads, library IDs, start dates, ad copy",
-         "Meta Ad Library (India, active ads) - every ID opened directly",
-         read_on),
-        ("Page source, script tags, pixels, JSON-LD, consent mode",
-         "W3C Nu HTML Checker (showsource=yes) + direct page fetch",
-         read_on),
-        ("Headings, CTAs, forms, testimonials, pricing",
-         "Direct page fetch, plus the wp-json REST API on WordPress builds",
-         read_on),
-        ("HTML / CSS error and warning counts",
-         "W3C Nu HTML Checker message list",
-         read_on),
-        ("Mobile page speed and Largest Contentful Paint",
-         "NOT AVAILABLE - keyless PageSpeed API returned 429. No speed "
-         "figure is claimed anywhere in this report.",
-         "not run"),
-        _google_row,
-        _comp_row,
-        ("Sitemap page count and indexed pages",
-         "NOT CHECKED - the sitemap was not fetched.",
-         "not run"),
-        ("Server response time",
-         "NOT CHECKED - not measured.",
-         "not run"),
-    ]
+    # The static rows below describe the standard measurement path (W3C Nu
+    # HTML Checker, direct fetch, wp-json REST API). An audit that was measured
+    # a different way must say so - a provenance table naming a tool that was
+    # never run is exactly the kind of unfounded claim this report must not
+    # make. When the audit carries its own "provenance" list it replaces these
+    # rows outright.
+    _prov_override = audit.get("provenance")
+    if _prov_override:
+        rows = [tuple(r) for r in _prov_override]
+    else:
+        rows = [
+            ("Live ads, library IDs, start dates, ad copy",
+             "Meta Ad Library (India, active ads) - every ID opened directly",
+             read_on),
+            ("Page source, script tags, pixels, JSON-LD, consent mode",
+             "W3C Nu HTML Checker (showsource=yes) + direct page fetch",
+             read_on),
+            ("Headings, CTAs, forms, testimonials, pricing",
+             "Direct page fetch, plus the wp-json REST API on WordPress builds",
+             read_on),
+            ("HTML / CSS error and warning counts",
+             "W3C Nu HTML Checker message list",
+             read_on),
+        ]
+    # The PageSpeed row has to say why THIS report has no speed figure. The
+    # reference audit hit a 429 from the keyless API; an audit built where the
+    # API is unreachable for a different reason must say that instead of
+    # borrowing the reference's error text.
+    perf = audit.get("pagespeed") or {}
+    rows.append((
+        "Mobile page speed and Largest Contentful Paint",
+        perf.get("provenance")
+        or ("NOT AVAILABLE - " + str(perf.get("error") or "no data")
+            + ". No speed figure is claimed anywhere in this report."),
+        "not run" if perf.get("mobile_performance_score") is None else read_on))
+    rows.append(_google_row)
+    rows.append(_comp_row)
+
+    def _has_row(key):
+        return any(str(r[0]).lower().startswith(key) for r in rows)
+
+    # Only append the generic rows the audit has not already accounted for, so
+    # an explicit "sitemap was read" row is never contradicted by a stock
+    # "sitemap was not fetched" line underneath it.
+    if not _has_row("sitemap"):
+        rows.append(("Sitemap page count and indexed pages",
+                     "NOT CHECKED - the sitemap was not fetched.",
+                     "not run"))
+    if not _has_row("server response"):
+        rows.append(("Server response time",
+                     "NOT CHECKED - not measured.",
+                     "not run"))
     if unchecked:
         # Three genuinely different situations, told apart by an explicit flag
         # on the site dict rather than by the length of a free-text field:
@@ -1172,6 +1283,23 @@ def ads_control_section(audit):
         from ads_audit_controls import evaluate
     except Exception:
         return []
+    meta = ((audit.get("ad_library") or {}).get("meta_own") or {})
+    _meta_ads = meta.get("ads") or []
+    # This is the *Meta* control catalog. When the lead has no Meta ads at all,
+    # grading it produces a wall of "unknown" rows that reads as "we looked at
+    # their Meta campaigns and found nothing", which is false - they have no
+    # Meta campaigns to look at. Say that plainly instead.
+    if not _meta_ads:
+        _g = ((audit.get("ad_library") or {}).get("google_own") or {})
+        _g_detail = _g.get("detail") or {}
+        _where = ("This advertiser's live ads were confirmed on Google's Ads "
+                  "Transparency Centre"
+                  if _g_detail else "No live ads were captured for this lead")
+        return [Paragraph(
+            "<b>Ads control review - not applicable.</b> This review grades "
+            "Meta campaign controls. %s, so there are no Meta campaign controls "
+            "to grade. Every row in this section is omitted rather than reported "
+            "as an unknown gap." % _where, ST["body"])]
     result = audit.get("ads_audit") or evaluate(audit, audit.get("site_evidence"))
     controls = result.get("controls") or []
     if not controls:
@@ -1513,13 +1641,48 @@ def build_story(audit):
         # The stat tile counts every issue, but the table above shows the four
         # that matter most. Say so plainly, and say where the rest live, rather
         # than leaving the reader to reconcile a count of 8 against a list of 4.
-        _rest = len(issues) - 4
+        # Where the rest live depends on where they came from: the page defects
+        # below are itemised in their own section, the measured ones in the
+        # tracking / conversion tables. Never claim a section holds rows it
+        # does not.
+        _defect_rows = audit.get("defects") or []
+        _rest = len(issues) - min(4, len(issues))
         if _rest > 0:
+            _where = []
+            if _defect_rows:
+                _where.append('the "What I found on the page you pay for" '
+                              "section below")
+            _where.append('the "Website tracking & pixels" and "Conversion '
+                          'readiness" tables')
             story.append(Paragraph(
                 f"These are the {min(4, len(issues))} that matter most. The other "
-                f"{_rest} are itemised, one per row, in the "
-                f"\"Website tracking & pixels\" and \"Conversion readiness\" tables "
-                f"further down - nothing found is left out of this report.", ST["small"]))
+                f"{_rest} are itemised, one per row, in "
+                f"{' and '.join(_where)} - nothing found is left out of this "
+                f"report.", ST["small"]))
+
+    # ---- Page defects read live ------------------------------------------
+    # The measured checks above only cover what the audit functions test. The
+    # defects recorded while reading the page are findings too - the spam
+    # injection, the staging-host buttons, the unedited demo contact page - and
+    # they are often the most valuable line in the report. They are rendered
+    # here with the evidence that produced them.
+    defect_rows = audit.get("defects") or []
+    if defect_rows:
+        story.extend(section_bar("What I found on the page you pay for",
+                                 "read live on %s" % audit.get("audit_date", "")))
+        for _d in defect_rows:
+            _title = _d.get("title", "")
+            _detail = _d.get("detail", "")
+            story.append(Paragraph(
+                f"<b><font color=\"#C5221F\">{T(_title)}</font></b>", ST["body"]))
+            if _detail:
+                story.append(Paragraph(T(_detail), ST["small"]))
+                story.append(Spacer(1, 0.8 * mm))
+        story.append(Spacer(1, 1.2 * mm))
+    if audit.get("site_unreadable"):
+        story.append(Paragraph(
+            "<b>The page this report is about could not be read.</b> "
+            + T(audit["site_unreadable"]), ST["body"]))
 
     # Conditional, not hard: if page 1 has room for the ad section it continues
     # there instead of leaving a third of the page blank. The reference layout
@@ -1649,9 +1812,11 @@ def build_story(audit):
     story.extend(section_bar("Every live ad, in full",
                              "the evidence, unedited"))
     story.append(Paragraph(
-        "Below is the complete text of every live ad exactly as the Meta Ad "
-        "Library shows it, next to the library ID that opens it. Nothing here "
-        "is summarised.",
+        "Below is the complete evidence for every live ad, next to the library "
+        "ID that opens it. Meta ad copy is reproduced exactly as the Ad Library "
+        "shows it; Google Ads Transparency records are shown with the creative "
+        "IDs and the verified advertiser identity that were read off the "
+        "transparency page. Nothing here is summarised.",
         ST["body"]))
     story.append(Spacer(1, 2.5 * mm))
     story.append(ad_evidence_table(audit))
@@ -1747,9 +1912,11 @@ def build_story(audit):
                                   yes=(f"Present ({seo.get('meta_desc_length')} characters)"
                                        if seo.get("meta_desc_length") else "Present"),
                                   no="Not found on the page read - lower Google click-through")),
-        ("H1 headline", _tri(seo.get("h1_count") == 1 if seo.get("h1_count") is not None else None,
-                             yes=seo.get("h1_text") or "Present",
-                             no="Not found on the page read")),
+        # An H1 count is a measurement, not just a yes/no. Zero H1s and five
+        # H1s are different problems, and calling either one "Not found on the
+        # page read" is wrong - so the count is shown and only a genuine absence
+        # is described as one.
+        ("H1 headline", _h1_row(seo.get("h1_count"), seo.get("h1_text"))),
         ("Structured data (Schema)", _tri(seo.get("has_schema"))),
         ("Open Graph tags", _tri(seo.get("has_og_tags"))),
         ("Images on homepage", images_row),
