@@ -1,0 +1,246 @@
+{
+  "company": "KehanSri Technologies & Service Pvt Ltd",
+  "legal": "KehanSri Technologies & Service Pvt Ltd",
+  "city": "Gachibowli, Hyderabad",
+  "website": "https://kehansrisolar.com/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-11-14",
+  "generated_at": "2026-11-14 02:53",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": false,
+      "results_count": 0,
+      "results_label": "not checked - evidence is on Google",
+      "query": "KehanSri Technologies & Service Pvt Ltd",
+      "ads": []
+    },
+    "google_own": {
+      "found": true,
+      "advertiser_id": "AR07894673884648046593",
+      "advertiser_name": "KehanSri Technologies & Service Pvt Ltd",
+      "verified": true,
+      "ad_count": 24,
+      "creatives": [
+        "CR13938922639515975681",
+        "CR11649471596325765121",
+        "CR17305277358550286337",
+        "CR08712402672457613313"
+      ]
+    },
+    "ads": [
+      {
+        "library_id": "AR07894673884648046593 / CR13938922639515975681",
+        "library_url": "https://adstransparency.google.com/advertiser/AR07894673884648046593/creative/CR13938922639515975681?region=IN",
+        "ad_count": 24,
+        "format": "Display image",
+        "page_name": "KehanSri Technologies & Service Pvt Ltd",
+        "started": "Active 2026-11-14",
+        "destination": "kehansrisolar.com",
+        "text": "Google Ads Transparency: 24 live ads pointing at kehansrisolar.com, run by identity-verified advertiser AR07894673884648046593 (KehanSri Technologies & Service Pvt Ltd). Display image creatives plus a YouTube video creative.",
+        "images": []
+      },
+      {
+        "library_id": "AR07894673884648046593 / CR11649471596325765121",
+        "library_url": "https://adstransparency.google.com/advertiser/AR07894673884648046593/creative/CR11649471596325765121?region=IN",
+        "ad_count": 24,
+        "format": "Video",
+        "page_name": "KehanSri Technologies & Service Pvt Ltd",
+        "started": "Active 2026-11-14",
+        "destination": "kehansrisolar.com",
+        "text": "Second creative family from the same verified account - a YouTube video ad, so the account is buying both Display and video inventory.",
+        "images": []
+      }
+    ],
+    "summary": "KehanSri is the heaviest live Google advertiser found in this sweep: 24 ads in Google's Ads Transparency Centre under a single identity-verified account (AR07894673884648046593), spanning Display image creatives and a YouTube video. The ads point at kehansrisolar.com, so unlike most of the Hyderabad field the spend does reach a page they own. Founded 2016, Gachibowli (Hyderabad 500032) with a registered office in Bhopal, and a 4.9 Google rating across 131 reviews - this is an established operator, not a lead-form-only reseller. No Meta Ad Library record was captured for this report; the evidence here is Google-only."
+  },
+  "funnel": {
+    "type": "Own website",
+    "destination": "kehansrisolar.com",
+    "meaning": "Every ad click lands on a page they own, which is the right structure - but the site still routes enquiry through a phone number and a form, and four of the five 'Read More' buttons on the homepage point at a staging host, so paid traffic can be sent into a half-finished build."
+  },
+  "findings": [
+    "24 live Google ads behind one identity-verified account - the largest live Google ad count found in this sweep, and the only Hyderabad solar business here whose spend demonstrably reaches its own domain.",
+    "Four of the five homepage 'Read More' buttons point at the staging host www.wpstage.a2hosted.com/1411/kehanSri/ (roof-top, ground-mounted, operation-maintenance, project-management, EPC & development). Paid traffic clicking those buttons leaves the live site entirely.",
+    "The 'Know Your Solar Requirement' sizing table still quotes 300 Wp and 320 Wp modules and prices 3 kVA at INR 27,000 annual savings - 2024-era module data on a page doing the qualifying job for the ads.",
+    "The site carries real proof the ads do not use: named projects at 50 KW and 45 KW in Hyderabad, a 5 MW Hyderabad plant, 1.5 MW in Kolar (Karnataka), 100 KW in Mumbai and 1 MW in Ujjain, plus a 4.9/131-review Google rating.",
+    "Contact is phone-first (+91 888 628 6000) with info@kehansri.com published only on the contact page - there is no visible form-to-email routing test."
+  ],
+  "next_steps": [
+    [
+      "Repoint the staging links before you scale spend",
+      "Four 'Read More' buttons send paid clicks to www.wpstage.a2hosted.com. Repointing them at the live pages is a five-minute fix that stops leaking the traffic you are already paying for."
+    ],
+    [
+      "Refresh the sizing table",
+      "The 300/320 Wp module figures and the INR 27,000-6,75,000 savings column are out of date. Current TOPCon modules change both the panel count and the payback story the table is used to sell."
+    ],
+    [
+      "Put the project list behind the ads",
+      "50 KW and 45 KW Hyderabad installs, 5 MW, 1.5 MW Kolar, 100 KW Mumbai, 1 MW Ujjain and a 4.9/131 rating are the strongest assets on the site and none of them appear in the ad creative."
+    ],
+    [
+      "Add a form that lands in a monitored inbox",
+      "Phone-first enquiry plus one buried email address means no record of who clicked and did not call. A form with a confirmed inbox gives you the retargeting pool."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@kehansri.com (contact page)"
+    ],
+    [
+      "Phone",
+      "+91 888 628 6000 / +91 9985408601"
+    ],
+    [
+      "Address",
+      "2-55, Opposite Ingenium School, Sri Shyam Nagar, Telecom Nagar, Gachibowli, Hyderabad 500032"
+    ],
+    [
+      "Registered office",
+      "472, Rohit Nagar Phase-1, Bavadiakala, Bhopal 462039"
+    ],
+    [
+      "Entity",
+      "KehanSri Technologies & Service Pvt Ltd - founded 2016"
+    ],
+    [
+      "Google Ads",
+      "AR07894673884648046593 (identity-verified) - 24 live ads"
+    ],
+    [
+      "Meta page",
+      "facebook.com/kehansrisolar"
+    ]
+  ],
+  "contact": {
+    "email": "info@kehansri.com",
+    "phone": "+91 888 628 6000 / +91 9985408601",
+    "fb_page": "https://www.facebook.com/kehansrisolar/"
+  },
+  "site_evidence": {
+    "pixel": null,
+    "utm": false,
+    "checked_on": "2026-11-14",
+    "note": "Homepage and contact page read live 2026-11-14 via a text-only fetch; page source was not pulled, so Meta Pixel presence is unverified."
+  },
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad copy could not be read for these ads."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Ad start dates were not captured."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "No live ads captured."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: Own website."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 1,
+      "fail": 1,
+      "unknown": 13,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

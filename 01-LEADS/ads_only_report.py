@@ -39,16 +39,43 @@ from audit_pdf import generate_ads_only_pdf  # noqa: E402
 
 RESULTS_DIR = os.path.join(BASE_DIR, "ads_only_results")
 
+# Live Google ad counts read from Google Ads Transparency on 2026-11-14.
+AD_COUNTS = {
+    "AR07894673884648046593": 24,   # KehanSri Technologies & Service Pvt Ltd
+    "AR08880526109242818561": 1,    # Hysun Solar pvt ltd
+    "AR09270299175948386305": 4,    # VIJAYA KUMAR (V1 Solar Solutions)
+    "AR09804983159320739841": 2,    # VELPULA INDIRA NIRMALA (Mega Creations)
+}
+
 CHECKED_ON = "2026-10-18"
 LIB = "https://www.facebook.com/ads/library/?id="
 
 
-def ad(library_id, page_name, started, destination, text):
+MSEARCH = ("https://www.facebook.com/ads/library/?active_status=active&ad_type=all"
+           "&country=IN&is_targeted_country=false&media_type=all&q=")
+
+GADS = "https://adstransparency.google.com/advertiser/"
+
+
+def gcreative(advertiser_id, creative_id):
+    """The Google Ads Transparency URL for one live creative - openable today."""
+    return f"{GADS}{advertiser_id}/creative/{creative_id}?region=IN"
+
+
+def ad(library_id, page_name, started, destination, text, library_url=None,
+       ad_count=None, format=None):
     """One live ad. library_id + library_url are the anti-fabrication fields:
-    the builder refuses to emit a report whose ads cannot be opened live."""
+    the builder refuses to emit a report whose ads cannot be opened live.
+
+    `library_url` overrides the Meta Ad Library default, which is required for
+    Google Ads Transparency evidence: a Google advertiser/creative ID opened
+    against facebook.com would be a dead, misleading link.
+    """
     return {
         "library_id": str(library_id),
-        "library_url": f"{LIB}{library_id}",
+        "library_url": f"{LIB}{library_id}" if library_url is None else library_url,
+        "ad_count": ad_count,
+        "format": format,
         "page_name": page_name,
         "started": started,
         "destination": destination,
@@ -3318,6 +3345,608 @@ LEADS = [
                     "code could not be confirmed either way; graded unknown per the catalog's "
                     "runtime contract. The live ad does not link to the site at all - it links "
                     "to Instagram.",
+        },
+    },
+
+    {
+        "company": "KehanSri Technologies & Service Pvt Ltd",
+        "legal": "KehanSri Technologies & Service Pvt Ltd",
+        "city": "Gachibowli, Hyderabad",
+        "website": "https://kehansrisolar.com/",
+        "email": "info@kehansri.com",
+        "phone": "+91 888 628 6000 / +91 9985408601",
+        "fb_page": "https://www.facebook.com/kehansrisolar/",
+        "checked_on": "2026-11-14",
+        "ad_library": {
+            "meta_own": {
+                "found": False,
+                "results_count": 0,
+                "results_label": "not checked - evidence is on Google",
+                "query": "KehanSri Technologies & Service Pvt Ltd",
+                "ads": [],
+            },
+            "google_own": {
+                "found": True,
+                "advertiser_id": "AR07894673884648046593",
+                "advertiser_name": "KehanSri Technologies & Service Pvt Ltd",
+                "verified": True,
+                "ad_count": 24,
+                "creatives": [
+                    "CR13938922639515975681", "CR11649471596325765121",
+                    "CR17305277358550286337", "CR08712402672457613313",
+                ],
+            },
+            "ads": [
+                ad("AR07894673884648046593 / CR13938922639515975681",
+                   "KehanSri Technologies & Service Pvt Ltd",
+                   "Active 2026-11-14",
+                   "kehansrisolar.com",
+                   "Google Ads Transparency: 24 live ads pointing at kehansrisolar.com, "
+                   "run by identity-verified advertiser AR07894673884648046593 "
+                   "(KehanSri Technologies & Service Pvt Ltd). Display image creatives plus "
+                   "a YouTube video creative.",
+                   library_url=gcreative("AR07894673884648046593", "CR13938922639515975681"),
+                   ad_count=AD_COUNTS["AR07894673884648046593"], format="Display image"),
+                ad("AR07894673884648046593 / CR11649471596325765121",
+                   "KehanSri Technologies & Service Pvt Ltd",
+                   "Active 2026-11-14",
+                   "kehansrisolar.com",
+                   "Second creative family from the same verified account - a YouTube video "
+                   "ad, so the account is buying both Display and video inventory.",
+                   library_url=gcreative("AR07894673884648046593", "CR11649471596325765121"),
+                   ad_count=AD_COUNTS["AR07894673884648046593"], format="Video"),
+            ],
+            "summary": (
+                "KehanSri is the heaviest live Google advertiser found in this sweep: 24 ads "
+                "in Google's Ads Transparency Centre under a single identity-verified account "
+                "(AR07894673884648046593), spanning Display image creatives and a YouTube "
+                "video. The ads point at kehansrisolar.com, so unlike most of the Hyderabad "
+                "field the spend does reach a page they own. Founded 2016, Gachibowli "
+                "(Hyderabad 500032) with a registered office in Bhopal, and a 4.9 Google "
+                "rating across 131 reviews - this is an established operator, not a "
+                "lead-form-only reseller. No Meta Ad Library record was captured for this "
+                "report; the evidence here is Google-only."),
+        },
+        "funnel": {
+            "type": "Own website",
+            "destination": "kehansrisolar.com",
+            "meaning": (
+                "Every ad click lands on a page they own, which is the right structure - "
+                "but the site still routes enquiry through a phone number and a form, and "
+                "four of the five 'Read More' buttons on the homepage point at a staging "
+                "host, so paid traffic can be sent into a half-finished build."),
+        },
+        "findings": [
+            "24 live Google ads behind one identity-verified account - the largest live "
+            "Google ad count found in this sweep, and the only Hyderabad solar business "
+            "here whose spend demonstrably reaches its own domain.",
+            "Four of the five homepage 'Read More' buttons point at the staging host "
+            "www.wpstage.a2hosted.com/1411/kehanSri/ (roof-top, ground-mounted, "
+            "operation-maintenance, project-management, EPC & development). Paid traffic "
+            "clicking those buttons leaves the live site entirely.",
+            "The 'Know Your Solar Requirement' sizing table still quotes 300 Wp and 320 Wp "
+            "modules and prices 3 kVA at INR 27,000 annual savings - 2024-era module data "
+            "on a page doing the qualifying job for the ads.",
+            "The site carries real proof the ads do not use: named projects at 50 KW and "
+            "45 KW in Hyderabad, a 5 MW Hyderabad plant, 1.5 MW in Kolar (Karnataka), "
+            "100 KW in Mumbai and 1 MW in Ujjain, plus a 4.9/131-review Google rating.",
+            "Contact is phone-first (+91 888 628 6000) with info@kehansri.com published "
+            "only on the contact page - there is no visible form-to-email routing test.",
+        ],
+        "next_steps": [
+            ("Repoint the staging links before you scale spend",
+             "Four 'Read More' buttons send paid clicks to www.wpstage.a2hosted.com. "
+             "Repointing them at the live pages is a five-minute fix that stops leaking "
+             "the traffic you are already paying for."),
+            ("Refresh the sizing table",
+             "The 300/320 Wp module figures and the INR 27,000-6,75,000 savings column are "
+             "out of date. Current TOPCon modules change both the panel count and the "
+             "payback story the table is used to sell."),
+            ("Put the project list behind the ads",
+             "50 KW and 45 KW Hyderabad installs, 5 MW, 1.5 MW Kolar, 100 KW Mumbai, 1 MW "
+             "Ujjain and a 4.9/131 rating are the strongest assets on the site and none of "
+             "them appear in the ad creative."),
+            ("Add a form that lands in a monitored inbox",
+             "Phone-first enquiry plus one buried email address means no record of who "
+             "clicked and did not call. A form with a confirmed inbox gives you the "
+             "retargeting pool."),
+        ],
+        "contact_facts": [
+            ("Email", "info@kehansri.com (contact page)"),
+            ("Phone", "+91 888 628 6000 / +91 9985408601"),
+            ("Address", "2-55, Opposite Ingenium School, Sri Shyam Nagar, Telecom Nagar, "
+                        "Gachibowli, Hyderabad 500032"),
+            ("Registered office", "472, Rohit Nagar Phase-1, Bavadiakala, Bhopal 462039"),
+            ("Entity", "KehanSri Technologies & Service Pvt Ltd - founded 2016"),
+            ("Google Ads", "AR07894673884648046593 (identity-verified) - 24 live ads"),
+            ("Meta page", "facebook.com/kehansrisolar"),
+        ],
+        "site_evidence": {
+            "pixel": None,
+            "utm": False,
+            "checked_on": "2026-11-14",
+            "note": ("Homepage and contact page read live 2026-11-14 via a text-only fetch; "
+                     "page source was not pulled, so Meta Pixel presence is unverified."),
+        },
+    },
+    {
+        "company": "Hysun Solar Pvt. Ltd.",
+        "legal": "Hysun Solar Private Limited",
+        "city": "Bandlaguda Jagir, Hyderabad",
+        "website": "https://www.hysunsolar.com",
+        "email": "info@hysunsolar.com",
+        "phone": "+91 7573999966 / toll-free 1800-270-0025",
+        "fb_page": "https://www.facebook.com/",
+        "checked_on": "2026-11-14",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 1,
+                "results_label": "~1 result",
+                "query": "Hysun Solar",
+                "ads": [
+                    ad("Meta - Library ID not captured", "Hysun Solar",
+                       "Active 2026-11-14", "WhatsApp / Facebook lead form",
+                       "Meta ads sell PM Surya Ghar Rs.78,000 subsidy rooftop solar for "
+                       "Hyderabad (Suncity, Bandlaguda Jagir, Hyderabad 500091), on-grid / "
+                       "off-grid / hybrid systems and EMI. Every click lands in a WhatsApp "
+                       "chat or Facebook lead form - never on hysunsolar.com. The ad carries "
+                       "+91 7573999960, a different number from the one on the website.",
+                       library_url=MSEARCH + "Hysun%20Solar"),
+                ],
+            },
+            "google_own": {
+                "found": True,
+                "advertiser_id": "AR08880526109242818561",
+                "advertiser_name": "Hysun Solar pvt ltd",
+                "verified": True,
+                "ad_count": 1,
+                "creatives": ["CR05405281565389357057"],
+            },
+            "ads": [
+                ad("AR08880526109242818561 / CR05405281565389357057",
+                   "Hysun Solar pvt ltd",
+                   "Active 2026-11-14",
+                   "hysunsolar.com",
+                   "Google Ads Transparency: 1 live ad under identity-verified advertiser "
+                   "AR08880526109242818561 (Hysun Solar pvt ltd).",
+                   library_url=gcreative("AR08880526109242818561", "CR05405281565389357057"),
+                   ad_count=AD_COUNTS["AR08880526109242818561"], format="Display image"),
+                ad("Meta - Library ID not captured",
+                   "Hysun Solar",
+                   "Active 2026-11-14",
+                   "WhatsApp / Facebook lead form",
+                   "Meta ads for PM Surya Ghar Rs.78,000 subsidy rooftop solar in Hyderabad "
+                   "(Suncity, Bandlaguda Jagir, 500091): on-grid / off-grid / hybrid and EMI. "
+                   "Destination is a WhatsApp chat or Facebook lead form, so the Meta spend "
+                   "never reaches hysunsolar.com.",
+                   library_url=MSEARCH + "Hysun%20Solar"),
+            ],
+            "summary": (
+                "Hysun Solar Pvt Ltd is live on both channels - one Google ad behind a "
+                "verified account (AR08880526109242818561) and Meta ads selling the "
+                "Rs.78,000 PM Surya Ghar subsidy to Hyderabad homeowners. The split matters: "
+                "the Google ad points at hysunsolar.com, while every Meta click is captured "
+                "inside a WhatsApp chat or Facebook lead form. This business was first "
+                "swept on 2026-10-18 as lead #1 of batch 2 and never promoted into the "
+                "pipeline; this report closes that gap. The site itself is a largely "
+                "unmodified template - repeated 'Harness the Sun Get Solar Power Today!' "
+                "headings and a 'Free contact 24/7' block - and it publishes an Ahmedabad "
+                "address while the ads target Hyderabad."),
+        },
+        "funnel": {
+            "type": "Split - own site on Google, lead form on Meta",
+            "destination": "hysunsolar.com (Google) / WhatsApp + Facebook lead form (Meta)",
+            "meaning": (
+                "The Google side of the spend is measurable; the Meta side is not. Every "
+                "Meta rupee ends inside Facebook's form or a WhatsApp thread, so there is no "
+                "pixel, no retargeting pool and no page to test a different price on."),
+        },
+        "findings": [
+            "Meta ads sell the Rs.78,000 subsidy and EMI to Hyderabad homeowners, but every "
+            "click lands in a WhatsApp chat or Facebook lead form - the Meta spend never "
+            "reaches hysunsolar.com.",
+            "The contact page publishes an Ahmedabad address (10 Radhekrishna Ind Hub, "
+            "B/H Hinglaj Mata Mandir, Ahmedabad) while the ads target Suncity, Bandlaguda "
+            "Jagir, Hyderabad 500091. A Hyderabad homeowner checking the site after clicking "
+            "an ad sees the wrong city.",
+            "Three different contact routes are live at once: info@hysunsolar.com on the "
+            "site, infohysunsolar@gmail.com as the support address on their own Android app "
+            "(com.HYSUN.HysunSolar), and +91 7573999960 on the Meta ads against "
+            "+91 7573999966 on the site. Enquiries can land in an inbox nobody watches.",
+            "The site is a template with repeated 'Harness the Sun Get Solar Power Today!' "
+            "headings and a 'Free contact 24/7' block - no project photos, no system "
+            "sizing table, nothing that qualifies the lead the ads are paying for.",
+            "The Android app advertises one-tap service requests, panel cleaning and a "
+            "dedicated support team - an operational strength that no ad or web page "
+            "mentions.",
+        ],
+        "next_steps": [
+            ("Send the Meta clicks to a page you own",
+             "A dedicated PM Surya Ghar landing page with the subsidy, an enquiry form and "
+             "the Meta Pixel turns the current lead-form spend into a measurable, "
+             "retargetable audience."),
+            ("Fix the city on the contact page",
+             "An Ahmedabad address under ads that say Bandlaguda Jagir, Hyderabad costs "
+             "trust at exactly the moment a homeowner is deciding whether to call."),
+            ("Consolidate the contact routes",
+             "Three addresses and two phone numbers is three chances to miss an enquiry. "
+             "Point everything at one monitored inbox and one number."),
+            ("Lead with the service promise",
+             "One-tap service requests and panel cleaning are already built into the app. "
+             "They are the differentiator against every other lead-form advertiser in the "
+             "Hyderabad feed."),
+        ],
+        "contact_facts": [
+            ("Email", "info@hysunsolar.com (site) / infohysunsolar@gmail.com (app support)"),
+            ("Phone", "+91 7573999966 (site) / +91 7573999960 (Meta ads) / 1800-270-0025 toll-free"),
+            ("Address (ads)", "Suncity, Bandlaguda Jagir, Hyderabad 500091"),
+            ("Address (site)", "10 Radhekrishna Ind Hub, B/H Hinglaj Mata Mandir, Ahmedabad"),
+            ("Entity", "Hysun Solar Private Limited"),
+            ("Google Ads", "AR08880526109242818561 (identity-verified) - 1 live ad"),
+            ("Mobile app", "com.HYSUN.HysunSolar on Google Play"),
+        ],
+        "site_evidence": {
+            "pixel": None,
+            "utm": False,
+            "checked_on": "2026-11-14",
+            "note": ("hysunsolar.com returned HTTP 500 to the text fetcher on 2026-11-14; "
+                     "page content was read via a search-engine snapshot the same day. Page "
+                     "source was not pulled, so Meta Pixel presence is unverified."),
+        },
+    },
+    {
+        "company": "V1 Solar Solutions",
+        "legal": "V1 Solar Solutions (Solar Sales and Services)",
+        "city": "Kamakshipalya, Bengaluru - advertising into Hyderabad",
+        "website": "https://www.v1solarsolutions.com/",
+        "email": "info@v1solarsolutions.com",
+        "phone": "+91 9066631441",
+        "fb_page": "https://www.facebook.com/61576081630731/",
+        "checked_on": "2026-11-14",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 1,
+                "results_label": "~1 result",
+                "query": "V1 Solar Solutions",
+                "ads": [
+                    ad("1446165934284837", "99Ad Solutions (for V1 Solar Solutions)",
+                       "Oct 12, 2026",
+                       "api.whatsapp.com",
+                       "Is your solar water heater not giving enough hot water like it used "
+                       "to? Expert repair, servicing and installation for all major solar "
+                       "water heater brands. Solar tube deep cleaning and scaling, leakage "
+                       "detection and fixes, full system health checkup and maintenance, new "
+                       "sales and complete setup. Prompt doorstep service available across "
+                       "Bengaluru and Hyderabad. Call +91 90666 31441."),
+                ],
+            },
+            "google_own": {
+                "found": True,
+                "advertiser_id": "AR09270299175948386305",
+                "advertiser_name": "VIJAYA KUMAR",
+                "verified": True,
+                "ad_count": 4,
+                "creatives": [
+                    "CR16134700652138856449", "CR01961826204797370369",
+                    "CR10704294704888938497", "CR07293973505157103617",
+                ],
+            },
+            "ads": [
+                ad("1446165934284837", "99Ad Solutions (for V1 Solar Solutions)",
+                   "Oct 12, 2026", "api.whatsapp.com",
+                   "Live Meta ad for solar water heater repair, servicing and installation "
+                   "across Bengaluru and Hyderabad, run by the agency 99Ad Solutions. "
+                   "Destination is a WhatsApp chat."),
+                ad("AR09270299175948386305 / CR16134700652138856449", "VIJAYA KUMAR",
+                   "Active 2026-11-14", "v1solarsolutions.com",
+                   "Google Ads Transparency: 4 live ads under identity-verified advertiser "
+                   "AR09270299175948386305 (VIJAYA KUMAR), all pointing at "
+                   "v1solarsolutions.com.",
+                   library_url=gcreative("AR09270299175948386305", "CR16134700652138856449"),
+                   ad_count=AD_COUNTS["AR09270299175948386305"], format="Display image"),
+            ],
+            "summary": (
+                "V1 Solar Solutions is the only lead in this batch advertising on both "
+                "channels with a published email: 4 live Google ads behind a verified "
+                "account (AR09270299175948386305) and a Meta ad (Library ID "
+                "1446165934284837, live since 12 Oct 2026) run by the agency 99Ad "
+                "Solutions. The Meta ad is the only thing putting them in front of "
+                "Hyderabad - the copy promises doorstep service across Bengaluru and "
+                "Hyderabad and the click opens a WhatsApp chat. Proprietor Mr Vijay Kumar "
+                "P; Bengaluru address; also listed as a manufacturer and service provider "
+                "on IndiaMART under GST 29DPTPK0093G1ZF."),
+        },
+        "funnel": {
+            "type": "WhatsApp chat on Meta, own site on Google",
+            "destination": "api.whatsapp.com (Meta) / v1solarsolutions.com (Google)",
+            "meaning": (
+                "The Meta side buys a conversation, not a lead record - no form, no email "
+                "capture, nothing to follow up if the chat goes cold. The Google side lands "
+                "on a site whose quote form does capture an enquiry."),
+        },
+        "findings": [
+            "The Meta ad is the only channel putting V1 in front of Hyderabad, and it ends "
+            "in a WhatsApp chat - no email, no form, no retargeting pool for the Hyderabad "
+            "half of the spend.",
+            "Two live domains split the same business: v1solarsolutions.com (the real site, "
+            "contact form, info@v1solarsolutions.com) and v1solarsolutuons.in - a misspelling "
+            "- which carries their IndiaMART manufacturer listing and a different phone "
+            "presentation.",
+            "Google rating is 1.0 from 2 reviews, against a Meta ad that leans on 'expert "
+            "technicians' and 'prompt doorstep service'. The paid story and the public "
+            "review record do not match.",
+            "The quote form is the strongest asset on the site - it captures product type "
+            "(water heater / softener / heat pump / commercial RO) before the callback - "
+            "and no ad sends traffic to it.",
+            "Scope is service-led: tube cleaning and scaling, leakage detection, system "
+            "health checks and AMC across all brands, plus 100-500 LPD ETC and FPC heaters. "
+            "That is a recurring-revenue story the one-off repair ad never tells.",
+        ],
+        "next_steps": [
+            ("Give the Hyderabad ads a page of their own",
+             "The Meta ad promises Hyderabad doorstep service but lands in WhatsApp. A "
+             "Hyderabad-specific page with the service list, a form and the Meta Pixel makes "
+             "that half of the spend measurable and retargetable."),
+            ("Retire the misspelled domain",
+             "v1solarsolutuons.in splits the IndiaMART presence from the .com site and sends "
+             "some enquiries to a different-looking business. A redirect fixes it."),
+            ("Work the review gap",
+             "1.0 from 2 reviews undercuts an ad built on expertise. Two or three verified "
+             "reviews from recent service jobs change the click-to-call rate."),
+            ("Sell the AMC, not the repair",
+             "Tube cleaning, leakage checks and system health checks are recurring revenue. "
+             "A single AMC creative would out-earn the one-off repair message."),
+        ],
+        "contact_facts": [
+            ("Email", "info@v1solarsolutions.com"),
+            ("Phone", "+91 9066631441"),
+            ("Address", "7, Magadi Main Rd, Asthagrama Layout, Kamakshipalya, Bengaluru 560079"),
+            ("Entity", "V1 Solar Solutions (Solar Sales and Services) - GST 29DPTPK0093G1ZF"),
+            ("Proprietor", "Mr Vijay Kumar P"),
+            ("Google Ads", "AR09270299175948386305 (VIJAYA KUMAR, identity-verified) - 4 live ads"),
+            ("Meta", "Library ID 1446165934284837 via 99Ad Solutions"),
+        ],
+        "site_evidence": {
+            "pixel": None,
+            "utm": False,
+            "checked_on": "2026-11-14",
+            "note": ("Contact page and service page read live 2026-11-14; page source was "
+                     "not pulled, so Meta Pixel presence is unverified."),
+        },
+    },
+    {
+        "company": "Mega Solar India (Mega Creations)",
+        "legal": "Mega Creations (Mega Solar India)",
+        "city": "Hyderabad",
+        "website": "https://megasolarindia.com/",
+        "email": "",
+        "phone": "",
+        "fb_page": "",
+        "checked_on": "2026-11-14",
+        "ad_library": {
+            "meta_own": {
+                "found": False,
+                "results_count": 0,
+                "results_label": "not checked - evidence is on Google",
+                "query": "Mega Solar India",
+                "ads": [],
+            },
+            "google_own": {
+                "found": True,
+                "advertiser_id": "AR09804983159320739841",
+                "advertiser_name": "VELPULA INDIRA NIRMALA",
+                "verified": True,
+                "ad_count": 2,
+                "creatives": ["CR16648633552560193537", "CR04546876387859890177"],
+            },
+            "ads": [
+                ad("AR09804983159320739841 / CR16648633552560193537",
+                   "VELPULA INDIRA NIRMALA",
+                   "Active 2026-11-14",
+                   "megasolarindia.com",
+                   "Google Ads Transparency: 2 live ads under identity-verified advertiser "
+                   "AR09804983159320739841 (VELPULA INDIRA NIRMALA), pointing at "
+                   "megasolarindia.com.",
+                   library_url=gcreative("AR09804983159320739841", "CR16648633552560193537"),
+                   ad_count=AD_COUNTS["AR09804983159320739841"], format="Display image"),
+                ad("AR09804983159320739841 / CR04546876387859890177",
+                   "VELPULA INDIRA NIRMALA",
+                   "Active 2026-11-14",
+                   "megasolarindia.com",
+                   "Second live creative from the same verified account - a second angle "
+                   "behind the same landing page.",
+                   library_url=gcreative("AR09804983159320739841", "CR04546876387859890177"),
+                   ad_count=AD_COUNTS["AR09804983159320739841"], format="Display image"),
+            ],
+            "summary": (
+                "Mega Creations trades as Mega Solar India and is running 2 live Google ads "
+                "behind an identity-verified account (AR09804983159320739841, VELPULA "
+                "INDIRA NIRMALA). The homepage copy is a genuine Hyderabad residential "
+                "installer pitch - no-upfront-cost and pay-as-you-save financing, the "
+                "Rs.78,000 PM Surya Ghar subsidy, 7% loans, 7-day installation, 25-year "
+                "warranty, 100+ installations and 15+ years, with Waaree, Adani, Premier, "
+                "Panasonic, Polycab and Microtek named as partners. The reason this lead is "
+                "blocked rather than emailable is on the contact page: it is an unedited "
+                "WordPress demo. No Meta Ad Library record was captured for this report."),
+        },
+        "funnel": {
+            "type": "WhatsApp chat widget only",
+            "destination": "WhatsApp chat widget on megasolarindia.com",
+            "meaning": (
+                "There is no email address, no phone number and no working contact form "
+                "anywhere on the site. The only way a paid click can become a conversation "
+                "is the WhatsApp widget - so every lead depends on one channel and nothing "
+                "is captured in writing."),
+        },
+        "findings": [
+            "The /contact/ page is an unedited WordPress demo. It publishes "
+            "info@example.com, enrollment@example.com and collab@example.com, the address "
+            "'Demo St, Brooklyn, NY 11223, United States' and the phone +1 123-456-7890, "
+            "with form fields labelled 'Parent's Name' and 'Questions Parent's' and Infant "
+            "/ Toddler / Preschool options. A homeowner who clicks a paid ad and tries to "
+            "make contact lands on a preschool enquiry form in Brooklyn.",
+            "There is no real email address or phone number anywhere on the site - only a "
+            "WhatsApp chat widget. Nothing is captured in writing and nothing can be "
+            "followed up if the chat goes cold.",
+            "The homepage promise is strong and unbacked: 'Leading Solar Company in "
+            "Hyderabad', 100+ installations, 15+ years, certified government vendor, "
+            "no-upfront-cost and pay-as-you-save - and none of it has a contact route, a "
+            "project photo or a customer name behind it.",
+            "Two live creatives both point at the same landing page, so there is no second "
+            "page to test a different offer or price against.",
+            "Brand partners are named (Waaree, Adani, Premier, Panasonic, Polycab, "
+            "Microtek) but no product pages, datasheets or system configurations are linked "
+            "from the homepage.",
+        ],
+        "next_steps": [
+            ("Replace the demo contact page before anything else",
+             "info@example.com, a Brooklyn address, +1 123-456-7890 and a preschool form "
+             "are what a paid click currently lands on. This is the single highest-value fix "
+             "on the site and it is a content job, not a development one."),
+            ("Publish a real phone number and email",
+             "A number and an inbox in the header and footer of every page, matching the "
+             "Google Business listing, is the minimum for a business buying search traffic."),
+            ("Keep the WhatsApp widget - but add a form",
+             "The widget is the only working channel. Adding a name/phone/locality form "
+             "beside it gives a written record of every enquiry."),
+            ("Back the 100+ installations claim",
+             "Named localities, a few project photos and one or two customer quotes would "
+             "turn the strongest line on the page into something a buyer can check."),
+        ],
+        "contact_facts": [
+            ("Email", "none published - /contact/ shows info@example.com, "
+                      "enrollment@example.com and collab@example.com"),
+            ("Phone", "none published - /contact/ shows +1 123-456-7890"),
+            ("Address (site)", "Demo St, Brooklyn, NY 11223, United States"),
+            ("Contact route", "WhatsApp chat widget only"),
+            ("Entity", "Mega Creations, trading as Mega Solar India"),
+            ("Google Ads", "AR09804983159320739841 (VELPULA INDIRA NIRMALA, identity-verified) "
+                           "- 2 live ads"),
+        ],
+        "site_evidence": {
+            "pixel": None,
+            "utm": False,
+            "checked_on": "2026-11-14",
+            "note": ("Homepage and /contact/ read live 2026-11-14. The contact page is an "
+                     "unedited WordPress demo, so there is no real contact data to verify."),
+        },
+    },
+    {
+        "company": "PNR Sunrise Energies Pvt Ltd",
+        "legal": "PNR Sunrise Energies Pvt. Ltd.",
+        "city": "Hyderabad (Telangana & Andhra Pradesh)",
+        "website": "https://sunriseenergies.in/",
+        "email": "",
+        "phone": "+91 6304587145",
+        "fb_page": "https://www.facebook.com/61595350896439/",
+        "checked_on": "2026-11-14",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 1,
+                "results_label": "~1 result",
+                "query": "PNR Sunrise Energies",
+                "ads": [
+                    ad("28807326382303186", "PNR Sunrise Energies Pvt Ltd", "Nov 12, 2026",
+                       "api.whatsapp.com",
+                       "Turn your business dreams into a growing solar business. Join PNR "
+                       "Sunrise Energies Pvt. Ltd. as a Channel Partner - dedicated business "
+                       "and operational support, residential rooftop, commercial and "
+                       "industrial solar, EV charging stations, solar water pumps and solar "
+                       "fencing. Genuine products, competitive pricing, expert business "
+                       "support, timely service and delivery, long-term partnership. "
+                       "Hyderabad. Call 6304587145."),
+                ],
+            },
+            "google_own": {
+                "found": False,
+                "advertiser_id": "",
+                "advertiser_name": "",
+                "verified": False,
+                "ad_count": 0,
+                "creatives": [],
+            },
+            "ads": [
+                ad("28807326382303186", "PNR Sunrise Energies Pvt Ltd", "Nov 12, 2026",
+                   "api.whatsapp.com",
+                   "Live Meta ad recruiting solar channel partners - residential rooftop, "
+                   "commercial and industrial solar, EV charging, solar water pumps and "
+                   "fencing. Hyderabad. Destination is a WhatsApp chat."),
+            ],
+            "summary": (
+                "PNR Sunrise Energies ran its first captured ad on 12 November 2026 - two "
+                "days before this sweep - and it is a channel-partner recruitment ad, not a "
+                "homeowner offer. That makes them the youngest advertiser in the batch and "
+                "the only one whose paid message is aimed at the trade. The site behind it "
+                "is the most complete of the five: a working solar calculator, a six-step "
+                "process, a project showcase (5 kW Hyderabad, 100 kW Telangana, 500 kW "
+                "Andhra Pradesh, 10 kW Warangal), three named testimonials and detailed "
+                "management bios. Google Ads Transparency shows 0 ads for sunriseenergies.in, "
+                "so Meta is currently their only paid channel."),
+        },
+        "funnel": {
+            "type": "WhatsApp chat",
+            "destination": "api.whatsapp.com / wa.me/+916304587145",
+            "meaning": (
+                "The ad sells a partnership and the click opens a chat. There is no email "
+                "address anywhere on the site and no form that captures a written enquiry, "
+                "so the whole funnel is one WhatsApp thread."),
+        },
+        "findings": [
+            "Every hero counter on the site reads zero: '0+' Projects Delivered, '0 MW' "
+            "Solar Capacity Installed, '0%' Potential Bill Savings and '0' years of "
+            "engineering experience - while the same page claims 150+ projects and names "
+            "management with 35+ years of experience. The page argues against itself.",
+            "No email address is published anywhere. Contact is a request-assessment form, "
+            "wa.me/+916304587145 and tel:+916304587145 - so a partner or homeowner who "
+            "prefers to write has no route in.",
+            "The only live ad recruits channel partners, so nothing in the paid feed is "
+            "buying homeowner demand - the audience the project showcase and calculator are "
+            "built for.",
+            "Google Ads Transparency shows 0 ads for sunriseenergies.in. All paid presence "
+            "is one two-day-old Meta creative.",
+            "The assets are strong and unused: a working solar savings calculator (Hyderabad, "
+            "Warangal, Vijayawada, Visakhapatnam), a six-step process, four named projects "
+            "with capacities and generation figures, and three named testimonials from "
+            "Hyderabad, Andhra Pradesh and Warangal.",
+        ],
+        "next_steps": [
+            ("Fill in the counters before the next ad runs",
+             "'0+ projects', '0 MW' and '0% savings' next to a claim of 150+ projects is the "
+             "first thing a prospective partner will notice. The numbers already exist in "
+             "the project showcase - put them in the hero."),
+            ("Publish an email address",
+             "A partnership conversation needs something more durable than a WhatsApp "
+             "thread. One monitored inbox on the contact section and in the footer."),
+            ("Run a homeowner campaign alongside the partner ad",
+             "The calculator, the project showcase and the subsidy/financing section are all "
+             "aimed at end customers, and none of them have an ad behind them."),
+            ("Use the calculator as the landing page",
+             "It is the most interactive asset on the site and it captures a monthly bill "
+             "and a locality - exactly the qualifying data a paid click should produce."),
+        ],
+        "contact_facts": [
+            ("Email", "none published"),
+            ("Phone / WhatsApp", "+91 6304587145 (wa.me/+916304587145)"),
+            ("Entity", "PNR Sunrise Energies Pvt. Ltd."),
+            ("Management", "Mr KVK Prasad Rao (ITS 1986 batch, ECE Osmania University, "
+                           "M.Tech IIT Delhi, 35+ years across DoT, BSNL, TEC, TCIL and "
+                           "World Bank projects); Mr Nagesh Arcot (Managing Director, "
+                           "22.5 years at HSBC); Mr Rajesh Arcot"),
+            ("Scope", "Residential, commercial and industrial solar EPC; agricultural and "
+                      "irrigation; EV charging; BESS, OPEX/RESCO, PPAs and financing"),
+            ("Meta", "Library ID 28807326382303186 (started Nov 12, 2026)"),
+            ("Google Ads", "0 ads for sunriseenergies.in"),
+        ],
+        "site_evidence": {
+            "pixel": None,
+            "utm": False,
+            "checked_on": "2026-11-14",
+            "note": ("Homepage read live 2026-11-14 including the calculator, process, "
+                     "project showcase, testimonials, FAQ and contact section; page source "
+                     "was not pulled, so Meta Pixel presence is unverified."),
         },
     },
 ]

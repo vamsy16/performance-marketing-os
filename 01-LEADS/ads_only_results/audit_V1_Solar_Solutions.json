@@ -1,0 +1,258 @@
+{
+  "company": "V1 Solar Solutions",
+  "legal": "V1 Solar Solutions (Solar Sales and Services)",
+  "city": "Kamakshipalya, Bengaluru - advertising into Hyderabad",
+  "website": "https://www.v1solarsolutions.com/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-11-14",
+  "generated_at": "2026-11-14 02:53",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "~1 result",
+      "query": "V1 Solar Solutions",
+      "ads": [
+        {
+          "library_id": "1446165934284837",
+          "library_url": "https://www.facebook.com/ads/library/?id=1446165934284837",
+          "ad_count": null,
+          "format": null,
+          "page_name": "99Ad Solutions (for V1 Solar Solutions)",
+          "started": "Oct 12, 2026",
+          "destination": "api.whatsapp.com",
+          "text": "Is your solar water heater not giving enough hot water like it used to? Expert repair, servicing and installation for all major solar water heater brands. Solar tube deep cleaning and scaling, leakage detection and fixes, full system health checkup and maintenance, new sales and complete setup. Prompt doorstep service available across Bengaluru and Hyderabad. Call +91 90666 31441.",
+          "images": []
+        }
+      ]
+    },
+    "google_own": {
+      "found": true,
+      "advertiser_id": "AR09270299175948386305",
+      "advertiser_name": "VIJAYA KUMAR",
+      "verified": true,
+      "ad_count": 4,
+      "creatives": [
+        "CR16134700652138856449",
+        "CR01961826204797370369",
+        "CR10704294704888938497",
+        "CR07293973505157103617"
+      ]
+    },
+    "ads": [
+      {
+        "library_id": "1446165934284837",
+        "library_url": "https://www.facebook.com/ads/library/?id=1446165934284837",
+        "ad_count": null,
+        "format": null,
+        "page_name": "99Ad Solutions (for V1 Solar Solutions)",
+        "started": "Oct 12, 2026",
+        "destination": "api.whatsapp.com",
+        "text": "Live Meta ad for solar water heater repair, servicing and installation across Bengaluru and Hyderabad, run by the agency 99Ad Solutions. Destination is a WhatsApp chat.",
+        "images": []
+      },
+      {
+        "library_id": "AR09270299175948386305 / CR16134700652138856449",
+        "library_url": "https://adstransparency.google.com/advertiser/AR09270299175948386305/creative/CR16134700652138856449?region=IN",
+        "ad_count": 4,
+        "format": "Display image",
+        "page_name": "VIJAYA KUMAR",
+        "started": "Active 2026-11-14",
+        "destination": "v1solarsolutions.com",
+        "text": "Google Ads Transparency: 4 live ads under identity-verified advertiser AR09270299175948386305 (VIJAYA KUMAR), all pointing at v1solarsolutions.com.",
+        "images": []
+      }
+    ],
+    "summary": "V1 Solar Solutions is the only lead in this batch advertising on both channels with a published email: 4 live Google ads behind a verified account (AR09270299175948386305) and a Meta ad (Library ID 1446165934284837, live since 12 Oct 2026) run by the agency 99Ad Solutions. The Meta ad is the only thing putting them in front of Hyderabad - the copy promises doorstep service across Bengaluru and Hyderabad and the click opens a WhatsApp chat. Proprietor Mr Vijay Kumar P; Bengaluru address; also listed as a manufacturer and service provider on IndiaMART under GST 29DPTPK0093G1ZF."
+  },
+  "funnel": {
+    "type": "WhatsApp chat on Meta, own site on Google",
+    "destination": "api.whatsapp.com (Meta) / v1solarsolutions.com (Google)",
+    "meaning": "The Meta side buys a conversation, not a lead record - no form, no email capture, nothing to follow up if the chat goes cold. The Google side lands on a site whose quote form does capture an enquiry."
+  },
+  "findings": [
+    "The Meta ad is the only channel putting V1 in front of Hyderabad, and it ends in a WhatsApp chat - no email, no form, no retargeting pool for the Hyderabad half of the spend.",
+    "Two live domains split the same business: v1solarsolutions.com (the real site, contact form, info@v1solarsolutions.com) and v1solarsolutuons.in - a misspelling - which carries their IndiaMART manufacturer listing and a different phone presentation.",
+    "Google rating is 1.0 from 2 reviews, against a Meta ad that leans on 'expert technicians' and 'prompt doorstep service'. The paid story and the public review record do not match.",
+    "The quote form is the strongest asset on the site - it captures product type (water heater / softener / heat pump / commercial RO) before the callback - and no ad sends traffic to it.",
+    "Scope is service-led: tube cleaning and scaling, leakage detection, system health checks and AMC across all brands, plus 100-500 LPD ETC and FPC heaters. That is a recurring-revenue story the one-off repair ad never tells."
+  ],
+  "next_steps": [
+    [
+      "Give the Hyderabad ads a page of their own",
+      "The Meta ad promises Hyderabad doorstep service but lands in WhatsApp. A Hyderabad-specific page with the service list, a form and the Meta Pixel makes that half of the spend measurable and retargetable."
+    ],
+    [
+      "Retire the misspelled domain",
+      "v1solarsolutuons.in splits the IndiaMART presence from the .com site and sends some enquiries to a different-looking business. A redirect fixes it."
+    ],
+    [
+      "Work the review gap",
+      "1.0 from 2 reviews undercuts an ad built on expertise. Two or three verified reviews from recent service jobs change the click-to-call rate."
+    ],
+    [
+      "Sell the AMC, not the repair",
+      "Tube cleaning, leakage checks and system health checks are recurring revenue. A single AMC creative would out-earn the one-off repair message."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@v1solarsolutions.com"
+    ],
+    [
+      "Phone",
+      "+91 9066631441"
+    ],
+    [
+      "Address",
+      "7, Magadi Main Rd, Asthagrama Layout, Kamakshipalya, Bengaluru 560079"
+    ],
+    [
+      "Entity",
+      "V1 Solar Solutions (Solar Sales and Services) - GST 29DPTPK0093G1ZF"
+    ],
+    [
+      "Proprietor",
+      "Mr Vijay Kumar P"
+    ],
+    [
+      "Google Ads",
+      "AR09270299175948386305 (VIJAYA KUMAR, identity-verified) - 4 live ads"
+    ],
+    [
+      "Meta",
+      "Library ID 1446165934284837 via 99Ad Solutions"
+    ]
+  ],
+  "contact": {
+    "email": "info@v1solarsolutions.com",
+    "phone": "+91 9066631441",
+    "fb_page": "https://www.facebook.com/61576081630731/"
+  },
+  "site_evidence": {
+    "pixel": null,
+    "utm": false,
+    "checked_on": "2026-11-14",
+    "note": "Contact page and service page read live 2026-11-14; page source was not pulled, so Meta Pixel presence is unverified."
+  },
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "Only 1 offer angle in live copy (installation speed) - every ad says the same thing."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Oct 12, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "fail",
+        "evidence": "A single live ad - no internal comparison, no safety net if it fatigues."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: WhatsApp chat on Meta, own site on Google."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 2,
+      "fail": 3,
+      "unknown": 10,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

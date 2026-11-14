@@ -64,6 +64,45 @@ Skipped as already-known during this run: **Twilight Solar** (already in
 `cd 01-LEADS && PYTHONPATH=<pdflibs> python3 tests.py` → **31/31 OK** after
 both fixes.
 
+## Audit PDFs — all five built and QA-passed
+
+The blocker was **not** the PDF step. `ads_only_report.py` is an offline,
+data-driven builder (it takes verified lead data and renders with ReportLab),
+so the reports could be produced here once the verified data was loaded into
+it. The only thing that genuinely cannot run in this sandbox is the **full**
+website audit — `run_audit()` fetches pages over HTTP and this sandbox has no
+outbound route to arbitrary hosts (only github/npm/pypi), and `run_research()`
+needs Playwright + Chrome. So every report below is a clearly-labelled
+**live ad activity** report that says on page 1 that no website audit was run,
+and it never invents website-audit data.
+
+`python verify_report.py --ads-only` → **all 56 reports PASS**, including all
+five new ones (live ad evidence, branding, honesty panel, no fake
+website-audit data).
+
+| Lead | Pages | PDF | Local path |
+|---|---|---|---|
+| KehanSri Technologies & Service Pvt Ltd | 3 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_KehanSri_Technologies_Service_Pvt_Ltd.pdf) | `02-OUTREACH/ads_only_pdfs/audit_KehanSri_Technologies_Service_Pvt_Ltd.pdf` |
+| Hysun Solar Pvt. Ltd. | 4 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Hysun_Solar_Pvt_Ltd_.pdf) | `02-OUTREACH/ads_only_pdfs/audit_Hysun_Solar_Pvt_Ltd_.pdf` |
+| V1 Solar Solutions | 4 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_V1_Solar_Solutions.pdf) | `02-OUTREACH/ads_only_pdfs/audit_V1_Solar_Solutions.pdf` |
+| Mega Solar India (Mega Creations) | 3 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Mega_Solar_India_Mega_Creations_.pdf) | `02-OUTREACH/ads_only_pdfs/audit_Mega_Solar_India_Mega_Creations_.pdf` |
+| PNR Sunrise Energies Pvt Ltd | 4 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_PNR_Sunrise_Energies_Pvt_Ltd.pdf) | `02-OUTREACH/ads_only_pdfs/audit_PNR_Sunrise_Energies_Pvt_Ltd.pdf` |
+
+Each also has a machine-readable audit JSON beside it in
+`01-LEADS/ads_only_results/audit_<Company>.json`, and all five are listed in
+`02-OUTREACH/AUDIT_PDF_INDEX.md`.
+
+### One builder fix worth knowing about
+
+`ad()` used to hardcode a Facebook Ad Library URL for every ad. For the four
+leads whose evidence is on **Google Ads Transparency** that produced a dead,
+misleading link (`facebook.com/ads/library/?id=AR0789...`). `ad()` now takes an
+explicit `library_url`, plus a `gcreative(advertiser_id, creative_id)` helper
+that builds the real Google transparency URL, and an `ad_count` so a report can
+say "24 live ads on Google" rather than implying a single ad. Where a Library ID
+was never captured (Hysun's Meta card) the link points at the live Ad Library
+keyword search for that advertiser instead of a fabricated ID.
+
 ## Blocked — rowed but NOT emailable
 
 | Lead | Why blocked |
@@ -81,25 +120,48 @@ both fixes.
 - **Zero-ad domains re-confirmed today:** sriishaansolar.com, solluz.co.in, greensolarpower.in, slrsurabhi.com, assureenergy.in, somayasolar.com, sunsolarpowersystems.in, sunsolarpowersystems.com, sunsolarhyd.com, sunriseenergies.in.
 - **`solar company Kukatpally` returns 0 Meta ads.** `solar EPC Telangana` returns only Lotus Industries (already rowed). `solar AMC Hyderabad` returns only Sunova (already rowed).
 
-## Not done — sandbox limits, needs a machine with a browser
+## What was still blocked, and what is not
 
-- **No audit scores, no PDFs, no Gmail drafts were produced for this batch.**
-  `discover_leads.py` steps 2–3 (live ad activity + branded PDF) drive
-  Playwright, and this sandbox has no Chromium: `playwright install chromium`
-  fails on the CDN download and there is no system Chrome for
-  `channel="chrome"`.
-- **De-dup and grouping were still run end-to-end.** `discover_leads.py` now
-  takes `--feed <json>` to replay a live-captured ad feed instead of launching
-  Playwright, so the discovery + duplicate-guard half runs identically
-  headless. Today's run
-  (`python discover_leads.py "solar panel Hyderabad" --limit 5 --city Hyderabad --feed feeds/solar_hyderabad_2026-11-14.json`)
-  printed the registry summary, skipped 6 known advertisers with their matched
-  sources, and reported the new ones. The captured feed is saved at
-  `01-LEADS/feeds/solar_hyderabad_2026-11-14.json`.
-- **3 of the 5 leads have a verified email**, so 3 drafts can be created once
-  the PDF step runs: KehanSri, Hysun Solar, V1 Solar Solutions.
-- **Deps for local runs:** `pip install --target <dir> requests beautifulsoup4
-  lxml reportlab playwright` then `PYTHONPATH=<dir>`.
+**Built here (2026-11-14, second pass):** all five audit PDFs and their audit
+JSONs, the PDF index entry, and the QA gate — see the table above. The earlier
+note in this log claiming no PDFs could be produced was wrong about the cause:
+the PDF step is offline. What genuinely cannot run here is the **full** website
+audit, because `run_audit()` fetches pages over HTTP and this sandbox has no
+outbound route to arbitrary hosts (only github / npm / pypi), and
+`run_research()` needs Playwright + Chrome, and no Chromium can be installed
+(`playwright install chromium` fails on the CDN download; there is no system
+Chrome for `channel="chrome"`).
+
+**Still needs a machine with ordinary internet access**, per lead:
+
+```
+python run_pipeline.py https://kehansrisolar.com/ "KehanSri Technologies & Service Pvt Ltd" --city Hyderabad
+python run_pipeline.py https://www.hysunsolar.com "Hysun Solar Pvt. Ltd." --city Hyderabad
+python run_pipeline.py https://www.v1solarsolutions.com/ "V1 Solar Solutions" --city Hyderabad
+python run_pipeline.py https://megasolarindia.com/ "Mega Solar India (Mega Creations)" --city Hyderabad
+python run_pipeline.py https://sunriseenergies.in/ "PNR Sunrise Energies Pvt Ltd" --city Hyderabad
+```
+
+**De-dup and grouping were run end-to-end.** `discover_leads.py` takes
+`--feed <json>` to replay a live-captured ad feed instead of launching
+Playwright, so the discovery + duplicate-guard half runs identically headless:
+
+```
+python discover_leads.py "solar panel Hyderabad" --limit 5 --city Hyderabad \
+    --feed feeds/solar_hyderabad_2026-11-14.json
+```
+
+That run printed the registry summary, skipped 8 known advertisers with their
+matched sources, and reported only the documented dead ends. The captured feed
+is saved at `01-LEADS/feeds/solar_hyderabad_2026-11-14.json`.
+
+**3 of the 5 leads have a verified email**, so 3 Gmail drafts can be created
+next: KehanSri (`info@kehansri.com`), Hysun Solar (`info@hysunsolar.com`), V1
+Solar Solutions (`info@v1solarsolutions.com`).
+
+**Deps for local runs:** `pip install --target <dir> requests beautifulsoup4
+lxml reportlab pypdf playwright` then `PYTHONPATH=<dir>` (`pypdf` is what
+`verify_report.py` needs to read the PDFs back).
 
 ## Still waiting on you
 

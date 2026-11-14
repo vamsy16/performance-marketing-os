@@ -1,0 +1,255 @@
+{
+  "company": "Hysun Solar Pvt. Ltd.",
+  "legal": "Hysun Solar Private Limited",
+  "city": "Bandlaguda Jagir, Hyderabad",
+  "website": "https://www.hysunsolar.com",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-11-14",
+  "generated_at": "2026-11-14 02:53",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "~1 result",
+      "query": "Hysun Solar",
+      "ads": [
+        {
+          "library_id": "Meta - Library ID not captured",
+          "library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&is_targeted_country=false&media_type=all&q=Hysun%20Solar",
+          "ad_count": null,
+          "format": null,
+          "page_name": "Hysun Solar",
+          "started": "Active 2026-11-14",
+          "destination": "WhatsApp / Facebook lead form",
+          "text": "Meta ads sell PM Surya Ghar Rs.78,000 subsidy rooftop solar for Hyderabad (Suncity, Bandlaguda Jagir, Hyderabad 500091), on-grid / off-grid / hybrid systems and EMI. Every click lands in a WhatsApp chat or Facebook lead form - never on hysunsolar.com. The ad carries +91 7573999960, a different number from the one on the website.",
+          "images": []
+        }
+      ]
+    },
+    "google_own": {
+      "found": true,
+      "advertiser_id": "AR08880526109242818561",
+      "advertiser_name": "Hysun Solar pvt ltd",
+      "verified": true,
+      "ad_count": 1,
+      "creatives": [
+        "CR05405281565389357057"
+      ]
+    },
+    "ads": [
+      {
+        "library_id": "AR08880526109242818561 / CR05405281565389357057",
+        "library_url": "https://adstransparency.google.com/advertiser/AR08880526109242818561/creative/CR05405281565389357057?region=IN",
+        "ad_count": 1,
+        "format": "Display image",
+        "page_name": "Hysun Solar pvt ltd",
+        "started": "Active 2026-11-14",
+        "destination": "hysunsolar.com",
+        "text": "Google Ads Transparency: 1 live ad under identity-verified advertiser AR08880526109242818561 (Hysun Solar pvt ltd).",
+        "images": []
+      },
+      {
+        "library_id": "Meta - Library ID not captured",
+        "library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&is_targeted_country=false&media_type=all&q=Hysun%20Solar",
+        "ad_count": null,
+        "format": null,
+        "page_name": "Hysun Solar",
+        "started": "Active 2026-11-14",
+        "destination": "WhatsApp / Facebook lead form",
+        "text": "Meta ads for PM Surya Ghar Rs.78,000 subsidy rooftop solar in Hyderabad (Suncity, Bandlaguda Jagir, 500091): on-grid / off-grid / hybrid and EMI. Destination is a WhatsApp chat or Facebook lead form, so the Meta spend never reaches hysunsolar.com.",
+        "images": []
+      }
+    ],
+    "summary": "Hysun Solar Pvt Ltd is live on both channels - one Google ad behind a verified account (AR08880526109242818561) and Meta ads selling the Rs.78,000 PM Surya Ghar subsidy to Hyderabad homeowners. The split matters: the Google ad points at hysunsolar.com, while every Meta click is captured inside a WhatsApp chat or Facebook lead form. This business was first swept on 2026-10-18 as lead #1 of batch 2 and never promoted into the pipeline; this report closes that gap. The site itself is a largely unmodified template - repeated 'Harness the Sun Get Solar Power Today!' headings and a 'Free contact 24/7' block - and it publishes an Ahmedabad address while the ads target Hyderabad."
+  },
+  "funnel": {
+    "type": "Split - own site on Google, lead form on Meta",
+    "destination": "hysunsolar.com (Google) / WhatsApp + Facebook lead form (Meta)",
+    "meaning": "The Google side of the spend is measurable; the Meta side is not. Every Meta rupee ends inside Facebook's form or a WhatsApp thread, so there is no pixel, no retargeting pool and no page to test a different price on."
+  },
+  "findings": [
+    "Meta ads sell the Rs.78,000 subsidy and EMI to Hyderabad homeowners, but every click lands in a WhatsApp chat or Facebook lead form - the Meta spend never reaches hysunsolar.com.",
+    "The contact page publishes an Ahmedabad address (10 Radhekrishna Ind Hub, B/H Hinglaj Mata Mandir, Ahmedabad) while the ads target Suncity, Bandlaguda Jagir, Hyderabad 500091. A Hyderabad homeowner checking the site after clicking an ad sees the wrong city.",
+    "Three different contact routes are live at once: info@hysunsolar.com on the site, infohysunsolar@gmail.com as the support address on their own Android app (com.HYSUN.HysunSolar), and +91 7573999960 on the Meta ads against +91 7573999966 on the site. Enquiries can land in an inbox nobody watches.",
+    "The site is a template with repeated 'Harness the Sun Get Solar Power Today!' headings and a 'Free contact 24/7' block - no project photos, no system sizing table, nothing that qualifies the lead the ads are paying for.",
+    "The Android app advertises one-tap service requests, panel cleaning and a dedicated support team - an operational strength that no ad or web page mentions."
+  ],
+  "next_steps": [
+    [
+      "Send the Meta clicks to a page you own",
+      "A dedicated PM Surya Ghar landing page with the subsidy, an enquiry form and the Meta Pixel turns the current lead-form spend into a measurable, retargetable audience."
+    ],
+    [
+      "Fix the city on the contact page",
+      "An Ahmedabad address under ads that say Bandlaguda Jagir, Hyderabad costs trust at exactly the moment a homeowner is deciding whether to call."
+    ],
+    [
+      "Consolidate the contact routes",
+      "Three addresses and two phone numbers is three chances to miss an enquiry. Point everything at one monitored inbox and one number."
+    ],
+    [
+      "Lead with the service promise",
+      "One-tap service requests and panel cleaning are already built into the app. They are the differentiator against every other lead-form advertiser in the Hyderabad feed."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@hysunsolar.com (site) / infohysunsolar@gmail.com (app support)"
+    ],
+    [
+      "Phone",
+      "+91 7573999966 (site) / +91 7573999960 (Meta ads) / 1800-270-0025 toll-free"
+    ],
+    [
+      "Address (ads)",
+      "Suncity, Bandlaguda Jagir, Hyderabad 500091"
+    ],
+    [
+      "Address (site)",
+      "10 Radhekrishna Ind Hub, B/H Hinglaj Mata Mandir, Ahmedabad"
+    ],
+    [
+      "Entity",
+      "Hysun Solar Private Limited"
+    ],
+    [
+      "Google Ads",
+      "AR08880526109242818561 (identity-verified) - 1 live ad"
+    ],
+    [
+      "Mobile app",
+      "com.HYSUN.HysunSolar on Google Play"
+    ]
+  ],
+  "contact": {
+    "email": "info@hysunsolar.com",
+    "phone": "+91 7573999966 / toll-free 1800-270-0025",
+    "fb_page": "https://www.facebook.com/"
+  },
+  "site_evidence": {
+    "pixel": null,
+    "utm": false,
+    "checked_on": "2026-11-14",
+    "note": "hysunsolar.com returned HTTP 500 to the text fetcher on 2026-11-14; page content was read via a search-engine snapshot the same day. Page source was not pulled, so Meta Pixel presence is unverified."
+  },
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "Live ads click to a Facebook lead form (fb.me) - traffic never reaches a page you own, so no URL can carry UTMs and click data stays inside Meta."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "pass",
+        "evidence": "3 distinct offer angles in live copy: government subsidy, subsidy amount, EMI / financing."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Active 2026-11-14) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "fail",
+        "evidence": "A single live ad - no internal comparison, no safety net if it fatigues."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: Split - own site on Google, lead form on Meta."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 3,
+      "fail": 3,
+      "unknown": 9,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

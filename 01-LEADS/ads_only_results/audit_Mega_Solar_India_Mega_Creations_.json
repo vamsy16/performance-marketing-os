@@ -1,0 +1,240 @@
+{
+  "company": "Mega Solar India (Mega Creations)",
+  "legal": "Mega Creations (Mega Solar India)",
+  "city": "Hyderabad",
+  "website": "https://megasolarindia.com/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-11-14",
+  "generated_at": "2026-11-14 02:53",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": false,
+      "results_count": 0,
+      "results_label": "not checked - evidence is on Google",
+      "query": "Mega Solar India",
+      "ads": []
+    },
+    "google_own": {
+      "found": true,
+      "advertiser_id": "AR09804983159320739841",
+      "advertiser_name": "VELPULA INDIRA NIRMALA",
+      "verified": true,
+      "ad_count": 2,
+      "creatives": [
+        "CR16648633552560193537",
+        "CR04546876387859890177"
+      ]
+    },
+    "ads": [
+      {
+        "library_id": "AR09804983159320739841 / CR16648633552560193537",
+        "library_url": "https://adstransparency.google.com/advertiser/AR09804983159320739841/creative/CR16648633552560193537?region=IN",
+        "ad_count": 2,
+        "format": "Display image",
+        "page_name": "VELPULA INDIRA NIRMALA",
+        "started": "Active 2026-11-14",
+        "destination": "megasolarindia.com",
+        "text": "Google Ads Transparency: 2 live ads under identity-verified advertiser AR09804983159320739841 (VELPULA INDIRA NIRMALA), pointing at megasolarindia.com.",
+        "images": []
+      },
+      {
+        "library_id": "AR09804983159320739841 / CR04546876387859890177",
+        "library_url": "https://adstransparency.google.com/advertiser/AR09804983159320739841/creative/CR04546876387859890177?region=IN",
+        "ad_count": 2,
+        "format": "Display image",
+        "page_name": "VELPULA INDIRA NIRMALA",
+        "started": "Active 2026-11-14",
+        "destination": "megasolarindia.com",
+        "text": "Second live creative from the same verified account - a second angle behind the same landing page.",
+        "images": []
+      }
+    ],
+    "summary": "Mega Creations trades as Mega Solar India and is running 2 live Google ads behind an identity-verified account (AR09804983159320739841, VELPULA INDIRA NIRMALA). The homepage copy is a genuine Hyderabad residential installer pitch - no-upfront-cost and pay-as-you-save financing, the Rs.78,000 PM Surya Ghar subsidy, 7% loans, 7-day installation, 25-year warranty, 100+ installations and 15+ years, with Waaree, Adani, Premier, Panasonic, Polycab and Microtek named as partners. The reason this lead is blocked rather than emailable is on the contact page: it is an unedited WordPress demo. No Meta Ad Library record was captured for this report."
+  },
+  "funnel": {
+    "type": "WhatsApp chat widget only",
+    "destination": "WhatsApp chat widget on megasolarindia.com",
+    "meaning": "There is no email address, no phone number and no working contact form anywhere on the site. The only way a paid click can become a conversation is the WhatsApp widget - so every lead depends on one channel and nothing is captured in writing."
+  },
+  "findings": [
+    "The /contact/ page is an unedited WordPress demo. It publishes info@example.com, enrollment@example.com and collab@example.com, the address 'Demo St, Brooklyn, NY 11223, United States' and the phone +1 123-456-7890, with form fields labelled 'Parent's Name' and 'Questions Parent's' and Infant / Toddler / Preschool options. A homeowner who clicks a paid ad and tries to make contact lands on a preschool enquiry form in Brooklyn.",
+    "There is no real email address or phone number anywhere on the site - only a WhatsApp chat widget. Nothing is captured in writing and nothing can be followed up if the chat goes cold.",
+    "The homepage promise is strong and unbacked: 'Leading Solar Company in Hyderabad', 100+ installations, 15+ years, certified government vendor, no-upfront-cost and pay-as-you-save - and none of it has a contact route, a project photo or a customer name behind it.",
+    "Two live creatives both point at the same landing page, so there is no second page to test a different offer or price against.",
+    "Brand partners are named (Waaree, Adani, Premier, Panasonic, Polycab, Microtek) but no product pages, datasheets or system configurations are linked from the homepage."
+  ],
+  "next_steps": [
+    [
+      "Replace the demo contact page before anything else",
+      "info@example.com, a Brooklyn address, +1 123-456-7890 and a preschool form are what a paid click currently lands on. This is the single highest-value fix on the site and it is a content job, not a development one."
+    ],
+    [
+      "Publish a real phone number and email",
+      "A number and an inbox in the header and footer of every page, matching the Google Business listing, is the minimum for a business buying search traffic."
+    ],
+    [
+      "Keep the WhatsApp widget - but add a form",
+      "The widget is the only working channel. Adding a name/phone/locality form beside it gives a written record of every enquiry."
+    ],
+    [
+      "Back the 100+ installations claim",
+      "Named localities, a few project photos and one or two customer quotes would turn the strongest line on the page into something a buyer can check."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "none published - /contact/ shows info@example.com, enrollment@example.com and collab@example.com"
+    ],
+    [
+      "Phone",
+      "none published - /contact/ shows +1 123-456-7890"
+    ],
+    [
+      "Address (site)",
+      "Demo St, Brooklyn, NY 11223, United States"
+    ],
+    [
+      "Contact route",
+      "WhatsApp chat widget only"
+    ],
+    [
+      "Entity",
+      "Mega Creations, trading as Mega Solar India"
+    ],
+    [
+      "Google Ads",
+      "AR09804983159320739841 (VELPULA INDIRA NIRMALA, identity-verified) - 2 live ads"
+    ]
+  ],
+  "contact": {
+    "email": "",
+    "phone": "",
+    "fb_page": ""
+  },
+  "site_evidence": {
+    "pixel": null,
+    "utm": false,
+    "checked_on": "2026-11-14",
+    "note": "Homepage and /contact/ read live 2026-11-14. The contact page is an unedited WordPress demo, so there is no real contact data to verify."
+  },
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad copy could not be read for these ads."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Ad start dates were not captured."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "No live ads captured."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: WhatsApp chat widget only."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 1,
+      "fail": 1,
+      "unknown": 13,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

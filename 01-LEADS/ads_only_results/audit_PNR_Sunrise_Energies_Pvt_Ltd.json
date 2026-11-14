@@ -1,0 +1,242 @@
+{
+  "company": "PNR Sunrise Energies Pvt Ltd",
+  "legal": "PNR Sunrise Energies Pvt. Ltd.",
+  "city": "Hyderabad (Telangana & Andhra Pradesh)",
+  "website": "https://sunriseenergies.in/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-11-14",
+  "generated_at": "2026-11-14 02:53",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "~1 result",
+      "query": "PNR Sunrise Energies",
+      "ads": [
+        {
+          "library_id": "28807326382303186",
+          "library_url": "https://www.facebook.com/ads/library/?id=28807326382303186",
+          "ad_count": null,
+          "format": null,
+          "page_name": "PNR Sunrise Energies Pvt Ltd",
+          "started": "Nov 12, 2026",
+          "destination": "api.whatsapp.com",
+          "text": "Turn your business dreams into a growing solar business. Join PNR Sunrise Energies Pvt. Ltd. as a Channel Partner - dedicated business and operational support, residential rooftop, commercial and industrial solar, EV charging stations, solar water pumps and solar fencing. Genuine products, competitive pricing, expert business support, timely service and delivery, long-term partnership. Hyderabad. Call 6304587145.",
+          "images": []
+        }
+      ]
+    },
+    "google_own": {
+      "found": false,
+      "advertiser_id": "",
+      "advertiser_name": "",
+      "verified": false,
+      "ad_count": 0,
+      "creatives": []
+    },
+    "ads": [
+      {
+        "library_id": "28807326382303186",
+        "library_url": "https://www.facebook.com/ads/library/?id=28807326382303186",
+        "ad_count": null,
+        "format": null,
+        "page_name": "PNR Sunrise Energies Pvt Ltd",
+        "started": "Nov 12, 2026",
+        "destination": "api.whatsapp.com",
+        "text": "Live Meta ad recruiting solar channel partners - residential rooftop, commercial and industrial solar, EV charging, solar water pumps and fencing. Hyderabad. Destination is a WhatsApp chat.",
+        "images": []
+      }
+    ],
+    "summary": "PNR Sunrise Energies ran its first captured ad on 12 November 2026 - two days before this sweep - and it is a channel-partner recruitment ad, not a homeowner offer. That makes them the youngest advertiser in the batch and the only one whose paid message is aimed at the trade. The site behind it is the most complete of the five: a working solar calculator, a six-step process, a project showcase (5 kW Hyderabad, 100 kW Telangana, 500 kW Andhra Pradesh, 10 kW Warangal), three named testimonials and detailed management bios. Google Ads Transparency shows 0 ads for sunriseenergies.in, so Meta is currently their only paid channel."
+  },
+  "funnel": {
+    "type": "WhatsApp chat",
+    "destination": "api.whatsapp.com / wa.me/+916304587145",
+    "meaning": "The ad sells a partnership and the click opens a chat. There is no email address anywhere on the site and no form that captures a written enquiry, so the whole funnel is one WhatsApp thread."
+  },
+  "findings": [
+    "Every hero counter on the site reads zero: '0+' Projects Delivered, '0 MW' Solar Capacity Installed, '0%' Potential Bill Savings and '0' years of engineering experience - while the same page claims 150+ projects and names management with 35+ years of experience. The page argues against itself.",
+    "No email address is published anywhere. Contact is a request-assessment form, wa.me/+916304587145 and tel:+916304587145 - so a partner or homeowner who prefers to write has no route in.",
+    "The only live ad recruits channel partners, so nothing in the paid feed is buying homeowner demand - the audience the project showcase and calculator are built for.",
+    "Google Ads Transparency shows 0 ads for sunriseenergies.in. All paid presence is one two-day-old Meta creative.",
+    "The assets are strong and unused: a working solar savings calculator (Hyderabad, Warangal, Vijayawada, Visakhapatnam), a six-step process, four named projects with capacities and generation figures, and three named testimonials from Hyderabad, Andhra Pradesh and Warangal."
+  ],
+  "next_steps": [
+    [
+      "Fill in the counters before the next ad runs",
+      "'0+ projects', '0 MW' and '0% savings' next to a claim of 150+ projects is the first thing a prospective partner will notice. The numbers already exist in the project showcase - put them in the hero."
+    ],
+    [
+      "Publish an email address",
+      "A partnership conversation needs something more durable than a WhatsApp thread. One monitored inbox on the contact section and in the footer."
+    ],
+    [
+      "Run a homeowner campaign alongside the partner ad",
+      "The calculator, the project showcase and the subsidy/financing section are all aimed at end customers, and none of them have an ad behind them."
+    ],
+    [
+      "Use the calculator as the landing page",
+      "It is the most interactive asset on the site and it captures a monthly bill and a locality - exactly the qualifying data a paid click should produce."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "none published"
+    ],
+    [
+      "Phone / WhatsApp",
+      "+91 6304587145 (wa.me/+916304587145)"
+    ],
+    [
+      "Entity",
+      "PNR Sunrise Energies Pvt. Ltd."
+    ],
+    [
+      "Management",
+      "Mr KVK Prasad Rao (ITS 1986 batch, ECE Osmania University, M.Tech IIT Delhi, 35+ years across DoT, BSNL, TEC, TCIL and World Bank projects); Mr Nagesh Arcot (Managing Director, 22.5 years at HSBC); Mr Rajesh Arcot"
+    ],
+    [
+      "Scope",
+      "Residential, commercial and industrial solar EPC; agricultural and irrigation; EV charging; BESS, OPEX/RESCO, PPAs and financing"
+    ],
+    [
+      "Meta",
+      "Library ID 28807326382303186 (started Nov 12, 2026)"
+    ],
+    [
+      "Google Ads",
+      "0 ads for sunriseenergies.in"
+    ]
+  ],
+  "contact": {
+    "email": "",
+    "phone": "+91 6304587145",
+    "fb_page": "https://www.facebook.com/61595350896439/"
+  },
+  "site_evidence": {
+    "pixel": null,
+    "utm": false,
+    "checked_on": "2026-11-14",
+    "note": "Homepage read live 2026-11-14 including the calculator, process, project showcase, testimonials, FAQ and contact section; page source was not pulled, so Meta Pixel presence is unverified."
+  },
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad copy could not be read for these ads."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Nov 12, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "fail",
+        "evidence": "A single live ad - no internal comparison, no safety net if it fatigues."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: WhatsApp chat."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 2,
+      "fail": 2,
+      "unknown": 11,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}
