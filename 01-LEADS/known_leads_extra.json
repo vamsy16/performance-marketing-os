@@ -74,6 +74,18 @@
       "website": "https://visiontek.solar/",
       "city": "Begumpet, Hyderabad",
       "note": "Short form used inside the ad copy ('Switch to Visiontek Solar') for Visiontek Solar Energy. Rowed in leads.csv 2026-11-15."
+    },
+    {
+      "name": "Eagle Solar Systems",
+      "website": "",
+      "city": "Hyderabad",
+      "note": "Rowed in leads.csv 2026-11-15. 2 live Meta ads (1677382683817329, 1835997698149286); email eaglesolarhyd@gmail.com published in the TGREDCO 2026 empanelled-supplier register, TSRE240360. No own website."
+    },
+    {
+      "name": "Solar Apex Pvt Ltd",
+      "website": "https://www.solarapex.in/",
+      "city": "Hyderabad",
+      "note": "Rowed in leads.csv 2026-11-15. 2 live Meta ads (1143855195267637 in segment, 1667563528489384 dealership recruitment); info@solarapex.in from its own /contact/ page, Manikonda, Hyderabad 500089. The advertising page 'Solar Apex Khammam' is its Khammam franchisee."
     }
   ],
   "vetted": [
@@ -540,6 +552,22 @@
       "checked": "2026-11-15",
       "gate": "segment",
       "reason": "Live Meta advertiser (Library ID 2319725685441877, started 4 Sep 2026, page instagram.com/_u/mr_koti_00) but the ad sells Garuda Solar Energy Solutions, 3rd Floor Amarravati Rd, Guntur, Andhra Pradesh, +91 8886946169, with Govt subsidies for AP and Telangana. Guntur is outside the Hyderabad/Telangana segment this pipeline works. This ID was recorded as a Visiontek Solar Energy ad in batch 20 and was corrected on 2026-11-15."
+    },
+    {
+      "name": "Griffin Energy",
+      "website": "",
+      "city": "Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "published-email",
+      "reason": "4 live Meta ads verified twice on the 'Griffin Energy' page (1159969763254778 Nov 4, plus 1681876623343353 / 2436699883532011 / 2928662904181620 Nov 15 2026) advertising Magnelis steel structures and Reliance HJT panels with free roof surveys in Hyderabad, but no website and no published email address: 4 web searches and 20 Google Ads Transparency ?domain= probes returned only namesakes (Yemen, UK, Texas, Australia)."
+    },
+    {
+      "name": "Surya Shakti Solar Energy",
+      "website": "",
+      "city": "Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "published-email",
+      "reason": "2 live Meta ads verified individually (1692983389068776 and 1856029798723640, both Nov 14 2026) for on-grid/off-grid/hybrid rooftop solar in Hyderabad, but no website and no published email: IndiaMART listing indiamart.com/company/273630670/ publishes GST 36BKKPA8706N1ZS and CEO A Madhavi but no email, the firm is absent from the TGREDCO 2026 register, and web search returns only namesakes (Faridabad, Kathua J&K, Rajasthan)."
     }
   ]
 }

@@ -416,11 +416,15 @@ class StateCityGuardTests(unittest.TestCase):
             self.assertTrue(cities_for(st), "%s has no cities" % st)
 
     def test_the_rowed_pipeline_is_almost_entirely_telangana(self):
-        """The real 68-lead pipeline, checked against Telangana.
+        """The real rowed pipeline, checked against Telangana.
 
-        67 of 68 rowed leads resolve inside Telangana; V1 Solar Solutions is
-        the one outside it (Bengaluru). Zero unresolved means every city
-        string in leads.csv is understood by the configuration.
+        68 of 70 rowed leads resolve inside Telangana. Two are outside it and
+        both are honest about it: V1 Solar Solutions (Bengaluru, advertising
+        into Hyderabad) and Ray On Solar Systems, whose city field said
+        Hyderabad while its own site says Visakhapatnam, Andhra Pradesh -
+        corrected on 2026-11-15 so the field matches the row's own snippet.
+        Zero unresolved means every city string in leads.csv is understood by
+        the configuration.
         """
         import csv
         import io as _io
@@ -435,8 +439,9 @@ class StateCityGuardTests(unittest.TestCase):
         inside, outside, unresolved = check_rows(rows, "Telangana")
         self.assertEqual(len(unresolved), 0,
                          "unresolved cities: %s" % [r[1] for r in unresolved])
-        self.assertEqual([r[0] for r in outside], ["V1 Solar Solutions"])
-        self.assertEqual(len(inside), len(rows) - 1)
+        self.assertEqual([r[0] for r in outside],
+                         ["Ray On Solar Systems", "V1 Solar Solutions"])
+        self.assertEqual(len(inside), len(rows) - 2)
         self.assertGreater(len(cities_for("Telangana")), 10)
 
 
