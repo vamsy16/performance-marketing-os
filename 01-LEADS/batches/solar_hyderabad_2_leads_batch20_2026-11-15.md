@@ -204,6 +204,82 @@ advertisers** — fully absorbed, as it should be.
 attached to them; it did not add a lead, because the one advertiser that looked
 new was already in the pipeline and the other is out of segment.
 
+## Full audits, Ksquare-shaped, 2026-11-15
+
+Both leads now have a full DIGITAL MARKETING & PAID ADS AUDIT in the same shape
+as `audit_Ksquare_Energy`, built by `build_full_audits_batch20.py` from page
+text read live on 2026-11-15. The page text is saved in
+`01-LEADS/fetched/` so every count in the reports can be re-derived from it.
+
+| Lead | Score | Issues | Wins | PDF |
+|---|---|---|---|---|
+| Meissa Reeve | 23/100 | 11 | 7 | `02-OUTREACH/audit_pdfs/audit_Meissa_Reeve.pdf` |
+| Visiontek Solar Energy | 10/100 | 8 | 9 | `02-OUTREACH/audit_pdfs/audit_Visiontek_Solar_Energy.pdf` |
+
+**Nothing was copied from `audit_Ksquare_Energy.json`.** That file was read for
+its shape only. A leakage probe over both new PDFs and both JSONs, using
+Ksquare's title, H1, URL, sitemap count, load time, ad IDs and ad copy as
+probes, returns **0 hits**. Visiontek's score of 10 is a coincidence with
+Ksquare's 10 - it is its own arithmetic (no contact form on the homepage +8,
+no visible testimonials +2).
+
+**What was measured, and how.** Page text was read live through the sandbox's
+page fetcher and counted mechanically with a fixed regex, not estimated by
+eye: image counts and alt attributes, H1 counts and text, CTA link text,
+`tel:` / `mailto:` / `wa.me` links, form blocks, and the sitemap URL list.
+The saved page text for each is named in the audit JSON's provenance rows.
+
+**What is deliberately null, and printed as "could not be checked in this
+pass".** All eight tracking pixels (the page HTML source was never available,
+only rendered text, so no pixel claim is made either way); meta description,
+Open Graph, Schema.org and favicon (head markup); server response time and
+PageSpeed (no route to the API); live chat, popup opt-in and pricing-page link
+(not observable in page text). `calculate_audit_score()` treats a null as
+unmeasured - it neither penalises nor counts as a win, and it never appears as
+a finding.
+
+### The findings worth leading with
+
+**Meissa Reeve - 23/100.** The solar division is the competent half: 44 images
+with only 3 missing alt, one H1, twelve named installations with locality and
+system size, a 4.8-star Google rating, a real Contact Form 7 form and full
+address and hours. The parent domain is not: **36 unedited WordPress
+theme-demo pages are live and in the sitemap** - `/my-account/`, `/checkout/`,
+`/cart/`, sixteen `/elements/*` pages, `/404-layout/`, `/multipage/`, `/shop/`,
+four complete demo homepages (`/homepage-gas-station/`,
+`/homepage-rental/`, `/homepage-towing/`, `/homepage-natural-honey/`), three EV
+scooter brands (`/komaki/`, `/gemopai/`, `/virtus-motors/`), `/petrol-pumps/`
+and `/airport-metros/`. A prospect following a link can land on a page selling
+petrol pumps. Also: the phone and email on `/contacts/` are plain text, not
+`tel:`/`mailto:` links, so a mobile visitor cannot tap either; the homepage has
+no H1 and 10 of its 12 images have no alt text; the solar division homepage has
+50 links and **not one of them is an action**; raw image URLs are listed as
+sitemap entries; and a public view counter prints "11,020 total views, 10 views
+today".
+
+**Visiontek Solar Energy - 10/100.** The site itself is in genuinely good
+shape - every image has alt text across all three pages read, exactly one H1
+per page, a tappable `tel:` and `mailto:` and a working form on the contact
+page, WhatsApp on every page, and a blog posted on 11 and 12 Nov 2026. The
+problems are structural. **Ten of the eleven live ads do not point at the
+website**: six go to a bare `instagram.com` root, one to `fb.me`, four carry no
+link at all - so almost none of the spend can reach any of it. **There is no
+sitemap and no robots.txt** - both return 404. **Every social link on the
+contact page is a dead `contact-us#` anchor**, including for the Facebook page
+where the 11 ads actually run. **"Download Catalogue (PDF, 1.2 MB)" links to
+`product#`** - there is no PDF behind it. The homepage advertises four of the
+six product lines. And a broken video element prints "Your browser does not
+support video." into the page body.
+
+### One renderer fix this uncovered
+
+The full-audit story in `audit_pdf.py` never rendered `contact_facts`, so a
+report could carry a lead's phone and email in the JSON and never show them -
+and the reader had no way to re-check the contact facts the report rests on.
+Added a "Verified contact details" section to `build_story()`, matching the one
+the ads-only story already had, and regenerated the 9 full-audit PDFs whose
+JSON carries contact facts. The 7 that carry none are unchanged.
+
 ## Honesty notes
 
 - **This batch is 2 leads, not the 5 that were asked for.** Nothing was padded,

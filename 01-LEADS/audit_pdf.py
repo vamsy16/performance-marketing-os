@@ -1927,6 +1927,16 @@ def build_story(audit):
     ]
     story.append(facts_table(seo_rows))
 
+    # Verified contact details. The full-audit story never rendered these, so a
+    # report could carry a lead's phone and email in the JSON and never show
+    # them - and the reader had no way to re-check the contact facts the report
+    # is built on. Same section the ads-only story has.
+    facts = audit.get("contact_facts") or []
+    if facts:
+        story.extend(section_bar("Verified contact details",
+                                 "read from the live site, not inferred"))
+        story.append(facts_table(facts))
+
     story.extend(section_bar("Recommended next steps", "your 30-day action plan"))
     story.append(steps_table(next_steps(audit)))
 

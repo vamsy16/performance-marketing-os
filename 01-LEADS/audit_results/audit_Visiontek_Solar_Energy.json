@@ -1,0 +1,351 @@
+{
+  "company": "Visiontek Solar Energy",
+  "legal": "VISIONTEK Linkwell Telesystems Pvt Ltd",
+  "city": "Begumpet, Hyderabad",
+  "website": "https://visiontek.solar/",
+  "email": "info@visiontek.com",
+  "phone": "+91 9701601421",
+  "audit_date": "2026-11-15",
+  "ssl": true,
+  "load_time_seconds": null,
+  "pixels": {
+    "meta_pixel": null,
+    "google_ads": null,
+    "google_analytics_ga4": null,
+    "google_analytics_ua": null,
+    "linkedin_insight": null,
+    "microsoft_clarity": null,
+    "hotjar": null,
+    "google_tag_manager": null
+  },
+  "conversion": {
+    "has_contact_form": false,
+    "has_phone_click": true,
+    "has_whatsapp_link": true,
+    "has_cta_buttons": 3,
+    "has_live_chat": null,
+    "has_popup_optin": null,
+    "has_testimonials": false,
+    "has_pricing_page_link": null,
+    "has_mailto_published": true
+  },
+  "seo": {
+    "has_title": true,
+    "title_text": "VISIONTEK - Powering India's Smart Energy Future",
+    "title_length": 48,
+    "has_meta_description": null,
+    "meta_desc_length": null,
+    "h1_count": 1,
+    "h1_text": "Engineering the Future  of Intelligent Energy",
+    "has_og_tags": null,
+    "has_schema": null,
+    "has_favicon": null,
+    "image_count": 12,
+    "images_without_alt": 0
+  },
+  "pagespeed": {
+    "error": "not run - no outbound network route to the PageSpeed API from this environment",
+    "provenance": "NOT RUN - this environment has no outbound route to Google's PageSpeed API, so no speed or Largest Contentful Paint figure is claimed anywhere in this report."
+  },
+  "page_count": {
+    "sitemap_pages": null,
+    "has_sitemap": false
+  },
+  "local_signals": {
+    "has_google_maps_embed": true,
+    "has_address_schema": null,
+    "mentions_city": true,
+    "company_in_title": false
+  },
+  "ad_check_urls": {
+    "google_ads_transparency": "https://adstransparency.google.com/?region=anywhere&q=visiontek.solar&country=IN",
+    "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Visiontek Solar Energy&search_type=keyword_unordered",
+    "note": "Open these URLs in your browser to check if they're running ads and what those ads look like."
+  },
+  "final_url": "https://visiontek.solar/",
+  "score": {
+    "score": 10,
+    "issues": [
+      "Ten of the eleven live ads do not point at the website",
+      "No sitemap and no robots.txt",
+      "Every social media link on the contact page is a dead anchor",
+      "'Download Catalogue' does not download a catalogue",
+      "The homepage advertises four of the six product lines",
+      "A broken video element is printed as visible text",
+      "No contact form on homepage — visitors can't easily enquire",
+      "No visible testimonials/social proof on homepage"
+    ],
+    "wins": [
+      "WhatsApp link present",
+      "Good CTA presence (3 buttons)",
+      "Every image carries alt text - 0 of 12 on the homepage, 0 of 6 on the contact page, 0 of 14 on the product page",
+      "Exactly one H1 per page, and each one is descriptive rather than a logo dump",
+      "The contact page has a tappable tel: link and a tappable mailto: link, plus a contact form with a SEND ENQUIRY button and client-side validation messages",
+      "WhatsApp support is on every page, not just the contact page",
+      "Four product lines are documented with real technical detail, and a catalogue download is offered (even though the link is broken)",
+      "The blog is current - posts dated 11 and 12 Nov 2026",
+      "HTTPS is live and the site loads over it"
+    ],
+    "issue_count": 8,
+    "win_count": 9
+  },
+  "ad_library": {
+    "checked_at": "2026-11-15",
+    "meta_own": {
+      "found": true,
+      "results_count": 11,
+      "results_label": "~11 results",
+      "query": "Visiontek Solar Energy",
+      "ads": [
+        {
+          "library_id": "1133037052650969",
+          "library_url": "https://www.facebook.com/ads/library/?id=1133037052650969",
+          "ad_count": 2,
+          "format": null,
+          "page_name": "Visionteknewenergy",
+          "started": "Nov 12, 2026",
+          "destination": "instagram.com root ('Chat with us' / Send Message)",
+          "text": "Still paying high electricity bills? Switch to Visiontek Solar and turn sunlight into savings. Our smart system powers your home directly, stores extra energy for the night and helps lower your monthly bill. Its time to power your home naturally. #Visiontek #GoSolar #SolarPower #SolarEnergy #EnergyStorage",
+          "images": []
+        },
+        {
+          "library_id": "1449750756945639",
+          "library_url": "https://www.facebook.com/ads/library/?id=1449750756945639",
+          "ad_count": 2,
+          "format": null,
+          "page_name": "Visionteknewenergy",
+          "started": "Nov 12, 2026",
+          "destination": "instagram.com root ('Send Message')",
+          "text": "Say goodbye to soaring electricity bills and take control of your energy expenses. Switch to solar today and start generating your own clean savings. #CutElectricityBills #SolarSavings #GoGreen #EnergyIndependence #VisiontekSolar",
+          "images": []
+        },
+        {
+          "library_id": "2208275783425425",
+          "library_url": "https://www.facebook.com/ads/library/?id=2208275783425425",
+          "ad_count": 2,
+          "format": null,
+          "page_name": "Visionteknewenergy",
+          "started": "Nov 12, 2026",
+          "destination": "instagram.com root ('Send Message')",
+          "text": "Control your electricity bill before it shocks you! Go solar with Visiontek and take charge of your energy. #Visiontek #GoSolar #SolarEnergy #SolarPower #SaveOnElectricity #RenewableEnergy #CleanEnergy #SolarSolutions #GreenEnergy #EnergySavings",
+          "images": []
+        },
+        {
+          "library_id": "1138341982459373",
+          "library_url": "https://www.facebook.com/ads/library/?id=1138341982459373",
+          "ad_count": 2,
+          "format": null,
+          "page_name": "Visionteknewenergy",
+          "started": "Nov 12, 2026",
+          "destination": "instagram.com root ('Send Message')",
+          "text": "Say goodbye to soaring electricity bills and take control of your energy expenses. Switch to solar today and start generating your own clean savings. #CutElectricityBills #SolarSavings #GoGreen #EnergyIndependence #VisiontekSolar",
+          "images": []
+        },
+        {
+          "library_id": "910533972050441",
+          "library_url": "https://www.facebook.com/ads/library/?id=910533972050441",
+          "ad_count": 2,
+          "format": null,
+          "page_name": "Visionteknewenergy",
+          "started": "Nov 12, 2026",
+          "destination": "instagram.com root ('Send Message')",
+          "text": "Going solar is more than installing panels; it's about choosing the right power solution! Understand your energy needs, select the right inverter and plan your backup for reliable, efficient power. Make a smarter energy choice with Visiontek! #Visiontek #SolarEnergy #SolarPower #CleanEnergy #RenewableEnergy",
+          "images": []
+        },
+        {
+          "library_id": "1642086640990986",
+          "library_url": "https://www.facebook.com/ads/library/?id=1642086640990986",
+          "ad_count": 2,
+          "format": null,
+          "page_name": "Visionteknewenergy",
+          "started": "Nov 12, 2026",
+          "destination": "image creative, no outbound link shown",
+          "text": "Control your electricity bill before it shocks you! Go solar with Visiontek and take charge of your energy. #Visiontek #GoSolar #SolarEnergy #SolarPower #SaveOnElectricity #RenewableEnergy #CleanEnergy #SolarSolutions #GreenEnergy #EnergySavingSolutions",
+          "images": []
+        },
+        {
+          "library_id": "1949641059333335",
+          "library_url": "https://www.facebook.com/ads/library/?id=1949641059333335",
+          "ad_count": 2,
+          "format": null,
+          "page_name": "Visionteknewenergy",
+          "started": "Nov 12, 2026",
+          "destination": "image creative, no outbound link shown",
+          "text": "Big on performance. Compact in design. With Visiontek Solar Inverters, you get powerful solar performance without giving up valuable space. Built for efficiency, designed for modern spaces, and made to power more with less. Less space. More power. Smarter solar. #Visiontek #SolarInverter #SolarPower #RenewableEnergy #CleanEnergy #SolarSolutions",
+          "images": []
+        },
+        {
+          "library_id": "1846039203313070",
+          "library_url": "https://www.facebook.com/ads/library/?id=1846039203313070",
+          "ad_count": 2,
+          "format": null,
+          "page_name": "Visionteknewenergy",
+          "started": "Nov 12, 2026",
+          "destination": "video creative, no outbound link shown",
+          "text": "Stop choosing between comfort and savings. Switch to Visiontek Solar and stay cool without the high bills. #VisiontekSolar #SolarPower #SaveMore #SmartHome #CleanEnergy",
+          "images": []
+        },
+        {
+          "library_id": "1443714387877981",
+          "library_url": "https://www.facebook.com/ads/library/?id=1443714387877981",
+          "ad_count": 2,
+          "format": null,
+          "page_name": "Visionteknewenergy",
+          "started": "Nov 12, 2026",
+          "destination": "carousel, no outbound link shown",
+          "text": "Still paying high electricity bills? Switch to Visiontek Solar and turn sunlight into savings. Our smart system powers your home directly, stores extra energy for the night and helps lower your monthly bill. Its time to power your home naturally. #Visiontek #GoSolar #SolarPower #SolarEnergy #EnergyStorage",
+          "images": []
+        },
+        {
+          "library_id": "2172490176994377",
+          "library_url": "https://www.facebook.com/ads/library/?id=2172490176994377",
+          "ad_count": 2,
+          "format": null,
+          "page_name": "Visionteknewenergy",
+          "started": "Nov 6, 2026",
+          "destination": "fb.me short link",
+          "text": "This Diwali, light up your life with the power of solar! Celebrate the festival of lights by making a brighter, smarter energy choice with Visiontek. Explore our range of On-Grid, Off-Grid & Hybrid Solar Inverters and energy storage solutions for your home and business.",
+          "images": []
+        },
+        {
+          "library_id": "986852867827035",
+          "library_url": "https://www.facebook.com/ads/library/?id=986852867827035",
+          "ad_count": 2,
+          "format": null,
+          "page_name": "Visionteknewenergy",
+          "started": "Nov 12, 2026",
+          "destination": "carousel, no outbound link shown",
+          "text": "Going solar is more than installing panels; it's about choosing the right power solution! Understand your energy needs, select the right inverter and plan your backup for reliable, efficient power. Make a smarter energy choice with Visiontek! #Visiontek #SolarEnergy #SolarPower #CleanEnergy #RenewableEnergy",
+          "images": []
+        }
+      ],
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&is_targeted_country=false&media_type=all&q=Visiontek%20Solar%20Energy"
+    },
+    "meta_competitors": {
+      "found": null,
+      "results_count": 0,
+      "results_label": "",
+      "query": "",
+      "ads": [],
+      "url": ""
+    },
+    "google_own": {
+      "found": false,
+      "advertisers": [],
+      "detail": null,
+      "query": "https://visiontek.solar/",
+      "note": "Google Ads Transparency Centre for visiontek.solar under region=IN returned 0 ads on 2026-11-15."
+    },
+    "google_competitors": {
+      "found": null,
+      "advertisers": [],
+      "query": ""
+    },
+    "notes": [
+      "Every figure in this audit was read live on 2026-11-15. Fields the sandbox could not measure are recorded as null and printed as 'could not be checked in this pass' - they are never reported as a pass or a failure.",
+      "Tracking pixels could not be checked: the page HTML source was not retrievable from this environment, only rendered text.",
+      "No value in this audit is copied from audit_Ksquare_Energy.json or from any other report. That file was read for its shape only.",
+      "Both /sitemap.xml and /robots.txt return 404 Page Not Found."
+    ],
+    "summary": "Visionteknewenergy is running 11 distinct live Meta creatives, every one started 12 Nov 2026 except a Diwali creative from 6 Nov 2026 - a single coordinated launch, which means this is a fresh, actively managed account rather than a stale one. Meta groups them, reporting '2 ads use this creative and text' on each, so the real number of ads is higher than the number of distinct IDs. Six of the eleven send the click to a bare instagram.com root and one to fb.me; the remaining four carry no outbound link at all. Google Ads Transparency for visiontek.solar returns 0 ads under region=IN, so Meta is the entire paid channel."
+  },
+  "defects": [
+    {
+      "title": "Ten of the eleven live ads do not point at the website",
+      "detail": "Six creatives send the click to a bare instagram.com root, one to an fb.me short link, and four carry no outbound link at all. A click on instagram.com lands on the Instagram home feed - not a profile, not a post, not a message thread - so that traffic has nowhere to go and cannot be attributed. Only the fb.me creative resolves to anything owned, and that is a Facebook short link."
+    },
+    {
+      "title": "No sitemap and no robots.txt",
+      "detail": "Both https://visiontek.solar/sitemap.xml and https://visiontek.solar/robots.txt return 404 Page Not Found. There is no crawlable index of the site and no crawler instruction, on a domain with a product catalogue, a blog and individual product pages."
+    },
+    {
+      "title": "Every social media link on the contact page is a dead anchor",
+      "detail": "The contact page renders four social icons - Facebook, Twitter, LinkedIn and Instagram - and all four point at contact-us#, i.e. nowhere. The one social presence that does exist, facebook.com/Visionteknewenergy, is where the 11 live ads run, and the site does not link to it."
+    },
+    {
+      "title": "'Download Catalogue' does not download a catalogue",
+      "detail": "The FUTURE+ 5KVA Hybrid Inverter block on the product page renders 'Download Catalogue (PDF, 1.2 MB)' as a link to visiontek.solar/product# - an anchor on the same page. There is no PDF behind it. A buyer trying to get the datasheet gets nothing."
+    },
+    {
+      "title": "The homepage advertises four of the six product lines",
+      "detail": "The homepage's Featured Products section carries RISE+, FUTURE+, VAULT+ and PULSE+. The product page carries those plus NEXUS+ and the Nexus+ cloud platform. Two of the six lines a visitor can read about on the product page are invisible from the front door."
+    },
+    {
+      "title": "A broken video element is printed as visible text",
+      "detail": "The product page renders 'Your browser does not support video.' in the page body, which means a video player with no playable source is shipping to every visitor."
+    }
+  ],
+  "wins": [
+    "Every image carries alt text - 0 of 12 on the homepage, 0 of 6 on the contact page, 0 of 14 on the product page",
+    "Exactly one H1 per page, and each one is descriptive rather than a logo dump",
+    "The contact page has a tappable tel: link and a tappable mailto: link, plus a contact form with a SEND ENQUIRY button and client-side validation messages",
+    "WhatsApp support is on every page, not just the contact page",
+    "Four product lines are documented with real technical detail, and a catalogue download is offered (even though the link is broken)",
+    "The blog is current - posts dated 11 and 12 Nov 2026",
+    "HTTPS is live and the site loads over it"
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@visiontek.com (a real mailto: link on the contact page)"
+    ],
+    [
+      "Phone / WhatsApp",
+      "+91 9701601421 / wa.me/+919701601421"
+    ],
+    [
+      "Address",
+      "Linkwell Telesystems Pvt. Ltd., 1-11-252/1B, Behind Shoppers' Stop, Begumpet, Hyderabad 500016, Telangana, India"
+    ],
+    [
+      "Entity",
+      "VISIONTEK Linkwell Telesystems Pvt Ltd - 32+ years in telecom and power electronics; solar division launched 2025"
+    ],
+    [
+      "Products",
+      "RISE+ on-grid inverter, FUTURE+ hybrid inverter, VAULT+ LFP battery storage, PULSE+ panel-level optimiser, NEXUS+ energy management, Nexus+ cloud platform"
+    ],
+    [
+      "Meta page",
+      "facebook.com/Visionteknewenergy"
+    ]
+  ],
+  "summary": "Visiontek Solar Energy is the solar division launched in 2025 by VISIONTEK Linkwell Telesystems, a 32-year-old telecom and power-electronics manufacturer in Begumpet. It is running 11 live Meta creatives launched in a single coordinated push on 12 Nov 2026, and the site behind them is in genuinely good shape - every image has alt text, each page has one H1, and the contact page has tappable phone, email, WhatsApp and a working form. The problems are structural: there is no sitemap and no robots.txt at all, and ten of the eleven ads do not point at the site, so almost none of the spend can reach any of it.",
+  "provenance": [
+    [
+      "Live ads, library IDs, start dates, ad copy",
+      "Meta Ad Library (India, active ads). Every library ID in this report was opened individually and confirmed live on 2026-11-15 during the third-eye re-verification pass.",
+      "2026-11-15"
+    ],
+    [
+      "Page text read on the live site",
+      "Direct page fetch through the audit sandbox's page reader. The rendered text was counted mechanically with a fixed regex rather than estimated by reading it, so every count in this report can be re-derived from the saved page text. No page HTML source was available.",
+      "2026-11-15"
+    ],
+    [
+      "Headings, image counts, alt attributes, CTA link text, form fields, tel: / mailto: / wa.me links, outbound links",
+      "Counted over the page text read - see the row above.",
+      "2026-11-15"
+    ],
+    [
+      "Tracking tags (8 of 8 could not be read)",
+      "The page HTML source was not retrievable from this environment - script tags are stripped from rendered text - so no pixel, GA4, GTM or Clarity claim is made in either direction. Every tracking row reads not checked rather than missing.",
+      "not run"
+    ],
+    [
+      "Meta description, Open Graph, Schema.org, favicon, consent mode",
+      "NOT CHECKED - these live in the <head>, which was not returned in readable form. None is claimed as present or absent.",
+      "not run"
+    ],
+    [
+      "Server response time, PageSpeed score, Largest Contentful Paint",
+      "NOT RUN - no outbound route to Google's PageSpeed API from this environment.",
+      "not run"
+    ],
+    [
+      "Sitemap contents and page counts",
+      "NOT CHECKED - Both /sitemap.xml and /robots.txt return 404 Page Not Found.",
+      "not run"
+    ]
+  ]
+}

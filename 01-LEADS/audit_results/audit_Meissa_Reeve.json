@@ -1,0 +1,244 @@
+{
+  "company": "Meissa Reeve",
+  "legal": "Meissa Reeve Pvt. Ltd.",
+  "city": "Mehdipatnam, Hyderabad",
+  "website": "https://meissareeve.com/",
+  "email": "info@meissareeve.com",
+  "phone": "+91 7893088071",
+  "audit_date": "2026-11-15",
+  "ssl": true,
+  "load_time_seconds": null,
+  "pixels": {
+    "meta_pixel": null,
+    "google_ads": null,
+    "google_analytics_ga4": null,
+    "google_analytics_ua": null,
+    "linkedin_insight": null,
+    "microsoft_clarity": null,
+    "hotjar": null,
+    "google_tag_manager": null
+  },
+  "conversion": {
+    "has_contact_form": false,
+    "has_phone_click": false,
+    "has_whatsapp_link": true,
+    "has_cta_buttons": 0,
+    "has_live_chat": null,
+    "has_popup_optin": null,
+    "has_testimonials": false,
+    "has_pricing_page_link": null,
+    "has_mailto_published": false
+  },
+  "seo": {
+    "has_title": true,
+    "title_text": "Meissa Reeve",
+    "title_length": 12,
+    "has_meta_description": null,
+    "meta_desc_length": null,
+    "h1_count": 0,
+    "h1_text": "",
+    "has_og_tags": null,
+    "has_schema": null,
+    "has_favicon": null,
+    "image_count": 12,
+    "images_without_alt": 10
+  },
+  "pagespeed": {
+    "error": "not run - no outbound network route to the PageSpeed API from this environment",
+    "provenance": "NOT RUN - this environment has no outbound route to Google's PageSpeed API, so no speed or Largest Contentful Paint figure is claimed anywhere in this report."
+  },
+  "page_count": {
+    "sitemap_pages": 79,
+    "has_sitemap": true
+  },
+  "local_signals": {
+    "has_google_maps_embed": true,
+    "has_address_schema": null,
+    "mentions_city": true,
+    "company_in_title": false
+  },
+  "ad_check_urls": {
+    "google_ads_transparency": "https://adstransparency.google.com/?region=anywhere&q=meissareeve.com&country=IN",
+    "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Meissa Reeve&search_type=keyword_unordered",
+    "note": "Open these URLs in your browser to check if they're running ads and what those ads look like."
+  },
+  "final_url": "https://meissareeve.com/",
+  "score": {
+    "score": 23,
+    "issues": [
+      "36 unedited theme-demo pages are live and indexed",
+      "The phone number and email are published as plain text, not links",
+      "The homepage has no H1, and 10 of its 12 images carry no alt text",
+      "The solar division homepage has no action CTA anywhere",
+      "Image URLs are listed as sitemap entries",
+      "A public view counter is displayed on the solar division",
+      "No contact form on homepage — visitors can't easily enquire",
+      "No clear call-to-action buttons on homepage",
+      "No visible testimonials/social proof on homepage",
+      "No H1 tag on homepage",
+      "10 images missing alt text — hurts SEO"
+    ],
+    "wins": [
+      "WhatsApp link present",
+      "A real contact form is published (Contact Form 7, id 6846) on the contacts page",
+      "WhatsApp is one tap away - a wa.me link sits on the homepage and again on the contacts page",
+      "Twelve named installations with locality and system size are published: Anees 2kW Moula Ali, Dr. Kasi 3kW R K Puram, Om Prakash 4kW Balnagar, Uma Shankar 3kW Begumpet, Sahifa Masjid Hyderabad 10kW, 17kW Shad Nagar, 50kW Tamil Nadu, 88kW Choutupal, 5KW Cherlapally, 6KW Hafizpet, 15KW Sarath City Capital Mall Kondapur, Rainbow Hospital 150kW Banjara Hills",
+      "A 4.8-star Google rating from 24 reviews is embedded on the contacts page",
+      "Full postal address and business hours (Mon-Fri 09:00-17:00) are published",
+      "HTTPS is live and the site loads over it"
+    ],
+    "issue_count": 11,
+    "win_count": 7
+  },
+  "ad_library": {
+    "checked_at": "2026-11-15",
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "~1 result",
+      "query": "Meissa Reeve",
+      "ads": [
+        {
+          "library_id": "1641050694153685",
+          "library_url": "https://www.facebook.com/ads/library/?id=1641050694153685",
+          "ad_count": 1,
+          "format": null,
+          "page_name": "Meissa Reeve",
+          "started": "Nov 14, 2026",
+          "destination": "WhatsApp deep link ('Send WhatsApp message')",
+          "text": "Tired of your electricity bill going up every summer? Put your rooftop to work. Meissa Reeve designs and installs rooftop solar for homes across Hyderabad - so you generate your own power and cut your monthly bill. Free site visit & savings estimate; Help with the PM Surya Ghar subsidy process; End-to-end installation & net metering. Tap 'Send WhatsApp message' and tell us your monthly bill - we'll show you how much you can save. #HarGharSolar",
+          "images": []
+        }
+      ],
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&is_targeted_country=false&media_type=all&q=Meissa%20Reeve"
+    },
+    "meta_competitors": {
+      "found": null,
+      "results_count": 0,
+      "results_label": "",
+      "query": "",
+      "ads": [],
+      "url": ""
+    },
+    "google_own": {
+      "found": false,
+      "advertisers": [],
+      "detail": null,
+      "query": "https://meissareeve.com/",
+      "note": "Google Ads Transparency Centre for meissareeve.com under region=IN returned 0 ads on 2026-11-15."
+    },
+    "google_competitors": {
+      "found": null,
+      "advertisers": [],
+      "query": ""
+    },
+    "notes": [
+      "Every figure in this audit was read live on 2026-11-15. Fields the sandbox could not measure are recorded as null and printed as 'could not be checked in this pass' - they are never reported as a pass or a failure.",
+      "Tracking pixels could not be checked: the page HTML source was not retrievable from this environment, only rendered text.",
+      "No value in this audit is copied from audit_Ksquare_Energy.json or from any other report. That file was read for its shape only."
+    ],
+    "summary": "Meissa Reeve is running exactly one active Meta ad, on the page 'Meissa Reeve' (facebook.com/61596697943588), started 14 Nov 2026 and about 18 hours old when it was re-checked. The click lands on a WhatsApp deep link, never on meissareeve.com. Google Ads Transparency for meissareeve.com returns 0 ads under region=IN, so Meta is the entire paid channel and it rests on a single creative."
+  },
+  "defects": [
+    {
+      "title": "36 unedited theme-demo pages are live and indexed",
+      "detail": "The sitemap at meissareeve.com/sitemap_index.xml lists 17 sub-sitemaps, and page-sitemap.xml alone contains 79 page URLs. 36 of them are untouched theme demo content: /my-account/, /checkout/, /cart/, /gallery-2-columns/, /gallery-3-columns/, /gallery-4-columns/, sixteen /elements/* pages, /404-layout/, /multipage/, /shop/, and four complete demo homepages - /homepage-gas-station/, /homepage-rental/, /homepage-towing/ and /homepage-natural-honey/ - plus product pages for three EV scooter brands (/komaki/, /gemopai/, /virtus-motors/) and /petrol-pumps/ and /airport-metros/. A prospect who follows a link can land on a page selling petrol pumps or honey. All of it is in the sitemap, so all of it is indexable."
+    },
+    {
+      "title": "The phone number and email are published as plain text, not links",
+      "detail": "meissareeve.com/contacts/ shows +91-7893088071 and info@meissareeve.com as bare text. Neither is wrapped in a tel: or mailto: link, so a visitor on a phone - which is most of them for a local solar enquiry - cannot tap to call or tap to email. The email address is published, so the lead qualifies, but the click path is missing."
+    },
+    {
+      "title": "The homepage has no H1, and 10 of its 12 images carry no alt text",
+      "detail": "Counted over the page text read on 2026-11-15: meissareeve.com renders 12 images, 10 of them with an empty alt attribute, and no H1 heading at all. The solar division is markedly better - 44 images with only 3 missing alt, and one H1 - so this is the parent site being left unpolished rather than a site-wide problem."
+    },
+    {
+      "title": "The solar division homepage has no action CTA anywhere",
+      "detail": "re.meissareeve.com renders 50 links. Not one of them is an action - no 'get a quote', no 'book a site visit', no 'contact us'. The links are internal anchors, image links to full-size photos and social icons. The page explains on-grid, off-grid and hybrid systems and lists twelve installations, then gives the reader nothing to click."
+    },
+    {
+      "title": "Image URLs are listed as sitemap entries",
+      "detail": "page-sitemap.xml interleaves raw /wp-content/uploads/ image URLs among the page URLs. That is a WordPress SEO plugin misconfiguration: it tells search engines that media files are indexable pages, which splits the site's ranking signal across hundreds of thin URLs."
+    },
+    {
+      "title": "A public view counter is displayed on the solar division",
+      "detail": "re.meissareeve.com prints '11,020 total views, 10 views today' at the top of the page. That is an internal traffic metric published to every visitor, and 10 views a day is not a number worth advertising."
+    }
+  ],
+  "wins": [
+    "A real contact form is published (Contact Form 7, id 6846) on the contacts page",
+    "WhatsApp is one tap away - a wa.me link sits on the homepage and again on the contacts page",
+    "Twelve named installations with locality and system size are published: Anees 2kW Moula Ali, Dr. Kasi 3kW R K Puram, Om Prakash 4kW Balnagar, Uma Shankar 3kW Begumpet, Sahifa Masjid Hyderabad 10kW, 17kW Shad Nagar, 50kW Tamil Nadu, 88kW Choutupal, 5KW Cherlapally, 6KW Hafizpet, 15KW Sarath City Capital Mall Kondapur, Rainbow Hospital 150kW Banjara Hills",
+    "A 4.8-star Google rating from 24 reviews is embedded on the contacts page",
+    "Full postal address and business hours (Mon-Fri 09:00-17:00) are published",
+    "HTTPS is live and the site loads over it"
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@meissareeve.com (published as text on meissareeve.com/contacts/, not as a mailto link)"
+    ],
+    [
+      "Second inbox",
+      "enquiry@meissareeve.com, published on the solar division"
+    ],
+    [
+      "Phone / WhatsApp",
+      "+91 7893088071 / wa.me/917893088071 (published as text, not as a tel: link)"
+    ],
+    [
+      "Address",
+      "Saptagiri Nagar, Retibowli, Mehdipatnam, Hyderabad; Google listing 12-2-727/1/57, Sapthagiri Nagar Colony, Rethibowli, Gudimalkapur, Hyderabad 500006"
+    ],
+    [
+      "Hours",
+      "Mon-Fri 09:00 AM to 05:00 PM"
+    ],
+    [
+      "Entity",
+      "Meissa Reeve Pvt. Ltd. - solar division on re.meissareeve.com"
+    ],
+    [
+      "Meta page",
+      "facebook.com/61596697943588 (Meissa Reeve)"
+    ]
+  ],
+  "summary": "Meissa Reeve is a multi-division Hyderabad company - solar rooftop EPC on re.meissareeve.com, EV charging and retrofitting alongside it - running one live Meta ad that pushes every click into WhatsApp. The site works and the solar division carries twelve named, verifiable installations, but the parent domain still publishes 36 unedited WordPress theme-demo pages, and the contact page's phone and email are plain text rather than tappable links. No website audit was possible for the ad's own destination because there isn't one: the ad never sends anyone to the site.",
+  "provenance": [
+    [
+      "Live ads, library IDs, start dates, ad copy",
+      "Meta Ad Library (India, active ads). Every library ID in this report was opened individually and confirmed live on 2026-11-15 during the third-eye re-verification pass.",
+      "2026-11-15"
+    ],
+    [
+      "Page text read on the live site",
+      "Direct page fetch through the audit sandbox's page reader. The rendered text was counted mechanically with a fixed regex rather than estimated by reading it, so every count in this report can be re-derived from the saved page text. No page HTML source was available.",
+      "2026-11-15"
+    ],
+    [
+      "Headings, image counts, alt attributes, CTA link text, form fields, tel: / mailto: / wa.me links, outbound links",
+      "Counted over the page text read - see the row above.",
+      "2026-11-15"
+    ],
+    [
+      "Tracking tags (8 of 8 could not be read)",
+      "The page HTML source was not retrievable from this environment - script tags are stripped from rendered text - so no pixel, GA4, GTM or Clarity claim is made in either direction. Every tracking row reads not checked rather than missing.",
+      "not run"
+    ],
+    [
+      "Meta description, Open Graph, Schema.org, favicon, consent mode",
+      "NOT CHECKED - these live in the <head>, which was not returned in readable form. None is claimed as present or absent.",
+      "not run"
+    ],
+    [
+      "Server response time, PageSpeed score, Largest Contentful Paint",
+      "NOT RUN - no outbound route to Google's PageSpeed API from this environment.",
+      "not run"
+    ],
+    [
+      "Sitemap contents and page counts",
+      "https://meissareeve.com/sitemap_index.xml and its sub-sitemaps fetched and counted verbatim.",
+      "2026-11-15"
+    ]
+  ]
+}

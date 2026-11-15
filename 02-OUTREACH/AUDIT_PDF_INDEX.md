@@ -1,13 +1,13 @@
 # Every audit PDF in this repo — index
 
-**72 PDFs** covering **64 companies** (33 of them scored), on branch `arena/eb03c2c4-performance-marketing-os`.
+**74 PDFs** covering **64 companies** (35 of them scored), on branch `arena/eb03c2c4-performance-marketing-os`.
 
 They live in **two folders**, which is why looking at one folder makes the total look small:
 
-1. [`02-OUTREACH/audit_pdfs/`](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs) — **14 full audits**. The complete 5-page DIGITAL MARKETING & PAID ADS AUDIT: website tracking, conversion readiness, technical snapshot and audit score.
+1. [`02-OUTREACH/audit_pdfs/`](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs) — **16 full audits**. The complete 5-page DIGITAL MARKETING & PAID ADS AUDIT: website tracking, conversion readiness, technical snapshot and audit score.
 2. [`02-OUTREACH/ads_only_pdfs/`](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/ads_only_pdfs) — **58 ads reports**. Since 2026-10-25 these use the *same* 5-page Ksquare layout and carry live website data; before that date they were the shorter ad-activity sheet.
 
-> Ecolt Energy, Hysun Solar Pvt. Ltd., KehanSri Technologies & Service Pvt Ltd, Mega Solar India (Mega Creations), Orizen Solar Innovations, PNR Sunrise Energies Pvt Ltd, Ray On Solar Systems, V1 Solar Solutions — 8 companies — have **both** a full audit and an ads report. That is why 72 files cover 64 companies.
+> Ecolt Energy, Hysun Solar Pvt. Ltd., KehanSri Technologies & Service Pvt Ltd, Mega Solar India (Mega Creations), Meissa Reeve, Orizen Solar Innovations, PNR Sunrise Energies Pvt Ltd, Ray On Solar Systems, V1 Solar Solutions, Visiontek Solar Energy — 10 companies — have **both** a full audit and an ads report. That is why 74 files cover 64 companies.
 
 ## Full audits — `02-OUTREACH/audit_pdfs/`
 
@@ -17,18 +17,20 @@ The complete 5-page DIGITAL MARKETING & PAID ADS AUDIT: website tracking, conver
 |---|---|---|---|---|---|
 | AB Solar Power Systems | 5 | 383 KB | 7/100 | 2026-10-19 09:36 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs/audit_AB_Solar_Power_Systems.pdf) |
 | Ecolt Energy | 4 | 18 KB | 15/100 | 2026-10-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs/audit_Ecolt_Energy.pdf) |
-| Green Carbon Hub | 6 | 299 KB | 15/100 | 2026-11-10 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs/audit_Green_Carbon_Hub.pdf) |
+| Green Carbon Hub | 6 | 300 KB | 15/100 | 2026-11-10 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs/audit_Green_Carbon_Hub.pdf) |
 | Hysun Solar Pvt. Ltd. | 6 | 25 KB | — | 2026-11-14 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs/audit_Hysun_Solar_Pvt_Ltd_.pdf) |
-| KehanSri Technologies & Service Pvt Ltd | 5 | 23 KB | 21/100 | 2026-11-14 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs/audit_KehanSri_Technologies_Service_Pvt_Ltd.pdf) |
+| KehanSri Technologies & Service Pvt Ltd | 6 | 24 KB | 21/100 | 2026-11-14 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs/audit_KehanSri_Technologies_Service_Pvt_Ltd.pdf) |
 | Ksquare Energy | 5 | 576 KB | 10/100 | 2026-10-18 15:22 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs/audit_Ksquare_Energy.pdf) |
 | Mega Solar India (Mega Creations) | 5 | 22 KB | 15/100 | 2026-11-14 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs/audit_Mega_Solar_India_Mega_Creations_.pdf) |
+| Meissa Reeve | 6 | 27 KB | 23/100 | 2026-11-15 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs/audit_Meissa_Reeve.pdf) |
 | Orizen Solar Innovations | 5 | 19 KB | 23/100 | 2026-10-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs/audit_Orizen_Solar_Innovations.pdf) |
 | PNR Sunrise Energies Pvt Ltd | 6 | 26 KB | 2/100 | 2026-11-14 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs/audit_PNR_Sunrise_Energies_Pvt_Ltd.pdf) |
 | Ray On Solar Systems | 4 | 18 KB | 31/100 | 2026-10-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs/audit_Ray_On_Solar_Systems.pdf) |
-| Sri Balaji Solar Energies | 6 | 515 KB | 9/100 | 2026-11-10 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs/audit_Sri_Balaji_Solar_Energies.pdf) |
+| Sri Balaji Solar Energies | 7 | 517 KB | 9/100 | 2026-11-10 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs/audit_Sri_Balaji_Solar_Energies.pdf) |
 | Suryon | 5 | 293 KB | 0/100 | Oct 1, 2026 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs/audit_Suryon.pdf) |
 | V1 Solar Solutions | 6 | 27 KB | 16/100 | 2026-11-14 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs/audit_V1_Solar_Solutions.pdf) |
 | Venus home appliances | 5 | 502 KB | 5/100 | 2026-10-19 09:31 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs/audit_Venus_home_appliances.pdf) |
+| Visiontek Solar Energy | 7 | 30 KB | 10/100 | 2026-11-15 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eb03c2c4-performance-marketing-os/02-OUTREACH/audit_pdfs/audit_Visiontek_Solar_Energy.pdf) |
 
 ## Ads reports — `02-OUTREACH/ads_only_pdfs/`
 
