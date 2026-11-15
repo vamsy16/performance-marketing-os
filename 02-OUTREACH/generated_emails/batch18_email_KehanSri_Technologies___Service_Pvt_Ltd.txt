@@ -1,0 +1,53 @@
+=== EMAIL FOR: KehanSri Technologies & Service Pvt Ltd ===
+City: Gachibowli, Hyderabad
+To: info@kehansri.com
+Phone: +91 888 628 6000 / +91 9985408601
+Website: https://kehansrisolar.com/
+Report kind: FULL AUDIT (5-page DIGITAL MARKETING & PAID ADS AUDIT, attached)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/audit_pdfs/audit_KehanSri_Technologies_Service_Pvt_Ltd.pdf
+Template: full_audit_first_contact
+Read on: 2026-11-14
+Draft created: 2026-11-15
+Draft ID: r6289258085426613897 (status draft, nothing sent)
+
+--- SUBJECT ---
+KehanSri: 24 live Google ads landing on a page with injected casino spam
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public ad-transparency records for the Hyderabad solar market, and I put together a full audit of your website against what your paid traffic is actually doing.
+
+What it covers (read live on 2026-11-14):
+
+  - 24 live ads under your advertiser record, identity-verified as KehanSri Technologies & Service Pvt Ltd - the largest live Google ad count I found in this sweep, spanning Display image creatives and a YouTube video
+  - every click lands on kehansrisolar.com, a domain you own, which already puts you ahead of most of the installers I write to
+
+So the spend is not the problem. The page it lands on is.
+
+Your homepage carries injected casino spam. There are long blocks of Polish and German online-casino copy sitting between your services section and your projects carousel, with six outbound links, all of them to quora.com "unanswered" pages - pl.quora.com, de.quora.com and quora.com. The headings read "Najlepsze oferty na start dla nowych graczy", "Faszination der digitalen Glucksspiele" and "Wie Sie seriose und sichere Plattformen im Internet erkennen", and the link text includes "kasyna z bonusem bez depozytu za rejestracje" and "neue online casino vodds". That is a WordPress SEO-spam injection, and it is on the page 24 paid ads are pointing at.
+
+The timing tells you how it got in. Every post in your sitemap is dated between 9 and 13 November 2026 - 156 of them, all created inside that five-day window. That is not editorial output; that is the injection mechanism.
+
+The second thing is stranger. Your contact page embeds a live Google Map with a 4.9 rating across 131 reviews - and the embed URL carries gcid:preschool, with the listing named "Ingenium Foundation School Gachibowli". The star rating shown beside your solar enquiry form belongs to a school.
+
+Third, five of your "Read More" buttons - Roof Top, Ground Mounted, Operation & Maintenance, Project Management and EPC & Development - point at www.wpstage.a2hosted.com/1411/kehanSri/, a different machine from the live site. And the header "Get a Quote" and "Contact Us" both go to kehansrisolar.com/kehanSri/contact-us/, a staging subdirectory on the live domain. A visitor who wants a quote is being sent to a staging path.
+
+On the page itself: there is no H1 anywhere on the homepage (ten H2 headings and no H1 at all), no enquiry form on either page I read, and 24 of the 26 images on the homepage carry no alt text - four of them with a literal alt="null". The four testimonials in your sitemap are still named tiffany-brown-seven-media-group, max-freewind-seven-commerce, miriam-blackwood-seven-beauty-studio and richard-berrington-seven-education, which is the theme's placeholder content. /sample-page/ and /the7-web-master-home/ are both live and indexed, and your sizing table still prices 300 Wp and 320 Wp modules.
+
+To be fair to you, the substance underneath is real: eight named projects from 10 kW to 5 MW - 10/35/45/50 KW and 5 MW in Hyderabad, 1.5 MW in Kolar, 100 KW in Mumbai, 1 MW in Ujjain - a published email, a click-to-call number, a live embedded map, a Gachibowli address with a Bhopal registered office, and a founding date of 2016. That is more proof than most of the Hyderabad installers I look at can show.
+
+One honest caveat on the audit: I could not read your tracking tags. The page HTML source was not retrievable from where I work, so all eight tracking rows read "not checked" rather than "missing" - I am not going to claim a pixel is absent when I did not see the source. That is the first thing worth verifying once the injection is cleaned out.
+
+You can verify every line yourself:
+
+  https://adstransparency.google.com/advertiser/AR07894673884648046593?region=IN
+
+Happy to walk you through what I found on a 10-minute call - or just keep the report, no strings attached.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+--- END ---

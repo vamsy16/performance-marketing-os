@@ -163,6 +163,59 @@ Solar Solutions (`info@v1solarsolutions.com`).
 lxml reportlab pypdf playwright` then `PYTHONPATH=<dir>` (`pypdf` is what
 `verify_report.py` needs to read the PDFs back).
 
+## Outreach — 3 first-contact drafts created 2026-11-15
+
+Built with `02-OUTREACH/build_batch18_outreach.py` (bodies, subjects and
+contact notes live at module level; the same builder shape as
+`build_batch17_outreach.py`) and recorded by
+`02-OUTREACH/finalize_batch18_drafts.py`.
+
+Each lead got one **step-0 first-contact** email that leads with that lead's
+own measured findings, and the matching **full-audit PDF** as an attachment —
+the same rule the ads-only files follow, where a first contact attaches the
+PDF and follow-ups attach nothing. Every number in the bodies is traceable to
+`01-LEADS/fetched/` or to the advertiser record named in the email itself.
+
+| Lead | To | Subject | Full-audit PDF attached | Gmail draft ID |
+|---|---|---|---|---|
+| KehanSri Technologies & Service Pvt Ltd | info@kehansri.com | KehanSri: 24 live Google ads landing on a page with injected casino spam | `audit_KehanSri_Technologies_Service_Pvt_Ltd.pdf` | `r6289258085426613897` |
+| Hysun Solar Pvt. Ltd. | info@hysunsolar.com | Hysun Solar: your website returns HTTP 500, and your contact page is in Ahmedabad | `audit_Hysun_Solar_Pvt_Ltd_.pdf` | `r-1445496077411248187` |
+| V1 Solar Solutions | info@v1solarsolutions.com | V1 Solar: no sitemap at all, and the same business on two spellings | `audit_V1_Solar_Solutions.pdf` | `r2242087638525005418` |
+
+Reviewable plain-text copies (subject, body, attachment line, phone, address,
+draft id) are in `02-OUTREACH/generated_emails/batch18_email_<Company>.txt`.
+All three drafts are status **draft**, `mails_sent = 0`, nothing sent — the
+owner sends. The manifest went 57 → 60 sequences.
+
+### The headline finding used per lead
+
+- **KehanSri** — the injected Polish/German casino spam with its six
+  quora.com "unanswered" links, the 156 sitemap posts all created between
+  9 and 13 Nov 2026 (the injection mechanism), the `gcid:preschool` Google
+  listing named "Ingenium Foundation School Gachibowli" embedded beside the
+  solar enquiry form, and the five "Read More" buttons pointing at
+  `www.wpstage.a2hosted.com/1411/kehanSri/`.
+- **Hysun** — HTTP 500 on every path tried; every Meta click ending in
+  WhatsApp or a Facebook lead form so none reaches hysunsolar.com, while the
+  Google click does; and the Ahmedabad address under Hyderabad ads.
+- **V1** — `sitemap.xml` returning the homepage HTML so there is nothing to
+  crawl; `v1solarsolutuons.in` splitting the same business across two
+  spellings; and the second H1 reading "COMMECIAL RO PLANT".
+
+### Not emailed, by design
+
+**Mega Solar India** and **PNR Sunrise Energies** publish **no** email
+address, so no draft exists for either and none was invented — the
+"Never report an email that does not exist" rule. They remain phone /
+WhatsApp-only contacts (see the blocked table above).
+
+### Honesty caveat carried into the emails
+
+Because the raw HTML source could not be retrieved in this sandbox, the
+tracking-pixel rows read **"not checked in this pass"** rather than
+"missing". The KehanSri and V1 emails say so explicitly instead of letting
+the attached report imply the tags were verified.
+
 ## Still waiting on you
 
 - 25 follow-ups are past due as of 2026-11-14 (12 step-3 breakups, 7 step-2
@@ -172,3 +225,5 @@ lxml reportlab pypdf playwright` then `PYTHONPATH=<dir>` (`pypdf` is what
   trashed + bounced).
 - Tell me if you want Mega Solar India and PNR Sunrise Energies approached by
   phone/WhatsApp instead of email, or held until an address turns up.
+- The three batch-18 drafts above are ready to send whenever you want to
+  review them first.

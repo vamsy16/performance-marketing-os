@@ -1,0 +1,49 @@
+=== EMAIL FOR: Hysun Solar Pvt. Ltd. ===
+City: Suncity, Bandlaguda Jagir, Hyderabad
+To: info@hysunsolar.com
+Phone: +91 7573999966 / 1800-270-0025
+Website: https://www.hysunsolar.com
+Report kind: FULL AUDIT (5-page DIGITAL MARKETING & PAID ADS AUDIT, attached)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/audit_pdfs/audit_Hysun_Solar_Pvt_Ltd_.pdf
+Template: full_audit_first_contact
+Read on: 2026-11-14
+Draft created: 2026-11-15
+Draft ID: r-1445496077411248187 (status draft, nothing sent)
+
+--- SUBJECT ---
+Hysun Solar: your website returns HTTP 500, and your contact page is in Ahmedabad
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public ad-transparency records for the Hyderabad solar market, and I put together an audit of your paid presence against your website.
+
+What it covers (read live on 2026-11-14):
+
+  - 1 live ad under your advertiser record, identity-verified as Hysun Solar pvt ltd, pointing at hysunsolar.com
+  - live Meta ads selling the Rs.78,000 PM Surya Ghar subsidy to Hyderabad homeowners, on-grid / off-grid / hybrid systems and EMI
+
+You are on both paid channels, which most of the installers I write to are not. So I will be direct about the split, because it is the whole story.
+
+Every Meta click is captured inside a WhatsApp chat or a Facebook lead form. Not one of them reaches hysunsolar.com. The Google click does reach your site - so the same brand is being sold through two completely different funnels, and only one of them leaves you anything you own.
+
+The second thing is the one that costs you money. Your website could not be read at all: every path I tried - the homepage, /contact-us/ and /index.html - returned HTTP 500. Whatever is serving that domain is erroring for non-browser clients. It is not a dead domain, because Google's crawler clearly reaches it and your ads are live, but anything built on top of it cannot be checked, and I would want to know about it before the next ad runs.
+
+Third, the pages that are indexed publish an Ahmedabad address - 10 Radhekrishna Ind Hub, B/H Hinglaj Mata Mandir - under ads that target Suncity, Bandlaguda Jagir, Hyderabad 500091. And there are three contact routes with two different phone numbers: info@hysunsolar.com on the site, +91 7573999966 on the site, and +91 7573999960 on the Meta ads. Your own Android app lists infohysunsolar@gmail.com as its support address, which is a fourth route.
+
+To be fair to you, there is real infrastructure here that no ad mentions: a toll-free number (1800-270-0025) published alongside the direct line, and a live Android app with one-tap service requests and panel-cleaning booking. That is an after-sales operation most rooftop installers never build.
+
+Because the site could not be retrieved, the audit claims no score for it - the report says so on page 1, and every website row reads "not checked in this pass" rather than being filled with a guess. I would rather hand you a report that says what it does not know than one that invents a number.
+
+You can verify every line yourself:
+
+  https://adstransparency.google.com/advertiser/AR08880526109242818561?region=IN
+
+Happy to walk you through what I found on a 10-minute call - or just keep the report, no strings attached.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+--- END ---

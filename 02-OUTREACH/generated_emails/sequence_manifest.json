@@ -3672,6 +3672,93 @@
       "thread_subject": "Milestone Solar: 6 live Google ads, and every trust counter on the landing page reads zero",
       "to": "milestonesolarcomsales@gmail.com",
       "website": "https://www.milestonesolar.in/"
+    },
+    {
+      "city": "Gachibowli, Hyderabad",
+      "company": "KehanSri Technologies & Service Pvt Ltd",
+      "contact_note": "Email and phone read live off kehansrisolar.com on 2026-11-14: info@kehansri.com, +91 888 628 6000 / +91 9985408601. Registered office 472, Rohit Nagar Phase-1, Bavadiakala, Bhopal 462039; operating address 2-55, Opposite Ingenium School, Sri Shyam Nagar, Telecom Nagar, Gachibowli, Hyderabad 500032. Founded 2016. Facebook https://www.facebook.com/kehansrisolar/.",
+      "mails_sent": 0,
+      "next_followup_date": "",
+      "next_step": 1,
+      "report_kind": "full_audit",
+      "steps": [
+        {
+          "body": "Hi,\n\nI spend my week reading the public ad-transparency records for the Hyderabad solar market, and I put together a full audit of your website against what your paid traffic is actually doing.\n\nWhat it covers (read live on 2026-11-14):\n\n  - 24 live ads under your advertiser record, identity-verified as KehanSri Technologies & Service Pvt Ltd - the largest live Google ad count I found in this sweep, spanning Display image creatives and a YouTube video\n  - every click lands on kehansrisolar.com, a domain you own, which already puts you ahead of most of the installers I write to\n\nSo the spend is not the problem. The page it lands on is.\n\nYour homepage carries injected casino spam. There are long blocks of Polish and German online-casino copy sitting between your services section and your projects carousel, with six outbound links, all of them to quora.com \"unanswered\" pages - pl.quora.com, de.quora.com and quora.com. The headings read \"Najlepsze oferty na start dla nowych graczy\", \"Faszination der digitalen Glucksspiele\" and \"Wie Sie seriose und sichere Plattformen im Internet erkennen\", and the link text includes \"kasyna z bonusem bez depozytu za rejestracje\" and \"neue online casino vodds\". That is a WordPress SEO-spam injection, and it is on the page 24 paid ads are pointing at.\n\nThe timing tells you how it got in. Every post in your sitemap is dated between 9 and 13 November 2026 - 156 of them, all created inside that five-day window. That is not editorial output; that is the injection mechanism.\n\nThe second thing is stranger. Your contact page embeds a live Google Map with a 4.9 rating across 131 reviews - and the embed URL carries gcid:preschool, with the listing named \"Ingenium Foundation School Gachibowli\". The star rating shown beside your solar enquiry form belongs to a school.\n\nThird, five of your \"Read More\" buttons - Roof Top, Ground Mounted, Operation & Maintenance, Project Management and EPC & Development - point at www.wpstage.a2hosted.com/1411/kehanSri/, a different machine from the live site. And the header \"Get a Quote\" and \"Contact Us\" both go to kehansrisolar.com/kehanSri/contact-us/, a staging subdirectory on the live domain. A visitor who wants a quote is being sent to a staging path.\n\nOn the page itself: there is no H1 anywhere on the homepage (ten H2 headings and no H1 at all), no enquiry form on either page I read, and 24 of the 26 images on the homepage carry no alt text - four of them with a literal alt=\"null\". The four testimonials in your sitemap are still named tiffany-brown-seven-media-group, max-freewind-seven-commerce, miriam-blackwood-seven-beauty-studio and richard-berrington-seven-education, which is the theme's placeholder content. /sample-page/ and /the7-web-master-home/ are both live and indexed, and your sizing table still prices 300 Wp and 320 Wp modules.\n\nTo be fair to you, the substance underneath is real: eight named projects from 10 kW to 5 MW - 10/35/45/50 KW and 5 MW in Hyderabad, 1.5 MW in Kolar, 100 KW in Mumbai, 1 MW in Ujjain - a published email, a click-to-call number, a live embedded map, a Gachibowli address with a Bhopal registered office, and a founding date of 2016. That is more proof than most of the Hyderabad installers I look at can show.\n\nOne honest caveat on the audit: I could not read your tracking tags. The page HTML source was not retrievable from where I work, so all eight tracking rows read \"not checked\" rather than \"missing\" - I am not going to claim a pixel is absent when I did not see the source. That is the first thing worth verifying once the injection is cleaned out.\n\nYou can verify every line yourself:\n\n  https://adstransparency.google.com/advertiser/AR07894673884648046593?region=IN\n\nHappy to walk you through what I found on a 10-minute call - or just keep the report, no strings attached.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220",
+          "delay_after_previous_days": 0,
+          "draft_created_at": "2026-11-15",
+          "draft_id": "r6289258085426613897",
+          "due_date": "",
+          "kind": "initial",
+          "message_id": "1a1de774e78e3b40",
+          "sent_at": "",
+          "status": "draft",
+          "step": 0,
+          "subject": "KehanSri: 24 live Google ads landing on a page with injected casino spam",
+          "thread_id": "1a1de774e78e3b40"
+        }
+      ],
+      "thread_id": "1a1de774e78e3b40",
+      "thread_subject": "KehanSri: 24 live Google ads landing on a page with injected casino spam",
+      "to": "info@kehansri.com",
+      "website": "https://kehansrisolar.com/"
+    },
+    {
+      "city": "Suncity, Bandlaguda Jagir, Hyderabad",
+      "company": "Hysun Solar Pvt. Ltd.",
+      "contact_note": "Email read live off hysunsolar.com on 2026-11-14: info@hysunsolar.com, +91 7573999966 (site) / +91 7573999960 (Meta ads) / toll-free 1800-270-0025. Support address on their own Android app (com.HYSUN.HysunSolar) is infohysunsolar@gmail.com. The indexed contact page publishes 10 Radhekrishna Ind Hub, B/H Hinglaj Mata Mandir, Ahmedabad. NOTE: the site returned HTTP 500 on every path tried on 2026-11-14, so these details come from a search-engine snapshot of the live pages, not a direct read.",
+      "mails_sent": 0,
+      "next_followup_date": "",
+      "next_step": 1,
+      "report_kind": "full_audit",
+      "steps": [
+        {
+          "body": "Hi,\n\nI spend my week reading the public ad-transparency records for the Hyderabad solar market, and I put together an audit of your paid presence against your website.\n\nWhat it covers (read live on 2026-11-14):\n\n  - 1 live ad under your advertiser record, identity-verified as Hysun Solar pvt ltd, pointing at hysunsolar.com\n  - live Meta ads selling the Rs.78,000 PM Surya Ghar subsidy to Hyderabad homeowners, on-grid / off-grid / hybrid systems and EMI\n\nYou are on both paid channels, which most of the installers I write to are not. So I will be direct about the split, because it is the whole story.\n\nEvery Meta click is captured inside a WhatsApp chat or a Facebook lead form. Not one of them reaches hysunsolar.com. The Google click does reach your site - so the same brand is being sold through two completely different funnels, and only one of them leaves you anything you own.\n\nThe second thing is the one that costs you money. Your website could not be read at all: every path I tried - the homepage, /contact-us/ and /index.html - returned HTTP 500. Whatever is serving that domain is erroring for non-browser clients. It is not a dead domain, because Google's crawler clearly reaches it and your ads are live, but anything built on top of it cannot be checked, and I would want to know about it before the next ad runs.\n\nThird, the pages that are indexed publish an Ahmedabad address - 10 Radhekrishna Ind Hub, B/H Hinglaj Mata Mandir - under ads that target Suncity, Bandlaguda Jagir, Hyderabad 500091. And there are three contact routes with two different phone numbers: info@hysunsolar.com on the site, +91 7573999966 on the site, and +91 7573999960 on the Meta ads. Your own Android app lists infohysunsolar@gmail.com as its support address, which is a fourth route.\n\nTo be fair to you, there is real infrastructure here that no ad mentions: a toll-free number (1800-270-0025) published alongside the direct line, and a live Android app with one-tap service requests and panel-cleaning booking. That is an after-sales operation most rooftop installers never build.\n\nBecause the site could not be retrieved, the audit claims no score for it - the report says so on page 1, and every website row reads \"not checked in this pass\" rather than being filled with a guess. I would rather hand you a report that says what it does not know than one that invents a number.\n\nYou can verify every line yourself:\n\n  https://adstransparency.google.com/advertiser/AR08880526109242818561?region=IN\n\nHappy to walk you through what I found on a 10-minute call - or just keep the report, no strings attached.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220",
+          "delay_after_previous_days": 0,
+          "draft_created_at": "2026-11-15",
+          "draft_id": "r-1445496077411248187",
+          "due_date": "",
+          "kind": "initial",
+          "message_id": "1a1de77a6317b6b5",
+          "sent_at": "",
+          "status": "draft",
+          "step": 0,
+          "subject": "Hysun Solar: your website returns HTTP 500, and your contact page is in Ahmedabad",
+          "thread_id": "1a1de77a6317b6b5"
+        }
+      ],
+      "thread_id": "1a1de77a6317b6b5",
+      "thread_subject": "Hysun Solar: your website returns HTTP 500, and your contact page is in Ahmedabad",
+      "to": "info@hysunsolar.com",
+      "website": "https://www.hysunsolar.com"
+    },
+    {
+      "city": "Kamakshipalya, Bengaluru (advertising into Hyderabad)",
+      "company": "V1 Solar Solutions",
+      "contact_note": "Email and phone read live off v1solarsolutions.com on 2026-11-14: info@v1solarsolutions.com, +91 9066631441. 7, Magadi Main Rd, Asthagrama Layout, Kamakshipalya, Bengaluru 560079, Karnataka. Proprietor Mr Vijaykumar. GST 29DPTPK0093G1ZF. A second, misspelled domain v1solarsolutuons.in carries their IndiaMART manufacturer listing. Meta ads are run by the agency 99Ad Solutions.",
+      "mails_sent": 0,
+      "next_followup_date": "",
+      "next_step": 1,
+      "report_kind": "full_audit",
+      "steps": [
+        {
+          "body": "Hi,\n\nI spend my week reading the public ad-transparency records for the solar market, and I put together a full audit of your website against what your paid traffic is doing.\n\nWhat it covers (read live on 2026-11-14):\n\n  - 4 live ads under your advertiser record, identity-verified as VIJAYA KUMAR, all pointing at v1solarsolutions.com\n  - 1 live Meta ad, Library ID 1446165934284837, running since 12 October 2026 and run by the agency 99Ad Solutions, selling solar water-heater repair, servicing and installation across Bengaluru and Hyderabad\n\nYou are the only lead in this sweep advertising on both channels with a published email address, so the plumbing is there. Two things are quietly costing you the Hyderabad traffic you are already paying for.\n\nThe Meta ad ends in a WhatsApp chat - api.whatsapp.com, not your site. No form, no email capture, nothing to follow up on if the conversation goes cold. And that ad is the only thing putting you in front of Hyderabad at all; the four Google ads all point at a site whose address is in Bengaluru.\n\nSecond, you have no sitemap. v1solarsolutions.com/sitemap.xml returns the homepage HTML - the path is rewritten, so search engines have nothing to crawl. That is the single cheapest fix on this list.\n\nThird, the same business exists on two spellings. v1solarsolutuons.in carries your IndiaMART manufacturer listing while v1solarsolutions.com is the real site. Two domains, two presentations, one phone number - and your links, search authority and tracking are split across both.\n\nOn the page itself: there are two H1 tags, and the second one reads \"COMMECIAL RO PLANT\" - the product is misspelled in your main heading. The water-heater paragraph opens \"choos V1 Solar\". Seven of the eight images on the homepage carry no alt text. Your Google rating is 1.0 from 2 reviews, against an ad that leans on \"expert technicians\" and \"prompt doorstep service\". And the three testimonials - \"Great Benefits!\", \"Reduced Bills\" and \"Money Saver\" - each carry a quote but no name, city or system size, so there is nothing a prospect can check.\n\nTo be fair to you, the site works: a quote form on the contact page that captures product type before the callback, a click-to-call number on every page, a Google Maps link, and info@v1solarsolutions.com published where people can find it. That is a better foundation than most of what I look at.\n\nOne honest caveat: I could not read your tracking tags. The page HTML source was not retrievable from where I work, so all eight tracking rows read \"not checked\" rather than \"missing\". With four Google ads running, that is the first thing I would verify.\n\nYou can verify every line yourself:\n\n  https://adstransparency.google.com/advertiser/AR09270299175948386305?region=IN\n  https://www.facebook.com/ads/library/?id=1446165934284837\n\nHappy to walk you through what I found on a 10-minute call - or just keep the report, no strings attached.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220",
+          "delay_after_previous_days": 0,
+          "draft_created_at": "2026-11-15",
+          "draft_id": "r2242087638525005418",
+          "due_date": "",
+          "kind": "initial",
+          "message_id": "1a1de77a5c88d096",
+          "sent_at": "",
+          "status": "draft",
+          "step": 0,
+          "subject": "V1 Solar: no sitemap at all, and the same business on two spellings",
+          "thread_id": "1a1de77a5c88d096"
+        }
+      ],
+      "thread_id": "1a1de77a5c88d096",
+      "thread_subject": "V1 Solar: no sitemap at all, and the same business on two spellings",
+      "to": "info@v1solarsolutions.com",
+      "website": "https://www.v1solarsolutions.com/"
     }
   ]
 }

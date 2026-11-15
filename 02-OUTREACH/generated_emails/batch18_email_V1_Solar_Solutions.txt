@@ -1,0 +1,52 @@
+=== EMAIL FOR: V1 Solar Solutions ===
+City: Kamakshipalya, Bengaluru (advertising into Hyderabad)
+To: info@v1solarsolutions.com
+Phone: +91 9066631441
+Website: https://www.v1solarsolutions.com/
+Report kind: FULL AUDIT (5-page DIGITAL MARKETING & PAID ADS AUDIT, attached)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/audit_pdfs/audit_V1_Solar_Solutions.pdf
+Template: full_audit_first_contact
+Read on: 2026-11-14
+Draft created: 2026-11-15
+Draft ID: r2242087638525005418 (status draft, nothing sent)
+
+--- SUBJECT ---
+V1 Solar: no sitemap at all, and the same business on two spellings
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public ad-transparency records for the solar market, and I put together a full audit of your website against what your paid traffic is doing.
+
+What it covers (read live on 2026-11-14):
+
+  - 4 live ads under your advertiser record, identity-verified as VIJAYA KUMAR, all pointing at v1solarsolutions.com
+  - 1 live Meta ad, Library ID 1446165934284837, running since 12 October 2026 and run by the agency 99Ad Solutions, selling solar water-heater repair, servicing and installation across Bengaluru and Hyderabad
+
+You are the only lead in this sweep advertising on both channels with a published email address, so the plumbing is there. Two things are quietly costing you the Hyderabad traffic you are already paying for.
+
+The Meta ad ends in a WhatsApp chat - api.whatsapp.com, not your site. No form, no email capture, nothing to follow up on if the conversation goes cold. And that ad is the only thing putting you in front of Hyderabad at all; the four Google ads all point at a site whose address is in Bengaluru.
+
+Second, you have no sitemap. v1solarsolutions.com/sitemap.xml returns the homepage HTML - the path is rewritten, so search engines have nothing to crawl. That is the single cheapest fix on this list.
+
+Third, the same business exists on two spellings. v1solarsolutuons.in carries your IndiaMART manufacturer listing while v1solarsolutions.com is the real site. Two domains, two presentations, one phone number - and your links, search authority and tracking are split across both.
+
+On the page itself: there are two H1 tags, and the second one reads "COMMECIAL RO PLANT" - the product is misspelled in your main heading. The water-heater paragraph opens "choos V1 Solar". Seven of the eight images on the homepage carry no alt text. Your Google rating is 1.0 from 2 reviews, against an ad that leans on "expert technicians" and "prompt doorstep service". And the three testimonials - "Great Benefits!", "Reduced Bills" and "Money Saver" - each carry a quote but no name, city or system size, so there is nothing a prospect can check.
+
+To be fair to you, the site works: a quote form on the contact page that captures product type before the callback, a click-to-call number on every page, a Google Maps link, and info@v1solarsolutions.com published where people can find it. That is a better foundation than most of what I look at.
+
+One honest caveat: I could not read your tracking tags. The page HTML source was not retrievable from where I work, so all eight tracking rows read "not checked" rather than "missing". With four Google ads running, that is the first thing I would verify.
+
+You can verify every line yourself:
+
+  https://adstransparency.google.com/advertiser/AR09270299175948386305?region=IN
+  https://www.facebook.com/ads/library/?id=1446165934284837
+
+Happy to walk you through what I found on a 10-minute call - or just keep the report, no strings attached.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+--- END ---
