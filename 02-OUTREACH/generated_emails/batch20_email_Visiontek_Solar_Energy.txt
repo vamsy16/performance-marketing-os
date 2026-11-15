@@ -1,0 +1,65 @@
+=== EMAIL FOR: Visiontek Solar Energy ===
+City: Begumpet, Hyderabad
+To: info@visiontek.com
+Phone: +91 9701601421
+Website: https://visiontek.solar/
+Legal entity: VISIONTEK Linkwell Telesystems Pvt Ltd
+Report kind: FULL AUDIT (DIGITAL MARKETING & PAID ADS AUDIT, attached)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/audit_pdfs/audit_Visiontek_Solar_Energy.pdf
+Template: full_audit_first_contact
+Read on: 2026-11-15
+Draft created: 2026-11-15
+Draft ID: r-121616867487234761 (status draft, nothing sent)
+Attachment: audit_Visiontek_Solar_Energy.pdf (31109 bytes, verified byte-identical to the workspace copy)
+
+--- SUBJECT ---
+Visiontek: 11 live Meta ads, and not one of them links to visiontek.solar
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public ad-transparency records for the Hyderabad solar market, and I put together a full audit of your website against what your paid traffic is actually doing.
+
+What it covers (read live on 2026-11-15):
+
+  - 11 distinct live creatives on the page 'Visionteknewenergy', every one started 12 Nov 2026 except a Diwali creative from 6 Nov 2026
+  - 0 ads under visiontek.solar in Google Ads Transparency under region=IN, so Meta is your entire paid channel
+
+Eleven creatives launched in a single coordinated push is a fresh, actively managed account - and it makes the next finding sharper, because none of that spend is reaching your site.
+
+Not one of the eleven carries a visiontek.solar link. Five send the click to a bare instagram.com root, five carry no outbound link at all, and one goes to an fb.me short link. A click on instagram.com lands on the Instagram home feed - not a profile, not a post, not a message thread - so that traffic has nowhere to go and cannot be attributed to anything. Only the fb.me creative resolves to something you own, and that is a Facebook short link.
+
+The second thing is that there is no sitemap and no robots.txt. Both visiontek.solar/sitemap.xml and visiontek.solar/robots.txt return 404 Page Not Found, on a domain with a product catalogue, a blog and individual product pages.
+
+Third, every social link on your contact page is a dead anchor. All four icons - Facebook, Twitter, LinkedIn and Instagram - point at contact-us#, the page they are already on. That includes the Facebook page where the eleven ads actually run.
+
+And the catalogue download does not download a catalogue: "Download Catalogue (PDF, 1.2 MB)" links to product#, which is the current page. There is no PDF behind it.
+
+To be fair to you, the site itself is in genuinely good shape - better than most of what I look at. Every image carries alt text across the three pages I read (12 on the homepage, 6 on contact, 14 on product), each page has exactly one H1, the contact page has a tappable tel: link and a tappable mailto: link plus a working form with a SEND ENQUIRY button, WhatsApp is on every page, and your blog has posts dated 11 and 12 November 2026. The homepage advertises four of your six product lines. A broken video element is printing "Your browser does not support video." into the page body, and the PULSE+ category block is headed "Nexus+" - a copy-paste slip worth a two-minute fix.
+
+So the substance is there. What is missing is the plumbing between eleven live ads and the site they are supposed to feed.
+
+One honest caveat: I could not read your tracking tags. The page HTML source was not retrievable from where I work, so all eight tracking rows in the report read "not checked in this pass" rather than "missing". I am not going to claim a pixel is absent when I did not see the source.
+
+You can verify every line yourself:
+
+  https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Visiontek%20Solar%20Energy
+  https://adstransparency.google.com/?domain=visiontek.solar&region=IN
+
+Every one of the 11 Library IDs is printed in the attached report, next to the link that opens it.
+
+Happy to walk you through what I found on a 10-minute call - or just keep the report, no strings attached.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+--- VERIFY URLS ---
+  https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=Visiontek%20Solar%20Energy
+  https://adstransparency.google.com/?domain=visiontek.solar&region=IN
+
+--- CONTACT NOTE ---
+Read live off visiontek.solar/contact-us/ on 2026-11-15: info@visiontek.com and +91 9701601421, both as real tappable links. VISIONTEK Linkwell Telesystems Pvt. Ltd., 1-11-252/1B, Behind Shoppers' Stop, Begumpet, Hyderabad 500016. Corporate site is visiontek.co.in (founded 1993); the solar division site visiontek.solar is the one the ads point at. Meta page is 'Visionteknewenergy'.
+
+--- END ---

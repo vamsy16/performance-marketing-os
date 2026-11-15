@@ -6,7 +6,7 @@
   "ads_only": true,
   "website_audit_run": false,
   "checked_on": "2026-11-15",
-  "generated_at": "2026-11-15 10:44",
+  "generated_at": "2026-11-15 12:02",
   "source": "Meta Ad Library (India, active ads) + the company's own live website",
   "ad_library": {
     "meta_own": {
@@ -138,16 +138,16 @@
         }
       ]
     },
-    "summary": "Visionteknewenergy is running 11 distinct live Meta creatives, every one of them started on 12 Nov 2026 except a Diwali creative from 6 Nov 2026 - a single coordinated launch, which means this is a fresh, actively managed account rather than a stale one. Meta groups them, reporting '2 ads use this creative and text' on each, so the real number of ads is higher than the number of distinct IDs. Six of the eleven send the click to a bare instagram.com root and one to fb.me; the rest carry no outbound link at all. Google Ads Transparency for visiontek.solar returns 0 ads under region=IN, so Meta is the entire paid channel."
+    "summary": "Visionteknewenergy is running 11 distinct live Meta creatives, every one of them started on 12 Nov 2026 except a Diwali creative from 6 Nov 2026 - a single coordinated launch, which means this is a fresh, actively managed account rather than a stale one. Meta groups them, reporting '2 ads use this creative and text' on each, so the real number of ads is higher than the number of distinct IDs. Five of the eleven send the click to a bare instagram.com root and one to fb.me; the rest carry no outbound link at all. Google Ads Transparency for visiontek.solar returns 0 ads under region=IN, so Meta is the entire paid channel."
   },
   "funnel": {
     "type": "Instagram root / fb.me / no link",
-    "destination": "instagram.com root on 6 creatives, fb.me on 1, none on 4",
-    "meaning": "Almost none of this spend can reach a page the company controls. The instagram.com links land on the Instagram home feed, not a profile, a post or a message thread - a click there has nowhere to go and cannot be attributed. Four creatives carry no link at all."
+    "destination": "instagram.com root on 5 creatives, fb.me on 1, none on 5",
+    "meaning": "Almost none of this spend can reach a page the company controls. The instagram.com links land on the Instagram home feed, not a profile, a post or a message thread - a click there has nowhere to go and cannot be attributed. Five creatives carry no link at all."
   },
   "findings": [
     "Eleven distinct creatives, all launched on the same day (12 Nov 2026) with one from 6 Nov. Volume is not the problem here - coordination and destination are.",
-    "Six of the eleven point at a bare instagram.com root and one at fb.me. A click on instagram.com lands on the Instagram home feed, not on anything belonging to Visiontek, so that traffic is effectively unattributable.",
+    "Five of the eleven point at a bare instagram.com root and one at fb.me. A click on instagram.com lands on the Instagram home feed, not on anything belonging to Visiontek, so that traffic is effectively unattributable.",
     "The copy is generic brand awareness - 'Switch to Visiontek Solar', 'Big on performance. Compact in design.' - with no price, no subsidy figure, no system size and no offer anywhere across eleven creatives.",
     "The ads sell inverters and storage (RISE+, FUTURE+, VAULT+, PULSE+) as much as they sell rooftop solar. That matches the business - this is a manufacturer's solar division launched in 2025, not a rooftop EPC - but it means the ad programme is building product awareness rather than generating installation enquiries.",
     "visiontek.solar has a working contact form, WhatsApp support, four documented product lines and a blog posted on 11 and 12 Nov 2026 - and almost none of the paid traffic is pointed at any of it.",
@@ -206,7 +206,7 @@
     "pixel": null,
     "utm": null,
     "checked_on": "2026-11-15",
-    "note": "Homepage and contact page read live 2026-11-15 through a text-only fetch, so page source was not pulled and Meta Pixel presence is unverified either way; graded unknown per the catalog's runtime contract. Ten of the eleven live ads do not link to the site at all."
+    "note": "Homepage and contact page read live 2026-11-15 through a text-only fetch, so page source was not pulled and Meta Pixel presence is unverified either way; graded unknown per the catalog's runtime contract. None of the eleven live ads carry a link to the site at all."
   },
   "ads_audit": {
     "controls": [

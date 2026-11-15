@@ -1,0 +1,61 @@
+=== EMAIL FOR: Meissa Reeve ===
+City: Mehdipatnam, Hyderabad
+To: info@meissareeve.com
+Phone: +91 7893088071
+Website: https://meissareeve.com/
+Legal entity: Meissa Reeve Pvt. Ltd.
+Report kind: FULL AUDIT (DIGITAL MARKETING & PAID ADS AUDIT, attached)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/audit_pdfs/audit_Meissa_Reeve.pdf
+Template: full_audit_first_contact
+Read on: 2026-11-15
+Draft created: 2026-11-15
+Draft ID: r-373894025108968495 (status draft, nothing sent)
+Attachment: audit_Meissa_Reeve.pdf (27788 bytes, verified byte-identical to the workspace copy)
+
+--- SUBJECT ---
+Meissa Reeve: your sitemap still publishes 36 theme-demo pages, and your one live ad clicks into WhatsApp
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public ad-transparency records for the Hyderabad solar market, and I put together a full audit of your website against what your paid traffic is actually doing.
+
+What it covers (read live on 2026-11-15):
+
+  - 1 live ad on the page 'Meissa Reeve' (facebook.com/61596697943588), Library ID 1641050694153685, started 14 Nov 2026
+  - 0 ads under meissareeve.com in Google Ads Transparency under region=IN, so Meta is your entire paid channel
+
+So the spend is not the problem. There is one creative doing one job. The page behind it is where the work is.
+
+The first thing I found is on the parent domain, and it is the one I would fix today. Your sitemap at meissareeve.com/sitemap_index.xml lists 17 sub-sitemaps, and page-sitemap.xml alone contains 80 page URLs. 36 of them are untouched theme demo content: /my-account/, /checkout/, /cart/, three gallery layouts, fifteen /elements/* pages, /404-layout/, /multipage/, /shop/, four complete demo homepages - /homepage-gas-station/, /homepage-rental/, /homepage-towing/ and /homepage-natural-honey/ - product pages for three EV scooter brands (/komaki/, /gemopai/, /virtus-motors/), /petrol-pumps/, /airport-metros/, /news/, /events-company/ and /videos/. A prospect who follows a link can land on a page selling petrol pumps. All of it is in the sitemap, so all of it is indexable. Five raw image URLs are listed in the sitemap as entries too, which is the same misconfiguration.
+
+The second is that your ad's click goes to a WhatsApp deep link, never to meissareeve.com. That is a deliberate choice and it works, but it means the website is doing no work at all for the one campaign you are running - there is nothing on the other end of the click except a chat.
+
+Third, on the contact page: your phone number and email are published as plain text, not as links. +91-7893088071 and info@meissareeve.com are both there to read, but a mobile visitor cannot tap either one.
+
+To be fair to you, the solar division is the competent half. re.meissareeve.com carries 44 images with only 3 missing alt text, twelve named installations with locality and system size - Anees 2kW Moula Ali, Dr. Kasi 3 kW R K Puram, Om Prakash 4 kW Balnagar, Uma Shankar 3 kW Begumpet, Sahifa Masjid 10 kW, 17 kW Shad Nagar, 50 kW Tamil Nadu, 88 kW Choutupal - a 4.8-star Google rating from 24 reviews, and a real Contact Form 7 form with a full postal address and business hours. That is more proof than most Hyderabad installers can show.
+
+The gap between the two halves is the whole story: the division that sells has no way for a visitor to act - its homepage has 50 links and not one of them is a button - and the domain that hosts it is publishing 36 pages of demo content. The parent homepage has no H1 at all and 10 of its 12 images carry no alt text.
+
+One honest caveat: I could not read your tracking tags. The page HTML source was not retrievable from where I work, so all eight tracking rows in the report read "not checked in this pass" rather than "missing". I am not going to claim a pixel is absent when I did not see the source.
+
+You can verify every line yourself:
+
+  https://www.facebook.com/ads/library/?id=1641050694153685
+  https://adstransparency.google.com/?domain=meissareeve.com&region=IN
+
+Happy to walk you through what I found on a 10-minute call - or just keep the report, no strings attached.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+--- VERIFY URLS ---
+  https://www.facebook.com/ads/library/?id=1641050694153685
+  https://adstransparency.google.com/?domain=meissareeve.com&region=IN
+
+--- CONTACT NOTE ---
+Read live off meissareeve.com/contacts/ on 2026-11-15: info@meissareeve.com and +91-7893088071, both published as plain text rather than tel:/mailto: links, so neither is tappable on a phone. Meissa Reeve Pvt. Ltd., 12-2-727/1/57, Sapthagiri Nagar Colony, Rethibowli, Gudimalkapur, Hyderabad 500006; Mon-Fri 09:00-17:00. A second inbox, enquiry@meissareeve.com, is published on the solar division at re.meissareeve.com. The embedded Google rating is 4.8 from 24 reviews and carries Google's own "Reviews aren't verified" note. The map address and the written address differ.
+
+--- END ---

@@ -261,15 +261,29 @@ today".
 shape - every image has alt text across all three pages read, exactly one H1
 per page, a tappable `tel:` and `mailto:` and a working form on the contact
 page, WhatsApp on every page, and a blog posted on 11 and 12 Nov 2026. The
-problems are structural. **Ten of the eleven live ads do not point at the
-website**: six go to a bare `instagram.com` root, one to `fb.me`, four carry no
-link at all - so almost none of the spend can reach any of it. **There is no
-sitemap and no robots.txt** - both return 404. **Every social link on the
-contact page is a dead `contact-us#` anchor**, including for the Facebook page
-where the 11 ads actually run. **"Download Catalogue (PDF, 1.2 MB)" links to
-`product#`** - there is no PDF behind it. The homepage advertises four of the
-six product lines. And a broken video element prints "Your browser does not
-support video." into the page body.
+problems are structural. **Not one of the eleven live ads carries a
+`visiontek.solar` link**: five go to a bare `instagram.com` root, one to
+`fb.me`, five carry no link at all - so none of the spend can reach any of
+it. **There is no sitemap and no robots.txt** - both return 404. **Every
+social link on the contact page is a dead `contact-us#` anchor**, including for
+the Facebook page where the 11 ads actually run. **\"Download Catalogue (PDF,
+1.2 MB)\" links to `product#`** - there is no PDF behind it. The homepage
+advertises four of the six product lines. And a broken video element prints
+"Your browser does not support video." into the page body.
+
+### A count error found and fixed before any email quoted it
+
+While writing the first-contact emails I re-derived the Visiontek ad
+destinations straight from the eleven ad records instead of trusting the prose,
+and the breakdown was wrong: it said six creatives to a bare `instagram.com`
+root and four with no outbound link, when the records show **five and five**
+(with one on `fb.me`). The headline was also understated - not ten of eleven
+but **none of the eleven** carries a `visiontek.solar` link.
+
+Corrected in `build_full_audits_batch20.py`, `ads_only_report.py` and this log,
+then both PDFs and both JSONs were rebuilt. The lesson is the one the batch-20
+correction already taught: a number that appears in prose is not evidence, and
+the only reliable source is the record itself.
 
 ### One renderer fix this uncovered
 

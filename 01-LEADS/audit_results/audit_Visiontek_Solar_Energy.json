@@ -66,7 +66,7 @@
   "score": {
     "score": 10,
     "issues": [
-      "Ten of the eleven live ads do not point at the website",
+      "Not one of the eleven live ads carries a visiontek.solar link",
       "No sitemap and no robots.txt",
       "Every social media link on the contact page is a dead anchor",
       "'Download Catalogue' does not download a catalogue",
@@ -247,12 +247,12 @@
       "No value in this audit is copied from audit_Ksquare_Energy.json or from any other report. That file was read for its shape only.",
       "Both /sitemap.xml and /robots.txt return 404 Page Not Found."
     ],
-    "summary": "Visionteknewenergy is running 11 distinct live Meta creatives, every one started 12 Nov 2026 except a Diwali creative from 6 Nov 2026 - a single coordinated launch, which means this is a fresh, actively managed account rather than a stale one. Meta groups them, reporting '2 ads use this creative and text' on each, so the real number of ads is higher than the number of distinct IDs. Six of the eleven send the click to a bare instagram.com root and one to fb.me; the remaining four carry no outbound link at all. Google Ads Transparency for visiontek.solar returns 0 ads under region=IN, so Meta is the entire paid channel."
+    "summary": "Visionteknewenergy is running 11 distinct live Meta creatives, every one started 12 Nov 2026 except a Diwali creative from 6 Nov 2026 - a single coordinated launch, which means this is a fresh, actively managed account rather than a stale one. Meta groups them, reporting '2 ads use this creative and text' on each, so the real number of ads is higher than the number of distinct IDs. Five of the eleven send the click to a bare instagram.com root and one to fb.me; the remaining five carry no outbound link at all. Google Ads Transparency for visiontek.solar returns 0 ads under region=IN, so Meta is the entire paid channel."
   },
   "defects": [
     {
-      "title": "Ten of the eleven live ads do not point at the website",
-      "detail": "Six creatives send the click to a bare instagram.com root, one to an fb.me short link, and four carry no outbound link at all. A click on instagram.com lands on the Instagram home feed - not a profile, not a post, not a message thread - so that traffic has nowhere to go and cannot be attributed. Only the fb.me creative resolves to anything owned, and that is a Facebook short link."
+      "title": "Not one of the eleven live ads carries a visiontek.solar link",
+      "detail": "Five creatives send the click to a bare instagram.com root, one to an fb.me short link, and five carry no outbound link at all. A click on instagram.com lands on the Instagram home feed - not a profile, not a post, not a message thread - so that traffic has nowhere to go and cannot be attributed. Only the fb.me creative resolves to anything owned, and that is a Facebook short link."
     },
     {
       "title": "No sitemap and no robots.txt",
@@ -310,7 +310,7 @@
       "facebook.com/Visionteknewenergy"
     ]
   ],
-  "summary": "Visiontek Solar Energy is the solar division launched in 2025 by VISIONTEK Linkwell Telesystems, a 32-year-old telecom and power-electronics manufacturer in Begumpet. It is running 11 live Meta creatives launched in a single coordinated push on 12 Nov 2026, and the site behind them is in genuinely good shape - every image has alt text, each page has one H1, and the contact page has tappable phone, email, WhatsApp and a working form. The problems are structural: there is no sitemap and no robots.txt at all, and ten of the eleven ads do not point at the site, so almost none of the spend can reach any of it.",
+  "summary": "Visiontek Solar Energy is the solar division launched in 2025 by VISIONTEK Linkwell Telesystems, a 32-year-old telecom and power-electronics manufacturer in Begumpet. It is running 11 live Meta creatives launched in a single coordinated push on 12 Nov 2026, and the site behind them is in genuinely good shape - every image has alt text, each page has one H1, and the contact page has tappable phone, email, WhatsApp and a working form. The problems are structural: there is no sitemap and no robots.txt at all, and not one of the eleven ads carries a link to the site, so none of the spend can reach any of it.",
   "provenance": [
     [
       "Live ads, library IDs, start dates, ad copy",

@@ -235,18 +235,18 @@ ENTRIES = '''
         },
         "funnel": {
             "type": "Instagram root / fb.me / no link",
-            "destination": "instagram.com root on 6 creatives, fb.me on 1, none on 4",
+            "destination": "instagram.com root on 5 creatives, fb.me on 1, none on 5",
             "meaning": (
                 "Almost none of this spend can reach a page the company controls. The "
                 "instagram.com links land on the Instagram home feed, not a profile, a "
                 "post or a message thread - a click there has nowhere to go and cannot "
-                "be attributed. Four creatives carry no link at all."),
+                "be attributed. Five creatives carry no link at all."),
         },
         "findings": [
             "Eleven distinct creatives, all launched on the same day (12 Nov 2026) with "
             "one from 6 Nov. Volume is not the problem here - coordination and "
             "destination are.",
-            "Six of the eleven point at a bare instagram.com root and one at fb.me. A "
+            "Five of the eleven point at a bare instagram.com root and one at fb.me. A "
             "click on instagram.com lands on the Instagram home feed, not on anything "
             "belonging to Visiontek, so that traffic is effectively unattributable.",
             "The copy is generic brand awareness - 'Switch to Visiontek Solar', 'Big on "
@@ -300,8 +300,8 @@ ENTRIES = '''
             "note": ("Homepage and contact page read live 2026-11-15 through a "
                      "text-only fetch, so page source was not pulled and Meta Pixel "
                      "presence is unverified either way; graded unknown per the "
-                     "catalog's runtime contract. Ten of the eleven live ads do not "
-                     "link to the site at all."),
+                     "catalog's runtime contract. None of the eleven live ads "
+                     "carry a link to the site at all."),
         },
     },
 '''

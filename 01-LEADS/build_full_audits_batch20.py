@@ -483,11 +483,11 @@ EVIDENCE = [
             "2026 - a single coordinated launch, which means this is a fresh, "
             "actively managed account rather than a stale one. Meta groups them, "
             "reporting '2 ads use this creative and text' on each, so the real "
-            "number of ads is higher than the number of distinct IDs. Six of "
-            "the eleven send the click to a bare instagram.com root and one to "
-            "fb.me; the remaining four carry no outbound link at all. Google "
-            "Ads Transparency for visiontek.solar returns 0 ads under "
-            "region=IN, so Meta is the entire paid channel."),
+            "number of ads is higher than the number of distinct IDs. Five "
+            "of the eleven send the click to a bare instagram.com root and "
+            "one to fb.me; the remaining five carry no outbound link at "
+            "all. Google Ads Transparency for visiontek.solar returns 0 ads "
+            "under region=IN, so Meta is the entire paid channel."),
         "summary": (
             "Visiontek Solar Energy is the solar division launched in 2025 by "
             "VISIONTEK Linkwell Telesystems, a 32-year-old telecom and "
@@ -497,16 +497,17 @@ EVIDENCE = [
             "image has alt text, each page has one H1, and the contact page has "
             "tappable phone, email, WhatsApp and a working form. The problems "
             "are structural: there is no sitemap and no robots.txt at all, and "
-            "ten of the eleven ads do not point at the site, so almost none of "
+            "not one of the eleven ads carries a link to the site, so none of "
             "the spend can reach any of it."),
         "defects": [
-            ("Ten of the eleven live ads do not point at the website",
-             "Six creatives send the click to a bare instagram.com root, one to "
-             "an fb.me short link, and four carry no outbound link at all. A "
-             "click on instagram.com lands on the Instagram home feed - not a "
-             "profile, not a post, not a message thread - so that traffic has "
-             "nowhere to go and cannot be attributed. Only the fb.me creative "
-             "resolves to anything owned, and that is a Facebook short link."),
+            ("Not one of the eleven live ads carries a visiontek.solar link",
+             "Five creatives send the click to a bare instagram.com root, one "
+             "to an fb.me short link, and five carry no outbound link at "
+             "all. A click on instagram.com lands on the Instagram home feed "
+             "- not a profile, not a post, not a message thread - so that "
+             "traffic has nowhere to go and cannot be attributed. Only the "
+             "fb.me creative resolves to anything owned, and that is a "
+             "Facebook short link."),
             ("No sitemap and no robots.txt",
              "Both https://visiontek.solar/sitemap.xml and "
              "https://visiontek.solar/robots.txt return 404 Page Not Found. "

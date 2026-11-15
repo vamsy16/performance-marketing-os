@@ -9,3 +9,6 @@ __pycache__/
 # OS / editor
 Thumbs.db
 .DS_Store
+
+# Gmail attachment downloads used to verify a draft byte-for-byte
+gmail/
