@@ -122,17 +122,23 @@ those 8 sequences close completely.
 
 ## HELD — step-0 delivery failed, do not follow up yet
 
-Two of the 2026-11-08 first contacts **have not been delivered**. Gmail is still retrying,
-so their step-1 follow-ups were deliberately **not** drafted — replying to a mail that never
-landed would look broken.
+Four first contacts **have not been delivered**, so their step-1 follow-ups were
+deliberately **not** drafted — replying to a mail that never landed would look broken.
+Delivery status below was re-verified from Gmail's own bounce notices on 2026-11-15.
 
-| Company | Step 0 sent | Recipient | Bounce | Gmail retrying until |
-|---|---|---|---|---|
-| Hindusthan Solar Energy Enterprise | 2026-11-08 12:54 IST | info@hindusthansolarenergy.com | "Delivery incomplete" (delay) | ~2026-11-10 16:41 IST |
-| Kypas Solar Power Pvt Ltd | 2026-11-08 12:42 IST | Info@kypassolar.in | "Delivery incomplete" (delay) | ~2026-11-11 13:15 IST |
+| Company | Step 0 sent | Recipient | Status |
+|---|---|---|---|
+| Hindusthan Solar Energy Enterprise | 2026-11-08 12:54 IST | info@hindusthansolarenergy.com | **PERMANENT FAILURE 2026-11-11** — "Delivery Status Notification (Failure)": the recipient server did not accept our requests. Delayed 11-08 / 11-09 / 11-10, then failed. |
+| Kypas Solar Power Pvt Ltd | 2026-11-08 12:42 IST | Info@kypassolar.in | **PERMANENT FAILURE 2026-11-11** — same failure notice. Delayed 11-08 / 11-09 / 11-10, then failed. |
+| Valcan Solar | 2026-10-21 | info@valcansolar.com | **PERMANENT FAILURE 2026-10-21** — "the remote server is misconfigured". Its step-1 draft sits in trash, parked by owner decision. |
+| Nature Power Solar | 2026-11-14 13:27 IST | info@naturepowersolar.com | **STILL RETRYING** — "Delivery incomplete", Gmail will retry for 47 more hours (until ~2026-11-17 12:52 IST). Not failed yet. |
 
-**Action needed:** if the retry fails permanently, both addresses need correcting before any
-follow-up makes sense. Once step 0 lands, their step-1 becomes draftable (due 2026-11-10).
+**Action needed:** Hindusthan and Kypas bounced **permanently** on 2026-11-11, so both
+addresses need correcting before any follow-up makes sense. Their step-1 is still showing
+as due 2026-11-10 and will keep showing as overdue until someone decides whether to fix
+the addresses or close the sequences. Valcan is parked in trash. Nature Power is the only
+one that might still land — and it has no follow-up steps behind it either way, so nothing
+is scheduled after it regardless of the outcome.
 
 ## Replies received — none human
 
