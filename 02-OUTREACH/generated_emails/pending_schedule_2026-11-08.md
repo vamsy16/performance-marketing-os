@@ -1,10 +1,12 @@
 # Pending sends 2026-11-08 — owner schedules in the Gmail UI
 
-Gmail holds **27 live drafts** — the follow-ups that fell due 2026-11-09 and 2026-11-10,
-all drafted on 2026-11-10 as threaded `Re:` replies (see "Drafts created 2026-11-10" below).
-Valcan Solar's step-1 draft `r-4135467498809954457` is in **trash** and **parked by owner
-decision — ignore it**.
-Gmail's scheduled send is UI-only, so pick a time on each draft.
+Running log of every send, newest section first below. The current position is in
+"Manifest state" at the end.
+
+Gmail holds **4 live drafts** as of 2026-11-15: the three batch-18 first contacts (KehanSri,
+Hysun, V1 Solar) created 2026-11-15 and still unsent, plus Valcan Solar's step-1
+`r-4135467498809954457`, which is in **trash** and **parked by owner decision —
+ignore it**. Gmail's scheduled send is UI-only, so pick a time on each draft.
 
 ## Sent 2026-11-07 by the owner (reconciled into the manifest)
 
@@ -144,14 +146,87 @@ has replied to any of the 29 sequences.
 | SolarSquare Energy | 7 Nov 2026 | Support ticket **#1162442** auto-reply, "hear back within the next 24 hours". Their step-1 is now drafted. |
 | Freyr Energy | 14–15 Sep 2026 | Ticket #1291 auto-ack + auto-close. Older campaign, not this sequence. |
 
-## Manifest state
+## Sent 2026-11-14 by the owner (reconciled into the manifest)
 
-46 sequences / 184 steps — **90 sent · 28 draft · 66 pending.**
+All **31** outstanding drafts went out on 2026-11-14, 07:09-14:06 IST: the 9 first
+contacts drafted on 2026-11-10 (Four Solar, Origian Power, Green Carbon Hub,
+Sri Balaji, Zenith, SunWorks, Nature Power, Surya Renewable, Milestone) plus
+the 22 due follow-ups. Every one was reconciled with its real Gmail
+Message-ID through `sequence.py mark_sent`, so each follow-up clock now runs
+from the true send date.
 
-The 28 drafts are the 27 listed above plus Valcan Solar's step-1, parked in trash by owner
-decision. 8 sequences are closed (4 mails sent, no further step): AB Solar, Evergrid, Ksquare,
-Punarvi, Solox, Truzon, Varahi, Venus home appliances.
+| Time (IST) | Company | Step | To | Gmail Message-ID | Draft ID sent |
+|---|---|---|---|---|---|
+| 14:06 | Milestone Solarcom Private Limited | 0 | milestonesolarcomsales@gmail.com | `1a1d932fcc0fd49e` | `r-2848616652024196182` |
+| 13:38 | Surya Renewable Energies | 0 | info@suryarenewable.com | `1a1d9195a688b855` | `r-3144666388732160745` |
+| 13:27 | Nature Power Solar | 0 | info@naturepowersolar.com | `1a1d90f498667554` | `r1690600454264569063` |
+| 13:12 | SunWorks Energy Private Limited | 0 | gosolar@sunworks.in | `1a1d9018ca2c9d65` | `r2405761400166566565` |
+| 12:50 | Zenith Energy Services Private Limited | 0 | zenith@zenithenergy.com | `1a1d8ed68844061e` | `r-3878433413792714614` |
+| 12:36 | Four Solar | 0 | contact@foursolar.com | `1a1d8e097a74289e` | `r5650626796515965172` |
+| 12:24 | Origian Power | 0 | origian.ei@gmail.com | `1a1d8d59b5fee349` | `r7071292726203433074` |
+| 12:11 | Green Carbon Hub | 0 | info@greencarbonhub.com | `1a1d8c9b468278df` | `r-8747829569712904946` |
+| 11:58 | Sri Balaji Solar Energies | 0 | sbse4444@gmail.com | `1a1d8bdcc0789b0e` | `r5670747247889577047` |
+| 11:46 | Arcedo Systems | 3 | info@arcedo.net | `1a1d8b2d0331a57d` | `r8748371711615185041` |
+| 11:33 | Bhanu PV Solar | 3 | info@bhanupvsolar.in | `1a1d8a6eadecede8` | `r-797104304133541725` |
+| 11:21 | Freyr Energy | 3 | info@freyrenergy.com | `1a1d89bec8e50d72` | `r8137160620332243546` |
+| 11:07 | Dakshin Solar Power Systems | 3 | dakshinsolar@gmail.com | `1a1d88f1c60023bc` | `r3867874335203651785` |
+| 10:54 | Arkahub | 3 | care@arkahub.in | `1a1d88335ccf495c` | `r-157371448554549722` |
+| 10:41 | Krisol Solar | 3 | sales@krisolsolar.com | `1a1d8774fae6bc96` | `r-6353976992173728832` |
+| 10:26 | Hydromo | 3 | info@hydromo.in | `1a1d8699303039cb` | `r-7203160048588615420` |
+| 10:15 | 3S Solutions | 3 | praveen@3ssol.in | `1a1d85f805713103` | `r4957111147912093355` |
+| 10:03 | Lotus Industries | 2 | lotusindustries95@gmail.com | `1a1d85485d0909df` | `r7847390401347793525` |
+| 09:51 | MrSolar | 3 | info@mrsolar.in | `1a1d84986f4a991b` | `r-2002266243354750005` |
+| 09:38 | Rayzon Solar | 2 | contact@rayzonenergies.com | `1a1d83da12243680` | `r774638544763496022` |
+| 09:24 | VajraSimha Industries | 3 | info@vajrasimhaindustries.com | `1a1d830ce163f093` | `r8500279095015715592` |
+| 09:11 | Sunova Green Energy | 2 | sunovagreenenergy@gmail.com | `1a1d824e8739562a` | `r8626735210013028316` |
+| 08:57 | Lumisun Solar | 2 | service.info@lumisunsolar.com | `1a1d818170fae2e2` | `r2097862980635783611` |
+| 08:49 | SolarSquare Energy | 2 | welisten@solarsquare.in | `1a1d810c5d506557` | `r-3109746840138086461` |
+| 08:33 | PMP Solar Power | 3 | sreepooji27@gmail.com | `1a1d8021ff931cd9` | `r5651258670647950419` |
+| 08:21 | Wisda Energy | 2 | connect@wisda.in | `1a1d7f7230633008` | `r-4486599969431794971` |
+| 08:08 | Vanguard Energy | 3 | info@vanguardenergysystems.com | `1a1d7eb3af92208d` | `r407826230953255699` |
+| 07:50 | SunX Solar and Renewable Solutions | 1 | nitish@sunxsolarsolutions.in | `1a1d7dac1c49c777` | `r4947640285421958521` |
+| 07:33 | Aadithya Solar Energies | 1 | info@aadithyasolarenergies.com | `1a1d7cb31d919575` | `r1512334719049181613` |
+| 07:21 | Varna Solar Pvt. Ltd. | 2 | info@varnasolar.com | `1a1d7c033a1a1daf` | `r-7885353266577109598` |
+| 07:09 | The Arka Solar Power | 1 | info@arkasolarpower.com | `1a1d7b5c18eb50c0` | `r-4339527507506068739` |
 
-Four leads still have **no email on file** and were never contacted: Green Carbon Hub, Orbit
-Solar, Sri Balaji Solar Energies, Suryon. Four more have an email but were never drafted:
-Four Solar, Junna Solar Systems, Mamindla Energy Solutions, Origian Power.
+By kind: **9 initial · 10 followup · 12 breakup.**
+
+The 12 step-3 emails were **breakups** — the final follow-up in those
+sequences. Those sequences are now **closed**: 3S Solutions, Arcedo Systems, Arkahub, Bhanu PV Solar, Dakshin Solar Power Systems, Freyr Energy, Hydromo, Krisol Solar, MrSolar, PMP Solar Power, VajraSimha Industries, Vanguard Energy.
+
+Every sequence that still has an unsent follow-up is now due **2026-11-16**
+(previous send + 2 days). The 9 first contacts each start a fresh clock.
+
+
+**Worth knowing:** 5 of the first contacts sent that day — Milestone Solarcom Private Limited, Nature Power Solar, SunWorks Energy Private Limited, Surya Renewable Energies, Zenith Energy Services Private Limited —
+have **only a step-0 email in the manifest, no follow-up steps**, so
+nothing is scheduled behind them. Same for the three batch-18 drafts.
+See the note at the end of this file.
+
+## Manifest state (as of 2026-11-15)
+
+60 sequences / 207 steps — **154 sent · 4 draft · 49 pending.**
+
+The 4 live drafts are the three batch-18 first contacts (KehanSri,
+Hysun, V1 Solar — created 2026-11-15, still unsent) plus Valcan Solar's
+step-1, parked in trash by owner decision.
+
+28 sequences are closed (no further step).
+
+### Still due as of 2026-11-15 — 3
+
+| Company | Step | Kind | Due | Action | Draft |
+|---|---|---|---|---|---|
+| Hindusthan Solar Energy Enterprise | 1 | followup | 2026-11-10 | create_draft | — |
+| Kypas Solar Power Pvt Ltd | 1 | followup | 2026-11-10 | create_draft | — |
+| Valcan Solar | 1 | followup | 2026-10-23 | send_draft | `r-4135467498809954457` |
+
+### Sequences with a first contact but no follow-up steps — 11
+
+These leads were emailed once and nothing is scheduled behind them,
+because no follow-up steps were ever built for their sequences:
+
+GLO LED Private Limited, Hysun Solar Pvt. Ltd., KehanSri Technologies & Service Pvt Ltd, MICROB Energies, Milestone Solarcom Private Limited, Nature Power Solar, SunWorks Energy Private Limited, Surya Renewable Energies, UDK Electrical Industries, V1 Solar Solutions, Zenith Energy Services Private Limited.
+
+`sequence.py upsert_sequence()` can add steps 1-3 to any of them
+without touching the sent state — say the word and I will build them.
