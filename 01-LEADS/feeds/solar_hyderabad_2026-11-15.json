@@ -1,0 +1,215 @@
+{
+  "captured": "2026-11-15",
+  "query": "solar Hyderabad / Telangana",
+  "source": "Meta Ad Library (live, via fetch_page) + Google Ads Transparency ?domain= (live, region=IN), all read 2026-11-15",
+  "results_label": "~370 results for 'solar Hyderabad' (Meta); ~62 for 'solar installation Telangana'; ~73 for 'solar subsidy Hyderabad'; ~30 for 'solar Warangal'; ~17 for 'PM Surya Ghar Telangana'; ~12 for 'solar Karimnagar'; ~7 for 'solar Khammam'; 0 for 'solar Nizamabad' and 'solar Nalgonda'",
+  "note": "Every card below was seen live on 2026-11-15. Three of the new leads (Green Secure, Comuti, Silres) were found on the Google Ads Transparency Centre, not Meta, so their library_id is empty and the Google evidence lives in the google_ads block and in the leads.csv snippets. Kakatiya Energies and Laxminarayana Solar came from Meta sweeps. Telangana Solar's Meta Library ID was not captured - the page-id lookup returned no ads, so the ID is deliberately left empty rather than guessed. The remaining cards are re-confirmations that already-rowed advertisers are still live, kept so the duplicate guard visibly skips them.",
+  "google_ads": [
+    {
+      "advertiser_id": "AR08755770391764402177",
+      "advertiser_name": "Green Secure Energy private ltd",
+      "verified": true,
+      "domain": "greensecure.in",
+      "ad_count": 23,
+      "read_on": "2026-11-15"
+    },
+    {
+      "advertiser_id": "AR14841886882970730497",
+      "advertiser_name": "Comuti Energy",
+      "verified": true,
+      "domain": "comuti.in",
+      "ad_count": 1,
+      "read_on": "2026-11-15"
+    },
+    {
+      "advertiser_id": "AR03821416193491730433",
+      "advertiser_name": "M/s.SILRES ENERGY SOLUTIONS PRIVATE LIMITED",
+      "verified": true,
+      "domain": "feniceenergy.com",
+      "ad_count": 4,
+      "read_on": "2026-11-15"
+    }
+  ],
+  "ads": [
+    {
+      "library_id": "",
+      "page_name": "Green Secure Energy private ltd",
+      "started": "",
+      "text": "Google Ads Transparency Centre: 23 live ads under identity-verified advertiser AR08755770391764402177, domain greensecure.in, region=IN, read 2026-11-15. Rooftop & ground-mounted solar PV, solar water heating, LED street lights, power fencing. sales@greensecure.in, 9618888430 / 8019525206 / 8019525209",
+      "destination": "https://greensecure.in/",
+      "whatsapp": "",
+      "email": "sales@greensecure.in"
+    },
+    {
+      "library_id": "",
+      "page_name": "Comuti Energy",
+      "started": "",
+      "text": "Google Ads Transparency Centre: 1 live ad under identity-verified advertiser AR14841886882970730497, domain comuti.in, region=IN, read 2026-11-15. Solar kits, lithium batteries, energy storage, design/installation/maintenance. enquiry@comuti.in, +91 8977036018, IDA Jeedimetla Hyderabad 500055",
+      "destination": "https://comuti.in/",
+      "whatsapp": "https://comu",
+      "email": "enquiry@comuti.in"
+    },
+    {
+      "library_id": "",
+      "page_name": "M/s.SILRES ENERGY SOLUTIONS PRIVATE LIMITED",
+      "started": "",
+      "text": "Google Ads Transparency Centre: 4 live ads under identity-verified advertiser AR03821416193491730433, domain feniceenergy.com, region=IN, read 2026-11-15. Trading as Fenice Energy. No email published on the site - toll-free 1800 889 8457 only. Registered RA Puram, Chennai 600028; Telangana office Raj Bhavan Road, Hyderabad 500082",
+      "destination": "https://feniceenergy.com/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1893246231838609",
+      "page_name": "Kakatiya Energies",
+      "started": "2026-11-13",
+      "text": "KAKATIYA ENERGIES - residential, commercial & industrial solar, petrol bunk solar, on/off-grid & hybrid, net metering and subsidy assistance. Hanamkonda: +91 81258 01257 / 81252 22834",
+      "destination": "api.whatsapp.com",
+      "whatsapp": "https://api.whatsapp.com/",
+      "email": ""
+    },
+    {
+      "library_id": "1963245304346857",
+      "page_name": "Laxminarayana Solar Solutions",
+      "started": "2026-10-01",
+      "text": "Karimnagar: PM Surya Ghar rooftop solar, subsidy up to Rs.78,000, zero maintenance, 25-30 year warranty, bank loan facility. Call 9493093728 / 8712780023",
+      "destination": "fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "",
+      "page_name": "Telangana Solar",
+      "started": "",
+      "text": "Switch to Solar Today. Secure Tomorrow. Grab subsidy. Up to Rs.78,000 under PM Surya Ghar, free site inspection. (Telugu/English, Karimnagar)",
+      "destination": "fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "942037648839408",
+      "page_name": "Sri Balaji Solar Energies",
+      "started": "2026-05-29",
+      "text": "Telugu rooftop solar ad - Rs.78,000 subsidy, Rs.1,355 EMI",
+      "destination": "fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "2110991659634519",
+      "page_name": "ORBIT SOLAR",
+      "started": "2025-12-10",
+      "text": "5+ years, 1000+ installations across Hyderabad. orbitsolar.in +91-9059806772",
+      "destination": "https://orbitsolar.in/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1553074916624250",
+      "page_name": "Suryon",
+      "started": "2026-10-01",
+      "text": "Your Roof Can Save You Money! Go solar, reduce your monthly electricity expenses",
+      "destination": "fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "854151514422481",
+      "page_name": "SolarSquare Energy",
+      "started": "2026-10-16",
+      "text": "Hyderabad residents - up to 90% lower electricity bills, trusted by 36,000+ homes",
+      "destination": "https://www.solarsquare.in/rooftop-solar-in-hyderabad-1",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "2587160308432344",
+      "page_name": "Lumisun solar",
+      "started": "2026-11-05",
+      "text": "Bill-On-Us benefit up to Rs.3,000 - residential 3kW/5kW on-grid in Hyderabad, Khammam, Warangal, Karimnagar, Suryapet",
+      "destination": "fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1387783212859779",
+      "page_name": "Green Carbon Hub",
+      "started": "2026-08-30",
+      "text": "Don't just install solar. Keep it performing - lifetime maintenance support, Hyderabad",
+      "destination": "fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1091780746736140",
+      "page_name": "mrsolar.in",
+      "started": "2026-08-31",
+      "text": "Uncut Hyderabad customer review - site survey to installation and subsidy guidance",
+      "destination": "fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1472241928117694",
+      "page_name": "Sunova Green Energy Private Limited",
+      "started": "2026-10-13",
+      "text": "Save up to Rs.1,00,000 with subsidy + discount. Banjara Hills, Hyderabad. 9912848596 / 9849763391",
+      "destination": "fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "2766978160319102",
+      "page_name": "Ecolt Energy",
+      "started": "2026-05-05",
+      "text": "Diwali offer: FREE 3-piece trolley set with every qualifying 3KW install. AP & Telangana. WhatsApp +91 82475 37597",
+      "destination": "fb.me/",
+      "whatsapp": "https://api.whatsapp.com/",
+      "email": ""
+    },
+    {
+      "library_id": "3418975398276429",
+      "page_name": "Varna Solar Pvt. Ltd.",
+      "started": "2026-10-30",
+      "text": "Reduce your electricity bills with Varna Solar Hyderabad - WAAREE panels, subsidy up to Rs.78,000",
+      "destination": "fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "28979993521642045",
+      "page_name": "Solox Energies Pvt Ltd",
+      "started": "2026-11-04",
+      "text": "HELLO TELANGANA - zero down payment, subsidy up to Rs.78,000, free site visit. www.solox.in 99881 33789",
+      "destination": "https://www.solox.in/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "971947288860777",
+      "page_name": "ktmsolarsolutions",
+      "started": "2026-11-05",
+      "text": "KTM Solar Solutions, Matlampatti, Dharmapuri - Tamil/English. Serves TN, AP, Karnataka, Telangana, Pondicherry, Kerala. 9976892148 / 9994060818",
+      "destination": "https://instagram.com/ktmsolarsolutions",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "988627010433216",
+      "page_name": "Sahasra Enclave",
+      "started": "2026-11-11",
+      "text": "Premium villa plots, Malkapur, Choutuppal. Compound wall with solar fencing. 93466 01336",
+      "destination": "fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "840846685664779",
+      "page_name": "Big G Industries",
+      "started": "2025-12-08",
+      "text": "Heavy Duty Earthing Pit Cover at Factory Price #PmSuryagharMuftBijliYojana",
+      "destination": "api.whatsapp.com",
+      "whatsapp": "https://api.whatsapp.com/",
+      "email": ""
+    }
+  ]
+}

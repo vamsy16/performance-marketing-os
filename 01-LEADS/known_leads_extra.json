@@ -1,5 +1,5 @@
 {
-  "_comment": "Manual additions to the known-leads registry (see known_leads.py). 'known' entries are hard blocks - the business is in the pipeline or must never be contacted. 'vetted' entries were checked against a gate on 'checked' and failed; they are skipped only until checked + veto_days, so a company that starts buying ads later becomes eligible again instead of being blocked forever.",
+  "_comment": "Manual additions to the known-leads registry (see known_leads.py). 'known' entries are hard blocks - the business is in the pipeline or must never be contacted. 'vetted' entries were checked against a gate on 'checked' and failed; they are skipped only until checked + veto_days, so a company that starts buying ads later becomes eligible again instead of being blocked forever. Gates seen so far: 'live-ads', 'published-email', 'segment'.",
   "version": 1,
   "veto_days": 45,
   "known": [
@@ -50,6 +50,12 @@
       "website": "https://www.v1solarsolutions.com/",
       "city": "Bengaluru",
       "note": "Name as it appears on the v1solarsolutions.com contact page."
+    },
+    {
+      "name": "Telangana Solar",
+      "website": "https://www.telanganasolarenergy.com/",
+      "city": "Karimnagar",
+      "note": "Meta Ad Library page name for Telangana Solar Energy (telanganasolarenergy.com). Rowed in leads.csv 2026-11-15. Added because 'Solar' and 'Energy' are both non-identifying tokens, so the guard's token matcher cannot link this page name to 'Telangana Solar Energy' on its own."
     }
   ],
   "vetted": [
@@ -260,6 +266,54 @@
       "checked": "2026-11-14",
       "gate": "live-ads",
       "reason": "0 live Google ads"
+    },
+    {
+      "name": "Laxminarayana Solar Enterprises",
+      "website": "",
+      "city": "Karimnagar",
+      "checked": "2026-11-15",
+      "gate": "published-email",
+      "reason": "Live Meta advertiser (Library ID 1963245304346857, started Oct 1 2026, Karimnagar) but NO published email address - Justdial and the Meta ad list phone only (07041658904, 9493093728, 8712780023). Phone-only, same as Mega Solar / PNR Sunrise."
+    },
+    {
+      "name": "Laxminarayanasolarsolutions",
+      "website": "",
+      "city": "Karimnagar",
+      "checked": "2026-11-15",
+      "gate": "published-email",
+      "reason": "Meta Ad Library page name for Laxminarayana Solar Enterprises - no published email."
+    },
+    {
+      "name": "Silres Energy Solutions Private Limited",
+      "website": "https://feniceenergy.com/",
+      "city": "Chennai (Telangana office Hyderabad)",
+      "checked": "2026-11-15",
+      "gate": "published-email",
+      "reason": "4 live Google ads under AR03821416193491730433, but the only emails (silres@feniceenergy.com, sales@feniceenergy.com) appear on third-party lists - the PM Surya Ghar vendor list and Crunchbase - not on feniceenergy.com itself, which publishes only toll-free 1800 889 8457. Also a 251-500 employee Chennai-HQ company, unlike the local EPCs this pipeline targets."
+    },
+    {
+      "name": "Fenice Energy",
+      "website": "https://feniceenergy.com/",
+      "city": "Chennai",
+      "checked": "2026-11-15",
+      "gate": "published-email",
+      "reason": "Trading name of Silres Energy Solutions Private Limited. Same gate failure - no email on its own site."
+    },
+    {
+      "name": "ktmsolarsolutions",
+      "website": "",
+      "city": "Dharmapuri, Tamil Nadu",
+      "checked": "2026-11-15",
+      "gate": "segment",
+      "reason": "Live Meta advertiser (Library ID 971947288860777, started Nov 5 2026) but HQ is Matlampatti, Dharmapuri, Tamil Nadu, serving TN/AP/Karnataka/Telangana/Pondicherry/Kerala broadly. Out of segment - not a Hyderabad Telangana lead, and no published email."
+    },
+    {
+      "name": "Sahasra Enclave",
+      "website": "",
+      "city": "Malkapur, Choutuppal",
+      "checked": "2026-11-15",
+      "gate": "segment",
+      "reason": "Live Meta advertiser (Library ID 988627010433216, started Nov 11 2026) but it is a farmland/villa-plot real-estate project, not a solar EPC. Same class as Teramor Developers and Cygni Energy."
     }
   ]
 }
