@@ -27,7 +27,7 @@ Usage:
 """
 
 import argparse
-import json
+import io
 import json
 import os
 import re
@@ -40,6 +40,7 @@ from ad_library import meta_search, run_research, save_audit, UA
 from ads_audit import run_audit, print_audit_report
 from audit_pdf import generate_pdf
 from known_leads import KnownLeads
+from state_cities import cities_for, filter_leads, in_state, states
 
 MARKET_WORDS = {
     "solar", "panel", "panels", "rooftop", "company", "companies", "installer",
@@ -157,6 +158,56 @@ def group_leads(ads, limit, known=None):
     return leads, skipped
 
 
+def _audit_existing_state(state):
+    """Report which rowed leads are inside / outside / unresolved for `state`.
+
+    The ad cards carry no city, so the only city on record for a lead is the
+    one written into leads.csv when it was rowed. That means a state guard can
+    only be proved retrospectively: this reads the pipeline and shows exactly
+    which leads would be kept, which would be refused, and which have a city
+    string the configuration cannot resolve. Run it before trusting a new
+    state on a live sweep - it is what would have caught V1 Solar Solutions
+    (Bengaluru, advertising into Hyderabad) and mr_koti_00 (Guntur).
+    """
+    import csv
+
+    from state_cities import check_rows, cities_for, states
+    if state not in states():
+        print("%r is not a configured state." % state)
+        near = [x for x in states() if state.lower()[:4] in x.lower()]
+        if near:
+            print("Did you mean: %s" % ", ".join(near))
+        return 1
+
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "leads.csv")
+    if not os.path.exists(path):
+        print("leads.csv not found at %s" % path)
+        return 1
+    with io.open(path, encoding="utf-8", newline="") as f:
+        rows = list(csv.DictReader(f))
+
+    inside, outside, unresolved = check_rows(rows, state)
+    print("=" * 66)
+    print("PIPELINE vs %s — %d rowed leads" % (state, len(rows)))
+    print("=" * 66)
+    print("\nINSIDE %s (%d):" % (state, len(inside)))
+    for name, city, why in inside:
+        print("  + %-44s %s" % (name, why))
+    print("\nOUTSIDE %s (%d) — these would be refused:" % (state, len(outside)))
+    for name, city, why in outside:
+        print("  - %-44s %s" % (name, why))
+    print("\nUNRESOLVED (%d) — city string matches no configured city:" % len(unresolved))
+    for name, city, why in unresolved:
+        print("  ? %-44s %r" % (name, city))
+    if unresolved:
+        print("\n  Unresolved is not the same as outside. Add the locality to")
+        print("  LOCALITIES or the city to STATE_CITIES in state_cities.py,")
+        print("  then re-run — an unresolved city must never be waved through.")
+    print("\n%s: %d inside, %d outside, %d unresolved"
+          % (state, len(inside), len(outside), len(unresolved)))
+    return 0
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Discover advertisers from the live Meta Ad Library and audit each end-to-end")
@@ -174,7 +225,51 @@ def main():
     parser.add_argument("--allow-known", action="store_true",
                         help="Include advertisers already in the pipeline "
                              "(re-audit an existing lead)")
+    parser.add_argument("--state", default="",
+                        help="Restrict this sweep to one Indian state. Only "
+                             "leads whose city resolves to a city inside that "
+                             "state are kept; anything else is reported and "
+                             "dropped. Run with --list-states to see the "
+                             "configured states, or --list-cities STATE to "
+                             "see a state's cities.")
+    parser.add_argument("--list-states", action="store_true",
+                        help="Print every configured state and exit")
+    parser.add_argument("--list-cities", default="",
+                        help="Print every city inside STATE and exit")
+    parser.add_argument("--audit-state", default="",
+                        help="Check the EXISTING pipeline (leads.csv) against "
+                             "STATE and report which rowed leads are inside "
+                             "it, outside it, or unresolved. Reads nothing "
+                             "from the network. Use this before trusting a "
+                             "new state on live sweeps.")
     args = parser.parse_args()
+
+    # Listing flags short-circuit before any network work.
+    if args.list_states:
+        print("Configured states (%d):" % len(states()))
+        for st in states():
+            print("  %-34s %d cities" % (st, len(cities_for(st))))
+        return 0
+    if args.audit_state:
+        return _audit_existing_state(args.audit_state)
+    if args.list_cities:
+        st = args.list_cities
+        if st not in states():
+            print("%r is not a configured state." % st)
+            near = [x for x in states() if st.lower()[:4] in x.lower()]
+            if near:
+                print("Did you mean: %s" % ", ".join(near))
+            return 1
+        print("%s (%d cities):" % (st, len(cities_for(st))))
+        for c in cities_for(st):
+            print("  ", c)
+        return 0
+    if args.state and args.state not in states():
+        print("--state %r is not a configured state." % args.state)
+        near = [x for x in states() if args.state.lower()[:4] in x.lower()]
+        if near:
+            print("Did you mean: %s" % ", ".join(near))
+        return 1
 
     city = args.city or city_from_query(args.query)
     pool = args.pool or args.limit * 5
@@ -183,6 +278,27 @@ def main():
     print(f"SMART PURSUIT LEAD DISCOVERY: {args.query}")
     print(f"City: {city or '(derived per lead)'} | Leads: {args.limit}")
     print("=" * 60)
+
+    # State guard, part 1 - refuse the sweep before it costs anything.
+    # The Meta Ad Library cards carry no city or location field (only page
+    # name, creative text and destination), so an individual advertiser's city
+    # cannot be known until their own site is read. What CAN be checked before
+    # any network work is the market the sweep is pointed at, and that is the
+    # guard: a sweep whose own city resolves outside the configured state is
+    # refused here rather than after a paid-for crawl.
+    if args.state:
+        ok, why = in_state(city, args.state)
+        print(f"[state] restricting this sweep to {args.state} "
+              f"({len(cities_for(args.state))} configured cities)")
+        if not ok:
+            print(f"[state] REFUSED — {why}")
+            print(f"[state] the market '{args.query}' resolves to "
+                  f"{city or 'no city'}, which is not inside {args.state}.")
+            print(f"[state] re-run with a city inside {args.state}, or with "
+                  f"--state set to the state you actually want. Use "
+                  f"--list-cities '{args.state}' to see the allowed cities.")
+            return 1
+        print(f"[state] sweep city OK — {why}")
 
     # ---- duplicate guard: never re-fetch a business we already touched -------
     known = None
@@ -206,6 +322,7 @@ def main():
         for name, (verdict, source, matched) in skipped.items():
             flag = "" if verdict == "known" else "  [REVIEW — confirm before clearing]"
             print(f"  - {name}  (matches '{matched}' in {source}){flag}")
+
     print(f"\n[discover] {len(leads)} NEW advertisers found:")
     for name, ad in leads.items():
         site = resolve_website(ad) or ("WhatsApp conversion" if ad.get("whatsapp")

@@ -328,5 +328,117 @@ class TestGroupLeadsDedup(unittest.TestCase):
         self.assertEqual(skipped, {})
 
 
+class StateCityGuardTests(unittest.TestCase):
+    """The state-scoped city allowlist.
+
+    These lock the behaviour that keeps a sweep inside one state, and the
+    resolution rules for the messy city strings leads.csv actually holds.
+    The V1 Solar case is a real rowed lead - Bengaluru, advertising into
+    Hyderabad - and it is the reason this module exists.
+    """
+
+    def test_localities_resolve_to_their_city(self):
+        from state_cities import normalize_city
+        cases = {
+            "Begumpet, Hyderabad": "Hyderabad",
+            "Mehdipatnam, Hyderabad": "Hyderabad",
+            "Gachibowli, Hyderabad": "Hyderabad",
+            "Kothapet, Hyderabad": "Hyderabad",
+            "Jubilee Hills, Hyderabad": "Hyderabad",
+            "Shaikpet, Hyderabad": "Hyderabad",
+            "IDA Jeedimetla, Hyderabad": "Hyderabad",
+            "Suncity, Bandlaguda Jagir, Hyderabad": "Hyderabad",
+            "Kamakshipalya, Bengaluru": "Bengaluru",
+            "Hanamkonda, Warangal (serves Hyderabad)": "Warangal",
+            "Kothagudem 507101 (serves Telangana and Andhra Pradesh)":
+                "Kothagudem",
+            "Hyderabad (Telangana & Andhra Pradesh)": "Hyderabad",
+            "Kamakshipalya, Bengaluru (advertising into Hyderabad)":
+                "Bengaluru",
+            "Bangalore": "Bengaluru",
+            "Vizag": "Visakhapatnam",
+        }
+        for raw, want in cases.items():
+            self.assertEqual(normalize_city(raw), want,
+                             "%r should resolve to %r" % (raw, want))
+
+    def test_out_of_state_is_refused_with_a_reason(self):
+        from state_cities import in_state
+        ok, why = in_state("Kamakshipalya, Bengaluru (advertising into "
+                           "Hyderabad)", "Telangana")
+        self.assertFalse(ok)
+        self.assertIn("Karnataka", why)
+        # Guntur was vetoed as out of segment by hand; it must be caught here.
+        ok, why = in_state("Guntur", "Telangana")
+        self.assertFalse(ok)
+        self.assertIn("Andhra Pradesh", why)
+
+    def test_in_state_is_accepted(self):
+        from state_cities import in_state
+        for raw in ("Hyderabad", "Begumpet, Hyderabad", "Secunderabad",
+                    "Khammam", "Karimnagar", "Kothagudem 507101",
+                    "Hanamkonda, Warangal (serves Hyderabad)"):
+            ok, why = in_state(raw, "Telangana")
+            self.assertTrue(ok, "%r should be inside Telangana (%s)" % (raw, why))
+
+    def test_unresolved_city_is_never_waved_through(self):
+        from state_cities import in_state, normalize_city
+        # An unknown city must not silently pass the state check - that is
+        # exactly how a lead from the wrong state gets rowed.
+        self.assertEqual(normalize_city(""), "")
+        self.assertEqual(normalize_city("Atlantis"), "")
+        ok, why = in_state("Atlantis", "Telangana")
+        self.assertFalse(ok)
+        self.assertIn("does not resolve", why)
+
+    def test_no_state_means_no_check(self):
+        from state_cities import in_state
+        ok, why = in_state("Anywhere", "")
+        self.assertTrue(ok)
+        self.assertIn("skipped", why)
+
+    def test_filter_leads_splits_kept_from_rejected(self):
+        from state_cities import filter_leads
+        leads = {
+            "Inside Co": {"city": "Begumpet, Hyderabad"},
+            "Outside Co": {"city": "Kamakshipalya, Bengaluru"},
+            "Unknown Co": {"city": "Nowhere"},
+        }
+        kept, rejected = filter_leads(leads, "Telangana")
+        self.assertEqual(list(kept), ["Inside Co"])
+        self.assertEqual([r[0] for r in rejected],
+                         ["Outside Co", "Unknown Co"])
+
+    def test_every_state_has_at_least_one_city(self):
+        from state_cities import STATE_CITIES, cities_for, states
+        self.assertEqual(len(states()), len(STATE_CITIES))
+        for st in states():
+            self.assertTrue(cities_for(st), "%s has no cities" % st)
+
+    def test_the_rowed_pipeline_is_almost_entirely_telangana(self):
+        """The real 68-lead pipeline, checked against Telangana.
+
+        67 of 68 rowed leads resolve inside Telangana; V1 Solar Solutions is
+        the one outside it (Bengaluru). Zero unresolved means every city
+        string in leads.csv is understood by the configuration.
+        """
+        import csv
+        import io as _io
+        import os
+        from state_cities import check_rows, cities_for
+        path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                            "leads.csv")
+        if not os.path.exists(path):
+            self.skipTest("leads.csv not present")
+        with _io.open(path, encoding="utf-8", newline="") as f:
+            rows = list(csv.DictReader(f))
+        inside, outside, unresolved = check_rows(rows, "Telangana")
+        self.assertEqual(len(unresolved), 0,
+                         "unresolved cities: %s" % [r[1] for r in unresolved])
+        self.assertEqual([r[0] for r in outside], ["V1 Solar Solutions"])
+        self.assertEqual(len(inside), len(rows) - 1)
+        self.assertGreater(len(cities_for("Telangana")), 10)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
