@@ -920,8 +920,8 @@
       "thread_subject": "Hindusthan Solar Energy Enterprise: 2 live Secunderabad ads, one funnel",
       "thread_id": "1a1b96e4e23fedab",
       "mails_sent": 1,
-      "next_followup_date": "2026-11-10",
-      "next_step": 1,
+      "next_followup_date": "",
+      "next_step": null,
       "report_kind": "ads_only",
       "steps": [
         {
@@ -950,7 +950,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": "2026-11-10"
+          "due_date": ""
         },
         {
           "step": 2,
@@ -981,7 +981,10 @@
           "due_date": ""
         }
       ],
-      "delivery_note": "step-0 email to info@hindusthansolarenergy.com BOUNCED 2026-11-11 (Delivery Status Notification - Failure): recipient server did not accept our requests to connect, hindusthansolarenergy.com 216.198.79.65 and 216.198.79.1 both timed out. Follow-ups HELD until the domain accepts mail again."
+      "delivery_note": "step-0 email to info@hindusthansolarenergy.com BOUNCED 2026-11-11 (Delivery Status Notification - Failure): recipient server did not accept our requests to connect, hindusthansolarenergy.com 216.198.79.65 and 216.198.79.1 both timed out. Follow-ups HELD until the domain accepts mail again.",
+      "blocked": true,
+      "blocked_reason": "info@hindusthansolarenergy.com hard-bounced 2026-11-11 - Gmail \"Delivery Status Notification (Failure)\": the recipient server did not accept our requests. Delayed 11-08/09/10, then failed, so the step-0 email sent 2026-11-08 never landed. A corrected address is needed before this sequence can resume.",
+      "blocked_since": "2026-11-15"
     },
     {
       "company": "Hydromo",
@@ -1341,8 +1344,8 @@
       "thread_subject": "Kypas Solar Power Pvt Ltd: 2 live Hyderabad ads, one funnel",
       "thread_id": "1a1b96e4fc02c231",
       "mails_sent": 1,
-      "next_followup_date": "2026-11-10",
-      "next_step": 1,
+      "next_followup_date": "",
+      "next_step": null,
       "report_kind": "ads_only",
       "steps": [
         {
@@ -1371,7 +1374,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": "2026-11-10"
+          "due_date": ""
         },
         {
           "step": 2,
@@ -1403,7 +1406,10 @@
         }
       ],
       "contact_note": "Email read from the live contact page on 2026-11-08: Info@kypassolar.in is the published 'Email us' address; the footer also lists saikypa@kypassolar.com.",
-      "delivery_note": "step-0 email to Info@kypassolar.in BOUNCED 2026-11-11 (Delivery Status Notification - Failure): recipient server did not accept our requests to connect, kypassolar.in 195.35.60.37 / 212.1.212.30 (and both IPv6 MX) timed out. Follow-ups HELD; the published address is Info@kypassolar.in, footer also lists saikypa@kypassolar.com if a retry is wanted."
+      "delivery_note": "step-0 email to Info@kypassolar.in BOUNCED 2026-11-11 (Delivery Status Notification - Failure): recipient server did not accept our requests to connect, kypassolar.in 195.35.60.37 / 212.1.212.30 (and both IPv6 MX) timed out. Follow-ups HELD; the published address is Info@kypassolar.in, footer also lists saikypa@kypassolar.com if a retry is wanted.",
+      "blocked": true,
+      "blocked_reason": "Info@kypassolar.in hard-bounced 2026-11-11 - Gmail \"Delivery Status Notification (Failure)\": the recipient server did not accept our requests. Delayed 11-08/09/10, then failed, so the step-0 email sent 2026-11-08 never landed. A corrected address is needed before this sequence can resume.",
+      "blocked_since": "2026-11-15"
     },
     {
       "company": "Lotus Industries",

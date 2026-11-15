@@ -5,6 +5,7 @@ Unit tests for the threaded follow-up sequence engine.
 Run:  python tests_sequence.py     (stdlib unittest, no extra dependency)
 """
 
+import io
 import os
 import sys
 import unittest
@@ -225,6 +226,82 @@ class TestAdsOnlyFollowups(unittest.TestCase):
                                 ads_only=True)
         with self.assertRaises(SystemExit):
             S.mark_draft(seq, 1, "draft-x")  # step 0 not sent yet -> refused
+
+
+class TestBlockedSequences(unittest.TestCase):
+    """A hard bounce must take the lead out of every due list."""
+
+    def _seq(self):
+        m = {"version": 1, "sequences": []}
+        seq = S.upsert_sequence(m, LEAD, AUDIT, "subj", "body")
+        S.mark_sent(seq, 0, "thread-1", "<m0@x>", "2026-11-08")
+        return seq
+
+    def test_blocked_clears_the_clock(self):
+        seq = self._seq()
+        self.assertEqual(seq["next_step"], 1)
+        self.assertEqual(seq["next_followup_date"], "2026-11-10")
+        S.mark_blocked(seq, "hard bounce 2026-11-11", "2026-11-15")
+        self.assertTrue(seq["blocked"])
+        self.assertIsNone(seq["next_step"])
+        self.assertEqual(seq["next_followup_date"], "")
+        self.assertEqual(seq["blocked_since"], "2026-11-15")
+        # and no step is left carrying a due date
+        self.assertEqual([s["due_date"] for s in seq["steps"]], ["", "", "", ""])
+
+    def test_blocked_keeps_mails_sent(self):
+        seq = self._seq()
+        S.mark_blocked(seq, "hard bounce")
+        # the email really went out; blocking must not rewrite history
+        self.assertEqual(seq["mails_sent"], 1)
+        self.assertEqual(seq["steps"][0]["status"], "sent")
+
+    def test_blocked_sequence_is_not_due(self):
+        m = {"version": 1, "sequences": []}
+        seq = S.upsert_sequence(m, LEAD, AUDIT, "subj", "body")
+        S.mark_sent(seq, 0, "thread-1", "<m0@x>", "2026-11-08")
+        self.assertEqual(len(S.due_followups(m, S.date(2026, 11, 15))), 1)
+        S.mark_blocked(seq, "hard bounce 2026-11-11", "2026-11-15")
+        self.assertEqual(S.due_followups(m, S.date(2026, 11, 15)), [])
+
+    def test_blocked_refuses_new_drafts(self):
+        seq = self._seq()
+        S.mark_blocked(seq, "hard bounce 2026-11-11", "2026-11-15")
+        with self.assertRaises(SystemExit):
+            S.mark_draft(seq, 1, "draft-x")
+
+    def test_unblock_resumes_the_clock(self):
+        seq = self._seq()
+        S.mark_blocked(seq, "hard bounce", "2026-11-15")
+        S.unblock(seq)
+        self.assertFalse(seq["blocked"])
+        self.assertEqual(seq["blocked_reason"], "")
+        # the clock restarts from the real send date, not from today
+        self.assertEqual(seq["next_step"], 1)
+        self.assertEqual(seq["next_followup_date"], "2026-11-10")
+
+    def test_blocked_requires_a_reason(self):
+        seq = self._seq()
+        with self.assertRaises(SystemExit):
+            S.mark_blocked(seq, "   ")
+
+    def test_save_manifest_keeps_the_trailing_newline(self):
+        # `due` saves as a side effect, so a missing newline would make
+        # every read-only check show a spurious one-line diff.
+        import tempfile
+        m = {"version": 1, "sequences": []}
+        with tempfile.TemporaryDirectory() as d:
+            p = os.path.join(d, "m.json")
+            S.save_manifest(m, p)
+            self.assertTrue(io.open(p, encoding="utf-8").read().endswith("}\n"))
+
+    def test_blocked_survives_a_refresh(self):
+        seq = self._seq()
+        S.mark_blocked(seq, "hard bounce", "2026-11-15")
+        S.refresh_due_dates(seq)
+        self.assertTrue(seq["blocked"])
+        self.assertIsNone(seq["next_step"])
+        self.assertEqual(seq["next_followup_date"], "")
 
 
 if __name__ == "__main__":

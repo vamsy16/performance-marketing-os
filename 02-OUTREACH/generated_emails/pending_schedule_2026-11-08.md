@@ -133,12 +133,20 @@ Delivery status below was re-verified from Gmail's own bounce notices on 2026-11
 | Valcan Solar | 2026-10-21 | info@valcansolar.com | **PERMANENT FAILURE 2026-10-21** — "the remote server is misconfigured". Its step-1 draft sits in trash, parked by owner decision. |
 | Nature Power Solar | 2026-11-14 13:27 IST | info@naturepowersolar.com | **STILL RETRYING** — "Delivery incomplete", Gmail will retry for 47 more hours (until ~2026-11-17 12:52 IST). Not failed yet. |
 
-**Action needed:** Hindusthan and Kypas bounced **permanently** on 2026-11-11, so both
-addresses need correcting before any follow-up makes sense. Their step-1 is still showing
-as due 2026-11-10 and will keep showing as overdue until someone decides whether to fix
-the addresses or close the sequences. Valcan is parked in trash. Nature Power is the only
-one that might still land — and it has no follow-up steps behind it either way, so nothing
-is scheduled after it regardless of the outcome.
+**Blocked 2026-11-15 by owner decision.** Hindusthan and Kypas are now marked
+`blocked` in the manifest, which clears their follow-up clocks: `next_step` is empty and no
+step carries a due date, so neither shows as overdue any more. `mails_sent` still reads 1,
+because those emails really were sent — they just never arrived. Both need a corrected
+address before the sequence can resume; `sequence.py unblock --company "..."` re-opens one,
+and the clock then restarts from the real send date rather than from today.
+
+Valcan Solar is parked in trash by owner decision and its address is confirmed dead too
+("the remote server is misconfigured", 2026-10-21), so it is the one entry still listed as
+due — deliberately left alone rather than blocked, per that decision.
+
+Nature Power Solar is the only one that might still land. It is in Gmail's retry window
+until ~2026-11-17 12:52 IST and has no follow-up steps behind it either way, so nothing is
+scheduled after it regardless of the outcome. **Owner decision 2026-11-15: just watch it.**
 
 ## Replies received — none human
 
@@ -217,15 +225,19 @@ The 4 live drafts are the three batch-18 first contacts (KehanSri,
 Hysun, V1 Solar — created 2026-11-15, still unsent) plus Valcan Solar's
 step-1, parked in trash by owner decision.
 
-28 sequences are closed (no further step).
+28 sequences are closed (no further step). **2 are blocked** because their
+address hard-bounced and a corrected address is needed before they can resume:
+Hindusthan Solar Energy Enterprise, Kypas Solar Power Pvt Ltd.
 
-### Still due as of 2026-11-15 — 3
+### Still due as of 2026-11-15 — 1
 
 | Company | Step | Kind | Due | Action | Draft |
 |---|---|---|---|---|---|
-| Hindusthan Solar Energy Enterprise | 1 | followup | 2026-11-10 | create_draft | — |
-| Kypas Solar Power Pvt Ltd | 1 | followup | 2026-11-10 | create_draft | — |
 | Valcan Solar | 1 | followup | 2026-10-23 | send_draft | `r-4135467498809954457` |
+
+Valcan is the only entry left, and only because it was parked by owner
+decision rather than blocked. Its address is confirmed dead too, so nothing
+can be delivered to it either.
 
 ### Sequences with a first contact but no follow-up steps — 11
 

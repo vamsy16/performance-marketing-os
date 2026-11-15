@@ -15,6 +15,13 @@ Each sequence (one row per lead) tracks these columns:
   mails_sent          how many emails have actually been SENT (0..4)
   next_followup_date  previous SENT date + FOLLOWUP_DELAY_DAYS (2);
                       empty until the previous email is sent
+  blocked             True once delivery to the address has failed for
+                      good. A blocked sequence stops scheduling entirely:
+                      next_step and next_followup_date go empty and
+                      due_followups() skips it, so a dead address never
+                      shows as overdue. blocked_reason / blocked_since
+                      record why and when; unblock by clearing the flag
+                      once a corrected address is in place.
 
 Rules (enforced here, not left to chance):
   * Every follow-up subject is "Re: <original subject>".
@@ -23,6 +30,9 @@ Rules (enforced here, not left to chance):
     Message-ID — the draft is created inside that exact thread
     (thread_id + In-Reply-To + References), NEVER as a new standalone mail.
   * The 2-day clock starts on the SENT date, never on the draft date.
+  * A hard bounce blocks the sequence. Drafting a follow-up into a thread
+    whose first mail never landed would look broken, so mark_blocked()
+    takes the sequence out of every due list until the address is fixed.
 
 State lives in generated_emails/sequence_manifest.json and survives
 re-runs of audit_outreach.py (draft/sent state is never clobbered).
@@ -227,6 +237,10 @@ def save_manifest(manifest, path=MANIFEST_FILE):
     manifest["followup_delay_days"] = FOLLOWUP_DELAY_DAYS
     with open(path, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)
+        # A trailing newline: the manifest is checked in with one, and a
+        # read-only `due` run also saves, so without this every check
+        # shows a spurious one-line diff.
+        f.write("\n")
     return path
 
 
@@ -298,8 +312,12 @@ def due_date_for(seq, step_no):
 
 
 def refresh_due_dates(seq):
+    blocked = bool(seq.get("blocked"))
     for s in seq["steps"]:
-        s["due_date"] = due_date_for(seq, s["step"])
+        # A blocked sequence schedules nothing behind it, so no step carries
+        # a due date - otherwise a dead address reads as overdue forever.
+        s["due_date"] = "" if (blocked or s["step"] == 0) \
+            else due_date_for(seq, s["step"])
     refresh_columns(seq)
     return seq
 
@@ -310,8 +328,11 @@ def refresh_columns(seq):
       mails_sent          count of steps actually SENT
       next_followup_date  due date of the next unsent follow-up
                           ('' until the previous email is sent, and ''
-                          once the sequence is finished/replied)
+                          once the sequence is finished/replied/blocked)
       next_step           which step that date belongs to (None if none)
+
+    A blocked sequence short-circuits: mails_sent still counts what really
+    went out, but nothing further is ever scheduled.
     """
     steps = sorted(seq["steps"], key=lambda s: s["step"])
     seq["thread_id"] = next((s["thread_id"] for s in steps
@@ -319,6 +340,8 @@ def refresh_columns(seq):
     seq["mails_sent"] = sum(1 for s in steps if s.get("status") == "sent")
     seq["next_followup_date"] = ""
     seq["next_step"] = None
+    if seq.get("blocked"):
+        return seq
     for s in steps:
         if s["step"] == 0 or s.get("status") == "sent":
             continue
@@ -334,12 +357,20 @@ def mark_draft(seq, step_no, draft_id, thread_id="", message_id="",
                on=None, today=None):
     """Record that a Gmail draft exists for a step.
 
+    A blocked sequence is REFUSED outright: the address hard-bounced, so
+    there is no point drafting anything more until it is corrected.
+
     Follow-ups (step >= 1) are REFUSED unless BOTH hold — this is what
     keeps exactly one draft alive at a time and guarantees the follow-up
     lands in the same thread instead of as a new mail:
       1. the previous step is SENT with a recorded thread_id + Message-ID
       2. today is on/after this step's due date (previous sent + 2 days)"""
     step = get_step(seq, step_no)
+    if seq.get("blocked"):
+        raise SystemExit(
+            f"REFUSED: {seq['company']} is blocked - "
+            f"{seq.get('blocked_reason') or 'delivery to this address failed'}. "
+            "Correct the address and clear the blocked flag first.")
     if step_no >= 1:
         prev = get_step(seq, step_no - 1)
         if prev.get("status") != "sent" \
@@ -389,6 +420,34 @@ def mark_sent(seq, step_no, thread_id="", message_id="", on=None):
     return step
 
 
+def mark_blocked(seq, reason, on=None):
+    """Block a sequence because delivery to its address failed for good.
+
+    Clears every future due date and empties next_step /
+    next_followup_date, so the lead stops showing as overdue. mails_sent
+    is left alone - those emails really were sent, they just never
+    arrived. Clear the flag (and update seq["to"]) once a corrected
+    address is in place; refresh_due_dates() then resumes scheduling.
+    """
+    if not reason or not str(reason).strip():
+        raise SystemExit("mark_blocked needs a reason - say what failed")
+    seq["blocked"] = True
+    seq["blocked_reason"] = str(reason).strip()
+    seq["blocked_since"] = on if isinstance(on, str) \
+        else (on or date.today()).isoformat()
+    refresh_due_dates(seq)
+    return seq
+
+
+def unblock(seq):
+    """Re-open a blocked sequence after the address was corrected."""
+    seq["blocked"] = False
+    seq["blocked_reason"] = ""
+    seq["blocked_since"] = ""
+    refresh_due_dates(seq)
+    return seq
+
+
 def due_followups(manifest, today=None):
     """Follow-ups due TODAY: previous step was sent >= delay days ago.
     `action` is 'create_draft' (the normal case — on the due day the agent
@@ -398,6 +457,8 @@ def due_followups(manifest, today=None):
     due = []
     for seq in manifest["sequences"]:
         refresh_due_dates(seq)
+        if seq.get("blocked"):
+            continue
         for s in seq["steps"]:
             if s["step"] == 0 or s["status"] == "sent":
                 continue
@@ -437,6 +498,15 @@ def main():
     d.add_argument("--draft-id", required=True)
     d.add_argument("--thread-id", default="")
     d.add_argument("--message-id", default="")
+
+    b = sub.add_parser("mark-blocked",
+                       help="Block a sequence: delivery to its address failed")
+    b.add_argument("--company", required=True)
+    b.add_argument("--reason", required=True,
+                   help="what failed, e.g. the bounce notice text")
+    b.add_argument("--date", default="", help="YYYY-MM-DD (default today)")
+
+    u = sub.add_parser("unblock", help="Re-open a blocked sequence")
 
     s = sub.add_parser("mark-sent", help="Record that a step was sent")
     s.add_argument("--company", required=True)
@@ -491,6 +561,21 @@ def main():
         save_manifest(manifest)
         print(f"Recorded draft for {seq['company']} step {args.step}: "
               f"{step['draft_id']} (thread {step['thread_id'] or '—'})")
+
+    elif args.cmd == "mark-blocked":
+        seq = _find(manifest, args.company)
+        mark_blocked(seq, args.reason, args.date or None)
+        save_manifest(manifest)
+        print(f"Blocked {seq['company']}: {seq['blocked_reason']}")
+        print("  next_step and next_followup_date cleared; it will not "
+              "appear in `due` again until unblocked.")
+
+    elif args.cmd == "unblock":
+        seq = _find(manifest, args.company)
+        unblock(seq)
+        save_manifest(manifest)
+        print(f"Unblocked {seq['company']}. Update its `to` address too - "
+              f"it still reads {seq.get('to') or '(empty)'}.")
 
     elif args.cmd == "mark-sent":
         seq = _find(manifest, args.company)
