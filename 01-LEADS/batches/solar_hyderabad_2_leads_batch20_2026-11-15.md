@@ -140,6 +140,70 @@ comment.
 `test_active_veto_wins_over_batch_log_prose`,
 `test_no_rowed_lead_is_shadowed_by_an_active_veto`.
 
+## Third-eye re-verification, 2026-11-15 — two of five ad IDs were wrong
+
+The re-verification pass was run on 2026-11-15, after the batch was committed,
+by opening **every recorded ad by its own Library ID** rather than trusting the
+keyword-sweep capture. It found real errors, and both leads' evidence has been
+corrected.
+
+| Recorded in batch 20 | Actually belongs to |
+|---|---|
+| Meissa Reeve, Library ID `1691922249204293` | **AB Solar Power Systems** (`facebook.com/absolarpowersystems`) |
+| Visiontek, Library ID `2319725685441877` (4 Sep 2026) | **mr_koti_00 / Garuda Solar Energy Solutions, Guntur** |
+
+**Meissa Reeve** — the company, the contact details and the live-ad status all
+held up, but the Library ID was somebody else's. The real ad is
+**`1641050694153685`**, on the page `Meissa Reeve`
+(`facebook.com/61596697943588/`), started 14 Nov 2026, ~18 hrs active, sending
+the click to a WhatsApp deep link. One ad, not more.
+
+**Visiontek Solar Energy** — the lead is real and much bigger than recorded. The
+`2319725685441877` ID is a Guntur advertiser's. The verified truth is
+**11 distinct live creatives** on the `Visionteknewenergy` page, all started
+12 Nov 2026 except a Diwali creative from 6 Nov 2026, with Meta reporting
+"2 ads use this creative and text" on each — so the true ad count is higher
+than the number of distinct IDs. The original record said 4 ads.
+
+Verified IDs: `1133037052650969`, `1449750756945639`, `2208275783425425`,
+`1138341982459373`, `910533972050441`, `1642086640990986`,
+`1949641059333335`, `1846039203313070`, `1443714387877981`,
+`2172490176994377`, `986852867827035`.
+
+Also re-confirmed on 2026-11-15: **0 Google ads** for both `meissareeve.com` and
+`visiontek.solar` under `region=IN`; Meissa Reeve's phone, email, address,
+hours and WhatsApp link on `meissareeve.com/contacts/`; Visiontek's phone,
+email, WhatsApp and address on `visiontek.solar/contact-us` plus its four
+product lines on the homepage.
+
+**Why this matters.** Both PDFs are built from this data. Had they been built
+before the re-check, they would have carried another company's ad ID as proof
+that these two were advertising. `leads.csv`, the feed file and the batch log
+have all been corrected, and the ads-only PDFs were rebuilt from the corrected
+data.
+
+**What the two mis-attributed IDs turned out to be, and what happened to them:**
+
+- **AB Solar Power Systems** (`facebook.com/absolarpowersystems`, live ad
+  `1691922249204293`, started 14 Nov 2026) — **already a rowed and audited lead**
+  in `leads.csv`, with a CI audit score of 7/100 from 2026-10-19 and its own
+  outreach sequence. Re-running the corrected feed makes the duplicate guard
+  match it to that row, which is the guard working exactly as intended and
+  confirms the correction is sound. Not rowed again. Its verified details:
+  `sales@absolar.in`, +91 80990 40600 / +91 90001 45304, Flat 401 Siri Arcade,
+  Beside Care Hospitals, Lumbini Avenue, Gachibowli, Hyderabad 500032.
+- **mr_koti_00** (live ad `2319725685441877`, started 4 Sep 2026) — an ad for
+  **Garuda Solar Energy Solutions**, 3rd Floor Amarravati Rd, Guntur, Andhra
+  Pradesh, +91 8886946169. Guntur is outside the Hyderabad/Telangana segment
+  this pipeline works, so it is **vetoed on `segment`**, not rowed.
+
+After the corrections and that veto, the feed replays to **28 skipped / 0 new
+advertisers** — fully absorbed, as it should be.
+
+**Batch 20 remains 2 leads.** The re-verification corrected the evidence
+attached to them; it did not add a lead, because the one advertiser that looked
+new was already in the pipeline and the other is out of segment.
+
 ## Honesty notes
 
 - **This batch is 2 leads, not the 5 that were asked for.** Nothing was padded,

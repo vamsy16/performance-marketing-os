@@ -532,6 +532,14 @@
       "checked": "2026-11-15",
       "gate": "live-ads",
       "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=sunsolarsystems.in). Publishes info@sunsolarsystems.in and +91 9281259430, but no live advertising. Distinct from sunsolarps.com (Ramanathapuram) and from the Hyderabad SunSolarhyd Meta advertiser."
+    },
+    {
+      "name": "mr_koti_00",
+      "website": "https://www.instagram.com/_u/mr_koti_00",
+      "city": "Guntur, Andhra Pradesh",
+      "checked": "2026-11-15",
+      "gate": "segment",
+      "reason": "Live Meta advertiser (Library ID 2319725685441877, started 4 Sep 2026, page instagram.com/_u/mr_koti_00) but the ad sells Garuda Solar Energy Solutions, 3rd Floor Amarravati Rd, Guntur, Andhra Pradesh, +91 8886946169, with Govt subsidies for AP and Telangana. Guntur is outside the Hyderabad/Telangana segment this pipeline works. This ID was recorded as a Visiontek Solar Energy ad in batch 20 and was corrected on 2026-11-15."
     }
   ]
 }

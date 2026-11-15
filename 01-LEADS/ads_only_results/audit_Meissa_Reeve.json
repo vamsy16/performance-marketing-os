@@ -1,0 +1,217 @@
+{
+  "company": "Meissa Reeve",
+  "legal": "Meissa Reeve Pvt. Ltd.",
+  "city": "Mehdipatnam, Hyderabad",
+  "website": "https://meissareeve.com/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-11-15",
+  "generated_at": "2026-11-15 10:44",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "~1 result",
+      "query": "Meissa Reeve",
+      "ads": [
+        {
+          "library_id": "1641050694153685",
+          "library_url": "https://www.facebook.com/ads/library/?id=1641050694153685",
+          "ad_count": 1,
+          "format": null,
+          "page_name": "Meissa Reeve",
+          "started": "Nov 14, 2026",
+          "destination": "WhatsApp deep link ('Send WhatsApp message')",
+          "text": "Tired of your electricity bill going up every summer? Put your rooftop to work. Meissa Reeve designs and installs rooftop solar for homes across Hyderabad - so you generate your own power and cut your monthly bill. Free site visit & savings estimate; Help with the PM Surya Ghar subsidy process; End-to-end installation & net metering. Tap 'Send WhatsApp message' and tell us your monthly bill - we'll show you how much you can save. #HarGharSolar",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Meissa Reeve is running exactly one active Meta ad, on the 'Meissa Reeve' page (facebook.com/61596697943588), started 14 Nov 2026 and roughly 18 hours old when it was re-checked. The click lands on a WhatsApp deep link - never on meissareeve.com. Google Ads Transparency for meissareeve.com returns 0 ads under region=IN, so Meta is the entire paid channel and it rests on a single creative."
+  },
+  "funnel": {
+    "type": "WhatsApp deep link",
+    "destination": "wa.me deep link behind the 'Send WhatsApp message' CTA",
+    "meaning": "Every click becomes a WhatsApp conversation with a salesperson. That is workable, but nothing is measurable: no pixel, no conversion event, no audience of people who clicked and went quiet, and no page where a different headline or price could be tested."
+  },
+  "findings": [
+    "One ad, one message, one channel. The whole paid programme is a single creative launched on 14 Nov 2026 - there is no second angle to compare against and nothing running behind it if this one fatigues.",
+    "The ad sends the click to WhatsApp, not to the website. re.meissareeve.com carries the residential, commercial, industrial and agricultural rooftop work plus four named installations, and none of the paid traffic ever lands on it.",
+    "The copy does the qualifying work WhatsApp cannot: it asks for the monthly bill and names the three things that actually decide a solar sale - free site visit, PM Surya Ghar subsidy handling, end-to-end installation with net metering.",
+    "The parent company runs three divisions (solar re., enter e., EV ev.) and the ad is only about solar, which is the right call - but it means the solar division has to win on its own with one creative.",
+    "Zero Google ads under region=IN. For a search term as intent-heavy as 'solar panel installation Hyderabad' that is an open channel, and the WhatsApp funnel means there is no landing page to send that traffic to yet."
+  ],
+  "next_steps": [
+    [
+      "Give the WhatsApp click somewhere to land",
+      "A single page on re.meissareeve.com with the offer, the subsidy explainer and an enquiry form, so the click is measurable and retargetable even while WhatsApp stays the primary conversion."
+    ],
+    [
+      "Run a second angle against the first",
+      "The current ad leads on bill savings. A second creative leading on the PM Surya Ghar subsidy - the number, the paperwork, the timeline - tests a different motive without touching the one that is working."
+    ],
+    [
+      "Put the four named installs to work",
+      "Anees 2 kW Moula Ali, Dr. Kasi 3 kW R K Puram, Om Prakash 4 kW Balnagar and Uma Shankar 3 kW Begumpet are real, local and verifiable. They belong next to the offer, not only on a projects page."
+    ],
+    [
+      "Open the search channel",
+      "No Google ads at all. The subsidy and the free site visit are exactly the queries Hyderabad homeowners type, and there is currently no paid presence on any of them."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@meissareeve.com (enquiry@meissareeve.com also published on the solar division)"
+    ],
+    [
+      "Phone / WhatsApp",
+      "+91 7893088071 / wa.me/917893088071"
+    ],
+    [
+      "Address",
+      "Saptagiri Nagar, Retibowli, Mehdipatnam, Hyderabad; Google listing 12-2-727/1/57, Sapthagiri Nagar Colony, Rethibowli, Gudimalkapur, Hyderabad, Telangana 500006"
+    ],
+    [
+      "Entity",
+      "Meissa Reeve Pvt. Ltd. - solar division on re.meissareeve.com"
+    ],
+    [
+      "Hours",
+      "Mon-Fri 09:00-17:00"
+    ],
+    [
+      "Meta page",
+      "facebook.com/61596697943588 (Meissa Reeve)"
+    ]
+  ],
+  "contact": {
+    "email": "info@meissareeve.com",
+    "phone": "+91 7893088071",
+    "fb_page": "https://www.facebook.com/61596697943588/"
+  },
+  "site_evidence": {
+    "pixel": null,
+    "utm": null,
+    "checked_on": "2026-11-15",
+    "note": "Contacts page read live 2026-11-15 through a text-only fetch, so page source was not pulled and Meta Pixel presence is unverified either way; graded unknown per the catalog's runtime contract. The live ad does not link to the site at all - it links to WhatsApp."
+  },
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "pass",
+        "evidence": "4 distinct offer angles in live copy: government subsidy, bill savings, free site visit, installation speed."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Nov 14, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "fail",
+        "evidence": "A single live ad - no internal comparison, no safety net if it fatigues."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: WhatsApp deep link."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 3,
+      "fail": 2,
+      "unknown": 10,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}
