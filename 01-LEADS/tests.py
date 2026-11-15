@@ -200,6 +200,49 @@ class TestKnownLeadsDedup(unittest.TestCase):
         verdict, _, _ = stale.verdict(name="Zytech Solar")
         self.assertIsNone(verdict)
 
+    def test_batch_log_prose_cannot_pin_an_expired_veto(self):
+        # Regression: _load_batch_logs registers the leading cells of EVERY
+        # table row, including the rejected-candidates rows, so a rejected
+        # candidate acquires a permanent batch_log entry. If that entry were
+        # consulted before the veto, the veto could never lapse - Zytech was
+        # vetoed 2026-11-15 and would have stayed "known" forever, purely
+        # because its own rejection got written up in a batch log.
+        import datetime
+        stale = KnownLeads(quiet=True, today=datetime.date(2027, 6, 1))
+        self.assertEqual(len(stale.active_vetoes()), 0)
+        for name in ("Zytech Solar India Pvt Ltd", "Gigawatt Solar Pvt Ltd",
+                     "Solar Idea Pvt Ltd", "Amplus KN One Power Pvt Ltd"):
+            verdict, source, _ = stale.verdict(name=name)
+            self.assertIsNone(verdict, "%s -> %s (%s)" % (name, verdict, source))
+
+    def test_active_veto_wins_over_batch_log_prose(self):
+        # While a veto is live it is the authoritative reason, and the reported
+        # source must name the veto gate rather than the batch log that merely
+        # mentions the same rejection.
+        for name in ("Zytech Solar India Pvt Ltd", "Gigawatt Solar Pvt Ltd",
+                     "Solar Idea Pvt Ltd", "Ohmhydrasolutions", "Mocaup"):
+            verdict, source, _ = self.known.verdict(name=name)
+            self.assertEqual(verdict, "known", "%s -> %s" % (name, verdict))
+            self.assertTrue(source.startswith("vetted:"), source)
+
+    def test_no_rowed_lead_is_shadowed_by_an_active_veto(self):
+        # The veto is consulted first, so a business that is BOTH rowed and
+        # vetoed would be reported as new. That must never happen: a real lead
+        # re-offered as "new" is a duplicate that slips through.
+        for entry in self.known.entries:
+            if not entry["source"].startswith(
+                    ("leads.csv", "sequence_manifest", "audit_json",
+                     "known_leads_extra")):
+                continue
+            for veto in self.known.active_vetoes():
+                strength = self.known._veto_strength(
+                    entry["domain"], norm_name(entry["name"]),
+                    name_tokens(entry["name"]), veto)
+                self.assertFalse(
+                    strength,
+                    "%s (%s) is shadowed by veto %s" % (
+                        entry["name"], entry["source"], veto["name"]))
+
     def test_single_generic_word_is_not_a_match(self):
         for name in ("Solar Power Experts", "NewCo Solar Experts"):
             verdict, _, _ = self.known.verdict(name=name)
@@ -213,18 +256,24 @@ class TestKnownLeadsDedup(unittest.TestCase):
         self.assertEqual(verdict, "review")
         self.assertIn("Adithya", matched)
 
-    def test_found_but_never_rowed_is_known(self):
-        # Shree Adithya Solar was swept in batch 2 on 2026-10-18 and never
-        # promoted to a leads.csv row - it must still count as already seen.
-        verdict, source, matched = self.known.verdict(name="Shree Adithya Solar")
-        self.assertEqual(verdict, "known")
-        self.assertTrue(source.startswith("batch_log:"), source)
+    def test_found_but_never_rowed_is_not_new(self):
+        # Candidates that were swept and never promoted to a leads.csv row must
+        # still be remembered, so they are never re-offered as new.
         for name in ("Mahesh Solar Solutions", "Dhrugo Solar Solutions",
                      "Solar Apex", "Hysun Solar", "Trinex Energy",
                      "Ushodaya Renewable Energy", "GRK Digital Tech"):
             v, s, _ = self.known.verdict(name=name)
             self.assertEqual(v, "known", "%s -> %s" % (name, v))
             self.assertTrue(s.startswith(("batch_log:", "leads.csv")), s)
+
+        # Shree Adithya Solar (swept in batch 2 on 2026-10-18, never rowed) is
+        # the owner's explicit exception: "Adithya" is a trading name shared by
+        # three separate Hyderabad businesses, so it must come back as review
+        # for a human and must never auto-clear as a duplicate.
+        verdict, source, matched = self.known.verdict(name="Shree Adithya Solar")
+        self.assertEqual(verdict, "review")
+        self.assertIn("Adithya", matched)
+        self.assertTrue(source.startswith("vetted:"), source)
 
     def test_norm_domain(self):
         self.assertEqual(norm_domain("https://www.ArkaSolar.in/hyderabad"), "arkasolar.in")
@@ -267,8 +316,10 @@ class TestGroupLeadsDedup(unittest.TestCase):
         self.assertEqual(len(skipped), 9)
         self.assertEqual(skipped["Kypas Solar"][2], "Kypas Solar Power Pvt Ltd")
         self.assertEqual(skipped["Zytech Solar"][1], "vetted:live-ads")
-        self.assertEqual(skipped["Shree Adithya Solar"][1],
-                         "batch_log:hyderabad_5_leads_batch2_2026-10-18")
+        # "Adithya" is a shared trading name here, so Shree Adithya Solar is
+        # flagged review, never auto-cleared as a duplicate of the vetoed
+        # Adithya Solar Tech.
+        self.assertEqual(skipped["Shree Adithya Solar"][0], "review")
         self.assertEqual(skipped["Adithya Solar Works"][0], "review")
 
     def test_allow_known_lets_everything_through(self):

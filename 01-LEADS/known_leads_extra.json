@@ -56,6 +56,24 @@
       "website": "https://www.telanganasolarenergy.com/",
       "city": "Karimnagar",
       "note": "Meta Ad Library page name for Telangana Solar Energy (telanganasolarenergy.com). Rowed in leads.csv 2026-11-15. Added because 'Solar' and 'Energy' are both non-identifying tokens, so the guard's token matcher cannot link this page name to 'Telangana Solar Energy' on its own."
+    },
+    {
+      "name": "Visionteknewenergy",
+      "website": "https://visiontek.solar/",
+      "city": "Begumpet, Hyderabad",
+      "note": "Meta Ad Library page name for Visiontek Solar Energy (visiontek.solar, info@visiontek.com, +91 9701601421). Rowed in leads.csv 2026-11-15. Added because 'Visionteknewenergy' is a single concatenated token, so the guard's token matcher cannot link it to 'Visiontek Solar Energy' - exactly the class of miss fixed for 'Telangana Solar' on 2026-11-15."
+    },
+    {
+      "name": "FreyrEnergy",
+      "website": "https://www.freyrenergy.com/",
+      "city": "Hyderabad",
+      "note": "Meta Ad Library page name for Freyr Energy (lead 34 in leads.csv, service@freyrenergy.com). Added because 'FreyrEnergy' is one concatenated token and 'Energy' is non-identifying, so the matcher sees zero identifying shared tokens."
+    },
+    {
+      "name": "Visiontek Solar",
+      "website": "https://visiontek.solar/",
+      "city": "Begumpet, Hyderabad",
+      "note": "Short form used inside the ad copy ('Switch to Visiontek Solar') for Visiontek Solar Energy. Rowed in leads.csv 2026-11-15."
     }
   ],
   "vetted": [
@@ -314,6 +332,206 @@
       "checked": "2026-11-15",
       "gate": "segment",
       "reason": "Live Meta advertiser (Library ID 988627010433216, started Nov 11 2026) but it is a farmland/villa-plot real-estate project, not a solar EPC. Same class as Teramor Developers and Cygni Energy."
+    },
+    {
+      "name": "Ohmhydrasolutions",
+      "website": "",
+      "city": "Kerala",
+      "checked": "2026-11-15",
+      "gate": "segment",
+      "reason": "Live Meta advertiser (Library ID 1160240256472893, started Nov 12 2026) but the ad is Malayalam-language electrical and plumbing work with KSEB connection assistance - a Kerala local-services business, not a Hyderabad/Telangana solar EPC."
+    },
+    {
+      "name": "Mocaup",
+      "website": "",
+      "city": "India (multi-city)",
+      "checked": "2026-11-15",
+      "gate": "segment",
+      "reason": "Live Meta advertiser (Library ID 1540056057821006, started Aug 5 2026) but it resells solar enquiries to EPCs ('connecting Solar Vendors and EPC providers with property owners') - a lead-generation agency, not a solar EPC, and therefore a competitor rather than a prospect."
+    },
+    {
+      "name": "Alsaa D Global Real Estate",
+      "website": "https://www.alsaadglobalrealestate.com/",
+      "city": "Sangareddy",
+      "checked": "2026-11-15",
+      "gate": "segment",
+      "reason": "Live Meta advertiser (Library ID 2160085101235277, started Aug 13 2026) but it is a real-estate investment scheme selling panel-ownership leases on the Kapil Solar Energy site at Sangareddy - not a solar EPC."
+    },
+    {
+      "name": "Go Rewatt",
+      "website": "https://www.gorewatt.com/",
+      "city": "Karnataka / Tamil Nadu",
+      "checked": "2026-11-15",
+      "gate": "segment",
+      "reason": "Live Meta advertiser (Library ID 1498216172114493, started Sep 30 2026) but the ad recruits distributors for South India with priority markets Karnataka and Tamil Nadu - not a Hyderabad solar EPC."
+    },
+    {
+      "name": "BoxBee - Buzzing Deal Every Day",
+      "website": "https://boxbee.in/",
+      "city": "India (e-commerce)",
+      "checked": "2026-11-15",
+      "gate": "segment",
+      "reason": "Live Meta advertiser (Library ID 990388019982431, started Oct 16 2026) but it sells a Rs.1,999 solar-panel cleaning brush - an e-commerce product ad, not a solar EPC."
+    },
+    {
+      "name": "SunSolarhyd",
+      "website": "",
+      "city": "Narsingi, Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "published-email",
+      "reason": "Live Meta advertiser with 3 active ads on the 'SunSolarhyd' page (Library IDs 2576227376137902 and 2285688872164421, Oct 2026, and a third Oct 23 2026 creative): 'HYDERABAD, SWITCH TO SOLAR FOR JUST Rs.1,31,999' with Suite 312, 3rd Floor, Kokapet Terminal Complex, Gandipet Main Road, Narsingi, Hyderabad and +91 98666 02001. No email address is published anywhere the ads or the company point to, and the domain could not be identified - sunsolarpowersystems.com is a different, Ramanathapuram-based business. Fails the published-email gate."
+    },
+    {
+      "name": "Sirius Solar Energy Systems",
+      "website": "https://siriussolarenergy.com/",
+      "city": "Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "live-ads",
+      "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=siriussolarenergy.com) and 0 Meta ads (keyword sweep 'Sirius Solar Energy' returned 'No ads match your search criteria'). PM Surya Ghar vendor with marketing@siriussolarenergy.com, but no live advertising to pitch against."
+    },
+    {
+      "name": "Greentek India Pvt Ltd",
+      "website": "https://greentekindia.co.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "live-ads",
+      "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=greentekindia.co.in) and 0 Meta ads (keyword sweep 'Greentek India solar' returned 'No ads match your search criteria'). PM Surya Ghar vendor with projects@greentekindia.co.in, but no live advertising. Distinct from Greentek Solutions (greentecksolutions.com, Borabanda), which also has 0 live ads."
+    },
+    {
+      "name": "Gigawatt Solar Pvt Ltd",
+      "website": "https://gigawattsolar.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "live-ads",
+      "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=gigawattsolar.in). PM Surya Ghar vendor with info@gigawattsolar.in."
+    },
+    {
+      "name": "Solar Idea Pvt Ltd",
+      "website": "https://solaridea.com/",
+      "city": "Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "live-ads",
+      "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=solaridea.com). PM Surya Ghar vendor with info@solaridea.com."
+    },
+    {
+      "name": "Zytech Solar India Pvt Ltd",
+      "website": "https://zytechsolar.co.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "live-ads",
+      "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=zytechsolar.co.in). PM Surya Ghar vendor with aadesh@zytechsolar.co.in."
+    },
+    {
+      "name": "Amplus KN One Power Pvt Ltd",
+      "website": "https://amplussolar.com/",
+      "city": "Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "live-ads",
+      "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=amplussolar.com). PM Surya Ghar vendor with rohit.khanduja@amplussolar.com."
+    },
+    {
+      "name": "Solar Bull Enegy LLP",
+      "website": "https://solarbull.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "live-ads",
+      "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=solarbull.in). PM Surya Ghar vendor with srini@solarBull.in."
+    },
+    {
+      "name": "NATURAL ENERGIES",
+      "website": "https://naturalenergies.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "live-ads",
+      "reason": "0 live Google ads on naturalenergies.in and 0 on naturalenergiess.com (Ads Transparency Centre, region=IN, both probed). PM Surya Ghar vendor with info@naturalenergies.in."
+    },
+    {
+      "name": "Nova Solar Solutions SecBad",
+      "website": "https://novasolar.in/",
+      "city": "Secunderabad",
+      "checked": "2026-11-15",
+      "gate": "live-ads",
+      "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=novasolar.in). PM Surya Ghar vendor with john@novasolar.in."
+    },
+    {
+      "name": "Renew Solar",
+      "website": "https://renewsolar.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "live-ads",
+      "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=renewsolar.in). PM Surya Ghar vendor with kalyan@renewsolar.in."
+    },
+    {
+      "name": "Accutech Infosystems Pvt Ltd",
+      "website": "https://accutech.co.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "live-ads",
+      "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=accutech.co.in). PM Surya Ghar vendor with vidyasagar@accutech.co.in."
+    },
+    {
+      "name": "Coolkaru Info Solutions Pvt Ltd",
+      "website": "https://coolkaru.com/",
+      "city": "Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "live-ads",
+      "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=coolkaru.com). PM Surya Ghar vendor with prudhvi@coolkaru.com."
+    },
+    {
+      "name": "E Mug Energy Pvt Ltd",
+      "website": "https://emugenergy.com/",
+      "city": "Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "live-ads",
+      "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=emugenergy.com). PM Surya Ghar vendor with ksr@emugenergy.com."
+    },
+    {
+      "name": "SUN ENERGY SYSTEMS",
+      "website": "https://sunenergysystems.com/",
+      "city": "Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "live-ads",
+      "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=sunenergysystems.com). PM Surya Ghar vendor with bvrao@sunenergysystems.com."
+    },
+    {
+      "name": "CubeFore Solutions Pvt Ltd",
+      "website": "https://cubeforesolutions.in/",
+      "city": "Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "live-ads",
+      "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=cubeforesolutions.in). PM Surya Ghar vendor with info@cubeforesolutions.in."
+    },
+    {
+      "name": "Sunup Solar Power",
+      "website": "https://sunupsolarpower.com/",
+      "city": "Domalguda, Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "live-ads",
+      "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=sunupsolarpower.com). Publishes santosh@sunupsolarpower.com and +91 888 505 2521, but no live advertising."
+    },
+    {
+      "name": "Sunpower Solar Solutions",
+      "website": "https://sunpowersolarsolutions.com/",
+      "city": "Boduppal, Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "live-ads",
+      "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=sunpowersolarsolutions.com). Publishes info@sunpowersolarsolutions.com and +91 8885551536 / 7674899302, but no live advertising."
+    },
+    {
+      "name": "Sunpower Solar Services",
+      "website": "https://sunpowersolarservices.co.in/",
+      "city": "Nagole, Hyderabad",
+      "checked": "2026-11-15",
+      "gate": "live-ads",
+      "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=sunpowersolarservices.co.in). Publishes sunpowersolarservice@gmail.com, but no live advertising."
+    },
+    {
+      "name": "Sun Solar Systems",
+      "website": "https://sunsolarsystems.in/",
+      "city": "Turkayamjal, Ranga Reddy",
+      "checked": "2026-11-15",
+      "gate": "live-ads",
+      "reason": "0 live Google ads (Ads Transparency Centre, region=IN, domain=sunsolarsystems.in). Publishes info@sunsolarsystems.in and +91 9281259430, but no live advertising. Distinct from sunsolarps.com (Ramanathapuram) and from the Hyderabad SunSolarhyd Meta advertiser."
     }
   ]
 }

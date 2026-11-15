@@ -167,6 +167,12 @@ class KnownLeads(object):
 
     DEFAULT_VETO_DAYS = 45
 
+    # Returned by _veto_hit when the only thing that matched was a veto
+    # that has since expired. It is deliberately not a real verdict: the
+    # veto is what makes the name "known", so once it lapses the name is
+    # eligible again and must not be pinned by weaker evidence.
+    VETO_EXPIRED = "veto-expired"
+
     def __init__(self, root=None, extra_path=None, quiet=True, today=None):
         self.root = root or repo_root()
         self.quiet = quiet
@@ -402,13 +408,16 @@ class KnownLeads(object):
                 self._log("  [known] vetted entry without a date skipped: %r"
                           % item.get("name"))
                 continue
+            name = (item.get("name") or "").strip()
             self.vetted.append({
-                "name": (item.get("name") or "").strip(),
+                "name": name,
                 "domain": norm_domain(item.get("website")),
                 "checked": checked,
                 "reason": item.get("reason", ""),
                 "gate": item.get("gate", ""),
                 "veto_days": int(item.get("veto_days", self.veto_days)),
+                "norm": norm_name(name),
+                "tokens": name_tokens(name),
             })
         self._log("  [known] vetted rejections -> %d" % len(self.vetted))
 
@@ -435,14 +444,6 @@ class KnownLeads(object):
             for tok in name_tokens(entry.get("name", "")):
                 names_by_token.setdefault(tok, set()).add(key)
         self._token_counts = names_by_token
-
-        # exact normalised full-name index for vetted entries, so a rejected
-        # business is still recognised when its name reduces to one token
-        self._by_vetted_name = {}
-        for entry in self.vetted:
-            key = norm_name(entry.get("name", ""))
-            if key:
-                self._by_vetted_name.setdefault(key, entry)
 
     def _name_contained(self, norm_a, norm_b):
         """Verdict strength when one normalised name wholly contains the other.
@@ -522,25 +523,62 @@ class KnownLeads(object):
         tokens = name_tokens(name)
         norm = norm_name(name)
 
+        # An active veto is the strongest statement the registry can make, so
+        # it is checked FIRST - before the general entry lookup. Otherwise a
+        # candidate that was rejected and then written up in a batch log would
+        # be matched as "known" from that batch_log entry forever, and its veto
+        # could never expire. (Batch logs register every table row's leading
+        # cells, so every rejected candidate acquires a batch_log entry.)
+        veto = self._veto_hit(domain, norm, tokens)
+        if veto and veto[0] != self.VETO_EXPIRED:
+            return veto
+
         hit, strength = self._lookup(domain, norm, tokens, self.entries)
         if hit:
+            # A batch-log row is written up about every candidate a run
+            # considered, rejected ones included, so it is not independent
+            # evidence. Where the only reason the name is in a batch log is
+            # that it was rejected, the veto decides - and a lapsed veto must
+            # leave the name eligible. Independent evidence (a leads.csv row, a
+            # sequence, an audit, an explicit `known` entry) still wins.
+            if veto and hit["source"].startswith("batch_log:"):
+                return None, None, None
             return strength, hit["source"], hit["name"] or name or domain
-
-        if norm:
-            entry = self._by_vetted_name.get(norm)
-            if entry and self.veto_until(entry) >= self.today:
-                return "known", self._veto_label(entry), entry["name"] or name
-
-        for entry in self.active_vetoes():
-            if domain and entry["domain"] and entry["domain"] == domain:
-                return "known", self._veto_label(entry), entry["name"] or name
-            contained = self._name_contained(norm, norm_name(entry["name"]))
-            if contained == "known":
-                return "known", self._veto_label(entry), entry["name"] or name
-            strength, _ = self._name_hit(tokens, name_tokens(entry["name"]))
-            if strength:
-                return strength, self._veto_label(entry), entry["name"] or name
         return None, None, None
+
+    def _veto_hit(self, domain, norm, tokens):
+        """(verdict, source, matched) for the strongest matching ACTIVE veto.
+
+        Returns None when no veto matches or every matching veto has expired -
+        an expired veto must leave the name eligible again, so nothing here
+        may fall back to a batch-log or leads.csv entry.
+
+        Matching is tried strongest-to-weakest across ALL active vetoes
+        (exact normalised name, domain, containment, then shared tokens), so
+        the weakest signal cannot win by happening to come first.
+
+        Only when no active veto matches are the expired ones consulted, and
+        then the result is VETO_EXPIRED rather than a verdict.
+        """
+        for entry in self.active_vetoes():
+            strength = self._veto_strength(domain, norm, tokens, entry)
+            if strength:
+                return strength, self._veto_label(entry), entry["name"] or norm
+        for entry in self.expired_vetoes():
+            if self._veto_strength(domain, norm, tokens, entry):
+                return (self.VETO_EXPIRED, self._veto_label(entry),
+                        entry["name"] or norm)
+        return None
+
+    def _veto_strength(self, domain, norm, tokens, entry):
+        """"known", "review" or None for one veto entry against a candidate."""
+        if norm and entry["norm"] == norm:
+            return "known"
+        if domain and entry["domain"] and entry["domain"] == domain:
+            return "known"
+        if norm and self._name_contained(norm, entry["norm"]) == "known":
+            return "known"
+        return self._name_hit(tokens, entry["tokens"])[0]
 
     def match(self, name="", website="", email=""):
         """Back-compatible 2-tuple: (source, matched_name) when known-or-review."""

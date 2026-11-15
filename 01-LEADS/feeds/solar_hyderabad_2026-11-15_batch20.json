@@ -1,0 +1,361 @@
+{
+  "captured": "2026-11-15",
+  "query": "solar Hyderabad / Telangana (batch 20 - second run of 2026-11-15)",
+  "source": "Meta Ad Library (live, via fetch_page) + Google Ads Transparency ?domain= (live, region=IN), all read 2026-11-15",
+  "results_label": "~36 for 'solar company Hyderabad'; ~17 for 'solar net metering Hyderabad'; ~14 for 'solar panel installation Hyderabad'; ~82 for 'solar installation Hyderabad'; ~73 for 'solar rooftop Hyderabad'; ~36 for 'rooftop solar subsidy Telangana'; ~51 for 'solar panels Telangana'; ~75 for 'solar power Telangana'; ~100 for 'solar energy Telangana'; ~12 for 'solar company Telangana'; ~12 for 'solar Telugu'; ~7 for 'solar Secunderabad'; ~4 for 'solar Kukatpally'; ~7 for 'solar LB Nagar'; 0 for 'Sirius Solar Energy' and 'Greentek India solar'",
+  "note": "Second discovery run of 2026-11-15 (batch 19 already rowed 4 leads the same day). Two new leads cleared every gate: Meissa Reeve and Visiontek Solar Energy. Both were verified a second time by reading their own contact pages directly (third-eye pass) - info@meissareeve.com is on meissareeve.com/contacts/ and info@visiontek.com is on visiontek.solar/contact-us/, both read live on 2026-11-15. Neither is in leads.csv and neither is in known_leads_extra.json. The Google Ads Transparency ?domain= probes for both new leads return 0 ads under region=IN, so their live-ad evidence is Meta-only and is stated as such. The remaining cards are re-confirmations that already-rowed advertisers are still live, kept so the duplicate guard visibly skips them.",
+  "google_ads": [],
+  "ads": [
+    {
+      "library_id": "1691922249204293",
+      "page_name": "Meissa Reeve",
+      "started": "2026-11-14",
+      "text": "Meta Ad Library, active, started running on Nov 14 2026. 'Tired of your electricity bill going up every summer? Put your rooftop to work. Meissa Reeve designs and installs rooftop solar for homes across Hyderabad - so you generate your own power and cut your monthly bill. Free site visit & savings estimate; Help with the PM Surya Ghar subsidy process; End-to-end installation & net metering. Tap Send WhatsApp message.' Ad destination is a WhatsApp deep link. Site read live 2026-11-15: meissareeve.com/contacts/ publishes +91-7893088071 and info@meissareeve.com at Saptagiri Nagar, Retibowli, Mehdipatnam, Hyderabad; the solar division runs on re.meissareeve.com and sells residential, commercial, industrial and agricultural rooftop plants (on-grid, off-grid, hybrid) plus solar street lights. 0 Google Ads Transparency ads on meissareeve.com under region=IN.",
+      "destination": "https://wa.me/",
+      "whatsapp": "",
+      "email": "info@meissareeve.com"
+    },
+    {
+      "library_id": "1133037052650969",
+      "page_name": "Visionteknewenergy",
+      "started": "2026-11-12",
+      "text": "Meta Ad Library, active, started running on Nov 12 2026, 2 ads use this creative and text. 'Still paying high electricity bills? Switch to Visiontek Solar and turn sunlight into savings. Our smart system powers your home directly, stores extra energy for the night and helps lower your monthly bill. Its time to power your home naturally.' Ad destination is a generic instagram.com link. Three further live ads on the same page: 1138341982459373 (Nov 12 2026, 2 ads use this creative), 1449750756945639 (Nov 12 2026, 2 ads use this creative) and 2319725685441877 (Sep 4 2026). Site read live 2026-11-15: visiontek.solar/contact-us/ publishes +91 9701601421 and info@visiontek.com at Linkwell Telesystems Pvt. Ltd., 1-11-252/1B, Behind Shoppers' Stop, Begumpet, Hyderabad 500016. Solar division launched 2025 by VISIONTEK Linkwell Telesystems Pvt Ltd (founded 1993); products RISE+ on-grid inverter, FUTURE+ hybrid inverter, VAULT+ LFP battery storage, PULSE+ panel-level optimiser. 0 Google Ads Transparency ads on visiontek.solar under region=IN.",
+      "destination": "https://www.instagram.com/",
+      "whatsapp": "",
+      "email": "info@visiontek.com"
+    },
+    {
+      "library_id": "854151514422481",
+      "page_name": "SolarSquare Energy",
+      "started": "2026-10-16",
+      "text": "Re-confirmation only - already rowed as lead 40. Still active, 3 ads use this creative and text.",
+      "destination": "https://www.solarsquare.in/rooftop-solar-in-hyderabad-1",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "2879614772438662",
+      "page_name": "Krisol Solar",
+      "started": "2026-11-03",
+      "text": "Re-confirmation only - already rowed as lead 29. Still active.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1160240256472893",
+      "page_name": "Ohmhydrasolutions",
+      "started": "2026-11-12",
+      "text": "Vetoed on segment: Malayalam-language ad for electrical and plumbing work in Kerala (KSEB connection assistance), not a Hyderabad solar EPC.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1540056057821006",
+      "page_name": "Mocaup",
+      "started": "2026-08-05",
+      "text": "Vetoed on segment: a performance-marketing lead-generation reseller selling solar enquiries to EPCs, not a solar EPC itself.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "988627010433216",
+      "page_name": "Sahasra Enclave",
+      "started": "2026-11-11",
+      "text": "Re-confirmation of an existing veto: HMDA-approved villa plots at Malkapur, Choutuppal - farmland realty, not a solar EPC.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "2160085101235277",
+      "page_name": "Alsaa D Global Real Estate",
+      "started": "2026-08-13",
+      "text": "Vetoed on segment: real-estate investment scheme selling panel ownership leases on the Kapil Solar Energy site at Sangareddy - not a solar EPC.",
+      "destination": "https://www.alsaadglobalrealestate.com/properties/pb1mkdkuaham35o",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1498216172114493",
+      "page_name": "Go Rewatt",
+      "started": "2026-09-30",
+      "text": "Vetoed on segment: distributor recruitment for Karnataka and Tamil Nadu, not a Hyderabad solar EPC.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "990388019982431",
+      "page_name": "BoxBee - Buzzing Deal Every Day",
+      "started": "2026-10-16",
+      "text": "Vetoed on segment: e-commerce seller of a Rs.1,999 solar panel cleaning brush, not a solar EPC.",
+      "destination": "https://boxbee.in/products/3-meter-solar-panel-cleaning-brush-with-water-spray",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "2319725685441877",
+      "page_name": "Visionteknewenergy",
+      "started": "2026-09-04",
+      "text": "Re-confirmation of the same new Visiontek Solar Energy page - a second live creative, older start date, kept for the count.",
+      "destination": "https://www.instagram.com/",
+      "whatsapp": "",
+      "email": "info@visiontek.com"
+    },
+    {
+      "library_id": "1138341982459373",
+      "page_name": "Visionteknewenergy",
+      "started": "2026-11-12",
+      "text": "Third live Visiontek Solar Energy creative, same start date, 2 ads use this creative and text.",
+      "destination": "https://www.instagram.com/",
+      "whatsapp": "",
+      "email": "info@visiontek.com"
+    },
+    {
+      "library_id": "1449750756945639",
+      "page_name": "Visionteknewenergy",
+      "started": "2026-11-12",
+      "text": "Fourth live Visiontek Solar Energy creative, same start date, 2 ads use this creative and text.",
+      "destination": "https://www.instagram.com/",
+      "whatsapp": "",
+      "email": "info@visiontek.com"
+    },
+    {
+      "library_id": "1107398778509314",
+      "page_name": "Hydromo",
+      "started": "2026-09-09",
+      "text": "Re-confirmation only - already rowed as lead 33. Still active, 2 ads use this creative and text.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "2110991659634519",
+      "page_name": "ORBIT SOLAR",
+      "started": "2025-12-10",
+      "text": "Re-confirmation only - already rowed as lead 28. Still active.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1671316507299856",
+      "page_name": "ORBIT SOLAR",
+      "started": "2026-07-30",
+      "text": "Re-confirmation only - already rowed as lead 28.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1571427961334945",
+      "page_name": "AB Solar Power Systems",
+      "started": "2026-11-04",
+      "text": "Re-confirmation only - already rowed as lead 1. Still active.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "3418975398276429",
+      "page_name": "Varna Solar Pvt. Ltd.",
+      "started": "2026-10-30",
+      "text": "Re-confirmation only - already rowed as lead 42. Still active.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1489241276343354",
+      "page_name": "Shree Adithya Solar",
+      "started": "2026-09-10",
+      "text": "Re-confirmation only - already rowed as lead 47 and separately guarded; do not merge with Shree Solar Rooftop Solutions, Adithya Solar Tech or Aadithya Solar Energies.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1080534018298988",
+      "page_name": "Hindusthan Solar Energy Enterprise",
+      "started": "2026-09-23",
+      "text": "Re-confirmation only - already rowed as lead 43 and blocked 2026-11-15 after a permanent delivery failure.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "3823689667771361",
+      "page_name": "Twilight Solar Pvt Ltd",
+      "started": "2026-07-30",
+      "text": "Re-confirmation only - already rowed as lead 16. Still active.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1443902311044175",
+      "page_name": "Venus home appliances",
+      "started": "2026-10-26",
+      "text": "Re-confirmation only - already rowed as lead 11. Still active.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "2587160308432344",
+      "page_name": "Lumisun solar",
+      "started": "2026-11-05",
+      "text": "Re-confirmation only - already rowed as lead 44. Still active.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1639995594202458",
+      "page_name": "Lumisun solar",
+      "started": "2026-10-28",
+      "text": "Re-confirmation only - already rowed as lead 44.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1154611803661973",
+      "page_name": "Big G Industries",
+      "started": "2026-10-27",
+      "text": "Re-confirmation of an existing veto: manufacturer of earthing pit covers, not a solar EPC.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "4789379224675490",
+      "page_name": "FreyrEnergy",
+      "started": "2026-11-11",
+      "text": "Re-confirmation only - already rowed as lead 34. Still active, Telugu creative.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "942037648839408",
+      "page_name": "Sri Balaji Solar Energies",
+      "started": "2026-05-29",
+      "text": "Re-confirmation only - already rowed as lead 9. Still active.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "4493621594235361",
+      "page_name": "Sri Balaji Solar Energies",
+      "started": "2026-08-25",
+      "text": "Re-confirmation only - already rowed as lead 9.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "2103721667197349",
+      "page_name": "Sri Balaji Solar Energies",
+      "started": "2026-08-18",
+      "text": "Re-confirmation only - already rowed as lead 9. Telugu creative.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "2519768081846574",
+      "page_name": "Solox Energies Pvt Ltd",
+      "started": "2026-10-30",
+      "text": "Re-confirmation only - already rowed as lead 5. Still active.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1482630683716601",
+      "page_name": "Solox Energies Pvt Ltd",
+      "started": "2026-10-30",
+      "text": "Re-confirmation only - already rowed as lead 5. Industrial rooftop creative.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1125734279947417",
+      "page_name": "Thearkahub",
+      "started": "2026-11-06",
+      "text": "Re-confirmation only - already rowed as lead 26 (Arkahub). Still active.",
+      "destination": "https://www.arkahub.in/hyderabad",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "29894882560113514",
+      "page_name": "Wisda Energy",
+      "started": "2026-11-01",
+      "text": "Re-confirmation only - already rowed as lead 39. Still active.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1041272661680963",
+      "page_name": "ORBIT SOLAR",
+      "started": "2026-06-20",
+      "text": "Re-confirmation only - already rowed as lead 28. Apartment-terrace creative.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1091780746736140",
+      "page_name": "Sunova Green Energy Private Limited",
+      "started": "2026-08-31",
+      "text": "Re-confirmation only - already rowed as lead 38. Still active.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "2766978160319102",
+      "page_name": "mrsolar.in",
+      "started": "2026-05-05",
+      "text": "Re-confirmation only - already rowed as lead 27. Still active.",
+      "destination": "http://fb.me/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "1835663644094833",
+      "page_name": "Valcan Solar",
+      "started": "2026-10-30",
+      "text": "Re-confirmation only - already rowed as lead 24, follow-up parked by owner decision.",
+      "destination": "https://valcansolar.com/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "929038026957244",
+      "page_name": "Valcan Solar",
+      "started": "2026-10-28",
+      "text": "Re-confirmation only - already rowed as lead 24.",
+      "destination": "https://valcansolar.com/",
+      "whatsapp": "",
+      "email": ""
+    },
+    {
+      "library_id": "2319725685441877 ",
+      "page_name": "Visionteknewenergy",
+      "started": "2026-09-04",
+      "text": "Duplicate of the Visiontek card above, kept so the guard sees the same page twice.",
+      "destination": "https://www.instagram.com/",
+      "whatsapp": "",
+      "email": ""
+    }
+  ]
+}
