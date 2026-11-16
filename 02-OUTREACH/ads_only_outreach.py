@@ -127,9 +127,34 @@ def live_ad_count(report, ads):
     return len(ads)
 
 
+def market_name(city):
+    """The city as it should read in a subject line and an opening sentence.
+
+    A report's city field is a data field, so it can legitimately be
+    "Mallampet, Bachupally, Medchal, Hyderabad" or "Kamakshipalya, Bengaluru
+    (advertising into Hyderabad)". Dropping that whole string into a subject
+    line produces "2 live Mallampet, Bachupally, Medchal, Hyderabad ads, one
+    funnel", which reads as noise. The market a lead actually competes in is
+    the metro at the end of the list, so use that for display only - the
+    report, the JSON and the .txt header all keep the full string.
+    """
+    city = (city or "").strip()
+    if not city:
+        return "your city"
+    # "Begumpet, Hyderabad" -> "Hyderabad"; "Hanamkonda, Warangal (serves
+    # Hyderabad)" -> "Warangal (serves Hyderabad)" is kept whole because the
+    # parenthetical is the honest part.
+    parts = [p.strip() for p in city.split(",") if p.strip()]
+    name = parts[-1] if parts else city
+    # A trailing PIN belongs to the data field, not the sentence.
+    name = re.sub(r"\s+\d{6}\s*$", "", name).strip()
+    return name or city
+
+
 def build_email(report):
     company = report["company"]
     city = report.get("city", "") or "your city"
+    market = market_name(city)
     ads = meta_ads(report)
     n_ads = live_ad_count(report, ads)
     funnel = (report.get("funnel") or {})
@@ -162,18 +187,32 @@ def build_email(report):
         links = "\n".join(
             f"  Library ID {a['library_id']}: {a['library_url']}"
             for a in ads if a.get("library_id") and a.get("library_url"))
-        subject = (f"{company}: {n_ads} live {city} "
+        subject = (f"{company}: {n_ads} live {market} "
                    f"{'ad' if n_ads == 1 else 'ads'}, one funnel")
     else:
         links = ("  Meta Ad Library search: "
                  "https://www.facebook.com/ads/library/?active_status=active"
                  "&ad_type=all&country=IN&q=" + company.replace(" ", "%20"))
-        subject = (f"{company}: no live ads while {city} competitors buy "
+        subject = (f"{company}: no live ads while {market} competitors buy "
                    f"the same homeowner")
+
+    # The "not a website audit" sentence has to tell the truth about *why*.
+    # For a firm with no website there is no site to have skipped, so saying
+    # "I have not audited your website" implies one exists.
+    if report.get("no_website"):
+        not_an_audit = (
+            "To be clear about what this is: it is an ad report, not a website "
+            "audit. There is no website to audit, so there are no website "
+            f"findings in it - {scope}.")
+    else:
+        not_an_audit = (
+            "To be clear about what this is: it is an ad report, not a website "
+            "audit. I have not audited your website, so there are no website "
+            f"findings in it - {scope}.")
 
     body = f"""Hi,
 
-I spend my week reading the public Meta Ad Library for the {city} solar market, and I put together a short report on what {company} is doing right now.
+I spend my week reading the public Meta Ad Library for the {market} solar market, and I put together a short report on what {company} is doing right now.
 
 What it covers (pulled from the Ad Library on {checked or 'today'}):
 
@@ -183,7 +222,7 @@ You can verify every line yourself:
 
 {links}
 
-To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - {scope}.
+{not_an_audit}
 
 If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
 

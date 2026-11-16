@@ -1,0 +1,230 @@
+{
+  "company": "Eagle Solar Systems",
+  "legal": "Eagle Solar Systems (proprietorship)",
+  "city": "Mallampet, Bachupally, Medchal, Hyderabad",
+  "website": "",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-11-15",
+  "generated_at": "2026-11-16 00:27",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 2,
+      "results_label": "2 ads on the page",
+      "query": "Eagle Solar Systems",
+      "ads": [
+        {
+          "library_id": "1677382683817329",
+          "library_url": "https://www.facebook.com/ads/library/?id=1677382683817329",
+          "ad_count": 2,
+          "format": null,
+          "page_name": "Eagle Solar Systems",
+          "started": "Nov 7, 2026",
+          "destination": "Facebook lead form (fb.me 'Book now')",
+          "text": "నెలనెలా వేల రూపాయలు కరెంట్ బిల్లులకే ఖర్చు చేస్తున్నారా? మీ కష్టార్జిత డబ్బును కరెంట్ బిల్లుల కోసం ఖర్చు చేయడం ఆపండి! ఇప్పుడు మీ ఇంటిపై సోలార్ ప్యానెల్స్ ఏర్పాటు చేసుకొని విద్యుత్ ఖర్చుల నుంచి ఉపశమనం పొందండి. ఇంటికి రూఫ్‌టాప్ సోలార్ ఇన్‌స్టాలేషన్; అర్హత ఉన్న వారికి ₹78,000 వరకు ప్రభుత్వ సబ్సిడీ; కరెంట్ బిల్లులో 90% వరకు ఆదా చేసే అవకాశం; PM సూర్య ఘర్ ముఫ్త్ బిజిలీ యోజన ప్రయోజనాలు. కాల్ చేయండి 9000666985 / 9000666984. హైదరాబాద్ & తెలంగాణ అంతటా సేవలు.",
+          "images": []
+        },
+        {
+          "library_id": "1835997698149286",
+          "library_url": "https://www.facebook.com/ads/library/?id=1835997698149286",
+          "ad_count": 2,
+          "format": null,
+          "page_name": "Eagle Solar Systems",
+          "started": "Nov 12, 2026",
+          "destination": "Facebook lead form (fb.me 'Book now')",
+          "text": "మీ ఇంటి కరెంట్ బిల్లులు తగ్గించుకోవాలనుకుంటున్నారా? ఇప్పుడే మీ ఇంటిపై సోలార్ ప్యానెల్స్ ఏర్పాటు చేసుకోండి. ప్రభుత్వ సబ్సిడీ ₹78,000 వరకు పొందే అవకాశం ఉంది! నెలవారీ విద్యుత్ ఖర్చులను తగ్గించుకోండి. నాణ్యమైన సోలార్ ప్యానెల్స్, ప్రొఫెషనల్ ఇన్‌స్టాలేషన్, ప్రభుత్వ సబ్సిడీ సహాయం.",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Eagle Solar Systems is running 2 active Meta ads on its own page (facebook.com/61595903925834), started 7 and 12 November 2026 - five days apart, so this is an account being actively added to rather than one creative left running. Both ads are in Telugu and both lead on the same three things: the PM Surya Ghar subsidy of up to Rs.78,000, up to 90% off the electricity bill, and a service area covering Hyderabad and all of Telangana. Both CTAs are Facebook lead forms, so no click ever leaves Facebook - and there is no website for a click to reach. Google Ads Transparency cannot be probed for this firm because it owns no domain, so Meta is the entire paid channel by necessity rather than by choice."
+  },
+  "funnel": {
+    "type": "Facebook lead form",
+    "destination": "fb.me 'Book now' - inside Facebook",
+    "meaning": "Every click becomes a form submission inside Facebook. That is workable for collecting a phone number, but it is the only option available here: with no website there is no page to install a pixel on, no audience to retarget, nothing to A/B test a headline on, and nowhere for a referral or a WhatsApp share to land."
+  },
+  "findings": [
+    "There is no website at all. Both ads end in a Facebook lead form, so the firm has no page a customer can visit, share or return to - the entire digital presence is two ads and a lead form.",
+    "Two ads, five days apart (7 and 12 Nov 2026), carrying the same three claims. The account is live and being added to, which is the right instinct - but both creatives point at the same dead end.",
+    "The copy is specific where it counts: the Rs.78,000 PM Surya Ghar subsidy figure, the 90% bill-saving claim and an explicit Hyderabad-and-Telangana service area. The offer is clear; the place to act on it is not.",
+    "The contact details are published only in the state's TGREDCO 2026 empanelled-supplier register (regn. TSRE240360) - eaglesolarhyd@gmail.com and mobile 9000666985, which is the same number the ads print. Nothing about the firm is published anywhere it controls.",
+    "A Justdial listing and an IndiaMART page exist for the same Mallampet / Bachupally business, and both are directories rather than a home. The IndiaMART page describes a proprietorship est. 2013 trading in solar water heaters, solar fencing and street lights alongside interior designing, false ceiling and modular kitchen - a small firm with a wider trade than rooftop solar."
+  ],
+  "next_steps": [
+    [
+      "Get one page that answers the ad",
+      "A single page with the offer, the subsidy explainer, the service area and an enquiry form. Right now the ad asks for a phone number and gives the customer nothing to check beforehand."
+    ],
+    [
+      "Own the audience the lead form creates",
+      "A Meta Pixel on that page plus the Conversions API turns the people who clicked and did not submit into a retargetable audience - the cheapest inventory a solar installer has."
+    ],
+    [
+      "Publish the proof the register already holds",
+      "TGREDCO empanelment TSRE240360, the Mallampet address and a real phone number belong on a page the firm controls. Right now a customer who wants to check the company has to find a government PDF."
+    ],
+    [
+      "Give the subsidy its own page",
+      "Rs.78,000 under PM Surya Ghar is the strongest line in both ads. A page explaining eligibility, paperwork and timeline is the single highest-value thing this firm could put online."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "eaglesolarhyd@gmail.com - published in the TGREDCO 2026 empanelled-supplier register, regn. TSRE240360"
+    ],
+    [
+      "Phone",
+      "9000666985 / 9000666984 (both printed in the live ads; the register lists 9000666985)"
+    ],
+    [
+      "Address",
+      "SY.No.142/A/1, Mallampet, Bachupally, Maheshwaram, Medchal, Hyderabad 500072 (per the TGREDCO register)"
+    ],
+    [
+      "Website",
+      "None published. No domain, no landing page."
+    ],
+    [
+      "Entity",
+      "Eagle Solar Systems - proprietorship, per the IndiaMART listing established 2013 in the name of RAMA KRISHNAIAH KUMBAM"
+    ],
+    [
+      "Meta page",
+      "facebook.com/61595903925834 (Eagle Solar Systems)"
+    ]
+  ],
+  "contact": {
+    "email": "eaglesolarhyd@gmail.com",
+    "phone": "+91 9000666985 / +91 9000666984",
+    "fb_page": "https://www.facebook.com/61595903925834/"
+  },
+  "site_evidence": {
+    "pixel": null,
+    "utm": null,
+    "checked_on": "2026-11-15",
+    "note": "There is no website to source-check, so Meta Pixel presence is not merely unverified - there is nowhere for a pixel to live. Both ads terminate in Facebook lead forms, so no ad click can reach any page the firm owns."
+  },
+  "no_website": true,
+  "no_website_note": "Eagle Solar Systems publishes no website of its own - no domain, no landing page, nothing. Both of its live Meta ads end in a Facebook lead form, so every rupee of spend lands inside Facebook and there is no page anywhere that a searcher, a referral or a shared link could land on. The email address eaglesolarhyd@gmail.com and the phone numbers are published in the Telangana government's TGREDCO 2026 empanelled-supplier register, not on a site of the firm's own.",
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "Live ads click to a Facebook lead form (fb.me) - traffic never reaches a page you own, so no URL can carry UTMs and click data stays inside Meta."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "Only 1 offer angle in live copy (subsidy amount) - every ad says the same thing."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Nov 7, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "2 distinct live ads visible - a comparison is at least possible."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: Facebook lead form."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 3,
+      "fail": 3,
+      "unknown": 9,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

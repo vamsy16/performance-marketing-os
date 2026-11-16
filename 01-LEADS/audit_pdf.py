@@ -1210,15 +1210,26 @@ def honesty_banner(audit):
     body = [
         Paragraph('<font color="#B26A00"><b>WEBSITE AUDIT NOT RUN</b></font>', ST["h3"]),
         Spacer(1, 1.2 * mm),
-        Paragraph(
+    ]
+    if website:
+        body.append(Paragraph(
             f"This report covers <b>live ad activity only</b>, read from the public Meta Ad "
             f"Library on {T(checked)}. No website was fetched, so it contains "
             f"<b>no audit score, no tracking/pixel findings, no page-speed data and no "
             f"conversion checklist</b> - those numbers are only real once the full pipeline "
             f"runs. The complete report for {T(company)} is produced with:<br/>"
             f"<font color='#1B6EC2'>python run_pipeline.py {T(website)} \"{T(company)}\" "
-            f"--city {T(audit.get('city') or 'Hyderabad')}</font>", ST["body"]),
-    ]
+            f"--city {T(audit.get('city') or 'Hyderabad')}</font>", ST["body"]))
+    else:
+        # No website exists at all, so there is no run_pipeline command to give.
+        # Say that plainly rather than printing a command with an empty URL.
+        body.append(Paragraph(
+            f"This report covers <b>live ad activity only</b>, read from the public Meta Ad "
+            f"Library on {T(checked)}. No website was fetched, so it contains "
+            f"<b>no audit score, no tracking/pixel findings, no page-speed data and no "
+            f"conversion checklist</b> - those numbers are only real once the full pipeline "
+            f"runs. {T(company)} publishes no website, so there is nothing to run the full "
+            f"pipeline against yet; the panel below states that as a finding.", ST["body"]))
     banner = Table([[body]], colWidths=[CONTENT_W])
     banner.setStyle(TableStyle([
         ("BACKGROUND", (0, 0), (-1, -1), colors.HexColor("#FFF7E6")),
@@ -1230,6 +1241,32 @@ def honesty_banner(audit):
         ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
     ]))
     return banner
+
+
+def no_website_panel(note):
+    """The panel for a lead that genuinely has no website.
+
+    An ads-only report for such a firm must say so on its face. The wording
+    deliberately avoids the strings the ads-only verifier treats as claims of a
+    website audit that never ran ("NO WEBSITE FOUND", "MISSING").
+    """
+    text = note or ("This company publishes no website of its own, so there is "
+                    "no page for its paid clicks to land on.")
+    rows = [Paragraph('<font color="#B23A00"><b>NO WEBSITE OF ITS OWN</b></font>',
+                      ST["h3"]),
+            Spacer(1, 1.2 * mm),
+            Paragraph(T(text), ST["body"])]
+    panel = Table([[rows]], colWidths=[CONTENT_W])
+    panel.setStyle(TableStyle([
+        ("BACKGROUND", (0, 0), (-1, -1), colors.HexColor("#FDEEE6")),
+        ("BOX", (0, 0), (-1, -1), 0.8, colors.HexColor("#B23A00")),
+        ("LINEBEFORE", (0, 0), (0, 0), 3, colors.HexColor("#B23A00")),
+        ("LEFTPADDING", (0, 0), (-1, -1), 10),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 10),
+        ("TOPPADDING", (0, 0), (-1, -1), 8),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
+    ]))
+    return panel
 
 
 def ads_only_tiles(audit):
@@ -1472,6 +1509,10 @@ def build_ads_only_story(audit):
 
     story.append(honesty_banner(audit))
     story.append(Spacer(1, 3.5 * mm))
+
+    if audit.get("no_website"):
+        story.append(no_website_panel(audit.get("no_website_note", "")))
+        story.append(Spacer(1, 3.5 * mm))
 
     if adlib.get("summary"):
         story.append(Paragraph(f"<b>Executive summary.</b> {T(adlib['summary'])}", ST["body"]))

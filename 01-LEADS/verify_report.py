@@ -196,7 +196,15 @@ def check_pdf(audit, pdf_path, errs):
         errs.append("PDF: missing executive summary")
 
     if audit.get("no_website"):
-        if "NO WEBSITE FOUND" not in flat:
+        if audit.get("ads_only"):
+            # Ads-only vocabulary must not borrow the full-audit panel's exact
+            # string - "NO WEBSITE FOUND" is on the ads-only forbidden list
+            # because it implies a site was looked for and not found. The
+            # ads-only panel states the same fact in its own words.
+            if "NO WEBSITE OF ITS OWN" not in flat:
+                errs.append("PDF: no_website ads-only lead must show the "
+                            "'NO WEBSITE OF ITS OWN' panel")
+        elif "NO WEBSITE FOUND" not in flat:
             errs.append("PDF: no_website lead must show 'NO WEBSITE FOUND' panel")
     elif audit.get("score", {}).get("score") is None:
         # No score is claimed when the page could not be read. Demanding a
@@ -258,10 +266,16 @@ def check_ads_only_json(audit, errs):
                             "(website audit data it cannot have)")
     if not audit.get("checked_on"):
         errs.append("JSON: checked_on missing - when was the ad data read?")
-    if not audit.get("website", "").startswith("http"):
-        errs.append("JSON: website missing - an ads-only lead still needs a live site URL")
     if audit.get("no_website"):
-        errs.append("JSON: no_website set on a lead that has a website")
+        # The lead really has no site. Legitimate for an ads-only report - the
+        # absence is a finding, not a gap in the data - but it must be declared
+        # and it must not coexist with a website URL.
+        if audit.get("website", "").startswith("http"):
+            errs.append("JSON: no_website set on a lead that has a website")
+        if not audit.get("no_website_note"):
+            errs.append("JSON: no_website lead needs a no_website_note")
+    elif not audit.get("website", "").startswith("http"):
+        errs.append("JSON: website missing - an ads-only lead still needs a live site URL")
 
     # Website-audit data must always be nested, never top level.
     for k in ("score", "pixels", "seo", "pagespeed", "conversion", "page_count"):

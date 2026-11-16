@@ -198,6 +198,36 @@ is, Telangana is close to exhausted: 31 sweeps, the full TGREDCO register,
 20+ Google Transparency probes and the IndiaMART listings have all been read,
 and the two firms left that clear the live-ads bar publish no email.
 
+## Third-eye pass 2 - run after the ads-only reports were built, 2026-11-16
+
+The owner's rule is that re-verification runs *after* the audit too, so every
+ad ID was re-opened on its own with `?id=<LibraryID>` after the reports and
+PDFs existed. All four resolved to the right advertiser and none moved:
+
+- `1677382683817329` -> Eagle Solar Systems, page `61595903925834`, Active,
+  started Nov 7 2026. Copy, phones and the fb.me CTA all match the report.
+- `1835997698149286` -> Eagle Solar Systems, same page, Active, Nov 12 2026.
+- `1143855195267637` -> Solar Apex Khammam, page `61596329420215`, Active,
+  Nov 4 2026.
+- `1667563528489384` -> Solar Apex Khammam, same page, Active, Nov 4 2026 -
+  the dealership-recruitment creative, excluded from the ad count.
+
+It still caught one real error, in the Solar Apex report rather than in an ID:
+
+**The brand ad does carry `www.solarapex.in` as its link.** The Ad Library
+renders it as a live link to the site; only the CTA button is a WhatsApp
+message. The report had claimed the site was "printed as text without linking
+to it", which is wrong. Corrected, and the finding is stronger for it: the
+site *is* in the ad, the pushed action is still a chat, and neither is
+measurable.
+
+Re-reading the live site the same day also corrected the contact finding. The
+header on both the homepage and `/contact/` shows `info@solarapex.in` and
+`+91 96660 05198` as text while linking to `mailto:info@domain.com` and
+`tel:+01 248 248 2481` - so the broken links are site-wide, not
+homepage-only, and the working pair sits in the "Support & Email" block lower
+on `/contact/`. The report now says exactly that.
+
 ## Files touched
 
 - `01-LEADS/leads.csv` — 68 → 70 rows; Ray On city + snippet corrected
@@ -209,6 +239,20 @@ and the two firms left that clear the live-ads bar publish no email.
 - `01-LEADS/refine_new_telangana_rows.py` — new, batch-14 history + confirmed
   WhatsApp destination
 - `01-LEADS/batches/telangana_state_2_leads_batch21_2026-11-15.md` — this log
+- `01-LEADS/ads_only_report.py` — `validate()` now accepts a lead flagged
+  `no_website` (with a mandatory `no_website_note`) instead of refusing it;
+  `build()` carries the flag into the JSON; the two batch-21 leads appended
+- `01-LEADS/audit_pdf.py` — `honesty_banner()` has a no-website branch that
+  prints no `run_pipeline` command rather than one with an empty URL; new
+  `no_website_panel()` renders "NO WEBSITE OF ITS OWN"
+- `01-LEADS/verify_report.py` — the ads-only JSON check accepts `no_website`
+  with its note, and the PDF check asks for the ads-only panel's wording
+  instead of the full-audit string
+- `01-LEADS/add_batch21_ads_only.py` — new, the append-entry script
+- `01-LEADS/ads_only_results/audit_Eagle_Solar_Systems.json` — new
+- `01-LEADS/ads_only_results/audit_Solar_Apex_Pvt_Ltd.json` — new
+- `02-OUTREACH/ads_only_pdfs/audit_Eagle_Solar_Systems.pdf` — new
+- `02-OUTREACH/ads_only_pdfs/audit_Solar_Apex_Pvt_Ltd.pdf` — new
 
 ## Honesty statement
 

@@ -1,0 +1,41 @@
+=== EMAIL FOR: Solar Apex Pvt Ltd ===
+City: Manikonda, Hyderabad
+To: info@solarapex.in
+Phone: +91 96660 05198
+Website: https://www.solarapex.in/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Solar_Apex_Pvt_Ltd.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-11-16 00:31
+
+--- SUBJECT ---
+Solar Apex Pvt Ltd: 2 live Hyderabad ads, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Solar Apex Pvt Ltd is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-11-15):
+
+  - 2 live ads on Meta, running since 04 November 2026
+  - every click lands in WhatsApp CTA, with the site as the ad link
+  - The brand ad carries www.solarapex.in as its link, but its CTA button is a WhatsApp message - so the site is in the ad while the action the reader is pushed to take is a chat. Neither route is measurable.
+  - The second live ad recruits dealerships, not customers - it promises Khammam dealers Rs.50,000 to Rs.1 lakh plus a month. Two different audiences are competing inside one ad account, and the recruitment ad is excluded from the count in this report.
+
+You can verify every line yourself:
+
+  Library ID 1143855195267637: https://www.facebook.com/ads/library/?id=1143855195267637
+  Library ID 1667563528489384: https://www.facebook.com/ads/library/?id=1667563528489384
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

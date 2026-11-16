@@ -4235,6 +4235,268 @@ LEADS = [
                      "carry a link to the site at all."),
         },
     },
+
+    {
+        "company": "Eagle Solar Systems",
+        "legal": "Eagle Solar Systems (proprietorship)",
+        "city": "Mallampet, Bachupally, Medchal, Hyderabad",
+        "website": "",
+        "no_website": True,
+        "no_website_note": (
+            "Eagle Solar Systems publishes no website of its own - no domain, no "
+            "landing page, nothing. Both of its live Meta ads end in a Facebook "
+            "lead form, so every rupee of spend lands inside Facebook and there "
+            "is no page anywhere that a searcher, a referral or a shared link "
+            "could land on. The email address eaglesolarhyd@gmail.com and the "
+            "phone numbers are published in the Telangana government's TGREDCO "
+            "2026 empanelled-supplier register, not on a site of the firm's own."),
+        "email": "eaglesolarhyd@gmail.com",
+        "phone": "+91 9000666985 / +91 9000666984",
+        "fb_page": "https://www.facebook.com/61595903925834/",
+        "checked_on": "2026-11-15",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 2,
+                "results_label": "2 ads on the page",
+                "query": "Eagle Solar Systems",
+                "ads": [
+                    ad("1677382683817329", "Eagle Solar Systems", "Nov 7, 2026",
+                       "Facebook lead form (fb.me 'Book now')",
+                       "నెలనెలా వేల రూపాయలు కరెంట్ బిల్లులకే ఖర్చు చేస్తున్నారా? "
+                       "మీ కష్టార్జిత డబ్బును కరెంట్ బిల్లుల కోసం ఖర్చు చేయడం ఆపండి! "
+                       "ఇప్పుడు మీ ఇంటిపై సోలార్ ప్యానెల్స్ ఏర్పాటు చేసుకొని విద్యుత్ "
+                       "ఖర్చుల నుంచి ఉపశమనం పొందండి. ఇంటికి రూఫ్‌టాప్ సోలార్ "
+                       "ఇన్‌స్టాలేషన్; అర్హత ఉన్న వారికి ₹78,000 వరకు ప్రభుత్వ సబ్సిడీ; "
+                       "కరెంట్ బిల్లులో 90% వరకు ఆదా చేసే అవకాశం; PM సూర్య ఘర్ ముఫ్త్ "
+                       "బిజిలీ యోజన ప్రయోజనాలు. కాల్ చేయండి 9000666985 / 9000666984. "
+                       "హైదరాబాద్ & తెలంగాణ అంతటా సేవలు.", ad_count=2),
+                    ad("1835997698149286", "Eagle Solar Systems", "Nov 12, 2026",
+                       "Facebook lead form (fb.me 'Book now')",
+                       "మీ ఇంటి కరెంట్ బిల్లులు తగ్గించుకోవాలనుకుంటున్నారా? ఇప్పుడే మీ "
+                       "ఇంటిపై సోలార్ ప్యానెల్స్ ఏర్పాటు చేసుకోండి. ప్రభుత్వ సబ్సిడీ "
+                       "₹78,000 వరకు పొందే అవకాశం ఉంది! నెలవారీ విద్యుత్ ఖర్చులను "
+                       "తగ్గించుకోండి. నాణ్యమైన సోలార్ ప్యానెల్స్, ప్రొఫెషనల్ "
+                       "ఇన్‌స్టాలేషన్, ప్రభుత్వ సబ్సిడీ సహాయం.", ad_count=2),
+                ],
+            },
+            "summary": (
+                "Eagle Solar Systems is running 2 active Meta ads on its own page "
+                "(facebook.com/61595903925834), started 7 and 12 November 2026 - five "
+                "days apart, so this is an account being actively added to rather than "
+                "one creative left running. Both ads are in Telugu and both lead on the "
+                "same three things: the PM Surya Ghar subsidy of up to Rs.78,000, up to "
+                "90% off the electricity bill, and a service area covering Hyderabad and "
+                "all of Telangana. Both CTAs are Facebook lead forms, so no click ever "
+                "leaves Facebook - and there is no website for a click to reach. Google "
+                "Ads Transparency cannot be probed for this firm because it owns no "
+                "domain, so Meta is the entire paid channel by necessity rather than by "
+                "choice."),
+        },
+        "funnel": {
+            "type": "Facebook lead form",
+            "destination": "fb.me 'Book now' - inside Facebook",
+            "meaning": (
+                "Every click becomes a form submission inside Facebook. That is workable "
+                "for collecting a phone number, but it is the only option available here: "
+                "with no website there is no page to install a pixel on, no audience to "
+                "retarget, nothing to A/B test a headline on, and nowhere for a referral "
+                "or a WhatsApp share to land."),
+        },
+        "findings": [
+            "There is no website at all. Both ads end in a Facebook lead form, so the "
+            "firm has no page a customer can visit, share or return to - the entire "
+            "digital presence is two ads and a lead form.",
+            "Two ads, five days apart (7 and 12 Nov 2026), carrying the same three "
+            "claims. The account is live and being added to, which is the right "
+            "instinct - but both creatives point at the same dead end.",
+            "The copy is specific where it counts: the Rs.78,000 PM Surya Ghar subsidy "
+            "figure, the 90% bill-saving claim and an explicit Hyderabad-and-Telangana "
+            "service area. The offer is clear; the place to act on it is not.",
+            "The contact details are published only in the state's TGREDCO 2026 "
+            "empanelled-supplier register (regn. TSRE240360) - eaglesolarhyd@gmail.com "
+            "and mobile 9000666985, which is the same number the ads print. Nothing "
+            "about the firm is published anywhere it controls.",
+            "A Justdial listing and an IndiaMART page exist for the same Mallampet / "
+            "Bachupally business, and both are directories rather than a home. The "
+            "IndiaMART page describes a proprietorship est. 2013 trading in solar water "
+            "heaters, solar fencing and street lights alongside interior designing, "
+            "false ceiling and modular kitchen - a small firm with a wider trade than "
+            "rooftop solar.",
+        ],
+        "next_steps": [
+            ("Get one page that answers the ad",
+             "A single page with the offer, the subsidy explainer, the service area and "
+             "an enquiry form. Right now the ad asks for a phone number and gives the "
+             "customer nothing to check beforehand."),
+            ("Own the audience the lead form creates",
+             "A Meta Pixel on that page plus the Conversions API turns the people who "
+             "clicked and did not submit into a retargetable audience - the cheapest "
+             "inventory a solar installer has."),
+            ("Publish the proof the register already holds",
+             "TGREDCO empanelment TSRE240360, the Mallampet address and a real phone "
+             "number belong on a page the firm controls. Right now a customer who wants "
+             "to check the company has to find a government PDF."),
+            ("Give the subsidy its own page",
+             "Rs.78,000 under PM Surya Ghar is the strongest line in both ads. A page "
+             "explaining eligibility, paperwork and timeline is the single highest-value "
+             "thing this firm could put online."),
+        ],
+        "contact_facts": [
+            ("Email", "eaglesolarhyd@gmail.com - published in the TGREDCO 2026 "
+                      "empanelled-supplier register, regn. TSRE240360"),
+            ("Phone", "9000666985 / 9000666984 (both printed in the live ads; the "
+                      "register lists 9000666985)"),
+            ("Address", "SY.No.142/A/1, Mallampet, Bachupally, Maheshwaram, Medchal, "
+                        "Hyderabad 500072 (per the TGREDCO register)"),
+            ("Website", "None published. No domain, no landing page."),
+            ("Entity", "Eagle Solar Systems - proprietorship, per the IndiaMART listing "
+                       "established 2013 in the name of RAMA KRISHNAIAH KUMBAM"),
+            ("Meta page", "facebook.com/61595903925834 (Eagle Solar Systems)"),
+        ],
+        "site_evidence": {
+            "pixel": None,
+            "utm": None,
+            "checked_on": "2026-11-15",
+            "note": ("There is no website to source-check, so Meta Pixel presence is "
+                     "not merely unverified - there is nowhere for a pixel to live. "
+                     "Both ads terminate in Facebook lead forms, so no ad click can "
+                     "reach any page the firm owns."),
+        },
+    },
+    {
+        "company": "Solar Apex Pvt Ltd",
+        "legal": "Solar Apex Pvt Ltd",
+        "city": "Manikonda, Hyderabad",
+        "website": "https://www.solarapex.in/",
+        "email": "info@solarapex.in",
+        "phone": "+91 96660 05198",
+        "fb_page": "https://www.facebook.com/61596329420215/",
+        "checked_on": "2026-11-15",
+        "ad_library": {
+            "meta_own": {
+                "found": True,
+                "results_count": 2,
+                "results_label": "2 ads on the page",
+                "query": "Solar Apex",
+                "ads": [
+                    ad("1143855195267637", "Solar Apex Khammam", "Nov 4, 2026",
+                       "CTA 'Send WhatsApp message' (api.whatsapp.com); the ad "
+                       "also carries www.solarapex.in as its link",
+                       "Call Us: 8125640121, 8008576480. Visit Us: Church Compound "
+                       "Center, Khammam. www.solarapex.in. "
+                       "#solar #khammam #telangana #savemoney #government", ad_count=2),
+                    ad("1667563528489384", "Solar Apex Khammam", "Nov 4, 2026",
+                       "WhatsApp (api.whatsapp.com)",
+                       "ఖమ్మం lo Solar Dealership teesukoni mee own business start "
+                       "cheyyalanukuntunnara? ... Solar Apex tho mee business journey "
+                       "ni start cheyyandi! ఖమ్మం lo maa solar dealerships teesukunna "
+                       "vallu nelaku ₹50,000 nunchi ₹1 lakh plus varaku sampadinche "
+                       "avakasalatho munduku velthunnaru. ... Meeru kothaga business "
+                       "start cheyyalanukuntunnara? Leka already meeku oka business "
+                       "undha? Mee existing business lo solar services ni kuda include "
+                       "cheskovachu!", ad_count=2),
+                ],
+            },
+            "summary": (
+                "Solar Apex is running 2 active Meta ads on its Khammam franchise page "
+                "(facebook.com/61596329420215), both started 4 November 2026. One is a "
+                "brand ad - phone numbers, the Khammam address and www.solarapex.in - "
+                "which is in segment for a rooftop-solar installer. The other recruits "
+                "dealerships, promising Khammam dealers Rs.50,000 to Rs.1 lakh plus a "
+                "month; that is a different audience and is excluded from the ad count "
+                "used for this report. The brand ad carries www.solarapex.in as its "
+                "link, but its CTA button is a WhatsApp message, so the action it "
+                "pushes is a chat rather than a visit. A third ad the batch-14 "
+                "run recorded, a hiring ad on the corporate page "
+                "facebook.com/61575888183929, is no longer in the Ad Library. Google Ads "
+                "Transparency for solarapex.in returns 0 ads under region=IN, so Meta is "
+                "the entire paid channel."),
+        },
+        "funnel": {
+            "type": "WhatsApp CTA, with the site as the ad link",
+            "destination": "CTA 'Send WhatsApp message' -> api.whatsapp.com; the ad's "
+                           "own link is www.solarapex.in",
+            "meaning": (
+                "The ad does point at solarapex.in, so the site is not invisible - but "
+                "the button the reader is pushed to press opens a WhatsApp conversation "
+                "instead. Nothing is measurable either way: no pixel firing, no "
+                "conversion event, no retargeting pool, and no page where a different "
+                "headline or price could be tested."),
+        },
+        "findings": [
+            "The brand ad carries www.solarapex.in as its link, but its CTA button is a "
+            "WhatsApp message - so the site is in the ad while the action the reader is "
+            "pushed to take is a chat. Neither route is measurable.",
+            "The second live ad recruits dealerships, not customers - it promises "
+            "Khammam dealers Rs.50,000 to Rs.1 lakh plus a month. Two different "
+            "audiences are competing inside one ad account, and the recruitment ad is "
+            "excluded from the count in this report.",
+            "The site's header shows info@solarapex.in and +91 96660 05198, but both "
+            "of those links are wrong on every page: the email href points at "
+            "info@domain.com and the phone href at +01 248 248 2481, a placeholder. A "
+            "second block lower down the /contact/ page carries both correctly, so the "
+            "address is real - it is just one tap away from the version that works.",
+            "The ad phone numbers (8125640121, 8008576480) do not match the website "
+            "phone (+91 96660 05198). Two numbers in market, one on the site, and no "
+            "way for a customer to tell which is current.",
+            "The registered address is Manikonda, Hyderabad 500089, while the "
+            "advertising page is the Khammam outlet (Church Compound Center). Both are "
+            "inside Telangana, but the corporate site and the local page are run as "
+            "separate things.",
+            "Zero Google ads under region=IN for solarapex.in, so the whole paid "
+            "presence is these two Meta ads on one franchise page.",
+        ],
+        "next_steps": [
+            ("Make the site the destination, not the fallback",
+             "The brand ad already carries solarapex.in as its link but pushes a "
+             "WhatsApp CTA. Send it to a real page - offer, subsidy explainer, "
+             "enquiry form - with a pixel on that page, so the click is measurable "
+             "and retargetable instead of ending in a chat."),
+            ("Split the two audiences",
+             "Customer acquisition and dealership recruitment are different buyers with "
+             "different economics. Separate campaigns, or at minimum separate ads with "
+             "separate objectives, so neither dilutes the other."),
+            ("Fix the header contact links",
+             "The email link points at info@domain.com and the phone link at "
+             "+01 248 248 2481, on every page of the site. The /contact/ page already "
+             "has a working pair lower down - it is a two-line fix in the theme "
+             "header, and right now it is losing every enquiry that taps instead of "
+             "reading."),
+            ("Reconcile the phone numbers",
+             "Publish one number that answers, and route the ad numbers to it. Two "
+             "unmatched numbers in market reads as a company that is hard to reach."),
+        ],
+        "contact_facts": [
+            ("Email", "info@solarapex.in - published on solarapex.in/contact/. The "
+                      "header link to it is broken and points at info@domain.com; the "
+                      "'Support & Email' block lower on /contact/ has a working mailto"),
+            ("Phone / WhatsApp", "+91 96660 05198 on the site; the header tel: link is "
+                                 "the placeholder +01 248 248 2481. WhatsApp "
+                                 "wa.me/919666005198 works. The ads print 8125640121 "
+                                 "and 8008576480"),
+            ("Address", "3rd floor, Kakatiya Marvel, near Lanco Hills Road, Sri Laxmi "
+                        "Nagar Colony, Manikonda, Hyderabad, Telangana 500089"),
+            ("Franchise address", "Church Compound Center, Khammam - the address the "
+                                  "live ads print"),
+            ("Services", "Residential, commercial, industrial, apartments, street "
+                         "lights, water heaters and open-access solar"),
+            ("Meta pages", "facebook.com/61596329420215 (Solar Apex Khammam, the "
+                           "advertiser) and facebook.com/61575888183929 (Solar Apex "
+                           "Pvt Ltd, corporate)"),
+        ],
+        "site_evidence": {
+            "pixel": None,
+            "utm": None,
+            "checked_on": "2026-11-15",
+            "note": ("Homepage and /contact/ page read live on 2026-11-16 through a "
+                     "text-only fetch, so page source was not pulled and Meta Pixel "
+                     "presence is unverified either way; graded unknown per the "
+                     "catalog's runtime contract. The brand ad does carry "
+                     "www.solarapex.in as its link, but its CTA is a WhatsApp "
+                     "message, so no click is measured against the site."),
+        },
+    },
 ]
 
 
@@ -4257,11 +4519,20 @@ def validate(lead):
         problems.append(f"{lead['company']}: marked as advertising but has no ads")
     if ads and not (lead.get("ad_library") or {}).get("meta_own", {}).get("found"):
         problems.append(f"{lead['company']}: has ads but marked as not advertising")
-    # These leads have websites - the report must not pretend otherwise.
-    if not lead.get("website", "").startswith("http"):
-        problems.append(f"{lead['company']}: website missing")
     if lead.get("no_website"):
-        problems.append(f"{lead['company']}: no_website is not valid in ads-only mode")
+        # A firm that genuinely has no website is a legitimate ads-only lead -
+        # and for a solar installer buying ads with nowhere to send anyone,
+        # the absence IS the finding. It must be stated, not refused: a
+        # builder that silently dropped such a lead would hide the strongest
+        # pitch we have. The note is what the PDF prints, so it is mandatory.
+        if not lead.get("no_website_note"):
+            problems.append(f"{lead['company']}: no_website needs a "
+                            f"no_website_note")
+        if lead.get("website", "").startswith("http"):
+            problems.append(f"{lead['company']}: no_website is True but a "
+                            f"website URL is also set - pick one")
+    elif not lead.get("website", "").startswith("http"):
+        problems.append(f"{lead['company']}: website missing")
     return problems
 
 
@@ -4285,6 +4556,12 @@ def build(lead):
                     "fb_page": lead.get("fb_page", "")},
         "site_evidence": lead.get("site_evidence", {}),
     }
+    # A lead with genuinely no website must carry that fact into the record, so
+    # the verifier and the PDF can both see it. The keys are only emitted when
+    # they are true, so every existing report is byte-identical.
+    if lead.get("no_website"):
+        audit["no_website"] = True
+        audit["no_website_note"] = lead.get("no_website_note", "")
     # Ads-audit control review (claude-ads methodology) - stored in the JSON so
     # the grading is inspectable, and rendered as its own PDF section.
     try:

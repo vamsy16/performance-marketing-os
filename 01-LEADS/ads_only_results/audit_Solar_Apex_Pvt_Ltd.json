@@ -1,0 +1,229 @@
+{
+  "company": "Solar Apex Pvt Ltd",
+  "legal": "Solar Apex Pvt Ltd",
+  "city": "Manikonda, Hyderabad",
+  "website": "https://www.solarapex.in/",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-11-15",
+  "generated_at": "2026-11-16 00:28",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 2,
+      "results_label": "2 ads on the page",
+      "query": "Solar Apex",
+      "ads": [
+        {
+          "library_id": "1143855195267637",
+          "library_url": "https://www.facebook.com/ads/library/?id=1143855195267637",
+          "ad_count": 2,
+          "format": null,
+          "page_name": "Solar Apex Khammam",
+          "started": "Nov 4, 2026",
+          "destination": "CTA 'Send WhatsApp message' (api.whatsapp.com); the ad also carries www.solarapex.in as its link",
+          "text": "Call Us: 8125640121, 8008576480. Visit Us: Church Compound Center, Khammam. www.solarapex.in. #solar #khammam #telangana #savemoney #government",
+          "images": []
+        },
+        {
+          "library_id": "1667563528489384",
+          "library_url": "https://www.facebook.com/ads/library/?id=1667563528489384",
+          "ad_count": 2,
+          "format": null,
+          "page_name": "Solar Apex Khammam",
+          "started": "Nov 4, 2026",
+          "destination": "WhatsApp (api.whatsapp.com)",
+          "text": "ఖమ్మం lo Solar Dealership teesukoni mee own business start cheyyalanukuntunnara? ... Solar Apex tho mee business journey ni start cheyyandi! ఖమ్మం lo maa solar dealerships teesukunna vallu nelaku ₹50,000 nunchi ₹1 lakh plus varaku sampadinche avakasalatho munduku velthunnaru. ... Meeru kothaga business start cheyyalanukuntunnara? Leka already meeku oka business undha? Mee existing business lo solar services ni kuda include cheskovachu!",
+          "images": []
+        }
+      ]
+    },
+    "summary": "Solar Apex is running 2 active Meta ads on its Khammam franchise page (facebook.com/61596329420215), both started 4 November 2026. One is a brand ad - phone numbers, the Khammam address and www.solarapex.in - which is in segment for a rooftop-solar installer. The other recruits dealerships, promising Khammam dealers Rs.50,000 to Rs.1 lakh plus a month; that is a different audience and is excluded from the ad count used for this report. The brand ad carries www.solarapex.in as its link, but its CTA button is a WhatsApp message, so the action it pushes is a chat rather than a visit. A third ad the batch-14 run recorded, a hiring ad on the corporate page facebook.com/61575888183929, is no longer in the Ad Library. Google Ads Transparency for solarapex.in returns 0 ads under region=IN, so Meta is the entire paid channel."
+  },
+  "funnel": {
+    "type": "WhatsApp CTA, with the site as the ad link",
+    "destination": "CTA 'Send WhatsApp message' -> api.whatsapp.com; the ad's own link is www.solarapex.in",
+    "meaning": "The ad does point at solarapex.in, so the site is not invisible - but the button the reader is pushed to press opens a WhatsApp conversation instead. Nothing is measurable either way: no pixel firing, no conversion event, no retargeting pool, and no page where a different headline or price could be tested."
+  },
+  "findings": [
+    "The brand ad carries www.solarapex.in as its link, but its CTA button is a WhatsApp message - so the site is in the ad while the action the reader is pushed to take is a chat. Neither route is measurable.",
+    "The second live ad recruits dealerships, not customers - it promises Khammam dealers Rs.50,000 to Rs.1 lakh plus a month. Two different audiences are competing inside one ad account, and the recruitment ad is excluded from the count in this report.",
+    "The site's header shows info@solarapex.in and +91 96660 05198, but both of those links are wrong on every page: the email href points at info@domain.com and the phone href at +01 248 248 2481, a placeholder. A second block lower down the /contact/ page carries both correctly, so the address is real - it is just one tap away from the version that works.",
+    "The ad phone numbers (8125640121, 8008576480) do not match the website phone (+91 96660 05198). Two numbers in market, one on the site, and no way for a customer to tell which is current.",
+    "The registered address is Manikonda, Hyderabad 500089, while the advertising page is the Khammam outlet (Church Compound Center). Both are inside Telangana, but the corporate site and the local page are run as separate things.",
+    "Zero Google ads under region=IN for solarapex.in, so the whole paid presence is these two Meta ads on one franchise page."
+  ],
+  "next_steps": [
+    [
+      "Make the site the destination, not the fallback",
+      "The brand ad already carries solarapex.in as its link but pushes a WhatsApp CTA. Send it to a real page - offer, subsidy explainer, enquiry form - with a pixel on that page, so the click is measurable and retargetable instead of ending in a chat."
+    ],
+    [
+      "Split the two audiences",
+      "Customer acquisition and dealership recruitment are different buyers with different economics. Separate campaigns, or at minimum separate ads with separate objectives, so neither dilutes the other."
+    ],
+    [
+      "Fix the header contact links",
+      "The email link points at info@domain.com and the phone link at +01 248 248 2481, on every page of the site. The /contact/ page already has a working pair lower down - it is a two-line fix in the theme header, and right now it is losing every enquiry that taps instead of reading."
+    ],
+    [
+      "Reconcile the phone numbers",
+      "Publish one number that answers, and route the ad numbers to it. Two unmatched numbers in market reads as a company that is hard to reach."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Email",
+      "info@solarapex.in - published on solarapex.in/contact/. The header link to it is broken and points at info@domain.com; the 'Support & Email' block lower on /contact/ has a working mailto"
+    ],
+    [
+      "Phone / WhatsApp",
+      "+91 96660 05198 on the site; the header tel: link is the placeholder +01 248 248 2481. WhatsApp wa.me/919666005198 works. The ads print 8125640121 and 8008576480"
+    ],
+    [
+      "Address",
+      "3rd floor, Kakatiya Marvel, near Lanco Hills Road, Sri Laxmi Nagar Colony, Manikonda, Hyderabad, Telangana 500089"
+    ],
+    [
+      "Franchise address",
+      "Church Compound Center, Khammam - the address the live ads print"
+    ],
+    [
+      "Services",
+      "Residential, commercial, industrial, apartments, street lights, water heaters and open-access solar"
+    ],
+    [
+      "Meta pages",
+      "facebook.com/61596329420215 (Solar Apex Khammam, the advertiser) and facebook.com/61575888183929 (Solar Apex Pvt Ltd, corporate)"
+    ]
+  ],
+  "contact": {
+    "email": "info@solarapex.in",
+    "phone": "+91 96660 05198",
+    "fb_page": "https://www.facebook.com/61596329420215/"
+  },
+  "site_evidence": {
+    "pixel": null,
+    "utm": null,
+    "checked_on": "2026-11-15",
+    "note": "Homepage and /contact/ page read live on 2026-11-16 through a text-only fetch, so page source was not pulled and Meta Pixel presence is unverified either way; graded unknown per the catalog's runtime contract. The brand ad does carry www.solarapex.in as its link, but its CTA is a WhatsApp message, so no click is measured against the site."
+  },
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "Only 1 offer angle in live copy (bill savings) - every ad says the same thing."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Nov 4, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "2 distinct live ads visible - a comparison is at least possible."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: WhatsApp CTA, with the site as the ad link."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 3,
+      "fail": 2,
+      "unknown": 10,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}
