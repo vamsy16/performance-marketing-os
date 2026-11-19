@@ -88,10 +88,29 @@ python ads_only_outreach.py --export  # same, for live-ad reports (report_kind=a
 python sequence.py status             # every lead, every step, due dates, report kind
 python sequence.py due                # follow-ups ready to draft today
 python sequence.py mark-sent --company "Ksquare Energy" --step 0
+python sequence.py mark-skipped --company "Valcan Solar" --step 1 \
+    --reason "bounced: info@valcansolar.com (mailer-daemon, server misconfigured)"
 python tests_sequence.py              # sequence engine tests
 ```
 
 Change the gap anytime: `SP_FOLLOWUP_DELAY_DAYS=3` (default 2).
+
+## Closing a lead that must never be mailed again
+
+`mark-sent` is the only normal way a step ends. When a step must never be
+sent at all — the address hard-bounced, the thread is trashed, the lead
+already replied elsewhere — close it with `mark-skipped`, otherwise it stays
+on the due list forever and the next run drafts into a dead mailbox:
+
+```bash
+python sequence.py mark-skipped --company "<X>" --step <n> --reason "<why>"
+```
+
+A skipped step is terminal: it drops out of `due`, is not counted in
+`mails_sent`, and stops the clock for the step after it. `--reason` is
+required — quote the bounce notice (date + Message-ID) so the decision can be
+audited later. Skip every remaining step in the sequence, not just the next
+one.
 
 ## What the agent must never do
 
