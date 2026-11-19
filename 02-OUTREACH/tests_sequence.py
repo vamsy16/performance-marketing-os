@@ -227,5 +227,46 @@ class TestAdsOnlyFollowups(unittest.TestCase):
             S.mark_draft(seq, 1, "draft-x")  # step 0 not sent yet -> refused
 
 
+class TestSkippedTerminal(unittest.TestCase):
+    """A bounced address must never come due again."""
+
+    def test_skipped_step_is_not_due(self):
+        m, seq = fresh_manifest()
+        S.mark_sent(seq, 0, thread_id="t1", message_id="<m1>", on=date(2026, 10, 19))
+        self.assertEqual(len(S.due_followups(m, today=date(2026, 10, 21))), 1)
+        S.mark_skipped(seq, 1, "bounced: info@example.com (mailer-daemon)",
+                       on=date(2026, 10, 21))
+        self.assertEqual(S.due_followups(m, today=date(2026, 10, 21)), [])
+        self.assertEqual(S.due_followups(m, today=date(2030, 1, 1)), [])
+
+    def test_skipped_step_is_not_counted_as_sent(self):
+        m, seq = fresh_manifest()
+        S.mark_sent(seq, 0, thread_id="t1", message_id="<m1>", on=date(2026, 10, 19))
+        S.mark_skipped(seq, 1, "bounced", on=date(2026, 10, 21))
+        self.assertEqual(seq["mails_sent"], 1)
+        self.assertEqual(seq["next_followup_date"], "")
+        self.assertIsNone(seq["next_step"])
+
+    def test_skipping_step_zero_freezes_the_whole_chain(self):
+        m, seq = fresh_manifest()
+        S.mark_sent(seq, 0, thread_id="t1", message_id="<m1>", on=date(2026, 10, 19))
+        for step in range(1, S.MAX_STEP + 1):
+            S.mark_skipped(seq, step, "bounced address", on=date(2026, 10, 21))
+        self.assertEqual(S.due_followups(m, today=date(2026, 11, 19)), [])
+        self.assertEqual(seq["mails_sent"], 1)
+
+    def test_reason_is_required(self):
+        m, seq = fresh_manifest()
+        with self.assertRaises(SystemExit):
+            S.mark_skipped(seq, 1, "   ")
+
+    def test_skipped_stops_the_clock_for_the_next_step(self):
+        m, seq = fresh_manifest()
+        S.mark_sent(seq, 0, thread_id="t1", message_id="<m1>", on=date(2026, 10, 19))
+        S.mark_skipped(seq, 1, "bounced", on=date(2026, 10, 21))
+        self.assertEqual(S.due_date_for(seq, 2), "")
+        self.assertEqual(S.get_step(seq, 1)["skipped_reason"], "bounced")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

@@ -17,6 +17,10 @@ Each sequence (one row per lead) tracks these columns:
                       empty until the previous email is sent
 
 Rules (enforced here, not left to chance):
+  * A step can be closed as SKIPPED (bounce, dead address, reply received)
+    with `mark-skipped --reason ...`. A skipped step is terminal: it never
+    comes due again and never counts as a sent mail. Without this the engine
+    would keep listing a bounced lead as due forever.
   * Every follow-up subject is "Re: <original subject>".
   * A follow-up draft may only be created on/after its next_followup_date,
     and only once the previous step is SENT with a recorded thread_id +
@@ -35,6 +39,8 @@ Usage:
       --draft-id r-123 --thread-id 18abc --message-id "<...@mail.gmail.com>"
   python sequence.py mark-sent  --company "Ksquare Energy" --step 0 \
       --thread-id 18abc --message-id "<...@mail.gmail.com>" [--date 2026-10-18]
+  python sequence.py mark-skipped --company "Valcan Solar" --step 1 \
+      --reason "bounced: info@valcansolar.com (mailer-daemon, server misconfigured)"
 """
 
 import argparse
@@ -61,6 +67,11 @@ YOUR_SIGNATURE = f"{YOUR_NAME}\n{YOUR_AGENCY}\n{YOUR_PHONE}"
 FOLLOWUP_DELAY_DAYS = int(os.environ.get("SP_FOLLOWUP_DELAY_DAYS", "2"))
 
 MAX_STEP = 3  # 0 = initial, 1..3 = follow-ups (3 = breakup). Never more.
+
+# Terminal step states — a step in one of these is finished: it is never
+# listed as due again. "sent" is the normal end; "skipped" closes a step that
+# must never be mailed (bounced address, reply already received, thread dead).
+TERMINAL_STATES = ("sent", "skipped")
 
 
 # ---------------------------------------------------------------------------
@@ -291,6 +302,8 @@ def due_date_for(seq, step_no):
     if step_no == 0:
         return ""
     prev = get_step(seq, step_no - 1)
+    if prev.get("status") == "skipped":
+        return ""  # the chain stops: the previous email must never be sent
     if not prev.get("sent_at"):
         return ""
     sent = date.fromisoformat(prev["sent_at"])
@@ -320,11 +333,16 @@ def refresh_columns(seq):
     seq["next_followup_date"] = ""
     seq["next_step"] = None
     for s in steps:
-        if s["step"] == 0 or s.get("status") == "sent":
+        if s["step"] == 0 or s.get("status") in TERMINAL_STATES:
             continue
         # First unsent follow-up: its due date is the next follow-up date
         # ('' while the previous email hasn't been sent yet).
-        seq["next_followup_date"] = due_date_for(seq, s["step"])
+        due = due_date_for(seq, s["step"])
+        if not due:
+            # Clock not started (previous mail unsent, or that step was
+            # skipped so the chain stops) — there is no next follow-up yet.
+            break
+        seq["next_followup_date"] = due
         seq["next_step"] = s["step"]
         break
     return seq
@@ -389,6 +407,23 @@ def mark_sent(seq, step_no, thread_id="", message_id="", on=None):
     return step
 
 
+def mark_skipped(seq, step_no, reason, on=None):
+    """Close a step permanently without sending it — bounced address, lead
+    already replied, thread dead. A skipped step is terminal: it drops out of
+    `due` for good, so the engine can never draft a mail to a dead address.
+    A reason is required: this is the audit trail for why we stopped."""
+    if not (reason or "").strip():
+        raise SystemExit("REFUSED: mark-skipped needs --reason "
+                         "(why this step will never be sent).")
+    step = get_step(seq, step_no)
+    step["status"] = "skipped"
+    step["skipped_reason"] = reason.strip()
+    step["skipped_at"] = (on or date.today()).isoformat() \
+        if not isinstance(on, str) else on
+    refresh_due_dates(seq)
+    return step
+
+
 def due_followups(manifest, today=None):
     """Follow-ups due TODAY: previous step was sent >= delay days ago.
     `action` is 'create_draft' (the normal case — on the due day the agent
@@ -399,7 +434,7 @@ def due_followups(manifest, today=None):
     for seq in manifest["sequences"]:
         refresh_due_dates(seq)
         for s in seq["steps"]:
-            if s["step"] == 0 or s["status"] == "sent":
+            if s["step"] == 0 or s["status"] in TERMINAL_STATES:
                 continue
             if s.get("due_date") and date.fromisoformat(s["due_date"]) <= today:
                 due.append({"company": seq["company"], "to": seq.get("to", ""),
@@ -444,6 +479,14 @@ def main():
     s.add_argument("--thread-id", default="")
     s.add_argument("--message-id", default="")
     s.add_argument("--date", default="", help="Sent date YYYY-MM-DD (default today)")
+
+    k = sub.add_parser("mark-skipped",
+                       help="Close a step permanently (bounce/dead address/reply)")
+    k.add_argument("--company", required=True)
+    k.add_argument("--step", type=int, required=True)
+    k.add_argument("--reason", required=True,
+                   help="Why this step will never be sent (required)")
+    k.add_argument("--date", default="", help="Date decided YYYY-MM-DD (default today)")
 
     args = p.parse_args()
     manifest = load_manifest()
@@ -500,6 +543,16 @@ def main():
         nxt = due_date_for(seq, args.step + 1) if args.step < MAX_STEP else ""
         print(f"Marked {seq['company']} step {args.step} as sent."
               + (f" Next follow-up due: {nxt}" if nxt else ""))
+
+    elif args.cmd == "mark-skipped":
+        seq = _find(manifest, args.company)
+        mark_skipped(seq, args.step, args.reason, args.date or None)
+        save_manifest(manifest)
+        nxt = seq.get("next_followup_date") or ""
+        print(f"Skipped {seq['company']} step {args.step} "
+              f"({args.reason.strip()})."
+              + (f" Next follow-up due: {nxt}" if nxt
+                 else " Sequence closed — nothing more to send."))
 
 
 if __name__ == "__main__":
