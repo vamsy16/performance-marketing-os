@@ -1,0 +1,47 @@
+=== EMAIL FOR: Sri Balaji Solar Energies ===
+City: Hanumakonda, Telangana
+To: sbse4444@gmail.com
+Phone: +91 9959491774
+Website: https://sribalajisolarenergies.com/
+Report kind: LIVE AD REPORT (ad activity + what any visitor can see on the public site)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Sri_Balaji_Solar_Energies.pdf
+  ^^ Use THIS 2026-11-21 PDF. Do NOT attach 02-OUTREACH/audit_pdfs/audit_Sri_Balaji_Solar_Energies.pdf,
+     the May 29 full audit, which wrongly says "no website found" and scores 0/100.
+Template: ads_only_live_ad_report (hand-written body - the generator's generic copy would have claimed "no website findings", which is false for this report)
+Generated: 2026-11-21
+
+--- SUBJECT ---
+Sri Balaji Solar Energies: 6 live Hanumakonda, Telangana ads, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hanumakonda solar market, and I put together a short report on what Sri Balaji Solar Energies is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-11-21):
+
+  - 6 live ads on Meta, running since 29 May 2026
+  - every click lands in a Facebook lead form, not your website
+  - All six ads click to fb.me lead forms, so the traffic never reaches sribalajisolarenergies.com - no UTM can be attached, no retargeting audience can be built, and you cannot tell which of the six ads produced which enquiry.
+  - The home page's primary button, "Click Here", sends visitors to pmsuryaghar.gov.in/consumerLogin - the government portal, not your own enquiry flow.
+
+You can verify every line yourself:
+
+  Library ID 942037648839408: https://www.facebook.com/ads/library/?id=942037648839408
+  Library ID 1454295123168911: https://www.facebook.com/ads/library/?id=1454295123168911
+
+To be clear about what this is: it is an ad report. It is built from your live ad cards and from what any visitor can see on your public site - it is not a full website audit, so there is no tracking or speed testing in it.
+
+Two things I would fix this week if it were my account. First, the phone number: your contact page shows +91 903 204 1774, but the link behind it actually dials +91 951 595 49 23, and neither is the number on your TGREDCO listing. Second, the counters: the home page says "0+ Project Done / 0+ Happy Clients", the About page says 1000+ projects and 1200+ clients, and the ads say 10,000+ customers. Any buyer who opens two of those pages sees three different companies.
+
+The good news is that the assets are already there - Collector Office Suryapet, Talla Padmavathi 56 kW, Relief Hospital Arepally 54 kW, Vagdevi Junior College 30 kW. They just need to be presented as projects with names, capacities and locations, instead of an unlabelled photo gallery.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

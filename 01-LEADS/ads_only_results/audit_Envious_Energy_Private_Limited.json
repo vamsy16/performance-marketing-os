@@ -1,0 +1,316 @@
+{
+  "company": "Envious Energy Private Limited",
+  "legal": "Envious Energy Private Limited (TGREDCO vendor #12)",
+  "city": "Hyderabad, Telangana",
+  "website": "https://www.enviousenergy.com/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-21",
+  "generated_at": "2026-11-21",
+  "source": "Meta Ad Library (India, active) + live website fetch, 2026-11-21",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "1 live ad",
+      "query": "Envious Energy advertiser search (Meta Ad Library, India, active)",
+      "ads": [
+        {
+          "library_id": "1122485234026419",
+          "library_url": "https://www.facebook.com/ads/library/?id=1122485234026419",
+          "page_name": "Envious Energy Private Limited",
+          "started": "Nov 20, 2026",
+          "destination": "WhatsApp (API.WHATSAPP.COM) - Send WhatsApp message",
+          "text": "Switch to Solar. Save More Every Day!\n\nReduce your Electricity bill with Solar Installation\n\n**Switch to Solar. Save More Every Day!**\n\nWhy pay higher electricity bills when the sun can power your home and business?\n\nHigh-Quality Solar Panels\nExpert Installation\nLower Electricity Bills\nGovernment Subsidy Assistance*\nReliable After-Sales Support\n\nInvest in clea... [card truncated by Meta]\n\nResidential & Commercial Solar"
+        }
+      ]
+    },
+    "summary": "1 live Meta ad confirmed on 2026-11-21 by opening library ID 1122485234026419 directly on the Envious Energy Private Limited page (page ID 1051756784689440). It is the only ad running: the page's own ad listing returns exactly 1 active ad. The creative sells residential and commercial rooftop solar with government subsidy assistance and clicks to WhatsApp, not to the website. The website was read live the same day. Google Ads Transparency records were not checked in this pass."
+  },
+  "funnel": {
+    "type": "WhatsApp chat",
+    "destination": "WhatsApp (API.WHATSAPP.COM) - Send WhatsApp message",
+    "meaning": "The only live ad clicks straight to a WhatsApp chat. The enquiry never reaches enviousenergy.com, so the site cannot measure, retarget or attribute any of this spend, and a brand with 13 years of project history gets no retargeting audience from it."
+  },
+  "findings": [
+    "The single live ad clicks to WhatsApp, not to enviousenergy.com - the enquiry never reaches the website, so the spend cannot be measured, retargeted or attributed.",
+    "The social-proof numbers on the home page are placeholders or incoherent: 'Solar Installations 304+', 'Energy Generated 32MW+', 'Solar System Lifespan 1+', 'Solar Powered Homes 24+', 'Trees 4K+', 'Commitment to Clean 4%', and a 'Years Of Experience 0+' counter. 'Commitment to Clean 4%' and a 1+ year system lifespan are not things a buyer can believe.",
+    "The review widget on the home page renders '0.2/5' directly above 'Over 500 + Reviews'. A 0.2 rating printed on the page does more damage than showing no rating at all.",
+    "Two template team members are still published: /our-team/marvin-mckinney/ and /our-team/kathryn-murphy/ carry stock bios ('Marvin McKinney ... over a decade of experience ... Leslie leads complex projects', with the wrong name in the bio) and skill bars set to 1%.",
+    "The company has three different addresses across its own channels: the contact page says 1-8-619 (29/2RT) Sai Arcade, Prakash Nagar, Begumpet, Hyderabad-500016; the footer says #1-10-75/1/1 to 6, Unit 608, Saptagiri Towers, Begumpet, Hyderabad-500016; TGREDCO lists H.No 35-69, GK Colony, Sainikpuri Post, Secunderabad-500094.",
+    "Two support phone numbers are in circulation on the same site (+91-89777 21950 in the header and footer) against the TGREDCO empanelled contact of 9000377655, and the footer email link points at 'mailto:info@domainname.com' instead of the real address.",
+    "The home page has no contact form - the enquiry form only exists on /contact-us/ - so a visitor who is ready to enquire on the landing page has nowhere to type.",
+    "Every H1 and section heading is rendered with letter-spacing ('U t i l i z e   S o l a r   E n e r g y'), which reads as broken text to a screen reader and to Google.",
+    "Ad copy promises 'Government Subsidy Assistance*' with an asterisk, but the ad card never carries the qualifying footnote and the site buries the Rs.78,000 PM Surya Ghar figure inside an FAQ accordion rather than on the landing path."
+  ],
+  "next_steps": [
+    [
+      "Point the ad at the website, not just WhatsApp",
+      "Add a website destination with a Meta Pixel and UTMs alongside the WhatsApp CTA so the click can be measured and the visitor can be retargeted."
+    ],
+    [
+      "Replace the placeholder counters with real figures",
+      "TGREDCO empanelment and 13 years of delivery are stronger proof than '304+' and '4%'. Publish installed kW, project count and the named institutional clients (Gitanjali School, NTR Model School, The Hyderabad Gymkhana) as numbers, not counters."
+    ],
+    [
+      "Remove the 0.2/5 review widget",
+      "Fix the rating source or remove the widget until it renders correctly - a 0.2/5 badge next to '500+ reviews' destroys trust at the exact moment of decision."
+    ],
+    [
+      "Delete or replace the stock team pages",
+      "Marvin McKinney and Kathryn Murphy are unused template entries with mismatched bios and 1% skill bars. Replace them with the real leadership team or unpublish them."
+    ],
+    [
+      "Settle on one address and one phone number",
+      "Pick the empanelled address and the number you actually answer, and use them in the header, the footer, the contact page and the ad account. Fix the 'info@domainname.com' footer link."
+    ],
+    [
+      "Put a form on the landing page",
+      "Add the enquiry form to the home page, directly under the hero, so the visit does not have to survive a second click."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Phone (site)",
+      "+91-89777 21950"
+    ],
+    [
+      "Phone (TGREDCO list)",
+      "9000377655 (G. Surander Babu)"
+    ],
+    [
+      "Email",
+      "info@enviousenergy.com"
+    ],
+    [
+      "Address (site, contact page)",
+      "1-8-619 (29/2RT), Sai Arcade, 2nd floor, Prakash Nagar, Begumpet, Hyderabad-500016"
+    ],
+    [
+      "Address (site, footer)",
+      "#1-10-75/1/1 to 6, Unit 608, Saptagiri Towers, Begumpet, Hyderabad-500016"
+    ],
+    [
+      "Address (TGREDCO list)",
+      "H.No 35-69, GK Colony, Sainikpuri Post, Secunderabad-500094"
+    ],
+    [
+      "Facebook page",
+      "https://www.facebook.com/enviousenergyprivatelimited/"
+    ],
+    [
+      "Website",
+      "https://www.enviousenergy.com/"
+    ],
+    [
+      "Established",
+      "2013 (stated on the site)"
+    ]
+  ],
+  "contact": {
+    "phone": "+91 89777 21950",
+    "email": "info@enviousenergy.com"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://www.enviousenergy.com/",
+    "audit_date": "2026-11-21",
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": false,
+      "has_phone_click": true,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": 5,
+      "has_live_chat": false,
+      "has_popup_optin": false,
+      "has_testimonials": true,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Home - Envious Energy",
+      "title_length": 21,
+      "has_meta_description": null,
+      "meta_desc_length": null,
+      "h1_count": 1,
+      "h1_text": "Utilize Solar Energy to Give Your Future a Powerful Boost",
+      "has_og_tags": null,
+      "has_schema": null,
+      "has_favicon": null,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": true
+    },
+    "local_signals": {
+      "has_google_maps_embed": null
+    },
+    "platform": "WordPress (\"sunex\" theme + ElementsKit), server-rendered",
+    "html_errors": null,
+    "scope_note": "The website was read live on 2026-11-21 through a rendered-content fetch of the home page, /contact-us/ and one team page. Tracking-pixel and head checks (Meta Pixel, GA4, GTM, Google Ads, meta description, Open Graph, JSON-LD, favicon) need the raw served HTML and were not captured through this channel, so they are recorded as not checked rather than absent. PageSpeed was not run.",
+    "score": {
+      "score": 11,
+      "issues": [
+        "No contact form on homepage — visitors can't easily enquire",
+        "No live chat — missing after-hours leads"
+      ],
+      "wins": [
+        "WhatsApp link present",
+        "Good CTA presence (5 buttons)",
+        "Testimonials visible"
+      ]
+    }
+  },
+  "audit_date": "2026-11-21",
+  "site_evidence": {
+    "pixel": null,
+    "utm": false,
+    "checked_on": "2026-11-21",
+    "note": "Head HTML not captured through the sandbox fetch channel; pixel presence is not checked, not asserted absent. No UTM parameters appear on any link found in the rendered page content."
+  },
+  "promise_gap": [
+    {
+      "promise": "'Government Subsidy Assistance*' - the asterisk has no footnote on the ad",
+      "site": "The Rs.78,000 PM Surya Ghar figure appears only inside an FAQ accordion on the home page, not on the hero or the CTA path. There is no subsidy page and no eligibility calculator."
+    },
+    {
+      "promise": "'High-Quality Solar Panels' / 'Expert Installation'",
+      "site": "No panel brand, wattage class, warranty term or certification is named on the home page. The named clients and the 110-120 kW school installs sit in a testimonial carousel rather than a case-study the buyer can check."
+    },
+    {
+      "promise": "'Reliable After-Sales Support'",
+      "site": "No support SLA, AMC plan, response time or service-area map is published. The only support surface is a WhatsApp widget."
+    }
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "pass",
+        "evidence": "3 distinct offer angles in live copy: government subsidy, bill savings, installation speed."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Nov 20, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "fail",
+        "evidence": "A single live ad - no internal comparison, no safety net if it fatigues."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: WhatsApp chat."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 3,
+      "fail": 2,
+      "unknown": 10,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

@@ -86,8 +86,24 @@ _SAFE_MAP = {
 }
 
 
+# Telugu-capable TTF, if the build environment has one. Without it the Helvetica
+# base-14 fonts render every Telugu glyph as "?", which would silently corrupt
+# a verbatim ad quote. SP_TELUGU stays None when no font is available, and the
+# ad-evidence table then falls back to latin_safe() rather than printing "?".
+SP_TELUGU = None
+
+_TELUGU_FONT_CANDIDATES = (
+    os.environ.get("SP_TELUGU_FONT", ""),
+    os.path.join(os.environ.get("WINDIR", r"C:\Windows"), "Fonts", "Nirmala.ttf"),
+    "/usr/share/fonts/truetype/noto/NotoSansTelugu-Regular.ttf",
+    "/tmp/pdflibs/NotoSansTelugu-Regular.ttf",
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts",
+                 "NotoSansTelugu-Regular.ttf"),
+)
+
+
 def _register_fonts():
-    global FONT, FONT_BOLD, BASE14
+    global FONT, FONT_BOLD, BASE14, SP_TELUGU
     windir = os.environ.get("WINDIR", r"C:\Windows")
     try:
         pdfmetrics.registerFont(TTFont("SP-Regular", os.path.join(windir, "Fonts", "arial.ttf")))
@@ -96,6 +112,67 @@ def _register_fonts():
         FONT, FONT_BOLD, BASE14 = "SP-Regular", "SP-Bold", False
     except Exception:
         BASE14 = True
+
+    for path in _TELUGU_FONT_CANDIDATES:
+        if not path or not os.path.exists(path):
+            continue
+        try:
+            pdfmetrics.registerFont(TTFont("SP-Telugu", path))
+            SP_TELUGU = "SP-Telugu"
+            break
+        except Exception:
+            continue
+
+
+def has_telugu(text):
+    return any("\u0c00" <= ch <= "\u0c7f" for ch in (text or ""))
+
+
+def ad_copy_html(text):
+    """Escape ad copy for the evidence table, honouring non-Latin scripts.
+
+    With a Telugu font available the ad is reproduced in the original script.
+    The Telugu face is a Telugu-only subset - it carries no Latin letters or
+    digits - so the copy is emitted as alternating font runs: Telugu glyphs in
+    SP-Telugu, everything else (``Rs. 78,000``, ``10,000+``, punctuation) in
+    the body font. Sending the whole string to either font alone renders part
+    of a "verbatim" quote as tofu.
+
+    Without a Telugu font the copy is reduced by latin_safe(), which swaps a
+    wholly regional-language ad for an explicit placeholder naming the problem.
+    Either way it never silently substitutes "?" into a sentence the report
+    calls verbatim.
+    """
+    if not text:
+        return ""
+    if not (has_telugu(text) and SP_TELUGU):
+        return T(latin_safe(text))
+
+    parts, run, run_is_telugu = [], [], None
+    for ch in text:
+        is_telugu = ("\u0c00" <= ch <= "\u0c7f") or ch in "\u200c\u200d"
+        if run_is_telugu is None or is_telugu == run_is_telugu:
+            run.append(ch)
+            run_is_telugu = is_telugu
+        else:
+            parts.append((run_is_telugu, "".join(run)))
+            run, run_is_telugu = [ch], is_telugu
+    if run:
+        parts.append((run_is_telugu, "".join(run)))
+
+    # BOTH runs need an explicit face. The enclosing paragraph is styled with
+    # the Telugu font, so a bare Latin run would inherit it and vanish: the
+    # Telugu subset carries no Latin letters or digits.
+    out = []
+    for is_telugu, chunk in parts:
+        face = SP_TELUGU if is_telugu else FONT
+        if not is_telugu:
+            # The base-14 faces have no rupee glyph; map it the same way the
+            # rest of the report does, or it prints as tofu inside the quote.
+            chunk = "".join(_SAFE_MAP.get(ch, ch) for ch in chunk)
+        chunk = escape(chunk).replace("\n", "<br/>")
+        out.append(f'<font name="{face}">{chunk}</font>')
+    return "".join(out)
 
 
 def T(text):
@@ -154,6 +231,17 @@ ST = {
     "cell_b": ParagraphStyle("cell_b", fontName=FONT_BOLD, fontSize=8.3, leading=11.2,
                              textColor=colors.HexColor("#25303B")),
     "cell_grey": ParagraphStyle("cell_grey", fontName=FONT, fontSize=7.8, leading=10.4, textColor=GREY),
+    # Same cell, but set in the Telugu face so the verbatim ad quote is legible
+    # instead of turning into a row of question marks.
+    "cell_grey_telugu": ParagraphStyle("cell_grey_telugu", fontName=SP_TELUGU or FONT,
+                                       fontSize=7.8, leading=12.6, textColor=GREY),
+    # Header cell sitting on a navy bar. Must be applied when the Paragraph is
+    # constructed: reassigning Paragraph.style afterwards does NOT restyle text
+    # that reportlab has already laid out, which is how the ad-evidence table
+    # shipped with dark-grey headings on a navy bar.
+    "cell_hdr_white": ParagraphStyle("cell_hdr_white", fontName=FONT_BOLD,
+                                     fontSize=7.6, leading=9.6,
+                                     textColor=colors.white),
     "link": ParagraphStyle("link", fontName=FONT_BOLD, fontSize=8, leading=11, textColor=BLUE),
     "tile_num": ParagraphStyle("tile_num", fontName=FONT_BOLD, fontSize=19, leading=21,
                                textColor=NAVY, alignment=TA_CENTER),
@@ -583,9 +671,15 @@ def ad_card(ad, platform="Meta"):
     if ad.get("ad_count"):
         meta_bits.append(f"~{ad['ad_count']} live ads on Google")
 
-    copy = latin_safe(ad.get("text", ""))
-    copy = _trim_copy(copy)
-    copy_html = f'"{T(copy)}"' if copy and not copy.startswith("[") else T(copy)
+    raw_copy = ad.get("text", "")
+    if has_telugu(raw_copy) and SP_TELUGU:
+        # The ad-evidence table gives the full quote; this card only needs the
+        # opening, so trim first and let ad_copy_html() set the scripts.
+        copy_html = ad_copy_html(_trim_copy(raw_copy))
+    else:
+        copy = latin_safe(raw_copy)
+        copy = _trim_copy(copy)
+        copy_html = f'"{T(copy)}"' if copy and not copy.startswith("[") else T(copy)
 
     link = ad.get("library_url") or ad.get("url") or ""
     link_html = (f'<link href="{escape(link)}" color="#1B6EC2"><b>Open the live ad</b></link>'
@@ -665,7 +759,7 @@ def ad_evidence_table(audit):
     if not ads:
         return empty_box("No live Meta ads were found for this company.")
 
-    header = [Paragraph(f"<b>{T(h)}</b>", ST["cell_b"])
+    header = [Paragraph(f"<b>{T(h)}</b>", ST["cell_hdr_white"])
               for h in ("Library ID", "Running since", "Destination",
                         "Ad copy, verbatim from the Ad Library")]
     rows = [header]
@@ -679,7 +773,11 @@ def ad_evidence_table(audit):
                       ST["cell"]),
             Paragraph(T(ad.get("started") or ""), ST["cell"]),
             Paragraph(T(ad.get("destination") or ""), ST["cell"]),
-            Paragraph(T(ad.get("text") or ""), ST["cell_grey"]),
+            Paragraph(
+                ad_copy_html(ad.get("text") or ""),
+                ST["cell_grey_telugu"] if (has_telugu(ad.get("text") or "")
+                                           and SP_TELUGU) else ST["cell_grey"],
+            ),
         ])
     table = Table(
         rows,
@@ -699,10 +797,6 @@ def ad_evidence_table(audit):
         ("BOX", (0, 0), (-1, -1), 0.5, BORDER),
         ("LINEBELOW", (0, 0), (-1, -1), 0.4, BORDER),
     ]))
-    # The header row inherits the dark navy, so its text must be white.
-    for cell in header:
-        cell.style = ParagraphStyle("hdr", parent=ST["cell_b"],
-                                    textColor=colors.white)
     return table
 
 

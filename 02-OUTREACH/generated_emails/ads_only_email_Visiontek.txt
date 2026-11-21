@@ -1,0 +1,44 @@
+=== EMAIL FOR: Visiontek ===
+City: Hyderabad, Telangana
+To: (no email found)
+Phone: +91 9701601421
+Website: https://visiontek.solar/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Visiontek.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-11-21 05:44
+
+--- SUBJECT ---
+Visiontek: 5 live Hyderabad, Telangana ads, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad, Telangana solar market, and I put together a short report on what Visiontek is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-11-21):
+
+  - 5 live ads on Meta, running since 12 November 2026
+  - every click lands in Instagram chat
+  - All five captured ads click to Instagram chat, not to visiontek.solar - the enquiry never reaches the website, so the site cannot measure or retarget this spend.
+  - Four of the five ads sell a home solar system, but the website leads with inverter and battery products (RISE+, FUTURE+, VAULT+, PULSE+). A visitor who lands on the site after a home-solar ad finds no rooftop-system offer, price or subsidy figure.
+
+You can verify every line yourself:
+
+  Library ID 1133037052650969: https://www.facebook.com/ads/library/?id=1133037052650969
+  Library ID 1126670763504735: https://www.facebook.com/ads/library/?id=1126670763504735
+  Library ID 1642086640990986: https://www.facebook.com/ads/library/?id=1642086640990986
+  Library ID 1129421993235131: https://www.facebook.com/ads/library/?id=1129421993235131
+  Library ID 1682377416875296: https://www.facebook.com/ads/library/?id=1682377416875296
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

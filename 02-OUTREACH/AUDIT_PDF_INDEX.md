@@ -1,6 +1,6 @@
 # Every audit PDF in this repo — index
 
-**49 PDFs** covering **46 companies** (21 of them scored), on branch `arena/de53294b-performance-marketing-os` (tip `aa56dfe`).
+**51 PDFs** covering **47 companies** (23 of them scored), on branch `arena/de53294b-performance-marketing-os` (tip `aa56dfe`).
 
 They live in **two folders**, which is why looking at one folder makes the total look small:
 
@@ -8,7 +8,7 @@ They live in **two folders**, which is why looking at one folder makes the total
 
 2. [`02-OUTREACH/ads_only_pdfs/`](https://github.com/vamsy16/performance-marketing-os/tree/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs) — **40 ads reports**. Since 2026-10-25 these use the *same* 5-page Ksquare layout and carry live website data; before that date they were the shorter ad-activity sheet.
 
-> Three companies — Ecolt Energy, Orizen Solar Innovations and Ray On Solar Systems — have **both** a full audit and an ads report. That is why 49 files cover 46 companies.
+> Four companies — Ecolt Energy, Orizen Solar Innovations, Ray On Solar Systems and Sri Balaji Solar Energies — have **both** a full audit and an ads report. That is why 51 files cover 47 companies.
 
 
 ## Full audits — `02-OUTREACH/audit_pdfs/`
@@ -72,11 +72,14 @@ They live in **two folders**, which is why looking at one folder makes the total
 | Kakatiya Energies | 6 | 26 KB | 17/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Kakatiya_Energies.pdf) |
 | Visiontek | 6 | 26 KB | 16/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Visiontek.pdf) |
 | Laxmi Narayana Solar | 4 | 17 KB | — | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Laxmi_Narayana_Solar.pdf) |
+| Envious Energy Private Limited | 5 | 23 KB | 11/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Envious_Energy_Private_Limited.pdf) |
+| Sri Balaji Solar Energies | 6 | 35 KB | 19/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Sri_Balaji_Solar_Energies.pdf) |
 
 ## Notes
 
 - **Anything under ~25 KB is a sandbox build.** Ad-creative thumbnails cannot be fetched here, so those PDFs are text-only. Running `run_pipeline.py` on your own machine embeds the creatives and produces the 300–590 KB versions (Ksquare, AB Solar, Sri Balaji, Suryon, Venus, Green Carbon Hub).
 - `audit_Ksquare_Energy.pdf` is the **format reference** — it still predates the claude-ads control-review section, so your local rebuild of it will differ slightly.
 - A score appears only where the website was actually read and scored with the repo's own formula. `—` means ad-activity only, or the score section was not run.
+- **`audit_Sri_Balaji_Solar_Energies.pdf` exists twice, on purpose, and the older one is wrong.** The full audit in `audit_pdfs/` is dated May 29, 2026 and records **0/100 with "no website found"** because its ads carried no site link. That conclusion was never true: the company's site is live at `sribalajisolarenergies.com`. The 2026-11-21 report in `ads_only_pdfs/` is the corrected, current one (19/100, 6 live ads). **Send the 2026-11-21 PDF, never the May one.**
 - Every PDF's underlying numbers are in the matching JSON: [`01-LEADS/audit_results/`](https://github.com/vamsy16/performance-marketing-os/tree/arena/de53294b-performance-marketing-os/01-LEADS/audit_results) for full audits and [`01-LEADS/ads_only_results/`](https://github.com/vamsy16/performance-marketing-os/tree/arena/de53294b-performance-marketing-os/01-LEADS/ads_only_results) for ads reports.
 - Regenerate with `cd 01-LEADS && PYTHONPATH=/tmp/pdflibs python3 run_pipeline.py`, `build_batch10_ksquare.py` for the batch-10 live-data rebuild, or `build_batch11_ksquare.py` for the batch-11 (Hyderabad / Telangana) rebuild.

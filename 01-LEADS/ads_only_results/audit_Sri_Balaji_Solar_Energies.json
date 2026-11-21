@@ -1,0 +1,336 @@
+{
+  "company": "Sri Balaji Solar Energies",
+  "legal": "Sri Balaji Solar Energies (SBSE), TGREDCO regn TSRE180085",
+  "city": "Hanumakonda, Telangana",
+  "website": "https://sribalajisolarenergies.com/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-21",
+  "generated_at": "2026-11-21",
+  "ad_count_note": "Six ads are live on this page; the two above are the ones reproduced in full because each was opened directly by its library ID. The control review is therefore graded on a 2-ad evidence sample.",
+  "ad_copy_note": "M30 is graded on the English keyword scan of the ad copy. Both ads in this report are in Telugu and the customer-count claim is written in Telugu script (10,000+ satisfied customers), which the keyword scan cannot see. The scan's 'no social proof' reading is therefore an artefact of the language, not a finding about this advertiser.",
+  "ad_text_note": "The ad copy below is reproduced verbatim, in the original Telugu script, exactly as the Meta Ad Library shows it. It is not translated here, so that nothing in this report can drift from what the advertiser actually published. In summary: the ads offer rooftop solar at Rs.0 upfront and about Rs.1,355 a month against the Rs.78,000 PM Surya Ghar subsidy, cite 10,000+ satisfied customers and 14-15 years of trust, and name a service area covering Kothagudem, Narsampet, Warangal, Hanumakonda, Rajamahendravaram, Bhadrachalam, Ghatkesar/Huzurabad and Hyderabad.",
+  "source": "Meta Ad Library (India, active) + live website fetch, 2026-11-21",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 2,
+      "results_label": "2 ads reproduced (6 live on the page)",
+      "query": "Sri Balaji Solar Energies advertiser search (Meta Ad Library, India, active)",
+      "ads": [
+        {
+          "library_id": "942037648839408",
+          "library_url": "https://www.facebook.com/ads/library/?id=942037648839408",
+          "page_name": "Sri Balaji Solar Energies",
+          "started": "May 29, 2026",
+          "destination": "Facebook lead form (FB.ME) - Sign up",
+          "text": "ఇకపై కరెంట్ బిల్లు కట్టే పని లేదు!\n\nమీ ఇంటిపై సోలార్ సిస్టమ్ అమర్చుకోండి... ₹0 (సున్నా) ముందస్తు ఖర్చుతో!*\n\nశ్రీ బాలాజీ సోలార్ ఎనర్జీస్ (Sri Balaji Solar Energies) - 14 సంవత్సరాల నమ్మకం.\n\nమా ప్రత్యేకతలు:\nకేంద్ర ప్రభుత్వం నుండి ₹78,000/- వరకు సబ్సిడీ!\nనెలకు కరెంట్ బిల్లు బదులు, కేవలం ₹1355/- EMI కట్టండి.\n10,000+ సంతృప్తికరమైన కస్టమర్లు.\nప్రభుత్వ ఉద్యోగులకు కూడా సబ్సిడీ వర్తిస్తుంది.\n\nకొత్తగూడెం, నర్సంపేట, వరంగల్, హన్మకొండ, రాజమహేంద్రవరం, భద్రాచలం, ఘట్‌కేసర్ హుజూరాబాద్ and hyderabad మరియు చుట్టుపక్కల జిల్లాల్లో సర్వీస్ కలదు.\n\nఈ రోజే ఫ్రీ సైట్ విజిట్ (Free Site Visit) లభిస్తుంది"
+        },
+        {
+          "library_id": "1454295123168911",
+          "library_url": "https://www.facebook.com/ads/library/?id=1454295123168911",
+          "page_name": "Sri Balaji Solar Energies",
+          "started": "May 29, 2026",
+          "destination": "Facebook lead form (FB.ME) - Get offer",
+          "text": "నెలకు వచ్చే భారీ కరెంటు బిల్లులకు స్వస్తి చెప్పండి!\n\nమీ ఇంటికి సరిపోయే ఉత్తమ సోలార్ ప్లాన్ మరియు సబ్సిడీ వివరాలు పొందండి!\n\nశ్రీ బాలాజీ సోలార్ ఎనర్జీస్ (15 ఏళ్ల లెగసీ). మీ వివరాలను నమోదు చేయండి. మా నిపుణులు మీకు కాల్ చేసి పూర్తి సమాచారం అంద..."
+        }
+      ]
+    },
+    "summary": "6 live Meta ads confirmed on 2026-11-21 on the page sribalajisolarenergies (page ID 108499924234875). The two ads reproduced above were each opened directly by library ID and both render the same page and the same Telugu card. All ads sell residential rooftop solar on a Rs.0-upfront, Rs.1,355-a-month EMI offer against the Rs.78,000 PM Surya Ghar subsidy, and every one of them clicks to an fb.me lead form rather than the website. The website was read live the same day. Google Ads Transparency records were not checked in this pass."
+  },
+  "funnel": {
+    "type": "Facebook lead form",
+    "destination": "Facebook lead form (FB.ME) - Sign up / Get offer",
+    "meaning": "Every live ad sends the click to an fb.me lead form. The traffic never touches sribalajisolarenergies.com, so no URL can carry UTMs, the site cannot set a retargeting audience, and the company cannot see which ad produced which enquiry - while it pays for six ads at once."
+  },
+  "findings": [
+    "All 6 live ads click to fb.me lead forms, so the traffic never reaches the new website. No UTM can be attached, no retargeting audience can be built, and ad-to-enquiry attribution is impossible without opening Ads Manager.",
+    "The home page's primary call to action, 'Click Here', links to pmsuryaghar.gov.in/consumerLogin - the national portal, not the company's own enquiry flow. The biggest button on the page hands the visitor to the government and loses them.",
+    "The social-proof counters contradict each other across the site: the home page renders '0+ Project Done', '0+ Happy Clients', '0+ Award Winnings', '0+ Rating Customer', while the /about page for the same company reads 1000+ projects, 1200+ happy clients, 850+ awards and 1100+ rated customers - and the ads claim 10,000+ customers. Three numbers for the same fact, none of them sourced.",
+    "The displayed phone number and the dialled number disagree: the contact page shows +91 903 204 1774 but the tel: link dials +91 951 595 49 23, and neither matches the numbers the company is empanelled and advertised under (+91 9959491774 / +91 87024 44646).",
+    "The contact page states 'Our Address: Hyderabad', but the registered head office is #6-1-34 Chintala Narasimhulu Complex, Lashkar Bazar, Hanumakonda, Warangal 506001. No street address for the office the customer would actually visit appears anywhere on the site.",
+    "The age claim is inconsistent across the company's own channels: one live ad says '14 years of trust', another says '15-year legacy', the site says 'established in the year 2011' in one paragraph and 'established in the year 2013' in the next.",
+    "The ads sell on 'Rs.0 upfront' and 'Rs.1,355/month EMI', but the website restates neither figure and has no EMI or zero-upfront explanation anywhere, so the offer that earns the click disappears on landing.",
+    "The home page has no contact form and no WhatsApp link - the only form is on /contact - while the ads already collect details through Meta, so the site offers the visitor no equivalent next step.",
+    "The page title is 82 characters and will be truncated in search results, and the site carries a Google Maps embed but no structured LocalBusiness data was captured in this pass.",
+    "The /Projects page - the proof page a serious buyer clicks to - is a bare image gallery of about 40 photos with no project name, capacity, location or date on any of them, so the strongest asset the company owns cannot be checked or quoted."
+  ],
+  "next_steps": [
+    [
+      "Send the ads to the website, with tracking",
+      "Point at least one of the six ads at a landing page on sribalajisolarenergies.com carrying UTMs and a Meta Pixel, and keep the fb.me form as a secondary path. The six-ad spend is currently invisible."
+    ],
+    [
+      "Take the government link off the primary button",
+      "Re-point 'Click Here' at an on-site quote form; move the pmsuryaghar.gov.in login to a clearly secondary 'apply for subsidy' step after the lead is captured."
+    ],
+    [
+      "Fill in the zero counters",
+      "Replace the home page's '0+ Project Done' and '0+ Happy Clients' with one set of real numbers, and use the same numbers on the /about page (which currently says 1000+ projects / 1200+ clients) and in the ads (10,000+ customers). The site already names real installs - Collector Office Suryapet, Relief Hospital Arepally 54 kW, Talla Padmavathi 56 kW, Vagdevi Junior College 30 kW - that can be counted."
+    ],
+    [
+      "Delete the lorem-ipsum filler",
+      "The /about page call-to-action block still reads 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout' - unreplaced template text on a page a prospect reaches from the main menu."
+    ],
+    [
+      "Reconcile the phone numbers",
+      "Make the displayed number, the tel: link, the TGREDCO record and the ad account all use one number that is actually answered."
+    ],
+    [
+      "Publish the Hanumakonda office address",
+      "Replace 'Our Address: Hyderabad' with the Lashkar Bazar, Hanumakonda 506001 head office, and add the Warangal service area the ads already promise."
+    ],
+    [
+      "Put the zero-upfront and EMI offer on the landing page",
+      "Restate 'Rs.0 upfront' and 'Rs.1,355/month' with the conditions on the page, so the promise in the ad survives the click."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Phone (shown on site)",
+      "+91 903 204 1774"
+    ],
+    [
+      "Phone (tel: link actually dials)",
+      "+91 951 595 49 23"
+    ],
+    [
+      "Phone (TGREDCO / ads)",
+      "+91 9959491774 | +91 87024 44646"
+    ],
+    [
+      "Email",
+      "sbse4444@gmail.com"
+    ],
+    [
+      "Address (registered HO)",
+      "#6-1-34, Chintala Narasimhulu Complex, Lashkar Bazar, Hanumakonda, Warangal - 506001"
+    ],
+    [
+      "Address (site, contact page)",
+      "'Hyderabad' - no street address given"
+    ],
+    [
+      "Facebook page",
+      "https://www.facebook.com/sribalajisolarenergies/"
+    ],
+    [
+      "Website",
+      "https://sribalajisolarenergies.com/"
+    ],
+    [
+      "TGREDCO regn",
+      "TSRE180085 (empanelled supplier #34)"
+    ]
+  ],
+  "contact": {
+    "phone": "+91 9959491774",
+    "email": "sbse4444@gmail.com"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://sribalajisolarenergies.com/",
+    "audit_date": "2026-11-21",
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": false,
+      "has_phone_click": true,
+      "has_whatsapp_link": false,
+      "has_cta_buttons": 2,
+      "has_live_chat": false,
+      "has_popup_optin": false,
+      "has_testimonials": true,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Telangana's Top Solar Panel Installation Company | Sri Balaji Solar Energies.",
+      "title_length": 82,
+      "has_meta_description": null,
+      "meta_desc_length": null,
+      "h1_count": 1,
+      "h1_text": "Go Solar With 'PM Surya Ghar Muft Bijli Yojana'",
+      "has_og_tags": null,
+      "has_schema": null,
+      "has_favicon": null,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": true
+    },
+    "platform": "React single-page app (static/media + static/js bundles), client-rendered",
+    "html_errors": null,
+    "scope_note": "The website was read live on 2026-11-21 through a rendered-content fetch of the home page and /contact. Tracking-pixel and head checks (Meta Pixel, GA4, GTM, Google Ads, meta description, Open Graph, JSON-LD, favicon) need the raw served HTML and were not captured through this channel, so they are recorded as not checked rather than absent. PageSpeed and sitemap were not run.",
+    "score": {
+      "score": 19,
+      "issues": [
+        "No contact form on homepage — visitors can't easily enquire",
+        "No WhatsApp link — losing mobile leads (WhatsApp converts 3x better for Indian home services)",
+        "Only 1-2 CTA buttons — could be more aggressive",
+        "No live chat — missing after-hours leads"
+      ],
+      "wins": [
+        "Testimonials visible"
+      ]
+    }
+  },
+  "audit_date": "2026-11-21",
+  "site_evidence": {
+    "pixel": null,
+    "utm": false,
+    "checked_on": "2026-11-21",
+    "note": "Head HTML not captured through the sandbox fetch channel; pixel presence is not checked, not asserted absent. No UTM parameters appear on any link found in the rendered page content."
+  },
+  "promise_gap": [
+    {
+      "promise": "Rs.0 (zero) upfront cost",
+      "site": "The website never mentions a zero-upfront plan. There is no EMI calculator, no financing partner and no terms for the Rs.0 offer the ad is built on."
+    },
+    {
+      "promise": "Rs.1,355 per month EMI instead of a current bill",
+      "site": "No monthly figure appears anywhere on the site, and no system size or tenure is stated for it."
+    },
+    {
+      "promise": "10,000+ satisfied customers",
+      "site": "The site's own counter reads '0+ Happy Clients', directly contradicting the ad."
+    },
+    {
+      "promise": "Up to Rs.78,000 central subsidy",
+      "site": "The home page headline names PM Surya Ghar and the hero repeats Rs.78,000, but the primary button sends the visitor to the national portal login rather than an on-site explanation of eligibility."
+    }
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "Live ads click to a Facebook lead form (fb.me) - traffic never reaches a page you own, so no URL can carry UTMs and click data stays inside Meta."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "pass",
+        "evidence": "3 distinct offer angles in live copy: subsidy amount, EMI / financing, free site visit."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy. M30 is graded on the English keyword scan of the ad copy. Both ads in this report are in Telugu and the customer-count claim is written in Telugu script (10,000+ satisfied customers), which the keyword scan cannot see. The scan's 'no social proof' reading is therefore an artefact of the language, not a finding about this advertiser."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started May 29, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "2 distinct live ads visible - a comparison is at least possible. Six ads are live on this page; the two above are the ones reproduced in full because each was opened directly by its library ID. The control review is therefore graded on a 2-ad evidence sample."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: Facebook lead form."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 4,
+      "fail": 2,
+      "unknown": 9,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

@@ -1,0 +1,42 @@
+=== EMAIL FOR: Envious Energy Private Limited ===
+City: Hyderabad, Telangana
+To: info@enviousenergy.com
+Phone: +91 89777 21950
+Website: https://www.enviousenergy.com/
+Report kind: LIVE AD REPORT (ad activity + what any visitor can see on the public site)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Envious_Energy_Private_Limited.pdf
+Template: ads_only_live_ad_report (hand-written body - the generator's generic copy would have claimed "no website findings", which is false for this report)
+Generated: 2026-11-21
+
+--- SUBJECT ---
+Envious Energy: 1 live Begumpet, Telangana ad, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Envious Energy is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-11-21):
+
+  - 1 live ad on Meta, running since 20 November 2026
+  - every click lands in WhatsApp chat
+  - That ad clicks straight to WhatsApp, not to enviousenergy.com - so the enquiry never reaches the website, and the spend cannot be measured or retargeted from the site.
+  - The home page's proof numbers do not hold up: "Commitment to Clean 4%", "Solar System Lifespan 1+", a "Years Of Experience 0+" counter, and a review widget that prints "0.2/5" directly above "Over 500 + Reviews".
+
+You can verify every line yourself:
+
+  Library ID 1122485234026419: https://www.facebook.com/ads/library/?id=1122485234026419
+
+To be clear about what this is: it is an ad report. It is built from your live ad card and from what any visitor can see on your public site - it is not a full website audit, so there is no tracking or speed testing in it.
+
+One thing worth saying plainly, because I think it costs you money: your site still has two unused template team pages live (Marvin McKinney and Kathryn Murphy) with stock bios and skill bars at 1%, and three different office addresses across the contact page, the footer and the TGREDCO empanelled-supplier list. A buyer who checks two of those pages finds a company that looks unfinished - which is a shame, because Gitanjali School, NTR Model School and The Hyderabad Gymkhana are exactly the references that would close the sale.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

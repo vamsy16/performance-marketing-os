@@ -1,0 +1,41 @@
+=== EMAIL FOR: Laxmi Narayana Solar ===
+City: Karimnagar, Telangana
+To: (no email found)
+Phone: 9493093728
+Website: https://www.laxminarayanasolar.in/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Laxmi_Narayana_Solar.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-11-21 05:44
+
+--- SUBJECT ---
+Laxmi Narayana Solar: 2 live Karimnagar, Telangana ads, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Karimnagar, Telangana solar market, and I put together a short report on what Laxmi Narayana Solar is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-11-21):
+
+  - 2 live ads on Meta, running since 13 November 2026
+  - every click lands in Mixed: URL link and Facebook lead form
+  - The company website laxminarayanasolar.in returns HTTP 500, so ad traffic that does reach the web has nowhere to land. This is the single biggest leak in the funnel.
+  - The two live ads do not agree on the destination - one is a URL link, the other an FB.ME lead form - so the spend cannot be measured in one place.
+
+You can verify every line yourself:
+
+  Library ID 1801231361161321: https://www.facebook.com/ads/library/?id=1801231361161321
+  Library ID 1650285136378259: https://www.facebook.com/ads/library/?id=1650285136378259
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

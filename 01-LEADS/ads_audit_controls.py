@@ -178,9 +178,10 @@ def evaluate(lead, site_evidence=None):
             "Live ad copy carries a social-proof claim (customer count / "
             "testimonial framing).")
     else:
+        note = lead.get("ad_copy_note") or ""
         add("M30", "Social proof utilization", "Creative", FAIL,
             "No social proof (customer counts, reviews, testimonials) in the "
-            "live ad copy.")
+            "live ad copy." + (f" {note}" if note else ""))
 
     add("M27", "Video aspect ratios", "Creative", UNKNOWN,
         "Creative files cannot be downloaded from the Ad Library; needs "
@@ -204,17 +205,20 @@ def evaluate(lead, site_evidence=None):
         add("M-CR1", "Creative freshness", "Structure & delivery", UNKNOWN,
             "Ad start dates were not captured.")
 
+    note = lead.get("ad_count_note") or ""
+    tail = f" {note}" if note else ""
     if len(ads) >= 3:
         add("M11", "Campaign fragmentation", "Structure & delivery", PASS,
             f"{len(ads)} distinct live ads visible - enough running to compare "
-            "messages against each other.")
+            f"messages against each other.{tail}")
     elif len(ads) == 2:
         add("M11", "Campaign fragmentation", "Structure & delivery", PASS,
-            "2 distinct live ads visible - a comparison is at least possible.")
+            f"2 distinct live ads visible - a comparison is at least "
+            f"possible.{tail}")
     elif len(ads) == 1:
         add("M11", "Campaign fragmentation", "Structure & delivery", FAIL,
             "A single live ad - no internal comparison, no safety net if it "
-            "fatigues.")
+            f"fatigues.{tail}")
     else:
         add("M11", "Campaign fragmentation", "Structure & delivery", UNKNOWN,
             "No live ads captured.")

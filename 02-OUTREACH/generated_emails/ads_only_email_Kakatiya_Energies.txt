@@ -1,0 +1,41 @@
+=== EMAIL FOR: Kakatiya Energies ===
+City: Hanamkonda, Telangana
+To: kakatiyasolarenergies@gmail.com
+Phone: +91 81258 01257
+Website: https://kakatiyaenergies.com/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Kakatiya_Energies.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-11-21 05:44
+
+--- SUBJECT ---
+Kakatiya Energies: 2 live Hanamkonda, Telangana ads, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hanamkonda, Telangana solar market, and I put together a short report on what Kakatiya Energies is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-11-21):
+
+  - 2 live ads on Meta, running since 11 November 2026
+  - every click lands in WhatsApp chat
+  - Both live ads click to WhatsApp, not to the website - the enquiry never reaches kakatiyaenergies.com, so the site cannot measure or retarget this spend.
+  - The March 2027 subsidy deadline is the strongest urgency lever in the copy, but the website's quote page does not restate the deadline or the Rs.78,000 subsidy figure, so a visitor who lands on the site loses the reason to act now.
+
+You can verify every line yourself:
+
+  Library ID 2172318326990537: https://www.facebook.com/ads/library/?id=2172318326990537
+  Library ID 2539681153175683: https://www.facebook.com/ads/library/?id=2539681153175683
+
+To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===
