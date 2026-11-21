@@ -1,0 +1,304 @@
+{
+  "company": "Visiontek",
+  "legal": "Visionteknewenergy (Linkwell Telesystems)",
+  "city": "Hyderabad, Telangana",
+  "website": "https://visiontek.solar/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-21",
+  "generated_at": "2026-11-21",
+  "source": "Meta Ad Library (India, active) + live website fetch, 2026-11-21",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 5,
+      "results_label": "5 live ads captured (advertiser shows ~70 results)",
+      "query": "Visionteknewenergy advertiser search (Meta Ad Library, India, active)",
+      "ads": [
+        {
+          "library_id": "1133037052650969",
+          "library_url": "https://www.facebook.com/ads/library/?id=1133037052650969",
+          "page_name": "Visionteknewenergy",
+          "started": "Nov 12, 2026",
+          "destination": "Instagram chat (Chat with us / Send Message)",
+          "text": "Still paying high electricity bills?\n\nSwitch to Visiontek Solar and turn sunlight into savings. Our smart system powers your home directly, stores extra energy for the night and helps lower your monthly bill.\n\nIts time to power your home naturally.\n\n#Visiontek #GoSolar #SolarPower #SolarEnergy #EnergyStorage"
+        },
+        {
+          "library_id": "1126670763504735",
+          "library_url": "https://www.facebook.com/ads/library/?id=1126670763504735",
+          "page_name": "Visionteknewenergy",
+          "started": "Nov 12, 2026",
+          "destination": "Instagram chat (Chat with us / Send Message)",
+          "text": "Summer heat is rising, and so are electricity bills.\n\nWith increasing power consumption, it's time to think smarter about how we use energy. Switch to solar with Visiontek Solar Solutions and take a smarter step towards managing your energy needs.\n\nThe right time to consider solar? It's now.\n\n#Visiontek #VisiontekSolar #SolarEnergy #SolarSolutions #GoSolar #RenewableEnergy"
+        },
+        {
+          "library_id": "1642086640990986",
+          "library_url": "https://www.facebook.com/ads/library/?id=1642086640990986",
+          "page_name": "Visionteknewenergy",
+          "started": "Nov 12, 2026",
+          "destination": "Instagram chat (Chat with us / Send Message)",
+          "text": "Control your electricity bill before it shocks you!\n\nGo solar with Visiontek and take charge of your energy.\n\n#Visiontek #GoSolar #SolarEnergy #SolarPower #SaveOnElectricity #RenewableEnergy #CleanEnergy #SolarSolutions #GreenEnergy #EnergySavingSolutions"
+        },
+        {
+          "library_id": "1129421993235131",
+          "library_url": "https://www.facebook.com/ads/library/?id=1129421993235131",
+          "page_name": "Visionteknewenergy",
+          "started": "Nov 12, 2026",
+          "destination": "Instagram chat (Chat with us / Send Message)",
+          "text": "One inverter. Multiple power sources.\n\nWith the Visiontek Hybrid Inverter, harness power from solar, grid, and battery - all managed through one intelligent system.\n\n#Visiontek #FuturePlus #HybridInverter #SolarEnergy #RenewableEnergy #SolarPower"
+        },
+        {
+          "library_id": "1682377416875296",
+          "library_url": "https://www.facebook.com/ads/library/?id=1682377416875296",
+          "page_name": "Visionteknewenergy",
+          "started": "Nov 12, 2026",
+          "destination": "Instagram chat (Chat with us / Send Message)",
+          "text": "Say goodbye to soaring electricity bills and take control of your energy expenses. Switch to solar today and start generating your own clean savings.\n\n#CutElectricityBills #SolarSavings #GoGreen #EnergyIndependence #VisiontekSolar"
+        }
+      ]
+    },
+    "summary": "5 live Meta ads captured on 2026-11-21 from the Visionteknewenergy advertiser page (the page shows roughly 70 active results; the 5 most recent, all started Nov 12, 2026, are reproduced here). Four sell a home solar system with storage; one sells the FUTURE+ hybrid inverter. All five click to Instagram chat. The website was read live the same day. Google Ads Transparency records were not checked in this pass."
+  },
+  "funnel": {
+    "type": "Instagram chat",
+    "destination": "Instagram chat (Chat with us / Send Message)",
+    "meaning": "All five captured ads click to an Instagram chat, not to visiontek.solar. The enquiry never reaches the website, so the site cannot measure, retarget or attribute this spend."
+  },
+  "findings": [
+    "All five captured ads click to Instagram chat, not to visiontek.solar - the enquiry never reaches the website, so the site cannot measure or retarget this spend.",
+    "Four of the five ads sell a home solar system, but the website leads with inverter and battery products (RISE+, FUTURE+, VAULT+, PULSE+). A visitor who lands on the site after a home-solar ad finds no rooftop-system offer, price or subsidy figure.",
+    "No live ad mentions the PM Surya Ghar subsidy or any price, even though the website's own blogs (Nov 12 and Nov 19, 2026) discuss hybrid inverters and batteries - the strongest buying lever in this market is absent from the copy.",
+    "The website has no contact form, no phone number and no testimonials in the rendered content; WhatsApp is the only conversion path, which matches the ads but leaves no measurable web funnel.",
+    "The advertiser page shows roughly 70 active results, but the five captured here all started on the same day (Nov 12, 2026) with near-identical copy - the account is running volume, not tested variations."
+  ],
+  "next_steps": [
+    "Point the home-solar ads at a website landing page that sells the rooftop system (not the inverter catalogue) with a Meta Pixel, so the click can be measured and retargeted.",
+    "Add the PM Surya Ghar subsidy figure and a starting price to at least one ad - competitors in Telangana lead with Rs.78,000 and this account does not mention subsidy at all.",
+    "Add a contact form and a phone number to the website so visitors who do not use WhatsApp still have a way to enquire.",
+    "Split the account into two campaigns - home solar systems and inverter/battery products - so each audience sees one message."
+  ],
+  "contact_facts": [
+    [
+      "WhatsApp (site + ads)",
+      "+91 9701601421 (wa.me/+919701601421)"
+    ],
+    [
+      "Location",
+      "Begumpet, Hyderabad, Telangana"
+    ],
+    [
+      "Facebook page",
+      "https://www.facebook.com/Visionteknewenergy/"
+    ],
+    [
+      "Website",
+      "https://visiontek.solar/"
+    ],
+    [
+      "Products",
+      "RISE+ On-Grid, FUTURE+ Hybrid, VAULT+ LFP Battery, PULSE+"
+    ]
+  ],
+  "contact": {
+    "phone": "+91 9701601421",
+    "email": ""
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://visiontek.solar/",
+    "audit_date": "2026-11-21",
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": false,
+      "has_phone_click": false,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": 2,
+      "has_live_chat": false,
+      "has_popup_optin": false,
+      "has_testimonials": false,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "VISIONTEK – Powering India's Smart Energy Future",
+      "title_length": 48,
+      "has_meta_description": null,
+      "meta_desc_length": null,
+      "h1_count": 1,
+      "h1_text": "Engineering the Future of Intelligent Energy",
+      "has_og_tags": null,
+      "has_schema": null,
+      "has_favicon": null,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": null
+    },
+    "platform": "Server-rendered marketing site (visiontek.solar)",
+    "html_errors": null,
+    "scope_note": "The website was read live on 2026-11-21 through a rendered-content fetch. Tracking-pixel and head checks (Meta Pixel, GA4, GTM, Google Ads, meta description, Open Graph, JSON-LD) need the raw served HTML and were not captured through this channel, so they are recorded as not checked rather than absent. PageSpeed and sitemap were not run.",
+    "score": {
+      "score": 16,
+      "issues": [
+        "No contact form on homepage — visitors can't easily enquire",
+        "Only 1-2 CTA buttons — could be more aggressive",
+        "No live chat — missing after-hours leads",
+        "No visible testimonials/social proof on homepage"
+      ],
+      "wins": [
+        "WhatsApp link present"
+      ]
+    }
+  },
+  "audit_date": "2026-11-21",
+  "site_evidence": {
+    "pixel": null,
+    "utm": false,
+    "checked_on": "2026-11-21",
+    "note": "Head HTML not captured through the sandbox fetch channel; pixel presence is not checked, not absent."
+  },
+  "promise_gap": [
+    {
+      "promise": "Home solar system that powers your home and stores extra energy for the night (ad 1)",
+      "site": "The website sells inverters and batteries as products; it does not present a complete home solar system offer with price or subsidy."
+    },
+    {
+      "promise": "Switch to solar and lower your monthly bill (ads 2-5)",
+      "site": "No savings figure, price or subsidy amount appears in the rendered website content."
+    }
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "Only 1 offer angle in live copy (bill savings) - every ad says the same thing."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Nov 12, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "5 distinct live ads visible - enough running to compare messages against each other."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: Instagram chat."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 3,
+      "fail": 2,
+      "unknown": 10,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

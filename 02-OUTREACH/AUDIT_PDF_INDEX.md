@@ -69,6 +69,9 @@ They live in **two folders**, which is why looking at one folder makes the total
 | Lumisun Solar | 5 | 23 KB | 3/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Lumisun_Solar.pdf) |
 | Varna Solar Pvt. Ltd. | 5 | 23 KB | 19/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Varna_Solar_Pvt_Ltd_.pdf) |
 | Wisda Energy | 5 | 21 KB | 10/100 | 2026-10-25 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Wisda_Energy.pdf) |
+| Kakatiya Energies | 6 | 26 KB | 17/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Kakatiya_Energies.pdf) |
+| Visiontek | 6 | 26 KB | 16/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Visiontek.pdf) |
+| Laxmi Narayana Solar | 4 | 17 KB | — | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Laxmi_Narayana_Solar.pdf) |
 
 ## Notes
 

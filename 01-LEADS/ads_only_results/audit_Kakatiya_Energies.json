@@ -1,0 +1,285 @@
+{
+  "company": "Kakatiya Energies",
+  "legal": "Kakatiya Energies",
+  "city": "Hanamkonda, Telangana",
+  "website": "https://kakatiyaenergies.com/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-21",
+  "generated_at": "2026-11-21",
+  "source": "Meta Ad Library (India, active) + live website fetch, 2026-11-21",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 2,
+      "results_label": "2 live ads",
+      "query": "Kakatiya Energies advertiser search (Meta Ad Library, India, active)",
+      "ads": [
+        {
+          "library_id": "2172318326990537",
+          "library_url": "https://www.facebook.com/ads/library/?id=2172318326990537",
+          "page_name": "Kakatiya Energies",
+          "started": "Nov 11, 2026",
+          "destination": "WhatsApp (API.WHATSAPP.COM) - Send WhatsApp message",
+          "text": "Thinking About Switching to Solar? Now Is the Right Time!\n\nWhy pay more on electricity bills when you can generate your own power?\n\nWith KAKATIYA ENERGIES, get complete solar solutions for your home and business!\n\nOur Solar Solutions:\n- Residential Solar\n- Commercial & Industrial Solar\n- Petrol Bunk Solar\n- On-Grid, Off-Grid & Hybrid Systems\n- Professional Installation\n- Net Metering & Subsidy Assistance\n\nSUBSIDY BENEFIT: Up to Rs.78,000 for eligible households under the PM Surya Ghar scheme.\n\nEasy EMI Options Available!\n\nThe stated subsidy deadline is March 2027. Plan your installation before the deadline!\n\nBOOK YOUR FREE SOLAR SITE VISIT TODAY!\n\nHanamkonda: +91 81258 01257 | 81252 22834\n\nKAKATIYA ENERGIES"
+        },
+        {
+          "library_id": "2539681153175683",
+          "library_url": "https://www.facebook.com/ads/library/?id=2539681153175683",
+          "page_name": "Kakatiya Energies",
+          "started": "Nov 18, 2026",
+          "destination": "WhatsApp (API.WHATSAPP.COM) - Send WhatsApp message",
+          "text": "GO SOLAR. SAVE BIG!\n\nMake your home solar-powered and enjoy electricity bill savings!\n\nGet up to Rs.78,000 Solar Subsidy!\n\nDon't miss the opportunity - Subsidy benefits are available until March 2027.\n\nWhy wait? Start saving on electricity bills while contributing to a greener future.\n\n- Reduce electricity bills\n- Clean and renewable energy\n- Long-term savings\n- Professional solar installation\n\nCall Kakatiya Energies today: +91 8125801257\n\nKAKATIYA ENERGIES"
+        }
+      ]
+    },
+    "summary": "2 live Meta ads confirmed on 2026-11-21 by opening each library ID directly. Both ads sell rooftop solar (residential, commercial, industrial, petrol-bunk) with the Rs.78,000 PM Surya Ghar subsidy and a March 2027 deadline, and both click to WhatsApp. The website was read live the same day. Google Ads Transparency records were not checked in this pass."
+  },
+  "funnel": {
+    "type": "WhatsApp chat",
+    "destination": "WhatsApp (API.WHATSAPP.COM) - Send WhatsApp message",
+    "meaning": "Both live ads click straight to a WhatsApp chat. The enquiry never reaches kakatiyaenergies.com, so the website cannot measure, retarget or attribute this spend."
+  },
+  "findings": [
+    "Both live ads click to WhatsApp, not to the website - the enquiry never reaches kakatiyaenergies.com, so the site cannot measure or retarget this spend.",
+    "The March 2027 subsidy deadline is the strongest urgency lever in the copy, but the website's quote page does not restate the deadline or the Rs.78,000 subsidy figure, so a visitor who lands on the site loses the reason to act now.",
+    "The homepage slider carries five H1 headings (farms, irrigation, rooftop, commercial, industrial), which dilutes the single message a rooftop buyer needs.",
+    "No WhatsApp link was found in the rendered website content, even though both ads sell through WhatsApp - the two channels are not connected on the site.",
+    "Testimonials are present and named, and the site states 700+ happy clients, but neither live ad uses that social proof - both ads lead with price and subsidy only."
+  ],
+  "next_steps": [
+    "Point at least one ad at a website landing page that restates the Rs.78,000 subsidy and the March 2027 deadline, with a Meta Pixel so the click can be measured and retargeted.",
+    "Add the WhatsApp number (+91 81258 01257) to the website header so the channel the ads already use is one tap away for site visitors.",
+    "Reduce the homepage to one H1 (rooftop solar for homes) and move farms/irrigation/industrial to their own service pages.",
+    "Add a customer-count or testimonial line to the ad copy - the site already has 700+ clients and named reviews to borrow."
+  ],
+  "contact_facts": [
+    [
+      "Phone (site)",
+      "+91-8125801257"
+    ],
+    [
+      "Phone (ad)",
+      "+91 81258 01257 | 81252 22834"
+    ],
+    [
+      "Email",
+      "kakatiyasolarenergies@gmail.com"
+    ],
+    [
+      "Location",
+      "Hanamkonda, Telangana (Warangal & Hyderabad service area)"
+    ],
+    [
+      "Facebook page",
+      "https://www.facebook.com/kaktiyasolarenergies/"
+    ],
+    [
+      "Website",
+      "https://kakatiyaenergies.com/"
+    ]
+  ],
+  "contact": {
+    "phone": "+91 81258 01257",
+    "email": "kakatiyasolarenergies@gmail.com"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://kakatiyaenergies.com/index.php",
+    "audit_date": "2026-11-21",
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": false,
+      "has_phone_click": true,
+      "has_whatsapp_link": false,
+      "has_cta_buttons": 6,
+      "has_live_chat": false,
+      "has_popup_optin": false,
+      "has_testimonials": true,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Kakatiya Energies - Save Energy. Save Money",
+      "title_length": 45,
+      "has_meta_description": null,
+      "meta_desc_length": null,
+      "h1_count": 5,
+      "h1_text": "SOLAR FARMS / POWER PLANTS",
+      "has_og_tags": null,
+      "has_schema": null,
+      "has_favicon": null,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": null
+    },
+    "platform": "PHP (CodeIgniter-style index.php routing), server-rendered",
+    "html_errors": null,
+    "scope_note": "The website was read live on 2026-11-21 through a rendered-content fetch. Tracking-pixel and head checks (Meta Pixel, GA4, GTM, Google Ads, meta description, Open Graph, JSON-LD) need the raw served HTML and were not captured through this channel, so they are recorded as not checked rather than absent. PageSpeed and sitemap were not run.",
+    "score": {
+      "score": 17,
+      "issues": [
+        "No contact form on homepage — visitors can't easily enquire",
+        "No WhatsApp link — losing mobile leads (WhatsApp converts 3x better for Indian home services)",
+        "No live chat — missing after-hours leads",
+        "Multiple H1 tags (5) — confuses Google"
+      ],
+      "wins": [
+        "Good CTA presence (6 buttons)",
+        "Testimonials visible"
+      ]
+    }
+  },
+  "audit_date": "2026-11-21",
+  "site_evidence": {
+    "pixel": null,
+    "utm": false,
+    "checked_on": "2026-11-21",
+    "note": "Head HTML not captured through the sandbox fetch channel; pixel presence is not checked, not absent."
+  },
+  "promise_gap": [
+    {
+      "promise": "Up to Rs.78,000 subsidy under PM Surya Ghar (both ads)",
+      "site": "The quote page and services do not restate the Rs.78,000 figure or the March 2027 deadline."
+    },
+    {
+      "promise": "Free solar site visit (ad 1 CTA)",
+      "site": "The site offers a quote request but does not name a free site visit or its booking steps."
+    }
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "pass",
+        "evidence": "6 distinct offer angles in live copy: government subsidy, subsidy amount, EMI / financing, bill savings, free site visit, installation speed."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Nov 18, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "2 distinct live ads visible - a comparison is at least possible."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: WhatsApp chat."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 4,
+      "fail": 1,
+      "unknown": 10,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}
