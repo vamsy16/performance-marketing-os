@@ -1,0 +1,40 @@
+=== EMAIL FOR: Sri Narayana Enterprise Solar Energies ===
+City: Adilabad, Telangana
+To: snepadilabad@gmail.com
+Phone: 
+Website: 
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Sri_Narayana_Enterprise_Solar_Energies.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-11-21 14:20
+
+--- SUBJECT ---
+Sri Narayana Enterprise Solar Energies: 1 live Adilabad, Telangana ad, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Telangana solar market, and I put together a short report on what Sri Narayana Enterprise Solar Energies is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-11-21):
+
+  - 1 live ad, started 13 November 2026, running about 9 near-identical creative variants
+  - every click lands in a WhatsApp chat
+  - The ad's own "Website" line points at www.sribalajisolarenergies.com - the live site of Sri Balaji Solar Energies in Hanumakonda, a separately branded business. Your own domain, srinarayanasolarenergies.com, did not load when I tried it on 2026-11-21 (https, http and /about.html).
+  - All 9 variants carry the same line, "Subsidy Upto 78,000/-(T&C Apply)", with different openers - nine creatives testing one promise, all landing in the same inbox.
+
+You can verify every line yourself:
+
+  Library ID 1132334263122838: https://www.facebook.com/ads/library/?id=1132334263122838
+
+To be clear about what this is: it is an ad report. It is built from your live ad cards only - there is no site of your own for me to read, so nothing in it is a website audit, and there is no tracking or speed testing in it. What follows is only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

@@ -815,7 +815,16 @@ def promise_gap_table(audit):
               for h in ("What the live ad promises",
                         "What the landing page actually shows (read live)")]
     body = [header]
-    for promise, delivery in rows_data:
+    for row in rows_data:
+        # Rows are written two ways in the builders: as {"promise": ..., "site":
+        # ...} dicts and as plain (promise, delivery) pairs. Iterating a dict
+        # unpacks its keys, which used to print the literal words "promise" and
+        # "site" into both columns - normalise here so neither form can do that.
+        if isinstance(row, dict):
+            promise = row.get("promise", "")
+            delivery = row.get("site") or row.get("delivery") or ""
+        else:
+            promise, delivery = row
         body.append([
             Paragraph(T(promise), ST["cell_b"]),
             Paragraph(T(delivery), ST["cell_grey"]),

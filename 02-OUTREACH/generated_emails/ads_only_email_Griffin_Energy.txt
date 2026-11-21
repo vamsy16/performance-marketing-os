@@ -1,0 +1,43 @@
+=== EMAIL FOR: Griffin Energy ===
+City: Hyderabad, Telangana
+To: info@griffinenergy.in
+Phone: 
+Website: https://griffinenergy.in/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Griffin_Energy.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-11-21 14:20
+
+--- SUBJECT ---
+Griffin Energy: 4 live Hyderabad, Telangana ads, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Griffin Energy is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-11-21):
+
+  - 4 live ad creatives verified on Meta - three started 15 November 2026, one on 4 November (the page listing showed ~3 results in the same session)
+  - every click lands in WhatsApp chat, not on griffinenergy.in
+  - The site already has a free-survey form and a size-and-subsidy calculator, and none of this spend reaches either of them - so the click cannot be measured, retargeted or attributed.
+  - The ads promise "subsidy and net meter handled for you", while the site's own FAQ still reads: "Our registration on the national portal is in progress. Please ask us for the current status before you book."
+
+You can verify every line yourself:
+
+  Library ID 2436699883532011: https://www.facebook.com/ads/library/?id=2436699883532011
+  Library ID 1681876623343353: https://www.facebook.com/ads/library/?id=1681876623343353
+  Library ID 2928662904181620: https://www.facebook.com/ads/library/?id=2928662904181620
+  Library ID 1159969763254778: https://www.facebook.com/ads/library/?id=1159969763254778
+
+To be clear about what this is: it is an ad report. It is built from your live ad cards and from what any visitor can see on your public site - it is not a full website audit, so there is no tracking or speed testing in it. What follows is only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

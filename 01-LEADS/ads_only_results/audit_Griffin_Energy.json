@@ -1,0 +1,322 @@
+{
+  "company": "Griffin Energy",
+  "legal": "Griffin Energy (private installer, Hyderabad)",
+  "city": "Hyderabad, Telangana",
+  "website": "https://griffinenergy.in/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-21",
+  "generated_at": "2026-11-21",
+  "source": "Meta Ad Library (India, active) + live website fetch, 2026-11-21",
+  "ad_count_note": "Caveat: the page's own listing reported '~3 results' in the same session, so the live count is approximately 3-4; the 4 creatives above were each opened directly.",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 4,
+      "results_label": "4 live ads (page listing showed ~3 results)",
+      "query": "Griffin Energy advertiser page (page ID 1421460234380992), Meta Ad Library, India, active",
+      "ads": [
+        {
+          "library_id": "2436699883532011",
+          "library_url": "https://www.facebook.com/ads/library/?id=2436699883532011",
+          "page_name": "Griffin Energy",
+          "started": "Nov 15, 2026",
+          "destination": "WhatsApp (WHATSAPP / wa.me) - Send WhatsApp message",
+          "text": "Charging your EV at a public charger costs about Rs.2.90 a km. From your own rooftop solar it is about 29 paise.\n\nThat is roughly 90% less, and far below petrol at around Rs.7 a km. Over the life of the system, your roof becomes the cheapest fuel station in Hyderabad.\n\nGriffin installs Reliance HJT 715 Wp panels on Magnelis(R) steel, sized for your home and your EV, with subsidy and net meter handled for you.\n\nMessage us for a free roof survey and a solar + EV plan.\n\nHeadline: Charge your EV for up to 90% less\nCard footer: Griffin Energy is a private installer"
+        },
+        {
+          "library_id": "1681876623343353",
+          "library_url": "https://www.facebook.com/ads/library/?id=1681876623343353",
+          "page_name": "Griffin Energy",
+          "started": "Nov 15, 2026",
+          "destination": "WhatsApp (WHATSAPP / wa.me) - Send WhatsApp message",
+          "text": "You bought the EV. Now stop paying to fuel it.\n\nTwo extra solar panels on your roof generate enough to drive about 1,200 km every month. With net metering, that takes the energy cost of your driving to zero.\n\nGriffin sizes your rooftop system for your home and your car together: Reliance HJT 715 Wp panels on Magnelis(R) steel, with subsidy and net meter handled for you.\n\nMessage us with your EV model for a free roof survey in Hyderabad.\n\nHeadline: Run your EV on your own roof\nCard footer: Griffin Energy is a private installer"
+        },
+        {
+          "library_id": "2928662904181620",
+          "library_url": "https://www.facebook.com/ads/library/?id=2928662904181620",
+          "page_name": "Griffin Energy",
+          "started": "Nov 15, 2026",
+          "destination": "WhatsApp (WHATSAPP / wa.me) - Send WhatsApp message",
+          "text": "The PM Surya Ghar subsidy of up to Rs.78,000 is scheduled to close on 31 March 2027.\n\nApprovals, installation and net metering take weeks, and the subsidy is paid only after the system is commissioned. The homes that start now are the ones that make it.\n\nGriffin installs Reliance HJT 715 Wp panels on Magnelis(R) steel, and one person handles your subsidy, net meter and loan.\n\nMessage us for a free roof survey in Hyderabad.\n\nHeadline: Rs.78,000 subsidy closes 31 March 2027\nCard footer: Griffin Energy is a private installer"
+        },
+        {
+          "library_id": "1159969763254778",
+          "library_url": "https://www.facebook.com/ads/library/?id=1159969763254778",
+          "page_name": "Griffin Energy",
+          "started": "Nov 4, 2026",
+          "destination": "WhatsApp (WHATSAPP / wa.me) - Send WhatsApp Message",
+          "text": "Your solar panels come with a 30-year warranty. The frame holding them up usually doesn't.\n\nCheap structures start rusting at the cut edges and bolt holes within a few monsoons. On a terrace, a rusting frame is a safety problem, not a cosmetic one.\n\nEvery Griffin system stands on Magnelis(R) zinc-aluminium-magnesium coated steel from AM/NS India, carrying Reliance HJT panels.\n\nFree roof survey anywhere in Hyderabad. Written quote in 24 hours.\n\nHeadline: The steel matters as much as panels\nCard footer: Griffin Energy is a private installer\n(Ad Library note: this ad has multiple versions)"
+        }
+      ]
+    },
+    "summary": "4 live Meta ads confirmed on 2026-11-21 on the Griffin Energy page (page ID 1421460234380992). Three started on 15 Nov 2026 and one on 4 Nov 2026. All four click to WhatsApp and all four carry the card footer 'Griffin Energy is a private installer'. The copy sells an EV-plus-rooftop angle (Rs.2.90 a km at a public charger vs 29 paise from the roof), the 31 March 2027 subsidy window, and Reliance HJT 715 Wp modules on Magnelis(R) steel. The website was read live the same day. Google Ads Transparency records were not checked in this pass."
+  },
+  "funnel": {
+    "type": "WhatsApp chat",
+    "destination": "WhatsApp (wa.me / 'Send WhatsApp message') on all 4 ads",
+    "meaning": "Every live ad sends the click to a WhatsApp chat rather than to griffinenergy.in. The site already has a free-survey form and a size-and-subsidy calculator, and none of this spend reaches either of them - so the click cannot be measured, retargeted or attributed."
+  },
+  "findings": [
+    "All 4 live ads click to WhatsApp ('Send WhatsApp message'), never to griffinenergy.in - so the site's own survey form and its size-and-subsidy calculator cannot measure, retarget or attribute any of this spend.",
+    "The ads promise 'subsidy and net meter handled for you', while the site's own FAQ still reads: 'Our registration on the national portal is in progress. We will show our vendor ID here once it is listed. Please ask us for the current status before you book.' The ad sells a service the site says is not yet in place.",
+    "Every ad card is stamped 'Griffin Energy is a private installer', but no ad, and no page, explains what that means for a homeowner's Rs.78,000 - a disclaimered ad that still promises the subsidy leaves the buyer to guess.",
+    "Three of the four live ads started on the same day (15 Nov 2026) and all four end at the same WhatsApp number, with no landing page and no UTM: the four creatives cannot be compared against each other or against anything downstream.",
+    "The site publishes the PM Surya Ghar slab (1 kW Rs.30,000, 2 kW Rs.60,000, 3 kW and above Rs.78,000) but not one system price, so the ad's 'subsidy handled' promise cannot be priced in a single click.",
+    "Nothing on the site - and nothing in any ad - names a customer, a review or a completed project count, on a purchase that runs to lakhs, while competing Hyderabad installers advertise install counts and reviews in the first line of the ad."
+  ],
+  "next_steps": [
+    [
+      "Send at least one ad to griffinenergy.in, not only to WhatsApp",
+      "The site already has the better funnel - a free-survey form and a subsidy calculator. Put a Meta Pixel and UTMs on it and point one creative there so the click becomes measurable and retargetable."
+    ],
+    [
+      "Publish the PM Surya Ghar vendor status, or stop implying it",
+      "The FAQ says the portal registration is in progress. Until the vendor ID is listed, say in the ad exactly how the Rs.78,000 is claimed and by whom - the current copy reads as though Griffin claims it on the customer's behalf."
+    ],
+    [
+      "Put one worked price on the landing page",
+      "The subsidy slab is published but no system price is. Show one worked example - 3 kWp, on-roof, net of subsidy, with the EMI - so the ad's promise can be priced without a phone call."
+    ],
+    [
+      "Add the proof the ads are missing",
+      "One named Hyderabad install, one review, one kW figure. Griffin's technical story (Reliance HJT, Magnelis(R) steel) is stronger than most competitors'; the ad currently pairs it with no evidence that anyone has bought it."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Phone / WhatsApp",
+      "+91 91605 55540"
+    ],
+    [
+      "Email",
+      "info@griffinenergy.in"
+    ],
+    [
+      "Registered office",
+      "17-1-386/SN/5/A, SN Reddy Nagar, Champapet, Vaishalinagar, Saroornagar, Hyderabad 500079, Telangana"
+    ],
+    [
+      "Facebook page",
+      "https://www.facebook.com/Griffin.Energy/"
+    ],
+    [
+      "Page ID (Ad Library)",
+      "1421460234380992"
+    ],
+    [
+      "Website",
+      "https://griffinenergy.in/"
+    ],
+    [
+      "PM Surya Ghar status",
+      "Site FAQ: registration on the national portal 'in progress' as of 2026-11-21"
+    ]
+  ],
+  "contact": {
+    "phone": "+91 91605 55540",
+    "email": "info@griffinenergy.in"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://griffinenergy.in/",
+    "audit_date": "2026-11-21",
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": 5,
+      "has_live_chat": false,
+      "has_popup_optin": false,
+      "has_testimonials": false,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Griffin Energy | Rooftop solar for Hyderabad homes",
+      "title_length": 51,
+      "has_meta_description": null,
+      "meta_desc_length": null,
+      "h1_count": 1,
+      "h1_text": "Quoted in 24 hours. Installed in one day.",
+      "has_og_tags": null,
+      "has_schema": null,
+      "has_favicon": null,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": null
+    },
+    "platform": "Static single-page site, server-rendered HTML (hash anchors #quote / #calculator)",
+    "html_errors": null,
+    "scope_note": "The website was read live on 2026-11-21 through a rendered-content fetch. Tracking-pixel and head checks (Meta Pixel, GA4, GTM, Google Ads, meta description, Open Graph, JSON-LD, favicon) need the raw served HTML and were not captured through this channel, so they are recorded as not checked rather than absent. PageSpeed and sitemap were not run.",
+    "score": {
+      "score": 5,
+      "issues": [
+        "No live chat — missing after-hours leads",
+        "No visible testimonials/social proof on homepage"
+      ],
+      "wins": [
+        "Contact form exists",
+        "WhatsApp link present",
+        "Good CTA presence (5 buttons)"
+      ]
+    }
+  },
+  "audit_date": "2026-11-21",
+  "site_evidence": {
+    "pixel": null,
+    "utm": false,
+    "checked_on": "2026-11-21",
+    "note": "Head HTML not captured through the sandbox fetch channel; pixel presence is not checked, not asserted absent. No UTM parameters appear on any link in the rendered page content, and the ads themselves land on wa.me, which carries no campaign parameters."
+  },
+  "promise_gap": [
+    {
+      "promise": "'Subsidy and net meter handled for you' (3 of 4 ads)",
+      "site": "The site FAQ says the PM Surya Ghar registration is 'in progress' and asks the buyer to check the current status before booking. The ad makes the same service sound settled."
+    },
+    {
+      "promise": "Rs.78,000 subsidy 'closes 31 March 2027'",
+      "site": "The site says the scheme 'is currently funded until 31 March 2027'. The ad turns a funding window into a hard closing date - a claim a cautious buyer will check, and the page does not back it."
+    },
+    {
+      "promise": "'Quoted in 24 hours. Installed in one day.'",
+      "site": "The site repeats both, but qualifies the one-day install as applying 'once your approval comes through' and puts the real timeline at 6-9 weeks. The ad drops the qualification."
+    }
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "pass",
+        "evidence": "5 distinct offer angles in live copy: government subsidy, subsidy amount, warranty, installation speed, loan assistance."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Nov 4, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "4 distinct live ads visible - enough running to compare messages against each other. Caveat: the page's own listing reported '~3 results' in the same session, so the live count is approximately 3-4; the 4 creatives above were each opened directly."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: WhatsApp chat."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 4,
+      "fail": 1,
+      "unknown": 10,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

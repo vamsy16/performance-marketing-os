@@ -1,0 +1,237 @@
+{
+  "company": "Sri Narayana Enterprise Solar Energies",
+  "legal": "Sri Narayana Enterprises Solar Energies (Adilabad)",
+  "city": "Adilabad, Telangana",
+  "website": "",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-11-21",
+  "generated_at": "2026-11-21",
+  "source": "Meta Ad Library (India, active), 2026-11-21; own website unreachable",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "1 live ad (about 9 near-identical creative variants)",
+      "query": "Sri Narayana Enterprise Solar Energies page (page ID 936862456183233), Meta Ad Library, India, active",
+      "ads": [
+        {
+          "library_id": "1132334263122838",
+          "library_url": "https://www.facebook.com/ads/library/?id=1132334263122838",
+          "page_name": "Sri Narayana Enterprise Solar Energies",
+          "started": "Nov 13, 2026",
+          "destination": "WhatsApp (API.WHATSAPP.COM) - Send WhatsApp Message",
+          "text": "INTRODUCING THE PM SURYA GHAR INITIATIVE, EMPOWERING HOUSEHOLDS WITH CLEAN ENERGY THROUGH ROOFTOP SOLAR SYSTEMS. BENEFIT FROM A GENEROUS SUBSIDY OF Rs.78,000/-* TO HELP REDUCE RELIANCE ON CONVENTIONAL ELECTRICITY.\n\nTAKE ADVANTAGE OF ATTRACTIVE SUBSIDY BENEFITS OF UP TO Rs.78,000/-*! WITH EASY EMI PLANS STARTING AT JUST Rs.1,355/- FOR A 3KW SYSTEM.\n\nSWITCH TO SOLAR TODAY AND ENJOY THE BENEFITS OF A GREENER, SMARTER HOME.\n\nHouse No. 13-8/23, New Housing Board Colony, Adilabad, Telangana 504001 | Call: +91-9490662135 | E-mail: Snepadilabad@gmail.com | Website: www.sribalajisolarenergies.com | Facebook: srinarayanaenterprisessolarenergies | Instagram: srinarayanaenterprises\n\nAd Library note: the copy is set in bold Unicode pseudo-letters (U+1D400 block); reproduced here in plain capitals. The same ad runs about 9 near-identical creative variants."
+        }
+      ]
+    },
+    "summary": "1 live Meta ad confirmed on 2026-11-21 on the Sri Narayana Enterprise Solar Energies page (page ID 936862456183233, started 13 Nov 2026), running about 9 near-identical Telugu/English creative variants that all carry the same line - 'Subsidy Upto 78,000/-(T&C Apply)' - and all click to WhatsApp. No website audit was run: the company's own domain srinarayanasolarenergies.com did not load on the day, and the website the ad itself names is another firm's site."
+  },
+  "funnel": {
+    "type": "WhatsApp chat",
+    "destination": "WhatsApp (API.WHATSAPP.COM) - 'Send WhatsApp Message' on every variant",
+    "meaning": "Every variant of the ad clicks to a WhatsApp chat, and the website named in the ad belongs to a different company. There is no page of Sri Narayana's own anywhere in the paid path, so nothing can be measured, retargeted or corrected once the buyer arrives."
+  },
+  "findings": [
+    "The ad's own 'Website' line points at www.sribalajisolarenergies.com - the live site of Sri Balaji Solar Energies in Hanumakonda, a separately branded business - while the company's own domain srinarayanasolarenergies.com did not load on 2026-11-21 (https, http and /about.html all failed in this pass). Ad traffic is being sent to another firm's website.",
+    "About 9 creative variants carry exactly the same offer line - 'Subsidy Upto 78,000/-(T&C Apply)' - with different headlines ('No More Electricity Bills Tension', 'Cut Off On Your Electricity Bill', 'Power Up Your Home', 'Invest For Better Future'...). That is nine ads testing nothing: the same promise, the same creative shape, the same destination.",
+    "The copy is set in bold Unicode pseudo-letters (the mathematical alphanumeric block, so 'Introducing' renders as pseudo-bold glyphs). Screen readers and some Android default fonts read those characters letter by letter or show boxes, and the body is one unbroken bold block with no line breaks between the offer and the address.",
+    "The single live ad runs no price for a specific size, no warranty term, no panel or inverter brand and no service guarantee - only a Rs.1,355 EMI for 'a 3KW system' and 'T&C Apply', with no T&C anywhere a buyer can read.",
+    "The contact email on the ad is a personal Gmail address (snepadilabad@gmail.com) rather than an address on the firm's own domain, which is the first thing a Rs.1 lakh+ buyer checks and the easiest thing to lose a lead over.",
+    "The ad has been running since 13 Nov 2026 with no landing page and no site of its own to send the click to, so every enquiry sits in a WhatsApp thread with no record of which ad produced it."
+  ],
+  "next_steps": [
+    [
+      "Fix the website line in the ad - today",
+      "It currently sends buyers to another company's site. Either point it at your own domain, or remove the line until your domain resolves."
+    ],
+    [
+      "Get srinarayanasolarenergies.com back up, or replace it",
+      "The domain did not load, so the ad has no owned destination. A one-page site with the subsidy table, your address and an enquiry form, plus the Meta Pixel, is enough to start measuring this spend."
+    ],
+    [
+      "Turn nine identical creatives into three real tests",
+      "One price-led ('3 kW at Rs.X, EMI Rs.1,355'), one subsidy-led ('what the Rs.78,000 covers'), one proof-led (installs, warranty, service area). Same destination, so the winner can actually be identified."
+    ],
+    [
+      "Rewrite the copy in normal Telugu text",
+      "Bold Unicode pseudo-letters break screen readers and some Android fonts, and read as spam to the platforms. Plain Telugu with a headline, three bullets and one CTA will outperform it."
+    ],
+    [
+      "Move to a domain email address",
+      "info@srinarayanasolarenergies.com (once the domain is live) is worth more than any creative change on a purchase this size."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Phone",
+      "+91 9490 662 135 (as printed: +91-9490662135)"
+    ],
+    [
+      "Email",
+      "snepadilabad@gmail.com (personal Gmail, per the ad)"
+    ],
+    [
+      "Address",
+      "House No. 13-8/23, New Housing Board Colony, Adilabad, Telangana 504001"
+    ],
+    [
+      "Facebook page",
+      "https://www.facebook.com/srinarayanaenterprisessolarenergies/"
+    ],
+    [
+      "Page ID (Ad Library)",
+      "936862456183233"
+    ],
+    [
+      "Instagram",
+      "srinarayanaenterprises"
+    ],
+    [
+      "Website named in the ad",
+      "www.sribalajisolarenergies.com - live, but it is Sri Balaji Solar Energies' site, not this company's"
+    ],
+    [
+      "Own domain",
+      "srinarayanasolarenergies.com - did not load 2026-11-21 (http, https and /about.html all failed)"
+    ]
+  ],
+  "contact": {
+    "phone": "+91 9490 662 135",
+    "email": "snepadilabad@gmail.com"
+  },
+  "audit_date": "2026-11-21",
+  "site_evidence": {
+    "pixel": null,
+    "utm": false,
+    "checked_on": "2026-11-21",
+    "note": "No website of this company's own could be read: srinarayanasolarenergies.com did not load on 2026-11-21, so pixel and UTM checks were not run and are recorded as not checked, not as absent."
+  },
+  "promise_gap": [
+    {
+      "promise": "'Subsidy Upto 78,000/-(T&C Apply)' - the only offer line in all 9 variants",
+      "site": "There is no page of Sri Narayana's own to state the T&C, the eligibility rules or the sizes the Rs.78,000 applies to; the website named in the ad belongs to another company."
+    },
+    {
+      "promise": "'Easy EMI plans starting at just Rs.1,355/- for a 3KW system'",
+      "site": "No lender, tenure, interest rate, down payment or processing fee is published anywhere the buyer can reach, so the EMI figure cannot be checked or compared."
+    }
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "pass",
+        "evidence": "3 distinct offer angles in live copy: government subsidy, subsidy amount, EMI / financing."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Nov 13, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "fail",
+        "evidence": "A single live ad - no internal comparison, no safety net if it fatigues."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: WhatsApp chat."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 3,
+      "fail": 2,
+      "unknown": 10,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

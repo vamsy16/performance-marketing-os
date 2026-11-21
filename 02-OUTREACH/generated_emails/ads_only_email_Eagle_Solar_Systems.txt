@@ -1,0 +1,42 @@
+=== EMAIL FOR: Eagle Solar Systems ===
+City: Hyderabad, Telangana
+To: eaglesolarhyd@gmail.com
+Phone: 
+Website: 
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Eagle_Solar_Systems.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-11-21 14:20
+
+--- SUBJECT ---
+Eagle Solar Systems: 3 live Hyderabad, Telangana ads, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Eagle Solar Systems is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-11-21):
+
+  - 3 live ad creatives opened directly (21, 19 and 7 November 2026; the page listing showed ~2 results in the same session)
+  - every click lands in a Facebook lead form (FB.ME "Book now") - there is no website anywhere in the funnel
+  - All enquiry data therefore sits inside Meta: nothing can be retargeted, scored or followed up outside the inbox, and there is no page a buyer can check you on before handing over a phone number.
+  - The 19 November Telugu ad opens with "Raitanna" - the word for a farmer - on a residential rooftop offer for homeowners.
+
+You can verify every line yourself:
+
+  Library ID 2327283458060008: https://www.facebook.com/ads/library/?id=2327283458060008
+  Library ID 1123693900270768: https://www.facebook.com/ads/library/?id=1123693900270768
+  Library ID 1677382683817329: https://www.facebook.com/ads/library/?id=1677382683817329
+
+To be clear about what this is: it is an ad report. It is built from your live ad cards only - there is no website of yours for me to read, so nothing in it is a website audit, and there is no tracking or speed testing in it. What follows is only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===

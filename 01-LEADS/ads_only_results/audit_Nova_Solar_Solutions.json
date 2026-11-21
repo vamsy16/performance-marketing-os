@@ -1,0 +1,323 @@
+{
+  "company": "Nova Solar Solutions",
+  "legal": "Nova Solar Solutions (novasolarhyd)",
+  "city": "Hyderabad, Telangana",
+  "website": "https://www.novasolar.in/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-21",
+  "generated_at": "2026-11-21",
+  "source": "Meta Ad Library (India, active) + live website fetch, 2026-11-21",
+  "ad_count_note": "Caveat: the page's own listing reported '~4 results' and '~5 results' on two reads the same day, so the live count is approximately 3-5; the 3 creatives above were each opened directly.",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 3,
+      "results_label": "3 live ads opened directly (page listing showed ~4-5 results)",
+      "query": "Nova Solar advertiser page (page ID 707984349075711), Meta Ad Library, India, active",
+      "ads": [
+        {
+          "library_id": "2179943109395424",
+          "library_url": "https://www.facebook.com/ads/library/?id=2179943109395424",
+          "page_name": "Nova Solar",
+          "started": "Nov 16, 2026",
+          "destination": "Facebook lead form (FB.ME) - Sign up",
+          "text": "THIS FESTIVE SEASON, BRING HOME THE POWER OF THE SUN!\n\nCelebrate with Nova Solar and enjoy incredible festive benefits!\n\nGet a 3 kW Solar System at just Rs.1.22 Lakhs!\n\nAnd that's not all! Enjoy these EXCLUSIVE FREE BENEFITS:\n- Free Solar Panel Cleaning Sprinkler Installation\n- Free Quarterly Chemical Cleaning for 1 Year\n- Free Solar Panel Insurance for 1 Year\n- Free Quarterly Preventive Maintenance for 5 Years\n- Cash Discount up to Rs.10,000!\n\nWhy keep paying high electricity bills when the sun can power your home?\n\nCall us today: 9866789995 / 9849639995\nwww.novasolar.in\n\nNova Solar - Know the Power of Sun! (T&C Apply)"
+        },
+        {
+          "library_id": "1166448119664691",
+          "library_url": "https://www.facebook.com/ads/library/?id=1166448119664691",
+          "page_name": "Nova Solar",
+          "started": "Nov 20, 2026",
+          "destination": "Facebook lead form (FB.ME) - Sign up",
+          "text": "Same festive 3 kW offer as the 16 Nov ad (Rs.1.22 Lakhs, free sprinkler installation, 1-year chemical cleaning, 1-year panel insurance, 5-year quarterly preventive maintenance, cash discount up to Rs.10,000, 9866789995 / 9849639995, www.novasolar.in). Ad Library note: started 20 Nov 2026, total active time 7 hrs; creative is a video."
+        },
+        {
+          "library_id": "2330186101154741",
+          "library_url": "https://www.facebook.com/ads/library/?id=2330186101154741",
+          "page_name": "Nova Solar",
+          "started": "Nov 21, 2026",
+          "destination": "Facebook lead form (FB.ME) - Sign up",
+          "text": "This festive season, say goodbye to high electricity bills!\n\nGet 3 kW Solar System at Just Rs.1.22 Lakhs!\nGet exciting FREE benefits and discounts up to Rs.10,000. For Hyderabad city only!\n\nSign up\n\nAd Library note: started 21 Nov 2026, total active time 6 hrs, Impressions <100 ('Low impression count')."
+        }
+      ]
+    },
+    "summary": "3 live Meta ads confirmed on 2026-11-21 on the Nova Solar page (page ID 707984349075711, facebook.com/novasolarhyd): 16 Nov, 20 Nov and 21 Nov 2026. All three run the same festive 3 kW offer at Rs.1.22 Lakhs, and all three click to a Facebook lead form (FB.ME 'Sign up'). The page's own ad listing reported approximately 4-5 active results across two reads the same day, so treat this as 3-5 live ads rather than an exact count. The website was read live the same day. Google Ads Transparency records were not checked in this pass."
+  },
+  "funnel": {
+    "type": "Facebook lead form",
+    "destination": "Facebook lead form (FB.ME) - 'Sign up' on all 3 ads",
+    "meaning": "Every click ends inside a Facebook lead form. Nova Solar's own consultation form, its published 1-10 kW price table and its cleaning price list are never reached from paid spend, and no enquiry can be retargeted or attributed beyond Meta's own reporting."
+  },
+  "findings": [
+    "The ad's headline price does not match the site's own price table: the ads say '3 kW Solar System at just Rs.1.22 Lakhs', while the site lists 3 kW at Rs.2,05,000 gross, Rs.78,000 subsidy and Rs.1,27,000 net - Rs.5,000 higher than the ad, before the Rs.10,000 cash discount the ad also promises.",
+    "Two different module warranties are printed on the same page: the hero tiles say '25yr Panel Warranty', while the PM Surya Ghar section says 'Solar module performance warranty of 30 years'. The ad repeats neither, so the buyer could reasonably expect either.",
+    "The 21 Nov ad says the offer is 'For Hyderabad city only', while the site sells 'across Telangana and beyond' from a Secunderabad (Tirumalagiri) office - the ad narrows the business's own market.",
+    "All three ads land on an FB.ME lead form, so the site's consultation form, 1-10 kW price table and panel-cleaning price list are never reached from paid traffic and no visitor can be retargeted.",
+    "The creative is a stock-photo page: the hero and service images are hot-linked from images.unsplash.com, including one captioned 'Nova Solar team installing solar panels' that is not a photograph of the Nova Solar team.",
+    "The site claims 'Govt Approved Installer', MNRE empanelment, ISO 9001-2015 and NSIC registration, but publishes no vendor code, certificate number or registration ID that a buyer could check - on a page that asks for a two-lakh decision.",
+    "The two newest ads are 6-7 hours old with one under 100 impressions, so the account is spending too little for these creatives to learn anything - and the 16 Nov ad has already been superseded twice in five days."
+  ],
+  "next_steps": [
+    [
+      "Reconcile Rs.1.22 Lakh with the site's Rs.1,27,000",
+      "Either the ad price is pre-discount and the site table is not, or one of them is wrong. Show the arithmetic on the landing page - gross, subsidy, cash discount, net, EMI - so the two numbers add up in front of the buyer."
+    ],
+    [
+      "Pick one warranty number and use it everywhere",
+      "25-year or 30-year, module or performance - not both on one page. Then put the same figure in the ad, where it is currently missing."
+    ],
+    [
+      "Put the festive offer on a page Nova owns",
+      "Replace the FB.ME form with a landing page carrying the offer, the price table and the consultation form, with the Meta Pixel and UTMs - that is what makes the next ad campaign measurable and enables retargeting."
+    ],
+    [
+      "Publish the credentials, not the adjectives",
+      "MNRE empanelment, ISO 9001-2015 and NSIC registration are checkable. Print the vendor code, the certificate number and the registration ID next to the claims."
+    ],
+    [
+      "Replace the stock photos with your own installs",
+      "A stock image captioned as the Nova Solar team is the cheapest thing to fix and one of the most damaging if a buyer notices. Two or three real Hyderabad installs with the customer's permission will do more than any of the six service tiles."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Phone",
+      "+91 9866789995 | +91 8121172525 | 040-35697836"
+    ],
+    [
+      "Ad creative phones",
+      "9866789995 / 9849639995"
+    ],
+    [
+      "WhatsApp",
+      "wa.me/919866789995"
+    ],
+    [
+      "Email",
+      "info@novasolar.in"
+    ],
+    [
+      "Office",
+      "Plot No.7, All Saints Road, near LIC Office, Tirumalagiri, Secunderabad, Telangana 500015"
+    ],
+    [
+      "Facebook page",
+      "https://www.facebook.com/novasolarhyd/"
+    ],
+    [
+      "Page ID (Ad Library)",
+      "707984349075711"
+    ],
+    [
+      "Website",
+      "https://www.novasolar.in/"
+    ]
+  ],
+  "contact": {
+    "phone": "+91 9866789995",
+    "email": "info@novasolar.in"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://www.novasolar.in/",
+    "audit_date": "2026-11-21",
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": 11,
+      "has_live_chat": false,
+      "has_popup_optin": false,
+      "has_testimonials": false,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Nova Solar Solutions",
+      "title_length": 20,
+      "has_meta_description": null,
+      "meta_desc_length": null,
+      "h1_count": 1,
+      "h1_text": "Powering a Sustainable Future with Smart Solar Energy",
+      "has_og_tags": null,
+      "has_schema": null,
+      "has_favicon": null,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": null
+    },
+    "platform": "Static single-page site (anchor sections #contact / #subsidy); stock Unsplash imagery hot-linked",
+    "html_errors": null,
+    "scope_note": "The website was read live on 2026-11-21 through a rendered-content fetch of the home page. Tracking-pixel and head checks (Meta Pixel, GA4, GTM, Google Ads, meta description, Open Graph, JSON-LD, favicon) need the raw served HTML and were not captured through this channel, so they are recorded as not checked rather than absent. PageSpeed and sitemap were not run.",
+    "score": {
+      "score": 5,
+      "issues": [
+        "No live chat — missing after-hours leads",
+        "No visible testimonials/social proof on homepage"
+      ],
+      "wins": [
+        "Contact form exists",
+        "WhatsApp link present",
+        "Good CTA presence (11 buttons)"
+      ]
+    }
+  },
+  "audit_date": "2026-11-21",
+  "site_evidence": {
+    "pixel": null,
+    "utm": false,
+    "checked_on": "2026-11-21",
+    "note": "Head HTML not captured through the sandbox fetch channel; pixel presence is not checked, not asserted absent. No UTM parameters appear on any link in the rendered page content, and all three ads land on fb.me, which cannot carry them."
+  },
+  "promise_gap": [
+    {
+      "promise": "'3 kW Solar System at just Rs.1.22 Lakhs' (all 3 ads)",
+      "site": "The site's own table prices 3 kW at Rs.2,05,000 gross, Rs.78,000 subsidy, Rs.1,27,000 net. The ad is Rs.5,000 below the site, and neither figure is explained."
+    },
+    {
+      "promise": "'Free Quarterly Preventive Maintenance for 5 Years'",
+      "site": "The site does promise free quarterly preventive maintenance for 5 years in its FAQ, but the ad also stacks a free sprinkler install, 1-year chemical cleaning and 1-year insurance on top - none of which appear in the site's price table, so there is no way to see what the offer is worth."
+    },
+    {
+      "promise": "'Cash Discount up to Rs.10,000'",
+      "site": "No cash-discount line exists anywhere on the site; the price table's net column is the subsidy only."
+    }
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "Live ads click to a Facebook lead form (fb.me) - traffic never reaches a page you own, so no URL can carry UTMs and click data stays inside Meta."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "All 3 live ads use a single format (video) - no format variety to test what converts."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "pass",
+        "evidence": "4 distinct offer angles in live copy: discount offer, EMI / financing, experience claim, installation speed."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Nov 21, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "3 distinct live ads visible - enough running to compare messages against each other. Caveat: the page's own listing reported '~4 results' and '~5 results' on two reads the same day, so the live count is approximately 3-5; the 3 creatives above were each opened directly."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: Facebook lead form."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 4,
+      "fail": 3,
+      "unknown": 8,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

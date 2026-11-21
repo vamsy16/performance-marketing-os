@@ -74,6 +74,11 @@ They live in **two folders**, which is why looking at one folder makes the total
 | Laxmi Narayana Solar | 4 | 17 KB | — | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Laxmi_Narayana_Solar.pdf) |
 | Envious Energy Private Limited | 5 | 23 KB | 11/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Envious_Energy_Private_Limited.pdf) |
 | Sri Balaji Solar Energies | 6 | 35 KB | 19/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Sri_Balaji_Solar_Energies.pdf) |
+| Griffin Energy | 6 | 28 KB | 5/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Griffin_Energy.pdf) |
+| Nova Solar Solutions | 6 | 27 KB | 5/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Nova_Solar_Solutions.pdf) |
+| Sri Narayana Enterprise Solar Energies | 4 | 19 KB | — | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Sri_Narayana_Enterprise_Solar_Energies.pdf) |
+| Aadithya Solar Energies | 6 | 25 KB | 9/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Aadithya_Solar_Energies.pdf) |
+| Eagle Solar Systems | 4 | 20 KB | — | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Eagle_Solar_Systems.pdf) |
 
 ## Notes
 

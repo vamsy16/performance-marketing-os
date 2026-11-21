@@ -1,0 +1,42 @@
+=== EMAIL FOR: Nova Solar Solutions ===
+City: Hyderabad, Telangana
+To: info@novasolar.in
+Phone: 
+Website: https://www.novasolar.in/
+Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Nova_Solar_Solutions.pdf
+Template: ads_only_live_ad_report
+Generated: 2026-11-21 14:20
+
+--- SUBJECT ---
+Nova Solar Solutions: 3 live Hyderabad, Telangana ads, one funnel
+
+--- BODY ---
+Hi,
+
+I spend my week reading the public Meta Ad Library for the Hyderabad solar market, and I put together a short report on what Nova Solar Solutions is doing right now.
+
+What it covers (pulled from the Ad Library on 2026-11-21):
+
+  - 3 live ad creatives opened directly (16, 20 and 21 November 2026; the page listing showed ~4-5 results in the same session)
+  - every click lands in a Facebook lead form (FB.ME "Sign up")
+  - The ad says "3 kW Solar System at just Rs.1.22 Lakhs", while your own price table lists 3 kW at Rs.2,05,000 gross, Rs.78,000 subsidy, Rs.1,27,000 net - Rs.5,000 apart, before the Rs.10,000 cash discount the ad also promises.
+  - Two different module warranties sit on the same page: the hero tiles say 25-year panel warranty, the PM Surya Ghar section says 30-year module performance warranty.
+
+You can verify every line yourself:
+
+  Library ID 2179943109395424: https://www.facebook.com/ads/library/?id=2179943109395424
+  Library ID 1166448119664691: https://www.facebook.com/ads/library/?id=1166448119664691
+  Library ID 2330186101154741: https://www.facebook.com/ads/library/?id=2330186101154741
+
+To be clear about what this is: it is an ad report. It is built from your live ad cards and from what any visitor can see on your public site - it is not a full website audit, so there is no tracking or speed testing in it. What follows is only what your paid clicks are doing, and where they are being lost.
+
+If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+=== END ===
