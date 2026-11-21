@@ -98,14 +98,21 @@ two disagree the report says so rather than picking the flattering number.
 ## Drafts
 Five step-0 Gmail drafts created in `smartpursuit3@gmail.com` — **none sent**:
 
-| Company | Draft ID | To |
-|---|---|---|
-| Griffin Energy | `r-5431484933593022371` | info@griffinenergy.in |
-| Nova Solar Solutions | `r1135391727474854682` | info@novasolar.in |
-| Sri Narayana Enterprise Solar Energies | `r-5333526982820816476` | snepadilabad@gmail.com |
-| Aadithya Solar Energies | `r4148023811262726530` | info@aadithyasolarenergies.com |
-| Eagle Solar Systems | `r2907852764902115138` | eaglesolarhyd@gmail.com |
+| Company | Draft ID | To | PDF attached |
+|---|---|---|---|
+| Griffin Energy | `r7019253932361991502` | info@griffinenergy.in | yes |
+| Nova Solar Solutions | `r-2835553294757762435` | info@novasolar.in | yes |
+| Sri Narayana Enterprise Solar Energies | `r-7540540684948378821` | snepadilabad@gmail.com | yes |
+| Aadithya Solar Energies | `r555746294131774653` | info@aadithyasolarenergies.com | **no - add before sending** |
+| Eagle Solar Systems | `r2907852764902115138` | eaglesolarhyd@gmail.com | yes |
 
-Each carries its own PDF as the attachment and its own library IDs in the body,
-so every line can be re-checked by the recipient. The two ads-only drafts (Sri
-Narayana, Eagle) say plainly that there was no site to read.
+Every draft carries its own library IDs in the body, so every line can be
+re-checked by the recipient. The two ads-only drafts (Sri Narayana, Eagle) say
+plainly that there was no site to read.
+
+**Known gap:** the Aadithya draft's PDF could not be uploaded - Arena's upload
+limiter rejected the fifth file in the same reply ("upload limit reached, try
+again in at least 15 seconds"), and it kept rejecting it on retries. The body
+ends with a `[Attach: audit_Aadithya_Solar_Energies.pdf]` marker. Attach
+`02-OUTREACH/ads_only_pdfs/audit_Aadithya_Solar_Energies.pdf` in Gmail before
+sending, or re-run the draft on a fresh turn and the upload will go through.
