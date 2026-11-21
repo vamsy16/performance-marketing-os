@@ -1,0 +1,256 @@
+{
+  "company": "Manasaa Enterprises",
+  "legal": "Manasaa Enterprises (Hyderabad, Miyapur)",
+  "city": "Hyderabad, Telangana (Miyapur); also Kakinada, Andhra Pradesh",
+  "offer_angles": [
+    "published price ladder (3/5/10 kW)",
+    "subsidy up to Rs.78,000"
+  ],
+  "social_proof_in_ads": false,
+  "website": "",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-11-21",
+  "generated_at": "2026-11-21",
+  "source": "Meta Ad Library (India, active), 2026-11-21; no website resolves",
+  "ad_count_note": "Caveat: this is a single ad opened directly (826884287112902). No page listing was read for page 1259997940531140 in the same session, so the total number of active ads is not known and is not guessed here.",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 1,
+      "results_label": "1 ad opened directly (page listing not counted)",
+      "query": "ManasaEnterprises page (page ID 1259997940531140), Meta Ad Library, India, active",
+      "ads": [
+        {
+          "library_id": "826884287112902",
+          "library_url": "https://www.facebook.com/ads/library/?id=826884287112902",
+          "page_name": "ManasaEnterprises",
+          "started": "Aug 22, 2026",
+          "destination": "WhatsApp (api.whatsapp.com) - 'Send WhatsApp message'",
+          "text": "MANASAA ENTERPRISES\nSOLAR MASTER DISTRIBUTOR\nDomestic & Commercial Solar Systems\n\nGOVT. SUBSIDY UP TO Rs.78,000*\nSave on Electricity Bills\nClean & Renewable Energy\n\nSOLAR SYSTEMS\n- 3 kW - Rs.2,05,000*\n- 5 kW - Rs.3,10,000*\n- 10 kW - Rs.5,92,000*\n\nAlso Available:\nSolar Pump Sets - Solar Street Lights - AC/DC Systems\n\n- Expert Installation\n- Quality Products\n- After-Sales Support\n\nCALL / WHATSAPP\n7901253949 | 8074507650\n\nKakinada | Hyderabad\nmanasaaenterprises2024@gmail.com\n\nAd Library note: every price and the subsidy figure carry an asterisk; no footnote or T&C appears anywhere in the ad."
+        }
+      ]
+    },
+    "summary": "1 live Meta ad confirmed on 2026-11-21 on the ManasaEnterprises page (page ID 1259997940531140), running since 22 Aug 2026 and clicking to WhatsApp. It is the only ad in this batch that publishes a full price ladder - 3 kW Rs.2,05,000, 5 kW Rs.3,10,000, 10 kW Rs.5,92,000 - plus a Rs.78,000 subsidy claim, two phone numbers, an email and two cities. Every price and the subsidy carry an asterisk with no footnote in the ad. No website is linked and manasaaenterprises.com did not load, so no site audit was run."
+  },
+  "funnel": {
+    "type": "WhatsApp chat",
+    "destination": "WhatsApp (api.whatsapp.com) - 'Send WhatsApp message'",
+    "meaning": "The ad publishes a full three-tier price ladder and then sends every click to a WhatsApp chat with no landing page behind it. A buyer who has just been shown a Rs.5.92 lakh price has nowhere to check the company, the asterisk's conditions or the warranty, and the business cannot retarget or measure the click."
+  },
+  "findings": [
+    "Every price in the ad - 3 kW Rs.2,05,000, 5 kW Rs.3,10,000, 10 kW Rs.5,92,000 - and the Rs.78,000 subsidy figure carry an asterisk, and no footnote, T&C or qualifying condition appears anywhere in the ad. On a Rs.5.9 lakh quote the terms are the offer.",
+    "The prices are quoted per kW size with no panel brand, inverter brand, module wattage, structure type or warranty term attached to any of them, so the three tiers cannot be compared with each other or with any competitor's quote.",
+    "The ad claims 'GOVT. SUBSIDY UP TO Rs.78,000' but the three system prices are not stated as net or gross of it, so a buyer cannot tell whether the Rs.2,05,000 for 3 kW already has the subsidy in it - and at 3 kW the subsidy is the single largest line item in the purchase.",
+    "There is no website: manasaaenterprises.com did not load on 2026-11-21, and every click ends in a WhatsApp chat, so a buyer cannot verify the distributor before committing to a lakh-scale order.",
+    "The business calls itself a 'SOLAR MASTER DISTRIBUTOR' and the ad runs in Hyderabad, but the only address detail in it is 'Kakinada | Hyderabad' - no area, no street, no pin code for either city.",
+    "Only third-party corroboration of an address exists (Justdial lists Miyapur, behind RBR1 Complex, Hanuman Temple Road, 4 years in business), and the ad itself carries none of it - nor a single review, install count or project photograph.",
+    "The single ad has been running unchanged since 22 Aug 2026 with no variants, so there is no message test in the account and no evidence any creative angle has ever been tried."
+  ],
+  "next_steps": [
+    [
+      "Publish the asterisk",
+      "State, in the ad, whether each price is net or gross of the Rs.78,000, what the asterisk conditions are, and what is included (panel/inverter brand, structure, net-metering, warranty). It is the cheapest credibility upgrade available and it costs one line of copy."
+    ],
+    [
+      "Attach a specification to each of the three tiers",
+      "3 kW / 5 kW / 10 kW with a panel brand, an inverter brand and a warranty term turns three numbers into three comparable products - and is what a buyer needs to shortlist against another quote."
+    ],
+    [
+      "Put up one page, even a single page",
+      "The ad already publishes the hardest content to write (a price ladder). A one-page site repeating it with the address, the asterisk, the warranty split and a Meta Pixel would make every click measurable and retargetable - and give the buyer somewhere to check the firm."
+    ],
+    [
+      "Say where in Hyderabad you actually are",
+      "'Kakinada | Hyderabad' is not an address. The Justdial listing gives Miyapur, behind RBR1 Complex, Hanuman Temple Road - publish it, with a map link, in the ad and on the page."
+    ],
+    [
+      "Add one piece of proof",
+      "A named install, a kW size, a locality and a photograph. A 'master distributor' claim on a lakh-scale purchase with no install, review or project behind it is the weakest part of an otherwise unusually-specific ad."
+    ],
+    [
+      "Run a second creative",
+      "One ad unchanged since 22 Aug 2026 means the account has never learned anything. A variant leading with the 3 kW price and one leading with the subsidy would answer which hook this market responds to."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Phone / WhatsApp (ad)",
+      "7901253949 | 8074507650"
+    ],
+    [
+      "Email (ad)",
+      "manasaaenterprises2024@gmail.com"
+    ],
+    [
+      "Location (ad)",
+      "Kakinada | Hyderabad - no area, street or pin code"
+    ],
+    [
+      "Location (Justdial, 2026-11-21)",
+      "Hanuman Temple Road, behind RBR1 Complex, Miyapur, Hyderabad - 4 years in business"
+    ],
+    [
+      "Justdial pricing line",
+      "'Starts from Rs.40/watt' (directory listing, not the ad)"
+    ],
+    [
+      "Facebook page",
+      "https://www.facebook.com/61593163442429/"
+    ],
+    [
+      "Page ID (Ad Library)",
+      "1259997940531140"
+    ],
+    [
+      "Website",
+      "None - manasaaenterprises.com did not load on 2026-11-21"
+    ],
+    [
+      "Published prices (ad)",
+      "3 kW Rs.2,05,000 / 5 kW Rs.3,10,000 / 10 kW Rs.5,92,000, all asterisked"
+    ]
+  ],
+  "contact": {
+    "phone": "7901253949",
+    "email": "manasaaenterprises2024@gmail.com"
+  },
+  "audit_date": "2026-11-21",
+  "site_evidence": {
+    "pixel": null,
+    "utm": false,
+    "checked_on": "2026-11-21",
+    "note": "This business has no website that loads, so no pixel or UTM check was possible. Recorded as not checked rather than absent. The ad lands on a WhatsApp chat, which carries no campaign parameters."
+  },
+  "promise_gap": [
+    {
+      "promise": "'- 3 kW - Rs.2,05,000*' / '5 kW - Rs.3,10,000*' / '10 kW - Rs.5,92,000*'",
+      "site": "The asterisk has no footnote anywhere in the ad and there is no website where the conditions could be read. Whether the price is net or gross of the Rs.78,000 is never stated."
+    },
+    {
+      "promise": "'GOVT. SUBSIDY UP TO Rs.78,000*'",
+      "site": "No ad or page explains who applies for the subsidy, when it is credited, or what the buyer pays before it arrives."
+    },
+    {
+      "promise": "'SOLAR MASTER DISTRIBUTOR'",
+      "site": "No manufacturer authorisation, brand list or dealer certificate is named anywhere - and the ad names no panel or inverter brand at all."
+    }
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Only one live ad was readable, so the account's spread of offer angles cannot be judged from it."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Newest ad opened for this report started Aug 22, 2026, but no full page listing was read, so the account's real newest creative is unknown."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "fail",
+        "evidence": "A single live ad - no internal comparison, no safety net if it fatigues. Caveat: this is a single ad opened directly (826884287112902). No page listing was read for page 1259997940531140 in the same session, so the total number of active ads is not known and is not guessed here."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: WhatsApp chat."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 1,
+      "fail": 2,
+      "unknown": 12,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

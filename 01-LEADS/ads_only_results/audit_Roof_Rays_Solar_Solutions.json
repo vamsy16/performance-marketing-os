@@ -1,0 +1,341 @@
+{
+  "company": "Roof Rays Solar Solutions",
+  "legal": "Roof Rays Solar Solutions (roofrays.in)",
+  "city": "Hyderabad, Telangana (Tellapur / HUDA Complex)",
+  "offer_angles": [
+    "up to Rs.78,000 government subsidy",
+    "solar + EV fuel savings",
+    "electricity bill savings"
+  ],
+  "social_proof_in_ads": false,
+  "website": "https://roofrays.in/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-21",
+  "generated_at": "2026-11-21",
+  "source": "Meta Ad Library (India, active) + live website fetch, 2026-11-21",
+  "ad_count_note": "Caveat: 3 ad IDs were opened directly on 2026-11-21; an earlier read of the same page the same day showed 5 active ads, so the live total is approximately 3-5 and the 3 creatives above are the ones confirmed by direct open.",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 3,
+      "results_label": "3 live ads, each re-read at its own Ad Library permalink",
+      "query": "Roof Rays Solar Solutions, Meta Ad Library, India, active - the Ad Library reports this advertiser under page id 997092546826993, which differs from the 61587695438410 in the Facebook profile URL",
+      "ads": [
+        {
+          "library_id": "1825502928519547",
+          "library_url": "https://www.facebook.com/ads/library/?id=1825502928519547",
+          "page_name": "Roof Rays Solar Solutions",
+          "started": "Nov 16, 2026",
+          "destination": "Facebook lead form (FB.ME) - 'Get quote'",
+          "text": "What if you could drive up to 2,000 KM without worrying about monthly fuel expenses?\n\nYes! It's possible with the right combination of a 5 kW rooftop solar system and an Electric Vehicle.\n\nGenerate approximately 600 units of solar electricity every month.\nUse 300 units for your home.\nUtilize the surplus solar power to charge your EV.\nPotentially save up to Rs.20,000 per month on fuel expenses!\n\nWhy pay more for electricity and fuel when your rooftop can help power both your home and your car?\n\nSwitch to Solar. Drive Smarter. Save More!\n\nContact Roof Rays Solar Solutions today for your FREE Solar Quotation!\n\nFB.ME card: 'Save Up to Rs.20,000/Month with Solar + EV! - Power Your Home & EV with Rooftop Solar. Get Your Free Quote Today!'\nAd Library note: creative is a video."
+        },
+        {
+          "library_id": "1635924467937920",
+          "library_url": "https://www.facebook.com/ads/library/?id=1635924467937920",
+          "page_name": "Roof Rays Solar Solutions",
+          "started": "Nov 4, 2026",
+          "destination": "Facebook lead form (FB.ME) - 'Get quote'",
+          "text": "Ready to cut down your electricity bills?\n\nSwitch to rooftop solar with Roof Rays Solar Solutions and enjoy long-term savings! Eligible residential customers can get solar subsidies of up to Rs.78,000.\n\nMake your rooftop work for you.\n\nEnquire today for your FREE Solar Quote!\n\nFB.ME card: 'Save Up to Rs.78,000 with Solar! - Install Rooftop Solar. Reduce Your Bills.'\nAd Library note: creative is a video."
+        },
+        {
+          "library_id": "1184145723936677",
+          "library_url": "https://www.facebook.com/ads/library/?id=1184145723936677",
+          "page_name": "Roof Rays Solar Solutions",
+          "started": "Nov 4, 2026",
+          "destination": "Facebook lead form (FB.ME) - 'Get quote'",
+          "text": "Why pay more for electricity when you can turn sunshine into savings?\n\nMake the smart switch to rooftop solar with Roof Rays Solar Solutions!\n\nGet up to Rs.78,000 in eligible government subsidy.\nReduce your electricity expenses.\nEnjoy clean energy and long-term savings.\n\nDon't wait! Start your solar journey today and make the most of available subsidy benefits.\n\nGet your FREE solar quotation now!\n\nFB.ME card: 'Turn Sunshine into Savings! - Go Solar. Save More. Enjoy Subsidy Benefits.'\nAd Library note: creative is a video."
+        }
+      ]
+    },
+    "summary": "3 ad IDs opened directly on 2026-11-21, all active on the Roof Rays Solar Solutions page (page ID 61587695438410): 1825502928519547 (16 Nov, solar + EV), 1635924467937920 and 1184145723936677 (both 4 Nov, Rs.78,000 subsidy). An earlier read of the same page the same day showed 5 live ads, so treat the count as 3-5. All three click to a Facebook lead form rather than to roofrays.in. The site was read live the same day: four service lines, a four-step process, a Rs.1 lakh roof-protection assurance, a 5-year maintenance promise, a 14-27 working-day install window and a subsidy countdown dated 31 March 2027."
+  },
+  "funnel": {
+    "type": "Facebook lead form",
+    "destination": "Facebook lead form (FB.ME) - 'Get quote' on all 3 ads",
+    "meaning": "Every live ad ends in a Facebook lead form, while the site carries a detailed qualification form (property type, residence type, housing-society name, average monthly bill) that would sort a homeowner from a housing society from a C&I buyer before anyone picks up the phone. None of this spend reaches that form, so the richest qualification data the business owns is not being used."
+  },
+  "findings": [
+    "All three live ads click to a Facebook lead form, never to roofrays.in - in a business that sells to homes, housing societies and commercial/industrial buyers separately, the site's own form (property type, residence type, society name, average monthly bill) would qualify each lead before the first call, and none of this spend reaches it.",
+    "The site's subsidy panel is a live countdown - 'Last date to apply 31 March 2027', '130 Days 02 Hrs 07 Mins' - while the ads never mention a deadline at all. The urgency asset exists and is not being used where the money is being spent.",
+    "The site promises 'Rs.1 Lakh Roof Protection Assurance' and '5-Year Expert Maintenance Support' and no live ad mentions either - the two most concrete, checkable offers the business has are missing from the creatives.",
+    "The site does publish an estimated price table and a units-to-kW guide - 3 kW Rs.1,45,000-2,10,000, 5 kW Rs.2,30,000-3,50,000, 10 kW Rs.4,80,000-7,20,000, and '300-450 units -> 3 kW' - on its residential guide page. None of the three ads carries a price or links to that page: the ads land on a lead form, so the one comparison asset the business owns is invisible to its paid traffic.",
+    "The ads target a Hyderabad homeowner with 'up to Rs.20,000 per month on fuel expenses' from a solar + EV combination, but no EV system, EV charger or worked EV example appears on the home page or the residential guide read for this report - the biggest number in the campaign is the one the destination does not set out.",
+    "The site publishes no customer name, review, install count, kW installed or project photograph with a locality anywhere, on a purchase that runs to lakhs and next to competitors quoting install counts in their first line.",
+    "The contact block gives the address as 'HUDA Complex, Tellapur' with no building, floor or plot number, while the Google Maps place it links to is pinned to a specific coordinate (17.4636, 78.2867) - a buyer checking the firm on a map gets a pin, not an address they can drive to."
+  ],
+  "next_steps": [
+    [
+      "Point at least one ad at roofrays.in, not only at the lead form",
+      "The site already qualifies leads better than the Meta form does. Put a Meta Pixel and UTMs on it and send one creative there so the click becomes measurable and the qualification data survives."
+    ],
+    [
+      "Put the 31 March 2027 countdown into the ad copy",
+      "The site's own panel carries a live day counter. The same deadline, in the creative, is a stronger call to action than 'Get your FREE solar quotation' - and it is already the asset the business believes in."
+    ],
+    [
+      "Lead with the Rs.1 lakh roof-protection assurance",
+      "Roof damage and leakage is the single biggest objection in rooftop solar, and Roof Rays already sells a named assurance against it. It appears in no ad. Put it in the creative and on the landing page."
+    ],
+    [
+      "Point the ads at the price guide that already exists",
+      "The residential guide already answers the buyer's first question with a kW price range and a units-to-kW table. No ad links to it. Either send a creative there (with UTMs) or lift the 3 kW range into the ad itself so 'up to Rs.78,000' becomes a checkable number."
+    ],
+    [
+      "Either build an EV page or drop the Rs.20,000/month EV claim",
+      "The 16 Nov ad's entire hook is solar + EV savings, and no EV content was found on the pages read for this report. A short EV page with one worked example would make the claim verifiable; without it, the number is the weakest link in the campaign."
+    ],
+    [
+      "Publish the full street address and one local install",
+      "Add the building, floor and plot to the contact block, and one named Tellapur/Hyderabad install with a kW size. It converts a map pin into a business a buyer can check."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Phone",
+      "96669 90036"
+    ],
+    [
+      "WhatsApp",
+      "wa.me/919666990036 (subsidy eligibility CTA)"
+    ],
+    [
+      "Email",
+      "support@roofrays.in"
+    ],
+    [
+      "Address (site)",
+      "HUDA Complex, Tellapur, Hyderabad, Telangana"
+    ],
+    [
+      "Address (search result, not on the site's own block)",
+      "Vishnu Car Care Building, 2nd Floor, Tellapur Road, HUDA Complex, Plot No. 32, Tellapur - recorded as search-sourced, verify before use"
+    ],
+    [
+      "Google Maps place",
+      "Roof Rays Solar Solutions - 17.4635977, 78.2867255"
+    ],
+    [
+      "Facebook page",
+      "https://www.facebook.com/profile.php?id=61587695438410"
+    ],
+    [
+      "Page ID (Ad Library)",
+      "61587695438410"
+    ],
+    [
+      "Website",
+      "https://roofrays.in/"
+    ],
+    [
+      "Social",
+      "Instagram roofrays_solar, YouTube @RoofRaysSolarSolutions"
+    ]
+  ],
+  "contact": {
+    "phone": "96669 90036",
+    "email": "support@roofrays.in"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://roofrays.in/",
+    "audit_date": "2026-11-21",
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": 8,
+      "has_live_chat": false,
+      "has_popup_optin": true,
+      "has_testimonials": false,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Solar Energy Solutions | Roof Rays Solar Solutions",
+      "title_length": 55,
+      "has_meta_description": null,
+      "meta_desc_length": null,
+      "h1_count": 1,
+      "h1_text": "SOLAR ENERGY SOLUTIONS FOR HOMES, HOUSING SOCIETIES, BUSINESSES & INDUSTRIES",
+      "has_og_tags": null,
+      "has_schema": null,
+      "has_favicon": null,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": true
+    },
+    "platform": "WordPress; single-page landing with a separate /connect-with-us/ contact page",
+    "html_errors": null,
+    "scope_note": "The website was read live on 2026-11-21 through a rendered-content fetch of the home page. Tracking-pixel and head checks (Meta Pixel, GA4, GTM, Google Ads, meta description, Open Graph, JSON-LD, favicon) need the raw served HTML and were not captured through this channel, so they are recorded as not checked rather than absent. PageSpeed and sitemap were not run.",
+    "score": {
+      "score": 5,
+      "issues": [
+        "No live chat — missing after-hours leads",
+        "No visible testimonials/social proof on homepage"
+      ],
+      "wins": [
+        "Contact form exists",
+        "WhatsApp link present",
+        "Good CTA presence (8 buttons)"
+      ]
+    }
+  },
+  "audit_date": "2026-11-21",
+  "site_evidence": {
+    "pixel": null,
+    "utm": false,
+    "checked_on": "2026-11-21",
+    "note": "Head HTML not captured through the sandbox fetch channel; pixel presence is not checked, not asserted absent. No UTM parameters appear on any link in the rendered page content, and the ads themselves land on an fb.me lead form, which carries no campaign parameters."
+  },
+  "promise_gap": [
+    {
+      "promise": "'Save up to Rs.20,000 per month on fuel expenses' (16 Nov ad)",
+      "site": "No EV system, EV charger or worked EV example appears on the home page or the residential guide read for this report. The claim rests on 600 units a month from 5 kW, half of it surplus, which nothing read sets out."
+    },
+    {
+      "promise": "'Up to Rs.78,000 in eligible government subsidy' (both 4 Nov ads)",
+      "site": "The site states the subsidy deadline as 31 March 2027 and otherwise leaves the mechanics to the form - it does not say who applies, when it is credited, or what the buyer pays before it arrives."
+    },
+    {
+      "promise": "'14-27 working days' install (site FAQ)",
+      "site": "The site gives the window but no ad does, and the FAQ does not say whether the clock starts at booking, at approval or at net-meter sanction - the part a buyer actually plans around."
+    }
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "Live ads click to a Facebook lead form (fb.me) - traffic never reaches a page you own, so no URL can carry UTMs and click data stays inside Meta."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "All 3 live ads use a single format (video) - no format variety to test what converts."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "pass",
+        "evidence": "3 distinct offer angles in live copy: up to Rs.78,000 government subsidy, solar + EV fuel savings, electricity bill savings."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Newest ad opened for this report started Nov 16, 2026, but no full page listing was read, so the account's real newest creative is unknown."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "3 distinct live ads visible - enough running to compare messages against each other. Caveat: 3 ad IDs were opened directly on 2026-11-21; an earlier read of the same page the same day showed 5 active ads, so the live total is approximately 3-5 and the 3 creatives above are the ones confirmed by direct open."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: Facebook lead form."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 3,
+      "fail": 3,
+      "unknown": 9,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

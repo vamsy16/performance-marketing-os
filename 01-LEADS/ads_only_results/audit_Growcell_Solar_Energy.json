@@ -1,0 +1,329 @@
+{
+  "company": "Growcell Solar Energy",
+  "legal": "Growcell Energy LLP (Ahmedabad) - Hyderabad branch office",
+  "city": "Hyderabad, Telangana (Banjara Hills); HO Ahmedabad",
+  "offer_angles": [
+    "Rs.78,000 PM Surya Ghar subsidy",
+    "bill-based sizing / free quote"
+  ],
+  "social_proof_in_ads": false,
+  "website": "https://growcellenergy.in/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-21",
+  "generated_at": "2026-11-21",
+  "source": "Meta Ad Library (India, active) + live website fetch, 2026-11-21",
+  "ad_count_note": "Caveat: both live ads were opened directly, but no page-listing count was read for this page in the same session, so the live total may be higher than the 2 creatives reproduced here.",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 2,
+      "results_label": "2 live ads opened directly (page listing not counted)",
+      "query": "Growcell Solar Energy (page ID 61591290572665) + Growcell Energy LLP (1244655595388630), Meta Ad Library, India, active",
+      "ads": [
+        {
+          "library_id": "2267587767143531",
+          "library_url": "https://www.facebook.com/ads/library/?id=2267587767143531",
+          "page_name": "Growcell Solar Energy",
+          "started": "Nov 15, 2026",
+          "destination": "Facebook lead form (FB.ME) - 'Get quote'",
+          "text": "Rs.78,000 TAK SUBSIDY!\n\nApne ghar ki chhat par solar lagao aur pao PM Surya Ghar Yojana ke under Rs.78,000 tak ki government subsidy!\n\nBijli ke bill ko karo kam aur clean, green energy ki taraf badhao ek kadam!\n\n- Up to Rs.78,000 subsidy for eligible residential consumers\n- Complete solar installation support\n- Subsidy documentation mein assistance\n- Save on electricity bills for years to come\n\nGrowcell Energy ke saath apna solar journey shuru karein!\n\nAaj hi contact karein aur apna solar quote paayein.\n\nSubsidy eligibility and amount are subject to government guidelines and approval.\n\nFB.ME card: 'Growcell Solar Energy - Get quote'\nAd Library note: run jointly - the card reads 'Growcell Solar Energy with Growcell Energy LLP'; creative is a video; the card CTA is 'Get quote'. This is the only ad in the set that carries a subsidy figure, and it carries the qualifying line too."
+        },
+        {
+          "library_id": "1171646568632890",
+          "library_url": "https://www.facebook.com/ads/library/?id=1171646568632890",
+          "page_name": "Growcell Solar Energy",
+          "started": "Nov 15, 2026",
+          "destination": "Facebook lead form (FB.ME) - 'Get quote'",
+          "text": "How much solar does your home need?\n\nShare your electricity bill with us and our team will help you understand:\n\n- Required solar capacity\n- Estimated system cost\n- Applicable subsidy\n- Expected monthly savings\n\nGet your FREE Solar Quote today!\n\nHeadline (on the card): 'Rs.5K-Rs.10K Bill? Go Solar!'\nCard body: 'Rooftop solar lagakar apni electricity cost ko significantly reduce karein.'\nAd Library note: creative is a video; the ad's own card headline assumes a Rs.5,000-10,000 monthly bill; card CTA is 'Get quote'."
+        }
+      ]
+    },
+    "summary": "2 live Meta ads confirmed on 2026-11-21, both started 15 Nov 2026 and both click to a Facebook lead form rather than to growcellenergy.in. The pair is placed by the 'Growcell Solar Energy' page together with the 'Growcell Energy LLP' page. One ad sells the Rs.78,000 PM Surya Ghar subsidy in Hinglish with the required eligibility caveat; the other offers a free quote from your electricity bill and carries the card headline 'Rs.5K-Rs.10K Bill? Go Solar!'. No ad states a system size, a system price or an EMI. The website was read live the same day; Google Ads Transparency records were not checked in this pass."
+  },
+  "funnel": {
+    "type": "Facebook lead form",
+    "destination": "Facebook lead form (FB.ME) - 'Get quote' on both ads",
+    "meaning": "Neither live ad links to growcellenergy.in, even though the site runs a WPForms quote form, a WhatsApp CTA and two office addresses that would all reassure a buyer spending lakhs. Every enquiry lands inside Meta, so no click can be retargeted, attributed or followed up outside the inbox."
+  },
+  "findings": [
+    "Both ads are placed by the Growcell Energy LLP page, and a direct Ad Library lookup of the brand page (61591290572665) returns no active ads at all - so the name the ads are labelled with is not the page carrying the spend, and a buyer searching for the brand page finds nothing running.",
+    "Both live ads click to a Facebook lead form, never to growcellenergy.in - so the site's own WPForms quote form, its WhatsApp CTA and its two office addresses are invisible to every rupee of this spend.",
+    "The home page's own counters contradict each other: 'panels installed 475+' sits beside 'satisfied customers 4+' and 'brands 0+' and 'Years success 0+'. A visitor reading the proof strip sees two zeroes next to the one number the business wants to lead with.",
+    "The Hyderabad address is 'RELIANCE MAJESTIC, M FLOOR, 8-2, 626, Rd Number 11, Banjara Hills' - a serviced/office building with no unit number, while the Ahmedabad head office gets a full unit ('A-506'). For a Hyderabad-targeted ad, the local address is the vaguer one.",
+    "The two ads sell two different things. One leads with 'Rs.78,000 TAK SUBSIDY' and correctly footnotes 'subject to government guidelines and approval'; the other leads with 'How much solar does your home need?' and a 'Rs.5K-Rs.10K Bill?' headline that assumes a monthly bill band. Same budget, same day, two different offers - and no landing page behind either to show which one converts.",
+    "Neither of the two live ads carries a system price, an EMI or a kW-to-bill table, and the site publishes none either anywhere, so the ad that asks the buyer to 'share your electricity bill' has nowhere to send them to self-serve a number first.",
+    "All four site testimonials (Mahesh Dabhoriya, Dipesh Shah, Amit Patel, Rahul Mehta) carry no city and no system size - on a Hyderabad-targeted campaign, none of the proof is local.",
+    "The ad copy is Hinglish while the website is English-only, so the buyer the ad speaks to arrives at a page written in a different register."
+  ],
+  "next_steps": [
+    [
+      "Send one ad to growcellenergy.in, not only to the lead form",
+      "The site already has a quote form, a WhatsApp CTA and two offices. Put a Meta Pixel and UTMs on it and point one creative there so the click becomes measurable, retargetable and attributable."
+    ],
+    [
+      "Fix the proof counters before the next rupee of spend",
+      "'brands 0+' and 'Years success 0+' sit next to '475+ panels installed'. Either fill them from real numbers or remove them - a buyer who notices the zeroes discounts the 475 as well."
+    ],
+    [
+      "Put one worked price on the landing page",
+      "The ads ask for a bill and promise a quote; the site shows no kW price, no EMI and no subsidy-adjusted total. One worked 3 kW example would answer the ad's question before the form."
+    ],
+    [
+      "Make the Hyderabad office as specific as the Ahmedabad one",
+      "Add the floor/unit and a map link to the Banjara Hills address, and put the Hyderabad number on the ad's landing page - the campaign sells to Hyderabad but the site leads with an Ahmedabad head office."
+    ],
+    [
+      "Add the local proof the site is missing",
+      "One named Hyderabad install with a kW size and a locality would do more than four uncited testimonials on a city-targeted campaign."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Phone (Hyderabad office)",
+      "+91 878 023 2338"
+    ],
+    [
+      "Phone (Ahmedabad HO)",
+      "+91 97247 21060"
+    ],
+    [
+      "WhatsApp (site CTA)",
+      "wa.me/918520032200"
+    ],
+    [
+      "Email",
+      "sales@growcellenergy.in"
+    ],
+    [
+      "Hyderabad office",
+      "RELIANCE MAJESTIC, M FLOOR, 8-2, 626, Rd Number 11, Banjara Hills, Hyderabad, Telangana 500034"
+    ],
+    [
+      "Ahmedabad head office",
+      "A-506, Siddhivinayak Tower, Beside Kataria Arcade, Near D.A.V. School, Makarba, S.G. Highway, Ahmedabad 380051"
+    ],
+    [
+      "Facebook page",
+      "https://www.facebook.com/61591290572665/"
+    ],
+    [
+      "Second advertiser page",
+      "https://www.facebook.com/growcellenergy/ (Growcell Energy LLP)"
+    ],
+    [
+      "Page ID (Ad Library)",
+      "61591290572665 (advertiser) / 1244655595388630 (LLP)"
+    ],
+    [
+      "Website",
+      "https://growcellenergy.in/"
+    ]
+  ],
+  "contact": {
+    "phone": "+91 878 023 2338",
+    "email": "sales@growcellenergy.in"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://growcellenergy.in/",
+    "audit_date": "2026-11-21",
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": 6,
+      "has_live_chat": false,
+      "has_popup_optin": false,
+      "has_testimonials": true,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Solar Company in Hyderabad | GrowCell Energy",
+      "title_length": 45,
+      "has_meta_description": null,
+      "meta_desc_length": null,
+      "h1_count": 1,
+      "h1_text": "Empowering India with Clean Solar Energy",
+      "has_og_tags": null,
+      "has_schema": null,
+      "has_favicon": null,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": true
+    },
+    "platform": "WordPress + WPForms Lite; two quote forms on one page",
+    "html_errors": null,
+    "scope_note": "The website was read live on 2026-11-21 through a rendered-content fetch of the home page and the contact page. Tracking-pixel and head checks (Meta Pixel, GA4, GTM, Google Ads, meta description, Open Graph, JSON-LD, favicon) need the raw served HTML and were not captured through this channel, so they are recorded as not checked rather than absent. PageSpeed and sitemap were not run.",
+    "score": {
+      "score": 3,
+      "issues": [
+        "No live chat — missing after-hours leads"
+      ],
+      "wins": [
+        "Contact form exists",
+        "WhatsApp link present",
+        "Good CTA presence (6 buttons)",
+        "Testimonials visible"
+      ]
+    }
+  },
+  "audit_date": "2026-11-21",
+  "site_evidence": {
+    "pixel": null,
+    "utm": false,
+    "checked_on": "2026-11-21",
+    "note": "Head HTML not captured through the sandbox fetch channel; pixel presence is not checked, not asserted absent. No UTM parameters appear on any link in the rendered page content, and the ads themselves land on an fb.me lead form, which carries no campaign parameters."
+  },
+  "promise_gap": [
+    {
+      "promise": "'Up to Rs.78,000 subsidy' + 'subsidy documentation mein assistance'",
+      "site": "The site never states whether Growcell is a registered PM Surya Ghar vendor, who files the application, or what happens if the subsidy is refused. The ad says eligibility is subject to government approval but leaves the buyer to assume Growcell handles it."
+    },
+    {
+      "promise": "'Share your electricity bill ... estimated system cost'",
+      "site": "The site publishes no system price, no per-kW rate and no EMI, so the number the ad promises cannot be checked or self-served anywhere on growcellenergy.in."
+    },
+    {
+      "promise": "'Rs.5K-Rs.10K Bill? Go Solar!' (card headline)",
+      "site": "Nothing on the site maps a monthly bill band to a kW size or a price, so the headline's implied 'your bill decides your system' is never actually worked out for the reader."
+    }
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "Live ads click to a Facebook lead form (fb.me) - traffic never reaches a page you own, so no URL can carry UTMs and click data stays inside Meta."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "All 2 live ads use a single format (video) - no format variety to test what converts."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "Only 2 offer angles across the live ads (Rs.78,000 PM Surya Ghar subsidy, bill-based sizing / free quote) - too few to learn which hook this market answers to."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Newest ad opened for this report started Nov 15, 2026, but no full page listing was read, so the account's real newest creative is unknown."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "2 distinct live ads visible - a comparison is at least possible. Caveat: both live ads were opened directly, but no page-listing count was read for this page in the same session, so the live total may be higher than the 2 creatives reproduced here."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: Facebook lead form."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 2,
+      "fail": 4,
+      "unknown": 9,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

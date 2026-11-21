@@ -53,8 +53,36 @@ ACCOUNT_ONLY_CONTROLS = (
 )
 
 
+from datetime import datetime
+
+NOTE_MARKER = "ad library note:"
+
+
+def _ad_copy(ad):
+    """The ad's own words only.
+
+    Batch builders append analyst commentary to `text` after an
+    'Ad Library note:' marker. That commentary says things like "no warranty
+    is stated", which would otherwise be read back as the ad promising a
+    warranty - so everything from the marker on is dropped before any
+    keyword check.
+    """
+    t = ad.get("text") or ""
+    low = t.lower()
+    i = low.find(NOTE_MARKER)
+    return (t[:i] if i != -1 else t).strip()
+
+
+def _started_key(value):
+    """Sort 'Nov 21, 2026' by real date, not alphabetically."""
+    try:
+        return datetime.strptime(value.strip(), "%b %d, %Y")
+    except (ValueError, AttributeError):
+        return datetime.min
+
+
 def _texts(ads):
-    return " ".join((a.get("text") or "") + " " + (a.get("destination") or "")
+    return " ".join(_ad_copy(a) + " " + (a.get("destination") or "")
                     for a in ads).lower()
 
 
@@ -159,29 +187,49 @@ def evaluate(lead, site_evidence=None):
         add("M25", "Creative format diversity", "Creative", UNKNOWN,
             "Ad-card formats were not captured for these ads.")
 
-    concepts = _concepts(ads)
-    if len(concepts) >= 3:
+    # Offer angles are a reading of the copy, not a keyword scrape: the batch
+    # builder's own commentary ("no warranty is stated") would otherwise be
+    # counted as the ad promising a warranty. A lead must declare its angles.
+    concepts = lead.get("offer_angles")
+    if concepts is None:
+        add("M26", "Creative concept coverage", "Creative", UNKNOWN,
+            "Offer angles were not declared for this lead; not inferred from "
+            "keyword matches in the ad text.")
+    elif len(concepts) >= 3:
         add("M26", "Creative concept coverage", "Creative", PASS,
             f"{len(concepts)} distinct offer angles in live copy: "
             f"{', '.join(concepts)}.")
     elif concepts:
         add("M26", "Creative concept coverage", "Creative", FAIL,
             f"Only {len(concepts)} offer angle{'s' if len(concepts) != 1 else ''} "
-            f"in live copy ({', '.join(concepts)}) "
-            "- every ad says the same thing.")
+            f"across the live ads ({', '.join(concepts)}) "
+            "- too few to learn which hook this market answers to.")
     else:
-        add("M26", "Creative concept coverage", "Creative", UNKNOWN,
-            "Ad copy could not be read for these ads.")
+        add("M26", "Creative concept coverage", "Creative", FAIL,
+            "No offer angle is identifiable in the live ad copy.")
 
-    if any("trusted by" in _texts(ads) for _ in [0]):
+    proof = lead.get("social_proof_in_ads")
+    if proof is True:
         add("M30", "Social proof utilization", "Creative", PASS,
             "Live ad copy carries a social-proof claim (customer count / "
             "testimonial framing).")
-    else:
+    elif proof is False:
         note = lead.get("ad_copy_note") or ""
         add("M30", "Social proof utilization", "Creative", FAIL,
             "No social proof (customer counts, reviews, testimonials) in the "
             "live ad copy." + (f" {note}" if note else ""))
+    else:
+        add("M30", "Social proof utilization", "Creative", UNKNOWN,
+            "Social-proof presence was not declared for this lead; not "
+            "inferred from keyword matches in the ad text.")
+
+    # A single ad having a single offer angle is not a coverage failure;
+    # coverage can only be judged once more than one ad has been read.
+    if len(ads) < 2 and any(c.get("id") == "M26" for c in controls):
+        controls[:] = [c for c in controls if c.get("id") != "M26"]
+        add("M26", "Creative concept coverage", "Creative", UNKNOWN,
+            "Only one live ad was readable, so the account's spread of offer "
+            "angles cannot be judged from it.")
 
     add("M27", "Video aspect ratios", "Creative", UNKNOWN,
         "Creative files cannot be downloaded from the Ad Library; needs "
@@ -195,12 +243,22 @@ def evaluate(lead, site_evidence=None):
         "catalog forbids benchmark guessing.")
 
     # ---- Structure & delivery ---------------------------------------------
+    # Freshness is only knowable if we read the page, not just a few ad links:
+    # a batch built from one old ad per lead would otherwise "pass" on a
+    # ceiling it never observed. Require a page listing to be recorded.
     started = [a.get("started") for a in ads if a.get("started")]
-    if started:
-        newest = max(started)
+    listed = bool(lead.get("ads_listing_read"))
+    if started and listed:
+        newest = max(started, key=_started_key)
         add("M-CR1", "Creative freshness", "Structure & delivery", PASS,
             f"Live creatives include recent launches (newest started "
             f"{newest}) - the account is not running one stale ad forever.")
+    elif started:
+        add("M-CR1", "Creative freshness", "Structure & delivery", UNKNOWN,
+            f"Newest ad opened for this report started "
+            f"{max(started, key=_started_key)}, but no full page listing was "
+            "read, so the "
+            "account's real newest creative is unknown.")
     else:
         add("M-CR1", "Creative freshness", "Structure & delivery", UNKNOWN,
             "Ad start dates were not captured.")

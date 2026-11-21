@@ -1,0 +1,288 @@
+{
+  "company": "Akhil Electrical Works",
+  "legal": "Akhil Electrical Works (TGREDCO-empanelled; TSSPDCL registered contractor)",
+  "city": "Suryapet, Telangana",
+  "offer_angles": [
+    "government subsidy assistance",
+    "3 kW / 5 kW system sizes"
+  ],
+  "social_proof_in_ads": false,
+  "website": "",
+  "ads_only": true,
+  "website_audit_run": false,
+  "checked_on": "2026-11-21",
+  "generated_at": "2026-11-21",
+  "source": "Meta Ad Library (India, active), 2026-11-21; no website exists",
+  "ad_count_note": "Caveat: 4 ad IDs were opened directly on 2026-11-21 and all four returned an active ad; no page-listing count was read, so the live total may be higher than 4.",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 4,
+      "results_label": "4 live ads opened directly (page listing not counted)",
+      "query": "Akhil Electrical Works page (page ID 874469655996702), Meta Ad Library, India, active",
+      "ads": [
+        {
+          "library_id": "997508846276370",
+          "library_url": "https://www.facebook.com/ads/library/?id=997508846276370",
+          "page_name": "Akhil Electrical Works",
+          "started": "Nov 21, 2026",
+          "destination": "WhatsApp (WHATSAPP / api.whatsapp.com) - 'Send WhatsApp message'",
+          "text": "(Telugu) 'Do you want to install solar for your home? Contact us now for government subsidy details, prices and installation information! AKHIL ELECTRICAL WORKS & SOLAR SYSTEMS'\n\nAd Library note: started 21 Nov 2026, total active time 3 hrs. No price, kW size, EMI or warranty in the creative."
+        },
+        {
+          "library_id": "1677824443701148",
+          "library_url": "https://www.facebook.com/ads/library/?id=1677824443701148",
+          "page_name": "Akhil Electrical Works",
+          "started": "Nov 17, 2026",
+          "destination": "WhatsApp (WHATSAPP / api.whatsapp.com) - 'Send WhatsApp message'",
+          "text": "'Go Solar, Save More!'\n\nImage-led card: the creative is an image only, with the single line above as the ad copy. No price, kW size, subsidy amount, EMI or warranty is stated, and the only click destination is a WhatsApp chat."
+        },
+        {
+          "library_id": "1387795526583908",
+          "library_url": "https://www.facebook.com/ads/library/?id=1387795526583908",
+          "page_name": "Akhil Electrical Works",
+          "started": "Nov 17, 2026",
+          "destination": "WhatsApp (WHATSAPP / api.whatsapp.com) - 'Send WhatsApp message'",
+          "text": "'3KW & 5KW Solar Systems | Subsidy Assistance | Call Now.'\n\nImage-led card with the line above as the ad copy and a WhatsApp click destination. The two sizes are named; no price, subsidy amount, EMI or warranty term is stated."
+        },
+        {
+          "library_id": "1680326913622219",
+          "library_url": "https://www.facebook.com/ads/library/?id=1680326913622219",
+          "page_name": "Akhil Electrical Works",
+          "started": "Nov 14, 2026",
+          "destination": "WhatsApp (WHATSAPP / api.whatsapp.com) - 'Send WhatsApp message'",
+          "text": "'Go Solar, Save More!'\n\nImage-led card, WhatsApp-only click destination. Nothing in the ad states a system size, a price, a subsidy figure, an EMI or a warranty term."
+        }
+      ]
+    },
+    "summary": "4 live Meta ads confirmed on 2026-11-21 on the Akhil Electrical Works page (page ID 874469655996702): 997508846276370 (21 Nov, 3 hrs live), 1677824443701148 and 1387795526583908 (both 17 Nov) and 1680326913622219 (14 Nov). The set is two creatives - an English 'Go Solar, Save More!' image card and a Telugu card naming 'AKHIL ELECTRICAL WORKS & SOLAR SYSTEMS' and promising subsidy details. Every ad clicks to WhatsApp. No ad states a price, a kW size, a subsidy amount, an EMI, a warranty or a place the business can be checked. There is no website, so no site audit was run."
+  },
+  "funnel": {
+    "type": "WhatsApp chat",
+    "destination": "WhatsApp (api.whatsapp.com) - 'Send WhatsApp message' on all 4 ads",
+    "meaning": "There is no website and no landing page: every click ends in a WhatsApp chat. The business's strongest trust assets - a TGREDCO empanelment, a TSSPDCL contractor registration and a decade of rated local work - appear nowhere in the funnel, so the buyer has to take all of that on trust from a stranger in a chat window."
+  },
+  "findings": [
+    "There is no website at all, and every one of the four live ads ends in a WhatsApp chat, so a Suryapet homeowner comparing quotes has no page to check a genuine government-empanelled contractor on before making contact.",
+    "The business is on Telangana's TGREDCO empanelled-supplier list and holds a TSSPDCL registered-contractor registration with a GSTIN - the strongest credentials in this market - and not one of them appears in any ad or in any funnel.",
+    "Not one of the four ads carries a price, a subsidy amount, an EMI or a warranty term. Only one of them (17 Nov, '3KW & 5KW Solar Systems | Subsidy Assistance') even names a system size - so a buyer has no number to shortlist on, against competitors quoting a subsidy figure or a kW price in the same feed.",
+    "The newest ad (21 Nov, 3 hrs live at read) asks the buyer to contact them 'for government subsidy details, prices' - i.e. the ad's own purpose is to make the buyer ask for the information the ad does not contain.",
+    "Two of the four ads open on 'Go Solar, Save More!' - three words of generic English copy on an image card, with no locality, no product and no offer - in a district market where a named local credential would do the selling.",
+    "The page is already splitting its message three ways - English 'Go Solar, Save More!', an English '3KW & 5KW | Subsidy Assistance' cut, and a Telugu subsidy-and-price ask - which is real testing, but all three variants end at the same numberless WhatsApp chat. The variants differ in language, not in what the buyer is promised.",
+    "The business has two different published addresses for the same Sajjapuram/Palakeedu location - '2-30' on the TGREDCO list and '1-26' on the TSSPDCL list - and with no website there is nowhere for a buyer to see which one is current."
+  ],
+  "next_steps": [
+    [
+      "Put up one page - it does not need to be more than one",
+      "A single page with the TGREDCO empanelment reference, the TSSPDCL registration, the Suryapet address, one price per kW, one named local install and a form with a Meta Pixel. That page is what makes every future rupee measurable, and it is what converts a WhatsApp click from a stranger into a credible quote."
+    ],
+    [
+      "Lead with the empanelment in the creative",
+      "TGREDCO empanelment plus a TSSPDCL contractor licence is a stronger claim than 'up to Rs.78,000', and no competitor ad in the district can match it. Put it in the first line of the ad and on the card."
+    ],
+    [
+      "Put one number in every ad",
+      "A kW size and a price, or an EMI ('3 kW from Rs.X, EMI Rs.Y'), will outperform 'Go Solar, Save More!' on its own - the buyer is already asking for the price in the ad's own copy."
+    ],
+    [
+      "Say Suryapet out loud",
+      "No ad names the district, the town or a service area. A local buyer scanning a feed has no reason to read a card that could be from anywhere in India."
+    ],
+    [
+      "Replace the duplicate 17 Nov creative with a test",
+      "Two ads, same day, same creative, same WhatsApp destination is not a test. Run the empanelment-led card against the subsidy-led one so the spend answers a question."
+    ],
+    [
+      "Fix the address on the registers",
+      "Update whichever of '2-30' and '1-26' Sajjapuram is current on the TGREDCO and TSSPDCL lists, and publish the correct one on the new page. Two government lists disagreeing is a credibility risk once buyers start checking."
+    ]
+  ],
+  "contact_facts": [
+    [
+      "Phone / WhatsApp (Justdial, 2026-11-21)",
+      "08197560059"
+    ],
+    [
+      "Phone (TGREDCO list)",
+      "9000974582"
+    ],
+    [
+      "Contact person (TGREDCO list)",
+      "Narasimha"
+    ],
+    [
+      "Email (TGREDCO list)",
+      "narasimhayaragorla2@gmail.com"
+    ],
+    [
+      "Address (TGREDCO 2026 list)",
+      "Sarpanch Street, 2-30, Sajjapuram, Palakeedu, Suryapet, Telangana 508218"
+    ],
+    [
+      "Address (TSSPDCL contractor list)",
+      "H.No. 1-26, Sajjapuram, Palakaveedu, Nalgonda 508218 - differs from the TGREDCO door number"
+    ],
+    [
+      "GSTIN (TSSPDCL list)",
+      "36AJGPY1304G1ZA"
+    ],
+    [
+      "Justdial profile",
+      "Suryapet Bypass Road, Suryapet - 4.5-4.6 stars over 11-21 ratings, 10 years in business"
+    ],
+    [
+      "Registration",
+      "TGREDCO empanelled supplier TSRE250617; TSSPDCL registered contractor"
+    ],
+    [
+      "Facebook page",
+      "https://www.facebook.com/100063714323294/"
+    ],
+    [
+      "Page ID (Ad Library)",
+      "874469655996702"
+    ],
+    [
+      "Website",
+      "None - every ad clicks to WhatsApp"
+    ]
+  ],
+  "contact": {
+    "phone": "08197560059",
+    "email": "narasimhayaragorla2@gmail.com"
+  },
+  "audit_date": "2026-11-21",
+  "site_evidence": {
+    "pixel": null,
+    "utm": false,
+    "checked_on": "2026-11-21",
+    "note": "This business has no website, so no pixel or UTM check was possible. Recorded as not checked rather than absent. Every ad lands on a WhatsApp chat, which carries no campaign parameters."
+  },
+  "promise_gap": [
+    {
+      "promise": "'Contact us for government subsidy details, prices and installation information' (21 Nov ad)",
+      "site": "The ad contains none of the three things it asks the buyer to ask for, and there is no website or landing page where any of them could be read without opening a chat."
+    },
+    {
+      "promise": "'Go Solar, Save More!' (3 of 4 ads)",
+      "site": "No saving figure, no bill band and no system size is stated, so the claim cannot be checked against anything - and with no site there is no page carrying the terms."
+    }
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Landing page was not source-checked for this report; needs a page-source pull or account access."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "Only 2 offer angles across the live ads (government subsidy assistance, 3 kW / 5 kW system sizes) - too few to learn which hook this market answers to."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Newest ad opened for this report started Nov 21, 2026, but no full page listing was read, so the account's real newest creative is unknown."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "4 distinct live ads visible - enough running to compare messages against each other. Caveat: 4 ad IDs were opened directly on 2026-11-21 and all four returned an active ad; no page-listing count was read, so the live total may be higher than 4."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: WhatsApp chat."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 2,
+      "fail": 2,
+      "unknown": 11,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

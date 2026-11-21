@@ -1,12 +1,12 @@
 # Every audit PDF in this repo — index
 
-**51 PDFs** covering **47 companies** (23 of them scored), on branch `arena/de53294b-performance-marketing-os` (tip `aa56dfe`).
+**56 PDFs** covering **52 companies**, on branch `arena/de53294b-performance-marketing-os` (tip `aa56dfe`).
 
 They live in **two folders**, which is why looking at one folder makes the total look small:
 
 1. [`02-OUTREACH/audit_pdfs/`](https://github.com/vamsy16/performance-marketing-os/tree/arena/de53294b-performance-marketing-os/02-OUTREACH/audit_pdfs) — **9 full audits**. The complete 5-page DIGITAL MARKETING & PAID ADS AUDIT: website tracking, conversion readiness, technical snapshot and audit score.
 
-2. [`02-OUTREACH/ads_only_pdfs/`](https://github.com/vamsy16/performance-marketing-os/tree/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs) — **40 ads reports**. Since 2026-10-25 these use the *same* 5-page Ksquare layout and carry live website data; before that date they were the shorter ad-activity sheet.
+2. [`02-OUTREACH/ads_only_pdfs/`](https://github.com/vamsy16/performance-marketing-os/tree/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs) — **45 ads reports**. Since 2026-10-25 these use the *same* 5-page Ksquare layout and carry live website data; before that date they were the shorter ad-activity sheet.
 
 > Four companies — Ecolt Energy, Orizen Solar Innovations, Ray On Solar Systems and Sri Balaji Solar Energies — have **both** a full audit and an ads report. That is why 51 files cover 47 companies.
 
@@ -30,22 +30,36 @@ They live in **two folders**, which is why looking at one folder makes the total
 | Company | Pages | Size | Score | Audited | PDF |
 |---|---|---|---|---|---|
 | 3S Solutions | 4 | 20 KB | — | 2026-10-23 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_3S_Solutions.pdf) |
+| Aadithya Solar Energies | 6 | 25 KB | 9/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Aadithya_Solar_Energies.pdf) |
+| Akhil Electrical Works | 4 | 21 KB | — | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Akhil_Electrical_Works.pdf) |
 | Arcedo Systems | 4 | 18 KB | — | 2026-10-22 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Arcedo_Systems.pdf) |
 | Arkahub | 4 | 17 KB | — | 2026-10-22 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Arkahub.pdf) |
 | Bhanu PV Solar | 3 | 16 KB | — | 2026-10-23 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Bhanu_PV_Solar.pdf) |
 | Dakshin Solar Power Systems | 3 | 16 KB | — | 2026-10-23 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Dakshin_Solar_Power_Systems.pdf) |
+| Eagle Solar Systems | 4 | 20 KB | — | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Eagle_Solar_Systems.pdf) |
 | Eastman New Energy | 4 | 18 KB | — | 2026-10-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Eastman_New_Energy.pdf) |
 | Ecolt Energy | 3 | 16 KB | 15/100 | 2026-10-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Ecolt_Energy.pdf) |
 | Ellvin Energy | 3 | 16 KB | — | 2026-10-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Ellvin_Energy.pdf) |
+| Envious Energy Private Limited | 5 | 23 KB | 11/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Envious_Energy_Private_Limited.pdf) |
 | Evergrid Energy | 3 | 16 KB | — | 2026-10-18 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Evergrid_Energy.pdf) |
 | Four Solar | 3 | 15 KB | — | 2026-10-20 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Four_Solar.pdf) |
 | Freyr Energy | 4 | 19 KB | — | 2026-10-23 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Freyr_Energy.pdf) |
+| Griffin Energy | 6 | 28 KB | 5/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Griffin_Energy.pdf) |
+| Growcell Solar Energy | 6 | 26 KB | 3/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Growcell_Solar_Energy.pdf) |
+| Hindusthan Solar Energy Enterprise | 5 | 23 KB | 5/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Hindusthan_Solar_Energy_Enterprise.pdf) |
 | Hydromo | 4 | 18 KB | — | 2026-10-23 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Hydromo.pdf) |
 | Junna Solar Systems | 3 | 15 KB | — | 2026-10-20 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Junna_Solar_Systems.pdf) |
+| Kakatiya Energies | 6 | 26 KB | 17/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Kakatiya_Energies.pdf) |
 | Kapil Power Infra | 3 | 16 KB | — | 2026-10-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Kapil_Power_Infra.pdf) |
 | Krisol Solar | 4 | 18 KB | — | 2026-10-23 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Krisol_Solar.pdf) |
+| Kypas Solar Power Pvt Ltd | 5 | 23 KB | 3/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Kypas_Solar_Power_Pvt_Ltd.pdf) |
+| Laxmi Narayana Solar | 4 | 17 KB | — | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Laxmi_Narayana_Solar.pdf) |
+| Lotus Industries | 5 | 23 KB | 27/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Lotus_Industries.pdf) |
+| Lumisun Solar | 5 | 23 KB | 3/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Lumisun_Solar.pdf) |
 | Mamindla Energy Solutions | 3 | 15 KB | — | 2026-10-20 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Mamindla_Energy_Solutions.pdf) |
+| Manasaa Enterprises | 4 | 18 KB | — | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Manasaa_Enterprises.pdf) |
 | MrSolar | 3 | 16 KB | — | 2026-10-22 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_MrSolar.pdf) |
+| Nova Solar Solutions | 6 | 27 KB | 5/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Nova_Solar_Solutions.pdf) |
 | Orbit Solar | 4 | 20 KB | — | 2026-10-22 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Orbit_Solar.pdf) |
 | Origian Power | 3 | 15 KB | — | 2026-10-20 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Origian_Power.pdf) |
 | Orizen Solar Innovations | 3 | 16 KB | 23/100 | 2026-10-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Orizen_Solar_Innovations.pdf) |
@@ -53,32 +67,23 @@ They live in **two folders**, which is why looking at one folder makes the total
 | Punarvi Energies | 3 | 16 KB | — | 2026-10-18 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Punarvi_Energies.pdf) |
 | Ray On Solar Systems | 3 | 16 KB | 31/100 | 2026-10-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Ray_On_Solar_Systems.pdf) |
 | Rayzon Solar | 5 | 20 KB | 24/100 | 2026-10-25 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Rayzon_Solar.pdf) |
+| Roof Rays Solar Solutions | 6 | 27 KB | 5/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Roof_Rays_Solar_Solutions.pdf) |
 | Solar6 | 3 | 16 KB | — | 2026-10-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Solar6.pdf) |
 | SolarSquare Energy | 5 | 22 KB | 18/100 | 2026-10-25 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_SolarSquare_Energy.pdf) |
 | Solox Energies | 3 | 16 KB | — | 2026-10-18 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Solox_Energies.pdf) |
+| Sri Balaji Solar Energies | 6 | 35 KB | 19/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Sri_Balaji_Solar_Energies.pdf) |
+| Sri Narayana Enterprise Solar Energies | 4 | 19 KB | — | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Sri_Narayana_Enterprise_Solar_Energies.pdf) |
 | Sunova Green Energy | 5 | 21 KB | 35/100 | 2026-10-25 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Sunova_Green_Energy.pdf) |
+| SunSolar Power Systems | 5 | 22 KB | — | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_SunSolar_Power_Systems.pdf) |
 | Truzon Solar | 3 | 16 KB | — | 2026-10-18 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Truzon_Solar.pdf) |
 | Twilight Solar | 4 | 18 KB | — | 2026-10-20 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Twilight_Solar.pdf) |
 | VajraSimha Industries | 3 | 16 KB | — | 2026-10-23 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_VajraSimha_Industries.pdf) |
 | Valcan Solar | 4 | 18 KB | — | 2026-10-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Valcan_Solar.pdf) |
 | Vanguard Energy | 3 | 16 KB | — | 2026-10-23 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Vanguard_Energy.pdf) |
 | Varahi Energies | 3 | 15 KB | — | 2026-10-18 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Varahi_Energies.pdf) |
-| Hindusthan Solar Energy Enterprise | 5 | 23 KB | 5/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Hindusthan_Solar_Energy_Enterprise.pdf) |
-| Kypas Solar Power Pvt Ltd | 5 | 23 KB | 3/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Kypas_Solar_Power_Pvt_Ltd.pdf) |
-| Lotus Industries | 5 | 23 KB | 27/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Lotus_Industries.pdf) |
-| Lumisun Solar | 5 | 23 KB | 3/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Lumisun_Solar.pdf) |
 | Varna Solar Pvt. Ltd. | 5 | 23 KB | 19/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Varna_Solar_Pvt_Ltd_.pdf) |
-| Wisda Energy | 5 | 21 KB | 10/100 | 2026-10-25 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Wisda_Energy.pdf) |
-| Kakatiya Energies | 6 | 26 KB | 17/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Kakatiya_Energies.pdf) |
 | Visiontek | 6 | 26 KB | 16/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Visiontek.pdf) |
-| Laxmi Narayana Solar | 4 | 17 KB | — | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Laxmi_Narayana_Solar.pdf) |
-| Envious Energy Private Limited | 5 | 23 KB | 11/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Envious_Energy_Private_Limited.pdf) |
-| Sri Balaji Solar Energies | 6 | 35 KB | 19/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Sri_Balaji_Solar_Energies.pdf) |
-| Griffin Energy | 6 | 28 KB | 5/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Griffin_Energy.pdf) |
-| Nova Solar Solutions | 6 | 27 KB | 5/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Nova_Solar_Solutions.pdf) |
-| Sri Narayana Enterprise Solar Energies | 4 | 19 KB | — | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Sri_Narayana_Enterprise_Solar_Energies.pdf) |
-| Aadithya Solar Energies | 6 | 25 KB | 9/100 | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Aadithya_Solar_Energies.pdf) |
-| Eagle Solar Systems | 4 | 20 KB | — | 2026-11-21 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/eac436b8-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Eagle_Solar_Systems.pdf) |
+| Wisda Energy | 5 | 21 KB | 10/100 | 2026-10-25 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Wisda_Energy.pdf) |
 
 ## Notes
 
@@ -87,4 +92,5 @@ They live in **two folders**, which is why looking at one folder makes the total
 - A score appears only where the website was actually read and scored with the repo's own formula. `—` means ad-activity only, or the score section was not run.
 - **`audit_Sri_Balaji_Solar_Energies.pdf` exists twice, on purpose, and the older one is wrong.** The full audit in `audit_pdfs/` is dated May 29, 2026 and records **0/100 with "no website found"** because its ads carried no site link. That conclusion was never true: the company's site is live at `sribalajisolarenergies.com`. The 2026-11-21 report in `ads_only_pdfs/` is the corrected, current one (19/100, 6 live ads). **Send the 2026-11-21 PDF, never the May one.**
 - Every PDF's underlying numbers are in the matching JSON: [`01-LEADS/audit_results/`](https://github.com/vamsy16/performance-marketing-os/tree/arena/de53294b-performance-marketing-os/01-LEADS/audit_results) for full audits and [`01-LEADS/ads_only_results/`](https://github.com/vamsy16/performance-marketing-os/tree/arena/de53294b-performance-marketing-os/01-LEADS/ads_only_results) for ads reports.
+- **Batch 15 (2026-11-21) was re-audited by a second pass before sending, and that pass changed four reports.** A previously-recorded SunSolar ad (Library ID 1443902311044175) turned out to resolve to a *Venus home appliances* ad and was removed; Roof Rays' "no price anywhere" finding was wrong (its residential guide publishes a kW price table) and was rewritten; Akhil's ad set was re-described after a permalink re-read; and the shared control engine was fixed in three places (analyst notes were being read back as ad copy, dates compared as strings, and single-ad leads scored on coverage). Run `cd 01-LEADS && python3 verify_batch_claims.py <slug> ...` to re-print every checkable claim in a report before it is emailed.
 - Regenerate with `cd 01-LEADS && PYTHONPATH=/tmp/pdflibs python3 run_pipeline.py`, `build_batch10_ksquare.py` for the batch-10 live-data rebuild, or `build_batch11_ksquare.py` for the batch-11 (Hyderabad / Telangana) rebuild.
