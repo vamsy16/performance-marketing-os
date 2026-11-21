@@ -131,12 +131,17 @@ cd 01-LEADS && python3 verify_batch_claims.py Growcell_Solar_Energy SunSolar_Pow
 
 Four step-0 Gmail drafts were created on 2026-11-21 and **not sent**:
 
-| Company | To | Draft ID |
-|---|---|---|
-| Growcell Solar Energy | sales@growcellenergy.in | `r-1221034659700306775` |
-| Roof Rays Solar Solutions | support@roofrays.in | `r6215146985661125128` |
-| Akhil Electrical Works | narasimhayaragorla2@gmail.com | `r6265484661840894723` |
-| Manasaa Enterprises | manasaaenterprises2024@gmail.com | `r6169707641864367957` |
+| Company | To | Draft ID | Report attached |
+|---|---|---|---|
+| Growcell Solar Energy | sales@growcellenergy.in | `r5061649286227555027` | audit_Growcell_Solar_Energy.pdf (26 KB) |
+| Roof Rays Solar Solutions | support@roofrays.in | `r5965019761585299951` | audit_Roof_Rays_Solar_Solutions.pdf (28 KB) |
+| Akhil Electrical Works | narasimhayaragorla2@gmail.com | `r-2221174036565104944` | audit_Akhil_Electrical_Works.pdf (21 KB) |
+| Manasaa Enterprises | manasaaenterprises2024@gmail.com | `r1297571565926609327` | audit_Manasaa_Enterprises.pdf (19 KB) |
+
+Each draft's Gmail `size_estimate` was checked against its PDF on disk after creation
+(38.9 KB / 41.2 KB / 32.1 KB / 28.7 KB encoded), because an earlier attempt attached a
+67-byte placeholder stub instead of the report. The four text-only drafts from that
+attempt were deleted, not left alongside these.
 
 **SunSolar Power Systems has no email on file and no website.** Its sequence is in the
 manifest with `to` empty and no draft created — it needs a number-first approach, not a
