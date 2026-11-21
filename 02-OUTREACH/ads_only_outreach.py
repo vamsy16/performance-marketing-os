@@ -183,7 +183,7 @@ You can verify every line yourself:
 
 {links}
 
-To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - {scope}.
+To be clear about what this is: it is an ad report. It is built from your live ad cards and from what any visitor can see on your public site - it is not a full website audit, so there is no tracking or speed testing in it. What follows is {scope}.
 
 If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
 

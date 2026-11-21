@@ -28,7 +28,7 @@ You can verify every line yourself:
   Library ID 1801231361161321: https://www.facebook.com/ads/library/?id=1801231361161321
   Library ID 1650285136378259: https://www.facebook.com/ads/library/?id=1650285136378259
 
-To be clear about what this is: it is an ad report, not a website audit. I have not audited your website, so there are no website findings in it - only what your paid clicks are doing, and where they are being lost.
+To be clear about what this is: it is an ad report. It is built from your live ad cards and from what any visitor can see on your public site - it is not a full website audit, so there is no tracking or speed testing in it.
 
 If any of it is useful I am happy to walk you through it on a 10-minute call. If not, the report is yours to keep.
 
