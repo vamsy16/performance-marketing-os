@@ -11,7 +11,7 @@
       "thread_id": "1a166b32ae127c61",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -21,7 +21,7 @@
           "delay_after_previous_days": 0,
           "status": "sent",
           "draft_id": "r1459020982860151007",
-          "message_id": "1a166b32ae127c61",
+          "message_id": "1a1676254bbd9ba9",
           "thread_id": "1a166b32ae127c61",
           "draft_created_at": "2026-10-23",
           "sent_at": "2026-10-23",
@@ -67,7 +67,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -89,7 +89,7 @@
       "thread_id": "1a1548778b6c59c4",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -117,7 +117,7 @@
           "thread_id": "1a1548778b6c59c4",
           "draft_created_at": "2026-10-22",
           "sent_at": "2026-10-22",
-          "due_date": "2026-10-22"
+          "due_date": "2026-10-21"
         },
         {
           "step": 2,
@@ -167,7 +167,7 @@
       "thread_id": "1a163e5661ececcb",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -223,7 +223,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -245,7 +245,7 @@
       "thread_id": "1a163e590a0600f9",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -287,7 +287,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-10",
-          "due_date": ""
+          "due_date": "2026-11-10"
         },
         {
           "step": 3,
@@ -301,7 +301,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -323,7 +323,7 @@
       "thread_id": "1a166d20de09bd9f",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -333,7 +333,7 @@
           "delay_after_previous_days": 0,
           "status": "sent",
           "draft_id": "r-8589525829074466851",
-          "message_id": "1a166d20de09bd9f",
+          "message_id": "1a1679cec83508ee",
           "thread_id": "1a166d20de09bd9f",
           "draft_created_at": "2026-10-23",
           "sent_at": "2026-10-23",
@@ -379,7 +379,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -401,7 +401,7 @@
       "thread_id": "1a166b20e9febcaf",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -411,7 +411,7 @@
           "delay_after_previous_days": 0,
           "status": "sent",
           "draft_id": "r1833948473957777594",
-          "message_id": "1a166b20e9febcaf",
+          "message_id": "1a16754997ab24ff",
           "thread_id": "1a166b20e9febcaf",
           "draft_created_at": "2026-10-23",
           "sent_at": "2026-10-23",
@@ -457,7 +457,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -479,7 +479,7 @@
       "thread_id": "1a15c27f27ae66ca",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -521,7 +521,7 @@
           "thread_id": "1a15c27f27ae66ca",
           "draft_created_at": "2026-11-01",
           "sent_at": "2026-11-10",
-          "due_date": "2026-10-25"
+          "due_date": "2026-11-09"
         },
         {
           "step": 3,
@@ -535,7 +535,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": "2026-11-09"
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -557,7 +557,7 @@
       "thread_id": "1a15c77bbccbd363",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -599,7 +599,7 @@
           "thread_id": "1a15c77bbccbd363",
           "draft_created_at": "2026-11-01",
           "sent_at": "2026-11-10",
-          "due_date": "2026-10-25"
+          "due_date": "2026-11-09"
         },
         {
           "step": 3,
@@ -613,7 +613,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": "2026-11-09"
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -635,7 +635,7 @@
       "thread_id": "1a15c27f322d91c0",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -677,7 +677,7 @@
           "thread_id": "1a15c27f322d91c0",
           "draft_created_at": "2026-11-01",
           "sent_at": "2026-11-10",
-          "due_date": "2026-10-25"
+          "due_date": "2026-11-09"
         },
         {
           "step": 3,
@@ -691,7 +691,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": "2026-11-09"
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -713,7 +713,7 @@
       "thread_id": "1a1548250791ea62",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -741,7 +741,7 @@
           "thread_id": "1a1548250791ea62",
           "draft_created_at": "2026-10-22",
           "sent_at": "2026-10-22",
-          "due_date": "2026-10-22"
+          "due_date": "2026-10-21"
         },
         {
           "step": 2,
@@ -788,7 +788,7 @@
       "city": "Hyderabad",
       "website": "https://www.foursolar.com/",
       "thread_subject": "Four Solar: no live ads while Hyderabad competitors buy the same homeowner",
-      "thread_id": "",
+      "thread_id": "1a1c5ad3cec9972d",
       "mails_sent": 2,
       "next_followup_date": "2026-11-23",
       "next_step": 2,
@@ -815,11 +815,11 @@
           "delay_after_previous_days": 2,
           "status": "sent",
           "draft_id": "",
-          "message_id": "",
-          "thread_id": "",
+          "message_id": "1a1fcec3053e3446",
+          "thread_id": "1a1c5ad3cec9972d",
           "draft_created_at": "",
           "sent_at": "2026-11-21",
-          "due_date": ""
+          "due_date": "2026-11-16"
         },
         {
           "step": 2,
@@ -833,7 +833,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": ""
+          "due_date": "2026-11-23"
         },
         {
           "step": 3,
@@ -867,7 +867,7 @@
       "thread_id": "1a166d20b4fc0c5d",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -877,7 +877,7 @@
           "delay_after_previous_days": 0,
           "status": "sent",
           "draft_id": "r4073229830171604447",
-          "message_id": "1a166d20b4fc0c5d",
+          "message_id": "1a167834b01f51f0",
           "thread_id": "1a166d20b4fc0c5d",
           "draft_created_at": "2026-10-23",
           "sent_at": "2026-10-23",
@@ -923,7 +923,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -942,7 +942,7 @@
       "city": "Hyderabad",
       "website": "",
       "thread_subject": "Green Carbon Hub: 14 live Google ads booked under Ecoila Private Limited",
-      "thread_id": "",
+      "thread_id": "1a1c5ad3e5cea499",
       "mails_sent": 3,
       "next_followup_date": "2026-11-23",
       "next_step": 3,
@@ -973,7 +973,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-16",
-          "due_date": "",
+          "due_date": "2026-11-16",
           "body_corrected_on": "2026-11-21",
           "body_correction": "removed a promised attachment that was never sent, and removed a 'quick wins' line that named no finding"
         },
@@ -985,11 +985,11 @@
           "delay_after_previous_days": 2,
           "status": "sent",
           "draft_id": "",
-          "message_id": "",
-          "thread_id": "",
+          "message_id": "1a1fd014052a6806",
+          "thread_id": "1a1c5ad3e5cea499",
           "draft_created_at": "",
           "sent_at": "2026-11-21",
-          "due_date": ""
+          "due_date": "2026-11-18"
         },
         {
           "step": 3,
@@ -1003,7 +1003,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": ""
+          "due_date": "2026-11-23"
         }
       ],
       "report_kind": "full_audit",
@@ -1038,7 +1038,7 @@
           "delay_after_previous_days": 0,
           "status": "sent",
           "draft_id": "r3575070414984087925",
-          "message_id": "1a1b96e4e23fedab",
+          "message_id": "1a1ba0aea736f565",
           "thread_id": "1a1b96e4e23fedab",
           "draft_created_at": "2026-11-08",
           "sent_at": "2026-11-08",
@@ -1105,7 +1105,7 @@
       "thread_id": "1a166b3641cd2487",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -1115,7 +1115,7 @@
           "delay_after_previous_days": 0,
           "status": "sent",
           "draft_id": "r-490954975402821851",
-          "message_id": "1a166b3641cd2487",
+          "message_id": "1a1676c673b3089a",
           "thread_id": "1a166b3641cd2487",
           "draft_created_at": "2026-10-23",
           "sent_at": "2026-10-23",
@@ -1161,7 +1161,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -1183,7 +1183,7 @@
       "thread_id": "",
       "mails_sent": 0,
       "next_followup_date": "",
-      "next_step": 0,
+      "next_step": 1,
       "steps": [
         {
           "step": 0,
@@ -1256,7 +1256,7 @@
       "thread_id": "1a15c27f25ceb58a",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -1298,7 +1298,7 @@
           "thread_id": "1a15c27f25ceb58a",
           "draft_created_at": "2026-11-01",
           "sent_at": "2026-11-10",
-          "due_date": "2026-10-25"
+          "due_date": "2026-11-09"
         },
         {
           "step": 3,
@@ -1312,7 +1312,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": "2026-11-09"
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -1334,7 +1334,7 @@
       "thread_id": "1a166b0f94c4086c",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -1344,7 +1344,7 @@
           "delay_after_previous_days": 0,
           "status": "sent",
           "draft_id": "r-8249548030083204998",
-          "message_id": "1a166b0f94c4086c",
+          "message_id": "1a1673ea09a1cb54",
           "thread_id": "1a166b0f94c4086c",
           "draft_created_at": "2026-10-23",
           "sent_at": "2026-10-23",
@@ -1390,7 +1390,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -1436,7 +1436,7 @@
           "thread_id": "1a14f7346f5232f1",
           "draft_created_at": "2026-10-22",
           "sent_at": "2026-10-22",
-          "due_date": "2026-10-22"
+          "due_date": "2026-10-21"
         },
         {
           "step": 2,
@@ -1470,7 +1470,7 @@
       "thread_id": "1a14f7346f5232f1",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "report_kind": "full_audit",
       "state": "finished",
       "reconciled_on": "2026-11-21",
@@ -1501,7 +1501,7 @@
           "delay_after_previous_days": 0,
           "status": "sent",
           "draft_id": "r4535824669128984920",
-          "message_id": "1a1b96e4fc02c231",
+          "message_id": "1a1b9ffef3225525",
           "thread_id": "1a1b96e4fc02c231",
           "draft_created_at": "2026-11-08",
           "sent_at": "2026-11-08",
@@ -1569,7 +1569,7 @@
       "thread_id": "1a1b96e50a8f2457",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "report_kind": "ads_only",
       "steps": [
         {
@@ -1580,7 +1580,7 @@
           "delay_after_previous_days": 0,
           "status": "sent",
           "draft_id": "r-3419916325158255271",
-          "message_id": "1a1b96e50a8f2457",
+          "message_id": "1a1b9f23234fd4b8",
           "thread_id": "1a1b96e50a8f2457",
           "draft_created_at": "2026-11-08",
           "sent_at": "2026-11-08",
@@ -1598,7 +1598,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-10",
-          "due_date": ""
+          "due_date": "2026-11-10"
         },
         {
           "step": 2,
@@ -1612,7 +1612,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         },
         {
           "step": 3,
@@ -1626,7 +1626,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-16",
-          "due_date": ""
+          "due_date": "2026-11-16"
         }
       ],
       "state": "finished",
@@ -1647,7 +1647,7 @@
       "thread_id": "1a1b96e59632d7c1",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "report_kind": "ads_only",
       "steps": [
         {
@@ -1658,7 +1658,7 @@
           "delay_after_previous_days": 0,
           "status": "sent",
           "draft_id": "r6871011317025618216",
-          "message_id": "1a1b96e59632d7c1",
+          "message_id": "1a1b9d7a481e9334",
           "thread_id": "1a1b96e59632d7c1",
           "draft_created_at": "2026-11-08",
           "sent_at": "2026-11-08",
@@ -1676,7 +1676,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-10",
-          "due_date": ""
+          "due_date": "2026-11-10"
         },
         {
           "step": 2,
@@ -1690,7 +1690,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         },
         {
           "step": 3,
@@ -1704,7 +1704,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-16",
-          "due_date": ""
+          "due_date": "2026-11-16"
         }
       ],
       "contact_note": "Email read from the live contact page on 2026-11-08 (service.info@lumisunsolar.com). Second phone +91 81799 93339; office 303, 3rd Floor, Olbee Center, Rajbhavan Road, Somajiguda, Hyderabad 500082; Mon-Sat 9:30 am - 6:30 pm.",
@@ -1726,7 +1726,7 @@
       "thread_id": "",
       "mails_sent": 0,
       "next_followup_date": "",
-      "next_step": 0,
+      "next_step": 1,
       "steps": [
         {
           "step": 0,
@@ -1799,7 +1799,7 @@
       "thread_id": "1a163e53b42765d9",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -1855,7 +1855,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -1946,7 +1946,7 @@
       "city": "Hyderabad",
       "website": "https://origianpower.com/",
       "thread_subject": "Origian Power: no live ads while Hyderabad competitors buy the same homeowner",
-      "thread_id": "",
+      "thread_id": "1a1c5ad3dbe4f48b",
       "mails_sent": 2,
       "next_followup_date": "2026-11-23",
       "next_step": 2,
@@ -1973,11 +1973,11 @@
           "delay_after_previous_days": 2,
           "status": "sent",
           "draft_id": "",
-          "message_id": "",
-          "thread_id": "",
+          "message_id": "1a1fcf72d3787e8f",
+          "thread_id": "1a1c5ad3dbe4f48b",
           "draft_created_at": "",
           "sent_at": "2026-11-21",
-          "due_date": ""
+          "due_date": "2026-11-16"
         },
         {
           "step": 2,
@@ -1991,7 +1991,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": ""
+          "due_date": "2026-11-23"
         },
         {
           "step": 3,
@@ -2025,7 +2025,7 @@
       "thread_id": "1a15c78051e8aee2",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -2067,7 +2067,7 @@
           "thread_id": "1a15c78051e8aee2",
           "draft_created_at": "2026-11-01",
           "sent_at": "2026-11-10",
-          "due_date": "2026-10-25"
+          "due_date": "2026-11-09"
         },
         {
           "step": 3,
@@ -2081,7 +2081,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": "2026-11-09"
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -2103,7 +2103,7 @@
       "thread_id": "1a166b1353d6dd55",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -2113,7 +2113,7 @@
           "delay_after_previous_days": 0,
           "status": "sent",
           "draft_id": "r6071778764438726540",
-          "message_id": "1a166b1353d6dd55",
+          "message_id": "1a16748b275d4983",
           "thread_id": "1a166b1353d6dd55",
           "draft_created_at": "2026-10-23",
           "sent_at": "2026-10-23",
@@ -2159,7 +2159,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -2181,7 +2181,7 @@
       "thread_id": "1a15482b564e18fd",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -2209,7 +2209,7 @@
           "thread_id": "1a15482b564e18fd",
           "draft_created_at": "2026-10-22",
           "sent_at": "2026-10-22",
-          "due_date": "2026-10-22"
+          "due_date": "2026-10-21"
         },
         {
           "step": 2,
@@ -2259,7 +2259,7 @@
       "thread_id": "1a15c7825fac6b5f",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -2301,7 +2301,7 @@
           "thread_id": "1a15c7825fac6b5f",
           "draft_created_at": "2026-11-01",
           "sent_at": "2026-11-10",
-          "due_date": "2026-10-25"
+          "due_date": "2026-11-09"
         },
         {
           "step": 3,
@@ -2315,7 +2315,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": "2026-11-09"
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -2337,7 +2337,7 @@
       "thread_id": "1a16c5b42b8b0477",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -2379,7 +2379,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         },
         {
           "step": 3,
@@ -2393,7 +2393,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-16",
-          "due_date": ""
+          "due_date": "2026-11-16"
         }
       ],
       "report_kind": "ads_only",
@@ -2415,7 +2415,7 @@
       "thread_id": "1a15c27f4479f7da",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -2457,7 +2457,7 @@
           "thread_id": "1a15c27f4479f7da",
           "draft_created_at": "2026-11-01",
           "sent_at": "2026-11-10",
-          "due_date": "2026-10-25"
+          "due_date": "2026-11-09"
         },
         {
           "step": 3,
@@ -2471,7 +2471,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": "2026-11-09"
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -2493,7 +2493,7 @@
       "thread_id": "1a16c5b20d3ee424",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -2535,7 +2535,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         },
         {
           "step": 3,
@@ -2549,7 +2549,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-16",
-          "due_date": ""
+          "due_date": "2026-11-16"
         }
       ],
       "report_kind": "ads_only",
@@ -2571,7 +2571,7 @@
       "thread_id": "1a15482ea841990b",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -2599,7 +2599,7 @@
           "thread_id": "1a15482ea841990b",
           "draft_created_at": "2026-10-22",
           "sent_at": "2026-10-22",
-          "due_date": "2026-10-22"
+          "due_date": "2026-10-21"
         },
         {
           "step": 2,
@@ -2669,11 +2669,11 @@
           "delay_after_previous_days": 2,
           "status": "sent",
           "draft_id": "",
-          "message_id": "",
-          "thread_id": "",
+          "message_id": "1a1fda9b4ea9fdf2",
+          "thread_id": "1a1fca2e3f161d3e",
           "draft_created_at": "",
           "sent_at": "2026-11-21",
-          "due_date": ""
+          "due_date": "2026-11-23"
         },
         {
           "step": 2,
@@ -2687,7 +2687,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": ""
+          "due_date": "2026-11-23"
         },
         {
           "step": 3,
@@ -2727,7 +2727,7 @@
       "thread_id": "1a16c5ada8854291",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -2769,7 +2769,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         },
         {
           "step": 3,
@@ -2783,7 +2783,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-16",
-          "due_date": ""
+          "due_date": "2026-11-16"
         }
       ],
       "report_kind": "ads_only",
@@ -2877,7 +2877,7 @@
       "thread_id": "1a1548288ba322d4",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -2905,7 +2905,7 @@
           "thread_id": "1a1548288ba322d4",
           "draft_created_at": "2026-10-22",
           "sent_at": "2026-10-22",
-          "due_date": "2026-10-22"
+          "due_date": "2026-10-21"
         },
         {
           "step": 2,
@@ -2955,7 +2955,7 @@
       "thread_id": "1a159024db4302f5",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -2997,7 +2997,7 @@
           "thread_id": "1a159024db4302f5",
           "draft_created_at": "2026-11-01",
           "sent_at": "2026-11-10",
-          "due_date": "2026-10-25"
+          "due_date": "2026-11-09"
         },
         {
           "step": 3,
@@ -3011,7 +3011,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": "2026-11-09"
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -3033,7 +3033,7 @@
       "thread_id": "1a166d20a867560a",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -3043,7 +3043,7 @@
           "delay_after_previous_days": 0,
           "status": "sent",
           "draft_id": "r4471985646435117683",
-          "message_id": "1a166d20a867560a",
+          "message_id": "1a1677762a283ec5",
           "thread_id": "1a166d20a867560a",
           "draft_created_at": "2026-10-23",
           "sent_at": "2026-10-23",
@@ -3089,7 +3089,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -3138,9 +3138,10 @@
           "message_id": "1a2018f8fab6a28c",
           "thread_id": "1a15c27f4e7546f3",
           "draft_created_at": "2026-11-22",
-          "sent_at": "2026-11-22T10:11:53+05:30",
+          "sent_at": "2026-11-22",
           "due_date": "2026-10-23",
-          "sent_source": "Gmail SENT (verified 2026-11-23)"
+          "sent_source": "Gmail SENT (verified 2026-11-23)",
+          "sent_at_time": "10:11:53+05:30"
         },
         {
           "step": 2,
@@ -3154,7 +3155,9 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": ""
+          "due_date": "2026-11-24",
+          "sent_at_time": "10:11:53+05:30",
+          "sent_source": "Gmail SENT (verified 2026-11-23)"
         },
         {
           "step": 3,
@@ -3190,7 +3193,7 @@
       "thread_id": "1a166d20c6b73541",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -3200,7 +3203,7 @@
           "delay_after_previous_days": 0,
           "status": "sent",
           "draft_id": "r-5519094373057590916",
-          "message_id": "1a166d20c6b73541",
+          "message_id": "1a16791f19b305d0",
           "thread_id": "1a166d20c6b73541",
           "draft_created_at": "2026-10-23",
           "sent_at": "2026-10-23",
@@ -3246,7 +3249,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         }
       ],
       "report_kind": "ads_only",
@@ -3268,7 +3271,7 @@
       "thread_id": "1a15483125a2db5c",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -3296,7 +3299,7 @@
           "thread_id": "1a15483125a2db5c",
           "draft_created_at": "2026-10-22",
           "sent_at": "2026-10-22",
-          "due_date": "2026-10-22"
+          "due_date": "2026-10-21"
         },
         {
           "step": 2,
@@ -3346,7 +3349,7 @@
       "thread_id": "1a1b96e5281d2907",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "report_kind": "ads_only",
       "steps": [
         {
@@ -3357,7 +3360,7 @@
           "delay_after_previous_days": 0,
           "status": "sent",
           "draft_id": "r-4921543361042515887",
-          "message_id": "1a1b96e5281d2907",
+          "message_id": "1a1b9e560b904f8f",
           "thread_id": "1a1b96e5281d2907",
           "draft_created_at": "2026-11-08",
           "sent_at": "2026-11-08",
@@ -3375,7 +3378,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-10",
-          "due_date": ""
+          "due_date": "2026-11-10"
         },
         {
           "step": 2,
@@ -3389,7 +3392,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         },
         {
           "step": 3,
@@ -3403,7 +3406,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-16",
-          "due_date": ""
+          "due_date": "2026-11-16"
         }
       ],
       "state": "finished",
@@ -3448,7 +3451,7 @@
           "thread_id": "1a1548e33069b440",
           "draft_created_at": "2026-10-22",
           "sent_at": "2026-10-22",
-          "due_date": "2026-10-22"
+          "due_date": "2026-10-21"
         },
         {
           "step": 2,
@@ -3482,7 +3485,7 @@
       "thread_id": "1a1548e33069b440",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "report_kind": "full_audit",
       "state": "finished",
       "reconciled_on": "2026-11-21",
@@ -3502,7 +3505,7 @@
       "thread_id": "1a16c5afd49e13ca",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -3544,7 +3547,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         },
         {
           "step": 3,
@@ -3558,7 +3561,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-16",
-          "due_date": ""
+          "due_date": "2026-11-16"
         }
       ],
       "report_kind": "ads_only",
@@ -3604,11 +3607,11 @@
           "delay_after_previous_days": 2,
           "status": "sent",
           "draft_id": "",
-          "message_id": "",
-          "thread_id": "",
+          "message_id": "1a1fd9a248534774",
+          "thread_id": "1a1fd14db01575b1",
           "draft_created_at": "",
           "sent_at": "2026-11-21",
-          "due_date": ""
+          "due_date": "2026-11-23"
         },
         {
           "step": 2,
@@ -3622,7 +3625,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": ""
+          "due_date": "2026-11-23"
         },
         {
           "step": 3,
@@ -3680,11 +3683,11 @@
           "delay_after_previous_days": 2,
           "status": "sent",
           "draft_id": "",
-          "message_id": "",
-          "thread_id": "",
+          "message_id": "1a1fd8b7f53a61bf",
+          "thread_id": "1a1fd14f51c3e422",
           "draft_created_at": "",
           "sent_at": "2026-11-21",
-          "due_date": ""
+          "due_date": "2026-11-23"
         },
         {
           "step": 2,
@@ -3698,7 +3701,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": ""
+          "due_date": "2026-11-23"
         },
         {
           "step": 3,
@@ -3732,7 +3735,7 @@
       "city": "Karimnagar, Telangana",
       "website": "https://www.laxminarayanasolar.in/",
       "thread_subject": "Laxmi Narayana Solar: 2 live Karimnagar, Telangana ads, one funnel",
-      "thread_id": "1a1fd15199b2642a",
+      "thread_id": "1a1fc79deabd85f3",
       "mails_sent": 1,
       "next_followup_date": "2026-11-23",
       "next_step": 1,
@@ -3745,8 +3748,8 @@
           "delay_after_previous_days": 0,
           "status": "sent",
           "draft_id": "r-2278322047144344",
-          "message_id": "",
-          "thread_id": "1a1fd15199b2642a",
+          "message_id": "1a1fd5db66596508",
+          "thread_id": "1a1fc79deabd85f3",
           "draft_created_at": "2026-11-21",
           "sent_at": "2026-11-21",
           "due_date": ""
@@ -3763,7 +3766,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": ""
+          "due_date": "2026-11-23"
         },
         {
           "step": 2,
@@ -3821,7 +3824,7 @@
           "delay_after_previous_days": 0,
           "status": "sent",
           "draft_id": "r3124305531224518610",
-          "message_id": "<CAPHXTMrkEhV=yKevPgrOepD+sfSpqhwEtjTeWc1BdcjkoQzGow@mail.gmail.com>",
+          "message_id": "1a1fdbdd982564d5",
           "thread_id": "1a1fca2c7a12f81e",
           "draft_created_at": "2026-11-21",
           "sent_at": "2026-11-21",
@@ -3839,7 +3842,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": ""
+          "due_date": "2026-11-23"
         },
         {
           "step": 2,
@@ -3901,9 +3904,10 @@
           "message_id": "1a202413f55f37cc",
           "thread_id": "1a1fe7ca5e9f2455",
           "draft_created_at": "2026-11-21",
-          "sent_at": "2026-11-22T13:26:00+05:30",
+          "sent_at": "2026-11-22",
           "due_date": "",
-          "sent_source": "Gmail SENT (verified 2026-11-23)"
+          "sent_source": "Gmail SENT (verified 2026-11-23)",
+          "sent_at_time": "13:26:00+05:30"
         },
         {
           "step": 1,
@@ -3917,7 +3921,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": ""
+          "due_date": "2026-11-24"
         },
         {
           "step": 2,
@@ -3975,9 +3979,10 @@
           "message_id": "1a202272caca51e0",
           "thread_id": "1a1fe7cc89345d69",
           "draft_created_at": "2026-11-21",
-          "sent_at": "2026-11-22T12:57:30+05:30",
+          "sent_at": "2026-11-22",
           "due_date": "",
-          "sent_source": "Gmail SENT (verified 2026-11-23)"
+          "sent_source": "Gmail SENT (verified 2026-11-23)",
+          "sent_at_time": "12:57:30+05:30"
         },
         {
           "step": 1,
@@ -3991,7 +3996,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": ""
+          "due_date": "2026-11-24"
         },
         {
           "step": 2,
@@ -4049,9 +4054,10 @@
           "message_id": "1a2024efa1a9a138",
           "thread_id": "1a1fe7ce6030ffc6",
           "draft_created_at": "2026-11-21",
-          "sent_at": "2026-11-22T13:41:00+05:30",
+          "sent_at": "2026-11-22",
           "due_date": "",
-          "sent_source": "Gmail SENT (verified 2026-11-23)"
+          "sent_source": "Gmail SENT (verified 2026-11-23)",
+          "sent_at_time": "13:41:00+05:30"
         },
         {
           "step": 1,
@@ -4065,7 +4071,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": ""
+          "due_date": "2026-11-24"
         },
         {
           "step": 2,
@@ -4107,10 +4113,10 @@
       "city": "Hyderabad, Telangana",
       "website": "https://aadithyasolarenergies.com/",
       "thread_subject": "Aadithya Solar Energies: 1 live Hyderabad, Telangana ad, one funnel",
-      "thread_id": "1a1fe82bc744a43d",
+      "thread_id": "1a1c31262722f32b",
       "mails_sent": 4,
       "next_followup_date": "",
-      "next_step": 4,
+      "next_step": null,
       "steps": [
         {
           "step": 0,
@@ -4120,8 +4126,8 @@
           "delay_after_previous_days": 0,
           "status": "sent",
           "draft_id": "r555746294131774653",
-          "message_id": "1a1fe82bc744a43d",
-          "thread_id": "1a1fe82bc744a43d",
+          "message_id": "1a1c3f20264d7da3",
+          "thread_id": "1a1c31262722f32b",
           "draft_created_at": "2026-11-21",
           "sent_at": "2026-11-10",
           "due_date": ""
@@ -4138,7 +4144,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-14",
-          "due_date": ""
+          "due_date": "2026-11-12"
         },
         {
           "step": 2,
@@ -4152,7 +4158,7 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "2026-11-16",
-          "due_date": ""
+          "due_date": "2026-11-16"
         },
         {
           "step": 3,
@@ -4165,9 +4171,10 @@
           "message_id": "1a201a76ed629daa",
           "thread_id": "1a1c31262722f32b",
           "draft_created_at": "2026-11-22",
-          "sent_at": "2026-11-22T10:38:00+05:30",
+          "sent_at": "2026-11-22",
           "due_date": "2026-11-18",
-          "sent_source": "Gmail SENT (verified 2026-11-23)"
+          "sent_source": "Gmail SENT (verified 2026-11-23)",
+          "sent_at_time": "10:38:00+05:30"
         }
       ],
       "report_kind": "ads_only",
@@ -4188,7 +4195,7 @@
       "city": "Hyderabad, Telangana",
       "website": "",
       "thread_subject": "Eagle Solar Systems: 3 live Hyderabad, Telangana ads, one funnel",
-      "thread_id": "1a1fe7b74d1dcb75",
+      "thread_id": "1a1e1c3fc3a0baea",
       "mails_sent": 2,
       "next_followup_date": "2026-11-24",
       "next_step": 2,
@@ -4201,8 +4208,8 @@
           "delay_after_previous_days": 0,
           "status": "sent",
           "draft_id": "r2907852764902115138",
-          "message_id": "1a1fe7b74d1dcb75",
-          "thread_id": "1a1fe7b74d1dcb75",
+          "message_id": "1a1e44920320500d",
+          "thread_id": "1a1e1c3fc3a0baea",
           "draft_created_at": "2026-11-21",
           "sent_at": "2026-11-16",
           "due_date": ""
@@ -4218,9 +4225,10 @@
           "message_id": "1a2019b88bcde5a0",
           "thread_id": "1a1e1c3fc3a0baea",
           "draft_created_at": "2026-11-22",
-          "sent_at": "2026-11-22T10:25:00+05:30",
+          "sent_at": "2026-11-22",
           "due_date": "2026-11-18",
-          "sent_source": "Gmail SENT (verified 2026-11-23)"
+          "sent_source": "Gmail SENT (verified 2026-11-23)",
+          "sent_at_time": "10:25:00+05:30"
         },
         {
           "step": 2,
@@ -4234,7 +4242,9 @@
           "thread_id": "",
           "draft_created_at": "",
           "sent_at": "",
-          "due_date": ""
+          "due_date": "2026-11-24",
+          "sent_at_time": "10:25:00+05:30",
+          "sent_source": "Gmail SENT (verified 2026-11-23)"
         },
         {
           "step": 3,
@@ -4264,7 +4274,8 @@
       "draft_created_at": "2026-11-22",
       "extra_sends": [
         {
-          "sent_at": "2026-11-22T13:13:00+05:30",
+          "sent_at": "2026-11-22",
+          "sent_at_time": "13:13:00+05:30",
           "step_kind": "initial",
           "message_id": "1a2023557af9cbcb",
           "thread_id": "1a1fe7b74d1dcb75",
@@ -4281,8 +4292,8 @@
       "thread_subject": "Growcell Solar Energy: 2 live Hyderabad ads, and neither one lands on your site",
       "thread_id": "1a1ff0165aee942d",
       "mails_sent": 1,
-      "next_followup_date": "2026-11-24",
-      "next_step": 1,
+      "next_followup_date": "",
+      "next_step": null,
       "report_kind": "ads_only",
       "steps": [
         {
@@ -4296,11 +4307,12 @@
           "message_id": "1a20266c7d270044",
           "thread_id": "1a1ff0165aee942d",
           "draft_created_at": "2026-11-21",
-          "sent_at": "2026-11-22T14:07:00+05:30",
+          "sent_at": "2026-11-22",
           "due_date": "",
           "attachment": "02-OUTREACH/ads_only_pdfs/Growcell_Solar_Energy.pdf",
           "attachment_bytes": 26700,
-          "sent_source": "Gmail SENT (verified 2026-11-23)"
+          "sent_source": "Gmail SENT (verified 2026-11-23)",
+          "sent_at_time": "14:07:00+05:30"
         }
       ],
       "state": "live-due",
@@ -4317,7 +4329,7 @@
       "thread_id": "",
       "mails_sent": 0,
       "next_followup_date": "",
-      "next_step": 1,
+      "next_step": null,
       "report_kind": "ads_only",
       "steps": [
         {
@@ -4346,8 +4358,8 @@
       "thread_subject": "Roof Rays: your site already prices a 3 kW system - none of your ads use it",
       "thread_id": "1a1ff017b2de6665",
       "mails_sent": 1,
-      "next_followup_date": "2026-11-24",
-      "next_step": 1,
+      "next_followup_date": "",
+      "next_step": null,
       "report_kind": "ads_only",
       "steps": [
         {
@@ -4361,11 +4373,12 @@
           "message_id": "1a20273993c028ab",
           "thread_id": "1a1ff017b2de6665",
           "draft_created_at": "2026-11-21",
-          "sent_at": "2026-11-22T14:21:00+05:30",
+          "sent_at": "2026-11-22",
           "due_date": "",
           "attachment": "02-OUTREACH/ads_only_pdfs/Roof_Rays_Solar_Solutions.pdf",
           "attachment_bytes": 28223,
-          "sent_source": "Gmail SENT (verified 2026-11-23)"
+          "sent_source": "Gmail SENT (verified 2026-11-23)",
+          "sent_at_time": "14:21:00+05:30"
         }
       ],
       "state": "live-due",
@@ -4381,8 +4394,8 @@
       "thread_subject": "Akhil Electrical Works: TSRE250617 appears in none of your four live ads",
       "thread_id": "1a1ff0196c4cbd97",
       "mails_sent": 1,
-      "next_followup_date": "2026-11-24",
-      "next_step": 1,
+      "next_followup_date": "",
+      "next_step": null,
       "report_kind": "ads_only",
       "steps": [
         {
@@ -4396,11 +4409,12 @@
           "message_id": "1a2027f8091e7250",
           "thread_id": "1a1ff0196c4cbd97",
           "draft_created_at": "2026-11-21",
-          "sent_at": "2026-11-22T14:34:00+05:30",
+          "sent_at": "2026-11-22",
           "due_date": "",
           "attachment": "02-OUTREACH/ads_only_pdfs/Akhil_Electrical_Works.pdf",
           "attachment_bytes": 21520,
-          "sent_source": "Gmail SENT (verified 2026-11-23)"
+          "sent_source": "Gmail SENT (verified 2026-11-23)",
+          "sent_at_time": "14:34:00+05:30"
         }
       ],
       "state": "live-due",
@@ -4416,8 +4430,8 @@
       "thread_subject": "Manasaa Enterprises: three asterisks, no footnote, on a Rs.5.92 lakh quote",
       "thread_id": "1a1ff01aa6251bc3",
       "mails_sent": 1,
-      "next_followup_date": "2026-11-24",
-      "next_step": 1,
+      "next_followup_date": "",
+      "next_step": null,
       "report_kind": "ads_only",
       "steps": [
         {
@@ -4431,11 +4445,12 @@
           "message_id": "1a2025ae1ffee897",
           "thread_id": "1a1ff01aa6251bc3",
           "draft_created_at": "2026-11-21",
-          "sent_at": "2026-11-22T13:54:00+05:30",
+          "sent_at": "2026-11-22",
           "due_date": "",
           "attachment": "02-OUTREACH/ads_only_pdfs/Manasaa_Enterprises.pdf",
           "attachment_bytes": 19365,
-          "sent_source": "Gmail SENT (verified 2026-11-23)"
+          "sent_source": "Gmail SENT (verified 2026-11-23)",
+          "sent_at_time": "13:54:00+05:30"
         }
       ],
       "state": "live-due",

@@ -44,6 +44,9 @@ import json
 import os
 import sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import sequence as seq_engine  # noqa: E402  (same directory)
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 MANIFEST = os.path.join(HERE, "generated_emails", "sequence_manifest.json")
 TODAY = datetime.date(2026, 11, 21)
@@ -153,17 +156,12 @@ def main():
             unverified.append(name)
             continue
         sends = MEASURED[name]
-        state, step, due = derive(sends)
+        state, _step, _due = derive(sends)
         before = (s.get("mails_sent"), s.get("next_step"),
                   s.get("next_followup_date") or "", s.get("state", "?"))
-        after = (len(sends), step, due, state)
-        if before != after:
-            changes.append((name, before, after))
 
-        s["mails_sent"] = len(sends)
-        s["next_step"] = step
-        s["next_followup_date"] = due
         s["state"] = state
+        s["mails_sent"] = len(sends)
         s["reconciled_on"] = TODAY.isoformat()
         s["send_dates_verified"] = sends
         if name in FILL_TO and not s.get("to"):
@@ -179,6 +177,17 @@ def main():
                 # the ledger claimed a send Gmail has no record of
                 st["status"] = "pending"
                 st["sent_at"] = ""
+
+        # next_step / next_followup_date / thread_id are the sequence engine's
+        # to derive - it defines next_step as "the next UNSENT step", which is
+        # None for a finished sequence. Computing them here as well made the two
+        # tools disagree by construction and flip-flop the manifest.
+        seq_engine.refresh_columns(s)
+
+        after = (s.get("mails_sent"), s.get("next_step"),
+                 s.get("next_followup_date") or "", s.get("state", "?"))
+        if before != after:
+            changes.append((name, before, after))
 
     states = {}
     for s in m["sequences"]:

@@ -137,12 +137,32 @@ def main():
         by_company.setdefault(r["company"], []).append(r)
 
     touched = []
+    # Heal sent_at values written as full timestamps (they break sequence.py).
+    healed = 0
+    for s in m["sequences"]:
+        for st in s["steps"]:
+            v = st.get("sent_at") or ""
+            if len(v) > 10 and "T" in v:
+                st["sent_at"] = v[:10]
+                st.setdefault("sent_at_time", v[11:])
+                healed += 1
+    if healed:
+        print(f"normalised {healed} sent_at value(s) from timestamp to date")
+
     for s in m["sequences"]:
         recs = by_company.get(s["company"])
         if not recs:
             continue
         moved = []
+        # Idempotency: a send already recorded anywhere on this sequence must
+        # not be applied again. Without this, re-running matched step 1's send
+        # to step 2 of the same kind and inflated mails_sent.
+        recorded = {st.get("message_id") for st in s["steps"]
+                    if st.get("message_id")}
+        recorded |= {e.get("message_id") for e in s.get("extra_sends", [])}
         for r in recs:
+            if r["message_id"] in recorded:
+                continue
             # match the step the send satisfies: same kind, still unsent
             for st in s["steps"]:
                 if st.get("status") == "sent":
@@ -150,7 +170,11 @@ def main():
                 if st.get("kind") != r["step_kind"]:
                     continue
                 st["status"] = "sent"
-                st["sent_at"] = f"{r['sent_date']}T{r['sent_time']}+05:30"
+                # sent_at is a bare YYYY-MM-DD by contract: sequence.py runs
+                # date.fromisoformat() on it. A full timestamp crashes
+                # `sequence.py due` with "Invalid isoformat string".
+                st["sent_at"] = r["sent_date"]
+                st["sent_at_time"] = f"{r['sent_time']}+05:30"
                 st["message_id"] = r["message_id"]
                 st["thread_id"] = r["thread_id"]
                 st["sent_source"] = "Gmail SENT (verified 2026-11-23)"
@@ -161,9 +185,13 @@ def main():
                      {st.get("message_id") for st in s["steps"]}]
         if unmatched:
             s.setdefault("extra_sends", [])
+            _known = {e.get("message_id") for e in s["extra_sends"]}
+            unmatched = [r for r in unmatched
+                         if r["message_id"] not in _known]
             for r in unmatched:
                 s["extra_sends"].append({
-                    "sent_at": f"{r['sent_date']}T{r['sent_time']}+05:30",
+                    "sent_at": r["sent_date"],
+                    "sent_at_time": f"{r['sent_time']}+05:30",
                     "step_kind": r["step_kind"],
                     "message_id": r["message_id"],
                     "thread_id": r["thread_id"],
