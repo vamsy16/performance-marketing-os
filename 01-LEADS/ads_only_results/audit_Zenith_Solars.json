@@ -76,6 +76,36 @@
     "local_signals": {
       "has_google_maps_embed": null
     },
+    "conversion_evidence": {
+      "checked_on": "2026-11-23",
+      "method": "Public page text and selected served source; no browser interaction or form submission.",
+      "sources": [
+        "https://zenithsolars.com/index.html",
+        "https://validator.w3.org/nu/?doc=https%3A%2F%2Fzenithsolars.com%2Findex.html&showsource=yes"
+      ],
+      "rows": [
+        [
+          "Action links",
+          "Homepage Get A Quote links to /contact.html."
+        ],
+        [
+          "Forms",
+          "Homepage form fields in source; submission not tested."
+        ],
+        [
+          "Phone / WhatsApp",
+          "Homepage has tel links; WhatsApp not verified."
+        ],
+        [
+          "Proof / price",
+          "Homepage has a testimonial video section; playback and pricing unverified."
+        ],
+        [
+          "Chat / popup",
+          "Live chat and offer popup require browser verification."
+        ]
+      ]
+    },
     "scope_note": "The ad CTA says Call now, not website. The index.html page was separately reviewed because the root URL was inaccessible to the checker. The call destination and form submission were not tested.",
     "html_errors": "29 errors, 1 warnings, 18 info (parser stopped after fatal error)",
     "score": {
@@ -87,7 +117,8 @@
         "The header lists postal code 585106 while the contact page body lists 585105; confirm and align the address."
       ],
       "wins": [
-        "Contact form exists"
+        "Homepage source contains an enquiry form; submission untested.",
+        "Homepage has phone and quote links."
       ]
     }
   },

@@ -76,6 +76,37 @@
     "local_signals": {
       "has_google_maps_embed": null
     },
+    "conversion_evidence": {
+      "checked_on": "2026-11-23",
+      "method": "Public page text and selected served source; no browser interaction or form submission.",
+      "sources": [
+        "https://www.sundaygrids.com/",
+        "https://www.sundaygrids.com/projects/278RAO1IVG",
+        "https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.sundaygrids.com%2F&showsource=yes"
+      ],
+      "rows": [
+        [
+          "Action links",
+          "Home: Get Started / Get Started for Free; Parker 110: Reserve Solar Now."
+        ],
+        [
+          "Forms",
+          "Parker 110 links to signup; signup completion not tested."
+        ],
+        [
+          "Phone / WhatsApp",
+          "No link confirmed from this review; browser check needed."
+        ],
+        [
+          "Proof / price",
+          "Home shows customer quotes and a reservation-fee example."
+        ],
+        [
+          "Chat / popup",
+          "Live chat and offer popup require browser verification."
+        ]
+      ]
+    },
     "scope_note": "The actual ad link points to Parker 110, not the homepage. Its project page describes credits, validity and a reservation fee; form submission and event firing were not tested. GTM-PZ8PCNX, UA-170164983-1, PostHog and Calendly were seen on the homepage. Other tracking remains unverified.",
     "html_errors": "25 errors, 21 warnings, 51 info",
     "score": {
@@ -86,9 +117,8 @@
         "The Nu checker flagged seven H1 elements, 12 duplicate SVG IDs and four skipped heading levels; review accessibility impact."
       ],
       "wins": [
-        "Google tracking is present",
-        "Google Analytics is installed",
-        "Testimonials visible"
+        "GTM and legacy UA are in homepage source; event delivery untested.",
+        "Homepage contains customer quotes and a reservation-fee example."
       ]
     }
   },

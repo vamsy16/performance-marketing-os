@@ -132,3 +132,24 @@ exports for account-only controls. A separate reviewer must examine the PDF,
 JSON and sources and issue the independent PASS. Run the live-verifier command
 above from a network-enabled environment and resolve every mismatch. Do not
 send before all gates pass.
+
+## Conversion-readiness correction — 2026-11-23
+
+Re-read the five public homepage texts plus [Arrow contact](https://arrowenergy.in/contact),
+[Atria contact](https://www.atriapower.com/contact-us), the SundayGrids project,
+and selected W3C source for SundayGrids, RAGA and Zenith. The JSON now records
+source URLs and a dated five-row conversion evidence summary, rendered in each
+PDF instead of generic unchecked CTA status. The rows distinguish a link, a
+form in source or on a separate page, and what still requires interactive testing.
+Examples: Arrow's `Check Subsidy Eligibility` and `Book Now` link to `/contact`;
+Atria's corporate `Contact us` links to its contact page; RAGA's source has
+an enquiry form in a tablet-hidden container. CTA counts remain unknown: these
+examples do not establish a complete count or functioning buttons.
+
+Arrow's homepage-form flag was changed from false to unknown: the fetched text
+showed no form but does not prove no dynamically loaded form exists. Consequently
+its provisional formula score changes **8 to 0** and `leads.csv` and the PDF
+index are updated. Zero reflects excluded unknowns, not a clean bill of health.
+No controlled submissions, browser interaction, runtime tracking checks,
+PageSpeed measurement or independent third-eye review were performed. The
+reports continue to be drafts, and the live and independent gates still apply.

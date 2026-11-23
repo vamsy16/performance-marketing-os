@@ -78,7 +78,7 @@ Independent report review and full live re-verification remain pending. Scores e
 | Company | Pages | Size | Score | Audited | PDF |
 |---|---|---|---|---|---|
 | SundayGrids | 5 | 23 KB | 1/100 (provisional) | 2026-11-23 | [internal draft](https://github.com/vamsy16/performance-marketing-os/blob/arena/af1679d7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_SundayGrids.pdf) |
-| Arrow Solar | 5 | 23 KB | 8/100 (provisional) | 2026-11-23 | [internal draft](https://github.com/vamsy16/performance-marketing-os/blob/arena/af1679d7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Arrow_Solar.pdf) |
+| Arrow Solar | 5 | 23 KB | 0/100 (provisional) | 2026-11-23 | [internal draft](https://github.com/vamsy16/performance-marketing-os/blob/arena/af1679d7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Arrow_Solar.pdf) |
 | Atria Power | 5 | 23 KB | 0/100 (provisional) | 2026-11-23 | [internal draft](https://github.com/vamsy16/performance-marketing-os/blob/arena/af1679d7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Atria_Power.pdf) |
 | RAGA Renewable Energy | 5 | 23 KB | 0/100 (provisional) | 2026-11-23 | [internal draft](https://github.com/vamsy16/performance-marketing-os/blob/arena/af1679d7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_RAGA_Renewable_Energy.pdf) |
 | Zenith Solars | 5 | 23 KB | 1/100 (provisional) | 2026-11-23 | [internal draft](https://github.com/vamsy16/performance-marketing-os/blob/arena/af1679d7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Zenith_Solars.pdf) |

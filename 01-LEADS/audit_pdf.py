@@ -1543,16 +1543,21 @@ def build_story(audit):
         story.append(Paragraph("The observed tracking tools are listed above. Runtime event delivery was not tested.", ST["body"]))
 
     story.extend(section_bar("Conversion readiness", "how easily a visitor becomes an enquiry"))
-    conv_items = [(label, conv.get(key)) for key, label in CONVERSION_LABELS.items()]
-    _cta = conv.get("has_cta_buttons")
-    if _cta is None:
-        _cta_label = "Call-to-action buttons: not checked in this pass"
+    conversion_evidence = (audit.get("site_audit") or {}).get("conversion_evidence")
+    if conversion_evidence:
+        story.append(Paragraph("Public page / source observations; actions and form delivery were not tested.", ST["small"]))
+        story.append(facts_table(conversion_evidence["rows"]))
     else:
-        _cta_label = f"Call-to-action buttons: {_cta} on homepage"
-    conv_items.insert(3, (_cta_label, None if _cta is None else _cta >= 3))
-    story.append(two_col_status(conv_items))
+        conv_items = [(label, conv.get(key)) for key, label in CONVERSION_LABELS.items()]
+        _cta = conv.get("has_cta_buttons")
+        if _cta is None:
+            _cta_label = "Call-to-action buttons: not checked in this pass"
+        else:
+            _cta_label = f"Call-to-action buttons: {_cta} on homepage"
+        conv_items.insert(3, (_cta_label, None if _cta is None else _cta >= 3))
+        story.append(two_col_status(conv_items))
 
-    story.extend(section_bar("What is already working"))
+    story.extend(section_bar("Observed positives" if conversion_evidence else "What is already working"))
     story.append(bullets_table(wins if wins else ["Strengths were not assessed in this limited pass." if audit.get("conservative_scope") else "No major strengths detected on the homepage."], GREEN, "OK"))
 
     story.extend(section_bar("Technical snapshot"))

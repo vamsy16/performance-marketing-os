@@ -25,7 +25,7 @@
     },
     "summary": "One active Meta ad card captured on 2026-11-23; this is a sample, not necessarily the total. Google Ads activity was not checked."
   },
-  "score_basis": "8 points: no homepage form observed; contact page has a form. Unknown checks are excluded.",
+  "score_basis": "0 points from measured formula checks. Homepage form absence is unverified; unknown checks are excluded.",
   "funnel": {
     "type": "fb.me link",
     "destination": "fb.me (card link; exact form or final destination not verified)"
@@ -46,7 +46,7 @@
       "google_tag_manager": null
     },
     "conversion": {
-      "has_contact_form": false,
+      "has_contact_form": null,
       "has_phone_click": true,
       "has_whatsapp_link": true,
       "has_cta_buttons": null,
@@ -76,19 +76,49 @@
     "local_signals": {
       "has_google_maps_embed": null
     },
+    "conversion_evidence": {
+      "checked_on": "2026-11-23",
+      "method": "Public page text and selected served source; no browser interaction or form submission.",
+      "sources": [
+        "https://arrowenergy.in/",
+        "https://arrowenergy.in/contact"
+      ],
+      "rows": [
+        [
+          "Action links",
+          "Home: Check Subsidy Eligibility and Book Now link to /contact."
+        ],
+        [
+          "Forms",
+          "Contact page has a quote form; homepage absence and submission unverified."
+        ],
+        [
+          "Phone / WhatsApp",
+          "Homepage provides a tel link and wa.me link."
+        ],
+        [
+          "Proof / price",
+          "Homepage shows indicative solar package prices; testimonials unverified."
+        ],
+        [
+          "Chat / popup",
+          "Live chat and offer popup require browser verification."
+        ]
+      ]
+    },
     "scope_note": "The card displays arrowenergy.in but its public card link is fb.me; the final click-through and form were not verified. GA4 G-LY596XLF42 was observed in homepage source; runtime events were not tested.",
     "html_errors": "1 error, 2 warnings, 43 info",
     "score": {
-      "score": 8,
+      "score": 0,
       "issues": [
         "The ad calls for a quick form, but the card link shows fb.me; verify the final destination and lead handoff.",
         "The ad says 25 years of experience while the homepage says 22+ years; reconcile these statements.",
         "Homepage pricing shows a 3 kW package at Rs. 1,44,000 after subsidy, while the hero says zero upfront cost; clarify financing and eligibility.",
-        "No form was observed on the homepage; a quote form is available at /contact, but its submission was not tested."
+        "No form was observed in the homepage text reviewed; /contact has a quote form. Homepage absence and form submission remain unverified."
       ],
       "wins": [
-        "Google Analytics is installed",
-        "WhatsApp link present"
+        "Homepage includes phone, WhatsApp and quote links.",
+        "Contact page contains a quote form; submission untested."
       ]
     }
   },
@@ -103,7 +133,7 @@
   "promise_gap": [
     [
       "Ad: quick form and a call back for a solar installation.",
-      "The card shows a fb.me link; the final form was not tested. The homepage offers phone, WhatsApp and a contact link, rather than a homepage form."
+      "The card shows a fb.me link; the final form was not tested. The homepage offers phone, WhatsApp and a contact link; a form is on /contact."
     ],
     [
       "Ad: 25 years of experience.",

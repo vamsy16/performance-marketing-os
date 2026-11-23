@@ -53,6 +53,32 @@ class Batch14Tests(unittest.TestCase):
             self.assertIn('not a verified total', text)
             self.assertNotIn('active ad results found', text)
 
+    def test_conversion_observations_render_without_invented_cta_counts(self):
+        snippets = {
+            'SundayGrids': 'Parker 110: Reserve Solar Now',
+            'Arrow Solar': 'Check Subsidy Eligibility and Book Now',
+            'Atria Power': 'Corporate homepage Contact us',
+            'RAGA Renewable Energy': 'Book a Free Site Visit links',
+            'Zenith Solars': 'Homepage Get A Quote',
+        }
+        for name, evidence in snippets.items():
+            with self.subTest(company=name):
+                slug = name.replace(' ', '_')
+                audit = json.loads((HERE / 'ads_only_results' / ('audit_' + slug + '.json')).read_text())
+                site = audit['site_audit']
+                self.assertIsNone(site['conversion']['has_cta_buttons'])
+                self.assertEqual(5, len(site['conversion_evidence']['rows']))
+                self.assertTrue(site['conversion_evidence']['sources'])
+                pdf = PdfReader(str(HERE.parent / '02-OUTREACH' / 'ads_only_pdfs' / ('audit_' + slug + '.pdf')))
+                text = ' '.join(page.extract_text() for page in pdf.pages)
+                section = text.split('Conversion readiness', 1)[1].split('Observed positives', 1)[0]
+                self.assertIn(evidence, section)
+                self.assertNotIn('not checked in this pass', section.lower())
+                self.assertIn('not tested', section.lower())
+        arrow = json.loads((HERE / 'ads_only_results' / 'audit_Arrow_Solar.json').read_text())
+        self.assertIsNone(arrow['site_audit']['conversion']['has_contact_form'])
+        self.assertEqual(0, arrow['site_audit']['score']['score'])
+
     def test_latest_uses_modification_time_not_alphabetical_order(self):
         with tempfile.TemporaryDirectory() as tmp:
             older = Path(tmp) / 'audit_Z.json'

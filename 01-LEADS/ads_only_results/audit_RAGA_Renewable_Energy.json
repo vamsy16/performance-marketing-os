@@ -76,6 +76,36 @@
     "local_signals": {
       "has_google_maps_embed": null
     },
+    "conversion_evidence": {
+      "checked_on": "2026-11-23",
+      "method": "Public page text and selected served source; no browser interaction or form submission.",
+      "sources": [
+        "https://ragarenewableenergy.com/",
+        "https://validator.w3.org/nu/?doc=https%3A%2F%2Fragarenewableenergy.com%2F&showsource=yes"
+      ],
+      "rows": [
+        [
+          "Action links",
+          "Book a Free Site Visit links to /contact-us/ in homepage source."
+        ],
+        [
+          "Forms",
+          "Homepage form in source is marked hidden on tablets; submission untested."
+        ],
+        [
+          "Phone / WhatsApp",
+          "Homepage has tel links; WhatsApp not verified."
+        ],
+        [
+          "Proof / price",
+          "Customer quotes appear in source; rendered visibility not verified."
+        ],
+        [
+          "Chat / popup",
+          "Live chat and offer popup require browser verification."
+        ]
+      ]
+    },
     "scope_note": "The ad links to the Instagram profile, not the website. The homepage was reviewed separately. Unobserved source tags remain unknown and no form submission or event firing was tested.",
     "html_errors": "27 errors, 12 warnings, 68 info",
     "score": {
@@ -87,7 +117,8 @@
         "The homepage counters are animated; check final display and substantiate their claims."
       ],
       "wins": [
-        "Contact form exists"
+        "Homepage source contains an enquiry form; submission untested.",
+        "Homepage has phone links and a site-visit CTA."
       ]
     }
   },

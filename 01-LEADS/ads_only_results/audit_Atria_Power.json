@@ -47,7 +47,7 @@
     },
     "conversion": {
       "has_contact_form": null,
-      "has_phone_click": null,
+      "has_phone_click": true,
       "has_whatsapp_link": null,
       "has_cta_buttons": null,
       "has_live_chat": null,
@@ -76,6 +76,36 @@
     "local_signals": {
       "has_google_maps_embed": null
     },
+    "conversion_evidence": {
+      "checked_on": "2026-11-23",
+      "method": "Public page text and selected served source; no browser interaction or form submission.",
+      "sources": [
+        "https://www.atriapower.com/",
+        "https://www.atriapower.com/contact-us"
+      ],
+      "rows": [
+        [
+          "Action links",
+          "Corporate homepage Contact us links to /contact-us."
+        ],
+        [
+          "Forms",
+          "Contact page has a form; homepage form and submission unverified."
+        ],
+        [
+          "Phone / WhatsApp",
+          "Homepage has a tel link; WhatsApp not verified."
+        ],
+        [
+          "Proof / price",
+          "Homepage lists projects; testimonials and pricing not verified."
+        ],
+        [
+          "Chat / popup",
+          "Live chat and offer popup require browser verification."
+        ]
+      ]
+    },
     "scope_note": "The card says Get offer and links to fb.me; its final form was not tested. The separately reviewed corporate contact page has a form. Wix source review is partial; event firing remains unverified.",
     "html_errors": "979 errors, 0 warnings, 22 info (checker hit message cap; includes 7 HTML errors)",
     "score": {
@@ -85,7 +115,10 @@
         "The corporate homepage features solar, wind and hydro; its rooftop link points to a separate domain.",
         "The homepage checker hit its message cap; do not treat the total as a count of actionable HTML defects."
       ],
-      "wins": []
+      "wins": [
+        "Corporate homepage links to contact and a phone number.",
+        "Contact page contains a form; submission untested."
+      ]
     }
   },
   "site_evidence": {

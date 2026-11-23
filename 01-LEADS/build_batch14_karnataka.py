@@ -33,7 +33,7 @@ DATA = {
  tags={'google_analytics_ga4':True},conv={'has_contact_form':False,'has_phone_click':True,'has_whatsapp_link':True},seo={'has_schema':True},
  note='The card displays arrowenergy.in but its public card link is fb.me; the final click-through and form were not verified. GA4 G-LY596XLF42 was observed in homepage source; runtime events were not tested.',
  issues=['The ad mentions a quick form; the public card link shown is fb.me, so verify the actual post-click form and lead capture.', 'The homepage has a phone and WhatsApp link but no homepage form was observed.', 'The ad says 25 years of experience while the homepage says 22+ years; reconcile the claims.'],
- gap=[('Ad: quick form and a call back for a solar installation.', 'The card shows a fb.me link; the final form was not tested. The homepage offers phone, WhatsApp and a contact link, rather than a homepage form.'), ('Ad: 25 years of experience.', 'The homepage says 22+ years. Verify the basis and update inconsistent wording.')],
+ gap=[('Ad: quick form and a call back for a solar installation.', 'The card shows a fb.me link; the final form was not tested. The homepage offers phone, WhatsApp and a contact link; a form is on /contact.'), ('Ad: 25 years of experience.', 'The homepage says 22+ years. Verify the basis and update inconsistent wording.')],
  steps=[('Test the ad click','Open the live ad on mobile and confirm the form and lead handoff.'),('Align experience claims','Reconcile the ad and homepage experience figures.'),('Verify analytics','Check GA4 event firing and consent in a real browser.'),('Improve enquiry path','Review whether an on-page form would help visitors who avoid phone or chat.')]),
 'Atria Power': dict(city='Bengaluru',url='https://www.atriapower.com/',id='1103298019283935',start='Nov 4, 2026',dest='fb.me (card link; form not verified)',kind='fb.me link',
  text='Why wait for a subsidy when you can start saving from day one?\n\nWith the Atria Subsidy, Bengaluru homeowners get benefits worth ₹75,000 on a 3 kW rooftop system, paid upfront. You pay only the balance.\n\n✔ 3 kW systems from ₹1.42 lakh after the Atria Subsidy\n\n✔ For independent houses with a monthly bill above ₹1,200\n\n✔ Financing options available\n\n✔ 4.9 on Google from 100+ reviews\n\n✔ 66+ year legacy, from the founders of ACT\n\nTap Get Offer to book a free site survey, or call +91 99011 00428.',
@@ -72,16 +72,17 @@ DATA['SundayGrids']['issues'] = [
     'The Nu checker flagged seven H1 elements, 12 duplicate SVG IDs and four skipped heading levels; review accessibility impact.',
 ]
 DATA['Arrow Solar']['seo'].update(has_title=True, title_text='Arrow Power Controls | Solar EPC & Installation Company | Karnataka', has_meta_description=True, has_og_tags=True, has_favicon=True)
-DATA['Arrow Solar']['conv'].update(has_pricing_page_link=True)
+DATA['Arrow Solar']['conv'].update(has_pricing_page_link=True, has_contact_form=None)
 DATA['Arrow Solar']['sitemap'] = 'Sitemap fetched and lists solar services and project URLs; indexing not verified.'
 DATA['Arrow Solar']['html_errors'] = '1 error, 2 warnings, 43 info'
 DATA['Arrow Solar']['issues'] = [
     'The ad calls for a quick form, but the card link shows fb.me; verify the final destination and lead handoff.',
     'The ad says 25 years of experience while the homepage says 22+ years; reconcile these statements.',
     'Homepage pricing shows a 3 kW package at Rs. 1,44,000 after subsidy, while the hero says zero upfront cost; clarify financing and eligibility.',
-    'No form was observed on the homepage; a quote form is available at /contact, but its submission was not tested.',
+    'No form was observed in the homepage text reviewed; /contact has a quote form. Homepage absence and form submission remain unverified.',
 ]
 DATA['Atria Power']['seo'].update(has_title=True, title_text='Home | Atria Power', has_favicon=True)
+DATA['Atria Power']['conv'].update(has_phone_click=True)
 DATA['Atria Power']['sitemap'] = 'robots.txt declares /sitemap.xml; sitemap fetch failed, so contents and indexing are unverified.'
 DATA['Atria Power']['sitemap_confirmed'] = None
 DATA['Atria Power']['note'] = 'The card says Get offer and links to fb.me; its final form was not tested. The separately reviewed corporate contact page has a form. Wix source review is partial; event firing remains unverified.'
@@ -113,7 +114,7 @@ DATA['Zenith Solars']['issues'] = [
     'The header lists postal code 585106 while the contact page body lists 585105; confirm and align the address.',
 ]
 DATA['SundayGrids']['score_basis'] = '1 point: seven H1 elements. Unknown checks are excluded.'
-DATA['Arrow Solar']['score_basis'] = '8 points: no homepage form observed; contact page has a form. Unknown checks are excluded.'
+DATA['Arrow Solar']['score_basis'] = '0 points from measured formula checks. Homepage form absence is unverified; unknown checks are excluded.'
 DATA['Atria Power']['score_basis'] = '0 points from measured formula checks. Unknown checks are excluded; zero is not a clean bill of health.'
 DATA['RAGA Renewable Energy']['score_basis'] = '0 points from measured formula checks. Unknown checks are excluded; zero is not a clean bill of health.'
 DATA['Zenith Solars']['score_basis'] = '1 point: six H1 elements. Unknown checks are excluded.'
@@ -125,6 +126,54 @@ DATA['Zenith Solars']['steps'] = [
 ]
 
 
+# Qualitative observations are separate from the numeric CTA-count score: a
+# few observed links are not an exhaustive count and do not prove they work.
+CONVERSION_EVIDENCE = {
+ 'SundayGrids': [
+   ('Action links', 'Home: Get Started / Get Started for Free; Parker 110: Reserve Solar Now.'),
+   ('Forms', 'Parker 110 links to signup; signup completion not tested.'),
+   ('Phone / WhatsApp', 'No link confirmed from this review; browser check needed.'),
+   ('Proof / price', 'Home shows customer quotes and a reservation-fee example.'),
+   ('Chat / popup', 'Live chat and offer popup require browser verification.'),
+ ],
+ 'Arrow Solar': [
+   ('Action links', 'Home: Check Subsidy Eligibility and Book Now link to /contact.'),
+   ('Forms', 'Contact page has a quote form; homepage absence and submission unverified.'),
+   ('Phone / WhatsApp', 'Homepage provides a tel link and wa.me link.'),
+   ('Proof / price', 'Homepage shows indicative solar package prices; testimonials unverified.'),
+   ('Chat / popup', 'Live chat and offer popup require browser verification.'),
+ ],
+ 'Atria Power': [
+   ('Action links', 'Corporate homepage Contact us links to /contact-us.'),
+   ('Forms', 'Contact page has a form; homepage form and submission unverified.'),
+   ('Phone / WhatsApp', 'Homepage has a tel link; WhatsApp not verified.'),
+   ('Proof / price', 'Homepage lists projects; testimonials and pricing not verified.'),
+   ('Chat / popup', 'Live chat and offer popup require browser verification.'),
+ ],
+ 'RAGA Renewable Energy': [
+   ('Action links', 'Book a Free Site Visit links to /contact-us/ in homepage source.'),
+   ('Forms', 'Homepage form in source is marked hidden on tablets; submission untested.'),
+   ('Phone / WhatsApp', 'Homepage has tel links; WhatsApp not verified.'),
+   ('Proof / price', 'Customer quotes appear in source; rendered visibility not verified.'),
+   ('Chat / popup', 'Live chat and offer popup require browser verification.'),
+ ],
+ 'Zenith Solars': [
+   ('Action links', 'Homepage Get A Quote links to /contact.html.'),
+   ('Forms', 'Homepage form fields in source; submission not tested.'),
+   ('Phone / WhatsApp', 'Homepage has tel links; WhatsApp not verified.'),
+   ('Proof / price', 'Homepage has a testimonial video section; playback and pricing unverified.'),
+   ('Chat / popup', 'Live chat and offer popup require browser verification.'),
+ ],
+}
+CONVERSION_SOURCES = {
+ 'SundayGrids': ['https://www.sundaygrids.com/', 'https://www.sundaygrids.com/projects/278RAO1IVG', 'https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.sundaygrids.com%2F&showsource=yes'],
+ 'Arrow Solar': ['https://arrowenergy.in/', 'https://arrowenergy.in/contact'],
+ 'Atria Power': ['https://www.atriapower.com/', 'https://www.atriapower.com/contact-us'],
+ 'RAGA Renewable Energy': ['https://ragarenewableenergy.com/', 'https://validator.w3.org/nu/?doc=https%3A%2F%2Fragarenewableenergy.com%2F&showsource=yes'],
+ 'Zenith Solars': ['https://zenithsolars.com/index.html', 'https://validator.w3.org/nu/?doc=https%3A%2F%2Fzenithsolars.com%2Findex.html&showsource=yes'],
+}
+
+
 def build(name, d):
     px={k:None for k in TRACKING}; px.update(d['tags'])
     conv={k:None for k in CONV}; conv.update(d['conv'])
@@ -133,7 +182,15 @@ def build(name, d):
     # Keep scores algorithmic, but show contextual public-evidence priorities,
     # not unsupported template assertions about lost sales or attribution.
     result['issues']=d['issues']
-    site={'ssl':True,'load_time_seconds':None,'final_url':d['url'],'audit_date':DATE,'pixels':px,'conversion':conv,'seo':seo,'pagespeed':{'error':'not measured for this site'},'page_count':{'has_sitemap': d.get('sitemap_confirmed', True) if d.get('sitemap') else None, 'note':d.get('sitemap')},'local_signals':{'has_google_maps_embed':None},'scope_note':d['note'],'html_errors':d.get('html_errors'),'score':result}
+    # Evidence of markup/content is not proof of runtime or delivery.
+    result['wins'] = {
+        'SundayGrids': ['GTM and legacy UA are in homepage source; event delivery untested.', 'Homepage contains customer quotes and a reservation-fee example.'],
+        'Arrow Solar': ['Homepage includes phone, WhatsApp and quote links.', 'Contact page contains a quote form; submission untested.'],
+        'Atria Power': ['Corporate homepage links to contact and a phone number.', 'Contact page contains a form; submission untested.'],
+        'RAGA Renewable Energy': ['Homepage source contains an enquiry form; submission untested.', 'Homepage has phone links and a site-visit CTA.'],
+        'Zenith Solars': ['Homepage source contains an enquiry form; submission untested.', 'Homepage has phone and quote links.'],
+    }[name]
+    site={'ssl':True,'load_time_seconds':None,'final_url':d['url'],'audit_date':DATE,'pixels':px,'conversion':conv,'seo':seo,'pagespeed':{'error':'not measured for this site'},'page_count':{'has_sitemap': d.get('sitemap_confirmed', True) if d.get('sitemap') else None, 'note':d.get('sitemap')},'local_signals':{'has_google_maps_embed':None},'conversion_evidence':{'checked_on':DATE,'method':'Public page text and selected served source; no browser interaction or form submission.', 'sources':CONVERSION_SOURCES[name], 'rows':CONVERSION_EVIDENCE[name]},'scope_note':d['note'],'html_errors':d.get('html_errors'),'score':result}
     ad={'library_id':d['id'],'library_url':'https://www.facebook.com/ads/library/?id='+d['id'],'page_name':name,'started':d['start'],'destination':d['dest'],'text':d['text']}
     evidence={'pixel':None,'ga4':px['google_analytics_ga4'],'gtm':px['google_tag_manager'],'google_ads_tag':None,'checked_on':DATE,'note':'Selected served source reviewed; absence and runtime behavior are unverified.'}
     audit={'company':name,'city':d['city'],'website':d['url'],'checked_on':DATE,'audit_date':DATE,'generated_at':DATE,'ads_only':True,'website_audit_run':True,'conservative_scope':True,'review_pending':True,
