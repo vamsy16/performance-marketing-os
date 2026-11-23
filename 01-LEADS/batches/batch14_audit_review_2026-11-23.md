@@ -153,3 +153,32 @@ index are updated. Zero reflects excluded unknowns, not a clean bill of health.
 No controlled submissions, browser interaction, runtime tracking checks,
 PageSpeed measurement or independent third-eye review were performed. The
 reports continue to be drafts, and the live and independent gates still apply.
+
+## Live verification attempt — 2026-11-23, approximately 05:56 UTC
+
+Ran the explicit-company full `verify_live.py` command above with `--timeout 5
+--retries 0` and `PYTHONPATH=/tmp/pdflibs`. It returned **exit 2**: all five
+Meta URLs and all five website URLs failed with `SSLZeroReturnError` / TLS EOF;
+5 reports UNREACHABLE, 0 full matches, 0 reported drift. No independent
+reviewer was involved. This is a **failed delivery gate**, not five passes.
+
+The author separately re-opened all five Meta ID panels via the public page
+fetcher. Each panel showed the stored ID, advertiser, start date, and `Active`
+on this date. The fetcher defaulted to a US country filter; the individual ad
+panel should not be confused with the filtered search list or a complete ad
+inventory. The public fetcher also opened each reviewed homepage or index page
+and exposed its stored title. These are partial author checks, not a substitute
+for the independent live-auditor gate or full site/source verification. The
+Sunday card linked Parker 110; Arrow and Atria exposed fb.me; RAGA exposed an
+Instagram link; Zenith exposed Call now without a dialled number. Post-click
+behavior was not tested.
+
+Two validator **HTML-view** spot checks matched the stored 2026-11-23 counts:
+[Arrow](https://validator.w3.org/nu/?doc=https%3A%2F%2Farrowenergy.in%2F&showsource=yes)
+1 error / 2 warnings / 43 info; [Zenith](https://validator.w3.org/nu/?doc=https%3A%2F%2Fzenithsolars.com%2Findex.html&showsource=yes)
+29 errors / 1 warning / 18 info, with a fatal parser stop. The validator's
+[Arrow JSON response](https://validator.w3.org/nu/?doc=https%3A%2F%2Farrowenergy.in%2F&out=json)
+showed 1 error, 7 info, and no warnings, unlike the HTML-view totals; do not
+infer website drift from counts across different response modes. The final
+independent run must investigate this discrepancy rather than assume identical
+validator options. No report was approved, and no audit values were changed.
