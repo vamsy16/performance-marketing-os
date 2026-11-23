@@ -210,7 +210,7 @@ To: {(report.get('contact') or {}).get('email', '') or '(no email found)'}
 Phone: {(report.get('contact') or {}).get('phone', '') or 'N/A'}
 Website: {report.get('website', '')}
 Report kind: LIVE AD ACTIVITY (no website audit was run - the PDF says so on page 1)
-ATTACH THIS: {attachment}{'' if has_pdf else '   <-- MISSING: run python 01-LEADS/ads_only_report.py first'}
+ATTACH THIS (step 0 only - follow-ups are replies in the thread and carry no attachment): {attachment}{'' if has_pdf else '   <-- MISSING: run python 01-LEADS/ads_only_report.py first'}
 Template: {template}
 Generated: {datetime.now().strftime('%Y-%m-%d %H:%M')}
 

@@ -47,6 +47,13 @@ Rules enforced by `sequence.py` (not by memory):
 Meta Ad Library data only and says so on page 1. Attach the live-ad PDF and
 never invent a score, a pixel finding or a page-speed number in the draft.
 
+**The PDF goes on step 0 and on nothing else.** Steps 1–3 are replies inside a
+thread that already carries the report, so a follow-up draft is created with
+**no attachment at all** — and with no line saying "report attached" or
+"attached again", because that would be false. Point back at it instead
+("the report from earlier in this thread still stands"). The sequence row
+carries `pdf_attached_step0_only: true` to record this.
+
 ## Flow
 
 ```

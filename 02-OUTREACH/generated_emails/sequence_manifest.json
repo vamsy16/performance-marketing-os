@@ -829,7 +829,7 @@
           "delay_after_previous_days": 2,
           "status": "draft",
           "draft_id": "r-4525673677532450213",
-          "message_id": "1a20692c01ceac81",
+          "message_id": "1a2069703387e1bb",
           "thread_id": "1a1c5ad3cec9972d",
           "draft_created_at": "2026-11-23",
           "sent_at": "",
@@ -859,9 +859,8 @@
         "2026-11-14",
         "2026-11-21"
       ],
-      "attachment": "ads_only_pdfs/audit_Four_Solar.pdf",
-      "attachment_bytes": 15845,
-      "draft_created_at": "2026-11-23"
+      "draft_created_at": "2026-11-23",
+      "pdf_attached_step0_only": true
     },
     {
       "company": "Freyr Energy",
@@ -1060,9 +1059,9 @@
           "delay_after_previous_days": 2,
           "status": "draft",
           "draft_id": "r6889605370398384279",
-          "message_id": "1a2016d7031c2893",
+          "message_id": "1a206979ce2201d8",
           "thread_id": "1a1b96e4e23fedab",
-          "draft_created_at": "2026-11-22",
+          "draft_created_at": "2026-11-23",
           "sent_at": "",
           "due_date": "2026-11-10"
         },
@@ -1100,9 +1099,8 @@
       "send_dates_verified": [
         "2026-11-08"
       ],
-      "attachment": "ads_only_pdfs/audit_Hindusthan_Solar_Energy_Enterprise.pdf",
-      "attachment_bytes": 24215,
-      "draft_created_at": "2026-11-22"
+      "draft_created_at": "2026-11-22",
+      "pdf_attached_step0_only": true
     },
     {
       "company": "Hydromo",
@@ -1523,9 +1521,9 @@
           "delay_after_previous_days": 2,
           "status": "draft",
           "draft_id": "r2849407659705663626",
-          "message_id": "1a2016d77f802922",
+          "message_id": "1a20697a5234cd1a",
           "thread_id": "1a1b96e4fc02c231",
-          "draft_created_at": "2026-11-22",
+          "draft_created_at": "2026-11-23",
           "sent_at": "",
           "due_date": "2026-11-10"
         },
@@ -1564,9 +1562,8 @@
       "send_dates_verified": [
         "2026-11-08"
       ],
-      "attachment": "ads_only_pdfs/audit_Kypas_Solar_Power_Pvt_Ltd.pdf",
-      "attachment_bytes": 24898,
-      "draft_created_at": "2026-11-22"
+      "draft_created_at": "2026-11-22",
+      "pdf_attached_step0_only": true
     },
     {
       "company": "Lotus Industries",
@@ -1995,7 +1992,7 @@
           "delay_after_previous_days": 2,
           "status": "draft",
           "draft_id": "r5265132983991296755",
-          "message_id": "1a20692cad5ca1f7",
+          "message_id": "1a2069706d6444d3",
           "thread_id": "1a1c5ad3dbe4f48b",
           "draft_created_at": "2026-11-23",
           "sent_at": "",
@@ -2025,9 +2022,8 @@
         "2026-11-14",
         "2026-11-21"
       ],
-      "attachment": "ads_only_pdfs/audit_Origian_Power.pdf",
-      "attachment_bytes": 15654,
-      "draft_created_at": "2026-11-23"
+      "draft_created_at": "2026-11-23",
+      "pdf_attached_step0_only": true
     },
     {
       "company": "Orizen Solar Innovations",
@@ -2696,7 +2692,7 @@
           "delay_after_previous_days": 2,
           "status": "draft",
           "draft_id": "r-369762949122208776",
-          "message_id": "1a20692d04381b7f",
+          "message_id": "1a206971888dae80",
           "thread_id": "1a1fca2e3f161d3e",
           "draft_created_at": "2026-11-23",
           "sent_at": "",
@@ -2732,9 +2728,8 @@
       ],
       "ads_live": 6,
       "note": "delivered subject (21 Nov) says 6 live ads; manifest had 2",
-      "attachment": "ads_only_pdfs/audit_Sri_Balaji_Solar_Energies.pdf",
-      "attachment_bytes": 35978,
-      "draft_created_at": "2026-11-23"
+      "draft_created_at": "2026-11-23",
+      "pdf_attached_step0_only": true
     },
     {
       "company": "Sunova Green Energy",
@@ -3198,9 +3193,8 @@
       "send_dates_verified": [
         "2026-10-21"
       ],
-      "attachment": "ads_only_pdfs/audit_Valcan_Solar.pdf",
-      "attachment_bytes": 18456,
-      "draft_created_at": "2026-11-22"
+      "draft_created_at": "2026-11-22",
+      "pdf_attached_step0_only": true
     },
     {
       "company": "Vanguard Energy",
@@ -3639,7 +3633,7 @@
           "delay_after_previous_days": 2,
           "status": "draft",
           "draft_id": "r-8058230239257078135",
-          "message_id": "1a20692d99db9a8c",
+          "message_id": "1a206971f1e1849b",
           "thread_id": "1a1fd14db01575b1",
           "draft_created_at": "2026-11-23",
           "sent_at": "",
@@ -3669,9 +3663,8 @@
         "2026-11-21",
         "2026-11-21"
       ],
-      "attachment": "ads_only_pdfs/audit_Kakatiya_Energies.pdf",
-      "attachment_bytes": 26995,
-      "draft_created_at": "2026-11-23"
+      "draft_created_at": "2026-11-23",
+      "pdf_attached_step0_only": true
     },
     {
       "company": "Visiontek",
@@ -3720,7 +3713,7 @@
           "delay_after_previous_days": 2,
           "status": "draft",
           "draft_id": "r-8068163327871745248",
-          "message_id": "1a20692e34540960",
+          "message_id": "1a2069720284b6bf",
           "thread_id": "1a1fd14f51c3e422",
           "draft_created_at": "2026-11-23",
           "sent_at": "",
@@ -3753,9 +3746,8 @@
       "to_source": "recovered from Gmail Sent 2026-11-21",
       "ads_live": 11,
       "note": "audit counted 11 ads and the 15 Nov email said 11; the 21 Nov subject said 5. Kept the delivered wording, flagged the gap.",
-      "attachment": "ads_only_pdfs/audit_Visiontek.pdf",
-      "attachment_bytes": 27316,
-      "draft_created_at": "2026-11-23"
+      "draft_created_at": "2026-11-23",
+      "pdf_attached_step0_only": true
     },
     {
       "company": "Laxmi Narayana Solar",
@@ -3790,7 +3782,7 @@
           "delay_after_previous_days": 2,
           "status": "draft",
           "draft_id": "r6359518378845034146",
-          "message_id": "1a20692fd9c7fe81",
+          "message_id": "1a206972feb34b70",
           "thread_id": "1a1fc79deabd85f3",
           "draft_created_at": "2026-11-23",
           "sent_at": "",
@@ -3834,9 +3826,8 @@
         "2026-11-21"
       ],
       "to_source": "recovered from Gmail Sent 2026-11-21",
-      "attachment": "ads_only_pdfs/audit_Laxmi_Narayana_Solar.pdf",
-      "attachment_bytes": 17902,
-      "draft_created_at": "2026-11-23"
+      "draft_created_at": "2026-11-23",
+      "pdf_attached_step0_only": true
     },
     {
       "company": "Envious Energy Private Limited",
@@ -3871,7 +3862,7 @@
           "delay_after_previous_days": 2,
           "status": "draft",
           "draft_id": "r-4705314765903976391",
-          "message_id": "1a206930708b1768",
+          "message_id": "1a20697324f17d4d",
           "thread_id": "1a1fca2c7a12f81e",
           "draft_created_at": "2026-11-23",
           "sent_at": "",
@@ -3916,9 +3907,8 @@
       ],
       "ads_live": 1,
       "note": "delivered subject says Begumpet, not Hyderabad",
-      "attachment": "ads_only_pdfs/audit_Envious_Energy_Private_Limited.pdf",
-      "attachment_bytes": 24247,
-      "draft_created_at": "2026-11-23"
+      "draft_created_at": "2026-11-23",
+      "pdf_attached_step0_only": true
     },
     {
       "company": "Griffin Energy",
@@ -4223,9 +4213,8 @@
         "2026-11-14",
         "2026-11-16"
       ],
-      "attachment": "ads_only_pdfs/audit_Aadithya_Solar_Energies.pdf",
-      "attachment_bytes": 26201,
-      "draft_created_at": "2026-11-22"
+      "draft_created_at": "2026-11-22",
+      "pdf_attached_step0_only": true
     },
     {
       "company": "Eagle Solar Systems",
@@ -4307,8 +4296,6 @@
       ],
       "ads_live": 2,
       "note": "delivered subject (16 Nov) says 2 live ads; audit counted 3 by 21 Nov (7/19/21 Nov start dates)",
-      "attachment": "ads_only_pdfs/audit_Eagle_Solar_Systems.pdf",
-      "attachment_bytes": 20660,
       "draft_created_at": "2026-11-22",
       "extra_sends": [
         {
@@ -4320,7 +4307,8 @@
           "subject": "Eagle Solar Systems: 3 live Hyderabad, Telangana ads, one funnel",
           "note": "first touch in a NEW thread, 2h48m after this prospect's follow-up went out in the older thread - ordering recorded, not corrected"
         }
-      ]
+      ],
+      "pdf_attached_step0_only": true
     },
     {
       "company": "Growcell Solar Energy",

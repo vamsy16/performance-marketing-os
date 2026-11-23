@@ -61,6 +61,8 @@ This is your complete workflow: find companies → audit their ads/website → s
 │  $ python 02-OUTREACH/sequence.py due                           │
 │    → On the due day, agent creates the follow-up draft IN the   │
 │      recorded thread (never in advance, never a new mail)       │
+│    → Follow-up drafts carry NO attachment: the PDF went once,    │
+│      on step 0, and steps 1-3 are replies in that same thread    │
 │    → You review + send; mails_sent +1, next date moves +2 days  │
 │    → 3 follow-ups max (last one is the breakup email)           │
 │                                                                  │
