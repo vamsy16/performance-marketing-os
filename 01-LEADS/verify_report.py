@@ -385,7 +385,7 @@ def run_ads_only():
                   "no fake website-audit data")
     print("\n" + "=" * 60)
     print("VERIFICATION:", "FAILED - fix issues above before delivering" if any_fail
-          else "ALL ADS-ONLY REPORTS PASS - safe to deliver as live-ad reports")
+          else "ALL ADS-ONLY REPORTS PASS - independent review and live recheck still required")
     print("=" * 60)
     sys.exit(1 if any_fail else 0)
 

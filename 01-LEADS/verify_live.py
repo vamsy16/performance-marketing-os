@@ -518,7 +518,8 @@ def check_outreach_consistency(audit):
         return results
 
     try:
-        manifest = json.load(open(manifest_path, encoding="utf-8"))
+        with open(manifest_path, encoding="utf-8") as f:
+            manifest = json.load(f)
     except Exception as e:  # noqa: BLE001
         results.append(dict(check="outreach.manifest", verdict=UNREACHABLE,
                             detail="manifest unreadable: %s" % e))
@@ -589,14 +590,15 @@ def load_reports(names=None, latest=0):
                  if any(w in os.path.basename(p).lower() or
                         w in text_of(json.load(open(p, encoding="utf-8")).get("company")).lower()
                         for w in wanted)]
-    if latest and len(paths) > latest:
-        paths = paths[-latest:]
+    if latest:
+        paths = sorted(paths, key=lambda p: (os.path.getmtime(p), p), reverse=True)[:latest]
     return paths
 
 
 def verify_one(path, timeout, retries, do_network=True):
     try:
-        audit = json.load(open(path, encoding="utf-8"))
+        with open(path, encoding="utf-8") as f:
+            audit = json.load(f)
     except Exception as e:  # noqa: BLE001
         bad = dict(file=os.path.basename(path), company="?", verdict=UNREACHABLE,
                    results=[dict(check="json.read", verdict=UNREACHABLE, detail=str(e))])
@@ -644,7 +646,8 @@ def main(argv=None):
         return 3
 
     print("=" * 70)
-    print("LIVE-DATA VERIFICATION -- third check (%d report(s))" % len(paths))
+    print(("OFFLINE CONSISTENCY CHECK (no live verification)" if args.offline else
+           "LIVE-DATA VERIFICATION -- third check") + " (%d report(s))" % len(paths))
     print("=" * 70)
 
     reports = []
@@ -671,7 +674,10 @@ def main(argv=None):
         print("        are unconfirmed. Unverifiable is not deliverable.")
         code = 2
     else:
-        print("RESULT: ALL LIVE CHECKS MATCH -- safe to deliver.")
+        if args.offline:
+            print("RESULT: OFFLINE CONSISTENCY CHECKS MATCH -- live recheck still required.")
+        else:
+            print("RESULT: ALL LIVE CHECKS MATCH -- independent report review still required.")
         code = 0
     print("=" * 70)
 

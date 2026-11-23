@@ -1,6 +1,6 @@
 # Batch 14 — Karnataka (Bengaluru / Mysuru / Kalaburagi), 5 leads — 2026-11-23
 
-**Status: LEADS ONLY — no audits run yet (owner instruction: leads before audit).**
+**Status: five internal audit drafts built; independent review and full live recheck pending. Do not use for outreach.**
 All 5 leads verified live on 2026-11-23: each Library ID confirmed by direct
 `?id=` fetch, each website fetched live, city verified, and the pre-flight
 audit dedup check passed (no prior audit JSON/PDF, no Gmail sent history, not
@@ -14,12 +14,10 @@ in `leads.csv`, not in the sequence manifest).
 - Live ads: ~17 results on the page view. Confirmed IDs: 1646931080282826
   (started Sep 22, 2026), 941111879050382 (Sep 8, 2026), 1677559457265808
   (Nov 8, 2026), 1442560837386074 (Nov 8, 2026)
-- Destination: sundaygrids.com (confirmed on the ad card)
-- Ad copy (verbatim): "Most Indian homes face challenges with rooftop solar
-  limited space, shared buildings, or rental constraints. SundayGrids offers
-  an alternative that removes these barriers. It provides a digital way to
-  tap into solar energy, helping families lower their bills without changing
-  anything at home."
+- Captured ID 1677559457265808 links to
+  https://www.sundaygrids.com/projects/278RAO1IVG. Its complete ad copy is
+  preserved in `ads_only_results/audit_SundayGrids.json`; the earlier discovery
+  excerpt was not the copy for this ID and is not used in the audit.
 - Email: **not published on the site** — find before outreach (workflow rule:
   never draft for a lead with no email)
 - Phone: not published on the site
@@ -30,7 +28,7 @@ in `leads.csv`, not in the sequence manifest).
 - Website: https://www.arrowenergy.in/ (live, fetched 2026-11-23)
 - Facebook page: facebook.com/61582629376979
 - Live ads: ~1 result. Confirmed ID: 4616054888675895 (started Oct 21, 2026)
-- Destination: arrowenergy.in (confirmed on the ad card)
+- Destination correction: card displays arrowenergy.in, but the public card link is fb.me; final destination/form not verified.
 - Ad copy (verbatim): "Paying high electricity bills? ☀️ Switch to solar with
   Arrow Power Controls, bringing 25 years of experience in solar
   installations. 🏠 Residential rooftop solar 🏢 Commercial solar solutions
@@ -50,7 +48,7 @@ in `leads.csv`, not in the sequence manifest).
 - Live ads: ~6 results. Confirmed IDs: 1103298019283935 (Nov 4, 2026),
   1234742235784563 (Nov 10, 2026), 1110871371785511 (Nov 4, 2026),
   3493670350805671 (Nov 4, 2026), 3384292835090388 (Nov 4, 2026)
-- Destination: fb.me lead form ("Get Offer") — confirmed on the ad card
+- Destination correction: card links to fb.me and says "Get offer"; the final form was not verified.
 - Ad copy (verbatim): "Why wait for a subsidy when you can start saving from
   day one? With the Atria Subsidy, Bengaluru homeowners get benefits worth
   ₹75,000 on a 3 kW rooftop system, paid upfront. You pay only the balance.
@@ -136,6 +134,4 @@ paged for the main queries.
 
 ## Status
 
-Leads only. No audits run, no PDFs built, no drafts created. Next step when
-the owner approves: audit each lead (website + ads) per the Ksquare format,
-then run the three verification gates before any outreach.
+Five draft PDFs and JSONs exist; see `batch14_audit_review_2026-11-23.md` for verification status, limitations and the outstanding gates. No outreach drafts created.
