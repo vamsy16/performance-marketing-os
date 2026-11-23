@@ -117,6 +117,17 @@ a PDF or email must trace to a source that was actually read.
 
 ## 5. Lead qualification
 
+- **Check audit status before auditing — owner rule, 2026-11-23.** Before
+  taking any lead for audit, verify it has **not already been audited**.
+  Check all three: (a) `leads.csv` `audit_score` / `status`, (b) an existing
+  `audit_*.json` or `audit_*.pdf` for that company in `ads_only_results/`,
+  `audit_results/`, `ads_only_pdfs/`, `audit_pdfs/`, and (c) Gmail sent-mail
+  history to that domain (including spam/trash). **Only leads with no audit
+  done are taken for audit.** A lead already audited — or already emailed —
+  is skipped. Re-audit only on explicit owner instruction (e.g. a DRIFT
+  re-run). This check is mandatory even when `leads.csv` says `new`:
+  Visiontek was re-audited in batch 13 although a full-audit email had
+  already been sent on 2026-11-15.
 - **A lead must run live ads with a resolvable website.** A zero-live-ad lead
   gets **no audit PDF and no outreach** — there is nothing to audit.
 - **Ad-ID attribution is the #1 trap.** Confirm every library ID with a direct
