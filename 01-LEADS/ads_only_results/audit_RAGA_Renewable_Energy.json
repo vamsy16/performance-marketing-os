@@ -25,6 +25,7 @@
     },
     "summary": "One active Meta ad card captured on 2026-11-23; this is a sample, not necessarily the total. Google Ads activity was not checked."
   },
+  "score_basis": "0 points from measured formula checks. Unknown checks are excluded; zero is not a clean bill of health.",
   "funnel": {
     "type": "Instagram profile",
     "destination": "http://instagram.com/ragarenewableenergy"
@@ -46,7 +47,7 @@
     },
     "conversion": {
       "has_contact_form": true,
-      "has_phone_click": null,
+      "has_phone_click": true,
       "has_whatsapp_link": null,
       "has_cta_buttons": null,
       "has_live_chat": null,
@@ -55,11 +56,11 @@
       "has_pricing_page_link": null
     },
     "seo": {
-      "has_title": null,
-      "title_text": null,
-      "has_meta_description": null,
+      "has_title": true,
+      "title_text": "Raga Renewable Energy Home -",
+      "has_meta_description": true,
       "h1_count": null,
-      "has_og_tags": null,
+      "has_og_tags": true,
       "has_schema": true,
       "has_favicon": null,
       "image_count": null,
@@ -69,18 +70,21 @@
       "error": "not measured for this site"
     },
     "page_count": {
-      "has_sitemap": null
+      "has_sitemap": true,
+      "note": "Sitemap index and page sitemap fetched; indexing not verified."
     },
     "local_signals": {
       "has_google_maps_embed": null
     },
     "scope_note": "The ad links to the Instagram profile, not the website. The homepage was reviewed separately. Unobserved source tags remain unknown and no form submission or event firing was tested.",
+    "html_errors": "27 errors, 12 warnings, 68 info",
     "score": {
       "score": 0,
       "issues": [
-        "The captured ad links to the Instagram profile; test how enquiries are received and followed up there.",
-        "A homepage testimonial attributed to John Doe refers to SunBright Energy; verify or remove this apparent placeholder.",
-        "Homepage counter text included 0+ years and 4% satisfaction in the fetched page; verify display and data in a browser."
+        "The first homepage Book a Free Site Visit link points to #; a second points to /contact-us/. Check both in a browser.",
+        "A testimonial attributed to John Doe names SunBright Energy; verify or remove the apparent placeholder.",
+        "The fetched counter text showed 0+ years and 4% satisfaction; test the rendered counters before relying on them.",
+        "The captured ad links to Instagram, so check the profile enquiry and follow-up path separately."
       ],
       "wins": [
         "Contact form exists",
@@ -94,7 +98,7 @@
     "gtm": null,
     "google_ads_tag": null,
     "checked_on": "2026-11-23",
-    "note": "Partial homepage source review; runtime behavior and ad destination not inferred."
+    "note": "Selected served source reviewed; absence and runtime behavior are unverified."
   },
   "promise_gap": [
     [
@@ -108,8 +112,8 @@
   ],
   "recommended_steps": [
     [
-      "Test the Instagram path",
-      "Check profile, message handling and follow-up time."
+      "Check the first CTA",
+      "Test both site-visit links on mobile and fix the # target if it does not open the intended form."
     ],
     [
       "Review testimonial",
@@ -117,11 +121,11 @@
     ],
     [
       "Check counters",
-      "Test the homepage counters in a real browser and correct any stale values."
+      "Test the homepage counters in a browser and correct any stale values."
     ],
     [
-      "Validate enquiry form",
-      "Test a controlled submission and measurement with permission."
+      "Validate enquiry handling",
+      "Test the form and Instagram enquiry follow-up with permission."
     ]
   ],
   "ads_audit": {

@@ -437,8 +437,10 @@ def stat_tiles(audit):
                           GREEN if score < 25 else (AMBER if score < 50 else RED))
         issue_cell = tile(str(issues), "ISSUES FOUND")
 
+    unchecked_tags = sum(1 for v in pixels.values() if v is None)
+    tracking_label = (f"NOT FOUND / {unchecked_tags} UNVERIFIED" if audit.get("conservative_scope") else "TRACKING GAPS")
     tiles = Table([[score_cell, issue_cell,
-                    tile(str(gaps), "TAGS NOT FOUND" if audit.get("conservative_scope") else "TRACKING GAPS"),
+                    tile(str(gaps), tracking_label),
                     tile(ads_txt, "ADS CAPTURED" if audit.get("conservative_scope") else "LIVE ADS RUNNING", ads_color)]],
                   colWidths=[CONTENT_W / 4] * 4)
     tiles.setStyle(TableStyle([
@@ -485,7 +487,8 @@ def score_panel(audit):
     headline, color, verdict = score_verdict(score)
     if audit.get("conservative_scope"):
         headline = "Measured findings only"
-        verdict = "Lower is better. Unknown checks do not add points; a low score is not proof that unmeasured controls are healthy."
+        verdict = ("Lower is better. Unknown checks do not add points; a low score is not proof that unmeasured controls are healthy. "
+                   + str(audit.get("score_basis") or "The score covers formula checks only, not every priority below."))
     left = [
         Paragraph(f'{score}', ParagraphStyle("scn", parent=ST["score_num"], textColor=color)),
         Paragraph("ISSUES / 100", ST["tile_lbl"]),
@@ -791,9 +794,9 @@ def verification_log(audit):
         ("Competitor ad activity and ad counts",
          "NOT CHECKED - no Ad Library sweeps were run for this lead.",
          "not run"),
-        ("Sitemap page count and indexed pages",
-         "NOT CHECKED - the sitemap was not fetched.",
-         "not run"),
+        ("Sitemap and indexed pages",
+         ((site.get("page_count") or {}).get("note") or "NOT CHECKED - the sitemap was not fetched."),
+         read_on if (site.get("page_count") or {}).get("note") else "not run"),
         ("Server response time",
          "NOT CHECKED - not measured.",
          "not run"),
@@ -1111,7 +1114,7 @@ def ads_only_honesty_panel(audit):
         Paragraph(
             "Google PageSpeed mobile score and Largest Contentful Paint (not measured for this site), "
             "server response time, Google Ads Transparency advertiser "
-            "records and the sitemap page count. These rows read "
+            "records and indexed page count. These rows read "
             "<b>\"Not available at audit time\"</b> or <b>\"Not checked in this pass\"</b> - "
             "they are left empty on purpose rather than filled with a guess.", ST["small"]),
     ]
@@ -1562,7 +1565,9 @@ def build_story(audit):
         images_row = (f"{img_total} total on the page read, "
                       f"{img_alt if img_alt is not None else '?'} missing alt text")
 
-    if has_sitemap is None:
+    if page_count.get("note"):
+        sitemap_row = page_count["note"]
+    elif has_sitemap is None:
         sitemap_row = UNCHECKED
     elif has_sitemap:
         sitemap_row = f"{sitemap_pages} pages listed in the sitemap" if sitemap_pages else UNCHECKED
@@ -1600,10 +1605,8 @@ def build_story(audit):
     story.extend(section_bar("How every number in this report was verified",
                              "so you can re-check any line yourself"))
     story.append(Paragraph(
-        "Nothing in this report is estimated, illustrative or filled in. Every "
-        "figure above was read off a live page or the Ad Library on the date "
-        "shown, and the checks that could not be run are listed as not run "
-        "rather than guessed.", ST["body"]))
+        "Source observations were read from public pages on the date shown; scores are calculated from observed checks. "
+        "Company and ad claims are not independently substantiated. Unavailable checks are not guessed.", ST["body"]))
     story.append(Spacer(1, 2.5 * mm))
     story.append(verification_log(audit))
     story.append(Spacer(1, 6 * mm))

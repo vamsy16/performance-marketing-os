@@ -25,6 +25,7 @@
     },
     "summary": "One active Meta ad card captured on 2026-11-23; this is a sample, not necessarily the total. Google Ads activity was not checked."
   },
+  "score_basis": "1 point: seven H1 elements. Unknown checks are excluded.",
   "funnel": {
     "type": "Project page",
     "destination": "https://www.sundaygrids.com/projects/278RAO1IVG"
@@ -51,13 +52,13 @@
       "has_cta_buttons": null,
       "has_live_chat": null,
       "has_popup_optin": null,
-      "has_testimonials": null,
-      "has_pricing_page_link": null
+      "has_testimonials": true,
+      "has_pricing_page_link": true
     },
     "seo": {
-      "has_title": null,
-      "title_text": null,
-      "has_meta_description": null,
+      "has_title": true,
+      "title_text": "SundayGrids | Get monthly credits to save up on electricity.",
+      "has_meta_description": true,
       "h1_count": 7,
       "has_og_tags": null,
       "has_schema": null,
@@ -69,22 +70,25 @@
       "error": "not measured for this site"
     },
     "page_count": {
-      "has_sitemap": null
+      "has_sitemap": true,
+      "note": "Sitemap fetched: homepage and project URLs listed; not a count of indexed pages."
     },
     "local_signals": {
       "has_google_maps_embed": null
     },
     "scope_note": "The actual ad link points to Parker 110, not the homepage. Its project page describes credits, validity and a reservation fee; form submission and event firing were not tested. GTM-PZ8PCNX, UA-170164983-1, PostHog and Calendly were seen on the homepage. Other tracking remains unverified.",
+    "html_errors": "25 errors, 21 warnings, 51 info",
     "score": {
       "score": 1,
       "issues": [
-        "The ad links to Parker 110; check project-specific terms and utility eligibility before scaling.",
-        "A legacy Universal Analytics ID and GTM container were observed on the homepage; verify current analytics and event delivery.",
-        "The homepage validator reported 25 errors and 21 warnings, including repeated IDs."
+        "The Parker 110 project page describes reservation fees and bill credits; check that eligible utilities and exit terms are clear before signup.",
+        "Homepage source includes GTM-PZ8PCNX and legacy UA-170164983-1; verify GA4 and conversion events at runtime.",
+        "The Nu checker flagged seven H1 elements, 12 duplicate SVG IDs and four skipped heading levels; review accessibility impact."
       ],
       "wins": [
         "Google tracking is present",
-        "Google Analytics is installed"
+        "Google Analytics is installed",
+        "Testimonials visible"
       ]
     }
   },
@@ -94,7 +98,7 @@
     "gtm": true,
     "google_ads_tag": null,
     "checked_on": "2026-11-23",
-    "note": "Partial homepage source review; runtime behavior and ad destination not inferred."
+    "note": "Selected served source reviewed; absence and runtime behavior are unverified."
   },
   "promise_gap": [
     [

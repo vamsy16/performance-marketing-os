@@ -25,6 +25,7 @@
     },
     "summary": "One active Meta ad card captured on 2026-11-23; this is a sample, not necessarily the total. Google Ads activity was not checked."
   },
+  "score_basis": "1 point: six H1 elements. Unknown checks are excluded.",
   "funnel": {
     "type": "Call now",
     "destination": "Call now (number destination not exposed on card)"
@@ -46,7 +47,7 @@
     },
     "conversion": {
       "has_contact_form": true,
-      "has_phone_click": null,
+      "has_phone_click": true,
       "has_whatsapp_link": null,
       "has_cta_buttons": null,
       "has_live_chat": null,
@@ -55,13 +56,13 @@
       "has_pricing_page_link": null
     },
     "seo": {
-      "has_title": null,
-      "title_text": null,
-      "has_meta_description": null,
-      "h1_count": null,
-      "has_og_tags": null,
+      "has_title": true,
+      "title_text": "Solar System Installation Services in Kalaburagi - Zenith Solars",
+      "has_meta_description": true,
+      "h1_count": 6,
+      "has_og_tags": true,
       "has_schema": null,
-      "has_favicon": null,
+      "has_favicon": true,
       "image_count": null,
       "images_without_alt": null
     },
@@ -69,18 +70,21 @@
       "error": "not measured for this site"
     },
     "page_count": {
-      "has_sitemap": null
+      "has_sitemap": true,
+      "note": "Robots.txt points to /demo/sitemap.xml; that sitemap lists JCB equipment URLs, not solar pages."
     },
     "local_signals": {
       "has_google_maps_embed": null
     },
     "scope_note": "The ad CTA says Call now, not website. The index.html page was separately reviewed because the root URL was inaccessible to the checker. The call destination and form submission were not tested.",
+    "html_errors": "29 errors, 1 warnings, 18 info (parser stopped after fatal error)",
     "score": {
-      "score": 0,
+      "score": 1,
       "issues": [
-        "The ad uses Call now; verify which number the button calls and how calls are followed up.",
-        "The homepage has an enquiry form; its submission and success state were not tested.",
-        "The homepage validator reported 29 errors and one warning; review the actual markup rather than assuming visitor impact."
+        "robots.txt points to /demo/sitemap.xml, which lists Sri Sai JCB equipment pages rather than Zenith solar pages; investigate the sitemap and deployment.",
+        "The ad says Call now; verify the dialled number and the missed-call follow-up.",
+        "The index.html page has an enquiry form; its submission and success state were not tested.",
+        "The checker flagged four duplicate class attributes in the contact form and stopped after a nesting error; review the markup."
       ],
       "wins": [
         "Contact form exists"
@@ -93,7 +97,7 @@
     "gtm": null,
     "google_ads_tag": null,
     "checked_on": "2026-11-23",
-    "note": "Partial homepage source review; runtime behavior and ad destination not inferred."
+    "note": "Selected served source reviewed; absence and runtime behavior are unverified."
   },
   "promise_gap": [
     [
@@ -107,20 +111,20 @@
   ],
   "recommended_steps": [
     [
+      "Investigate sitemap",
+      "Confirm intended ownership of /demo and publish a sitemap for actual solar pages."
+    ],
+    [
       "Test call CTA",
       "Verify the dialled number and missed-call follow-up."
     ],
     [
       "Test enquiry form",
-      "Run a controlled submission and confirm a success message."
+      "Run a controlled submission and confirm the success message."
     ],
     [
-      "Review markup",
-      "Prioritise actionable issues from the Nu HTML checker."
-    ],
-    [
-      "Verify measurement",
-      "Check tag deployment and lead events in account tools."
+      "Review form markup",
+      "Fix duplicate class attributes and check the footer nesting error."
     ]
   ],
   "ads_audit": {

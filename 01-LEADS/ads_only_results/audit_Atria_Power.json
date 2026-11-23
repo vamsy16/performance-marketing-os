@@ -25,6 +25,7 @@
     },
     "summary": "One active Meta ad card captured on 2026-11-23; this is a sample, not necessarily the total. Google Ads activity was not checked."
   },
+  "score_basis": "0 points from measured formula checks. Unknown checks are excluded; zero is not a clean bill of health.",
   "funnel": {
     "type": "fb.me link",
     "destination": "fb.me (card link; form not verified)"
@@ -55,8 +56,8 @@
       "has_pricing_page_link": null
     },
     "seo": {
-      "has_title": null,
-      "title_text": null,
+      "has_title": true,
+      "title_text": "Home | Atria Power",
       "has_meta_description": null,
       "h1_count": null,
       "has_og_tags": null,
@@ -69,12 +70,14 @@
       "error": "not measured for this site"
     },
     "page_count": {
-      "has_sitemap": null
+      "has_sitemap": null,
+      "note": null
     },
     "local_signals": {
       "has_google_maps_embed": null
     },
     "scope_note": "The ad card shows fb.me and Get offer; the final form was not tested. The reviewed site is the corporate homepage, not the confirmed ad destination. The homepage validator hit its message cap; source and tracking review was partial.",
+    "html_errors": "979 errors, 0 warnings, 22 info (checker hit message cap; includes 7 HTML errors)",
     "score": {
       "score": 0,
       "issues": [
@@ -91,7 +94,7 @@
     "gtm": null,
     "google_ads_tag": null,
     "checked_on": "2026-11-23",
-    "note": "Partial homepage source review; runtime behavior and ad destination not inferred."
+    "note": "Selected served source reviewed; absence and runtime behavior are unverified."
   },
   "promise_gap": [
     [

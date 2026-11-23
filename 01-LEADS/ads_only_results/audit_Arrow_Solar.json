@@ -25,6 +25,7 @@
     },
     "summary": "One active Meta ad card captured on 2026-11-23; this is a sample, not necessarily the total. Google Ads activity was not checked."
   },
+  "score_basis": "8 points: no homepage form observed; contact page has a form. Unknown checks are excluded.",
   "funnel": {
     "type": "fb.me link",
     "destination": "fb.me (card link; exact form or final destination not verified)"
@@ -52,16 +53,16 @@
       "has_live_chat": null,
       "has_popup_optin": null,
       "has_testimonials": null,
-      "has_pricing_page_link": null
+      "has_pricing_page_link": true
     },
     "seo": {
-      "has_title": null,
-      "title_text": null,
-      "has_meta_description": null,
+      "has_title": true,
+      "title_text": "Arrow Power Controls | Solar EPC & Installation Company | Karnataka",
+      "has_meta_description": true,
       "h1_count": null,
-      "has_og_tags": null,
+      "has_og_tags": true,
       "has_schema": true,
-      "has_favicon": null,
+      "has_favicon": true,
       "image_count": null,
       "images_without_alt": null
     },
@@ -69,18 +70,21 @@
       "error": "not measured for this site"
     },
     "page_count": {
-      "has_sitemap": null
+      "has_sitemap": true,
+      "note": "Sitemap fetched and lists solar services and project URLs; indexing not verified."
     },
     "local_signals": {
       "has_google_maps_embed": null
     },
     "scope_note": "The card displays arrowenergy.in but its public card link is fb.me; the final click-through and form were not verified. GA4 G-LY596XLF42 was observed in homepage source; runtime events were not tested.",
+    "html_errors": "1 error, 2 warnings, 43 info",
     "score": {
       "score": 8,
       "issues": [
-        "The ad mentions a quick form; the public card link shown is fb.me, so verify the actual post-click form and lead capture.",
-        "The homepage has a phone and WhatsApp link but no homepage form was observed.",
-        "The ad says 25 years of experience while the homepage says 22+ years; reconcile the claims."
+        "The ad calls for a quick form, but the card link shows fb.me; verify the final destination and lead handoff.",
+        "The ad says 25 years of experience while the homepage says 22+ years; reconcile these statements.",
+        "Homepage pricing shows a 3 kW package at Rs. 1,44,000 after subsidy, while the hero says zero upfront cost; clarify financing and eligibility.",
+        "No form was observed on the homepage; a quote form is available at /contact, but its submission was not tested."
       ],
       "wins": [
         "Google Analytics is installed",
@@ -94,7 +98,7 @@
     "gtm": null,
     "google_ads_tag": null,
     "checked_on": "2026-11-23",
-    "note": "Partial homepage source review; runtime behavior and ad destination not inferred."
+    "note": "Selected served source reviewed; absence and runtime behavior are unverified."
   },
   "promise_gap": [
     [

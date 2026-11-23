@@ -59,6 +59,69 @@ DATA = {
 }
 
 
+# Expanded evidence from the 2026-11-23 homepage, validator source and sitemap
+# reads. Source tags signal code presence only, not successful firing. Keep
+# unverified negative claims unknown; do not turn a partial read into absence.
+DATA['SundayGrids']['seo'].update(has_title=True, title_text='SundayGrids | Get monthly credits to save up on electricity.', has_meta_description=True)
+DATA['SundayGrids']['conv'].update(has_testimonials=True, has_pricing_page_link=True)
+DATA['SundayGrids']['sitemap'] = 'Sitemap fetched: homepage and project URLs listed; not a count of indexed pages.'
+DATA['SundayGrids']['html_errors'] = '25 errors, 21 warnings, 51 info'
+DATA['SundayGrids']['issues'] = [
+    'The Parker 110 project page describes reservation fees and bill credits; check that eligible utilities and exit terms are clear before signup.',
+    'Homepage source includes GTM-PZ8PCNX and legacy UA-170164983-1; verify GA4 and conversion events at runtime.',
+    'The Nu checker flagged seven H1 elements, 12 duplicate SVG IDs and four skipped heading levels; review accessibility impact.',
+]
+DATA['Arrow Solar']['seo'].update(has_title=True, title_text='Arrow Power Controls | Solar EPC & Installation Company | Karnataka', has_meta_description=True, has_og_tags=True, has_favicon=True)
+DATA['Arrow Solar']['conv'].update(has_pricing_page_link=True)
+DATA['Arrow Solar']['sitemap'] = 'Sitemap fetched and lists solar services and project URLs; indexing not verified.'
+DATA['Arrow Solar']['html_errors'] = '1 error, 2 warnings, 43 info'
+DATA['Arrow Solar']['issues'] = [
+    'The ad calls for a quick form, but the card link shows fb.me; verify the final destination and lead handoff.',
+    'The ad says 25 years of experience while the homepage says 22+ years; reconcile these statements.',
+    'Homepage pricing shows a 3 kW package at Rs. 1,44,000 after subsidy, while the hero says zero upfront cost; clarify financing and eligibility.',
+    'No form was observed on the homepage; a quote form is available at /contact, but its submission was not tested.',
+]
+DATA['Atria Power']['seo'].update(has_title=True, title_text='Home | Atria Power')
+DATA['Atria Power']['html_errors'] = '979 errors, 0 warnings, 22 info (checker hit message cap; includes 7 HTML errors)'
+DATA['RAGA Renewable Energy']['seo'].update(has_title=True, title_text='Raga Renewable Energy Home -', has_meta_description=True, has_og_tags=True)
+DATA['RAGA Renewable Energy']['conv'].update(has_phone_click=True)
+DATA['RAGA Renewable Energy']['sitemap'] = 'Sitemap index and page sitemap fetched; indexing not verified.'
+DATA['RAGA Renewable Energy']['html_errors'] = '27 errors, 12 warnings, 68 info'
+DATA['RAGA Renewable Energy']['issues'] = [
+    'The first homepage Book a Free Site Visit link points to #; a second points to /contact-us/. Check both in a browser.',
+    'A testimonial attributed to John Doe names SunBright Energy; verify or remove the apparent placeholder.',
+    'The fetched counter text showed 0+ years and 4% satisfaction; test the rendered counters before relying on them.',
+    'The captured ad links to Instagram, so check the profile enquiry and follow-up path separately.',
+]
+DATA['RAGA Renewable Energy']['steps'] = [
+    ('Check the first CTA','Test both site-visit links on mobile and fix the # target if it does not open the intended form.'),
+    ('Review testimonial','Verify or remove the John Doe / SunBright Energy quote.'),
+    ('Check counters','Test the homepage counters in a browser and correct any stale values.'),
+    ('Validate enquiry handling','Test the form and Instagram enquiry follow-up with permission.'),
+]
+DATA['Zenith Solars']['seo'].update(has_title=True, title_text='Solar System Installation Services in Kalaburagi - Zenith Solars', has_meta_description=True, has_og_tags=True, has_favicon=True, h1_count=6)
+DATA['Zenith Solars']['conv'].update(has_phone_click=True)
+DATA['Zenith Solars']['sitemap'] = 'Robots.txt points to /demo/sitemap.xml; that sitemap lists JCB equipment URLs, not solar pages.'
+DATA['Zenith Solars']['html_errors'] = '29 errors, 1 warnings, 18 info (parser stopped after fatal error)'
+DATA['Zenith Solars']['issues'] = [
+    'robots.txt points to /demo/sitemap.xml, which lists Sri Sai JCB equipment pages rather than Zenith solar pages; investigate the sitemap and deployment.',
+    'The ad says Call now; verify the dialled number and the missed-call follow-up.',
+    'The index.html page has an enquiry form; its submission and success state were not tested.',
+    'The checker flagged four duplicate class attributes in the contact form and stopped after a nesting error; review the markup.',
+]
+DATA['SundayGrids']['score_basis'] = '1 point: seven H1 elements. Unknown checks are excluded.'
+DATA['Arrow Solar']['score_basis'] = '8 points: no homepage form observed; contact page has a form. Unknown checks are excluded.'
+DATA['Atria Power']['score_basis'] = '0 points from measured formula checks. Unknown checks are excluded; zero is not a clean bill of health.'
+DATA['RAGA Renewable Energy']['score_basis'] = '0 points from measured formula checks. Unknown checks are excluded; zero is not a clean bill of health.'
+DATA['Zenith Solars']['score_basis'] = '1 point: six H1 elements. Unknown checks are excluded.'
+DATA['Zenith Solars']['steps'] = [
+    ('Investigate sitemap','Confirm intended ownership of /demo and publish a sitemap for actual solar pages.'),
+    ('Test call CTA','Verify the dialled number and missed-call follow-up.'),
+    ('Test enquiry form','Run a controlled submission and confirm the success message.'),
+    ('Review form markup','Fix duplicate class attributes and check the footer nesting error.'),
+]
+
+
 def build(name, d):
     px={k:None for k in TRACKING}; px.update(d['tags'])
     conv={k:None for k in CONV}; conv.update(d['conv'])
@@ -67,12 +130,12 @@ def build(name, d):
     # Keep scores algorithmic, but show contextual public-evidence priorities,
     # not unsupported template assertions about lost sales or attribution.
     result['issues']=d['issues']
-    site={'ssl':True,'load_time_seconds':None,'final_url':d['url'],'audit_date':DATE,'pixels':px,'conversion':conv,'seo':seo,'pagespeed':{'error':'not measured for this site'},'page_count':{'has_sitemap':None},'local_signals':{'has_google_maps_embed':None},'scope_note':d['note'],'score':result}
+    site={'ssl':True,'load_time_seconds':None,'final_url':d['url'],'audit_date':DATE,'pixels':px,'conversion':conv,'seo':seo,'pagespeed':{'error':'not measured for this site'},'page_count':{'has_sitemap': True if d.get('sitemap') else None, 'note':d.get('sitemap')},'local_signals':{'has_google_maps_embed':None},'scope_note':d['note'],'html_errors':d.get('html_errors'),'score':result}
     ad={'library_id':d['id'],'library_url':'https://www.facebook.com/ads/library/?id='+d['id'],'page_name':name,'started':d['start'],'destination':d['dest'],'text':d['text']}
-    evidence={'pixel':None,'ga4':px['google_analytics_ga4'],'gtm':px['google_tag_manager'],'google_ads_tag':None,'checked_on':DATE,'note':'Partial homepage source review; runtime behavior and ad destination not inferred.'}
+    evidence={'pixel':None,'ga4':px['google_analytics_ga4'],'gtm':px['google_tag_manager'],'google_ads_tag':None,'checked_on':DATE,'note':'Selected served source reviewed; absence and runtime behavior are unverified.'}
     audit={'company':name,'city':d['city'],'website':d['url'],'checked_on':DATE,'audit_date':DATE,'generated_at':DATE,'ads_only':True,'website_audit_run':True,'conservative_scope':True,'review_pending':True,
        'ad_library':{'meta_own':{'found':True,'ads':[ad]},'summary':'One active Meta ad card captured on 2026-11-23; this is a sample, not necessarily the total. Google Ads activity was not checked.'},
-       'funnel':{'type':d['kind'],'destination':d['dest']},'site_audit':site,'site_evidence':evidence,'promise_gap':d['gap'],'recommended_steps':d['steps']}
+       'score_basis':d['score_basis'],'funnel':{'type':d['kind'],'destination':d['dest']},'site_audit':site,'site_evidence':evidence,'promise_gap':d['gap'],'recommended_steps':d['steps']}
     controls=evaluate(audit,evidence)
     for c in controls['controls']:
         if c['id'] in ('M39','M25','M26','M30','M-CR1','M11','M18'):

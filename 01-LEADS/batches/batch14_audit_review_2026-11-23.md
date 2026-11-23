@@ -61,3 +61,47 @@ Require exit 0 and resolve any drift, then obtain a separate report-reviewer
 PASS. After both gates pass, update the builder to clear `review_pending`, rebuild the
 reports, and update lead statuses. SundayGrids has no published outreach email; do not draft
 outreach without one. Do not treat `verify_report.py` PASS alone as approval.
+
+## Expanded source pass — 2026-11-23
+
+This pass re-read the companies' homepage text and Nu checker message summaries,
+and re-opened representative ad cards or their public destination panels. It
+adds title and metadata checks that were actually visible, selected conversion
+signals, and the following specific observations. These are author's source
+checks, **not** the independent reviewer or `verify_live.py` third gate:
+
+- SundayGrids: [home source](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.sundaygrids.com%2F&showsource=yes)
+  reports 25 errors and 21 warnings, including 12 duplicate SVG IDs, four
+  skipped heading levels, and seven H1s. [Sitemap](https://www.sundaygrids.com/sitemap.xml)
+  lists project pages. Source shows legacy UA and GTM; deployment/runtime of
+  the other tags remains unverified.
+- Arrow: [home](https://arrowenergy.in/) has 3 kW indicative price of
+  ₹1,44,000 after subsidy, while hero says zero upfront cost. It also says
+  prices depend on site conditions and subsidy on approval. [Contact page](https://arrowenergy.in/contact)
+  has an enquiry form, which was not submitted. [Source](https://validator.w3.org/nu/?doc=https%3A%2F%2Farrowenergy.in%2F&showsource=yes)
+  has GA4 G-LY596XLF42, metadata and LocalBusiness schema. [Sitemap](https://arrowenergy.in/sitemap.xml)
+  was fetched. No claim made about actual event firing.
+- Atria: [homepage](https://www.atriapower.com/) presents solar, wind and hydro
+  and links rooftop solutions to another domain. Its [validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.atriapower.com%2F&showsource=yes)
+  hit its cap: 979 errors including 7 HTML errors at the cutoff, dominated by
+  CSS diagnostics, not an actionable-error total. Final ad form is untested.
+- RAGA: [homepage](https://ragarenewableenergy.com/) first "Book a Free Site
+  Visit" link is `#`, while another goes to `/contact-us/`. The served text
+  includes John Doe/SunBright and counter values 0+ years / 4% satisfaction;
+  these are possible template / animation problems, not proven rendered
+  behavior. [Sitemap index](https://ragarenewableenergy.com/sitemap_index.xml)
+  and [page sitemap](https://ragarenewableenergy.com/page-sitemap1.xml) fetched.
+- Zenith: [robots.txt](https://zenithsolars.com/robots.txt) points to
+  `/demo/sitemap.xml`, whose [contents](https://zenithsolars.com/demo/sitemap.xml)
+  include JCB equipment URLs. One such [3DX page](https://zenithsolars.com/demo/products/3dx)
+  displays Sri Sai JCB content. This is an observation, not a conclusion about
+  ownership or compromise. The [validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fzenithsolars.com%2Findex.html&showsource=yes)
+  reports four duplicate class attributes around the form and a fatal nesting
+  error after which it stopped; rendering and lead delivery were not tested.
+
+Scores were recalculated using only measured values, with the score basis stated
+in each PDF. Zenith's provisional score changed from 0 to 1 because six H1s
+were observed; this does not score the sitemap finding. Source checks cannot
+prove account configuration or client-side event firing, so missing runtime,
+PageSpeed and account-only checks still require access. Independent report
+review and a successful live verifier remain mandatory before client delivery.
