@@ -827,13 +827,15 @@
           "subject": "Re: Four Solar: no live ads while Hyderabad competitors buy the same homeowner",
           "body": "Hi,\n\nOne thing I keep seeing in the Hyderabad solar market: the installers who are\nwinning right now are not the ones with the biggest ad budget, they are the\nones whose ads speak to the Hyderabad homeowner directly and send the click to a\npage they own.\n\nThat is a fixable gap, and it is exactly what I help solar companies with.\n\nIf lead flow ever becomes a priority for Four Solar, I would love to help.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 2,
-          "status": "pending",
-          "draft_id": "",
-          "message_id": "",
-          "thread_id": "",
-          "draft_created_at": "",
+          "status": "draft",
+          "draft_id": "r-4525673677532450213",
+          "message_id": "1a20692c01ceac81",
+          "thread_id": "1a1c5ad3cec9972d",
+          "draft_created_at": "2026-11-23",
           "sent_at": "",
-          "due_date": "2026-11-23"
+          "due_date": "2026-11-23",
+          "body_corrected_on": "2026-11-23",
+          "body_correction": "rewritten around this company's own audit findings; the stored template body was generic and, for Sri Balaji and Envious, carried a stale count and the wrong locality"
         },
         {
           "step": 3,
@@ -856,7 +858,10 @@
       "send_dates_verified": [
         "2026-11-14",
         "2026-11-21"
-      ]
+      ],
+      "attachment": "ads_only_pdfs/audit_Four_Solar.pdf",
+      "attachment_bytes": 15845,
+      "draft_created_at": "2026-11-23"
     },
     {
       "company": "Freyr Energy",
@@ -997,13 +1002,15 @@
           "subject": "Re: Noticed something about Green Carbon Hub's online presence",
           "body": "Hi,\n\nI've reached out a couple of times about helping Green Carbon Hub get more leads through Google — no response, so I'll assume the timing isn't right and close the loop.\n\nIf that changes (or you ever want a second opinion on your marketing), my door is open.\n\nWishing you a strong quarter.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 2,
-          "status": "pending",
-          "draft_id": "",
-          "message_id": "",
-          "thread_id": "",
-          "draft_created_at": "",
+          "status": "draft",
+          "draft_id": "r-8090027694630847770",
+          "message_id": "1a206930374935b6",
+          "thread_id": "1a1c5ad3e5cea499",
+          "draft_created_at": "2026-11-23",
           "sent_at": "",
-          "due_date": "2026-11-23"
+          "due_date": "2026-11-23",
+          "body_corrected_on": "2026-11-23",
+          "body_correction": "rewritten around this company's own audit findings; the stored template body was generic and, for Sri Balaji and Envious, carried a stale count and the wrong locality"
         }
       ],
       "report_kind": "full_audit",
@@ -1016,7 +1023,8 @@
       ],
       "to_source": "recovered from Gmail Sent 2026-11-21",
       "note": "delivered subject (14 Nov) claims 14 live Google ads under Ecoila Private Limited. This is NOT supported by its own audit: every one of its ~9 Meta ads points at fb.me and the record lists no website. Recorded as what was delivered, flagged as unverified in the copy.",
-      "subject_discrepancy": true
+      "subject_discrepancy": true,
+      "draft_created_at": "2026-11-23"
     },
     {
       "company": "Hindusthan Solar Energy Enterprise",
@@ -1985,13 +1993,15 @@
           "subject": "Re: Origian Power: no live ads while Hyderabad competitors buy the same homeowner",
           "body": "Hi,\n\nOne thing I keep seeing in the Hyderabad solar market: the installers who are\nwinning right now are not the ones with the biggest ad budget, they are the\nones whose ads speak to the Hyderabad homeowner directly and send the click to a\npage they own.\n\nThat is a fixable gap, and it is exactly what I help solar companies with.\n\nIf lead flow ever becomes a priority for Origian Power, I would love to help.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 2,
-          "status": "pending",
-          "draft_id": "",
-          "message_id": "",
-          "thread_id": "",
-          "draft_created_at": "",
+          "status": "draft",
+          "draft_id": "r5265132983991296755",
+          "message_id": "1a20692cad5ca1f7",
+          "thread_id": "1a1c5ad3dbe4f48b",
+          "draft_created_at": "2026-11-23",
           "sent_at": "",
-          "due_date": "2026-11-23"
+          "due_date": "2026-11-23",
+          "body_corrected_on": "2026-11-23",
+          "body_correction": "rewritten around this company's own audit findings; the stored template body was generic and, for Sri Balaji and Envious, carried a stale count and the wrong locality"
         },
         {
           "step": 3,
@@ -2014,7 +2024,10 @@
       "send_dates_verified": [
         "2026-11-14",
         "2026-11-21"
-      ]
+      ],
+      "attachment": "ads_only_pdfs/audit_Origian_Power.pdf",
+      "attachment_bytes": 15654,
+      "draft_created_at": "2026-11-23"
     },
     {
       "company": "Orizen Solar Innovations",
@@ -2678,16 +2691,18 @@
         {
           "step": 2,
           "kind": "followup",
-          "subject": "Re: Sri Balaji Solar Energies: 2 live Hanumakonda, Telangana ads, one funnel",
+          "subject": "Re: Sri Balaji Solar Energies: 6 live Hanumakonda, Telangana ads, one funnel",
           "body": "Hi,\n\nOne thing I keep seeing in the Hanumakonda, Telangana solar market: the installers who are\nwinning right now are not the ones with the biggest ad budget, they are the\nones whose ads speak to the Hanumakonda, Telangana homeowner directly and send the click to a\npage they own.\n\nThat is a fixable gap, and it is exactly what I help solar companies with.\n\nIf lead flow ever becomes a priority for Sri Balaji Solar Energies, I would love to help.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 2,
-          "status": "pending",
-          "draft_id": "",
-          "message_id": "",
-          "thread_id": "",
-          "draft_created_at": "",
+          "status": "draft",
+          "draft_id": "r-369762949122208776",
+          "message_id": "1a20692d04381b7f",
+          "thread_id": "1a1fca2e3f161d3e",
+          "draft_created_at": "2026-11-23",
           "sent_at": "",
-          "due_date": "2026-11-23"
+          "due_date": "2026-11-23",
+          "body_corrected_on": "2026-11-23",
+          "body_correction": "rewritten around this company's own audit findings; the stored template body was generic and, for Sri Balaji and Envious, carried a stale count and the wrong locality"
         },
         {
           "step": 3,
@@ -2716,7 +2731,10 @@
         "2026-11-21"
       ],
       "ads_live": 6,
-      "note": "delivered subject (21 Nov) says 6 live ads; manifest had 2"
+      "note": "delivered subject (21 Nov) says 6 live ads; manifest had 2",
+      "attachment": "ads_only_pdfs/audit_Sri_Balaji_Solar_Energies.pdf",
+      "attachment_bytes": 35978,
+      "draft_created_at": "2026-11-23"
     },
     {
       "company": "Sunova Green Energy",
@@ -3619,13 +3637,15 @@
           "subject": "Re: Kakatiya Energies: 2 live Hanamkonda, Telangana ads, one funnel",
           "body": "Hi,\n\nOne thing I keep seeing in the Hanamkonda, Telangana solar market: the installers who are\nwinning right now are not the ones with the biggest ad budget, they are the\nones whose ads speak to the Hanamkonda, Telangana homeowner directly and send the click to a\npage they own.\n\nThat is a fixable gap, and it is exactly what I help solar companies with.\n\nIf lead flow ever becomes a priority for Kakatiya Energies, I would love to help.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 2,
-          "status": "pending",
-          "draft_id": "",
-          "message_id": "",
-          "thread_id": "",
-          "draft_created_at": "",
+          "status": "draft",
+          "draft_id": "r-8058230239257078135",
+          "message_id": "1a20692d99db9a8c",
+          "thread_id": "1a1fd14db01575b1",
+          "draft_created_at": "2026-11-23",
           "sent_at": "",
-          "due_date": "2026-11-23"
+          "due_date": "2026-11-23",
+          "body_corrected_on": "2026-11-23",
+          "body_correction": "rewritten around this company's own audit findings; the stored template body was generic and, for Sri Balaji and Envious, carried a stale count and the wrong locality"
         },
         {
           "step": 3,
@@ -3648,7 +3668,10 @@
       "send_dates_verified": [
         "2026-11-21",
         "2026-11-21"
-      ]
+      ],
+      "attachment": "ads_only_pdfs/audit_Kakatiya_Energies.pdf",
+      "attachment_bytes": 26995,
+      "draft_created_at": "2026-11-23"
     },
     {
       "company": "Visiontek",
@@ -3695,13 +3718,15 @@
           "subject": "Re: Visiontek: 5 live Hyderabad, Telangana ads, one funnel",
           "body": "Hi,\n\nOne thing I keep seeing in the Hyderabad, Telangana solar market: the installers who are\nwinning right now are not the ones with the biggest ad budget, they are the\nones whose ads speak to the Hyderabad, Telangana homeowner directly and send the click to a\npage they own.\n\nThat is a fixable gap, and it is exactly what I help solar companies with.\n\nIf lead flow ever becomes a priority for Visiontek, I would love to help.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 2,
-          "status": "pending",
-          "draft_id": "",
-          "message_id": "",
-          "thread_id": "",
-          "draft_created_at": "",
+          "status": "draft",
+          "draft_id": "r-8068163327871745248",
+          "message_id": "1a20692e34540960",
+          "thread_id": "1a1fd14f51c3e422",
+          "draft_created_at": "2026-11-23",
           "sent_at": "",
-          "due_date": "2026-11-23"
+          "due_date": "2026-11-23",
+          "body_corrected_on": "2026-11-23",
+          "body_correction": "rewritten around this company's own audit findings; the stored template body was generic and, for Sri Balaji and Envious, carried a stale count and the wrong locality"
         },
         {
           "step": 3,
@@ -3727,7 +3752,10 @@
       ],
       "to_source": "recovered from Gmail Sent 2026-11-21",
       "ads_live": 11,
-      "note": "audit counted 11 ads and the 15 Nov email said 11; the 21 Nov subject said 5. Kept the delivered wording, flagged the gap."
+      "note": "audit counted 11 ads and the 15 Nov email said 11; the 21 Nov subject said 5. Kept the delivered wording, flagged the gap.",
+      "attachment": "ads_only_pdfs/audit_Visiontek.pdf",
+      "attachment_bytes": 27316,
+      "draft_created_at": "2026-11-23"
     },
     {
       "company": "Laxmi Narayana Solar",
@@ -3760,13 +3788,15 @@
           "subject": "Re: Laxmi Narayana Solar: 2 live Karimnagar, Telangana ads, one funnel",
           "body": "Hi,\n\nFollowing up on the live-ad report I sent for Laxmi Narayana Solar.\n\nRight now 2 of your ads are live on Meta, and every click lands\nin Mixed: URL link and Facebook lead form. That means anyone who clicks and doesn't enquire is gone\nfor good, and there is no way to tell which creative actually produces a\nbooking.\n\nThe company website laxminarayanasolar.in returns HTTP 500, so ad traffic that does reach the web has nowhere to land. This is the single biggest leak in the funnel.\n\nHappy to walk you through the 3 changes I'd make first on a 10-minute call -\nor just keep the report, no strings attached.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 2,
-          "status": "pending",
-          "draft_id": "",
-          "message_id": "",
-          "thread_id": "",
-          "draft_created_at": "",
+          "status": "draft",
+          "draft_id": "r6359518378845034146",
+          "message_id": "1a20692fd9c7fe81",
+          "thread_id": "1a1fc79deabd85f3",
+          "draft_created_at": "2026-11-23",
           "sent_at": "",
-          "due_date": "2026-11-23"
+          "due_date": "2026-11-23",
+          "body_corrected_on": "2026-11-23",
+          "body_correction": "rewritten around this company's own audit findings; the stored template body was generic and, for Sri Balaji and Envious, carried a stale count and the wrong locality"
         },
         {
           "step": 2,
@@ -3803,7 +3833,10 @@
       "send_dates_verified": [
         "2026-11-21"
       ],
-      "to_source": "recovered from Gmail Sent 2026-11-21"
+      "to_source": "recovered from Gmail Sent 2026-11-21",
+      "attachment": "ads_only_pdfs/audit_Laxmi_Narayana_Solar.pdf",
+      "attachment_bytes": 17902,
+      "draft_created_at": "2026-11-23"
     },
     {
       "company": "Envious Energy Private Limited",
@@ -3833,16 +3866,18 @@
         {
           "step": 1,
           "kind": "followup",
-          "subject": "Re: Envious Energy Private Limited: 1 live Hyderabad, Telangana ad, one funnel",
+          "subject": "Re: Envious Energy: 1 live Begumpet, Telangana ad, one funnel",
           "body": "Hi,\n\nFollowing up on the live-ad report I sent for Envious Energy Private Limited.\n\nRight now 1 of your ads are live on Meta, and every click lands\nin WhatsApp chat. That means anyone who clicks and doesn't enquire is gone\nfor good, and there is no way to tell which creative actually produces a\nbooking.\n\nThe single live ad clicks to WhatsApp, not to enviousenergy.com - the enquiry never reaches the website, so the spend cannot be measured, retargeted or attributed.\n\nHappy to walk you through the 3 changes I'd make first on a 10-minute call -\nor just keep the report, no strings attached.\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n",
           "delay_after_previous_days": 2,
-          "status": "pending",
-          "draft_id": "",
-          "message_id": "",
-          "thread_id": "",
-          "draft_created_at": "",
+          "status": "draft",
+          "draft_id": "r-4705314765903976391",
+          "message_id": "1a206930708b1768",
+          "thread_id": "1a1fca2c7a12f81e",
+          "draft_created_at": "2026-11-23",
           "sent_at": "",
-          "due_date": "2026-11-23"
+          "due_date": "2026-11-23",
+          "body_corrected_on": "2026-11-23",
+          "body_correction": "rewritten around this company's own audit findings; the stored template body was generic and, for Sri Balaji and Envious, carried a stale count and the wrong locality"
         },
         {
           "step": 2,
@@ -3880,7 +3915,10 @@
         "2026-11-21"
       ],
       "ads_live": 1,
-      "note": "delivered subject says Begumpet, not Hyderabad"
+      "note": "delivered subject says Begumpet, not Hyderabad",
+      "attachment": "ads_only_pdfs/audit_Envious_Energy_Private_Limited.pdf",
+      "attachment_bytes": 24247,
+      "draft_created_at": "2026-11-23"
     },
     {
       "company": "Griffin Energy",
