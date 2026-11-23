@@ -14,6 +14,12 @@ rewrites `mails_sent`, `next_step`, `next_followup_date` and `state` from them.
 
 Provenance of MEASURED
 ----------------------
+Every date below was read out of Gmail on 2026-11-21, and the 22 Nov sends
+were added on 2026-11-23 from `in:sent after:2026/11/21 before:2026/11/23`
+(39 messages, complete - of which 12 carried a 22 Nov date). Keep this in step
+with 05-CRM/send_log.csv: if a send is logged there and not here, the next
+--write run silently reverts it.
+
 Every date below was read out of Gmail on 2026-11-21 with a per-recipient
 query. Three traps were hit, and the rules that avoid them are:
 
@@ -84,9 +90,9 @@ MEASURED = {
     # Replied, re-engaged, then closed out with a breakup on 16 Nov.
     "SolarSquare Energy": ["2026-11-07", "2026-11-10", "2026-11-14", "2026-11-16"],
     # --- two or three sends in; the next step is genuinely owed
-    "Valcan Solar": ["2026-10-21"],
-    "Aadithya Solar Energies": ["2026-11-10", "2026-11-14", "2026-11-16"],
-    "Eagle Solar Systems": ["2026-11-16"],
+    "Valcan Solar": ["2026-10-21", "2026-11-22"],
+    "Aadithya Solar Energies": ["2026-11-10", "2026-11-14", "2026-11-16", "2026-11-22"],
+    "Eagle Solar Systems": ["2026-11-16", "2026-11-22"],
     "Kakatiya Energies": ["2026-11-21", "2026-11-21"],
     "Visiontek": ["2026-11-21", "2026-11-21"],
     "Sri Balaji Solar Energies": ["2026-11-21", "2026-11-21"],
@@ -102,16 +108,16 @@ MEASURED = {
     # own audit - every one of its ~9 Meta ads points at fb.me and the record
     # lists no website. Flagged in fix_manifest_content.py rather than adopted.
     # --- verified never sent
-    "Griffin Energy": [],
-    "Nova Solar Solutions": [],
-    "Sri Narayana Enterprise Solar Energies": [],
+    "Griffin Energy": ["2026-11-22"],
+    "Nova Solar Solutions": ["2026-11-22"],
+    "Sri Narayana Enterprise Solar Energies": ["2026-11-22"],
     "Junna Solar Systems": [],
     "Mamindla Energy Solutions": [],
     # --- batch 15, drafted but never sent
-    "Growcell Solar Energy": [],
-    "Roof Rays Solar Solutions": [],
-    "Akhil Electrical Works": [],
-    "Manasaa Enterprises": [],
+    "Growcell Solar Energy": ["2026-11-22"],
+    "Roof Rays Solar Solutions": ["2026-11-22"],
+    "Akhil Electrical Works": ["2026-11-22"],
+    "Manasaa Enterprises": ["2026-11-22"],
 }
 
 # Recipients recovered from the Sent folder for sequences that had no address.
