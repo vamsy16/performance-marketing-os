@@ -44,7 +44,7 @@ DATA = {
  steps=[('Test Get Offer','Check the mobile post-click flow and lead handoff.'),('Clarify the offer','Confirm price, subsidy terms and eligibility wherever the offer is shown.'),('Verify tracking','Inspect runtime events and account configuration with consent.'),('Review validator output','Separate actionable markup findings from Wix CSS diagnostics.')]),
 'RAGA Renewable Energy': dict(city='Mysuru',url='https://ragarenewableenergy.com/',id='3057224721288021',start='Nov 3, 2026',dest='http://instagram.com/ragarenewableenergy',kind='Instagram profile',
  text="☀️ Give Your Family the Power of a Brighter Tomorrow!\n\nA solar-powered home means more than just generating electricity. It's about smarter energy choices, reduced electricity expenses, and a cleaner environment for the next generation.\n\nWith Rooftop Solar, You Can:\n\n✔ Reduce dependence on conventional electricity.\n\n✔ Enjoy long-term electricity bill savings.\n\n✔ Explore government subsidy benefits.\n\n✔ Make your home more energy-efficient.\n\n✔ Contribute towards a greener environment.\n\nLet your rooftop become a source of power and savings.\n\n📍 Mysuru & Nearby Cities.\n\nChoose Solar. Choose a Sustainable Future. Choose Raga Renewable Energy.",
- tags={},conv={'has_contact_form':True,'has_testimonials':True},seo={'has_schema':True},
+ tags={},conv={'has_contact_form':True},seo={'has_schema':True},
  note='The ad links to the Instagram profile, not the website. The homepage was reviewed separately. Unobserved source tags remain unknown and no form submission or event firing was tested.',
  issues=['The captured ad links to the Instagram profile; test how enquiries are received and followed up there.', 'A homepage testimonial attributed to John Doe refers to SunBright Energy; verify or remove this apparent placeholder.', 'Homepage counter text included 0+ years and 4% satisfaction in the fetched page; verify display and data in a browser.'],
  gap=[('Ad: rooftop solar and government subsidy benefits.', 'The captured ad links to Instagram. The separately reviewed website describes rooftop solutions and up to ₹78,000 in savings; eligibility was not verified.'), ('Ad: Mysuru and nearby cities.', 'The site lists a Mysuru address and a Bengaluru address; actual service coverage should be confirmed.')],
@@ -81,23 +81,26 @@ DATA['Arrow Solar']['issues'] = [
     'Homepage pricing shows a 3 kW package at Rs. 1,44,000 after subsidy, while the hero says zero upfront cost; clarify financing and eligibility.',
     'No form was observed on the homepage; a quote form is available at /contact, but its submission was not tested.',
 ]
-DATA['Atria Power']['seo'].update(has_title=True, title_text='Home | Atria Power')
+DATA['Atria Power']['seo'].update(has_title=True, title_text='Home | Atria Power', has_favicon=True)
+DATA['Atria Power']['sitemap'] = 'robots.txt declares /sitemap.xml; sitemap fetch failed, so contents and indexing are unverified.'
+DATA['Atria Power']['sitemap_confirmed'] = None
+DATA['Atria Power']['note'] = 'The card says Get offer and links to fb.me; its final form was not tested. The separately reviewed corporate contact page has a form. Wix source review is partial; event firing remains unverified.'
 DATA['Atria Power']['html_errors'] = '979 errors, 0 warnings, 22 info (checker hit message cap; includes 7 HTML errors)'
 DATA['RAGA Renewable Energy']['seo'].update(has_title=True, title_text='Raga Renewable Energy Home -', has_meta_description=True, has_og_tags=True)
 DATA['RAGA Renewable Energy']['conv'].update(has_phone_click=True)
 DATA['RAGA Renewable Energy']['sitemap'] = 'Sitemap index and page sitemap fetched; indexing not verified.'
 DATA['RAGA Renewable Energy']['html_errors'] = '27 errors, 12 warnings, 68 info'
 DATA['RAGA Renewable Energy']['issues'] = [
-    'The first homepage Book a Free Site Visit link points to #; a second points to /contact-us/. Check both in a browser.',
-    'A testimonial attributed to John Doe names SunBright Energy; verify or remove the apparent placeholder.',
-    'The fetched counter text showed 0+ years and 4% satisfaction; test the rendered counters before relying on them.',
-    'The captured ad links to Instagram, so check the profile enquiry and follow-up path separately.',
+    'The ad links to Instagram; verify profile enquiry handling and follow-up.',
+    'The homepage enquiry form source is marked hidden on tablets; test visibility and submission.',
+    'A hidden block contains a John Doe / SunBright quote; review it before reuse.',
+    'The homepage counters are animated; check final display and substantiate their claims.',
 ]
 DATA['RAGA Renewable Energy']['steps'] = [
-    ('Check the first CTA','Test both site-visit links on mobile and fix the # target if it does not open the intended form.'),
-    ('Review testimonial','Verify or remove the John Doe / SunBright Energy quote.'),
-    ('Check counters','Test the homepage counters in a browser and correct any stale values.'),
-    ('Validate enquiry handling','Test the form and Instagram enquiry follow-up with permission.'),
+    ('Test Instagram enquiries','Verify how messages are received and followed up after the captured ad.'),
+    ('Test the enquiry form','Check tablet visibility and run a controlled submission with permission.'),
+    ('Review hidden content','Remove or correct the unused John Doe / SunBright template block before reuse.'),
+    ('Check counters','Test the final animated values in a browser and substantiate the claims.'),
 ]
 DATA['Zenith Solars']['seo'].update(has_title=True, title_text='Solar System Installation Services in Kalaburagi - Zenith Solars', has_meta_description=True, has_og_tags=True, has_favicon=True, h1_count=6)
 DATA['Zenith Solars']['conv'].update(has_phone_click=True)
@@ -107,7 +110,7 @@ DATA['Zenith Solars']['issues'] = [
     'robots.txt points to /demo/sitemap.xml, which lists Sri Sai JCB equipment pages rather than Zenith solar pages; investigate the sitemap and deployment.',
     'The ad says Call now; verify the dialled number and the missed-call follow-up.',
     'The index.html page has an enquiry form; its submission and success state were not tested.',
-    'The checker flagged four duplicate class attributes in the contact form and stopped after a nesting error; review the markup.',
+    'The header lists postal code 585106 while the contact page body lists 585105; confirm and align the address.',
 ]
 DATA['SundayGrids']['score_basis'] = '1 point: seven H1 elements. Unknown checks are excluded.'
 DATA['Arrow Solar']['score_basis'] = '8 points: no homepage form observed; contact page has a form. Unknown checks are excluded.'
@@ -118,7 +121,7 @@ DATA['Zenith Solars']['steps'] = [
     ('Investigate sitemap','Confirm intended ownership of /demo and publish a sitemap for actual solar pages.'),
     ('Test call CTA','Verify the dialled number and missed-call follow-up.'),
     ('Test enquiry form','Run a controlled submission and confirm the success message.'),
-    ('Review form markup','Fix duplicate class attributes and check the footer nesting error.'),
+    ('Align contact details','Confirm whether 585105 or 585106 is correct and use one consistent postal code.'),
 ]
 
 
@@ -130,7 +133,7 @@ def build(name, d):
     # Keep scores algorithmic, but show contextual public-evidence priorities,
     # not unsupported template assertions about lost sales or attribution.
     result['issues']=d['issues']
-    site={'ssl':True,'load_time_seconds':None,'final_url':d['url'],'audit_date':DATE,'pixels':px,'conversion':conv,'seo':seo,'pagespeed':{'error':'not measured for this site'},'page_count':{'has_sitemap': True if d.get('sitemap') else None, 'note':d.get('sitemap')},'local_signals':{'has_google_maps_embed':None},'scope_note':d['note'],'html_errors':d.get('html_errors'),'score':result}
+    site={'ssl':True,'load_time_seconds':None,'final_url':d['url'],'audit_date':DATE,'pixels':px,'conversion':conv,'seo':seo,'pagespeed':{'error':'not measured for this site'},'page_count':{'has_sitemap': d.get('sitemap_confirmed', True) if d.get('sitemap') else None, 'note':d.get('sitemap')},'local_signals':{'has_google_maps_embed':None},'scope_note':d['note'],'html_errors':d.get('html_errors'),'score':result}
     ad={'library_id':d['id'],'library_url':'https://www.facebook.com/ads/library/?id='+d['id'],'page_name':name,'started':d['start'],'destination':d['dest'],'text':d['text']}
     evidence={'pixel':None,'ga4':px['google_analytics_ga4'],'gtm':px['google_tag_manager'],'google_ads_tag':None,'checked_on':DATE,'note':'Selected served source reviewed; absence and runtime behavior are unverified.'}
     audit={'company':name,'city':d['city'],'website':d['url'],'checked_on':DATE,'audit_date':DATE,'generated_at':DATE,'ads_only':True,'website_audit_run':True,'conservative_scope':True,'review_pending':True,

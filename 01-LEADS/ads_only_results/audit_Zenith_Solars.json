@@ -84,7 +84,7 @@
         "robots.txt points to /demo/sitemap.xml, which lists Sri Sai JCB equipment pages rather than Zenith solar pages; investigate the sitemap and deployment.",
         "The ad says Call now; verify the dialled number and the missed-call follow-up.",
         "The index.html page has an enquiry form; its submission and success state were not tested.",
-        "The checker flagged four duplicate class attributes in the contact form and stopped after a nesting error; review the markup."
+        "The header lists postal code 585106 while the contact page body lists 585105; confirm and align the address."
       ],
       "wins": [
         "Contact form exists"
@@ -123,8 +123,8 @@
       "Run a controlled submission and confirm the success message."
     ],
     [
-      "Review form markup",
-      "Fix duplicate class attributes and check the footer nesting error."
+      "Align contact details",
+      "Confirm whether 585105 or 585106 is correct and use one consistent postal code."
     ]
   ],
   "ads_audit": {

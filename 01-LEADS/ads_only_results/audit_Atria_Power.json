@@ -62,7 +62,7 @@
       "h1_count": null,
       "has_og_tags": null,
       "has_schema": null,
-      "has_favicon": null,
+      "has_favicon": true,
       "image_count": null,
       "images_without_alt": null
     },
@@ -71,12 +71,12 @@
     },
     "page_count": {
       "has_sitemap": null,
-      "note": null
+      "note": "robots.txt declares /sitemap.xml; sitemap fetch failed, so contents and indexing are unverified."
     },
     "local_signals": {
       "has_google_maps_embed": null
     },
-    "scope_note": "The ad card shows fb.me and Get offer; the final form was not tested. The reviewed site is the corporate homepage, not the confirmed ad destination. The homepage validator hit its message cap; source and tracking review was partial.",
+    "scope_note": "The card says Get offer and links to fb.me; its final form was not tested. The separately reviewed corporate contact page has a form. Wix source review is partial; event firing remains unverified.",
     "html_errors": "979 errors, 0 warnings, 22 info (checker hit message cap; includes 7 HTML errors)",
     "score": {
       "score": 0,

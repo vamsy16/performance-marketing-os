@@ -1392,9 +1392,14 @@ def build_story(audit):
         if meta_own.get("ads"):
             n = meta_own.get("results_count", len(meta_own["ads"]))
             shown = len(meta_own["ads"][:3])
-            story.append(Paragraph(
-                f"<b>{n} active ad results found.</b> Your Meta presence is live - the creatives below are "
-                f"publicly visible in the Ad Library right now.", ST["body"]))
+            if meta_own.get("results_count") is None:
+                story.append(Paragraph(
+                    f"<b>{shown} Meta ad card(s) captured.</b> This is a sample, not a verified total; "
+                    "ad status can change after the audit date.", ST["body"]))
+            else:
+                story.append(Paragraph(
+                    f"<b>{n} active ad results found.</b> Your Meta presence is live - the creatives below are "
+                    f"publicly visible in the Ad Library right now.", ST["body"]))
             if n > shown:
                 story.append(Paragraph(
                     f"All {n} are live; the {shown} most recent are reproduced below. "

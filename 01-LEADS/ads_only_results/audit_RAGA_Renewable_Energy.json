@@ -52,7 +52,7 @@
       "has_cta_buttons": null,
       "has_live_chat": null,
       "has_popup_optin": null,
-      "has_testimonials": true,
+      "has_testimonials": null,
       "has_pricing_page_link": null
     },
     "seo": {
@@ -81,14 +81,13 @@
     "score": {
       "score": 0,
       "issues": [
-        "The first homepage Book a Free Site Visit link points to #; a second points to /contact-us/. Check both in a browser.",
-        "A testimonial attributed to John Doe names SunBright Energy; verify or remove the apparent placeholder.",
-        "The fetched counter text showed 0+ years and 4% satisfaction; test the rendered counters before relying on them.",
-        "The captured ad links to Instagram, so check the profile enquiry and follow-up path separately."
+        "The ad links to Instagram; verify profile enquiry handling and follow-up.",
+        "The homepage enquiry form source is marked hidden on tablets; test visibility and submission.",
+        "A hidden block contains a John Doe / SunBright quote; review it before reuse.",
+        "The homepage counters are animated; check final display and substantiate their claims."
       ],
       "wins": [
-        "Contact form exists",
-        "Testimonials visible"
+        "Contact form exists"
       ]
     }
   },
@@ -112,20 +111,20 @@
   ],
   "recommended_steps": [
     [
-      "Check the first CTA",
-      "Test both site-visit links on mobile and fix the # target if it does not open the intended form."
+      "Test Instagram enquiries",
+      "Verify how messages are received and followed up after the captured ad."
     ],
     [
-      "Review testimonial",
-      "Verify or remove the John Doe / SunBright Energy quote."
+      "Test the enquiry form",
+      "Check tablet visibility and run a controlled submission with permission."
+    ],
+    [
+      "Review hidden content",
+      "Remove or correct the unused John Doe / SunBright template block before reuse."
     ],
     [
       "Check counters",
-      "Test the homepage counters in a browser and correct any stale values."
-    ],
-    [
-      "Validate enquiry handling",
-      "Test the form and Instagram enquiry follow-up with permission."
+      "Test the final animated values in a browser and substantiate the claims."
     ]
   ],
   "ads_audit": {

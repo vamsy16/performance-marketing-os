@@ -85,12 +85,15 @@ checks, **not** the independent reviewer or `verify_live.py` third gate:
   and links rooftop solutions to another domain. Its [validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.atriapower.com%2F&showsource=yes)
   hit its cap: 979 errors including 7 HTML errors at the cutoff, dominated by
   CSS diagnostics, not an actionable-error total. Final ad form is untested.
-- RAGA: [homepage](https://ragarenewableenergy.com/) first "Book a Free Site
-  Visit" link is `#`, while another goes to `/contact-us/`. The served text
-  includes John Doe/SunBright and counter values 0+ years / 4% satisfaction;
-  these are possible template / animation problems, not proven rendered
-  behavior. [Sitemap index](https://ragarenewableenergy.com/sitemap_index.xml)
-  and [page sitemap](https://ragarenewableenergy.com/page-sitemap1.xml) fetched.
+- RAGA: [homepage source](https://validator.w3.org/nu/?doc=https%3A%2F%2Fragarenewableenergy.com%2F&showsource=yes)
+  contains a `#` "Book a Free Site Visit" link in a block marked hidden on
+  desktop, tablet and mobile; a second CTA links to `/contact-us/`. Likewise,
+  the John Doe/SunBright quote is in a hidden block; do not claim it is visible.
+  A separate homepage form container is marked hidden on tablets. Counters start
+  at zero in source with data-to values including 12 years and 100% satisfaction;
+  rendered values require browser verification. Other customer quotes also occur
+  in source; actual visibility and authenticity are not established. [Sitemap
+  index](https://ragarenewableenergy.com/sitemap_index.xml) and [page sitemap](https://ragarenewableenergy.com/page-sitemap1.xml) fetched.
 - Zenith: [robots.txt](https://zenithsolars.com/robots.txt) points to
   `/demo/sitemap.xml`, whose [contents](https://zenithsolars.com/demo/sitemap.xml)
   include JCB equipment URLs. One such [3DX page](https://zenithsolars.com/demo/products/3dx)
@@ -105,3 +108,27 @@ were observed; this does not score the sitemap finding. Source checks cannot
 prove account configuration or client-side event firing, so missing runtime,
 PageSpeed and account-only checks still require access. Independent report
 review and a successful live verifier remain mandatory before client delivery.
+
+## Follow-up source checks and remaining inputs — 2026-11-23
+
+- [Atria contact](https://www.atriapower.com/contact-us) displays name, email,
+  phone and message fields; no submission was made. [robots.txt](https://www.atriapower.com/robots.txt)
+  declares a sitemap but the sitemap fetch failed; its contents and indexing
+  remain unknown. W3C source includes a favicon.
+- [RAGA source](https://validator.w3.org/nu/?doc=https%3A%2F%2Fragarenewableenergy.com%2F&showsource=yes)
+  clarifies the hidden CTA and placeholder noted above. The form's tablet-hidden
+  class is source evidence, not a tested browser defect.
+- [Zenith contact](https://zenithsolars.com/contact.html) gives 585106 in the
+  header and 585105 in the body; confirm the correct postal code before fixing.
+- PageSpeed API fetches for all five returned a generic fetch error. The cause
+  is unknown; no score or LCP can be inferred. These checks are author checks,
+  not an independent third-eye review. Five drafts and scores remain provisional.
+
+To finish: obtain five mobile PageSpeed report URLs or exports with test dates;
+run real-browser mobile and desktop CTA tests with screenshots and permission
+for controlled submissions/calls; supply consented Tag Assistant / Pixel Helper
+or network-event captures; provide read-only Meta/Google Ads access or sanitized
+exports for account-only controls. A separate reviewer must examine the PDF,
+JSON and sources and issue the independent PASS. Run the live-verifier command
+above from a network-enabled environment and resolve every mismatch. Do not
+send before all gates pass.

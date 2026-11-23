@@ -73,7 +73,7 @@ They live in **two folders**, which is why looking at one folder makes the total
 
 ### Batch 14 — internal drafts, not approved for outreach
 
-Independent report review and full live re-verification remain pending. Scores exclude unknown checks and are not comparable as complete audits.
+Independent report review and full live re-verification remain pending. Scores exclude unknown checks and are not comparable as complete audits. Follow-up source context and specific completion inputs are documented in `01-LEADS/batches/batch14_audit_review_2026-11-23.md`.
 
 | Company | Pages | Size | Score | Audited | PDF |
 |---|---|---|---|---|---|

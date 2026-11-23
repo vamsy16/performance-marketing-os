@@ -35,6 +35,24 @@ class Batch14Tests(unittest.TestCase):
                 self.assertIn('Unknown checks do not add points', text)
                 self.assertNotIn('??', text)
 
+    def test_source_context_is_preserved(self):
+        def load(name):
+            return json.loads((HERE / 'ads_only_results' / ('audit_' + name.replace(' ', '_') + '.json')).read_text())
+        raga = load('RAGA Renewable Energy')['site_audit']
+        self.assertIsNone(raga['conversion']['has_testimonials'])
+        self.assertTrue(any('hidden block' in i.lower() for i in raga['score']['issues']))
+        self.assertTrue(any('tablet' in i.lower() for i in raga['score']['issues']))
+        atria = load('Atria Power')['site_audit']
+        self.assertTrue(atria['seo']['has_favicon'])
+        self.assertIsNone(atria['page_count']['has_sitemap'])
+        zenith = load('Zenith Solars')['site_audit']
+        self.assertTrue(any('585106' in i and '585105' in i for i in zenith['score']['issues']))
+        for name in NAMES:
+            pdf = PdfReader(str(HERE.parent / '02-OUTREACH' / 'ads_only_pdfs' / ('audit_' + name.replace(' ', '_') + '.pdf')))
+            text = ' '.join(page.extract_text() for page in pdf.pages)
+            self.assertIn('not a verified total', text)
+            self.assertNotIn('active ad results found', text)
+
     def test_latest_uses_modification_time_not_alphabetical_order(self):
         with tempfile.TemporaryDirectory() as tmp:
             older = Path(tmp) / 'audit_Z.json'
