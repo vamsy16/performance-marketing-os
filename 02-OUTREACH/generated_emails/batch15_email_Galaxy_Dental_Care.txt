@@ -1,0 +1,91 @@
+=== DRAFT (NOT SENT) - Galaxy Dental Care ===
+Drafted: 2026-11-28
+To: contact@galaxydentalcare.in
+Channel: Published address: contact@galaxydentalcare.in (site footer).
+Website: https://galaxydentalcare.in/contact-us/
+Report kind: ads + measured site audit
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Galaxy_Dental_Care.pdf
+Source for every figure: 01-LEADS/batch15_telangana_data.py (read live on 2026-11-28)
+Report: 01-LEADS/ads_only_results/audit_Galaxy_Dental_Care.json
+Step 0 subject: Galaxy Dental: ~300 Google ads, and a price the site never shows
+
+
+--- STEP 0 (initial) · send day 0 ---
+SUBJECT: Galaxy Dental: ~300 Google ads, and a price the site never shows
+
+Hi,
+
+I read Galaxy Dental Care's live advertising this week, and the scale is not the problem - it is the handoff.
+
+On the paid side: roughly 300 live Google ads for galaxydentalcare.in, and five active Meta ads quoting Rs 20,000 braces, Rs 15,000 implants and 60% off Invisalign.
+
+On the page they relate to: no price at all. The offer that earned the click disappears exactly when the patient arrives.
+
+Two more things from the same read. Your Google Ads run under an advertiser account registered in a person's name rather than the clinic's - if that account is not the clinic's own, there is no ownership trail over the ad history or quality score behind the spend. And the contact page carries 20 telephone links with unencoded spaces (tel:+91 86866 76781), which fail to dial on some Android handsets.
+
+The measurement is mostly there: Google Tag Manager (GTM-TRRMQGQ) is installed, though WP Rocket defers it until the first interaction, and the page emits no structured data despite Yoast being installed. The attached report says exactly which rows I could and could not read.
+
+Worth a short call?
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+Live ads cited:
+  Library ID 2195040781424344: https://www.facebook.com/ads/library/?id=2195040781424344
+  Library ID 2781894092164767: https://www.facebook.com/ads/library/?id=2781894092164767
+  Library ID 2030680001203418: https://www.facebook.com/ads/library/?id=2030680001203418
+  Library ID 3314367505393846: https://www.facebook.com/ads/library/?id=3314367505393846
+  Library ID 1004506892020728: https://www.facebook.com/ads/library/?id=1004506892020728
+
+
+--- STEP 1 (follow-up) · draft only after step 0 is SENT + 2 days ---
+SUBJECT: Re: Galaxy Dental: ~300 Google ads, and a price the site never shows
+
+Hi,
+
+The detail I would fix this week, before any campaign change.
+
+Your NABH, ISO and FAMDENT badges are lazy-loaded images. On a slow connection they render as empty boxes - the accreditations vanish at the moment a nervous patient is looking for a reason to trust you.
+
+Same report, page 1 onwards.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+--- STEP 2 (follow-up) · draft only after step 1 is SENT + 2 days ---
+SUBJECT: Re: Galaxy Dental: ~300 Google ads, and a price the site never shows
+
+Hi,
+
+One more on the ads themselves.
+
+Four of the five live Meta ads open a WhatsApp chat and one opens Instagram; none lands on the site, and none carries a UTM. So the Rs 20,000 braces offer is being judged inside a chat thread rather than on a page you control - and nothing tells you which ad started the conversation.
+
+That is a measurable fix, not a rebuild.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+--- STEP 3 (breakup) · draft only after step 2 is SENT + 2 days ---
+SUBJECT: Re: Galaxy Dental: ~300 Google ads, and a price the site never shows
+
+Hi,
+
+I will stop here - no reply, so I will assume the timing is not right.
+
+If the paid side comes up again, the report in my first email lists the five things I would change first, in order of cost. Nothing in it expires quickly.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+=== END ===

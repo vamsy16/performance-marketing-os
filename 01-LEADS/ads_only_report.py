@@ -3385,6 +3385,111 @@ def build(lead):
     return json_path, pdf_path
 
 
+def build_measured(lead):
+    """Build an ads-only report from a fully measured lead (batch 15+).
+
+    `build()` above takes the curated LEADS entries, which carry live-ad data
+    only. This path additionally stores a complete `site_audit` block - pixels,
+    conversion elements, SEO, validator counts, sitemap, PageSpeed outcome -
+    that was read from the same live page on the same day as the ads. Every
+    value in it is either measured or None ("not measured"); the renderer
+    prints None as unknown and never scores it.
+    """
+    from ads_audit import calculate_audit_score
+    from ads_audit_controls import evaluate
+
+    problems = validate(lead)
+    if problems:
+        raise SystemExit("REFUSING TO BUILD - " + "; ".join(problems))
+
+    _SITE_KEYS = ("pixels", "conversion", "seo", "pagespeed", "page_count", "local_signals",
+                  "html_errors", "ssl", "load_time_seconds", "final_url")
+    site = dict(lead.get("site_audit") or {k: lead[k] for k in _SITE_KEYS if k in lead})
+    audit_date = lead.get("checked_on") or CHECKED_ON
+    score = calculate_audit_score([], site.get("pixels") or {}, site.get("conversion") or {},
+                                  site.get("seo") or {}, site.get("pagespeed") or {})
+    site = dict(site)
+    site["score"] = score
+    site.setdefault("audit_date", audit_date)
+
+    adlib = {
+        "checked_at": audit_date,
+        "meta_own": lead["meta_own"],
+        "google_own": lead["google_own"],
+        "meta_competitors": lead.get("meta_competitors") or {},
+        "google_competitors": lead.get("google_competitors") or {},
+        "summary": lead.get("summary", ""),
+        "counts": {
+            "own_meta_ads": len((lead["meta_own"] or {}).get("ads") or []),
+            "own_google_ads": ((lead.get("google_own") or {}).get("detail") or {}).get("ad_count"),
+            "competitor_meta_ads": len(((lead.get("meta_competitors") or {}).get("ads")) or []),
+            "note": lead["meta_own"].get("results_label", ""),
+        },
+    }
+
+    audit = {
+        "company": lead["company"],
+        "legal": lead.get("legal", ""),
+        "city": lead["city"],
+        "website": lead["website"],
+        "ads_only": True,
+        "website_audit_run": True,
+        "conservative_scope": bool(lead.get("conservative_scope")),
+        "checked_on": audit_date,
+        "audit_date": audit_date,
+        "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "source": ("Meta Ad Library (India, active ads), Google Ads Transparency Centre (India), the "
+                   "company's own live website and the W3C Nu HTML Checker"),
+        "ad_library": adlib,
+        "funnel": lead.get("funnel", {}),
+        "findings": lead.get("findings", []),
+        "next_steps": lead.get("recommended_steps", []),
+        "recommended_steps": lead.get("recommended_steps", []),
+        "contact_facts": lead.get("contact_facts", []),
+        "contact": {"email": lead.get("email", ""), "phone": lead.get("phone", ""),
+                    "fb_page": lead.get("fb_page", "")},
+        "site_evidence": lead.get("site_evidence", {}),
+        "site_audit": site,
+        "vertical": lead.get("vertical", "solar"),
+        "scope_note": lead.get("scope_note", ""),
+        "summary": lead.get("summary", ""),
+        "provenance": {
+            "generator": "ads_only_report.py",
+            "entrypoint": "build_batch15_telangana.py",
+            "data_file": "batch15_telangana_data.py",
+            "run_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
+            "method": ("Ad IDs read in Meta Ad Library (India, active only); site values read from the "
+                       "served page and the W3C Nu checker source view; PageSpeed API unreachable so no "
+                       "speed score is claimed"),
+        },
+    }
+    audit["ads_audit"] = evaluate(lead, lead.get("site_evidence"))
+    # Some catalog controls are auto-graded from the ad data alone and then say
+    # things this pass measured to be untrue ("ad start dates were not
+    # captured", "no live ads captured"). Where the live read establishes the
+    # real answer it is written here - never to make a control pass, only to
+    # replace a placeholder with what was actually observed.
+    _controls = (audit["ads_audit"] or {}).get("controls") or []
+    for cid, override in (lead.get("control_overrides") or {}).items():
+        for c in _controls:
+            if c.get("id") == cid:
+                c["disposition"] = override["disposition"]
+                c["evidence"] = override["evidence"]
+                c["overridden_on"] = audit_date
+                break
+    if _controls:
+        audit["ads_audit"]["counts"] = {
+            k: sum(1 for c in _controls if c.get("disposition") == k)
+            for k in ("pass", "fail", "unknown", "not_applicable")
+        }
+    os.makedirs(RESULTS_DIR, exist_ok=True)
+    json_path = os.path.join(RESULTS_DIR, f"audit_{slug(lead['company'])}.json")
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(audit, f, indent=2, ensure_ascii=False)
+    pdf_path = generate_ads_only_pdf(audit)
+    return json_path, pdf_path
+
+
 def main():
     ap = argparse.ArgumentParser(description="Build ads-only (live ad activity) reports")
     ap.add_argument("--list", action="store_true", help="list leads, build nothing")

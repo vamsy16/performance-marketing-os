@@ -1,0 +1,91 @@
+=== DRAFT (NOT SENT) - Dr. Sridhar Dental ===
+Drafted: 2026-11-28
+To: (no public email address - see channel note)
+Channel: NO PUBLIC EMAIL. Per-branch WhatsApp only (+91 94909 48081 / +91 81212 22888 / +91 95420 27700) and the /book-appointment form.
+Website: https://sridhardental.com/services
+Report kind: ads + measured site audit
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Dr_Sridhar_Dental.pdf
+Source for every figure: 01-LEADS/batch15_telangana_data.py (read live on 2026-11-28)
+Report: 01-LEADS/ads_only_results/audit_Dr_Sridhar_Dental.json
+Step 0 subject: Dr. Sridhar: 42 Google ads, 5 Meta ads, and no Meta Pixel
+
+
+--- STEP 0 (initial) · send day 0 ---
+SUBJECT: Dr. Sridhar: 42 Google ads, 5 Meta ads, and no Meta Pixel
+
+Hi,
+
+I read Dr. Sridhar International Dental Hospital's live advertising this week. Of the five leads I looked at in Hyderabad, yours is the best-instrumented on the Google side: GA4 (G-7Y9ND039HL) and the Google Ads conversion tag (AW-855095874) are both in the page, and 42 Google ads are live.
+
+The Meta side is the opposite. Five ads are running - the newest opened 26 November 2026, and three of the five open the Instagram profile rather than a treatment page. There is no Meta Pixel anywhere in the served HTML, so none of those views can be retargeted and none of the enquiries they produce can be attributed to the ad that caused them.
+
+One more, structural: sridhardental.com serves a client-rendered React shell. The HTML a crawler receives has no H1, no meta description and no structured data - the content appears only after JavaScript runs.
+
+The attached report documents all of it, with Library IDs, the tag IDs and the validator output, so every line can be re-checked.
+
+Happy to walk through it on a 10-minute call.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+Live ads cited:
+  Library ID 4507185002831208: https://www.facebook.com/ads/library/?id=4507185002831208
+  Library ID 1688996119617000: https://www.facebook.com/ads/library/?id=1688996119617000
+  Library ID 1887734372360272: https://www.facebook.com/ads/library/?id=1887734372360272
+  Library ID 2260141528250653: https://www.facebook.com/ads/library/?id=2260141528250653
+  Library ID 1672235477851281: https://www.facebook.com/ads/library/?id=1672235477851281
+
+
+--- STEP 1 (follow-up) · draft only after step 0 is SENT + 2 days ---
+SUBJECT: Re: Dr. Sridhar: 42 Google ads, 5 Meta ads, and no Meta Pixel
+
+Hi,
+
+Following up with the one fix I would do first.
+
+Four branches - KPHB, Ameerpet, Nallagandla, Vijayawada - and none of them is described in structured data on the site. Each is competing in its own map pack. LocalBusiness markup per branch is a half-day of work that pays for itself in map visibility.
+
+The report covers the rest.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+--- STEP 2 (follow-up) · draft only after step 1 is SENT + 2 days ---
+SUBJECT: Re: Dr. Sridhar: 42 Google ads, 5 Meta ads, and no Meta Pixel
+
+Hi,
+
+One detail on the Meta side.
+
+Your brand films are in Telugu, which is exactly right for the audience, and they end on the Instagram profile. A viewer who is ready to book has to leave the app, find the site and book - three steps where one would do.
+
+The treatment page with the booking form already exists. The ad just does not use it.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+--- STEP 3 (breakup) · draft only after step 2 is SENT + 2 days ---
+SUBJECT: Re: Dr. Sridhar: 42 Google ads, 5 Meta ads, and no Meta Pixel
+
+Hi,
+
+I will close the loop here - if the timing is wrong, that is fair.
+
+The report stands on its own: the Library IDs still resolve, and the missing Meta Pixel and the empty HTML shell will still be true until someone changes them.
+
+If it becomes useful, you know where I am.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+=== END ===

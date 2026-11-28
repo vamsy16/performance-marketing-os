@@ -1,12 +1,12 @@
 # Every audit PDF in this repo — index
 
-**55 PDFs** covering **52 companies** (27 scored PDF entries), including five provisional batch-14 drafts. Branch: `arena/af1679d7-performance-marketing-os`.
+**60 PDFs** covering **57 companies** (32 scored PDF entries), including five provisional batch-14 drafts. Branch: `arena/af1679d7-performance-marketing-os`.
 
 They live in **two folders**, which is why looking at one folder makes the total look small:
 
 1. [`02-OUTREACH/audit_pdfs/`](https://github.com/vamsy16/performance-marketing-os/tree/arena/de53294b-performance-marketing-os/02-OUTREACH/audit_pdfs) — **9 full audits**. The complete 5-page DIGITAL MARKETING & PAID ADS AUDIT: website tracking, conversion readiness, technical snapshot and audit score.
 
-2. [`02-OUTREACH/ads_only_pdfs/`](https://github.com/vamsy16/performance-marketing-os/tree/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs) — **46 ads reports**. Since 2026-10-25 these use the *same* 5-page Ksquare layout and carry live website data; before that date they were the shorter ad-activity sheet.
+2. [`02-OUTREACH/ads_only_pdfs/`](https://github.com/vamsy16/performance-marketing-os/tree/arena/e7c915c7-performance-marketing-os/02-OUTREACH/ads_only_pdfs) — **51 ads reports**. Since 2026-10-25 these use the *same* 5-page Ksquare layout and carry live website data; before that date they were the shorter ad-activity sheet.
 
 > Three companies — Ecolt Energy, Orizen Solar Innovations and Ray On Solar Systems — have **both** a full audit and an ads report. That is why 55 files cover 52 companies.
 
@@ -82,6 +82,22 @@ Independent report review and full live re-verification remain pending. Scores e
 | Atria Power | 5 | 23 KB | 0/100 (provisional) | 2026-11-23 | [internal draft](https://github.com/vamsy16/performance-marketing-os/blob/arena/af1679d7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Atria_Power.pdf) |
 | RAGA Renewable Energy | 5 | 23 KB | 0/100 (provisional) | 2026-11-23 | [internal draft](https://github.com/vamsy16/performance-marketing-os/blob/arena/af1679d7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_RAGA_Renewable_Energy.pdf) |
 | Zenith Solars | 5 | 23 KB | 1/100 (provisional) | 2026-11-23 | [internal draft](https://github.com/vamsy16/performance-marketing-os/blob/arena/af1679d7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Zenith_Solars.pdf) |
+
+## Batch 15 — Telangana (2026-11-28, verified live)
+
+Five new ads reports, each read live on 2026-11-28: Meta Ad Library (India, active), Google Ads
+Transparency Centre (region IN) and the lead's own page through the W3C Nu checker.
+Gate 1 (`delivery_gate.py`) and Gate 3 (`verify_live.py --offline`) pass for all five; **Gate 2, the
+independent report review, is still outstanding** — see
+[the batch note](../01-LEADS/batches/telangana_5_leads_batch15_2026-11-28.md).
+
+| Company | Pages | Score | Audited | PDF |
+|---|---|---|---|---|
+| SunSolar Power Systems | 6 | 19/100 | 2026-11-28 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/e7c915c7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_SunSolar_Power_Systems.pdf) |
+| PNR Sunrise Energies | 6 | 23/100 | 2026-11-28 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/e7c915c7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_PNR_Sunrise_Energies.pdf) |
+| D'LIFE Home Interiors | 6 | 0/100 (measured-only) | 2026-11-28 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/e7c915c7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_D_LIFE_Home_Interiors.pdf) |
+| Dr. Sridhar Dental | 6 | 16/100 | 2026-11-28 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/e7c915c7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Dr_Sridhar_Dental.pdf) |
+| Galaxy Dental Care | 6 | 5/100 (measured-only) | 2026-11-28 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/e7c915c7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Galaxy_Dental_Care.pdf) |
 
 ## Notes
 
