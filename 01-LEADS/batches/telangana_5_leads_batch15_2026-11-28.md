@@ -13,7 +13,7 @@ No emails, DMs or calls were made. Nothing was sent to any lead.
 | PNR Sunrise Energies | `02-OUTREACH/ads_only_pdfs/audit_PNR_Sunrise_Energies.pdf` | `01-LEADS/ads_only_results/audit_PNR_Sunrise_Energies.json` | 23/100 | 1 | 0 ("No ads found") |
 | D'LIFE Home Interiors | `02-OUTREACH/ads_only_pdfs/audit_D_LIFE_Home_Interiors.pdf` | `01-LEADS/ads_only_results/audit_D_LIFE_Home_Interiors.json` | 0/100 *(measured-only)* | 5 | ~200 (D'LIFE Interiors Pvt Ltd) |
 | Dr. Sridhar Dental | `02-OUTREACH/ads_only_pdfs/audit_Dr_Sridhar_Dental.pdf` | `01-LEADS/ads_only_results/audit_Dr_Sridhar_Dental.json` | 16/100 | 5 | 42 (Dr. Sridhar International Dental Hospital) |
-| Galaxy Dental Care | `02-OUTREACH/ads_only_pdfs/audit_Galaxy_Dental_Care.pdf` | `01-LEADS/ads_only_results/audit_Galaxy_Dental_Care.json` | 5/100 *(measured-only)* | 5 | ~300 (advertiser **"Jaydeep"** — flagged, not asserted) |
+| Galaxy Dental Care | `02-OUTREACH/ads_only_pdfs/audit_Galaxy_Dental_Care.pdf` | `01-LEADS/ads_only_results/audit_Galaxy_Dental_Care.json` | 9/100 *(measured-only)* | 5 | ~300 (advertiser **"Jaydeep"** — flagged, not asserted) |
 
 Built by `cd 01-LEADS && PYTHONPATH=/tmp/pdflibs python3 build_batch15_telangana.py`.
 Raw measured data lives in `01-LEADS/batch15_telangana_data.py`; the renderer path is
@@ -119,3 +119,60 @@ sent. I have pre-checked each item and recorded the result, but that is not a su
 * SunSolar now has two JSONs (full-audit and ads-only). `verify_live.py` lists it twice; that is expected.
 * Rebuild: `python3 build_batch15_telangana.py [--only "<company>"]`. Re-render only:
   `python3 rereder_ads_only.py`.
+
+## Second pass — D'LIFE and Galaxy "not checked" rows closed (2026-11-28, 13:5x UTC)
+
+The first pass recorded both sites' tag layer as unreadable because their caches
+(NitroPack on D'LIFE, WP Rocket on Galaxy) defer and rewrite every script. That was a **coverage
+failure, not an unreadable site**: the tag IDs sit in the document in plain text, and the W3C
+checker's `showsource=yes` view returns the file line by line. Re-reading it properly changed the
+picture on both leads.
+
+**Galaxy Dental Care** (1,997-line document, head and footer read in full):
+
+| Row | Was | Now | Evidence |
+|---|---|---|---|
+| Google Tag Manager | not checked | **present** | `GTM-TRRMQGQ`, head lines 11-17, deferred by WP Rocket to first interaction |
+| Meta description | not checked | **present, 113 chars** | line 63 |
+| Open Graph / Twitter card | not checked | **present** | lines 65-76, incl. `og:image` = a 512×512 favicon, not a clinic photo |
+| Favicon | not checked | **present** | `favicon.ico` + 32/192 px webp icons, lines 20, 118-120 |
+| Structured data | not checked | **absent** | Yoast SEO 28.9 is installed (line 49) but emits no JSON-LD on this URL |
+| Contact form | confirmed by markup | **confirmed + reCAPTCHA v3** | `dental-appointment-ajax`, honeypot field `website`, reCAPTCHA key `6Ldtm0At…` |
+| Meta Pixel / Clarity / Google Ads | not checked | **still account-only** | WP Rocket preconnects to `connect.facebook.net`, `scripts.clarity.ms`, `googleads.g.doubleclick.net` and `clickcease.com`, but no `fbq`/`gtag`/`G-`/`AW-` id exists in the page — the tags run inside GTM-TRRMQGQ |
+
+New findings from the read: **ClickCease** (click-fraud protection) is preconnected; the popup fires at
+50% page depth; `DAAFormConfig` is declared **three times** verbatim (lines 1908-1910); the trust badges
+are lazy-loaded images with real `noscript` fallbacks (the first pass called them "SVG placeholders",
+which was wrong — corrected in the summary).
+
+**D'LIFE Home Interiors** (head behind a 300 KB inline stylesheet; body opening + tail + Microlink's
+headless fetch used for metadata):
+
+| Row | Was | Now | Evidence |
+|---|---|---|---|
+| Meta Pixel | not checked | **present** | id `215010909028561`, noscript image at the top of the body |
+| Google Tag Manager | not checked | **present** | `GTM-K9FB6G2`, head |
+| Contact form | unknown | **present** | Contact Form 7, `form_id 40457`, Name field, conditional-logic add-on, reCAPTCHA field |
+| Meta description | not checked | **present, 157 chars** | Microlink headless fetch of the same URL |
+| Open Graph | not checked | **present** | `og:image` = `Interior_designers_in_hyderabad_web.jpg` (1920×670) |
+| GA4 / Google Ads / Clarity / LinkedIn / Hotjar / UA | not checked | **still account-only** | no `G-`, `AW-`, `fbq`, `clarity` id in the HTML; GTM-K9FB6G2 and **Cloudflare Zaraz** (`/cdn-cgi/zaraz/s.js`) both run, so the tag inventory lives inside them |
+| JSON-LD, favicon, image count | not checked | still unread | head block not reached inside the fetch budget |
+
+New findings: **Cloudflare Zaraz** server-side tag runner plus the **Cloudflare Web Analytics** beacon
+(token `773966fb…`) are both live; the Hyderabad page carries `class="locationPage location-bangalore"`
+on its wrapper — a copy-paste from the Bangalore template; and the packages render ₹8.85 L → ₹6.37 L
+(Essential, 2BHK) as claimed.
+
+**What this changed in the numbers:** Galaxy 5/100 → **9/100** (schema now measured as missing);
+D'LIFE stays **0/100** but with 2 of 8 tags verified instead of 0, and its "Top priorities" block now
+says *"6 of 8 tracking checks could not be read through the page cache"* instead of the renderer's old
+fallback, which congratulated the client on "clean tracking in place" — a sentence that would have been
+false here. Both reports stay in measured-findings mode (Galaxy 4 unchecked, D'LIFE 6).
+
+**Still blocked, honestly:** GA4 / Google Ads / Meta-on-Galaxy ids live inside the two GTM containers and
+are account-only; D'LIFE's JSON-LD/favicon need the part of its head this pass could not reach. PageSpeed
+remains unreachable from this crawler.
+
+**Gates re-run after the second pass:** `delivery_gate.py` PASS ×5 · `verify_report.py --ads-only` PASS ×5
+· `verify_live.py --offline` MATCH ×5 (repo 59 MATCH / 2 pre-existing DRIFT / 0 UNREACHABLE). Gate 2 is
+still outstanding.

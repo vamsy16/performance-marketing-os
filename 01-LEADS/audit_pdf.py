@@ -1526,8 +1526,19 @@ def build_story(audit):
             "Build a landing page with enquiry form + Meta Pixel + GA4 to start converting this ad traffic you already pay for",
         ]))
     else:
-        _shown = priorities_table(issues if issues else
-                                  ["No critical issues detected - focus on scaling ads with clean tracking in place."])
+        _unchecked = sum(1 for v in (audit.get("pixels") or {}).values() if v is None)
+        if issues:
+            _fallback = issues
+        elif _unchecked:
+            # Zero formula issues here does not mean the page is clean: the
+            # checks that would have scored it were unreadable. Say that
+            # instead of congratulating the client on "clean tracking".
+            _fallback = [f"{_unchecked} of {len(audit.get('pixels') or {})} tracking checks could not be "
+                         "read through the page cache - every formula issue that remains is measured, and "
+                         "the unmeasured ones are listed as unchecked, not cleared"]
+        else:
+            _fallback = ["No critical issues detected - focus on scaling ads with clean tracking in place."]
+        _shown = priorities_table(_fallback)
         story.append(_shown)
         # The stat tile counts every issue, but the table above shows the four
         # that matter most. Say so plainly, and say where the rest live, rather

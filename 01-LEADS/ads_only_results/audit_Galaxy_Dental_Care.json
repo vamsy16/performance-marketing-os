@@ -8,7 +8,7 @@
   "conservative_scope": true,
   "checked_on": "2026-11-28",
   "audit_date": "2026-11-28",
-  "generated_at": "2026-11-28 13:40",
+  "generated_at": "2026-11-28 13:51",
   "source": "Meta Ad Library (India, active ads), Google Ads Transparency Centre (India), the company's own live website and the W3C Nu HTML Checker",
   "ad_library": {
     "checked_at": "2026-11-28",
@@ -114,7 +114,7 @@
       ]
     },
     "google_competitors": {},
-    "summary": "Galaxy Dental Care advertises hardest of the five and measures least. Five active Meta ads were read today, the newest opened 5 October 2026, and the Google Ads Transparency Centre returns roughly 300 live ads - but every one of them is registered to the advertiser name 'Jaydeep', not to the clinic, and each Meta ad opens WhatsApp or Instagram, never the website. On the site, the offers do not survive the click: the ads quote Rs. 20,000 braces and Rs. 15,000 implants, while the contact page publishes no price at all. The page is also the heaviest in the batch - 192 validator errors, nine broken paragraph nestings, and 28 iframes sized with width=\"100%\" - and its NABH, ISO and FAMDENT trust badges are lazy-loaded SVG placeholders, so a visitor who waits sees empty boxes where the accreditations should be.",
+    "summary": "Galaxy Dental Care advertises hardest of the five and measures least. Five active Meta ads were read today, the newest opened 5 October 2026, and the Google Ads Transparency Centre returns roughly 300 live ads - but every one of them is registered to the advertiser name 'Jaydeep', not to the clinic, and each Meta ad opens WhatsApp or Instagram, never the website. On the site, the offers do not survive the click: the ads quote Rs. 20,000 braces and Rs. 15,000 implants, while the contact page publishes no price at all. The page is also the heaviest in the batch - 192 validator errors, nine broken paragraph nestings, and 28 iframes sized with width=\"100%\" - and its NABH, ISO and FAMDENT trust badges are lazy-loaded images, so a visitor whose connection stalls sees empty boxes where the accreditations should be. Google Tag Manager (GTM-TRRMQGQ) is installed but deferred by WP Rocket until the first interaction, and the page emits no JSON-LD at all.",
     "counts": {
       "own_meta_ads": 5,
       "own_google_ads": 300,
@@ -188,11 +188,11 @@
       "meta_pixel": null,
       "google_ads": null,
       "google_analytics_ga4": null,
-      "google_analytics_ua": null,
-      "linkedin_insight": null,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
       "microsoft_clarity": null,
-      "hotjar": null,
-      "google_tag_manager": null
+      "hotjar": false,
+      "google_tag_manager": true
     },
     "conversion": {
       "has_contact_form": true,
@@ -208,12 +208,13 @@
       "title": "Contact Us | Galaxy Dental Care - 9 Branches in Hyderabad",
       "title_text": "Contact Us | Galaxy Dental Care - 9 Branches in Hyderabad",
       "title_length": 58,
-      "has_meta_description": null,
-      "meta_description": null,
+      "has_meta_description": true,
+      "meta_description": "Contact Galaxy Dental Care to book appointments, ask queries and get expert dental care from trusted dentists in Hyderabad.",
+      "meta_desc_length": 113,
       "h1_count": 1,
       "h1_text": "Contact Us",
-      "has_og_tags": null,
-      "has_schema": null,
+      "has_og_tags": true,
+      "has_schema": false,
       "has_favicon": true,
       "image_count": null,
       "images_without_alt": null
@@ -241,12 +242,14 @@
     "load_time_seconds": null,
     "final_url": "https://galaxydentalcare.in/contact-us/",
     "score": {
-      "score": 5,
+      "score": 9,
       "issues": [
         "No live chat — missing after-hours leads",
-        "No visible testimonials/social proof on homepage"
+        "No visible testimonials/social proof on homepage",
+        "No structured data (Schema.org) - missing rich results in Google"
       ],
       "wins": [
+        "Google tracking is present",
         "Contact form exists",
         "WhatsApp link present",
         "Good CTA presence (8 buttons)"
@@ -255,13 +258,13 @@
     "audit_date": "2026-11-28"
   },
   "vertical": "dental",
-  "scope_note": "The contact page is a WordPress build served through WP Rocket, which rewrites every script to type=\"rocketlazyloadscript\" and defers it. Tracking scripts are therefore present as deferred markup we could not read reliably, so all eight tracking values are recorded as unchecked - this report does not claim the clinic has no pixel, only that a page read cannot establish one. The validation findings, the lazy-loaded award badges and the absence of published prices come from the W3C checker's source view and are reproducible. The booking form was read (name, phone, email, branch, plus a honeypot field labelled 'Website'); it was not submitted.",
-  "summary": "Galaxy Dental Care advertises hardest of the five and measures least. Five active Meta ads were read today, the newest opened 5 October 2026, and the Google Ads Transparency Centre returns roughly 300 live ads - but every one of them is registered to the advertiser name 'Jaydeep', not to the clinic, and each Meta ad opens WhatsApp or Instagram, never the website. On the site, the offers do not survive the click: the ads quote Rs. 20,000 braces and Rs. 15,000 implants, while the contact page publishes no price at all. The page is also the heaviest in the batch - 192 validator errors, nine broken paragraph nestings, and 28 iframes sized with width=\"100%\" - and its NABH, ISO and FAMDENT trust badges are lazy-loaded SVG placeholders, so a visitor who waits sees empty boxes where the accreditations should be.",
+  "scope_note": "Re-read on 2026-11-28 line by line through the W3C checker's source view: the 1,997-line document was read in full, head and footer. Google Tag Manager GTM-TRRMQGQ is in the head but WP Rocket rewrites it to type=\"rocketlazyloadscript\", deferring it to the first user interaction. WP Rocket also preconnects to connect.facebook.net, scripts.clarity.ms, googleads.g.doubleclick.net, www.googletagmanager.com and clickcease.com - preconnects it derives from scripts it found - yet no fbq, gtag, G- or AW- id exists anywhere in the markup, so the live tag inventory sits inside GTM and is account-only. The appointment form is genuine (dental-appointment-ajax: name, phone, email, branch, a hidden 'website' honeypot, Google reCAPTCHA v3) and a scroll-triggered popup opens at 50% page depth. Yoast SEO 28.9 writes the title, description, canonical, Open Graph and Twitter tags but emits no JSON-LD on this URL. The form was not submitted.",
+  "summary": "Galaxy Dental Care advertises hardest of the five and measures least. Five active Meta ads were read today, the newest opened 5 October 2026, and the Google Ads Transparency Centre returns roughly 300 live ads - but every one of them is registered to the advertiser name 'Jaydeep', not to the clinic, and each Meta ad opens WhatsApp or Instagram, never the website. On the site, the offers do not survive the click: the ads quote Rs. 20,000 braces and Rs. 15,000 implants, while the contact page publishes no price at all. The page is also the heaviest in the batch - 192 validator errors, nine broken paragraph nestings, and 28 iframes sized with width=\"100%\" - and its NABH, ISO and FAMDENT trust badges are lazy-loaded images, so a visitor whose connection stalls sees empty boxes where the accreditations should be. Google Tag Manager (GTM-TRRMQGQ) is installed but deferred by WP Rocket until the first interaction, and the page emits no JSON-LD at all.",
   "provenance": {
     "generator": "ads_only_report.py",
     "entrypoint": "build_batch15_telangana.py",
     "data_file": "batch15_telangana_data.py",
-    "run_at": "2026-11-28 13:40",
+    "run_at": "2026-11-28 13:51",
     "method": "Ad IDs read in Meta Ad Library (India, active only); site values read from the served page and the W3C Nu checker source view; PageSpeed API unreachable so no speed score is claimed"
   },
   "ads_audit": {

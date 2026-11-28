@@ -8,7 +8,7 @@
   "conservative_scope": true,
   "checked_on": "2026-11-28",
   "audit_date": "2026-11-28",
-  "generated_at": "2026-11-28 13:40",
+  "generated_at": "2026-11-28 13:51",
   "source": "Meta Ad Library (India, active ads), Google Ads Transparency Centre (India), the company's own live website and the W3C Nu HTML Checker",
   "ad_library": {
     "checked_at": "2026-11-28",
@@ -114,7 +114,7 @@
       ]
     },
     "google_competitors": {},
-    "summary": "D'LIFE is the only lead in this batch that is advertising on both platforms at scale: five active Meta ads read today (the oldest running since 13 May 2026) and roughly 200 live Google ads under the verified advertiser 'D'LIFE Interiors Private Limited'. The spend is national while the page we audited is Hyderabad-specific, and the mismatch shows: the ads quote a Delhi phone number (+91 9567231111) on a page that publishes +91 949 508 7777, and every Meta ad opens a Messenger chat rather than the site. The Hyderabad page is served through NitroPack, which rewrites and defers third-party scripts, so no pixel could be confirmed from the HTML - that is recorded as unchecked, not as missing. What is measurable is the markup: 148 validator errors, including 64 telephone links with unencoded spaces that will not dial on some Android handsets.",
+    "summary": "D'LIFE is the only lead in this batch that is advertising on both platforms at scale: five active Meta ads read today (the oldest running since 13 May 2026) and roughly 200 live Google ads under the verified advertiser 'D'LIFE Interiors Private Limited'. The spend is national while the page we audited is Hyderabad-specific, and the mismatch shows: the ads quote a Delhi phone number (+91 9567231111) on a page that publishes +91 949 508 7777, and every Meta ad opens a Messenger chat rather than the site. The page does measure: a Meta Pixel (215010909028561) and a Google Tag Manager container (GTM-K9FB6G2) are both in the served HTML, behind Cloudflare Zaraz and NitroPack - but nothing in the markup tells either of them which ad produced a lead, and GA4 and the Google Ads conversion id exist only inside that container. What is measurable is the markup: 148 validator errors, including 64 telephone links with unencoded spaces that will not dial on some Android handsets.",
     "counts": {
       "own_meta_ads": 5,
       "own_google_ads": 200,
@@ -185,17 +185,17 @@
   },
   "site_audit": {
     "pixels": {
-      "meta_pixel": null,
+      "meta_pixel": true,
       "google_ads": null,
       "google_analytics_ga4": null,
       "google_analytics_ua": null,
       "linkedin_insight": null,
       "microsoft_clarity": null,
       "hotjar": null,
-      "google_tag_manager": null
+      "google_tag_manager": true
     },
     "conversion": {
-      "has_contact_form": null,
+      "has_contact_form": true,
       "has_phone_click": true,
       "has_whatsapp_link": true,
       "has_cta_buttons": 10,
@@ -208,11 +208,12 @@
       "title": "Interior Designers in Hyderabad | D'LIFE Interiors",
       "title_text": "Interior Designers in Hyderabad | D'LIFE Interiors",
       "title_length": 48,
-      "has_meta_description": null,
-      "meta_description": null,
+      "has_meta_description": true,
+      "meta_description": "Interior designers in Hyderabad for home interiors. Over 16000+ Homes designed, 10 year warranty. Visit our showrooms in Banjara Hills and Kompally.",
+      "meta_desc_length": 157,
       "h1_count": 1,
       "h1_text": "Interior Designers in Hyderabad",
-      "has_og_tags": null,
+      "has_og_tags": true,
       "has_schema": null,
       "has_favicon": null,
       "image_count": null,
@@ -244,6 +245,9 @@
       "score": 0,
       "issues": [],
       "wins": [
+        "Meta Pixel is installed",
+        "Google tracking is present",
+        "Contact form exists",
         "WhatsApp link present",
         "Good CTA presence (10 buttons)",
         "Testimonials visible"
@@ -252,13 +256,13 @@
     "audit_date": "2026-11-28"
   },
   "vertical": "interiors",
-  "scope_note": "The Hyderabad location page is served by WordPress with NitroPack and Nuxt artifacts in the markup ('nitro-exclude', deferred scripts), which rewrites and defers third-party tags. That is why every tracking value here is None: the served HTML cannot establish whether the Meta Pixel, GA4 or a GTM container is deployed, and a page read cannot prove the negative either way. Header tags beyond the title and H1 were not captured inside the fetch limit, so they are recorded as unchecked. The telephone-link and validation findings come from the W3C checker's source view and are reproducible. The page's 'Free Estimate' and 'Call Back' actions open JavaScript modals, so the form could not be confirmed as a submitted form.",
-  "summary": "D'LIFE is the only lead in this batch that is advertising on both platforms at scale: five active Meta ads read today (the oldest running since 13 May 2026) and roughly 200 live Google ads under the verified advertiser 'D'LIFE Interiors Private Limited'. The spend is national while the page we audited is Hyderabad-specific, and the mismatch shows: the ads quote a Delhi phone number (+91 9567231111) on a page that publishes +91 949 508 7777, and every Meta ad opens a Messenger chat rather than the site. The Hyderabad page is served through NitroPack, which rewrites and defers third-party scripts, so no pixel could be confirmed from the HTML - that is recorded as unchecked, not as missing. What is measurable is the markup: 148 validator errors, including 64 telephone links with unencoded spaces that will not dial on some Android handsets.",
+  "scope_note": "Re-read on 2026-11-28 through the W3C checker's source view. Present in the served HTML: Google Tag Manager GTM-K9FB6G2 (head), Meta Pixel 215010909028561 (noscript image at the top of the body), Cloudflare Zaraz, the server-side tag runner (/cdn-cgi/zaraz/s.js) and the Cloudflare Web Analytics beacon. The enquiry form is a real Contact Form 7 form (form_id 40457, Name field, conditional-logic add-on, reCAPTCHA response field), not just a JavaScript modal. GA4 and Google Ads conversion ids do not appear in the HTML at all - with GTM-K9FB6G2 and Zaraz both running, they are loaded from inside those containers, which no page read can open, so those rows stay unchecked instead of being called missing. The document is 3,984 lines with a 300 KB inline stylesheet ahead of the head metadata, so the meta description and Open Graph tags were read separately, through Microlink's headless fetch of the same URL on the same day (description 157 characters, og:image Interior_designers_in_hyderabad_web.jpg 1920x670, and the response header x-nitro-cache: MISS confirming the NitroPack layer); JSON-LD and the favicon remain unread.",
+  "summary": "D'LIFE is the only lead in this batch that is advertising on both platforms at scale: five active Meta ads read today (the oldest running since 13 May 2026) and roughly 200 live Google ads under the verified advertiser 'D'LIFE Interiors Private Limited'. The spend is national while the page we audited is Hyderabad-specific, and the mismatch shows: the ads quote a Delhi phone number (+91 9567231111) on a page that publishes +91 949 508 7777, and every Meta ad opens a Messenger chat rather than the site. The page does measure: a Meta Pixel (215010909028561) and a Google Tag Manager container (GTM-K9FB6G2) are both in the served HTML, behind Cloudflare Zaraz and NitroPack - but nothing in the markup tells either of them which ad produced a lead, and GA4 and the Google Ads conversion id exist only inside that container. What is measurable is the markup: 148 validator errors, including 64 telephone links with unencoded spaces that will not dial on some Android handsets.",
   "provenance": {
     "generator": "ads_only_report.py",
     "entrypoint": "build_batch15_telangana.py",
     "data_file": "batch15_telangana_data.py",
-    "run_at": "2026-11-28 13:40",
+    "run_at": "2026-11-28 13:51",
     "method": "Ad IDs read in Meta Ad Library (India, active only); site values read from the served page and the W3C Nu checker source view; PageSpeed API unreachable so no speed score is claimed"
   },
   "ads_audit": {

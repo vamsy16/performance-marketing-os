@@ -400,10 +400,12 @@ DLIFE = {
         "the verified advertiser 'D'LIFE Interiors Private Limited'. The spend is national while the page we "
         "audited is Hyderabad-specific, and the mismatch shows: the ads quote a Delhi phone number "
         "(+91 9567231111) on a page that publishes +91 949 508 7777, and every Meta ad opens a Messenger "
-        "chat rather than the site. The Hyderabad page is served through NitroPack, which rewrites and "
-        "defers third-party scripts, so no pixel could be confirmed from the HTML - that is recorded as "
-        "unchecked, not as missing. What is measurable is the markup: 148 validator errors, including 64 "
-        "telephone links with unencoded spaces that will not dial on some Android handsets."),
+        "chat rather than the site. The page does measure: a Meta Pixel (215010909028561) and a Google Tag "
+        "Manager container (GTM-K9FB6G2) are both in the served HTML, behind Cloudflare Zaraz and NitroPack "
+        "- but nothing in the markup tells either of them which ad produced a lead, and GA4 and the Google "
+        "Ads conversion id exist only inside that container. What is measurable is the markup: 148 validator "
+        "errors, including 64 telephone links with unencoded spaces that will not dial on some Android "
+        "handsets."),
     "meta_own": {
         "found": True,
         "page": "D'LIFE Home Interiors (dlifehome)",
@@ -470,17 +472,17 @@ DLIFE = {
         ],
     },
     "pixels": {
-        "meta_pixel": None,
+        "meta_pixel": True,
         "google_ads": None,
         "google_analytics_ga4": None,
         "google_analytics_ua": None,
         "linkedin_insight": None,
         "microsoft_clarity": None,
         "hotjar": None,
-        "google_tag_manager": None,
+        "google_tag_manager": True,
     },
     "conversion": {
-        "has_contact_form": None,
+        "has_contact_form": True,
         "has_phone_click": True,
         "has_whatsapp_link": True,
         "has_cta_buttons": 10,
@@ -493,11 +495,14 @@ DLIFE = {
         "title": "Interior Designers in Hyderabad | D'LIFE Interiors",
         "title_text": "Interior Designers in Hyderabad | D'LIFE Interiors",
         "title_length": 48,
-        "has_meta_description": None,
-        "meta_description": None,
+        "has_meta_description": True,
+        "meta_description": ("Interior designers in Hyderabad for home interiors. Over 16000+ Homes "
+                             "designed, 10 year warranty. Visit our showrooms in Banjara Hills and "
+                             "Kompally."),
+        "meta_desc_length": 157,
         "h1_count": 1,
         "h1_text": "Interior Designers in Hyderabad",
-        "has_og_tags": None,
+        "has_og_tags": True,
         "has_schema": None,
         "has_favicon": None,
         "image_count": None,
@@ -523,14 +528,18 @@ DLIFE = {
     "load_time_seconds": None,
     "final_url": "https://dlifeinteriors.com/location/hyderabad/",
     "scope_note": (
-        "The Hyderabad location page is served by WordPress with NitroPack and Nuxt artifacts in the markup "
-        "('nitro-exclude', deferred scripts), which rewrites and defers third-party tags. That is why every "
-        "tracking value here is None: the served HTML cannot establish whether the Meta Pixel, GA4 or a GTM "
-        "container is deployed, and a page read cannot prove the negative either way. Header tags beyond "
-        "the title and H1 were not captured inside the fetch limit, so they are recorded as unchecked. "
-        "The telephone-link and validation findings come from the W3C checker's source view and are "
-        "reproducible. The page's 'Free Estimate' and 'Call Back' actions open JavaScript modals, so the "
-        "form could not be confirmed as a submitted form."),
+        "Re-read on 2026-11-28 through the W3C checker's source view. Present in the served HTML: Google "
+        "Tag Manager GTM-K9FB6G2 (head), Meta Pixel 215010909028561 (noscript image at the top of the body), "
+        "Cloudflare Zaraz, the server-side tag runner (/cdn-cgi/zaraz/s.js) and the Cloudflare Web Analytics "
+        "beacon. The enquiry form is a real Contact Form 7 form (form_id 40457, Name field, conditional-logic "
+        "add-on, reCAPTCHA response field), not just a JavaScript modal. GA4 and Google Ads conversion ids do "
+        "not appear in the HTML at all - with GTM-K9FB6G2 and Zaraz both running, they are loaded from inside "
+        "those containers, which no page read can open, so those rows stay unchecked instead of being called "
+        "missing. The document is 3,984 lines with a 300 KB inline stylesheet ahead of the head metadata, so "
+        "the meta description and Open Graph tags were read separately, through Microlink's headless "
+        "fetch of the same URL on the same day (description 157 characters, og:image "
+        "Interior_designers_in_hyderabad_web.jpg 1920x670, and the response header x-nitro-cache: MISS "
+        "confirming the NitroPack layer); JSON-LD and the favicon remain unread."),
     "recommended_steps": [
         ("Match the ad's phone number to the page",
          "The live Meta ad quotes +91 9567231111 while the Hyderabad page publishes +91 949 508 7777. A "
@@ -754,8 +763,9 @@ GALAXY = {
         "survive the click: the ads quote Rs. 20,000 braces and Rs. 15,000 implants, while the contact page "
         "publishes no price at all. The page is also the heaviest in the batch - 192 validator errors, nine "
         "broken paragraph nestings, and 28 iframes sized with width=\"100%\" - and its NABH, ISO and FAMDENT "
-        "trust badges are lazy-loaded SVG placeholders, so a visitor who waits sees empty boxes where the "
-        "accreditations should be."),
+        "trust badges are lazy-loaded images, so a visitor whose connection stalls sees empty boxes where "
+        "the accreditations should be. Google Tag Manager (GTM-TRRMQGQ) is installed but deferred by WP "
+        "Rocket until the first interaction, and the page emits no JSON-LD at all."),
     "meta_own": {
         "found": True,
         "page": "Galaxy Dental Care",
@@ -816,11 +826,11 @@ GALAXY = {
         "meta_pixel": None,
         "google_ads": None,
         "google_analytics_ga4": None,
-        "google_analytics_ua": None,
-        "linkedin_insight": None,
+        "google_analytics_ua": False,
+        "linkedin_insight": False,
         "microsoft_clarity": None,
-        "hotjar": None,
-        "google_tag_manager": None,
+        "hotjar": False,
+        "google_tag_manager": True,
     },
     "conversion": {
         "has_contact_form": True,
@@ -836,12 +846,14 @@ GALAXY = {
         "title": "Contact Us | Galaxy Dental Care - 9 Branches in Hyderabad",
         "title_text": "Contact Us | Galaxy Dental Care - 9 Branches in Hyderabad",
         "title_length": 58,
-        "has_meta_description": None,
-        "meta_description": None,
+        "has_meta_description": True,
+        "meta_description": ("Contact Galaxy Dental Care to book appointments, ask queries and get expert "
+                             "dental care from trusted dentists in Hyderabad."),
+        "meta_desc_length": 113,
         "h1_count": 1,
         "h1_text": "Contact Us",
-        "has_og_tags": None,
-        "has_schema": None,
+        "has_og_tags": True,
+        "has_schema": False,
         "has_favicon": True,
         "image_count": None,
         "images_without_alt": None,
@@ -865,13 +877,16 @@ GALAXY = {
     "load_time_seconds": None,
     "final_url": "https://galaxydentalcare.in/contact-us/",
     "scope_note": (
-        "The contact page is a WordPress build served through WP Rocket, which rewrites every script to "
-        "type=\"rocketlazyloadscript\" and defers it. Tracking scripts are therefore present as deferred "
-        "markup we could not read reliably, so all eight tracking values are recorded as unchecked - this "
-        "report does not claim the clinic has no pixel, only that a page read cannot establish one. The "
-        "validation findings, the lazy-loaded award badges and the absence of published prices come from the "
-        "W3C checker's source view and are reproducible. The booking form was read (name, phone, email, "
-        "branch, plus a honeypot field labelled 'Website'); it was not submitted."),
+        "Re-read on 2026-11-28 line by line through the W3C checker's source view: the 1,997-line document "
+        "was read in full, head and footer. Google Tag Manager GTM-TRRMQGQ is in the head but WP Rocket "
+        "rewrites it to type=\"rocketlazyloadscript\", deferring it to the first user interaction. WP Rocket "
+        "also preconnects to connect.facebook.net, scripts.clarity.ms, googleads.g.doubleclick.net, "
+        "www.googletagmanager.com and clickcease.com - preconnects it derives from scripts it found - yet no "
+        "fbq, gtag, G- or AW- id exists anywhere in the markup, so the live tag inventory sits inside GTM and "
+        "is account-only. The appointment form is genuine (dental-appointment-ajax: name, phone, email, "
+        "branch, a hidden 'website' honeypot, Google reCAPTCHA v3) and a scroll-triggered popup opens at 50% "
+        "page depth. Yoast SEO 28.9 writes the title, description, canonical, Open Graph and Twitter tags but "
+        "emits no JSON-LD on this URL. The form was not submitted."),
     "recommended_steps": [
         ("Put the ad's price on the page it lands on",
          "The Meta ads quote Rs. 20,000 braces and Rs. 15,000 implants; the contact page publishes no price "
