@@ -137,6 +137,12 @@
       "Verify configured events and attribution in the accounts and browser."
     ]
   ],
+  "provisional_source_observation": {
+    "note": "Homepage source contains Google Ads base tag AW-18179174251; firing and conversions not tested.",
+    "source": "https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.sunsolar.info%2F&showsource=yes",
+    "timing": "Validator version 26.11.28 is later than the session date; source timing requires recheck.",
+    "scope": "Static source only; execution, event delivery and account configuration not tested."
+  },
   "ads_audit": {
     "controls": [
       {

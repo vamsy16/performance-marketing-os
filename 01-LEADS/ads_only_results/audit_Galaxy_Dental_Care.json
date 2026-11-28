@@ -99,7 +99,8 @@
       "issues": [
         "The Banjara Hills branch page gives two postcodes for the same address; the correct code is unconfirmed.",
         "The card shows WhatsApp; the actual recipient and branch-routing path were not tested.",
-        "The ad makes implant offer and warranty claims; eligibility and underlying terms were not verified."
+        "The ad makes implant offer and warranty claims; eligibility and underlying terms were not verified.",
+        "The contact page contains a tel URI with spaces; test its behavior on mobile before concluding it fails."
       ],
       "wins": [
         "The contact page offers branch selection, phone and WhatsApp links.",
@@ -137,6 +138,12 @@
       "Review consent and conversion events with appropriate account access."
     ]
   ],
+  "provisional_source_observation": {
+    "note": "Contact page source contains GTM-TRRMQGQ in a deferred script; browser execution and events not tested.",
+    "source": "https://validator.w3.org/nu/?doc=https%3A%2F%2Fgalaxydentalcare.in%2Fcontact-us%2F&showsource=yes",
+    "timing": "Validator version 26.11.28 is later than the session date; source timing requires recheck.",
+    "scope": "Static source only; execution, event delivery and account configuration not tested."
+  },
   "ads_audit": {
     "controls": [
       {

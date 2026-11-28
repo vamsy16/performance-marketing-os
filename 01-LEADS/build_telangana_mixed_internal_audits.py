@@ -9,6 +9,7 @@ from collections import Counter
 from pathlib import Path
 import json
 import re
+from urllib.parse import quote
 
 import audit_pdf as pdf
 from ads_audit_controls import evaluate
@@ -59,6 +60,27 @@ DATA = [
  steps=[('Confirm postcode','Reconcile Banjara Hills postal codes on the branch page and in listings.'),('Test enquiry routing','With permission, verify WhatsApp and branch-selection form handoff.'),('Check offer terms','Confirm implant offer eligibility and warranty conditions with the clinic.'),('Verify measurement','Review consent and conversion events with appropriate account access.')]),
 ]
 
+# Selected static source evidence, not runtime verification. The Nu response
+# reports version 26.11.28, later than the session date; every value is a
+# provisional source observation and must be rechecked on a trusted clock.
+SOURCE_FACTS = {
+ 'SunSolar Power Systems': 'Homepage source contains Google Ads base tag AW-18179174251; firing and conversions not tested.',
+ 'PNR Sunrise Energies': 'Homepage source declares a canonical on the reserved sunriseenergies.example domain; investigate before relying on it.',
+ 'DLIFE Home Interiors': 'Hyderabad page source includes Meta Pixel code and Google Ads base tag AW-830229729; event firing not tested.',
+ 'Dr Sridhar Dental': 'Services HTML shell includes GA4 G-7Y9ND039HL and Google Ads base tag AW-855095874; event firing not tested.',
+ 'Galaxy Dental Care': 'Contact page source contains GTM-TRRMQGQ in a deferred script; browser execution and events not tested.',
+}
+# Priorities above are hypotheses as well as observed source defects, not a
+# numerical list of proven business losses.
+for row in DATA:
+    if row['company'] == 'PNR Sunrise Energies':
+        row['issues'].insert(0, 'A validator source response shows a canonical on sunriseenergies.example; recheck before correcting.')
+        row['steps'][1] = ('Review canonical URL', 'Check whether the homepage canonical should use the actual production domain, then verify indexing separately.')
+    elif row['company'] == 'DLIFE Home Interiors':
+        row['issues'].insert(0, 'The Hyderabad call link contains spaces in its tel URI; test mobile dialing and correct the markup if needed.')
+    elif row['company'] == 'Galaxy Dental Care':
+        row['issues'].append('The contact page contains a tel URI with spaces; test its behavior on mobile before concluding it fails.')
+
 # Render overrides apply only to this draft batch. The normal shared renderer is
 # unchanged. Source date is uncertain and incomplete checks cannot be scored.
 pdf.TAGLINE = 'PERFORMANCE MARKETING'
@@ -68,19 +90,26 @@ STYLE_NAMES = ('body', 'body_b', 'small', 'small_b', 'cell', 'cell_b', 'cell_gre
 BASE_STYLES = {k: (pdf.ST[k].fontSize, pdf.ST[k].leading) for k in STYLE_NAMES}
 
 def safe_stat(audit):
-    return pdf.facts_table([('Audit score', 'Not scored - source checks are incomplete.'),
-                            ('Ad evidence', 'One captured card; not a count of all ads.'),
-                            ('Tracking and performance', 'Not checked; no absence or results are asserted.')])
+    # The same four-tile structure as Ksquare, with unknowns explicit.
+    def tile(value, label):
+        return [Paragraph(f'<font color="#0E2A47">{pdf.T(value)}</font>', pdf.ST['tile_num']),
+                Spacer(1, 0.8*mm), Paragraph(pdf.T(label), pdf.ST['tile_lbl'])]
+    tiles = Table([[tile('N/S', 'AUDIT SCORE'), tile(str(len(audit.get('score', {}).get('issues', []))), 'REVIEW PRIORITIES'),
+                    tile('N/C', 'TRACKING VERIFIED'), tile('1', 'AD CARD CAPTURED')]], colWidths=[pdf.CONTENT_W/4]*4)
+    tiles.setStyle(TableStyle([('VALIGN',(0,0),(-1,-1),'MIDDLE'),('ALIGN',(0,0),(-1,-1),'CENTER'),
+        ('BACKGROUND',(0,0),(-1,-1),pdf.CARD),('BOX',(0,0),(-1,-1),.6,pdf.BORDER),
+        ('INNERGRID',(0,0),(-1,-1),.6,pdf.BORDER),('TOPPADDING',(0,0),(-1,-1),7),('BOTTOMPADDING',(0,0),(-1,-1),7)]))
+    return tiles
 
 def safe_score(audit):
-    return pdf.empty_box('No score is assigned. Unknown measurements are not evidence of good or bad performance.')
+    return pdf.empty_box('NOT SCORED: this is a limited sample. Unknown checks are not treated as missing or healthy; runtime event delivery and ad performance were not tested.')
 
 def safe_panel(audit):
     body = [Paragraph('<b>INTERNAL DRAFT - NOT FOR CLIENT DELIVERY</b>', pdf.ST['h3']),
             Spacer(1, 1*mm),
             Paragraph('<b>WHAT WAS READ LIVE FOR THIS REPORT:</b> A direct Meta ad card and public website text were fetched. The card displayed Active; current status is not verified. One card is a sample, not the full account.', pdf.ST['body']),
             Spacer(1, 1*mm),
-            Paragraph('Source timing is uncertain: the session date and sandbox/source clock conflict. Recheck all sources on a trusted clock. Independent report review and the live-data gate have not passed. Tracking, PageSpeed, Google Ads, account metrics and lead delivery were not measured.', pdf.ST['small'])]
+            Paragraph('Source timing is uncertain: the session date and sandbox/source clock conflict. Recheck all sources on a trusted clock. Independent review and the live-data gate have not passed. Selected tracking code was observed in page source only; event firing, PageSpeed, Google Ads activity, account results and lead delivery were not tested.', pdf.ST['small'])]
     box = Table([[body]], colWidths=[pdf.CONTENT_W]); box.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,-1),colors.HexColor('#FFF4E1')),('BOX',(0,0),(-1,-1),.8,pdf.AMBER),('LEFTPADDING',(0,0),(-1,-1),9),('RIGHTPADDING',(0,0),(-1,-1),9),('TOPPADDING',(0,0),(-1,-1),7),('BOTTOMPADDING',(0,0),(-1,-1),7)])); return box
 
 def safe_verification(audit):
@@ -93,7 +122,9 @@ def safe_verification(audit):
     }
     rows = [('Ad sample', 'Direct Meta Library ID, linked from the ad card. Source date and current status require recheck.'), ('Website', audit['website'] + ' - public page text, not a full browser or source audit.')]
     rows.extend(extra.get(audit['company'], []))
-    rows.extend([('Tracking, speed, account results', 'Not checked; no scores or performance claims.'), ('Independent gates', 'Report reviewer and live-data auditor pending. Do not deliver to clients.')])
+    facts = SOURCE_FACTS[audit['company']]
+    rows.append(('Provisional source lead', facts + ' Validator version is later than session date; recheck.'))
+    rows.extend([('Tracking, speed, account results', 'Runtime, speed and account results not checked; no scores or performance claims.'), ('Independent gates', 'Report reviewer and live-data auditor pending. Do not deliver to clients.')])
     return pdf.facts_table(rows)
 
 def draft_header(canvas, doc):
@@ -143,9 +174,9 @@ CONV = ('has_contact_form','has_phone_click','has_whatsapp_link','has_cta_button
 SEO = ('has_title','title_text','has_meta_description','h1_count','has_og_tags','has_schema','has_favicon','image_count','images_without_alt')
 
 def build(d):
-    scale = {'SunSolar Power Systems':1.12, 'PNR Sunrise Energies':1.14,
-             'DLIFE Home Interiors':1.16, 'Dr Sridhar Dental':1.18,
-             'Galaxy Dental Care':1.18}[d['company']]
+    scale = {'SunSolar Power Systems':1.12, 'PNR Sunrise Energies':1.08,
+             'DLIFE Home Interiors':1.09, 'Dr Sridhar Dental':1.18,
+             'Galaxy Dental Care':1.10}[d['company']]
     for key, (size, leading) in BASE_STYLES.items():
         pdf.ST[key].fontSize, pdf.ST[key].leading = size * scale, leading * scale
     px = dict.fromkeys(TRACKING)
@@ -163,7 +194,11 @@ def build(d):
              'ad_library':{'meta_own':{'found':True, 'ads':[ad]}, 'summary':'One direct Meta ad card was captured; current status and source date require rechecking. Website observations are separate and limited.'},
              'funnel':{'type':'Destination not confirmed', 'destination':d['dest']},
              'site_audit':site, 'site_evidence':{'pixel':None,'ga4':None,'gtm':None,'google_ads_tag':None},
-             'promise_gap':d['gap'], 'recommended_steps':d['steps']}
+             'promise_gap':d['gap'], 'recommended_steps':d['steps'],
+             'provisional_source_observation': {'note': SOURCE_FACTS[d['company']],
+                 'source': 'https://validator.w3.org/nu/?doc=' + quote(d['site'], safe='') + '&showsource=yes',
+                 'timing': 'Validator version 26.11.28 is later than the session date; source timing requires recheck.',
+                 'scope': 'Static source only; execution, event delivery and account configuration not tested.'}}
     controls = evaluate(audit, audit['site_evidence'])
     for c in controls['controls']:
         c['disposition']='unknown'

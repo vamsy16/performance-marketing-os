@@ -137,6 +137,12 @@
       "Check consent and conversion events in the clinic accounts and browser."
     ]
   ],
+  "provisional_source_observation": {
+    "note": "Services HTML shell includes GA4 G-7Y9ND039HL and Google Ads base tag AW-855095874; event firing not tested.",
+    "source": "https://validator.w3.org/nu/?doc=https%3A%2F%2Fsridhardental.com%2Fservices&showsource=yes",
+    "timing": "Validator version 26.11.28 is later than the session date; source timing requires recheck.",
+    "scope": "Static source only; execution, event delivery and account configuration not tested."
+  },
   "ads_audit": {
     "controls": [
       {

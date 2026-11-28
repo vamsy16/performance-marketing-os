@@ -97,6 +97,7 @@
     "score": {
       "score": null,
       "issues": [
+        "The Hyderabad call link contains spaces in its tel URI; test mobile dialing and correct the markup if needed.",
         "The Hyderabad page and embedded map show different Banjara Hills postcodes; confirm the correct address.",
         "The ad offers messaging; the final message destination and branch handoff were not verified.",
         "The ad describes a project completion time; the underlying project evidence was not checked."
@@ -137,6 +138,12 @@
       "Verify conversion events and reporting in the appropriate accounts and browser."
     ]
   ],
+  "provisional_source_observation": {
+    "note": "Hyderabad page source includes Meta Pixel code and Google Ads base tag AW-830229729; event firing not tested.",
+    "source": "https://validator.w3.org/nu/?doc=https%3A%2F%2Fdlifeinteriors.com%2Flocation%2Fhyderabad%2F&showsource=yes",
+    "timing": "Validator version 26.11.28 is later than the session date; source timing requires recheck.",
+    "scope": "Static source only; execution, event delivery and account configuration not tested."
+  },
   "ads_audit": {
     "controls": [
       {

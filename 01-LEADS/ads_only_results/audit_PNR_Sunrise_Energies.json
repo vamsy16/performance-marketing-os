@@ -97,6 +97,7 @@
     "score": {
       "score": null,
       "issues": [
+        "A validator source response shows a canonical on sunriseenergies.example; recheck before correcting.",
         "The captured ad seeks channel partners; its actual WhatsApp handoff has not been tested.",
         "The separately viewed site describes customer solar services and a preliminary calculator; partner routing is unverified.",
         "Measurement and partner lead qualification require account or workflow access."
@@ -129,8 +130,8 @@
       "With permission, confirm the WhatsApp recipient and partner enquiry handoff."
     ],
     [
-      "Check message alignment",
-      "Review whether the reached destination clearly explains channel-partner next steps."
+      "Review canonical URL",
+      "Check whether the homepage canonical should use the actual production domain, then verify indexing separately."
     ],
     [
       "Review qualification",
@@ -141,6 +142,12 @@
       "Check account configuration and event delivery; no missing tag is asserted."
     ]
   ],
+  "provisional_source_observation": {
+    "note": "Homepage source declares a canonical on the reserved sunriseenergies.example domain; investigate before relying on it.",
+    "source": "https://validator.w3.org/nu/?doc=https%3A%2F%2Fsunriseenergies.in%2F&showsource=yes",
+    "timing": "Validator version 26.11.28 is later than the session date; source timing requires recheck.",
+    "scope": "Static source only; execution, event delivery and account configuration not tested."
+  },
   "ads_audit": {
     "controls": [
       {
