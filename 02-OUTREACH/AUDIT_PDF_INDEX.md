@@ -1,14 +1,14 @@
 # Every audit PDF in this repo — index
 
-**49 PDFs** covering **46 companies** (21 of them scored), on branch `arena/de53294b-performance-marketing-os` (tip `aa56dfe`).
+**55 PDFs** covering **52 companies** (27 scored PDF entries), including five provisional batch-14 drafts. Branch: `arena/af1679d7-performance-marketing-os`.
 
 They live in **two folders**, which is why looking at one folder makes the total look small:
 
 1. [`02-OUTREACH/audit_pdfs/`](https://github.com/vamsy16/performance-marketing-os/tree/arena/de53294b-performance-marketing-os/02-OUTREACH/audit_pdfs) — **9 full audits**. The complete 5-page DIGITAL MARKETING & PAID ADS AUDIT: website tracking, conversion readiness, technical snapshot and audit score.
 
-2. [`02-OUTREACH/ads_only_pdfs/`](https://github.com/vamsy16/performance-marketing-os/tree/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs) — **40 ads reports**. Since 2026-10-25 these use the *same* 5-page Ksquare layout and carry live website data; before that date they were the shorter ad-activity sheet.
+2. [`02-OUTREACH/ads_only_pdfs/`](https://github.com/vamsy16/performance-marketing-os/tree/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs) — **46 ads reports**. Since 2026-10-25 these use the *same* 5-page Ksquare layout and carry live website data; before that date they were the shorter ad-activity sheet.
 
-> Three companies — Ecolt Energy, Orizen Solar Innovations and Ray On Solar Systems — have **both** a full audit and an ads report. That is why 49 files cover 46 companies.
+> Three companies — Ecolt Energy, Orizen Solar Innovations and Ray On Solar Systems — have **both** a full audit and an ads report. That is why 55 files cover 52 companies.
 
 
 ## Full audits — `02-OUTREACH/audit_pdfs/`
@@ -69,6 +69,19 @@ They live in **two folders**, which is why looking at one folder makes the total
 | Lumisun Solar | 5 | 23 KB | 3/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Lumisun_Solar.pdf) |
 | Varna Solar Pvt. Ltd. | 5 | 23 KB | 19/100 | 2026-11-08 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Varna_Solar_Pvt_Ltd_.pdf) |
 | Wisda Energy | 5 | 21 KB | 10/100 | 2026-10-25 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/de53294b-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Wisda_Energy.pdf) |
+| Visiontek | 5 | 24 KB | 27/100 | 2026-11-23 | [open](https://github.com/vamsy16/performance-marketing-os/blob/arena/af1679d7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Visiontek.pdf) |
+
+### Batch 14 — internal drafts, not approved for outreach
+
+Independent report review and full live re-verification remain pending. Scores exclude unknown checks and are not comparable as complete audits. Follow-up source context and specific completion inputs are documented in `01-LEADS/batches/batch14_audit_review_2026-11-23.md`.
+
+| Company | Pages | Size | Score | Audited | PDF |
+|---|---|---|---|---|---|
+| SundayGrids | 5 | 23 KB | 1/100 (provisional) | 2026-11-23 | [internal draft](https://github.com/vamsy16/performance-marketing-os/blob/arena/af1679d7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_SundayGrids.pdf) |
+| Arrow Solar | 5 | 23 KB | 0/100 (provisional) | 2026-11-23 | [internal draft](https://github.com/vamsy16/performance-marketing-os/blob/arena/af1679d7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Arrow_Solar.pdf) |
+| Atria Power | 5 | 23 KB | 0/100 (provisional) | 2026-11-23 | [internal draft](https://github.com/vamsy16/performance-marketing-os/blob/arena/af1679d7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Atria_Power.pdf) |
+| RAGA Renewable Energy | 5 | 23 KB | 0/100 (provisional) | 2026-11-23 | [internal draft](https://github.com/vamsy16/performance-marketing-os/blob/arena/af1679d7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_RAGA_Renewable_Energy.pdf) |
+| Zenith Solars | 5 | 23 KB | 1/100 (provisional) | 2026-11-23 | [internal draft](https://github.com/vamsy16/performance-marketing-os/blob/arena/af1679d7-performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_Zenith_Solars.pdf) |
 
 ## Notes
 

@@ -1,0 +1,275 @@
+{
+  "company": "Arrow Solar",
+  "city": "Karnataka",
+  "website": "https://arrowenergy.in/",
+  "checked_on": "2026-11-23",
+  "audit_date": "2026-11-23",
+  "generated_at": "2026-11-23",
+  "ads_only": true,
+  "website_audit_run": true,
+  "conservative_scope": true,
+  "review_pending": true,
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "ads": [
+        {
+          "library_id": "4616054888675895",
+          "library_url": "https://www.facebook.com/ads/library/?id=4616054888675895",
+          "page_name": "Arrow Solar",
+          "started": "Oct 21, 2026",
+          "destination": "fb.me (card link; exact form or final destination not verified)",
+          "text": "Paying high electricity bills? ☀️\n\nSwitch to solar with Arrow Power Controls, bringing 25 years of experience in solar installations.\n\n🏠 Residential rooftop solar\n\n🏢 Commercial solar solutions\n\n⚡ Systems tailored to your electricity requirements\n\n🔧 Professional installation and support\n\nLooking for a solar installation in Bengaluru?\n\nFill out our quick form with your contact details and approximate kW requirement. Our team will get in touch to understand your needs and help you take the next step.\n\nGet started today!"
+        }
+      ]
+    },
+    "summary": "One active Meta ad card captured on 2026-11-23; this is a sample, not necessarily the total. Google Ads activity was not checked."
+  },
+  "score_basis": "0 points from measured formula checks. Homepage form absence is unverified; unknown checks are excluded.",
+  "funnel": {
+    "type": "fb.me link",
+    "destination": "fb.me (card link; exact form or final destination not verified)"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://arrowenergy.in/",
+    "audit_date": "2026-11-23",
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": true,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": null,
+      "has_phone_click": true,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": null,
+      "has_live_chat": null,
+      "has_popup_optin": null,
+      "has_testimonials": null,
+      "has_pricing_page_link": true
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Arrow Power Controls | Solar EPC & Installation Company | Karnataka",
+      "has_meta_description": true,
+      "h1_count": null,
+      "has_og_tags": true,
+      "has_schema": true,
+      "has_favicon": true,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "not measured for this site"
+    },
+    "page_count": {
+      "has_sitemap": true,
+      "note": "Sitemap fetched and lists solar services and project URLs; indexing not verified."
+    },
+    "local_signals": {
+      "has_google_maps_embed": null
+    },
+    "conversion_evidence": {
+      "checked_on": "2026-11-23",
+      "method": "Public page text and selected served source; no browser interaction or form submission.",
+      "sources": [
+        "https://arrowenergy.in/",
+        "https://arrowenergy.in/contact"
+      ],
+      "rows": [
+        [
+          "Action links",
+          "Home: Check Subsidy Eligibility and Book Now link to /contact."
+        ],
+        [
+          "Forms",
+          "Contact page has a quote form; homepage absence and submission unverified."
+        ],
+        [
+          "Phone / WhatsApp",
+          "Homepage provides a tel link and wa.me link."
+        ],
+        [
+          "Proof / price",
+          "Homepage shows indicative solar package prices; testimonials unverified."
+        ],
+        [
+          "Chat / popup",
+          "Live chat and offer popup require browser verification."
+        ]
+      ]
+    },
+    "scope_note": "The card displays arrowenergy.in but its public card link is fb.me; the final click-through and form were not verified. GA4 G-LY596XLF42 was observed in homepage source; runtime events were not tested.",
+    "html_errors": "1 error, 2 warnings, 43 info",
+    "score": {
+      "score": 0,
+      "issues": [
+        "The ad calls for a quick form, but the card link shows fb.me; verify the final destination and lead handoff.",
+        "The ad says 25 years of experience while the homepage says 22+ years; reconcile these statements.",
+        "Homepage pricing shows a 3 kW package at Rs. 1,44,000 after subsidy, while the hero says zero upfront cost; clarify financing and eligibility.",
+        "No form was observed in the homepage text reviewed; /contact has a quote form. Homepage absence and form submission remain unverified."
+      ],
+      "wins": [
+        "Homepage includes phone, WhatsApp and quote links.",
+        "Contact page contains a quote form; submission untested."
+      ]
+    }
+  },
+  "site_evidence": {
+    "pixel": null,
+    "ga4": true,
+    "gtm": null,
+    "google_ads_tag": null,
+    "checked_on": "2026-11-23",
+    "note": "Selected served source reviewed; absence and runtime behavior are unverified."
+  },
+  "promise_gap": [
+    [
+      "Ad: quick form and a call back for a solar installation.",
+      "The card shows a fb.me link; the final form was not tested. The homepage offers phone, WhatsApp and a contact link; a form is on /contact."
+    ],
+    [
+      "Ad: 25 years of experience.",
+      "The homepage says 22+ years. Verify the basis and update inconsistent wording."
+    ]
+  ],
+  "recommended_steps": [
+    [
+      "Test the ad click",
+      "Open the live ad on mobile and confirm the form and lead handoff."
+    ],
+    [
+      "Align experience claims",
+      "Reconcile the ad and homepage experience figures."
+    ],
+    [
+      "Verify analytics",
+      "Check GA4 event firing and consent in a real browser."
+    ],
+    [
+      "Improve enquiry path",
+      "Review whether an on-page form would help visitors who avoid phone or chat."
+    ]
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Partial source review; verify deployment and runtime."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "unknown": 15
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

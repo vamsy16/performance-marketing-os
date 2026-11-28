@@ -23,6 +23,24 @@ pip install -r 01-LEADS/requirements.txt
 - On first run, Playwright may need: `playwright install chromium`
   (harmless if Chrome channel is already used).
 
+## Pre-flight — audit dedup check (owner rule, 2026-11-23, never skip)
+
+Before taking ANY lead for audit — in discovery mode or direct mode — check
+whether that lead has **already been audited**. Only leads with no audit done
+are taken for audit. Check all three sources:
+
+1. `01-LEADS/leads.csv` — `audit_score` filled or `status` = `audited`
+2. Existing files — `audit_*.json` in `01-LEADS/ads_only_results/` or
+   `01-LEADS/audit_results/`, and `audit_*.pdf` in `02-OUTREACH/ads_only_pdfs/`
+   or `02-OUTREACH/audit_pdfs/`
+3. Gmail — sent mail to that domain (search inbox + spam + trash). A lead
+   already emailed is already audited, even if `leads.csv` still says `new`.
+
+If any of the three shows a prior audit, **skip the lead**. Re-audit only on
+explicit owner instruction (e.g. a DRIFT re-run). This rule exists because
+Visiontek was re-audited in batch 13 although a full-audit email had already
+been sent on 2026-11-15 — `leads.csv` alone did not catch it.
+
 ## Discovery mode — ONE input, leads found automatically (preferred)
 
 When you do NOT already have a specific lead's URL, start from the Meta Ad
@@ -210,6 +228,9 @@ built from `02-OUTREACH/templates/`.
 
 ## Do not
 
+- Do not audit a lead that has already been audited. Run the pre-flight dedup
+  check first (leads.csv + existing JSON/PDF + Gmail sent history); only
+  unaudited leads are taken for audit.
 - Do not hardcode, estimate, or "fill in" any audit numbers or ad counts.
 - Do not reuse a previous PDF for a new outreach — always re-run the
   pipeline so the data is live as of the send date.

@@ -1,0 +1,275 @@
+{
+  "company": "SundayGrids",
+  "city": "Bengaluru",
+  "website": "https://www.sundaygrids.com/",
+  "checked_on": "2026-11-23",
+  "audit_date": "2026-11-23",
+  "generated_at": "2026-11-23",
+  "ads_only": true,
+  "website_audit_run": true,
+  "conservative_scope": true,
+  "review_pending": true,
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "ads": [
+        {
+          "library_id": "1677559457265808",
+          "library_url": "https://www.facebook.com/ads/library/?id=1677559457265808",
+          "page_name": "SundayGrids",
+          "started": "Nov 8, 2026",
+          "destination": "https://www.sundaygrids.com/projects/278RAO1IVG",
+          "text": "What if your electricity bill could now be powered by solar you don't own on your roof?\n\nLiving in an apartment doesn’t stop you from using solar anymore.\n\nInstead of installing panels, you can now:\n\n* Reserve solar capacity\n\n* Let it generate power\n\n* Get bill credits every month\n\nNo roof. No hassle.\n\n25+ projects are already running across India, and ₹2Cr+ in bills have already been offset.\n\nCheck if this works for your home."
+        }
+      ]
+    },
+    "summary": "One active Meta ad card captured on 2026-11-23; this is a sample, not necessarily the total. Google Ads activity was not checked."
+  },
+  "score_basis": "1 point: seven H1 elements. Unknown checks are excluded.",
+  "funnel": {
+    "type": "Project page",
+    "destination": "https://www.sundaygrids.com/projects/278RAO1IVG"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://www.sundaygrids.com/",
+    "audit_date": "2026-11-23",
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": true,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": true
+    },
+    "conversion": {
+      "has_contact_form": null,
+      "has_phone_click": null,
+      "has_whatsapp_link": null,
+      "has_cta_buttons": null,
+      "has_live_chat": null,
+      "has_popup_optin": null,
+      "has_testimonials": true,
+      "has_pricing_page_link": true
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "SundayGrids | Get monthly credits to save up on electricity.",
+      "has_meta_description": true,
+      "h1_count": 7,
+      "has_og_tags": null,
+      "has_schema": null,
+      "has_favicon": null,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "not measured for this site"
+    },
+    "page_count": {
+      "has_sitemap": true,
+      "note": "Sitemap fetched: homepage and project URLs listed; not a count of indexed pages."
+    },
+    "local_signals": {
+      "has_google_maps_embed": null
+    },
+    "conversion_evidence": {
+      "checked_on": "2026-11-23",
+      "method": "Public page text and selected served source; no browser interaction or form submission.",
+      "sources": [
+        "https://www.sundaygrids.com/",
+        "https://www.sundaygrids.com/projects/278RAO1IVG",
+        "https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.sundaygrids.com%2F&showsource=yes"
+      ],
+      "rows": [
+        [
+          "Action links",
+          "Home: Get Started / Get Started for Free; Parker 110: Reserve Solar Now."
+        ],
+        [
+          "Forms",
+          "Parker 110 links to signup; signup completion not tested."
+        ],
+        [
+          "Phone / WhatsApp",
+          "No link confirmed from this review; browser check needed."
+        ],
+        [
+          "Proof / price",
+          "Home shows customer quotes and a reservation-fee example."
+        ],
+        [
+          "Chat / popup",
+          "Live chat and offer popup require browser verification."
+        ]
+      ]
+    },
+    "scope_note": "The actual ad link points to Parker 110, not the homepage. Its project page describes credits, validity and a reservation fee; form submission and event firing were not tested. GTM-PZ8PCNX, UA-170164983-1, PostHog and Calendly were seen on the homepage. Other tracking remains unverified.",
+    "html_errors": "25 errors, 21 warnings, 51 info",
+    "score": {
+      "score": 1,
+      "issues": [
+        "The Parker 110 project page describes reservation fees and bill credits; check that eligible utilities and exit terms are clear before signup.",
+        "Homepage source includes GTM-PZ8PCNX and legacy UA-170164983-1; verify GA4 and conversion events at runtime.",
+        "The Nu checker flagged seven H1 elements, 12 duplicate SVG IDs and four skipped heading levels; review accessibility impact."
+      ],
+      "wins": [
+        "GTM and legacy UA are in homepage source; event delivery untested.",
+        "Homepage contains customer quotes and a reservation-fee example."
+      ]
+    }
+  },
+  "site_evidence": {
+    "pixel": null,
+    "ga4": null,
+    "gtm": true,
+    "google_ads_tag": null,
+    "checked_on": "2026-11-23",
+    "note": "Selected served source reviewed; absence and runtime behavior are unverified."
+  },
+  "promise_gap": [
+    [
+      "Ad: reserve solar capacity and get monthly bill credits.",
+      "The actual Parker 110 project page describes bill credits and a reservation fee, with utility eligibility and exit terms. The savings figures are company claims, not independently verified."
+    ],
+    [
+      "Ad: 25+ projects and over ₹2 crore in bills offset.",
+      "These are ad claims; underlying project and billing records were not available for independent verification."
+    ]
+  ],
+  "recommended_steps": [
+    [
+      "Validate landing experience",
+      "Test the Parker 110 signup and eligible utilities on mobile."
+    ],
+    [
+      "Check measurement",
+      "Verify GA4 and conversion events in the accounts and browser."
+    ],
+    [
+      "Review project terms",
+      "Check reservation fees, credit use and exit conditions are clear."
+    ],
+    [
+      "Repair markup",
+      "Review duplicate IDs reported by the HTML validator."
+    ]
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Partial source review; verify deployment and runtime."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "unknown": 15
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

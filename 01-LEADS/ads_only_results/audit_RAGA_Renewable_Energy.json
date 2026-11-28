@@ -1,0 +1,275 @@
+{
+  "company": "RAGA Renewable Energy",
+  "city": "Mysuru",
+  "website": "https://ragarenewableenergy.com/",
+  "checked_on": "2026-11-23",
+  "audit_date": "2026-11-23",
+  "generated_at": "2026-11-23",
+  "ads_only": true,
+  "website_audit_run": true,
+  "conservative_scope": true,
+  "review_pending": true,
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "ads": [
+        {
+          "library_id": "3057224721288021",
+          "library_url": "https://www.facebook.com/ads/library/?id=3057224721288021",
+          "page_name": "RAGA Renewable Energy",
+          "started": "Nov 3, 2026",
+          "destination": "http://instagram.com/ragarenewableenergy",
+          "text": "☀️ Give Your Family the Power of a Brighter Tomorrow!\n\nA solar-powered home means more than just generating electricity. It's about smarter energy choices, reduced electricity expenses, and a cleaner environment for the next generation.\n\nWith Rooftop Solar, You Can:\n\n✔ Reduce dependence on conventional electricity.\n\n✔ Enjoy long-term electricity bill savings.\n\n✔ Explore government subsidy benefits.\n\n✔ Make your home more energy-efficient.\n\n✔ Contribute towards a greener environment.\n\nLet your rooftop become a source of power and savings.\n\n📍 Mysuru & Nearby Cities.\n\nChoose Solar. Choose a Sustainable Future. Choose Raga Renewable Energy."
+        }
+      ]
+    },
+    "summary": "One active Meta ad card captured on 2026-11-23; this is a sample, not necessarily the total. Google Ads activity was not checked."
+  },
+  "score_basis": "0 points from measured formula checks. Unknown checks are excluded; zero is not a clean bill of health.",
+  "funnel": {
+    "type": "Instagram profile",
+    "destination": "http://instagram.com/ragarenewableenergy"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://ragarenewableenergy.com/",
+    "audit_date": "2026-11-23",
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": null,
+      "has_cta_buttons": null,
+      "has_live_chat": null,
+      "has_popup_optin": null,
+      "has_testimonials": null,
+      "has_pricing_page_link": null
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Raga Renewable Energy Home -",
+      "has_meta_description": true,
+      "h1_count": null,
+      "has_og_tags": true,
+      "has_schema": true,
+      "has_favicon": null,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "not measured for this site"
+    },
+    "page_count": {
+      "has_sitemap": true,
+      "note": "Sitemap index and page sitemap fetched; indexing not verified."
+    },
+    "local_signals": {
+      "has_google_maps_embed": null
+    },
+    "conversion_evidence": {
+      "checked_on": "2026-11-23",
+      "method": "Public page text and selected served source; no browser interaction or form submission.",
+      "sources": [
+        "https://ragarenewableenergy.com/",
+        "https://validator.w3.org/nu/?doc=https%3A%2F%2Fragarenewableenergy.com%2F&showsource=yes"
+      ],
+      "rows": [
+        [
+          "Action links",
+          "Book a Free Site Visit links to /contact-us/ in homepage source."
+        ],
+        [
+          "Forms",
+          "Homepage form in source is marked hidden on tablets; submission untested."
+        ],
+        [
+          "Phone / WhatsApp",
+          "Homepage has tel links; WhatsApp not verified."
+        ],
+        [
+          "Proof / price",
+          "Customer quotes appear in source; rendered visibility not verified."
+        ],
+        [
+          "Chat / popup",
+          "Live chat and offer popup require browser verification."
+        ]
+      ]
+    },
+    "scope_note": "The ad links to the Instagram profile, not the website. The homepage was reviewed separately. Unobserved source tags remain unknown and no form submission or event firing was tested.",
+    "html_errors": "27 errors, 12 warnings, 68 info",
+    "score": {
+      "score": 0,
+      "issues": [
+        "The ad links to Instagram; verify profile enquiry handling and follow-up.",
+        "The homepage enquiry form source is marked hidden on tablets; test visibility and submission.",
+        "A hidden block contains a John Doe / SunBright quote; review it before reuse.",
+        "The homepage counters are animated; check final display and substantiate their claims."
+      ],
+      "wins": [
+        "Homepage source contains an enquiry form; submission untested.",
+        "Homepage has phone links and a site-visit CTA."
+      ]
+    }
+  },
+  "site_evidence": {
+    "pixel": null,
+    "ga4": null,
+    "gtm": null,
+    "google_ads_tag": null,
+    "checked_on": "2026-11-23",
+    "note": "Selected served source reviewed; absence and runtime behavior are unverified."
+  },
+  "promise_gap": [
+    [
+      "Ad: rooftop solar and government subsidy benefits.",
+      "The captured ad links to Instagram. The separately reviewed website describes rooftop solutions and up to ₹78,000 in savings; eligibility was not verified."
+    ],
+    [
+      "Ad: Mysuru and nearby cities.",
+      "The site lists a Mysuru address and a Bengaluru address; actual service coverage should be confirmed."
+    ]
+  ],
+  "recommended_steps": [
+    [
+      "Test Instagram enquiries",
+      "Verify how messages are received and followed up after the captured ad."
+    ],
+    [
+      "Test the enquiry form",
+      "Check tablet visibility and run a controlled submission with permission."
+    ],
+    [
+      "Review hidden content",
+      "Remove or correct the unused John Doe / SunBright template block before reuse."
+    ],
+    [
+      "Check counters",
+      "Test the final animated values in a browser and substantiate the claims."
+    ]
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Partial source review; verify deployment and runtime."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "unknown": 15
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

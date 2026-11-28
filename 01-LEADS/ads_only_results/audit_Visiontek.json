@@ -1,0 +1,259 @@
+{
+  "company": "Visiontek",
+  "legal": "Visiontek",
+  "city": "Begumpet, Hyderabad 500016",
+  "website": "https://visiontek.solar/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "checked_on": "2026-11-23",
+  "generated_at": "2026-11-23",
+  "source": "Meta Ad Library (India, active ads) + the company's own live website (page source read through the W3C Nu HTML Checker)",
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "results_count": 2,
+      "results_label": "2 live ads",
+      "query": "solar Hyderabad / Telangana keyword search",
+      "ads": [
+        {
+          "library_id": "1133037052650969",
+          "library_url": "https://www.facebook.com/ads/library/?id=1133037052650969",
+          "page_name": "Visionteknewenergy",
+          "started": "Nov 12, 2026",
+          "destination": "Instagram (confirmed on the ad card)",
+          "text": "Still paying high electricity bills?\n\nSwitch to Visiontek Solar and turn sunlight into savings. Our smart system powers your home directly, stores extra energy for the night and helps lower your monthly bill.\n\nIts time to power your home naturally.\n\n#Visiontek #GoSolar #SolarPower #SolarEnergy #EnergyStorage"
+        },
+        {
+          "library_id": "1126670763504735",
+          "library_url": "https://www.facebook.com/ads/library/?id=1126670763504735",
+          "page_name": "Visionteknewenergy",
+          "started": "Nov 12, 2026",
+          "destination": "Not confirmed from the ad card in this pass",
+          "text": "Summer heat is rising, and so are electricity bills.\n\nWith increasing power consumption, it's time to think smarter about how we use energy. Switch to solar with Visiontek Solar Solutions and take a smarter step towards managing your energy needs.\n\nThe right time to consider solar? It's now.\n\n#Visiontek #VisiontekSolar #SolarEnergy #SolarSolutions #GoSolar #RenewableEnergy"
+        }
+      ]
+    },
+    "summary": "2 live Meta ads confirmed on 2026-11-23 by opening each library ID directly (page view shows ~69 results; 2 cards read in full). Google Ads Transparency records were not checked in this pass."
+  },
+  "funnel": {
+    "destination": "Instagram (confirmed on the ad card)",
+    "note": "Ad destination as shown on the live ad card."
+  },
+  "findings": [],
+  "next_steps": [],
+  "contact_facts": "1-11-252/1B, Behind Shoppers' Stop, Begumpet, Hyderabad 500016 | info@visiontek.com | +91 9701601421 (WhatsApp)",
+  "contact": {
+    "phone": "+91 9701601421",
+    "email": "info@visiontek.com",
+    "whatsapp": "+91 9701601421"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://visiontek.solar/",
+    "audit_date": "2026-11-23",
+    "pixels": {
+      "meta_pixel": false,
+      "google_ads": false,
+      "google_analytics_ga4": true,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
+      "microsoft_clarity": false,
+      "hotjar": false,
+      "google_tag_manager": false
+    },
+    "conversion": {
+      "has_contact_form": false,
+      "has_phone_click": false,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": 7,
+      "has_live_chat": false,
+      "has_popup_optin": false,
+      "has_testimonials": false,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "VISIONTEK – Powering India's Smart Energy Future",
+      "title_length": 48,
+      "has_meta_description": true,
+      "meta_desc_length": null,
+      "h1_count": 1,
+      "h1_text": "Engineering the Future of Intelligent Energy",
+      "has_og_tags": true,
+      "has_schema": false,
+      "has_favicon": true,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "API returned 429"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": false
+    },
+    "platform": "Custom PHP build (assets/front/css/style.css + products.css, assets/front/js/script.js), Google Fonts Inter 300-900, Font Awesome 5.15.2, video hero (VisionTech_video3.mp4)",
+    "html_errors": "62 errors, 33 warnings, 49 info",
+    "score": {
+      "score": 27,
+      "issues": [
+        "Your live ads click through to Instagram, not visiontek.solar - every rupee of that spend buys a chat thread you cannot retarget, and with no Meta Pixel on the site the visitor who does arrive is untraceable.",
+        "GA4 (G-B09HKE8X9M) is installed and loads directly, but there is no Meta Pixel, no Google Ads tag and no GTM - so Meta spend cannot be measured on the site at all.",
+        "No Meta Pixel installed — can't run retargeting or track ad conversions",
+        "No Google Ads / GTM tracking — can't measure ad performance",
+        "No contact form on homepage — visitors can't easily enquire",
+        "No live chat — missing after-hours leads",
+        "No visible testimonials/social proof on homepage",
+        "No structured data (Schema.org) - missing rich results in Google"
+      ],
+      "wins": [
+        "Google Analytics is installed",
+        "WhatsApp link present",
+        "Good CTA presence (7 buttons)"
+      ]
+    }
+  },
+  "audit_date": "2026-11-23",
+  "site_evidence": {
+    "pixel": false,
+    "ga4": true,
+    "gtm": false,
+    "google_ads_tag": false,
+    "checked_on": "2026-11-23",
+    "note": "Landing-page source read live on 2026-11-23 through the W3C Nu HTML Checker (validator.w3.org/nu/?doc=<url>&showsource=yes), which returns the served HTML with script tags intact, plus a direct fetch of the same pages. Tags found: GA4."
+  },
+  "promise_gap": [
+    [
+      "Ad: 'Switch to Visiontek Solar and turn sunlight into savings. Our smart system powers your home directly, stores extra energy for the night and helps lower your monthly bill.'",
+      "Backed in part. The site sells exactly what the ad names - RISE+ (on-grid inverter), FUTURE+ (hybrid inverter), VAULT+ (LFP battery storage) and PULSE+ (panel-level optimiser) - but publishes no prices, no savings figures and no installation service, so the 'savings' promise has no numbers behind it on the page."
+    ],
+    [
+      "Ad: 'Switch to solar with Visiontek Solar Solutions and take a smarter step towards managing your energy needs.'",
+      "The click never reaches the page that answers this. The ad goes to Instagram (confirmed on the card), and the homepage has no contact form, no pricing and no testimonials - the enquiry form lives on /contact-us/, which paid traffic never sees."
+    ],
+    [
+      "Ad: 'The right time to consider solar? It's now.'",
+      "The site's only conversion path is WhatsApp (header CTA, banner and floating button, all wa.me/+919701601421) - there is no tel: click-to-call on the homepage and no form, so a visitor who prefers to call or fill a form must leave the homepage."
+    ]
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "No Meta Pixel code found in the landing-page source - ad clicks cannot be measured or retargeted."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Destination URL captured but parameter list not verified; needs the full click-through URL from Ads Manager."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad-card formats were not captured for these ads."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Ad copy could not be read for these ads."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No social proof (customer counts, reviews, testimonials) in the live ad copy."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Live creatives include recent launches (newest started Nov 12, 2026) - the account is not running one stale ad forever."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "2 distinct live ads visible - a comparison is at least possible."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Ad CTA and destination agree on one job: captured destination."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 3,
+      "fail": 2,
+      "unknown": 10,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}
