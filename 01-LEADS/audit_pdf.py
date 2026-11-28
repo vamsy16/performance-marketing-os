@@ -1642,12 +1642,13 @@ def build_story(audit):
                                   yes=(f"Present ({seo.get('meta_desc_length')} characters)"
                                        if seo.get("meta_desc_length") else "Present"),
                                   no="Not found on the page read - lower Google click-through")),
-        ("H1 headline", (UNCHECKED if seo.get("h1_count") is None else
-                         seo.get("h1_text") or f"{seo.get('h1_count')} H1 tags observed")),
+        ("H1 headline", (seo.get("h1_observation") or
+                         (UNCHECKED if seo.get("h1_count") is None else
+                          seo.get("h1_text") or f"{seo.get('h1_count')} H1 tags observed"))),
         ("Structured data (Schema)", _tri(seo.get("has_schema"))),
         ("Open Graph tags", _tri(seo.get("has_og_tags"))),
         ("Images on homepage", images_row),
-        ("Indexed pages (sitemap)", sitemap_row),
+        ("Sitemap / index status" if page_count.get("note") else "Indexed pages (sitemap)", sitemap_row),
         ("Google Maps / local SEO", _tri(maps_embed,
                                          yes="Google Maps link / embed on the page read",
                                          no="No Google Maps embed found on the page read")),

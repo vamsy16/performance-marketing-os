@@ -76,13 +76,16 @@
       "has_schema": null,
       "has_favicon": null,
       "image_count": null,
-      "images_without_alt": null
+      "images_without_alt": null,
+      "h1_observation": "Services (rendered page view; HTML shell differs)",
+      "h1_observation_source": "https://sridhardental.com/services"
     },
     "pagespeed": {
       "error": "not measured for this site"
     },
     "page_count": {
-      "has_sitemap": null
+      "has_sitemap": null,
+      "note": "sitemap.xml lists service and booking URLs; actual Google indexing not checked."
     },
     "local_signals": {
       "has_google_maps_embed": null

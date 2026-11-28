@@ -27,7 +27,7 @@ DATA = [
  text='☀️ HYDERABAD, SWITCH TO SOLAR FOR JUST ₹1,31,999! 🏡⚡\n\n🎉 This is your chance to make the switch to clean energy with SunSolar Power Systems!\n\n🔥 SPECIAL 3 KW SOLAR OFFER\n\n💰 Only ₹1,31,999/-\n\n✅ Government Subsidy Included – ₹78,000\n\n💳 ₹0 Down Payment\n\n📉 Easy EMI Available\n\n🛡️ 30 Years Warranty\n\n🏡 Free Site Visit\n\nWhy pay high electricity bills when your rooftop can generate your own power? Invest in solar today and enjoy long-term savings with trusted Adani Solar & Waaree Solar panels! 🌞\n\n📲 Book your FREE solar consultation now!\n\n📞 Call: +91 98666 02001\n\n📍 Suite 312, 3rd Floor, Kokapet Terminal Complex, Gandipet Main Road, Narsingi, Hyderabad.\n\n⚡ Limited-time offer — enquire today and take the first step towards lower electricity bills!\n\n#SunSolar #Hyderabad #SolarPanels #SolarEnergy #AdaniSolar #WaareeSolar #SolarSubsidy #RooftopSolar #SolarOffer #SaveElectricity #ZeroDownPayment #SolarInstallation #GoSolar',
  issues=['The ad card shows fb.me; the final form or destination was not confirmed.', 'The offer mentions subsidy, EMI and warranty; verify eligibility and terms before relying on them.', 'The site estimator is preliminary and subject to site conditions; it is not proof of the ad offer price.'],
  wins=['The site offers phone, email and WhatsApp contact links.', 'The estimate is explicitly labelled preliminary and subject to site review.'],
- conversion=[('Contact options','Phone, email and WhatsApp links were visible on the separately reviewed homepage.'),('Estimator','Homepage provides a preliminary estimator; calculations and submission were not tested.'),('Actual ad destination','The card showed fb.me; its final click path was not verified.')],
+ conversion=[('Contact options','Homepage shows phone, email, WhatsApp and an enquiry form; delivery was not tested.'),('Estimator','A monthly-bill estimator links to a final site quote. Calculations were not tested.'),('Actual ad destination','The card showed fb.me; its final click path was not verified.')],
  gap=[('Ad promotes a 3 kW offer with subsidy and financing claims.', 'The separate homepage provides an illustrative preliminary estimator. The offer terms and actual ad destination were not verified.')],
  steps=[('Test the ad path','With permission, open the ad on a phone and confirm the final form or chat and enquiry receipt.'),('Verify offer terms','Check subsidy, EMI and warranty terms against the exact promoted package.'),('Test the estimator','Check calculations, mobile usability and the handoff to a final site quote.'),('Check measurement','Verify configured events and attribution in the accounts and browser.')]),
  dict(company='PNR Sunrise Energies', page='PNR Sunrise Energies Pvt Ltd', site='https://sunriseenergies.in/', aid='28807326382303186', started='Nov 12, 2026', dest='WhatsApp shown; final click destination not confirmed',
@@ -41,7 +41,7 @@ DATA = [
  text="A Beautiful Home at Om Sree Gallaxy, Hyderabad by D'LIFE Interiors\n\nFrom bringing their ideas to life to delivering the entire home in just 40 days, D’LIFE made the journey of creating this home seamless and stress-free. With thoughtful designs, meticulous craftsmanship and attention to every detail, the family found a home that was beautifully theirs. And even after handover, D’LIFE’s continued support gave them the assurance that their home was always taken care of.\n\n#BringHappinessInside\n\nIn search of a professional interior design company?\n\nCall: +91 949 508 7777\n\nEmail: enquiry@dlifeinteriors.com\n\nWeb: www.dlifeinteriors.com",
  issues=['The Hyderabad page and embedded map show different Banjara Hills postcodes; confirm the correct address.', 'The ad offers messaging; the final message destination and branch handoff were not verified.', 'The ad describes a project completion time; the underlying project evidence was not checked.'],
  wins=['The ad includes a website, email and phone number.', 'The Hyderabad page provides enquiry links and lists experience centres.'],
- conversion=[('Contact options','The Hyderabad page shows email and WhatsApp links; delivery was not tested.'),('Offer information','The Hyderabad page displays package offers; eligibility and terms were not checked.'),('Ad handoff','The card says Send message; final click destination was not verified.')],
+ conversion=[('Contact options','The Hyderabad page shows email, WhatsApp, callback and estimate options; delivery was not tested.'),('Offer information','The page lists a 2BHK Essential package at Rs 6.37 lakh; eligibility and terms were not checked.'),('Ad handoff','The card says Send message; final click destination was not verified.')],
  gap=[('Ad showcases a Hyderabad home project and a stated completion time.', 'The separately reviewed Hyderabad page describes services and packages. The project claim was not independently verified.')],
  steps=[('Confirm address','Reconcile the Banjara Hills postal code shown in page text and the embedded map.'),('Test messaging','With permission, verify the ad message recipient and branch routing.'),('Review claims','Ensure project timelines and package offers have accurate, clear supporting terms.'),('Check measurement','Verify conversion events and reporting in the appropriate accounts and browser.')]),
  dict(company='Dr Sridhar Dental', page='Dr. Sridhar Foundation', site='https://sridhardental.com/services', aid='1672235477851281', started='Oct 20, 2026', dest='https://sridhardental.com/services (shown on ad card)',
@@ -99,6 +99,21 @@ PUBLIC_OBSERVATIONS = {
    'google_domain':'galaxydentalcare.in',
    'google':'India domain search returned approximately 300 ads for Any time. Sample Galaxy creatives identify verified advertiser Jaydeep, not Galaxy as the advertiser. This is not a live count; source timing needs recheck.'},
 }
+# Observations from the fetched page view and sitemap files, not an index
+# coverage report or a browser interaction. Date conflicts remain on hold.
+PAGE_DETAILS = {
+ 'SunSolar Power Systems': {'h1': 'Power Your Future with the Sun (page view)',
+     'sitemap': 'robots.txt read; no Sitemap directive shown. Sitemap URL fetch failed; indexing unknown.'},
+ 'PNR Sunrise Energies': {'h1': 'Power Your Future. Naturally. (page view)',
+     'sitemap': 'robots.txt and sitemap.xml fetch attempts failed; indexing unknown.'},
+ 'DLIFE Home Interiors': {'h1': "Interior Designers in Hyderabad - D'LIFE Interiors (page view)",
+     'sitemap': 'robots.txt links a sitemap index; actual Google indexing not checked.'},
+ 'Dr Sridhar Dental': {'h1': 'Services (rendered page view; HTML shell differs)',
+     'sitemap': 'sitemap.xml lists service and booking URLs; actual Google indexing not checked.'},
+ 'Galaxy Dental Care': {'h1': 'Contact Us (page view)',
+     'sitemap': 'robots.txt links a sitemap index; actual Google indexing not checked.'},
+}
+
 COMPETITOR_SAMPLES = {
  'SunSolar Power Systems': ('SolarSquare Energy', '1472241928117694', 'Oct 13, 2026', 'The ad discusses rooftop solar affordability; the card mentions Hyderabad and a money-back guarantee.'),
  'PNR Sunrise Energies': ('SolarSquare Energy', '1472241928117694', 'Oct 13, 2026', 'The ad discusses rooftop solar affordability; its consumer message is not equivalent to a channel-partner recruitment campaign.'),
@@ -223,12 +238,14 @@ def build(d):
     px = dict.fromkeys(TRACKING)
     facts = PUBLIC_OBSERVATIONS[d['company']]
     seo = dict.fromkeys(SEO)
+    details = PAGE_DETAILS[d['company']]
     seo.update({'has_title': True, 'title_text': facts['title'], 'has_meta_description': facts['description'],
-                'has_og_tags': facts['og'], 'has_schema': facts.get('schema')})
+                'has_og_tags': facts['og'], 'has_schema': facts.get('schema'),
+                'h1_observation': details['h1'], 'h1_observation_source': d['site']})
     site = {'ssl':True, 'load_time_seconds':None, 'final_url':d['site'], 'audit_date':DATE,
             'pixels':px, 'tracking_source_observations':facts['tags'],
             'conversion':dict.fromkeys(CONV), 'seo':seo,
-            'pagespeed':{'error':'not measured for this site'}, 'page_count':{'has_sitemap':None},
+            'pagespeed':{'error':'not measured for this site'}, 'page_count':{'has_sitemap':None, 'note':details['sitemap']},
             'local_signals':{'has_google_maps_embed':facts.get('maps')},
             'conversion_evidence':{'checked_on':DATE, 'method':'Public page text; no interaction.', 'sources':[d['site']], 'rows':d['conversion']},
             'score':{'score':None, 'issues':d['issues'], 'wins':d['wins']}}

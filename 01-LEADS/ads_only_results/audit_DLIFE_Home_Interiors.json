@@ -76,13 +76,16 @@
       "has_schema": true,
       "has_favicon": null,
       "image_count": null,
-      "images_without_alt": null
+      "images_without_alt": null,
+      "h1_observation": "Interior Designers in Hyderabad - D'LIFE Interiors (page view)",
+      "h1_observation_source": "https://dlifeinteriors.com/location/hyderabad/"
     },
     "pagespeed": {
       "error": "not measured for this site"
     },
     "page_count": {
-      "has_sitemap": null
+      "has_sitemap": null,
+      "note": "robots.txt links a sitemap index; actual Google indexing not checked."
     },
     "local_signals": {
       "has_google_maps_embed": true
@@ -96,11 +99,11 @@
       "rows": [
         [
           "Contact options",
-          "The Hyderabad page shows email and WhatsApp links; delivery was not tested."
+          "The Hyderabad page shows email, WhatsApp, callback and estimate options; delivery was not tested."
         ],
         [
           "Offer information",
-          "The Hyderabad page displays package offers; eligibility and terms were not checked."
+          "The page lists a 2BHK Essential package at Rs 6.37 lakh; eligibility and terms were not checked."
         ],
         [
           "Ad handoff",

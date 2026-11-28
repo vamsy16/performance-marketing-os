@@ -39,6 +39,14 @@ Direct competitor ad samples were separately fetched: [SolarSquare 1472241928117
 
 A direct Python `requests.get` test of all five website URLs and each of the five direct Meta ad URLs returned TLS EOF in the sandbox. This is a connectivity test, not a `verify_live.py` run or passing verification. Page-fetch responses are not a substitute for the repository's required live verifier.
 
+## First-batch comparison and extra checks
+
+The Ksquare reference and `build_batch10_ksquare.py` use the shared five-page story, public ad cards, direct page views and Nu source to populate website, conversion and technical checks. Batch 10 also left PageSpeed, server timing and other unmeasured fields unchecked. The five present drafts remain more limited: they use one ad card per business, conservative rendering overrides and ungraded controls, and do not yet satisfy the full standard or independent review.
+
+A fresh page-fetch pass supplied the visible H1 heading for each reviewed page, now distinguished from an HTML H1 count; Sridhar's heading is rendered in the page view whereas Nu shows an HTML shell. SunSolar's robots file contains no sitemap directive and its sitemap fetch failed; PNR's robots and sitemap fetch attempts failed. D'LIFE and Galaxy robots files point to sitemap indexes; Sridhar's sitemap lists service and booking URLs. A sitemap is not evidence that pages are indexed. The D'LIFE and Galaxy indexes include future last-modified dates relative to the session date, so all source timing remains on hold. New PDF fields explicitly state these limits.
+
+The full live verifier was rerun after this update: exit 2, MATCH 0 / DRIFT 0 / UNREACHABLE 5. No independent review was performed; the automated report verifier and regression tests passed. These results do not establish that the drafts match the first batch's completeness or are safe to send.
+
 ## Safe route to completion
 
 1. Use a machine/runner that can access the five sites, direct Meta Ad Library pages and relevant verification services with a trustworthy clock. Recheck site/ad identity, ad activity and duplicate status before creating audits.

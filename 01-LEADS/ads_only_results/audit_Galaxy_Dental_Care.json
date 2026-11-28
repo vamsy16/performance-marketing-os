@@ -75,13 +75,16 @@
       "has_schema": null,
       "has_favicon": null,
       "image_count": null,
-      "images_without_alt": null
+      "images_without_alt": null,
+      "h1_observation": "Contact Us (page view)",
+      "h1_observation_source": "https://galaxydentalcare.in/contact-us/"
     },
     "pagespeed": {
       "error": "not measured for this site"
     },
     "page_count": {
-      "has_sitemap": null
+      "has_sitemap": null,
+      "note": "robots.txt links a sitemap index; actual Google indexing not checked."
     },
     "local_signals": {
       "has_google_maps_embed": true

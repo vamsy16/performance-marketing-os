@@ -75,13 +75,16 @@
       "has_schema": null,
       "has_favicon": null,
       "image_count": null,
-      "images_without_alt": null
+      "images_without_alt": null,
+      "h1_observation": "Power Your Future with the Sun (page view)",
+      "h1_observation_source": "https://www.sunsolar.info/"
     },
     "pagespeed": {
       "error": "not measured for this site"
     },
     "page_count": {
-      "has_sitemap": null
+      "has_sitemap": null,
+      "note": "robots.txt read; no Sitemap directive shown. Sitemap URL fetch failed; indexing unknown."
     },
     "local_signals": {
       "has_google_maps_embed": null
@@ -95,11 +98,11 @@
       "rows": [
         [
           "Contact options",
-          "Phone, email and WhatsApp links were visible on the separately reviewed homepage."
+          "Homepage shows phone, email, WhatsApp and an enquiry form; delivery was not tested."
         ],
         [
           "Estimator",
-          "Homepage provides a preliminary estimator; calculations and submission were not tested."
+          "A monthly-bill estimator links to a final site quote. Calculations were not tested."
         ],
         [
           "Actual ad destination",
