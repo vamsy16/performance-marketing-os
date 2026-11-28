@@ -204,17 +204,25 @@ def meta_search(page, query, country="IN", max_ads=6):
 
 
 def name_matches(company, page_name):
-    """True if a Meta page name plausibly belongs to the audited company."""
+    """True if a Meta page name plausibly belongs to the audited company.
+
+    Local advertisers often concatenate the brand with a city
+    ("SunSolar Power Systems" -> page "SunSolarhyd"), so token equality alone
+    misses real ads.  Check significant-token substrings as well, while still
+    dropping generic solar-industry words that would match everything.
+    """
     def norm(s):
         s = re.sub(r"[^a-z0-9 ]", " ", (s or "").lower())
         drop = {"pvt", "ltd", "private", "limited", "co", "company", "the", "solar",
-                "energy", "power", "systems", "india", "indian"}
-        return {w for w in s.split() if w and w not in drop and len(w) > 1}
+                "energy", "power", "systems", "india", "indian", "hyd"}
+        return {w for w in s.split() if w and w not in drop and len(w) > 2}
 
     a, b = norm(company), norm(page_name)
     if not a or not b:
         return False
-    return len(a & b) >= 1 or a <= b or b <= a
+    if len(a & b) >= 1 or a <= b or b <= a:
+        return True
+    return any(x in y or y in x for x in a for y in b)
 
 
 # ---------------------------------------------------------------------------
@@ -363,12 +371,43 @@ def run_research(company, city="", website="", competitors=3, with_images=True):
         page = ctx.new_page()
 
         print(f"  [meta] searching own ads: '{company}'")
-        meta_own = meta_search(page, company, max_ads=5)
-        own_ads = [a for a in meta_own["ads"] if name_matches(company, a.get("page_name", "")) or not a.get("page_name")]
-        meta_own["ads"] = own_ads if own_ads else meta_own["ads"][:2]
-        meta_own["found"] = bool(meta_own["results_count"]) and bool(own_ads)
+        meta_own = meta_search(page, company, max_ads=10)
+        # A keyword search ranks by impressions and mixes in unrelated
+        # advertisers. Search the exact page name of every plausible match so
+        # the report captures the advertiser's whole live catalogue instead of
+        # whichever single card happened to rank first.
+        candidates = []
+        for a in meta_own.get("ads", []):
+            pn = (a.get("page_name") or "").strip()
+            if pn and name_matches(company, pn) and pn.lower() not in [c.lower() for c in candidates]:
+                candidates.append(pn)
+        merged = {}
+        for a in meta_own.get("ads", []):
+            key = a.get("library_id") or (a.get("page_name", "") + "|" + a.get("text", "")[:60])
+            merged.setdefault(key, a)
+        for pn in candidates[:3]:
+            extra = meta_search(page, pn, max_ads=10)
+            if extra.get("error"):
+                meta_own["error"] = (meta_own.get("error", "") + " " + extra["error"]).strip()
+            for a in extra.get("ads", []):
+                key = a.get("library_id") or (a.get("page_name", "") + "|" + a.get("text", "")[:60])
+                merged.setdefault(key, a)
+            meta_own["results_count"] = max(meta_own.get("results_count", 0),
+                                            extra.get("results_count", 0))
+        own_ads = [a for a in merged.values() if (a.get("page_name") or "").strip()]
+        if candidates:
+            allowed = {c.lower() for c in candidates}
+            own_ads = [a for a in own_ads
+                       if a["page_name"].strip().lower() in allowed
+                       or any(name_matches(c, a["page_name"]) for c in candidates)]
+        meta_own["ads"] = own_ads
+        meta_own["found"] = bool(own_ads)
+        meta_own["candidate_pages"] = candidates
+        if meta_own.get("error"):
+            meta_own["status"] = "unreachable"
         result["meta_own"] = meta_own
-        print(f"    -> {meta_own['results_label'] or 'no results'}, {len(meta_own['ads'])} ad cards parsed")
+        print(f"    -> {meta_own['results_label'] or 'no results'}, "
+              f"{len(own_ads)} attributed ad cards parsed")
 
         comp_query = f"solar {city}".strip() if city else "solar company"
         print(f"  [meta] searching competitor ads: '{comp_query}'")
@@ -398,8 +437,14 @@ def run_research(company, city="", website="", competitors=3, with_images=True):
 
         print(f"  [google] searching advertisers: '{company}'")
         g_own = google_search_advertisers(page, company)
+        if g_own.get("error"):
+            result["google_own"]["error"] = g_own["error"]
+            result["google_own"]["status"] = "unreachable"
         if domain:
             g_own_dom = google_search_advertisers(page, domain)
+            if g_own_dom.get("error"):
+                result["google_own"]["error"] = (result["google_own"].get("error", "")
+                                                 + " " + g_own_dom["error"]).strip()
             seen = {a["name"].lower() for a in g_own["advertisers"]}
             g_own["advertisers"] += [a for a in g_own_dom["advertisers"] if a["name"].lower() not in seen]
         matched = [a for a in g_own["advertisers"] if name_matches(company, a["name"])]
@@ -412,6 +457,8 @@ def run_research(company, city="", website="", competitors=3, with_images=True):
             result["google_own"]["detail"] = detail
             result["google_own"]["found"] = bool(detail.get("ad_count"))
             print(f"    -> {detail.get('ad_count', 0)} ads")
+        elif result["google_own"].get("error"):
+            print("    -> Google Transparency source unreachable; not claiming no ads")
         else:
             print("    -> no advertiser match (likely not running Google ads)")
             result["notes"].append(
@@ -475,10 +522,13 @@ def run_research(company, city="", website="", competitors=3, with_images=True):
 
         browser.close()
 
-    total_meta = result["meta_own"]["results_count"] + result["meta_competitors"]["results_count"]
     if not result["meta_own"]["found"]:
-        result["notes"].append("No active Meta (Facebook/Instagram) ads found for this company.")
-    if not result["google_own"]["found"]:
+        if result["meta_own"].get("error"):
+            result["notes"].append("Meta Ad Library was unreachable in this pass; "
+                                   "no ad absence claim is made.")
+        else:
+            result["notes"].append("No active Meta (Facebook/Instagram) ads found for this company.")
+    if not result["google_own"]["found"] and not result["google_own"].get("error"):
         result["notes"].append("No active Google ads found for this company.")
     result["summary"] = build_summary(result, company, city)
     return result
@@ -488,7 +538,8 @@ def build_summary(data, company, city):
     """One-paragraph executive summary of ad activity."""
     meta_n = data["meta_own"].get("results_count", 0)
     g_detail = data["google_own"].get("detail") or {}
-    g_n = g_detail.get("ad_count", 0)
+    g_n = g_detail.get("ad_count")
+    g_n = 0 if g_n is None else g_n
     comp_meta = data["meta_competitors"].get("results_count", 0)
     comp_google = len(data["google_competitors"].get("advertisers", []))
 

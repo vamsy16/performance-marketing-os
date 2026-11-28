@@ -33,6 +33,7 @@ EXIT CODES
     1   at least one DRIFT -- re-run the pipeline for the affected leads
     2   at least one UNREACHABLE -- could not verify, do not deliver
     3   nothing to check
+    4   --offline consistency only -- NOT a live pass, do not deliver
 
 HARD RULES BUILT INTO THIS SCRIPT
     * It never invents a value to make a check pass.  A comparison that
@@ -65,6 +66,7 @@ except ImportError:  # pragma: no cover - dependency guard
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ADS_ONLY_DIR = os.path.join(BASE_DIR, "ads_only_results")
+FULL_DIR = os.path.join(BASE_DIR, "audit_results")
 
 # The same identity the pipeline uses, so we are not blocked as a bare bot.
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -74,17 +76,19 @@ W3C_VALIDATOR = "https://validator.w3.org/nu/?doc={url}&out=json"
 
 MATCH, DRIFT, UNREACHABLE, NOT_CLAIMED = "MATCH", "DRIFT", "UNREACHABLE", "NOT_CLAIMED"
 
-# Tracking signatures -- kept deliberately identical in spirit to
-# ads_audit.check_tracking_pixels() so a re-check means the same thing.
+# Tracking signatures -- byte-for-byte the same rules as
+# ads_audit.check_tracking_pixels(). A different regex here would report DRIFT
+# against a figure the audit never claimed (e.g. generic gtag/js is recorded as
+# GA4 by the audit but is not a GTM container).
 PIXEL_SIGNATURES = [
-    ("meta_pixel", r"connect\.facebook\.net|fbq\s*\(|facebook-pixel"),
-    ("google_ads", r"googleadservices\.com|AW-\d{9,}|gtag/js\?id=AW-"),
-    ("google_analytics_ga4", r"G-[A-Z0-9]{8,}"),
-    ("google_analytics_ua", r"UA-\d{4,}-\d+"),
-    ("linkedin_insight", r"_linkedin_partner_id|snap\.licdn\.com"),
+    ("meta_pixel", r"fbq\(|facebook\.com/tr|connect\.facebook\.net"),
+    ("google_ads", r"googletagmanager\.com/gtag/js|AW-\d{9,}"),
+    ("google_analytics_ga4", r"gtag/js\?id=g-|googletagmanager\.com/gtag/js"),
+    ("google_analytics_ua", r"google-analytics\.com/analytics\.js|UA-\d{4,}-\d+"),
+    ("linkedin_insight", r"snap\.licdn\.com|linkedin\.com/px"),
     ("microsoft_clarity", r"clarity\.ms"),
-    ("hotjar", r"static\.hotjar\.com|hjSiteSetting"),
-    ("google_tag_manager", r"googletagmanager\.com/gtag/js|GTM-[A-Z0-9]{5,}|googletagmanager\.com/gtm\.js"),
+    ("hotjar", r"hotjar\.com|hj\("),
+    ("google_tag_manager", r"googletagmanager\.com/gtm\.js|GTM-[A-Z0-9]{5,}"),
 ]
 
 GA4_ID_RE = re.compile(r"\bG-[A-Z0-9]{10}\b")
@@ -127,6 +131,39 @@ def fetch_html(url, timeout=15, retries=1):
     if r.status_code >= 400:
         return None, getattr(r, "url", url), "HTTP %s" % r.status_code
     return r.text, r.url, ""
+
+
+def fetch_html_browser(url, timeout=30):
+    """Fetch a browser-rendered page (Meta Ad Library blocks bare requests).
+
+    The Ad Library returns a JavaScript challenge to `requests` (HTTP 403).
+    Treating that as "unreachable" would make gate 3 fail on every genuinely
+    live report, so use the same Chrome channel the pipeline uses.
+    """
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError as exc:
+        return None, None, "playwright unavailable: %s" % exc
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True, channel="chrome",
+                                        args=["--no-sandbox"])
+            ctx = browser.new_context(user_agent=UA, locale="en-US")
+            page = ctx.new_page()
+            page.goto(url, timeout=int(timeout * 1000), wait_until="domcontentloaded")
+            page.wait_for_timeout(3500)
+            html = page.content()
+            # The Ad Library sometimes paints the card shell before the
+            # "Started running" line. Waiting once more avoids a false DRIFT
+            # against a start date that is actually live on the card.
+            if "Started running" not in html:
+                page.wait_for_timeout(3500)
+                html = page.content()
+            final_url = page.url
+            browser.close()
+        return html, final_url, ""
+    except Exception as exc:  # noqa: BLE001 - any failure is unreachable
+        return None, None, "%s: %s" % (type(exc).__name__, exc)
 
 
 # ---------------------------------------------------------------------------
@@ -214,7 +251,10 @@ def check_ad(ad, timeout, retries):
     stored_started = normalise_space((ad or {}).get("started"))
     stored_dest = text_of((ad or {}).get("destination"))
 
-    html, final_url, err = fetch_html(url, timeout=timeout, retries=retries)
+    if "facebook.com/ads/library" in url:
+        html, final_url, err = fetch_html_browser(url, timeout=timeout)
+    else:
+        html, final_url, err = fetch_html(url, timeout=timeout, retries=retries)
 
     if html is None:
         results.append(dict(
@@ -226,22 +266,31 @@ def check_ad(ad, timeout, retries):
     has_id = lib_id in html or lib_id in body
     has_page = bool(stored_page) and stored_page.lower() in body.lower()
 
-    # A login wall or an empty shell carries neither the id nor the page
-    # name.  Treat that as unreachable, never as a pass.
-    if not has_id and not has_page:
+    # Both signals are required by the live-data-auditor contract. A login
+    # wall echoing the id alone is not proof that this advertiser still runs
+    # this ad.
+    if not has_id:
         results.append(dict(
             check="ad.live", verdict=UNREACHABLE,
-            detail="fetched %s but the response carries neither library id %s "
-                   "nor page name '%s' -- likely a login wall, so ad liveness "
-                   "is NOT confirmed" % (url, lib_id, stored_page)))
+            detail="fetched %s but the live response does not carry library id %s "
+                   "-- ad liveness is NOT confirmed" % (url, lib_id)))
         return results
 
     results.append(dict(check="ad.live", verdict=MATCH,
                         detail="library id %s still resolves on the live Ad Library" % lib_id))
 
-    if has_page and stored_page:
-        results.append(dict(check="ad.page_name", verdict=MATCH,
-                            detail="page name still '%s'" % stored_page))
+    if stored_page:
+        if has_page:
+            results.append(dict(check="ad.page_name", verdict=MATCH,
+                                detail="page name still '%s'" % stored_page))
+        else:
+            results.append(dict(
+                check="ad.page_name", verdict=UNREACHABLE,
+                detail="library id resolves but stored page name '%s' is absent -- "
+                       "ad may have been misattributed; identity NOT confirmed" % stored_page))
+    else:
+        results.append(dict(check="ad.page_name", verdict=NOT_CLAIMED,
+                            detail="no page name stored for this ad; identity not claimed"))
 
     if stored_started:
         if stored_started.lower() in body.lower():
@@ -253,8 +302,11 @@ def check_ad(ad, timeout, retries):
                 detail="stored start date '%s' is not present on the live card -- "
                        "the ad may have been restarted or re-dated" % stored_started))
 
-    # Destination: only ever confirmed by a source that states one.
-    if "not confirmed" in stored_dest.lower() or blank(stored_dest):
+    # Destination: only ever confirmed by a source that states one.  Cover
+    # every phrase this repo has used for "unknown", not just "not confirmed".
+    unconfirmed_markers = ("not confirmed", "not verified", "unknown", "pending",
+                           "fb.me", "whatsapp", "not captured")
+    if blank(stored_dest) or any(m in stored_dest.lower() for m in unconfirmed_markers):
         results.append(dict(
             check="ad.destination", verdict=NOT_CLAIMED,
             detail="stored as not confirmed; this script will not upgrade it to a "
@@ -275,6 +327,12 @@ def check_site(audit, timeout, retries):
     """Re-fetch the lead's website and re-measure the stored site facts."""
     results = []
     site = audit.get("site_audit") or {}
+    if not site:
+        # Full audits keep their website facts at the top level; ads-only
+        # records nest them under site_audit. Support both shapes.
+        site = {k: audit.get(k) for k in
+                ("final_url", "seo", "pixels", "html_errors", "platform", "score")
+                if k in audit}
     website = text_of(audit.get("website")).strip()
     if not website:
         results.append(dict(check="site.url", verdict=NOT_CLAIMED,
@@ -583,13 +641,21 @@ def check_outreach_consistency(audit):
 # ---------------------------------------------------------------------------
 
 def load_reports(names=None, latest=0):
-    paths = sorted(glob.glob(os.path.join(ADS_ONLY_DIR, "audit_*.json")))
+    # Gate 3 promises to re-verify EVERY report, not just ads-only ones.
+    paths = sorted(glob.glob(os.path.join(ADS_ONLY_DIR, "audit_*.json")) +
+                   glob.glob(os.path.join(FULL_DIR, "audit_*.json")))
     if names:
         wanted = [n.strip().lower() for n in names if n.strip()]
-        paths = [p for p in paths
-                 if any(w in os.path.basename(p).lower() or
-                        w in text_of(json.load(open(p, encoding="utf-8")).get("company")).lower()
-                        for w in wanted)]
+        kept = []
+        for path in paths:
+            try:
+                with open(path, encoding="utf-8") as fh:
+                    company = text_of(json.load(fh).get("company")).lower()
+            except Exception:
+                company = ""
+            if any(w in os.path.basename(path).lower() or w in company for w in wanted):
+                kept.append(path)
+        paths = kept
     if latest:
         paths = sorted(paths, key=lambda p: (os.path.getmtime(p), p), reverse=True)[:latest]
     return paths
@@ -614,6 +680,16 @@ def verify_one(path, timeout, retries, do_network=True):
     results.extend(check_outreach_consistency(audit))
 
     verdicts = [r["verdict"] for r in results]
+    if do_network:
+        live_confirmations = [r for r in results if r["verdict"] == MATCH and
+                              r["check"] in ("ad.live", "site.live")]
+        if not live_confirmations:
+            results.append(dict(
+                check="live.evidence", verdict=UNREACHABLE,
+                detail="no live ad or website claim was confirmed — nothing was "
+                       "re-verified, so this report is NOT deliverable"))
+            verdicts.append(UNREACHABLE)
+
     if DRIFT in verdicts:
         overall = DRIFT
     elif UNREACHABLE in verdicts:
@@ -676,9 +752,11 @@ def main(argv=None):
     else:
         if args.offline:
             print("RESULT: OFFLINE CONSISTENCY CHECKS MATCH -- live recheck still required.")
+            print("        OFFLINE IS NOT A PASS: run without --offline before delivery.")
+            code = 4
         else:
             print("RESULT: ALL LIVE CHECKS MATCH -- independent report review still required.")
-        code = 0
+            code = 0
     print("=" * 70)
 
     if args.json_out:

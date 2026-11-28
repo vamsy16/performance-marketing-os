@@ -21,6 +21,7 @@ import json
 import os
 import re
 import sys
+from datetime import datetime
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -38,6 +39,40 @@ BRAND_PHONE_TAIL = os.environ.get("SP_PHONE", "+91 70950 24220").replace("+91 ",
 HEADER_LABEL = "ADS AUDIT REPORT"
 
 SOCIAL_WEBSITE_RE = re.compile(r"facebook\.com|fb\.me|instagram\.com|whatsapp\.com", re.I)
+
+# A PDF carrying any of these is an internal hold, never a deliverable.
+# The attached-style "INTERNAL DRAFT / NOT SCORED / sample" reports must fail
+# this gate instead of passing on branding and section headings alone.
+FORBIDDEN_DELIVERY_MARKERS = (
+    "INTERNAL DRAFT",
+    "DO NOT SEND",
+    "NOT FOR CLIENT DELIVERY",
+    "NOT FOR OUTREACH",
+    "REVIEW PENDING",
+    "REVIEW AND LIVE RECHECK PENDING",
+    "SCORE NOT ASSIGNED",
+    "NOT SCORED",
+    "SOURCE DATE NOT VERIFIED",
+    "CURRENT STATUS IS NOT VERIFIED",
+)
+
+
+def _valid_date(value):
+    if not value:
+        return False
+    text = str(value).strip()
+    try:
+        datetime.fromisoformat(text.replace("Z", "+00:00"))
+        return True
+    except ValueError:
+        pass
+    for fmt in ("%Y-%m-%d %H:%M", "%Y-%m-%d", "%d %b %Y"):
+        try:
+            datetime.strptime(text, fmt)
+            return True
+        except ValueError:
+            continue
+    return False
 
 
 def slug(name):
@@ -71,6 +106,12 @@ def check_json(audit, errs):
         errs.append("JSON: missing company name")
     if not audit.get("audit_date") and not audit.get("discovery"):
         errs.append("JSON: missing audit_date (stale/templated data?)")
+    if audit.get("audit_date") and not _valid_date(audit["audit_date"]):
+        errs.append(f"JSON: audit_date is not a real date ('{audit['audit_date']}')")
+    if audit.get("review_pending"):
+        errs.append("JSON: review_pending=true — internal draft, not deliverable")
+    if audit.get("error"):
+        errs.append(f"JSON: website audit error stored in report ({audit['error']})")
 
     website = audit.get("website") or ""
     if SOCIAL_WEBSITE_RE.search(website):
@@ -87,6 +128,14 @@ def check_json(audit, errs):
         errs.append("JSON: ad_library missing - PDF would show NO live ad data. "
                     "Re-run ad_library.py / discover_leads.py")
         return
+    for key in ("meta_own", "google_own", "meta_competitors", "google_competitors"):
+        part = adlib.get(key) or {}
+        if part.get("error") or part.get("status") == "unreachable":
+            errs.append(f"JSON: {key} source unreachable ({part.get('error')}) - "
+                        "no absence claim may be rendered")
+    if not ((adlib.get("meta_own") or {}).get("ads") or []):
+        errs.append("JSON: no live own ads captured - a zero-Live-ad lead must "
+                    "not get an audit PDF (owner rule)")
     if not adlib.get("summary"):
         errs.append("JSON: ad_library.summary missing (executive summary would be generic)")
     meta_own = adlib.get("meta_own") or {}
@@ -134,6 +183,10 @@ def check_pdf(audit, pdf_path, errs):
 
     text = " ".join((p.extract_text() or "") for p in reader.pages)
     flat = " ".join(text.split())
+
+    for marker in FORBIDDEN_DELIVERY_MARKERS:
+        if marker in flat.upper():
+            errs.append(f"PDF: internal-draft marker '{marker}' — hold, do not deliver")
 
     for needle, label in [
         (BRAND_NAME, "brand name 'Vamsi'"),
@@ -207,6 +260,13 @@ DEMO_PLACEHOLDERS = ("TBD", "TODO", "Lorem ipsum", "sample data", "demo data",
 def check_ads_only_json(audit, errs):
     if not audit.get("ads_only"):
         errs.append("JSON: ads_only flag missing - is this really an ads-only report?")
+    if audit.get("review_pending"):
+        errs.append("JSON: review_pending=true — internal draft, not deliverable")
+    if audit.get("error"):
+        errs.append(f"JSON: website audit error stored in report ({audit['error']})")
+    for key in ("checked_on", "audit_date"):
+        if audit.get(key) and not _valid_date(audit[key]):
+            errs.append(f"JSON: {key} is not a real date ('{audit[key]}')")
     # A live website audit is legitimate - but only when its data is attached,
     # and it must stay nested under 'site_audit' so the record never looks like
     # a full-audit JSON.
@@ -238,6 +298,13 @@ def check_ads_only_json(audit, errs):
     if not adlib:
         errs.append("JSON: ad_library missing")
         return
+    for key in ("meta_own", "google_own", "meta_competitors", "google_competitors"):
+        part = adlib.get(key) or {}
+        if part.get("error") or part.get("status") == "unreachable":
+            errs.append(f"JSON: {key} source unreachable ({part.get('error')}) - "
+                        "no absence claim may be rendered")
+    if not ((adlib.get("meta_own") or {}).get("ads") or []):
+        errs.append("JSON: no live own ads captured — nothing to audit, no PDF allowed")
     if not adlib.get("summary"):
         errs.append("JSON: ad_library.summary missing")
     meta_own = adlib.get("meta_own") or {}
@@ -288,6 +355,10 @@ def check_ads_only_pdf(audit, pdf_path, errs):
 
     text = " ".join((p.extract_text() or "") for p in reader.pages)
     flat = " ".join(text.split())
+
+    for marker in FORBIDDEN_DELIVERY_MARKERS:
+        if marker in flat.upper():
+            errs.append(f"PDF: internal-draft marker '{marker}' — hold, do not deliver")
 
     for needle, label in [
         (BRAND_NAME, "brand name"),

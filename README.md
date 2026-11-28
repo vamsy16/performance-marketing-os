@@ -57,22 +57,33 @@ That's it. You're now a solar marketing agency.
 the standing format rule (reference: `audit_Ksquare_Energy.pdf`) and the
 section-by-section template every new audit must match.
 
+For a current, fully gated worked example, give an agent
+`EXAMPLE_AUDIT_REFERENCE.md` together with
+`02-OUTREACH/audit_pdfs/audit_SunSolar_Power_Systems.pdf`. That reference shows
+the live-ad attribution, honest PageSpeed handling, Smart Pursuit branding,
+verification table, and the exact commands every new report must pass.
+
 Each report kind has its own outreach path — `audit_outreach.py --export` for
 full audits, `ads_only_outreach.py --export` for live-ad reports. Both write
 the same `sequence_manifest.json` (4 steps per lead), and every sequence is
 tagged `report_kind` so the Gmail workflow knows which PDF to attach.
 
-Always gate before delivering: `python 01-LEADS/verify_report.py --all` for full
-reports, `python 01-LEADS/verify_report.py --ads-only` for the live-ad ones.
+Always gate before delivering, from `01-LEADS/`:
 
-Then run the **third check** — `python 01-LEADS/verify_live.py` — which re-fetches
-the live Meta Ad Library and the lead's live website and confirms every stored
-figure is still real, live data. The first two gates only compare files against
-each other; this one goes to the source.
+1. `python verify_report.py --all` (full) and `--ads-only` (live-ad reports) —
+   structural honesty gate. It now rejects internal-draft markers, held
+   reports, unreachable sources, and zero-ad reports.
+2. `python delivery_gate.py "<Company>"` — completeness gate. Proves the report
+   is fresh, has a numeric score and attributed live ads, and was actually
+   built by the repo pipeline. A hand-rolled PDF fails here.
+3. `python verify_live.py --company "<Company>"` — third check. Re-fetches the
+   live Meta Ad Library through Chrome and the lead's live website and confirms
+   every stored figure is still real, live data. `--offline` is only a
+   consistency check (exit 4) and is **not** a pass.
 
 **`AGENTS.md` at the repo root is the standing contract for every agent working
 here** — format rules, real-data rules, lead qualification, Gmail rules, and the
-three gates. Read it first.
+gates. Read it first.
 
 ---
 

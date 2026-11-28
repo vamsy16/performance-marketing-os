@@ -20,16 +20,21 @@ Run from `01-LEADS/`:
 
 ```
 python verify_report.py --all
+python verify_report.py --ads-only
+python delivery_gate.py --latest
 ```
 
-(Or `--latest` / a company name for a single report.) Exit code 0 = pass.
-Every `x` line is a defect. If it fails, list each defect — do NOT pass the
-report.
+Exit code 0 on **all three** = pass. Every `x` line is a defect. If any fails,
+list each defect — do NOT pass the report. The delivery gate is what catches
+hand-rolled/internal drafts that the structural verifier used to let through.
 
 ## Step 2 — Content review (mandatory)
 
-For each report, read the audit JSON (`01-LEADS/audit_results/audit_*.json`)
-and extract the PDF text with pypdf. Check:
+For each report, read the audit JSON from **both**
+`01-LEADS/audit_results/audit_*.json` and
+`01-LEADS/ads_only_results/audit_*.json`, plus its PDF from the matching
+`02-OUTREACH/audit_pdfs/` or `02-OUTREACH/ads_only_pdfs/` folder. Extract the
+PDF text with pypdf. Check:
 
 1. **Branding**: Vamsi / Smart Pursuit / +91 70950 24220 / "ADS AUDIT REPORT"
    in header and footer. No "YOUR NAME", no "Website & Ads Audit", no white
@@ -53,6 +58,13 @@ and extract the PDF text with pypdf. Check:
 8. **Staleness**: `audit_date`/`checked_at` should be today for a fresh run.
    A report delivered with week-old ad data FAILS — tell the operator to
    re-run `discover_leads.py` or `run_pipeline.py`.
+9. **Draft/provenance**: no `INTERNAL DRAFT`, `DO NOT SEND`, `NOT SCORED`,
+   `SCORE NOT ASSIGNED`, `SOURCE DATE NOT VERIFIED`, `review_pending`, or
+   missing `provenance.generator`. Any one = FAIL. One ad card described as
+   "a sample" with all controls UNKNOWN is a hold, not a full audit.
+10. **Ad completeness**: the number of Library IDs in the PDF must equal the
+    number of stored own ads. If the live library shows more ads from the same
+    advertiser than the report captured, FAIL and re-run.
 
 ## Step 3 — Verdict
 

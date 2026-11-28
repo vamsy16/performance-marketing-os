@@ -26,10 +26,9 @@ that was live last week and is wrong today. That is your job.
 From `01-LEADS/`:
 
 ```
-python verify_live.py --offline          # consistency only, no network
-python verify_live.py                    # full live re-verification
-python verify_live.py --company "Varna Solar Pvt. Ltd."
-python verify_live.py --latest 5
+python verify_live.py --company "Varna Solar Pvt. Ltd."   # full live re-verification
+python verify_live.py --latest 1
+python verify_live.py --offline          # consistency only — NOT a pass
 ```
 
 If requests/bs4 are missing: `pip install -r 01-LEADS/requirements.txt`.
@@ -46,7 +45,10 @@ Every line is one of four verdicts. **Only `MATCH` is a pass.**
 | `NOT_CLAIMED` | the report itself says the value was never read | nothing to verify; confirm the report still shows it as "not checked" |
 
 **Exit codes:** `0` all matched · `1` at least one DRIFT · `2` at least one
-UNREACHABLE · `3` nothing to check. Do not accept a non-zero exit.
+UNREACHABLE · `3` nothing to check · `4` offline consistency only (**not** a
+live pass). Do not accept a non-zero exit. The script loads the Ad Library in
+Chrome because a bare `requests` GET returns a 403 challenge — if Chrome is
+unavailable, report UNREACHABLE, never a false MATCH.
 
 ## Step 3 — What the verifier re-fetches, and what it cannot
 

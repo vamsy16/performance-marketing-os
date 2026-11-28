@@ -1,0 +1,276 @@
+{
+  "company": "SunSolar Power Systems",
+  "city": "Hyderabad",
+  "website": "https://www.sunsolar.info/",
+  "audit_date": "2026-11-28 18:26",
+  "ssl": true,
+  "load_time_seconds": 0.71,
+  "pixels": {
+    "meta_pixel": false,
+    "google_ads": true,
+    "google_analytics_ga4": true,
+    "google_analytics_ua": false,
+    "linkedin_insight": false,
+    "microsoft_clarity": false,
+    "hotjar": false,
+    "google_tag_manager": false
+  },
+  "conversion": {
+    "has_contact_form": true,
+    "has_phone_click": true,
+    "has_whatsapp_link": true,
+    "has_cta_buttons": 9,
+    "has_live_chat": false,
+    "has_popup_optin": false,
+    "has_testimonials": true,
+    "has_pricing_page_link": true
+  },
+  "seo": {
+    "has_title": true,
+    "title_text": "SunSolar Power Systems | Premium Rooftop Solar in Hyderabad",
+    "title_length": 59,
+    "has_meta_description": true,
+    "meta_desc_length": 142,
+    "h1_count": 1,
+    "h1_text": "Power Your Futurewith the Sun",
+    "has_og_tags": true,
+    "has_schema": false,
+    "has_favicon": true,
+    "image_count": 4,
+    "images_without_alt": 0
+  },
+  "pagespeed": {
+    "error": "API returned 429"
+  },
+  "page_count": {
+    "linked_pages": 0,
+    "has_sitemap": false
+  },
+  "local_signals": {
+    "has_google_maps_embed": false,
+    "has_address_schema": false,
+    "mentions_city": true,
+    "company_in_title": true
+  },
+  "ad_check_urls": {
+    "google_ads_transparency": "https://adstransparency.google.com/?region=anywhere&q=sunsolar.info&country=IN",
+    "meta_ad_library": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=SunSolar Power Systems&search_type=keyword_unordered",
+    "note": "Open these URLs in your browser to check if they're running ads and what those ads look like."
+  },
+  "score": {
+    "score": 12,
+    "issues": [
+      "No Meta Pixel installed — can't run retargeting or track ad conversions",
+      "No live chat — missing after-hours leads",
+      "No structured data (Schema.org) - missing rich results in Google"
+    ],
+    "wins": [
+      "Google tracking is present",
+      "Google Analytics is installed",
+      "Contact form exists",
+      "WhatsApp link present",
+      "Good CTA presence (9 buttons)",
+      "Testimonials visible"
+    ]
+  },
+  "final_url": "https://www.sunsolar.info/",
+  "site_evidence": {
+    "pixel": false,
+    "checked_on": "2026-11-28 18:26",
+    "note": "Read from the audited page source."
+  },
+  "ad_library": {
+    "checked_at": "2026-11-28 18:26",
+    "meta_own": {
+      "query": "SunSolar Power Systems",
+      "results_label": "~170 results",
+      "results_count": 170,
+      "ads": [
+        {
+          "library_id": "2576227376137902",
+          "page_name": "SunSolarhyd",
+          "started": "22 Oct 2026",
+          "text": "☀️ HYDERABAD, SWITCH TO SOLAR FOR JUST ₹1,31,999! 🏡⚡\n\n🎉 This is your chance to make the switch to clean energy with SunSolar Power Systems!\n\n🔥 SPECIAL 3 KW SOLAR OFFER\n💰 Only ₹1,31,999/-\n✅ Government Subsidy Included – ₹78,000\n💳 ₹0 Down Payment\n📉 Easy EMI Available\n🛡️ 30 Years Warranty\n🏡 Free Site Visit\n\nWhy pay high electricity bills when your rooftop can generate your own power? Invest in solar today and enjoy long-term savings with trusted Adani Solar & Waaree Solar panels! 🌞\n\n📲 Book your FREE solar consultation now!\n\n📞 Call: +91 98666 02001\n\n📍 Suite 312, 3rd Floor, Kokapet Terminal Complex, Gandipet Main Road, Narsingi, Hyderabad.\n\n⚡ Limited-time offer — enquire today and take the first ",
+          "image_urls": [
+            "https://scontent.fblr22-1.fna.fbcdn.net/v/t39.35426-6/858114093_2193665957883140_2515245796793479364_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MpY_s7Z-3t8Q7kNvwHkzcsZ&_nc_oc=AdpvX1atM6e7Q4stjY7lroFd8GT61A10c8x6NNqb16ZIBg839n99bdxtyYG0FGhM9Zw4IOED-PGjrfrwmLbuC1PX&_nc_zt=14&_nc_ht=scontent.fblr22-1.fna&_nc_gid=0kgAewq1_X5lLlUHnbQvuw&_nc_ss=7b389&oh=00_AQXVp-XPf4nNhBbDQ14NF6JBnRieBUnvGtL9Krt0Trfedw&oe=6B109E31"
+          ],
+          "images": [
+            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\SunSolar_Power_Systems\\858114093_2193665957883140_251_59329201.jpg"
+          ],
+          "library_url": "https://www.facebook.com/ads/library/?id=2576227376137902",
+          "destination": "http://fb.me/",
+          "whatsapp": ""
+        },
+        {
+          "library_id": "2413566255849370",
+          "page_name": "SunSolarhyd",
+          "started": "21 Nov 2026",
+          "text": "☀️ GO SOLAR FOR JUST ₹2,18,999/-!\n\nPower your home with clean, reliable solar energy and enjoy long-term electricity savings!\n\nGet a 5 kW Solar System at just ₹2,18,999/- with SunSolar Power Systems, featuring trusted solar brands Adani Solar & Waaree Solar. ⚡\n\n🔥 WHY WAIT? MAKE THE SWITCH TO SOLAR TODAY!\n\n✅ 5 kW Solar Power System\n✅ 0 Down Payment\n✅ Easy EMI Available\n✅ Government Subsidy Included\n✅ 30 Years Warranty\n✅ Free Site Visit\n\n💰 Original Price: ₹2,96,999/-\n🎉 Government Subsidy: ₹78,000/-\n⚡ Your Final Price: ₹2,18,999/-\n\nDon't miss this opportunity to reduce your electricity bills and invest in a smarter energy future!\n\n📞 Call Now: +91 98666 20001\n\n📍 Office: Suite 312, 3rd Floor, Kok",
+          "image_urls": [
+            "https://scontent.fblr2-2.fna.fbcdn.net/v/t39.35426-6/920441930_1795286962602222_304848136664019564_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=4ly8-wnL-DMQ7kNvwHFJpWV&_nc_oc=AdraQiwEiXx2Z1ONBLwinTM-hq0ITmRlTljurjMkKHNv18ReMh2BGXhCARpppFeCJ_bUyXFomUzIXzbZooeNd5Nb&_nc_zt=14&_nc_ht=scontent.fblr2-2.fna&_nc_gid=ErLYEP99O0ecArRl2VvsqA&_nc_ss=7b389&oh=00_AQXoizgHh2GwkLC9gV_UwCObn3TSDGN0BuPk4fhOkof5YQ&oe=6B10A494"
+          ],
+          "images": [
+            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\SunSolar_Power_Systems\\920441930_1795286962602222_304_29189198.jpg"
+          ],
+          "library_url": "https://www.facebook.com/ads/library/?id=2413566255849370",
+          "destination": "http://fb.me/",
+          "whatsapp": ""
+        },
+        {
+          "library_id": "1810233520093832",
+          "page_name": "SunSolarhyd",
+          "started": "23 Nov 2026",
+          "text": "☀️ ANANTHAPUR, SWITCH TO SOLAR FOR JUST ₹2,18,999! 🏡⚡\n\n🎉 This is your chance to make the switch to clean energy with SunSolar Power Systems!\n\n🔥 SPECIAL 5 KW SOLAR OFFER\n💰 Only ₹2,18,999/-\n✅ Government Subsidy Included – ₹78,000\n💳 ₹0 Down Payment\n📉 Easy EMI Available\n🛡️ 30 Years Warranty\n🏡 Free Site Visit\n\nWhy pay high electricity bills when your rooftop can generate your own power? Invest in solar today and enjoy long-term savings with trusted Adani Solar & Waaree Solar panels! 🌞\n\n📲 Book your FREE solar consultation now!\n\n📞 Call: +91 98666 02001\n\n📍 Suite 312, 3rd Floor, Kokapet Terminal Complex, Gandipet Main Road, Narsingi, Hyderabad.\n\n⚡ Limited-time offer — enquire today and take the first",
+          "image_urls": [
+            "https://scontent.fblr22-1.fna.fbcdn.net/v/t39.35426-6/913594511_1456451313332556_1574910393230681283_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8MEYzyKfzEEQ7kNvwHgzWOl&_nc_oc=AdqehBtWfPzU03h_KiK-7v6oD5ncv42rXmXhjQmSjNEmNTATd-SZhxxslWjD3VvlV6GnoeVf11JDsnzTrPh-hXw3&_nc_zt=14&_nc_ht=scontent.fblr22-1.fna&_nc_gid=dHYNTAZ4OoKIVR4dHHMzXA&_nc_ss=7b389&oh=00_AQUHm5NaOb92Nlx9rvGbGQGZ9r8zBxzBRYk8xyXNnzF2Ug&oe=6B108961"
+          ],
+          "images": [
+            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\SunSolar_Power_Systems\\913594511_1456451313332556_157_42384451.jpg"
+          ],
+          "library_url": "https://www.facebook.com/ads/library/?id=1810233520093832",
+          "destination": "http://fb.me/",
+          "whatsapp": ""
+        },
+        {
+          "library_id": "1866738597708833",
+          "page_name": "SunSolarhyd",
+          "started": "21 Nov 2026",
+          "text": "🪔 Go Solar for Just ₹1,71,999! ☀️\n\n🏡 Make your home energy-efficient with a 4 kW Solar System from SunSolar Power Systems!\n\n🎉 Festive Season Offer Includes:\n✅ ₹78,000 Government Subsidy Included\n✅ 0 Down Payment\n✅ Easy EMI Available\n✅ 30 Years Warranty\n✅ Free Site Visit\n\n💰 Your Solar Price Breakdown:\n₹2,49,999 − ₹78,000 Subsidy = ₹1,71,999/-\n\n⚡ Reduce your electricity expenses and make the switch to solar this festive season!\n\n📞 Call +91 98666 02001\n📍 Suite 312, 3rd Floor, Kokapet Terminal Complex, Gandipet Main Road, Narsingi, Hyderabad, Telangana – 500075.\n\n👉 Book your FREE Solar Consultation Today! Limited-time festive offer.\n\n#SunSolar #SolarEnergy #SolarPanel #SolarPower #RooftopSolar #",
+          "image_urls": [
+            "https://scontent.fblr2-2.fna.fbcdn.net/v/t39.35426-6/916183250_1468556442074801_5135200151353081506_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1Yck69GJyIcQ7kNvwFsBUj3&_nc_oc=AdoNjVejlRqrVjMKU16VcXmMXMtBPjn52Au5Yg1DAGg76XD7QkS58xY9Iq4Nyq9DIA5w9f-f25pO6bySzocJFoWM&_nc_zt=14&_nc_ht=scontent.fblr2-2.fna&_nc_gid=15ctLaDi4DO9XIENtzf4yg&_nc_ss=7b389&oh=00_AQVIulx6dwi0teAeVIRz6aXu-Cf4UCX8io-aO6jr_OsL4g&oe=6B109CC3"
+          ],
+          "images": [
+            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\SunSolar_Power_Systems\\916183250_1468556442074801_513_87537089.jpg"
+          ],
+          "library_url": "https://www.facebook.com/ads/library/?id=1866738597708833",
+          "destination": "http://fb.me/",
+          "whatsapp": ""
+        }
+      ],
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=SunSolar+Power+Systems&search_type=keyword_unordered",
+      "found": true,
+      "candidate_pages": [
+        "SunSolarhyd"
+      ]
+    },
+    "meta_competitors": {
+      "query": "solar Hyderabad",
+      "results_label": "~430 results",
+      "results_count": 430,
+      "ads": [
+        {
+          "library_id": "942037648839408",
+          "page_name": "Sri Balaji Solar Energies",
+          "started": "29 May 2026",
+          "text": "🌞 ఇకపై కరెంట్ బిల్లు కట్టే పని లేదు!\nమీ ఇంటిపై సోలార్ సిస్టమ్ అమర్చుకోండి... ₹0 (సున్నా) ముందస్తు ఖర్చుతో!*\nశ్రీ బాలాజీ సోలార్ ఎనర్జీస్ (Sri Balaji Solar Energies) - 14 సంవత్సరాల నమ్మకం. 🏛\nమా ప్రత్యేకతలు: \n✅ కేంద్ర ప్రభుత్వం నుండి ₹78,000/- వరకు సబ్సిడీ! ✅ నెలకు కరెంట్ బిల్లు బదులు, కేవలం ₹1355/- EMI కట్టండి. \n✅ 10,000+ సంతృప్తికరమైన కస్టమర్లు. \n✅ ప్రభుత్వ ఉద్యోగులకు కూడా సబ్సిడీ వర్తిస్తుంది.\n⚡  కొత్తగూడెం , నర్సంపేట, వరంగల్ (Warangal) , హన్మకొండ (Hanumakonda), రాజమహేంద్రవరం, భద్రాచలం, ఘట్‌కేసర్ హుజూరాబాద్ and hyderabad మరియు చుట్టుపక్కల జిల్లాల్లో సర్వీస్ కలదు.\n\n👇 ఈ రోజే ఫ్రీ సైట్ విజిట్ (Free Site Visit) లభిస్తుంది\nFB.ME\n🌞 ఇకపై కరెంట్ బిల్లు కట్టే పని లేదు!\n✅ కేవలం ₹1355/- EMI కట్టండి. ✅ ",
+          "image_urls": [
+            "https://scontent.fblr22-1.fna.fbcdn.net/v/t39.35426-6/612709264_1552468135986225_1240266142572683594_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=R9v2WX6905kQ7kNvwEagOLN&_nc_oc=AdqmQhcL6_1dOw_6EDN1QJ8F5XwdiEstKOtyyJKgMThuKc559wCJJb9_WUKUhHL-w-j1crkTs3nbeqkV0E0yEmNA&_nc_zt=14&_nc_ht=scontent.fblr22-1.fna&_nc_gid=haMlYLRR_pUm53KI-nwgXg&_nc_ss=7b389&oh=00_AQWvezCELrPiMIs-REgJEieh2eRYMq-DD3macXRiQte9KA&oe=6B10B3A4"
+          ],
+          "images": [
+            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\SunSolar_Power_Systems\\612709264_1552468135986225_124_69877288.jpg"
+          ],
+          "library_url": "https://www.facebook.com/ads/library/?id=942037648839408",
+          "destination": "http://fb.me/",
+          "whatsapp": ""
+        },
+        {
+          "library_id": "1472241928117694",
+          "page_name": "SolarSquare Energy",
+          "started": "13 Oct 2026",
+          "text": "Think solar is only for the rich? Think again. ☀️\nWith SolarSquare, rooftop solar is now affordable and helps you save on electricity bills every month.\nSolar Is for Every Home\nHyderabad, what if your solar savings came with a money-back guarantee? ☀️ ✅ Guaranteed Savings ✅ Trusted by 36,000+ Homes ✅ India's No. 1 Home Solar Company Switch to SolarSquare!\nBook Now",
+          "image_urls": [
+            "https://scontent.fblr22-1.fna.fbcdn.net/v/t39.35426-6/844918085_966786399224576_1665826467752291529_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Ie1YhZ1Nj2QQ7kNvwG8Ht8q&_nc_oc=AdotIrTf0OMIdMbpPaz2g_ugbaktCxhW1hmDMg-AzQqgw0YOZQXd0xH66oqdM8U8xV-pkol0bXCKBUm6_gUotCxL&_nc_zt=14&_nc_ht=scontent.fblr22-1.fna&_nc_gid=haMlYLRR_pUm53KI-nwgXg&_nc_ss=7b389&oh=00_AQX1WdVw9mqNA_JJCBC19OVfDDMyc8lEmcRHhRgCEaTuaQ&oe=6B10A4D1"
+          ],
+          "images": [
+            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\SunSolar_Power_Systems\\844918085_966786399224576_1665_58281972.jpg"
+          ],
+          "library_url": "https://www.facebook.com/ads/library/?id=1472241928117694",
+          "destination": "https://www.solarsquare.in/rooftop-solar-in-hyderabad-1",
+          "whatsapp": ""
+        },
+        {
+          "library_id": "29143729581958632",
+          "page_name": "Visionteknewenergy",
+          "started": "12 Nov 2026",
+          "text": "Still paying high electricity bills?\n\nSwitch to Visiontek Solar and turn sunlight into savings. Our smart system powers your home directly, stores extra energy for the night and helps lower your monthly bill. \n\nIts time to power your home naturally.\n\n#Visiontek #GoSolar #SolarPower #SolarEnergy #EnergyStorage\nINSTAGRAM.COM\nChat with us\nSend Message\n \nINSTAGRAM.COM\nChat with us\nSend Message\n \nINSTAGRAM.COM\nChat with us\nSend Message\n \nINSTAGRAM.COM\nChat with us\nSend Message",
+          "image_urls": [
+            "https://scontent.fblr2-3.fna.fbcdn.net/v/t39.35426-6/903533830_1816513919390984_772017694880796731_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=neUKzWvebXUQ7kNvwFZdU2g&_nc_oc=AdqEbbBBU3vYImII_qY7oOMbAdN8axKzi3ZYIaaCTE3rojFidsGrDQu4KMBn_685poNjgNmt-R8XsNNk-iHVfe8m&_nc_zt=14&_nc_ht=scontent.fblr2-3.fna&_nc_gid=haMlYLRR_pUm53KI-nwgXg&_nc_ss=7b389&oh=00_AQUPXKLhA_Rtw5BzO2FMxoADD9LgvQ5WaZoWO_Z6KgZwQA&oe=6B108B7C",
+            "https://scontent.fblr22-2.fna.fbcdn.net/v/t39.35426-6/905937843_2704296840025113_4702800509797727241_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=QCWbunwHrD0Q7kNvwHZcFtj&_nc_oc=Adqfh1pTy4q_0HemNOr5Et4qlDGgKgrs6NhwbMhzXnLQSY7wnrXBQw2WfMEZD4kuErsyHs4mApwIdl57fwj9jtkP&_nc_zt=14&_nc_ht=scontent.fblr22-2.fna&_nc_gid=haMlYLRR_pUm53KI-nwgXg&_nc_ss=7b389&oh=00_AQWsOaqKWXUOqJosgyKM5OqK3t4KgmCYhySqGQwIHS0bxA&oe=6B10B099",
+            "https://scontent.fblr22-2.fna.fbcdn.net/v/t39.35426-6/904936288_1152267820653662_3904216276133878181_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FTHMt-MuuUIQ7kNvwGhDX93&_nc_oc=AdrHEAr1ujf9QXP3eqEAmOHMk7z397WuH2A0aTxs3MJVrSL95cE7jLJ6UUAMKPfgSG-h-T8jYZzF1RTWew7tHbA1&_nc_zt=14&_nc_ht=scontent.fblr22-2.fna&_nc_gid=haMlYLRR_pUm53KI-nwgXg&_nc_ss=7b389&oh=00_AQU33aHvdnhsU7BGT9YmgYp-PC1gwj_01TAj-ZQnIhfuHA&oe=6B10991C"
+          ],
+          "images": [
+            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\SunSolar_Power_Systems\\903533830_1816513919390984_772_33578572.jpg",
+            "C:\\Users\\hp\\Documents\\Agency\\Smart Pursuit OS\\01-LEADS\\audit_results\\ad_images\\SunSolar_Power_Systems\\905937843_2704296840025113_470_96583006.jpg"
+          ],
+          "library_url": "https://www.facebook.com/ads/library/?id=29143729581958632",
+          "destination": "",
+          "whatsapp": ""
+        }
+      ],
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&q=solar+Hyderabad&search_type=keyword_unordered",
+      "found": true
+    },
+    "google_own": {
+      "found": false,
+      "advertisers": [],
+      "detail": null,
+      "query": "SunSolar Power Systems"
+    },
+    "google_competitors": {
+      "found": true,
+      "advertisers": [
+        {
+          "name": "WAAREE ENERGIES LIMITED",
+          "country": "IN",
+          "ad_count": 200,
+          "detail": {
+            "name": "WAAREE ENERGIES LIMITED",
+            "advertiser_id": "",
+            "country": "IN",
+            "ad_count": 200,
+            "url": "https://adstransparency.google.com/advertiser/AR01069449622662938625?hl=en&region=anywhere",
+            "images": [],
+            "found": true,
+            "image_files": []
+          }
+        },
+        {
+          "name": "WAAREE INFRASTRUCTURE & AGRITECH PRIVATE LIMITED",
+          "country": "IN",
+          "ad_count": 1,
+          "detail": {
+            "name": "WAAREE INFRASTRUCTURE & AGRITECH PRIVATE LIMITED",
+            "advertiser_id": "",
+            "country": "IN",
+            "ad_count": 1,
+            "url": "https://adstransparency.google.com/advertiser/AR15713594433209368577?hl=en&region=anywhere",
+            "images": [],
+            "found": true,
+            "image_files": []
+          }
+        }
+      ],
+      "query": "Sri Balaji Solar Energies, SolarSquare Energy, SolarSquare"
+    },
+    "notes": [
+      "No Google Ads advertiser record found for 'SunSolar Power Systems' or 'sunsolar.info'.",
+      "No active Google ads found for this company."
+    ],
+    "summary": "SunSolar Power Systems is running active ads on Meta (Facebook/Instagram) — about 170 live results in the Ad Library. No Google Ads advertiser record was found, so search/YouTube demand is going to competitors. Meanwhile ~430 live Meta ads from competitors in Hyderabad and 2 Indian advertisers on Google Ads in the solar category are capturing the same customers."
+  },
+  "checked_on": "2026-11-28 18:26",
+  "funnel": {
+    "type": "Lead form / off-site",
+    "destination": "http://fb.me/"
+  },
+  "provenance": {
+    "generator": "run_pipeline.py",
+    "run_at": "2026-11-28T18:33:25",
+    "python": "3.13.15",
+    "browser": "chrome",
+    "live_reads": {
+      "website": "2026-11-28 18:26",
+      "ads": "2026-11-28 18:26"
+    }
+  }
+}

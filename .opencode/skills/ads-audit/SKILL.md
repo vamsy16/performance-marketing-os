@@ -23,6 +23,13 @@ pip install -r 01-LEADS/requirements.txt
 - On first run, Playwright may need: `playwright install chromium`
   (harmless if Chrome channel is already used).
 
+**Run this skill only where Chrome + live internet are available** (the owner's
+machine or the GitHub Actions runner). If the website, Meta, or Google source
+is unreachable, `run_pipeline.py` now exits non-zero and writes **no PDF**.
+That is the correct result. **Never hand-roll a PDF from partial fetch
+results** — an "internal draft" with one sample ad, no score, or "source date
+not verified" is a held artefact, not this skill's output.
+
 ## Pre-flight — audit dedup check (owner rule, 2026-11-23, never skip)
 
 Before taking ANY lead for audit — in discovery mode or direct mode — check
@@ -139,33 +146,42 @@ no white box is drawn behind it.
 
 ## MANDATORY final step — review gate (never skip)
 
-After ANY discovery/pipeline run, before reporting done or delivering:
+After ANY discovery/pipeline run, before reporting done or delivering, run
+these three gates from `01-LEADS/` in this order:
 
-1. Run the automated verifier from `01-LEADS/`:
+1. **Structural gate**
    ```
-   python verify_report.py --all
+   python verify_report.py --all                 # full audits
+   python verify_report.py --ads-only            # ads-only reports
    ```
-   Exit code must be 0. Every `x` line is a defect — fix by re-running the
-   pipeline (fresh live data), never by editing PDF/JSON by hand.
-2. Invoke the **report-reviewer** agent (`.opencode/agent/report-reviewer.md`)
-   on the generated reports. It re-checks branding, live-data honesty, ad
-   links, score consistency, no-website handling, and staleness. Only a
-   `REPORT REVIEW: PASS` verdict means the output is deliverable.
-3. Invoke the **live-data-auditor** agent
-   (`.opencode/agent/live-data-auditor.md`) and run
-   ```
-   python verify_live.py --offline
-   python verify_live.py
-   ```
-   Gates 1 and 2 only compare files against each other. Gate 3 re-fetches the
-   live Meta Ad Library and the lead's live website and re-verifies every
-   stored figure — it is the only gate that catches a number that was never
-   live or has since gone stale. It also cross-checks every step body in
-   `sequence_manifest.json` against its report, which is how the Lumisun and
-   Kypas destination mismatch was caught. Exit 0 required; exit 1 = DRIFT
-   (re-run the pipeline), exit 2 = UNREACHABLE (do not deliver).
+   Exit 0 required. Every `x` line is a defect. This gate now rejects draft
+   markers (`INTERNAL DRAFT`, `NOT SCORED`, `SCORE NOT ASSIGNED`, ...),
+   `review_pending`, unreachable ad sources, and zero-ad reports.
 
-A report that has not passed all three gates must not be sent to anyone.
+2. **Delivery gate — new, mandatory**
+   ```
+   python delivery_gate.py "Company Name"
+   # or: python delivery_gate.py --latest
+   ```
+   Exit 0 required. This is the gate that proves the report is complete,
+   freshly measured, and actually built by `run_pipeline.py`. A hand-rolled
+   PDF has no `provenance` and fails here. `run_pipeline.py` calls this gate
+   itself and refuses to print `DONE` when it fails.
+
+3. **Independent human/agent gates**
+   - Invoke the **report-reviewer** agent
+     (`.opencode/agent/report-reviewer.md`). Only `REPORT REVIEW: PASS` counts.
+   - Invoke the **live-data-auditor** agent
+     (`.opencode/agent/live-data-auditor.md`) and run
+     ```
+     python verify_live.py --company "Company Name"   # NOT --offline
+     ```
+     Exit 0 required: 1 = DRIFT, 2 = UNREACHABLE, 4 = offline (not a pass).
+     Gate 3 re-fetches ads through Chrome (bare `requests` gets a 403 challenge)
+     and the lead's live website, then cross-checks outreach text against the
+     report.
+
+A report that has not passed all gates must not be sent to anyone.
 
 **Every rule above is written up in `AGENTS.md` at the repo root — read it
 before starting any run.**

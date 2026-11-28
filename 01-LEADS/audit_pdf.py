@@ -320,6 +320,17 @@ def days_running(started):
     return None
 
 
+def ad_start_key(ad):
+    """Sort key for 'most recent' ad cards; undated cards go last."""
+    started = ad.get("started") or ""
+    for fmt in ("%d %b %Y", "%d %B %Y", "%b %d, %Y", "%B %d, %Y"):
+        try:
+            return datetime.strptime(started.strip(), fmt)
+        except Exception:
+            continue
+    return datetime.min
+
+
 # ---------------------------------------------------------------------------
 # Layout components
 # ---------------------------------------------------------------------------
@@ -418,7 +429,8 @@ def stat_tiles(audit):
     if meta_n is None:
         meta_n = len(meta_block.get("ads") or [])
     g_detail = (adlib.get("google_own") or {}).get("detail") or {}
-    g_n = g_detail.get("ad_count", 0)
+    g_n = g_detail.get("ad_count")
+    g_n = 0 if g_n is None else g_n
     ads_txt = f"{meta_n + g_n}" if (meta_n + g_n) else "0"
     ads_color = GREEN if (meta_n + g_n) else RED
 
@@ -767,39 +779,103 @@ def verification_log(audit):
     presented as a finding in either direction.
     """
     read_on = audit.get("audit_date") or audit.get("checked_on") or ""
-    site = audit.get("site_audit") or {}
+    site = audit.get("site_audit") or audit
     pixels = site.get("pixels") or {}
     unchecked = sum(1 for v in pixels.values() if v is None)
+    adlib = audit.get("ad_library") or {}
+    ad_read_on = adlib.get("checked_at") or read_on
+    google_own = adlib.get("google_own") or {}
+    meta_comp = adlib.get("meta_competitors") or {}
+    google_comp = adlib.get("google_competitors") or {}
+    pagespeed = site.get("pagespeed") or {}
+    page_count = site.get("page_count") or {}
+    load_time = site.get("load_time_seconds")
+
+    if pagespeed.get("error"):
+        speed_where = (f"Not available at audit time ({T(pagespeed['error'])}); "
+                       "no speed figure is claimed.")
+        speed_when = read_on
+    elif pagespeed.get("mobile_performance_score") is not None:
+        speed_where = ("Google PageSpeed Insights - mobile performance score "
+                       "and Largest Contentful Paint.")
+        speed_when = read_on
+    else:
+        speed_where = "NOT CHECKED for this site. No speed figure is claimed."
+        speed_when = "not run"
+
+    if google_own:
+        g_detail = google_own.get("detail") or {}
+        google_where = ("Google Ads Transparency Center (India, anywhere) - "
+                        "advertiser and ad-count lookup")
+        if google_own.get("found"):
+            google_where += f"; {T(g_detail.get('ad_count'))} live ad(s) for this advertiser"
+        else:
+            google_where += "; no advertiser record found"
+        google_when = ad_read_on
+    else:
+        google_where = ("NOT CHECKED - the centre was not queried for this lead, "
+                        "so no Google Ads activity is claimed.")
+        google_when = "not run"
+
+    if meta_comp or google_comp:
+        comp_where = ("Ad Library sweeps: "
+                      f"{len(meta_comp.get('ads') or [])} Meta ads and "
+                      f"{len(google_comp.get('advertisers') or [])} Google "
+                      "advertisers captured")
+        comp_when = ad_read_on
+    else:
+        comp_where = "NOT CHECKED - no Ad Library sweeps were run for this lead."
+        comp_when = "not run"
+
+    if page_count:
+        if page_count.get("note"):
+            sitemap_where = T(page_count["note"])
+        elif page_count.get("has_sitemap") is True:
+            sitemap_where = "Direct page fetch and link scan - sitemap found."
+        elif page_count.get("has_sitemap") is False:
+            sitemap_where = "Direct page fetch and link scan - no sitemap found."
+        else:
+            sitemap_where = "Direct page fetch and link scan."
+        sitemap_when = read_on
+    else:
+        sitemap_where = "NOT CHECKED - the sitemap was not fetched."
+        sitemap_when = "not run"
+
+    if load_time is not None:
+        server_where = f"Direct page fetch - {T(load_time)} seconds measured."
+        server_when = read_on
+    else:
+        server_where = "NOT CHECKED - not measured."
+        server_when = "not run"
 
     rows = [
         ("Live ads, library IDs, start dates, ad copy",
          "Meta Ad Library (India, active ads) - every ID opened directly",
-         read_on),
-        ("Selected page source and metadata" if audit.get("conservative_scope") else "Page source, script tags, pixels, JSON-LD, consent mode",
+         ad_read_on),
+        ("Selected page source and metadata" if audit.get("conservative_scope") else "Page source, script tags, pixels and JSON-LD",
          "W3C Nu HTML Checker (showsource=yes) + direct page fetch",
          read_on),
         ("Headings, CTAs, forms, testimonials, pricing",
          "Public page fetch and W3C checker source where available",
          read_on),
         ("HTML / CSS error and warning counts",
-         "W3C Nu HTML Checker message list",
-         read_on),
+         "NOT CHECKED - no validator counts were stored for this report.",
+         "not run"),
         ("Mobile page speed and Largest Contentful Paint",
-         "NOT CHECKED for this site. No speed figure is claimed.",
-         "not run"),
+         speed_where,
+         speed_when),
         ("Google Ads Transparency advertiser record",
-         "NOT CHECKED - the centre was not queried, so no Google Ads "
-         "activity is claimed here.",
-         "not run"),
+         google_where,
+         google_when),
         ("Competitor ad activity and ad counts",
-         "NOT CHECKED - no Ad Library sweeps were run for this lead.",
-         "not run"),
+         comp_where,
+         comp_when),
         ("Sitemap and indexed pages",
-         ((site.get("page_count") or {}).get("note") or "NOT CHECKED - the sitemap was not fetched."),
-         read_on if (site.get("page_count") or {}).get("note") else "not run"),
+         sitemap_where,
+         sitemap_when),
         ("Server response time",
-         "NOT CHECKED - not measured.",
-         "not run"),
+         server_where,
+         server_when),
     ]
     if unchecked:
         rows.insert(1, (
@@ -1020,7 +1096,28 @@ def ads_control_section(audit):
         from ads_audit_controls import evaluate
     except Exception:
         return []
-    result = audit.get("ads_audit") or evaluate(audit, audit.get("site_evidence"))
+
+    site_evidence = audit.get("site_evidence")
+    if not site_evidence and (audit.get("pixels") or audit.get("site_audit")):
+        site = audit.get("site_audit") or audit
+        site_evidence = {
+            "pixel": (site.get("pixels") or {}).get("meta_pixel"),
+            "checked_on": site.get("audit_date") or audit.get("audit_date"),
+            "note": "Read from the audited page source.",
+        }
+    if not audit.get("funnel"):
+        own_ads = ((audit.get("ad_library") or {}).get("meta_own") or {}).get("ads") or []
+        destinations = [ad.get("destination") for ad in own_ads if ad.get("destination")]
+        if destinations:
+            dest = destinations[0]
+            audit = dict(audit)
+            audit["funnel"] = {
+                "type": "Lead form / off-site" if ("fb.me" in dest.lower()
+                                                   or "lead form" in dest.lower()) else "Website",
+                "destination": dest,
+            }
+
+    result = audit.get("ads_audit") or evaluate(audit, site_evidence)
     controls = result.get("controls") or []
     if not controls:
         return []
@@ -1390,8 +1487,9 @@ def build_story(audit):
         story.append(empty_box("Ad-library research not run yet. Execute:  python ad_library.py --latest"))
     else:
         if meta_own.get("ads"):
-            n = meta_own.get("results_count", len(meta_own["ads"]))
-            shown = len(meta_own["ads"][:3])
+            ads_sorted = sorted(meta_own["ads"], key=ad_start_key, reverse=True)
+            n = meta_own.get("results_count", len(ads_sorted))
+            shown = len(ads_sorted[:3])
             if meta_own.get("results_count") is None:
                 story.append(Paragraph(
                     f"<b>{shown} Meta ad card(s) captured.</b> This is a sample, not a verified total; "
@@ -1401,11 +1499,15 @@ def build_story(audit):
                     f"<b>{n} active ad results found.</b> Your Meta presence is live - the creatives below are "
                     f"publicly visible in the Ad Library right now.", ST["body"]))
             if n > shown:
-                story.append(Paragraph(
-                    f"All {n} are live; the {shown} most recent are reproduced below. "
-                    f"Every one of them can be opened from the Ad Library.", ST["small"]))
+                if all(ad_start_key(ad) != datetime.min for ad in ads_sorted):
+                    note = (f"All {n} are live; the {shown} most recent are reproduced below. "
+                            f"Every one of them can be opened from the Ad Library.")
+                else:
+                    note = (f"All {n} are live; {shown} captured cards are reproduced below. "
+                            f"Every one of them can be opened from the Ad Library.")
+                story.append(Paragraph(note, ST["small"]))
             story.append(Spacer(1, 2.5 * mm))
-            for ad in meta_own["ads"][:3]:
+            for ad in ads_sorted[:3]:
                 story.append(ad_card(ad, "Meta"))
         else:
             story.append(empty_box(
@@ -1622,10 +1724,13 @@ def build_story(audit):
     story.append(Spacer(1, 6 * mm))
     story.append(cta_card(audit))
     story.append(Spacer(1, 2.5 * mm))
+    google_note = ("Google Ads Transparency data is public."
+                   if (audit.get("ad_library") or {}).get("google_own")
+                   else "Google Ads activity was not checked.")
     story.append(Paragraph(
         f"Report generated automatically on {datetime.now().strftime('%d %b %Y, %H:%M')} by the {YOUR_AGENCY} "
-        "audit engine. Website findings reflect pages read at audit time; Meta ad data is public. "
-        "Google Ads activity was not checked. Provided free for evaluation.",
+        f"audit engine. Website findings reflect pages read at audit time; Meta ad data is public. "
+        f"{google_note} Provided free for evaluation.",
         ST["small"]))
     return story
 
@@ -1688,6 +1793,12 @@ def header_footer(canvas, doc):
 
 def generate_pdf(audit, out_path=None):
     """Render one audit dict to a branded PDF. Returns the output path."""
+    score = (audit.get("score") or {}).get("score")
+    if isinstance(score, bool) or not isinstance(score, (int, float)):
+        raise ValueError(
+            "Refusing to render a full audit without a numeric score. "
+            "Run the full pipeline against a live site; do not hand-build a report."
+        )
     company = audit.get("company") or audit.get("website", "audit")
     slug = re.sub(r"[^a-zA-Z0-9]+", "_", company)[:50]
     if out_path is None:

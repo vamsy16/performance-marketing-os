@@ -41,6 +41,16 @@ Exit 0 required. `--all` for full audits, a company name for one report.
 Every `x` line is a defect. Fix by **re-running the pipeline**, never by
 editing a PDF or JSON by hand.
 
+### Check 1b — delivery gate (mandatory, fail-closed)
+```
+cd 01-LEADS && python delivery_gate.py "<Company>"    # or --latest
+```
+Exit 0 required. This is the check that proves the JSON is a **complete,
+freshly measured, pipeline-built** report: no `review_pending`, no stored
+network error, at least one attributed live ad, a numeric score, real dates,
+and a PDF with no `INTERNAL DRAFT` / `NOT SCORED` / `SOURCE DATE NOT VERIFIED`
+markers. `run_pipeline.py` runs this gate itself before printing `DONE`.
+
 ### Check 2 — report-reviewer agent
 `.opencode/agent/report-reviewer.md`. Re-reads JSON + PDF for branding,
 live-data honesty, ad links, score consistency, no-website handling, and
@@ -60,9 +70,12 @@ cd 01-LEADS && PYTHONPATH=/tmp/pdflibs python3 verify_live.py             # full
 ```
 
 Exit codes: `0` all matched · `1` DRIFT (stored data is now wrong) ·
-`2` UNREACHABLE (could not verify) · `3` nothing to check.
+`2` UNREACHABLE (could not verify) · `3` nothing to check ·
+`4` `--offline` consistency-only (**not** a live pass).
 **A non-zero exit means do not deliver.** "Could not check" is exactly as
-undeliverable as "checked and wrong".
+undeliverable as "checked and wrong". `verify_live.py` re-fetches the Meta Ad
+Library through Chrome — a bare `requests` GET receives a 403 challenge and
+must never be treated as a source failure or a false pass.
 
 ---
 
@@ -180,10 +193,13 @@ a PDF or email must trace to a source that was actually read.
   `pip` can fail transiently with `SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC` —
   retry.
 - **`pip install` is PEP-668 blocked** — always `--break-system-packages`.
-- The sandbox has **no outbound access to lead websites or facebook.com**
+- The Arena sandbox has **no outbound access to lead websites or facebook.com**
   (only github/npm/pypi). Live re-verification of ads and sites must run on
   the owner's machine or the GitHub Actions runner. `verify_live.py` reports
   UNREACHABLE rather than passing in that case — that is correct behaviour.
+  The owner's Windows machine **does** have Chrome and live internet, so the
+  full pipeline runs there; an agent that cannot reach the live sources must
+  stop and say so, never substitute a hand-built "internal draft" PDF.
 - The sandbox cannot fetch ad-creative thumbnails or run headless Chrome. The
   owner rebuilds PDFs locally via `run_pipeline.py` to embed screenshots.
 - **The harness resets the local branch between turns.** Detect with
@@ -224,6 +240,9 @@ site data — **re-run it, never re-fetch and re-type the numbers.**
 ## 9. Do not
 
 - Do not hardcode, estimate, or "fill in" any audit number or ad count.
+- Do not hand-roll a PDF, monkeypatch the renderer, or build a report from
+  one sample ad with no score. Only `run_pipeline.py` / `discover_leads.py`
+  output is a real audit; anything else is an internal hold.
 - Do not reuse a previous PDF for new outreach — re-run so data is live as of
   the send date.
 - Do not weaken a verification gate to make a report pass. Fix the rendered

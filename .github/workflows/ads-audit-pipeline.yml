@@ -109,6 +109,14 @@ jobs:
         working-directory: 01-LEADS
         run: python verify_report.py --all
 
+      - name: Delivery gate — this run's report must be complete and fresh
+        working-directory: 01-LEADS
+        run: python delivery_gate.py --latest --max-age-minutes 120
+
+      - name: Third check — re-verify stored figures against live sources
+        working-directory: 01-LEADS
+        run: python verify_live.py --latest 1 --timeout 25 --retries 2
+
       - name: Generate outreach emails + follow-up sequences
         working-directory: 02-OUTREACH
         run: python audit_outreach.py --export

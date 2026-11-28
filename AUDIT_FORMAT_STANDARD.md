@@ -14,12 +14,15 @@ it.
 ```bash
 cd 01-LEADS
 PYTHONPATH=/tmp/pdflibs python3 audit_pdf.py "<Company>"
-PYTHONPATH=/tmp/pdflibs python3 verify_report.py --all   # honesty gate
+PYTHONPATH=/tmp/pdflibs python3 verify_report.py --all   # structural gate
+PYTHONPATH=/tmp/pdflibs python3 delivery_gate.py "<Company>"   # completeness gate
 ```
 
 `audit_pdf.py` (Ksquare `build_story()` engine) already produces this format.
 Never hand-roll a different layout, and never feed a partial audit JSON into
-`build_story()`.
+`build_story()`. A PDF with no `provenance`, a `review_pending` flag, one
+sample ad, `NOT SCORED`, or `SOURCE DATE NOT VERIFIED` is an internal hold and
+fails `delivery_gate.py` regardless of how close its layout looks.
 
 ## The Ksquare layout, page by page
 
