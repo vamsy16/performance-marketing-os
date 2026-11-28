@@ -1,0 +1,254 @@
+{
+  "company": "DLIFE Home Interiors",
+  "city": "Hyderabad",
+  "website": "https://dlifeinteriors.com/location/hyderabad/",
+  "checked_on": "source date not verified",
+  "audit_date": "source date not verified",
+  "ads_only": true,
+  "website_audit_run": true,
+  "conservative_scope": true,
+  "review_pending": true,
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "ads": [
+        {
+          "library_id": "1024820157266461",
+          "library_url": "https://www.facebook.com/ads/library/?id=1024820157266461",
+          "page_name": "DLIFE Home Interiors",
+          "started": "Aug 19, 2026",
+          "destination": "Send message shown; final destination not confirmed",
+          "text": "A Beautiful Home at Om Sree Gallaxy, Hyderabad by D'LIFE Interiors\n\nFrom bringing their ideas to life to delivering the entire home in just 40 days, D’LIFE made the journey of creating this home seamless and stress-free. With thoughtful designs, meticulous craftsmanship and attention to every detail, the family found a home that was beautifully theirs. And even after handover, D’LIFE’s continued support gave them the assurance that their home was always taken care of.\n\n#BringHappinessInside\n\nIn search of a professional interior design company?\n\nCall: +91 949 508 7777\n\nEmail: enquiry@dlifeinteriors.com\n\nWeb: www.dlifeinteriors.com"
+        }
+      ]
+    },
+    "summary": "One direct Meta ad card was captured; current status and source date require rechecking. Website observations are separate and limited."
+  },
+  "funnel": {
+    "type": "Destination not confirmed",
+    "destination": "Send message shown; final destination not confirmed"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://dlifeinteriors.com/location/hyderabad/",
+    "audit_date": "source date not verified",
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": null,
+      "has_phone_click": null,
+      "has_whatsapp_link": null,
+      "has_cta_buttons": null,
+      "has_live_chat": null,
+      "has_popup_optin": null,
+      "has_testimonials": null,
+      "has_pricing_page_link": null
+    },
+    "seo": {
+      "has_title": null,
+      "title_text": null,
+      "has_meta_description": null,
+      "h1_count": null,
+      "has_og_tags": null,
+      "has_schema": null,
+      "has_favicon": null,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "not measured for this site"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": null
+    },
+    "conversion_evidence": {
+      "checked_on": "source date not verified",
+      "method": "Public page text; no interaction.",
+      "sources": [
+        "https://dlifeinteriors.com/location/hyderabad/"
+      ],
+      "rows": [
+        [
+          "Contact options",
+          "The Hyderabad page shows email and WhatsApp links; delivery was not tested."
+        ],
+        [
+          "Offer information",
+          "The Hyderabad page displays package offers; eligibility and terms were not checked."
+        ],
+        [
+          "Ad handoff",
+          "The card says Send message; final click destination was not verified."
+        ]
+      ]
+    },
+    "score": {
+      "score": null,
+      "issues": [
+        "The Hyderabad page and embedded map show different Banjara Hills postcodes; confirm the correct address.",
+        "The ad offers messaging; the final message destination and branch handoff were not verified.",
+        "The ad describes a project completion time; the underlying project evidence was not checked."
+      ],
+      "wins": [
+        "The ad includes a website, email and phone number.",
+        "The Hyderabad page provides enquiry links and lists experience centres."
+      ]
+    }
+  },
+  "site_evidence": {
+    "pixel": null,
+    "ga4": null,
+    "gtm": null,
+    "google_ads_tag": null
+  },
+  "promise_gap": [
+    [
+      "Ad showcases a Hyderabad home project and a stated completion time.",
+      "The separately reviewed Hyderabad page describes services and packages. The project claim was not independently verified."
+    ]
+  ],
+  "recommended_steps": [
+    [
+      "Confirm address",
+      "Reconcile the Banjara Hills postal code shown in page text and the embedded map."
+    ],
+    [
+      "Test messaging",
+      "With permission, verify the ad message recipient and branch routing."
+    ],
+    [
+      "Review claims",
+      "Ensure project timelines and package offers have accurate, clear supporting terms."
+    ],
+    [
+      "Check measurement",
+      "Verify conversion events and reporting in the appropriate accounts and browser."
+    ]
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      }
+    ],
+    "counts": {
+      "unknown": 15
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

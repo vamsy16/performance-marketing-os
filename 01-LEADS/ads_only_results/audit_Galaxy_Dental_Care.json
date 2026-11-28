@@ -1,0 +1,254 @@
+{
+  "company": "Galaxy Dental Care",
+  "city": "Hyderabad",
+  "website": "https://galaxydentalcare.in/contact-us/",
+  "checked_on": "source date not verified",
+  "audit_date": "source date not verified",
+  "ads_only": true,
+  "website_audit_run": true,
+  "conservative_scope": true,
+  "review_pending": true,
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "ads": [
+        {
+          "library_id": "966436166129348",
+          "library_url": "https://www.facebook.com/ads/library/?id=966436166129348",
+          "page_name": "Galaxy Dental Care",
+          "started": "May 19, 2026",
+          "destination": "WhatsApp shown; final click destination not confirmed",
+          "text": "Hyderabad’s Best Dental Implant Offer is Live!\n\nSave big and restore your smile with premium implants from trusted specialists.\n\n✔️ ₹7,500 OFF on Single Implant\n\n✔️ Complimentary Implant Care Kit\n\n✔️ Teeth Cleaning Package (₹1,500 Value)\n\n✔️ Lifetime Warranty on Implants\n\nBook your Implant Consultation today"
+        }
+      ]
+    },
+    "summary": "One direct Meta ad card was captured; current status and source date require rechecking. Website observations are separate and limited."
+  },
+  "funnel": {
+    "type": "Destination not confirmed",
+    "destination": "WhatsApp shown; final click destination not confirmed"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://galaxydentalcare.in/contact-us/",
+    "audit_date": "source date not verified",
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": null,
+      "has_phone_click": null,
+      "has_whatsapp_link": null,
+      "has_cta_buttons": null,
+      "has_live_chat": null,
+      "has_popup_optin": null,
+      "has_testimonials": null,
+      "has_pricing_page_link": null
+    },
+    "seo": {
+      "has_title": null,
+      "title_text": null,
+      "has_meta_description": null,
+      "h1_count": null,
+      "has_og_tags": null,
+      "has_schema": null,
+      "has_favicon": null,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "not measured for this site"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": null
+    },
+    "conversion_evidence": {
+      "checked_on": "source date not verified",
+      "method": "Public page text; no interaction.",
+      "sources": [
+        "https://galaxydentalcare.in/contact-us/"
+      ],
+      "rows": [
+        [
+          "Appointment form",
+          "Contact page shows a branch-selection form; submission was not tested."
+        ],
+        [
+          "Contact",
+          "Phone and WhatsApp links are displayed on the contact page."
+        ],
+        [
+          "Ad handoff",
+          "Card says Send WhatsApp message; the final click destination was not tested."
+        ]
+      ]
+    },
+    "score": {
+      "score": null,
+      "issues": [
+        "The Banjara Hills branch page gives two postcodes for the same address; the correct code is unconfirmed.",
+        "The card shows WhatsApp; the actual recipient and branch-routing path were not tested.",
+        "The ad makes implant offer and warranty claims; eligibility and underlying terms were not verified."
+      ],
+      "wins": [
+        "The contact page offers branch selection, phone and WhatsApp links.",
+        "Branch areas in the card overlap with those listed on the contact page."
+      ]
+    }
+  },
+  "site_evidence": {
+    "pixel": null,
+    "ga4": null,
+    "gtm": null,
+    "google_ads_tag": null
+  },
+  "promise_gap": [
+    [
+      "Ad promotes an implant offer and warranty.",
+      "The separately viewed contact page offers a branch-selection appointment form. Offer terms and ad click path were not verified."
+    ]
+  ],
+  "recommended_steps": [
+    [
+      "Confirm postcode",
+      "Reconcile Banjara Hills postal codes on the branch page and in listings."
+    ],
+    [
+      "Test enquiry routing",
+      "With permission, verify WhatsApp and branch-selection form handoff."
+    ],
+    [
+      "Check offer terms",
+      "Confirm implant offer eligibility and warranty conditions with the clinic."
+    ],
+    [
+      "Verify measurement",
+      "Review consent and conversion events with appropriate account access."
+    ]
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      }
+    ],
+    "counts": {
+      "unknown": 15
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

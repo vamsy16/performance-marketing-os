@@ -1,0 +1,254 @@
+{
+  "company": "SunSolar Power Systems",
+  "city": "Hyderabad",
+  "website": "https://www.sunsolar.info/",
+  "checked_on": "source date not verified",
+  "audit_date": "source date not verified",
+  "ads_only": true,
+  "website_audit_run": true,
+  "conservative_scope": true,
+  "review_pending": true,
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "ads": [
+        {
+          "library_id": "2576227376137902",
+          "library_url": "https://www.facebook.com/ads/library/?id=2576227376137902",
+          "page_name": "SunSolarhyd",
+          "started": "Oct 22, 2026",
+          "destination": "fb.me displayed; final click destination not confirmed",
+          "text": "☀️ HYDERABAD, SWITCH TO SOLAR FOR JUST ₹1,31,999! 🏡⚡\n\n🎉 This is your chance to make the switch to clean energy with SunSolar Power Systems!\n\n🔥 SPECIAL 3 KW SOLAR OFFER\n\n💰 Only ₹1,31,999/-\n\n✅ Government Subsidy Included – ₹78,000\n\n💳 ₹0 Down Payment\n\n📉 Easy EMI Available\n\n🛡️ 30 Years Warranty\n\n🏡 Free Site Visit\n\nWhy pay high electricity bills when your rooftop can generate your own power? Invest in solar today and enjoy long-term savings with trusted Adani Solar & Waaree Solar panels! 🌞\n\n📲 Book your FREE solar consultation now!\n\n📞 Call: +91 98666 02001\n\n📍 Suite 312, 3rd Floor, Kokapet Terminal Complex, Gandipet Main Road, Narsingi, Hyderabad.\n\n⚡ Limited-time offer — enquire today and take the first step towards lower electricity bills!\n\n#SunSolar #Hyderabad #SolarPanels #SolarEnergy #AdaniSolar #WaareeSolar #SolarSubsidy #RooftopSolar #SolarOffer #SaveElectricity #ZeroDownPayment #SolarInstallation #GoSolar"
+        }
+      ]
+    },
+    "summary": "One direct Meta ad card was captured; current status and source date require rechecking. Website observations are separate and limited."
+  },
+  "funnel": {
+    "type": "Destination not confirmed",
+    "destination": "fb.me displayed; final click destination not confirmed"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://www.sunsolar.info/",
+    "audit_date": "source date not verified",
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": null,
+      "has_phone_click": null,
+      "has_whatsapp_link": null,
+      "has_cta_buttons": null,
+      "has_live_chat": null,
+      "has_popup_optin": null,
+      "has_testimonials": null,
+      "has_pricing_page_link": null
+    },
+    "seo": {
+      "has_title": null,
+      "title_text": null,
+      "has_meta_description": null,
+      "h1_count": null,
+      "has_og_tags": null,
+      "has_schema": null,
+      "has_favicon": null,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "not measured for this site"
+    },
+    "page_count": {
+      "has_sitemap": null
+    },
+    "local_signals": {
+      "has_google_maps_embed": null
+    },
+    "conversion_evidence": {
+      "checked_on": "source date not verified",
+      "method": "Public page text; no interaction.",
+      "sources": [
+        "https://www.sunsolar.info/"
+      ],
+      "rows": [
+        [
+          "Contact options",
+          "Phone, email and WhatsApp links were visible on the separately reviewed homepage."
+        ],
+        [
+          "Estimator",
+          "Homepage provides a preliminary estimator; calculations and submission were not tested."
+        ],
+        [
+          "Actual ad destination",
+          "The card showed fb.me; its final click path was not verified."
+        ]
+      ]
+    },
+    "score": {
+      "score": null,
+      "issues": [
+        "The ad card shows fb.me; the final form or destination was not confirmed.",
+        "The offer mentions subsidy, EMI and warranty; verify eligibility and terms before relying on them.",
+        "The site estimator is preliminary and subject to site conditions; it is not proof of the ad offer price."
+      ],
+      "wins": [
+        "The site offers phone, email and WhatsApp contact links.",
+        "The estimate is explicitly labelled preliminary and subject to site review."
+      ]
+    }
+  },
+  "site_evidence": {
+    "pixel": null,
+    "ga4": null,
+    "gtm": null,
+    "google_ads_tag": null
+  },
+  "promise_gap": [
+    [
+      "Ad promotes a 3 kW offer with subsidy and financing claims.",
+      "The separate homepage provides an illustrative preliminary estimator. The offer terms and actual ad destination were not verified."
+    ]
+  ],
+  "recommended_steps": [
+    [
+      "Test the ad path",
+      "With permission, open the ad on a phone and confirm the final form or chat and enquiry receipt."
+    ],
+    [
+      "Verify offer terms",
+      "Check subsidy, EMI and warranty terms against the exact promoted package."
+    ],
+    [
+      "Test the estimator",
+      "Check calculations, mobile usability and the handoff to a final site quote."
+    ],
+    [
+      "Check measurement",
+      "Verify configured events and attribution in the accounts and browser."
+    ]
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+      }
+    ],
+    "counts": {
+      "unknown": 15
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}
