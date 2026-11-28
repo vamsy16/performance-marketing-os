@@ -3292,7 +3292,11 @@
           "sent_at": "",
           "due_date": ""
         }
-      ]
+      ],
+      "gmail_draft_id": "r-7973512065332472767",
+      "gmail_draft_thread_id": "1a222a786a65a349",
+      "gmail_drafted_at": "2026-11-28",
+      "channel": "email"
     },
     {
       "company": "PNR Sunrise Energies",
@@ -3362,7 +3366,10 @@
           "sent_at": "",
           "due_date": ""
         }
-      ]
+      ],
+      "channel": "whatsapp_or_form",
+      "gmail_draft_id": null,
+      "channel_note": "No email address published; send the text from the .txt through the phone/WhatsApp number or booking form on the site."
     },
     {
       "company": "D'LIFE Home Interiors",
@@ -3432,7 +3439,11 @@
           "sent_at": "",
           "due_date": ""
         }
-      ]
+      ],
+      "gmail_draft_id": "r6853723717860708364",
+      "gmail_draft_thread_id": "1a222a7946f00f52",
+      "gmail_drafted_at": "2026-11-28",
+      "channel": "email"
     },
     {
       "company": "Dr. Sridhar Dental",
@@ -3502,7 +3513,10 @@
           "sent_at": "",
           "due_date": ""
         }
-      ]
+      ],
+      "channel": "whatsapp_or_form",
+      "gmail_draft_id": null,
+      "channel_note": "No email address published; send the text from the .txt through the phone/WhatsApp number or booking form on the site."
     },
     {
       "company": "Galaxy Dental Care",
@@ -3572,7 +3586,11 @@
           "sent_at": "",
           "due_date": ""
         }
-      ]
+      ],
+      "gmail_draft_id": "r-7134646595645752516",
+      "gmail_draft_thread_id": "1a222a7a2859758d",
+      "gmail_drafted_at": "2026-11-28",
+      "channel": "email"
     }
   ]
 }

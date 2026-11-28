@@ -211,3 +211,21 @@ Deliberate choices:
 
 Gates after the drafts were exported: `delivery_gate.py` PASS ×5 · `verify_report.py --ads-only`
 PASS ×5 · `verify_live.py --offline` MATCH ×5 (repo 59 MATCH / 2 pre-existing DRIFT / 0 UNREACHABLE).
+
+### Gmail drafts (2026-11-28, unsent)
+
+Three drafts exist in `smartpursuit3@gmail.com`, each with its report attached and the cited Library IDs
+inline. They are drafts only — nothing has been sent and no thread has been opened.
+
+| Lead | Gmail draft id | Attached |
+|---|---|---|
+| SunSolar Power Systems | `r-7973512065332472767` | `audit_SunSolar_Power_Systems.pdf` |
+| D'LIFE Home Interiors | `r6853723717860708364` | `audit_D_LIFE_Home_Interiors.pdf` |
+| Galaxy Dental Care | `r-7134646595645752516` | `audit_Galaxy_Dental_Care.pdf` |
+
+PNR Sunrise Energies and Dr. Sridhar Dental have **no Gmail draft by design** — neither publishes an
+email address, and inventing one is not an option. Their copy stays in
+`generated_emails/batch15_email_<slug>.txt` for WhatsApp / the site's booking form.
+
+When a draft is actually sent, record its `thread_id` and `sent_at` in `sequence_manifest.json`; until
+then `mails_sent` stays 0 and no follow-up date is due.
