@@ -4,6 +4,9 @@ This is the **gold-standard example** of a correctly built full audit in this re
 Give the PDF to an agent as a visual reference, but require it to **re-run the
 pipeline for its own lead**. Never copy or reuse this PDF for outreach.
 
+For the full copy-paste run sheet, give the agent `AGENT_HANDOFF.md` alongside
+this file, `MANDATORY_AUDIT_CHECKS.md`, and the PDF.
+
 ## Files
 
 | Item | Path |

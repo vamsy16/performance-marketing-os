@@ -57,6 +57,9 @@ That's it. You're now a solar marketing agency.
 the standing format rule (reference: `audit_Ksquare_Energy.pdf`) and the
 section-by-section template every new audit must match.
 
+For a clean agent handoff, give `AGENT_HANDOFF.md` first — it is the single
+run sheet with the exact commands, dedup check, gates, and failure rules.
+
 For a current, fully gated worked example, give an agent
 `EXAMPLE_AUDIT_REFERENCE.md` together with
 `02-OUTREACH/audit_pdfs/audit_SunSolar_Power_Systems.pdf`. That reference shows
