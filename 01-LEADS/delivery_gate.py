@@ -134,6 +134,16 @@ def gate_company(company, json_path="", pdf_path=None, max_age_minutes=1440):
     for err in errs:
         failures.append("structure: " + err)
 
+    # --- mandatory website completeness (no "Not checked in this pass") -----
+    import audit_completeness
+    if audit_completeness.has_website_audit(audit):
+        missing_checks = audit_completeness.unresolved(audit)
+        if missing_checks:
+            failures.append("hold: unresolved mandatory website checks — "
+                            + ", ".join(missing_checks))
+            failures.append("  A deliverable full audit must resolve every website check "
+                            "from live page evidence; re-run the pipeline or hold the report.")
+
     pdf = pdf_path or built_pdf
     if not os.path.isfile(pdf):
         failures.append(f"PDF: not found at {pdf}")
@@ -195,6 +205,16 @@ def gate_company(company, json_path="", pdf_path=None, max_age_minutes=1440):
             for marker in DRAFT_MARKERS:
                 if marker in upper:
                     failures.append(f"hold: draft marker in PDF — '{marker}'")
+            if audit_completeness.has_website_audit(audit):
+                # A legitimate measured absence says "6 of 8 tools were not
+                # found"; that is not an unresolved check. These two phrases
+                # are held-draft markers and must never ship.
+                for marker in ("NOT CHECKED IN THIS PASS", "NOT CHECKED - NOT MEASURED"):
+                    if marker in upper:
+                        failures.append(
+                            f"hold: PDF contains '{marker.title()}' in a full audit "
+                            "— every mandatory website check must be resolved "
+                            "from live evidence, never left unchecked")
             if not re.search(r"\b\d{1,3}\s*/\s*100\b", flat):
                 failures.append("hold: PDF has no numeric /100 score panel")
             for ad in own_ads[:5]:

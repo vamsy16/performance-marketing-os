@@ -28,6 +28,10 @@ directly on the navy band. Do not replace it with a white logo panel or generic
 - Google Ads Transparency was queried; no own advertiser record was found. Competitor counts come from the live sweeps.
 - The featured three ad cards are genuinely the three most recent by captured start date.
 - The page-6 verification table describes only what was actually measured.
+- Every mandatory website check in `MANDATORY_AUDIT_CHECKS.md` is resolved to a
+  real observed value — no `None`, "Not found" or "Not checked in this pass"
+  for tracking tags, conversion elements, SEO, images, sitemap, local signals,
+  SSL or server response time.
 - No `INTERNAL DRAFT`, `NOT SCORED`, `SOURCE DATE NOT VERIFIED`, or one-sample-ad placeholders.
 
 ## Reproduce it (on the owner's Windows machine, with Chrome + live internet)
@@ -65,7 +69,10 @@ draft" that looks like a client report.
 
 ## Rules for any agent using this reference
 
-1. Read `AGENTS.md` at the repo root first. It is the contract.
+1. Read `AGENTS.md` at the repo root first. It is the contract. Also read
+   `MANDATORY_AUDIT_CHECKS.md`; an audit with an unresolved mandatory website
+   check is **not complete** and must not be reported as done or delivered.
+   `audit_completeness.unresolved()` must return `[]` for the report.
 2. Never invent, estimate, or paraphrase an audit number or ad count.
 3. Ad copy is reproduced verbatim. ₹ renders as `Rs. ` under base-14 fonts;
    Indic-script copy uses an explicit placeholder, never a guess.

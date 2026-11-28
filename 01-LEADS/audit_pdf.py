@@ -790,6 +790,7 @@ def verification_log(audit):
     pagespeed = site.get("pagespeed") or {}
     page_count = site.get("page_count") or {}
     load_time = site.get("load_time_seconds")
+    validator = site.get("html_errors") or (audit.get("html_errors") if not audit.get("site_audit") else None)
 
     if pagespeed.get("error"):
         speed_where = (f"Not available at audit time ({T(pagespeed['error'])}); "
@@ -848,6 +849,17 @@ def verification_log(audit):
         server_where = "NOT CHECKED - not measured."
         server_when = "not run"
 
+    if isinstance(validator, dict):
+        validator_where = "Not available at audit time (%s)" % T(
+            validator.get("error") or "W3C validator unavailable")
+        validator_when = "not run"
+    elif validator:
+        validator_where = T(validator)
+        validator_when = read_on
+    else:
+        validator_where = "NOT CHECKED - no validator counts were stored for this report."
+        validator_when = "not run"
+
     rows = [
         ("Live ads, library IDs, start dates, ad copy",
          "Meta Ad Library (India, active ads) - every ID opened directly",
@@ -859,8 +871,8 @@ def verification_log(audit):
          "Public page fetch and W3C checker source where available",
          read_on),
         ("HTML / CSS error and warning counts",
-         "NOT CHECKED - no validator counts were stored for this report.",
-         "not run"),
+         validator_where,
+         validator_when),
         ("Mobile page speed and Largest Contentful Paint",
          speed_where,
          speed_when),

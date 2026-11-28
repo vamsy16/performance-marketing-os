@@ -85,8 +85,10 @@ must never be treated as a source failure or a false pass.
 a PDF or email must trace to a source that was actually read.
 
 - **No invented audit scores, pixel counts, PageSpeed or Google Transparency
-  numbers.** Unverifiable data is marked `not available` / `not checked` /
-  `pending` — never guessed.
+  numbers.** A genuinely unavailable measurement is marked `not available` /
+  `pending` with its exact reason — never guessed. **A website check left as
+  `None` or "Not checked in this pass" in a deliverable full audit is a FAIL,
+  not an acceptable honest gap** — see `MANDATORY_AUDIT_CHECKS.md`.
 - **PageSpeed / Lighthouse is keyless-quota-blocked (HTTP 429).** Report it
   exactly as the Ksquare reference does: *"Not available at audit time (API
   returned 429)"*. Never fabricate a speed score or LCP.
@@ -104,7 +106,23 @@ a PDF or email must trace to a source that was actually read.
   captured**, not the Ad Library's "~N results" total. The manifest once
   overstated activity this way.
 - **A report whose page head could not be read says so.** Kypas and Lumisun
-  heads were unreachable; their tracking is "not checked", not absent.
+  heads were unreachable; their tracking is "not checked", not absent. Such a
+  report is a **held draft**, not deliverable. Re-read through W3C
+  `showsource=yes` or an inner page before it can pass the delivery gate.
+
+### Mandatory completeness — no "Not checked in this pass" in a deliverable
+
+`MANDATORY_AUDIT_CHECKS.md` is the definitive list of website checks that must
+resolve to a real observed value before a full audit can be sent. `None`,
+missing keys, "Not found" and "Not checked in this pass" are **FAIL** in a
+deliverable full audit. `run_pipeline.py` refuses to render such a report and
+`delivery_gate.py` refuses any report made elsewhere with those gaps.
+
+Allowed exceptions only: PageSpeed/Lighthouse 429 or unreachable API,
+account-only Meta controls, an ad destination the live card does not state,
+and a pure ads-only report that carries no website audit at all. Anything else
+must be re-read live or the report is held. Do not hand-edit a PDF or JSON to
+satisfy a gate — fix the source and re-run the pipeline.
 
 ---
 
@@ -209,7 +227,9 @@ a PDF or email must trace to a source that was actually read.
 - **The only raw-source channel that survives** is
   `https://validator.w3.org/nu/?doc=<url>&showsource=yes`. CORS proxies are
   dead. The error list precedes the source, so pages with hundreds of errors
-  have an unreachable source — use an inner page instead.
+  have an unreachable source — use an inner page instead. For stored counts,
+  use `out=json` with a **short plain UA** (`Mozilla/5.0 (Smart Pursuit audit)`):
+  the long Chrome-style UA triggers a Cloudflare 403 on W3C.
 - **`edit_file` params are `path`/`new_text`/`old_text`.** It rejects large
   multi-line patches — patch Python via a `python3 - <<'PYEOF'` heredoc with
   asserts on the old block.

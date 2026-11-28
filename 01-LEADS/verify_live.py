@@ -133,6 +133,39 @@ def fetch_html(url, timeout=15, retries=1):
     return r.text, r.url, ""
 
 
+def fetch_validator_json(url, timeout=15, retries=1):
+    """Fetch W3C Nu checker JSON with a plain UA.
+
+    The W3C endpoint challenges the long Chrome-style UA used for ad-library
+    fetches (HTTP 403 Cloudflare). A short descriptive UA is accepted and is
+    the same one used by ads_audit.check_validator_counts. Returns
+    (body_or_None, error_string).
+    """
+    last = "unknown error"
+    for attempt in range(max(1, retries + 1)):
+        try:
+            r = requests.get(
+                url,
+                timeout=timeout,
+                headers={"User-Agent": "Mozilla/5.0 (Smart Pursuit audit)"},
+                allow_redirects=True,
+            )
+            if r.status_code == 429:
+                last = "HTTP 429 (W3C rate limit)"
+                if attempt < retries:
+                    time.sleep(5 * (attempt + 1))
+                    continue
+            elif r.status_code >= 400:
+                last = "HTTP %s" % r.status_code
+            else:
+                return r.text, ""
+        except Exception as e:  # noqa: BLE001 - any failure is "unreachable"
+            last = "%s: %s" % (type(e).__name__, e)
+        if attempt < retries:
+            time.sleep(1.5)
+    return None, last
+
+
 def fetch_html_browser(url, timeout=30):
     """Fetch a browser-rendered page (Meta Ad Library blocks bare requests).
 
@@ -462,7 +495,7 @@ def check_site(audit, timeout, retries):
                             detail="no validator counts stored"))
     else:
         vurl = W3C_VALIDATOR.format(url=website if final_url is None else final_url)
-        vhtml, _, verr = fetch_html(vurl, timeout=timeout, retries=retries)
+        vhtml, verr = fetch_validator_json(vurl, timeout=timeout, retries=retries)
         if vhtml is None:
             results.append(dict(
                 check="site.validator", verdict=UNREACHABLE,

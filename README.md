@@ -63,6 +63,14 @@ For a current, fully gated worked example, give an agent
 the live-ad attribution, honest PageSpeed handling, Smart Pursuit branding,
 verification table, and the exact commands every new report must pass.
 
+**No incomplete audits:** `MANDATORY_AUDIT_CHECKS.md` is the definitive list of
+website checks that must be resolved from live evidence before an audit is
+complete. `None` / "Not found" / "Not checked in this pass" is a FAIL in a full
+audit — the run must be re-done, never delivered. The only exceptions are the
+four listed in that file (PageSpeed 429, account-only Meta controls, an ad
+destination the card does not state, and a pure ads-only report with no website
+audit).
+
 Each report kind has its own outreach path — `audit_outreach.py --export` for
 full audits, `ads_only_outreach.py --export` for live-ad reports. Both write
 the same `sequence_manifest.json` (4 steps per lead), and every sequence is

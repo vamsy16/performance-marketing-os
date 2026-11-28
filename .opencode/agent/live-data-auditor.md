@@ -21,6 +21,13 @@ that was live last week and is wrong today. That is your job.
 
 **Assume the stored data is wrong until the live sources confirm it.**
 
+**Before starting, read `MANDATORY_AUDIT_CHECKS.md` at the repo root and
+`01-LEADS/audit_completeness.py`.** A full audit with a mandatory website check
+left as `None` / "Not found" / "Not checked in this pass" is a HELD DRAFT, not
+a deliverable — even if every live figure you re-check happens to match. Your
+`LIVE-DATA CHECK: PASS` must not be used to ship an incomplete audit. The
+defect in `audit_D_LIFE_Home_Interiors.pdf` is this exact failure.
+
 ## Step 1 — Run the live verifier (mandatory)
 
 From `01-LEADS/`:
@@ -33,6 +40,17 @@ python verify_live.py --offline          # consistency only — NOT a pass
 
 If requests/bs4 are missing: `pip install -r 01-LEADS/requirements.txt`.
 
+Also confirm the completeness gate before trusting any MATCH:
+
+```
+cd 01-LEADS
+python -c "import json,sys,audit_completeness; a=json.load(open(sys.argv[1],encoding='utf-8')); print(audit_completeness.unresolved(a))" "<path-to-audit.json>"
+```
+
+An empty list `[]` is required for a report carrying a website audit. Any
+printed field = **FAIL** (held draft), regardless of the live verifier exit
+code. A pure ads-only report with no `site_audit` is the only exception.
+
 ## Step 2 — Read the verdicts, not the summary
 
 Every line is one of four verdicts. **Only `MATCH` is a pass.**
@@ -42,7 +60,7 @@ Every line is one of four verdicts. **Only `MATCH` is a pass.**
 | `MATCH` | the live source confirms the stored figure exactly | nothing |
 | `DRIFT` | the live source contradicts the stored figure | **FAIL** — the report is wrong now |
 | `UNREACHABLE` | the source could not be read, so nothing was confirmed | **FAIL** — unverifiable is not deliverable |
-| `NOT_CLAIMED` | the report itself says the value was never read | nothing to verify; confirm the report still shows it as "not checked" |
+| `NOT_CLAIMED` | the report itself says the value was never read | only OK for the four allowed exceptions (ad destination not on the card, account-only Meta controls, PageSpeed 429, or no website audit at all). For any mandatory website check in `MANDATORY_AUDIT_CHECKS.md`, `NOT_CLAIMED` = **FAIL** — the report is an incomplete held draft |
 
 **Exit codes:** `0` all matched · `1` at least one DRIFT · `2` at least one
 UNREACHABLE · `3` nothing to check · `4` offline consistency only (**not** a
@@ -79,7 +97,13 @@ Re-verified against the live source:
   confirmed from the ad card in this pass". Sending that would have handed
   the client a claim they could disprove in one click.
 
-Not re-verified by the script, so **you must check them by hand**:
+Not re-verified by the script, so **you must check them by hand** (and none of
+these excuses resolve a mandatory website check — that must be re-read live):
+
+- **Mandatory website completeness** — open the live page (direct fetch, W3C
+  `showsource=yes`, or an inner page) and prove every check listed in
+  `MANDATORY_AUDIT_CHECKS.md` has a real observed value. If any is still
+  unreadable, the report stays held; do not accept "could not check" as a pass.
 
 - **Ad destination** — the `?id=` page does not expose the destination as
   text, so the script reports `NOT_CLAIMED`. If a report claims a confirmed
@@ -120,6 +144,10 @@ Rules:
 - Never fix files yourself (`edit: deny`) — you verify and report only.
 - **Never pass a report with an UNREACHABLE source.** "Could not check" and
   "checked and wrong" are equally undeliverable.
+- **Never pass a full audit with a mandatory website check shown as
+  `NOT_CLAIMED` / "Not checked in this pass".** That is a held draft, not a
+  live-data pass. Only the four exceptions in `MANDATORY_AUDIT_CHECKS.md` may
+  be unclaimed.
 - Never accept a number you did not see a live source produce.
 - If every source is unreachable (offline, blocked network), say so plainly
   and recommend `--offline` for the consistency checks plus a full live run

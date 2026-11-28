@@ -30,6 +30,14 @@ That is the correct result. **Never hand-roll a PDF from partial fetch
 results** — an "internal draft" with one sample ad, no score, or "source date
 not verified" is a held artefact, not this skill's output.
 
+**Read `MANDATORY_AUDIT_CHECKS.md` at the repo root before every run.** It is
+the definitive list of website checks that must resolve to a real observed
+value. A full audit that says "Not found" or "Not checked in this pass" for any
+of them is a HELD DRAFT — the audit is **not complete** and must never be
+reported as done or delivered. `audit_completeness.py` is the single source of
+truth; `run_pipeline.py` refuses to render and `delivery_gate.py` refuses to
+pass any report with an unresolved check.
+
 ## Pre-flight — audit dedup check (owner rule, 2026-11-23, never skip)
 
 Before taking ANY lead for audit — in discovery mode or direct mode — check
@@ -113,6 +121,25 @@ This does everything end-to-end and prints the final PDF path:
 Flags: `--skip-audit` (reuse an existing audit, only refresh ads + PDF),
 `--skip-ads` (website audit only), `--competitors N` (default 3).
 
+### Mandatory website completeness — resolve every check or stop
+
+If the page fetch leaves a tracking tag, conversion element, SEO field, image
+count, sitemap, local signal, SSL, or server response time unresolved, **do not
+accept it as "honestly unavailable"**. Re-read the page through another public
+source first:
+
+1. direct fetch with a browser user-agent (already tried by `ads_audit.py`);
+2. W3C Nu HTML Checker `https://validator.w3.org/nu/?doc=<url>&showsource=yes`;
+3. an inner page (e.g. `/contact-us/`) that carries the same head/template;
+4. only then, if still unreadable, hold the report — never deliver it.
+
+`None`, missing keys, "Not found" and "Not checked in this pass" are FAIL for
+a deliverable full audit. The only allowed unclaimed values are the four in
+`MANDATORY_AUDIT_CHECKS.md`: PageSpeed/Lighthouse 429 or unreachable API,
+account-only Meta controls, an ad destination the live card does not state,
+and a pure ads-only report with no website audit at all. Never hand-edit a JSON
+or PDF to satisfy a gate — fix the source data and re-run `run_pipeline.py`.
+
 ### Manual 3-step run (same result)
 
 ```
@@ -165,8 +192,10 @@ these three gates from `01-LEADS/` in this order:
    ```
    Exit 0 required. This is the gate that proves the report is complete,
    freshly measured, and actually built by `run_pipeline.py`. A hand-rolled
-   PDF has no `provenance` and fails here. `run_pipeline.py` calls this gate
-   itself and refuses to print `DONE` when it fails.
+   PDF has no `provenance` and fails here. It also fails any full audit with
+   unresolved mandatory website checks or "NOT CHECKED IN THIS PASS" in the
+   PDF text. `run_pipeline.py` calls this gate itself and refuses to print
+   `DONE` when it fails.
 
 3. **Independent human/agent gates**
    - Invoke the **report-reviewer** agent
@@ -184,7 +213,10 @@ these three gates from `01-LEADS/` in this order:
 A report that has not passed all gates must not be sent to anyone.
 
 **Every rule above is written up in `AGENTS.md` at the repo root — read it
-before starting any run.**
+before starting any run.** Also read `MANDATORY_AUDIT_CHECKS.md`; it is the
+definitive list of checks that must be resolved before an audit is complete.
+An audit with "Not found" or "Not checked in this pass" in a mandatory check
+must not be completed, reported as done, or delivered.
 
 ## The output (what you produce / what gets delivered)
 

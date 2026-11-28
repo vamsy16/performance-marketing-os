@@ -118,22 +118,34 @@ Batch 10 was rebuilt this way by `01-LEADS/build_batch10_ksquare.py` (real data
 for Sunova, Wisda, SolarSquare and Rayzon is recorded in that file with the
 source of every value).
 
-### Never guess a value — the three-state rule
+### Never guess a value — measured states vs held drafts
 
-`calculate_audit_score()` in `01-LEADS/ads_audit.py` and the technical-snapshot
-renderer treat a check recorded as `None` as **not measured**: it is neither
-penalised nor counted as a win, and it renders as
-"Not checked in this pass". A check recorded `False` is a real, measured
-absence and renders as MISSING. Confusing the two is how fake audits happen.
+`calculate_audit_score()` in `01-LEADS/ads_audit.py` still distinguishes a
+check recorded as `None` (**not measured**) from `False` (**measured absence**).
+That distinction matters while a page is being read, but **a deliverable full
+audit may not contain `None`**. `MANDATORY_AUDIT_CHECKS.md` is the definitive
+list of website checks that must resolve to `True` / `False`, a count, or
+observed text before the report is complete. `None`, missing keys, "Not found"
+and "Not checked in this pass" are a HELD DRAFT and FAIL `delivery_gate.py`
+and both review agents. `run_pipeline.py` refuses to render such a report.
 
 - PageSpeed mobile score + LCP → "Not available at audit time (API returned 429)"
   (the keyless API's quota is 0/day — the same failure the reference Ksquare PDF
-  reports).
-- Server response time, Google Ads Transparency records, sitemap page counts →
-  "Not checked in this pass" when the lookup was not run. `build_story()` now
-  distinguishes "checked, none found" from "not checked" for the Google Ads and
-  competitor sections — an empty `google_own` / `meta_competitors` dict must
-  never render as a "no record found" claim.
+  reports). This is an allowed exception: never a guessed score or LCP.
+- Server response time, SSL, final URL, all tracking tags, conversion elements,
+  SEO fields, image counts, sitemap and local signals are **mandatory resolved
+  checks**. If a direct page fetch leaves one unreadable, re-read through W3C
+  Nu Checker `showsource=yes` or an inner page; if still unreadable, hold the
+  report. Do not ship "Not checked in this pass".
+- Google Ads Transparency records and competitor sections: `build_story()`
+  distinguishes "checked, none found" from "not checked"; an empty
+  `google_own` / `meta_competitors` dict must never render as a "no record
+  found" claim. Account-only Meta controls stay `UNKNOWN` with the reason.
+- An ad destination not stated on the live ad card stays "Not confirmed from
+  the ad card in this pass" — an allowed exception, and no email may claim it.
+- A pure ads-only report with no `site_audit` must show `WEBSITE AUDIT NOT RUN`
+  and carry no website score or check table at all. That is the fourth allowed
+  exception; it is not a full audit.
 - `verify_report.py --ads-only` enforces the flip: with `site_audit` present the
   report must prove it is the full 5-page layout and carry no placeholder values;
   without it, the old "WEBSITE AUDIT NOT RUN" rules apply unchanged.
