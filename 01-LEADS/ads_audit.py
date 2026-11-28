@@ -140,6 +140,40 @@ def check_seo_basics(soup):
     }
 
 
+def check_validator_counts(url, timeout=30):
+    """Read W3C Nu HTML checker counts for the live page.
+
+    This is the source behind the PDF verification-log row. It must never be
+    guessed: if the checker cannot be read, the honest reason is stored.
+    """
+    try:
+        resp = requests.get(
+            "https://validator.w3.org/nu/",
+            params={"doc": url, "out": "json"},
+            timeout=timeout,
+            headers={"User-Agent": "Mozilla/5.0 (Smart Pursuit audit)"},
+        )
+        if resp.status_code != 200:
+            return {"error": "W3C validator returned HTTP %s" % resp.status_code}
+        data = resp.json()
+        messages = data.get("messages")
+        if not isinstance(messages, list):
+            return {"error": "W3C validator response had no message list"}
+        counts = {"error": 0, "warning": 0, "info": 0}
+        for msg in messages:
+            if not isinstance(msg, dict):
+                continue
+            kind = str(msg.get("type") or "").lower()
+            if kind not in counts:
+                kind = str(msg.get("subType") or "").lower()
+            if kind in counts:
+                counts[kind] += 1
+        return "%d errors, %d warnings, %d info on the homepage" % (
+            counts["error"], counts["warning"], counts["info"])
+    except Exception as e:
+        return {"error": "W3C validator unreachable: %s" % e}
+
+
 def check_ssl(url):
     """Check if site uses HTTPS."""
     return url.startswith("https://")
@@ -403,7 +437,7 @@ def run_audit(website, company_name="", city=""):
     }
 
     # Fetch site
-    print("[1/7] Fetching website...")
+    print("[1/8] Fetching website...")
     site = fetch_website(website)
     if "error" in site:
         result["error"] = site["error"]
@@ -414,37 +448,46 @@ def run_audit(website, company_name="", city=""):
     result["load_time_seconds"] = round(site["load_time"], 2)
     result["ssl"] = check_ssl(site["final_url"])
 
+    # W3C validator counts (stored, never guessed)
+    print("[2/8] Reading W3C validator counts...")
+    validator = check_validator_counts(site["final_url"])
+    result["html_errors"] = validator
+    if isinstance(validator, dict):
+        print(f"  W3C validator unavailable: {validator.get('error')}")
+    else:
+        print(f"  {validator}")
+
     # Tracking pixels
-    print("[2/7] Checking tracking pixels...")
+    print("[3/8] Checking tracking pixels...")
     result["pixels"] = check_tracking_pixels(site["html"])
     found = [k for k, v in result["pixels"].items() if v]
     print(f"  Found: {', '.join(found) if found else 'NONE'}")
 
     # Conversion elements
-    print("[3/7] Checking conversion elements...")
+    print("[4/8] Checking conversion elements...")
     result["conversion"] = check_conversion_elements(site["soup"], site["html"])
     print(f"  Form: {result['conversion']['has_contact_form']}, "
           f"WhatsApp: {result['conversion']['has_whatsapp_link']}, "
           f"CTAs: {result['conversion']['has_cta_buttons']}")
 
     # SEO basics
-    print("[4/7] Checking SEO basics...")
+    print("[5/8] Checking SEO basics...")
     result["seo"] = check_seo_basics(site["soup"])
     print(f"  Title: {result['seo']['title_text'][:50]}")
     print(f"  Meta desc: {'YES' if result['seo']['has_meta_description'] else 'MISSING'}")
 
     # PageSpeed
-    print("[5/7] Running PageSpeed Insights (may take 15-30s)...")
+    print("[6/8] Running PageSpeed Insights (may take 15-30s)...")
     result["pagespeed"] = check_pagespeed(site["final_url"])
     perf = result["pagespeed"].get("mobile_performance_score")
     print(f"  Mobile performance: {perf}/100" if perf else "  PageSpeed: unavailable")
 
     # Page count
-    print("[6/7] Checking site size...")
+    print("[7/8] Checking site size...")
     result["page_count"] = check_page_count(site["final_url"])
 
     # Local signals
-    print("[7/7] Checking local SEO signals...")
+    print("[8/8] Checking local SEO signals...")
     result["local_signals"] = check_google_business_signals(
         site["soup"], company_name or "", city
     )

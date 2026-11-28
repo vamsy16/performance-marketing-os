@@ -8,7 +8,7 @@
   "conservative_scope": false,
   "checked_on": "2026-11-28",
   "audit_date": "2026-11-28",
-  "generated_at": "2026-11-28 14:53",
+  "generated_at": "2026-11-28 15:00",
   "source": "Meta Ad Library (India, active ads), Google Ads Transparency Centre (India), the company's own live website and the W3C Nu HTML Checker",
   "ad_library": {
     "checked_at": "2026-11-28",
@@ -263,7 +263,7 @@
     "generator": "ads_only_report.py",
     "entrypoint": "build_batch15_telangana.py",
     "data_file": "batch15_telangana_data.py",
-    "run_at": "2026-11-28 14:53",
+    "run_at": "2026-11-28 15:00",
     "method": "Ad IDs read in Meta Ad Library (India, active only); site values read from the served page and the W3C Nu checker source view; PageSpeed API unreachable so no speed score is claimed"
   },
   "ads_audit": {

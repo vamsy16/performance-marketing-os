@@ -12,6 +12,7 @@ from unittest.mock import patch
 from pypdf import PdfReader
 import ads_audit
 from ads_audit import calculate_audit_score
+import audit_completeness
 import audit_pdf
 import delivery_gate
 import verify_live
@@ -173,6 +174,89 @@ class PipelineIntegrityTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'numeric score'):
                 audit_pdf.generate_pdf({'company': 'No Score'}, out_path=str(out))
             self.assertFalse(out.exists())
+
+    def test_unresolved_mandatory_website_checks_are_detected(self):
+        audit = {
+            'company': 'Test', 'website': 'https://test.example/',
+            'audit_date': '2026-11-28 18:00', 'ssl': True,
+            'load_time_seconds': 0.5, 'final_url': 'https://test.example/',
+            'html_errors': '0 errors, 0 warnings, 12 info on the homepage',
+            'pixels': {key: False for key in audit_completeness.MANDATORY_PIXELS},
+            'conversion': {
+                'has_contact_form': True, 'has_phone_click': True,
+                'has_whatsapp_link': True, 'has_cta_buttons': 3,
+                'has_live_chat': False, 'has_popup_optin': False,
+                'has_testimonials': True, 'has_pricing_page_link': False,
+            },
+            'seo': {
+                'has_title': True, 'has_meta_description': True, 'h1_count': 1,
+                'has_schema': False, 'has_og_tags': True, 'has_favicon': True,
+                'image_count': 2, 'images_without_alt': 0,
+            },
+            'page_count': {'has_sitemap': False},
+            'local_signals': {'has_google_maps_embed': False},
+            'pagespeed': {'error': 'API returned 429'},
+        }
+        self.assertEqual([], audit_completeness.unresolved(audit))
+        audit['pixels']['meta_pixel'] = None
+        audit['conversion']['has_live_chat'] = None
+        missing = audit_completeness.unresolved(audit)
+        self.assertIn('pixels.meta_pixel', missing)
+        self.assertIn('conversion.has_live_chat', missing)
+        audit['pixels']['meta_pixel'] = False
+        audit['conversion']['has_live_chat'] = 'Not found'
+        self.assertIn('conversion.has_live_chat', audit_completeness.unresolved(audit))
+        audit['html_errors'] = {'error': 'W3C validator unreachable'}
+        self.assertIn('html_errors', audit_completeness.unresolved(audit))
+
+    def test_delivery_gate_rejects_unresolved_website_checks(self):
+        src = HERE / 'audit_results' / 'audit_SunSolar_Power_Systems.json'
+        audit = json.loads(src.read_text(encoding='utf-8'))
+        audit['pixels']['meta_pixel'] = None
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / 'audit_SunSolar_Power_Systems.json'
+            path.write_text(json.dumps(audit), encoding='utf-8')
+            ok, lines = delivery_gate.gate_company(
+                'SunSolar Power Systems', json_path=str(path), max_age_minutes=-1)
+        self.assertFalse(ok)
+        self.assertIn('unresolved mandatory website checks', ' '.join(lines))
+
+    def test_delivery_gate_rejects_pdf_with_not_checked_marker(self):
+        src = HERE / 'audit_results' / 'audit_SunSolar_Power_Systems.json'
+        audit = json.loads(src.read_text(encoding='utf-8'))
+        with tempfile.TemporaryDirectory() as tmp:
+            json_path = Path(tmp) / 'audit_SunSolar_Power_Systems.json'
+            json_path.write_text(json.dumps(audit), encoding='utf-8')
+            pdf_path = Path(tmp) / 'audit_SunSolar_Power_Systems.pdf'
+            from reportlab.pdfgen.canvas import Canvas
+            canvas = Canvas(str(pdf_path))
+            canvas.drawString(72, 700, 'Live chat: Not checked in this pass')
+            canvas.drawString(72, 680, 'Website score: 12/100')
+            canvas.save()
+            ok, lines = delivery_gate.gate_company(
+                'SunSolar Power Systems', json_path=str(json_path),
+                pdf_path=str(pdf_path), max_age_minutes=-1)
+        self.assertFalse(ok)
+        self.assertIn("Not Checked In This Pass", ' '.join(lines))
+
+    def test_verification_log_uses_stored_validator_counts(self):
+        audit = {
+            'company': 'Test', 'audit_date': '2026-11-28 18:00',
+            'html_errors': '92 errors, 3 warnings, 117 info on the homepage',
+            'page_count': {'has_sitemap': False},
+            'load_time_seconds': 0.5,
+            'ad_library': {'checked_at': '2026-11-28 18:00'},
+        }
+        table = audit_pdf.verification_log(audit)
+        joined = ' '.join(cell.text for row in table._cellvalues for cell in row)
+        self.assertIn('92 errors, 3 warnings, 117 info', joined)
+        self.assertNotIn('no validator counts were stored', joined)
+
+        audit['html_errors'] = {'error': 'W3C validator unreachable'}
+        joined = ' '.join(cell.text for row in audit_pdf.verification_log(audit)._cellvalues
+                          for cell in row)
+        self.assertIn('Not available at audit time (W3C validator unreachable)', joined)
+        self.assertNotIn('no validator counts were stored', joined)
 
 
 if __name__ == '__main__':

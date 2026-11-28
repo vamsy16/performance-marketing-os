@@ -24,6 +24,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from ads_audit import run_audit, save_audit, print_audit_report
 from ad_library import run_research, save_audit as save_merged
+from audit_completeness import unresolved as unresolved_checks
 from audit_pdf import generate_pdf
 
 
@@ -96,6 +97,12 @@ def main():
             print("ERROR: the reuse candidate is stale or has no measured score. "
                   "Run without --skip-audit to re-read the live site.")
             sys.exit(1)
+        missing = unresolved_checks(audit)
+        if missing:
+            print("ERROR: the reuse candidate has unresolved website checks: "
+                  + ", ".join(missing))
+            print("Run without --skip-audit to re-read the live site.")
+            sys.exit(1)
         print(f"  Reusing: {audit_path}")
     else:
         print(f"\n[1/3] Auditing website: {args.website}")
@@ -108,6 +115,13 @@ def main():
             sys.exit(1)
         if not _numeric_score(audit):
             print("  ERROR: website audit produced no measurable score. No PDF was generated.")
+            sys.exit(1)
+        missing = unresolved_checks(audit)
+        if missing:
+            print("  ERROR: website audit left mandatory checks unresolved: "
+                  + ", ".join(missing))
+            print("  Re-read the live page (direct fetch / W3C showsource) and re-run. "
+                  "A full audit with 'Not checked in this pass' is a hold, not a deliverable.")
             sys.exit(1)
         print_audit_report(audit)
         audit["site_evidence"] = {

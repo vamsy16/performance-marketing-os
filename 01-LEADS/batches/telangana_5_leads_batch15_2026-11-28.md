@@ -229,3 +229,32 @@ email address, and inventing one is not an option. Their copy stays in
 
 When a draft is actually sent, record its `thread_id` and `sent_at` in `sequence_manifest.json`; until
 then `mails_sent` stays 0 and no follow-up date is due.
+
+## Reconciled with main (2026-11-28)
+
+`main`'s tip (`810d589`) shares no history with this branch, so GitHub refused the merge
+("unrelated histories"). It was reconciled locally with `git merge --allow-unrelated-histories`,
+using `5cd85be` — the tree `main`'s snapshot came from — as the 3-way base for every conflicted path.
+
+Only three files had genuinely changed on both sides; the rest were one-sided.
+
+| Path | Kept |
+|---|---|
+| `audit_live_*`/`.opencode/*`, `AGENTS.md`, `README.md`, `AUDIT_FORMAT_STANDARD.md`, `EXAMPLE_AUDIT_REFERENCE.md`, `ads_audit.py`, `delivery_gate.py`, `run_pipeline.py`, `verify_live.py`, `tests_batch14.py`, ad-creative JPGs, `MANDATORY_AUDIT_CHECKS.md` | **main's** — this branch never touched them |
+| `ads_only_report.py`, `AUDIT_PDF_INDEX.md`, `sequence_manifest.json`, `logo_white.png` | **branch's** — main's copy was identical to base |
+| `audit_pdf.py` | 3-way merge: main's `validator_where/validator_when` row plus this branch's `_html_error_source()`, with the dict branch extended so a stored counts dict renders "2 errors; …" instead of main's "Not available at audit time" |
+
+Five PDFs were rebuilt on the merged renderer; the verification log still prints the real
+W3C counts.
+
+**Gates after the merge:** `verify_report.py --ads-only` PASS ×5 · `verify_live.py --offline`
+MATCH ×5 (59 MATCH / 2 pre-existing DRIFT) · **`delivery_gate.py` now HOLDS all five.**
+
+That last one is a policy collision, not a regression in the reports. `audit_completeness.py`
+(added on `main`) treats an ads report in the Ksquare layout as a full audit and refuses any
+report with an unresolved mandatory website check — `html_errors` for SunSolar,
+`pixels.google_analytics_ga4` for D'LIFE, `seo.has_title` for Galaxy, and so on. Those are
+exactly the rows this batch deliberately left `null` because they sit behind GTM, a NitroPack
+cache or a validator that halted; asserting them would be fabrication. Open decision, not
+something to settle silently: scope the completeness rule to full audits, or resolve the
+remaining checks from live evidence and re-gate.
