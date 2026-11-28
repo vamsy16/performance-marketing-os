@@ -345,7 +345,7 @@ On the paid side: roughly 300 live Google ads for galaxydentalcare.in, and five 
 
 On the page they relate to: no price at all. The offer that earned the click disappears exactly when the patient arrives.
 
-Two more things from the same read. Your Google Ads run under an advertiser registered as "Jaydeep" rather than the clinic name - if that is a personal account, the clinic has no ownership trail over its own ad history. And the contact page carries 20 telephone links with unencoded spaces (tel:+91 86866 76781), which fail to dial on some Android handsets.
+Two more things from the same read. Your Google Ads run under an advertiser account registered in a person's name rather than the clinic's - if that account is not the clinic's own, there is no ownership trail over the ad history or quality score behind the spend. And the contact page carries 20 telephone links with unencoded spaces (tel:+91 86866 76781), which fail to dial on some Android handsets.
 
 The measurement is mostly there: Google Tag Manager (GTM-TRRMQGQ) is installed, though WP Rocket defers it until the first interaction, and the page emits no structured data despite Yoast being installed. The attached report says exactly which rows I could and could not read.
 

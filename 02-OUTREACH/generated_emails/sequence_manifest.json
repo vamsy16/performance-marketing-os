@@ -3368,8 +3368,7 @@
         }
       ],
       "channel": "whatsapp_or_form",
-      "gmail_draft_id": null,
-      "channel_note": "No email address published; send the text from the .txt through the phone/WhatsApp number or booking form on the site."
+      "gmail_draft_id": null
     },
     {
       "company": "D'LIFE Home Interiors",
@@ -3515,8 +3514,7 @@
         }
       ],
       "channel": "whatsapp_or_form",
-      "gmail_draft_id": null,
-      "channel_note": "No email address published; send the text from the .txt through the phone/WhatsApp number or booking form on the site."
+      "gmail_draft_id": null
     },
     {
       "company": "Galaxy Dental Care",
@@ -3534,7 +3532,7 @@
           "step": 0,
           "kind": "initial",
           "subject": "Galaxy Dental: ~300 Google ads, and a price the site never shows",
-          "body": "Hi,\n\nI read Galaxy Dental Care's live advertising this week, and the scale is not the problem - it is the handoff.\n\nOn the paid side: roughly 300 live Google ads for galaxydentalcare.in, and five active Meta ads quoting Rs 20,000 braces, Rs 15,000 implants and 60% off Invisalign.\n\nOn the page they relate to: no price at all. The offer that earned the click disappears exactly when the patient arrives.\n\nTwo more things from the same read. Your Google Ads run under an advertiser registered as \"Jaydeep\" rather than the clinic name - if that is a personal account, the clinic has no ownership trail over its own ad history. And the contact page carries 20 telephone links with unencoded spaces (tel:+91 86866 76781), which fail to dial on some Android handsets.\n\nThe measurement is mostly there: Google Tag Manager (GTM-TRRMQGQ) is installed, though WP Rocket defers it until the first interaction, and the page emits no structured data despite Yoast being installed. The attached report says exactly which rows I could and could not read.\n\nWorth a short call?\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n\nLive ads cited:\n  Library ID 2195040781424344: https://www.facebook.com/ads/library/?id=2195040781424344\n  Library ID 2781894092164767: https://www.facebook.com/ads/library/?id=2781894092164767\n  Library ID 2030680001203418: https://www.facebook.com/ads/library/?id=2030680001203418\n  Library ID 3314367505393846: https://www.facebook.com/ads/library/?id=3314367505393846\n  Library ID 1004506892020728: https://www.facebook.com/ads/library/?id=1004506892020728",
+          "body": "Hi,\n\nI read Galaxy Dental Care's live advertising this week, and the scale is not the problem - it is the handoff.\n\nOn the paid side: roughly 300 live Google ads for galaxydentalcare.in, and five active Meta ads quoting Rs 20,000 braces, Rs 15,000 implants and 60% off Invisalign.\n\nOn the page they relate to: no price at all. The offer that earned the click disappears exactly when the patient arrives.\n\nTwo more things from the same read. Your Google Ads run under an advertiser account registered in a person's name rather than the clinic's - if that account is not the clinic's own, there is no ownership trail over the ad history or quality score behind the spend. And the contact page carries 20 telephone links with unencoded spaces (tel:+91 86866 76781), which fail to dial on some Android handsets.\n\nThe measurement is mostly there: Google Tag Manager (GTM-TRRMQGQ) is installed, though WP Rocket defers it until the first interaction, and the page emits no structured data despite Yoast being installed. The attached report says exactly which rows I could and could not read.\n\nWorth a short call?\n\nBest,\nVamsi\nSmart Pursuit\n+91 70950 24220\n\nLive ads cited:\n  Library ID 2195040781424344: https://www.facebook.com/ads/library/?id=2195040781424344\n  Library ID 2781894092164767: https://www.facebook.com/ads/library/?id=2781894092164767\n  Library ID 2030680001203418: https://www.facebook.com/ads/library/?id=2030680001203418\n  Library ID 3314367505393846: https://www.facebook.com/ads/library/?id=3314367505393846\n  Library ID 1004506892020728: https://www.facebook.com/ads/library/?id=1004506892020728",
           "delay_after_previous_days": 0,
           "status": "pending",
           "draft_id": "",
