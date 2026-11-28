@@ -676,7 +676,8 @@ def ad_evidence_table(audit):
     if not ads:
         return empty_box("No live Meta ads were found for this company.")
 
-    header = [Paragraph(f"<b>{T(h)}</b>", ST["cell_b"])
+    header_style = ParagraphStyle("ad_evidence_header", parent=ST["cell_b"], textColor=colors.white)
+    header = [Paragraph(f"<b>{T(h)}</b>", header_style)
               for h in ("Library ID", "Running since", "Destination",
                         "Ad copy (symbols omitted)" if audit.get("conservative_scope") else "Ad copy, verbatim from the Ad Library")]
     rows = [header]
@@ -710,10 +711,6 @@ def ad_evidence_table(audit):
         ("BOX", (0, 0), (-1, -1), 0.5, BORDER),
         ("LINEBELOW", (0, 0), (-1, -1), 0.4, BORDER),
     ]))
-    # The header row inherits the dark navy, so its text must be white.
-    for cell in header:
-        cell.style = ParagraphStyle("hdr", parent=ST["cell_b"],
-                                    textColor=colors.white)
     return table
 
 
@@ -728,7 +725,8 @@ def promise_gap_table(audit):
     if not rows_data:
         return None
 
-    header = [Paragraph(f"<b>{T(h)}</b>", ST["cell_b"])
+    header_style = ParagraphStyle("promise_gap_header", parent=ST["cell_b"], textColor=colors.white)
+    header = [Paragraph(f"<b>{T(h)}</b>", header_style)
               for h in ("What the live ad promises",
                         "What the reviewed website shows" if audit.get("conservative_scope") else "What the landing page actually shows (read live)")]
     body = [header]
@@ -753,9 +751,6 @@ def promise_gap_table(audit):
         ("BOX", (0, 0), (-1, -1), 0.5, BORDER),
         ("LINEBELOW", (0, 0), (-1, -1), 0.4, BORDER),
     ]))
-    for cell in header:
-        cell.style = ParagraphStyle("hdr3", parent=ST["cell_b"],
-                                    textColor=colors.white)
     return table
 
 
@@ -801,6 +796,15 @@ def verification_log(audit):
          "NOT CHECKED - not measured.",
          "not run"),
     ]
+    adlib = audit.get("ad_library") or {}
+    if adlib.get("google_public_evidence"):
+        rows[5] = ("Google Ads Transparency domain search",
+                   "Domain-filtered public search; see search link and scope in the report.",
+                   read_on or "date unverified")
+    if adlib.get("competitor_public_sample"):
+        rows[6] = ("Competitor ad sample",
+                   "One direct Meta Ad Library card; see sample link and scope in the report.",
+                   read_on or "date unverified")
     if unchecked:
         rows.insert(1, (
             f"Tracking tags ({unchecked} of {len(pixels)} could not be read)",
@@ -808,7 +812,8 @@ def verification_log(audit):
             "These tools are not checked, not confirmed missing.",
             "not run"))
 
-    header = [Paragraph(f"<b>{T(h)}</b>", ST["cell_b"])
+    header_style = ParagraphStyle("verification_header", parent=ST["cell_b"], textColor=colors.white)
+    header = [Paragraph(f"<b>{T(h)}</b>", header_style)
               for h in ("What was checked", "Where the number came from",
                         "Read on")]
     body = [header]
@@ -834,9 +839,6 @@ def verification_log(audit):
         ("BOX", (0, 0), (-1, -1), 0.5, BORDER),
         ("LINEBELOW", (0, 0), (-1, -1), 0.4, BORDER),
     ]))
-    for cell in header:
-        cell.style = ParagraphStyle("hdr2", parent=ST["cell_b"],
-                                    textColor=colors.white)
     return table
 
 
@@ -1384,8 +1386,9 @@ def build_story(audit):
     meta_comp = (adlib or {}).get("meta_competitors") or {}
     google_comp = (adlib or {}).get("google_competitors") or {}
 
-    story.extend(section_bar("Your live ads - Meta (Facebook / Instagram)",
-                             "source: Meta Ad Library"))
+    meta_heading = ("Sample Meta ad - status requires recheck" if audit.get("conservative_scope")
+                    else "Your live ads - Meta (Facebook / Instagram)")
+    story.extend(section_bar(meta_heading, "source: Meta Ad Library"))
     if adlib is None:
         story.append(empty_box("Ad-library research not run yet. Execute:  python ad_library.py --latest"))
     else:
@@ -1412,10 +1415,20 @@ def build_story(audit):
                 "No active Meta ads were found for this company. Competitors in your city are buying this "
                 "attention instead - see the competitor section below."))
 
-    story.extend(section_bar("Your live ads - Google (Search / YouTube / Display)",
-                             "source: Google Ads Transparency Center"))
+    google_heading = ("Google Ads Transparency - domain search" if (adlib or {}).get("google_public_evidence")
+                      else "Your live ads - Google (Search / YouTube / Display)")
+    if (adlib or {}).get("google_public_evidence"):
+        story.append(CondPageBreak(38 * mm))
+    story.extend(section_bar(google_heading, "source: Google Ads Transparency Center"))
     if adlib is None:
         story.append(empty_box("Ad-library research not run yet. Execute:  python ad_library.py --latest"))
+    elif (adlib or {}).get("google_public_evidence"):
+        evidence = adlib["google_public_evidence"]
+        story.append(Paragraph(T(evidence.get("description", "")), ST["body"]))
+        if evidence.get("url"):
+            story.append(Paragraph(
+                f'<link href="{escape(evidence["url"])}" color="#1B6EC2"><b>Open Google Transparency search</b></link>',
+                ST["link"]))
     elif not google_own:
         # The transparency-centre lookup was never run for this lead, so the
         # report must say so rather than imply nothing was found.
@@ -1444,7 +1457,13 @@ def build_story(audit):
 
     story.extend(section_bar("Competitor ad activity", "who is buying attention in your market"))
 
-    if meta_comp.get("ads"):
+    if (adlib or {}).get("competitor_public_sample"):
+        sample = adlib["competitor_public_sample"]
+        story.append(Paragraph(T(sample.get("description", "")), ST["body"]))
+        if sample.get("url"):
+            story.append(Paragraph(
+                f'<link href="{escape(sample["url"])}" color="#1B6EC2"><b>Open competitor ad</b></link>', ST["link"]))
+    elif meta_comp.get("ads"):
         story.append(Paragraph(
             f"<b>Meta:</b> about {meta_comp.get('results_count', 0)} live competitor ads matched "
             f"'{T(meta_comp.get('query', ''))}'. Sample creatives below.", ST["body"]))
@@ -1492,7 +1511,7 @@ def build_story(audit):
             "These advertisers prove the channel works in your category. The gap is yours to take.",
             ST["small"]))
 
-    story.extend(section_bar("Captured live ad, in full" if audit.get("conservative_scope") else "Every live ad, in full",
+    story.extend(section_bar("Captured ad, in full" if audit.get("conservative_scope") else "Every live ad, in full",
                              "the evidence, unedited"))
     story.append(Paragraph(
         ("Captured ad wording is shown below; unsupported symbols are omitted. Full original text is stored in the audit JSON. Other ads were not fully captured."
@@ -1519,28 +1538,54 @@ def build_story(audit):
 
     # ---- Website health ----
     story.extend(section_bar("Website tracking & pixels", "can you measure anything at all?"))
-    pixel_items = [(label, audit.get("pixels", {}).get(key))
-                   for key, label in PIXEL_LABELS.items()]
-    story.append(two_col_status(pixel_items))
-    story.append(Spacer(1, 2.2 * mm))
-    missing = [label for label, ok in pixel_items if ok is False]
-    unchecked = [label for label, ok in pixel_items if ok is None]
-    if missing or unchecked:
-        parts = []
-        if missing:
-            parts.append(f"{len(missing)} of {len(pixel_items)} tracking tools "
-                         "were not found in the page source")
-        if unchecked:
-            parts.append(f"{len(unchecked)} could not be checked in this pass")
-        _consequence = (
-            "A missing source tag does not rule out server-side or platform measurement; verify in the relevant accounts."
-            if missing else
-            "The unverified tools may or may not be deployed. Confirm source and runtime behavior with account access."
-        )
-        story.append(Paragraph(
-            f"<b>{' and '.join(parts)}.</b> {_consequence}", ST["body"]))
+    source_tracking = (audit.get("site_audit") or {}).get("tracking_source_observations")
+    if source_tracking is not None:
+        # Source snippets are not proof of a working conversion setup. Do not
+        # turn an unexamined tool into an absence or a source tag into runtime OK.
+        pairs = []
+        for key, label in PIXEL_LABELS.items():
+            pairs.append((label, source_tracking.get(key) or "Not established"))
+        rows = []
+        for i in range(0, len(pairs), 2):
+            row = []
+            for label, observation in pairs[i:i + 2]:
+                row.extend([Paragraph(T(label), ST["cell_b"]), Paragraph(T(observation), ST["cell"])])
+            while len(row) < 4:
+                row.extend([Paragraph("", ST["cell"]), Paragraph("", ST["cell"])])
+            rows.append(row)
+        table = Table(rows, colWidths=[CONTENT_W * .25] * 4)
+        table.setStyle(TableStyle([
+            ("VALIGN", (0, 0), (-1, -1), "TOP"),
+            ("LEFTPADDING", (0, 0), (-1, -1), 5), ("RIGHTPADDING", (0, 0), (-1, -1), 5),
+            ("TOPPADDING", (0, 0), (-1, -1), 3.6), ("BOTTOMPADDING", (0, 0), (-1, -1), 3.6),
+            ("ROWBACKGROUNDS", (0, 0), (-1, -1), [colors.white, LIGHT]),
+            ("LINEBELOW", (0, 0), (-1, -1), .4, BORDER), ("BOX", (0, 0), (-1, -1), .5, BORDER),
+        ]))
+        story.append(table)
+        story.append(Paragraph("Source snippets only; execution, event delivery and account configuration were not verified. Source timing requires recheck.", ST["small"]))
     else:
-        story.append(Paragraph("The observed tracking tools are listed above. Runtime event delivery was not tested.", ST["body"]))
+        pixel_items = [(label, audit.get("pixels", {}).get(key))
+                       for key, label in PIXEL_LABELS.items()]
+        story.append(two_col_status(pixel_items))
+        story.append(Spacer(1, 2.2 * mm))
+        missing = [label for label, ok in pixel_items if ok is False]
+        unchecked = [label for label, ok in pixel_items if ok is None]
+        if missing or unchecked:
+            parts = []
+            if missing:
+                parts.append(f"{len(missing)} of {len(pixel_items)} tracking tools "
+                             "were not found in the page source")
+            if unchecked:
+                parts.append(f"{len(unchecked)} could not be checked in this pass")
+            _consequence = (
+                "A missing source tag does not rule out server-side or platform measurement; verify in the relevant accounts."
+                if missing else
+                "The unverified tools may or may not be deployed. Confirm source and runtime behavior with account access."
+            )
+            story.append(Paragraph(
+                f"<b>{' and '.join(parts)}.</b> {_consequence}", ST["body"]))
+        else:
+            story.append(Paragraph("The observed tracking tools are listed above. Runtime event delivery was not tested.", ST["body"]))
 
     story.extend(section_bar("Conversion readiness", "how easily a visitor becomes an enquiry"))
     conversion_evidence = (audit.get("site_audit") or {}).get("conversion_evidence")

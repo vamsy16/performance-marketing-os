@@ -70,6 +70,43 @@ SOURCE_FACTS = {
  'Dr Sridhar Dental': 'Services HTML shell includes GA4 G-7Y9ND039HL and Google Ads base tag AW-855095874; event firing not tested.',
  'Galaxy Dental Care': 'Contact page source contains GTM-TRRMQGQ in a deferred script; browser execution and events not tested.',
 }
+# Data below is explicitly provisional: direct HTML snippets and domain-search
+# responses were returned by the page-fetch service, whose source timing cannot
+# be reconciled with the session date. "Any time" is not a live-ad count.
+PUBLIC_OBSERVATIONS = {
+ 'SunSolar Power Systems': {
+   'tags': {'google_ads':'Base tag AW-18179174251 in source'},
+   'title':'SunSolar Power Systems | Premium Rooftop Solar in Hyderabad', 'description':True, 'og':True,
+   'google_domain':'www.sunsolar.info',
+   'google':'India domain search returned 0 ads with Any time selected. This is a search result, not proof the business has never advertised; source timing needs recheck.'},
+ 'PNR Sunrise Energies': {
+   'tags': {}, 'title':'PNR Sunrise Energies Pvt Ltd — Solar EPC & EV Charging Infrastructure | Telangana | Andhra Pradesh', 'description':True, 'og':True,
+   'google_domain':'sunriseenergies.in',
+   'google':'India domain search returned 0 ads with Any time selected. Other domains and advertiser accounts may differ; source timing needs recheck.'},
+ 'DLIFE Home Interiors': {
+   'tags': {'meta_pixel':'Pixel 215010909028561 in source', 'google_ads':'Base tag AW-830229729 in source'},
+   'title':"Interior Designers in Hyderabad | D'LIFE Interiors", 'description':True, 'og':True, 'schema':True, 'maps':True,
+   'google_domain':'dlifeinteriors.com',
+   'google':"India domain search returned approximately 200 ads for Any time, with D'LIFE Interiors Private Limited shown. Not a live count; one sample has a last-shown date after the session date, so recheck timing."},
+ 'Dr Sridhar Dental': {
+   'tags': {'google_analytics_ga4':'GA4 G-7Y9ND039HL in HTML shell', 'google_ads':'Base tag AW-855095874 in HTML shell'},
+   'title':'SRIDHAR DENTAL', 'description':None, 'og':None,
+   'google_domain':'sridhardental.com',
+   'google':'India domain search returned 42 ads for Any time, with Dr. Sridhar International Dental Hospital shown. Not a live count; one sample has a last-shown date after the session date, so recheck timing.'},
+ 'Galaxy Dental Care': {
+   'tags': {'google_tag_manager':'GTM-TRRMQGQ in deferred source'},
+   'title':'Contact Us | Galaxy Dental Care', 'description':True, 'og':True, 'maps':True,
+   'google_domain':'galaxydentalcare.in',
+   'google':'India domain search returned approximately 300 ads for Any time. Sample Galaxy creatives identify verified advertiser Jaydeep, not Galaxy as the advertiser. This is not a live count; source timing needs recheck.'},
+}
+COMPETITOR_SAMPLES = {
+ 'SunSolar Power Systems': ('SolarSquare Energy', '1472241928117694', 'Oct 13, 2026', 'The ad discusses rooftop solar affordability; the card mentions Hyderabad and a money-back guarantee.'),
+ 'PNR Sunrise Energies': ('SolarSquare Energy', '1472241928117694', 'Oct 13, 2026', 'The ad discusses rooftop solar affordability; its consumer message is not equivalent to a channel-partner recruitment campaign.'),
+ 'DLIFE Home Interiors': ('Houseboat Interiors', '2019161465707252', 'Oct 13, 2026', 'The Hyderabad advertiser describes eligibility-based interior consultations for homeowners planning a project.'),
+ 'Dr Sridhar Dental': ('Galaxy Dental Care', '966436166129348', 'May 19, 2026', 'The Hyderabad dental ad promotes an implant consultation; offer and warranty claims were not independently substantiated.'),
+ 'Galaxy Dental Care': ('Dr. Sridhar Foundation', '1672235477851281', 'Oct 20, 2026', 'The dental ad names Hyderabad locations and links to its services page; placement and audience overlap were not verified.'),
+}
+
 # Priorities above are hypotheses as well as observed source defects, not a
 # numerical list of proven business losses.
 for row in DATA:
@@ -94,8 +131,9 @@ def safe_stat(audit):
     def tile(value, label):
         return [Paragraph(f'<font color="#0E2A47">{pdf.T(value)}</font>', pdf.ST['tile_num']),
                 Spacer(1, 0.8*mm), Paragraph(pdf.T(label), pdf.ST['tile_lbl'])]
-    tiles = Table([[tile('N/S', 'AUDIT SCORE'), tile(str(len(audit.get('score', {}).get('issues', []))), 'REVIEW PRIORITIES'),
-                    tile('N/C', 'TRACKING VERIFIED'), tile('1', 'AD CARD CAPTURED')]], colWidths=[pdf.CONTENT_W/4]*4)
+    tag_count = len(PUBLIC_OBSERVATIONS[audit['company']]['tags'])
+    tiles = Table([[tile('—', 'SCORE NOT ASSIGNED'), tile(str(len(audit.get('score', {}).get('issues', []))), 'REVIEW PRIORITIES'),
+                    tile(str(tag_count), 'SOURCE TAGS CAPTURED'), tile('1', 'AD CARD CAPTURED')]], colWidths=[pdf.CONTENT_W/4]*4)
     tiles.setStyle(TableStyle([('VALIGN',(0,0),(-1,-1),'MIDDLE'),('ALIGN',(0,0),(-1,-1),'CENTER'),
         ('BACKGROUND',(0,0),(-1,-1),pdf.CARD),('BOX',(0,0),(-1,-1),.6,pdf.BORDER),
         ('INNERGRID',(0,0),(-1,-1),.6,pdf.BORDER),('TOPPADDING',(0,0),(-1,-1),7),('BOTTOMPADDING',(0,0),(-1,-1),7)]))
@@ -109,14 +147,17 @@ def safe_panel(audit):
             Spacer(1, 1*mm),
             Paragraph('<b>WHAT WAS READ LIVE FOR THIS REPORT:</b> A direct Meta ad card and public website text were fetched. The card displayed Active; current status is not verified. One card is a sample, not the full account.', pdf.ST['body']),
             Spacer(1, 1*mm),
-            Paragraph('Source timing is uncertain: the session date and sandbox/source clock conflict. Recheck all sources on a trusted clock. Independent review and the live-data gate have not passed. Selected tracking code was observed in page source only; event firing, PageSpeed, Google Ads activity, account results and lead delivery were not tested.', pdf.ST['small'])]
+            Paragraph('Source timing is uncertain: the session date and sandbox/source clock conflict. Recheck all sources on a trusted clock. Independent review and the live-data gate have not passed. Selected tracking code was observed in page source only; event firing, PageSpeed, current Google ad activity, account results and lead delivery were not tested.', pdf.ST['small'])]
     box = Table([[body]], colWidths=[pdf.CONTENT_W]); box.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,-1),colors.HexColor('#FFF4E1')),('BOX',(0,0),(-1,-1),.8,pdf.AMBER),('LEFTPADDING',(0,0),(-1,-1),9),('RIGHTPADDING',(0,0),(-1,-1),9),('TOPPADDING',(0,0),(-1,-1),7),('BOTTOMPADDING',(0,0),(-1,-1),7)])); return box
 
 def safe_verification(audit):
     extra = {
       'SunSolar Power Systems': [('Identity cross-check', 'The ad text and homepage display the same Hyderabad address and main phone. This does not prove the ad click destination.'), ('Estimate limitations', 'The homepage says its estimate is preliminary and that final pricing depends on an inspection, system design, eligibility and other conditions.')],
       'PNR Sunrise Energies': [('Identity cross-check', 'The ad and homepage show the same company name, website domain and main number. Partner lead handling was not tested.'), ('Calculator limitations', 'The website describes calculator figures as illustrative and says a final quotation depends on a site assessment. The calculator was not exercised.')],
-      'DLIFE Home Interiors': [('Branch source', 'Hyderabad page text and its embedded map show different postcodes. Confirm the correct one before publication.')],
+      'DLIFE Home Interiors': [('Branch source', 'Hyderabad page text and its embedded map show different postcodes. Confirm the correct one before publication.'),
+          ('Offer on reviewed page', 'Hyderabad page lists an Essential 2BHK package at Rs. 6.37 lakh; the price, terms and availability were not independently confirmed.'),
+          ('Enquiry paths', 'The page displays callback, WhatsApp, email and free-estimate options. Actual delivery and mobile interaction were not tested.'),
+          ('Project proof', 'The ad describes an Om Sree Gallaxy project and 40-day delivery; the project and claim were not independently verified.')],
       'Dr Sridhar Dental': [('Branch contact source', 'https://sridhardental.com/contact lists KPHB and Nallagandla. Branch contact information is self-reported and was not tested.'), ('Evidence boundaries', 'The ad card links to the services page; a successful visit, appointment completion and patient follow-up were not tested.'), ('Services page', 'The page offers a booking link and separately lists branch-specific WhatsApp options. The displayed contact details do not confirm lead delivery.')],
       'Galaxy Dental Care': [('Branch postcode source', 'https://galaxydentalcare.in/banjara-hills/ gives 500034 in the main address and 500028 in the branch list. Neither value has been confirmed.'), ('Evidence boundaries', 'The website form and WhatsApp link were observed separately from the ad. Neither submission nor the ad click-through was tested.'), ('Contact page', 'The contact page lists multiple Hyderabad branches and a branch selector for appointments. Actual selection and notification were not tested.')],
     }
@@ -174,16 +215,21 @@ CONV = ('has_contact_form','has_phone_click','has_whatsapp_link','has_cta_button
 SEO = ('has_title','title_text','has_meta_description','h1_count','has_og_tags','has_schema','has_favicon','image_count','images_without_alt')
 
 def build(d):
-    scale = {'SunSolar Power Systems':1.12, 'PNR Sunrise Energies':1.08,
-             'DLIFE Home Interiors':1.09, 'Dr Sridhar Dental':1.18,
-             'Galaxy Dental Care':1.10}[d['company']]
+    scale = {'SunSolar Power Systems':1.15, 'PNR Sunrise Energies':1.13,
+             'DLIFE Home Interiors':1.14, 'Dr Sridhar Dental':1.18,
+             'Galaxy Dental Care':1.16}[d['company']]
     for key, (size, leading) in BASE_STYLES.items():
         pdf.ST[key].fontSize, pdf.ST[key].leading = size * scale, leading * scale
     px = dict.fromkeys(TRACKING)
+    facts = PUBLIC_OBSERVATIONS[d['company']]
+    seo = dict.fromkeys(SEO)
+    seo.update({'has_title': True, 'title_text': facts['title'], 'has_meta_description': facts['description'],
+                'has_og_tags': facts['og'], 'has_schema': facts.get('schema')})
     site = {'ssl':True, 'load_time_seconds':None, 'final_url':d['site'], 'audit_date':DATE,
-            'pixels':px, 'conversion':dict.fromkeys(CONV), 'seo':dict.fromkeys(SEO),
+            'pixels':px, 'tracking_source_observations':facts['tags'],
+            'conversion':dict.fromkeys(CONV), 'seo':seo,
             'pagespeed':{'error':'not measured for this site'}, 'page_count':{'has_sitemap':None},
-            'local_signals':{'has_google_maps_embed':None},
+            'local_signals':{'has_google_maps_embed':facts.get('maps')},
             'conversion_evidence':{'checked_on':DATE, 'method':'Public page text; no interaction.', 'sources':[d['site']], 'rows':d['conversion']},
             'score':{'score':None, 'issues':d['issues'], 'wins':d['wins']}}
     ad = {'library_id':d['aid'], 'library_url':'https://www.facebook.com/ads/library/?id='+d['aid'],
@@ -191,7 +237,17 @@ def build(d):
     audit = {'company':d['company'], 'city':'Hyderabad', 'website':d['site'],
              'checked_on':DATE, 'audit_date':DATE, 'ads_only':True, 'website_audit_run':True,
              'conservative_scope':True, 'review_pending':True,
-             'ad_library':{'meta_own':{'found':True, 'ads':[ad]}, 'summary':'One direct Meta ad card was captured; current status and source date require rechecking. Website observations are separate and limited.'},
+             'ad_library':{'meta_own':{'found':True, 'ads':[ad]},
+                           'competitor_public_sample': {
+                               'description': (COMPETITOR_SAMPLES[d['company']][0] + ' - Meta ID ' + COMPETITOR_SAMPLES[d['company']][1]
+                                   + ', card start ' + COMPETITOR_SAMPLES[d['company']][2] + '. '
+                                   + COMPETITOR_SAMPLES[d['company']][3] + ' Card displayed Active; source timing and current status require recheck.'),
+                               'url': 'https://www.facebook.com/ads/library/?id=' + COMPETITOR_SAMPLES[d['company']][1]},
+                           'google_public_evidence':{'description':facts['google'],
+                               'url':'https://adstransparency.google.com/?region=IN&domain=' + facts['google_domain'],
+                               'filters':'India; Any time; All platforms; All formats',
+                               'timing':'Unconfirmed; some sample last-shown dates are after the session date.'},
+                           'summary':'One direct Meta ad card was captured; current status and source date require rechecking. Website observations are separate and limited.'},
              'funnel':{'type':'Destination not confirmed', 'destination':d['dest']},
              'site_audit':site, 'site_evidence':{'pixel':None,'ga4':None,'gtm':None,'google_ads_tag':None},
              'promise_gap':d['gap'], 'recommended_steps':d['steps'],
@@ -201,8 +257,23 @@ def build(d):
                  'scope': 'Static source only; execution, event delivery and account configuration not tested.'}}
     controls = evaluate(audit, audit['site_evidence'])
     for c in controls['controls']:
+        original_disposition = c['disposition']
         c['disposition']='unknown'
-        c['evidence']='Sample and timing are incomplete; recheck this control with current evidence.'
+        specific = {
+            'M01': SOURCE_FACTS[d['company']] + ' Actual ad destination and pixel firing remain unverified.',
+            'M39': 'The final click-through URL and its parameters were not captured; check them in the ad account.',
+            'M26': 'One captured ad is reproduced in this report; it cannot establish variety across the whole account.',
+            'M-CR1': 'The sampled ad card reports start date ' + d['started'] + '; current status and account-wide freshness need recheck.',
+            'M11': 'One ad card was captured; this is not an account-wide ad or campaign count.',
+            'M18': 'The sampled card shows ' + d['dest'] + '; actual delivery and objective alignment require a click and account check.',
+        }
+        if c['id'] in specific:
+            c['evidence'] = specific[c['id']]
+        elif original_disposition == 'unknown':
+            # Retain control-specific account-only limitations supplied by the evaluator.
+            pass
+        else:
+            c['evidence']='The one-ad sample and uncertain timing cannot establish this control; verify with current sources or account access.'
     controls['counts'] = dict(Counter(c['disposition'] for c in controls['controls']))
     audit['ads_audit'] = controls
     slug = re.sub(r'[^a-zA-Z0-9]+', '_', d['company'])[:50]

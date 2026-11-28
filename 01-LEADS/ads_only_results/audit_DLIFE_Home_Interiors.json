@@ -22,6 +22,16 @@
         }
       ]
     },
+    "competitor_public_sample": {
+      "description": "Houseboat Interiors - Meta ID 2019161465707252, card start Oct 13, 2026. The Hyderabad advertiser describes eligibility-based interior consultations for homeowners planning a project. Card displayed Active; source timing and current status require recheck.",
+      "url": "https://www.facebook.com/ads/library/?id=2019161465707252"
+    },
+    "google_public_evidence": {
+      "description": "India domain search returned approximately 200 ads for Any time, with D'LIFE Interiors Private Limited shown. Not a live count; one sample has a last-shown date after the session date, so recheck timing.",
+      "url": "https://adstransparency.google.com/?region=IN&domain=dlifeinteriors.com",
+      "filters": "India; Any time; All platforms; All formats",
+      "timing": "Unconfirmed; some sample last-shown dates are after the session date."
+    },
     "summary": "One direct Meta ad card was captured; current status and source date require rechecking. Website observations are separate and limited."
   },
   "funnel": {
@@ -43,6 +53,10 @@
       "hotjar": null,
       "google_tag_manager": null
     },
+    "tracking_source_observations": {
+      "meta_pixel": "Pixel 215010909028561 in source",
+      "google_ads": "Base tag AW-830229729 in source"
+    },
     "conversion": {
       "has_contact_form": null,
       "has_phone_click": null,
@@ -54,12 +68,12 @@
       "has_pricing_page_link": null
     },
     "seo": {
-      "has_title": null,
-      "title_text": null,
-      "has_meta_description": null,
+      "has_title": true,
+      "title_text": "Interior Designers in Hyderabad | D'LIFE Interiors",
+      "has_meta_description": true,
       "h1_count": null,
-      "has_og_tags": null,
-      "has_schema": null,
+      "has_og_tags": true,
+      "has_schema": true,
       "has_favicon": null,
       "image_count": null,
       "images_without_alt": null
@@ -71,7 +85,7 @@
       "has_sitemap": null
     },
     "local_signals": {
-      "has_google_maps_embed": null
+      "has_google_maps_embed": true
     },
     "conversion_evidence": {
       "checked_on": "source date not verified",
@@ -151,105 +165,105 @@
         "name": "Meta Pixel installed",
         "group": "Tracking & measurement",
         "disposition": "unknown",
-        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+        "evidence": "Hyderabad page source includes Meta Pixel code and Google Ads base tag AW-830229729; event firing not tested. Actual ad destination and pixel firing remain unverified."
       },
       {
         "id": "M39",
         "name": "UTM parameters on ad destinations",
         "group": "Tracking & measurement",
         "disposition": "unknown",
-        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+        "evidence": "The final click-through URL and its parameters were not captured; check them in the ad account."
       },
       {
         "id": "M05",
         "name": "Domain verification",
         "group": "Tracking & measurement",
         "disposition": "unknown",
-        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
       },
       {
         "id": "M25",
         "name": "Creative format diversity",
         "group": "Creative",
         "disposition": "unknown",
-        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+        "evidence": "Ad-card formats were not captured for these ads."
       },
       {
         "id": "M26",
         "name": "Creative concept coverage",
         "group": "Creative",
         "disposition": "unknown",
-        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+        "evidence": "One captured ad is reproduced in this report; it cannot establish variety across the whole account."
       },
       {
         "id": "M30",
         "name": "Social proof utilization",
         "group": "Creative",
         "disposition": "unknown",
-        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+        "evidence": "The one-ad sample and uncertain timing cannot establish this control; verify with current sources or account access."
       },
       {
         "id": "M27",
         "name": "Video aspect ratios",
         "group": "Creative",
         "disposition": "unknown",
-        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
       },
       {
         "id": "M29",
         "name": "Hook rate",
         "group": "Creative",
         "disposition": "unknown",
-        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+        "evidence": "Video performance metrics are account-only."
       },
       {
         "id": "M31",
         "name": "UGC / social-native content",
         "group": "Creative",
         "disposition": "unknown",
-        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+        "evidence": "Content style cannot be verified from ad cards alone."
       },
       {
         "id": "M-CR4",
         "name": "CTR benchmark",
         "group": "Creative",
         "disposition": "unknown",
-        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
       },
       {
         "id": "M-CR1",
         "name": "Creative freshness",
         "group": "Structure & delivery",
         "disposition": "unknown",
-        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+        "evidence": "The sampled ad card reports start date Aug 19, 2026; current status and account-wide freshness need recheck."
       },
       {
         "id": "M11",
         "name": "Campaign fragmentation",
         "group": "Structure & delivery",
         "disposition": "unknown",
-        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+        "evidence": "One ad card was captured; this is not an account-wide ad or campaign count."
       },
       {
         "id": "M18",
         "name": "Campaign objective alignment",
         "group": "Structure & delivery",
         "disposition": "unknown",
-        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+        "evidence": "The sampled card shows Send message shown; final destination not confirmed; actual delivery and objective alignment require a click and account check."
       },
       {
         "id": "M33",
         "name": "Advantage+ Placements",
         "group": "Structure & delivery",
         "disposition": "unknown",
-        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+        "evidence": "Placement automation state is account-only."
       },
       {
         "id": "M28",
         "name": "Creative fatigue detection",
         "group": "Creative",
         "disposition": "unknown",
-        "evidence": "Sample and timing are incomplete; recheck this control with current evidence."
+        "evidence": "Frequency and performance decay need account metrics."
       }
     ],
     "counts": {
