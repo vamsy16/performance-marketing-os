@@ -1,0 +1,93 @@
+=== DRAFT (NOT SENT) - D'LIFE Home Interiors ===
+Drafted: 2026-11-28
+To: enquiry@dlifeinteriors.com
+Channel: Published address: enquiry@dlifeinteriors.com (also printed in their live ads).
+Website: https://dlifeinteriors.com/location/hyderabad/
+Report kind: ads + measured site audit
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_D_LIFE_Home_Interiors.pdf
+Source for every figure: 01-LEADS/batch15_telangana_data.py (read live on 2026-11-28)
+Report: 01-LEADS/ads_only_results/audit_D_LIFE_Home_Interiors.json
+Step 0 subject: D'LIFE: 5 live Meta ads, ~200 Google ads, two different phone numbers
+
+
+--- STEP 0 (initial) · send day 0 ---
+SUBJECT: D'LIFE: 5 live Meta ads, ~200 Google ads, two different phone numbers
+
+Hi,
+
+I read D'LIFE's live advertising this week - it is the heaviest in the Hyderabad interior market I looked at: five active Meta ads (the oldest since 13 May 2026) and roughly 200 live Google ads under D'LIFE Interiors Private Limited.
+
+Two things stood out.
+
+First, the phone number. The live Meta ad quoting +91 9567231111 (the Delhi one) sits next to a Hyderabad page that publishes +91 949 508 7777. A buyer who checks both has to decide which is real before calling.
+
+Second, where the clicks land. Three of the five Meta ads open a Messenger chat and two open Instagram - none of them lands on the Hyderabad page, and none carries a UTM. Your Meta Pixel (215010909028561) and Tag Manager container (GTM-K9FB6G2) are both on the page, so the measurement exists; it just never sees the ad click that produced the conversation.
+
+The attached report also covers the markup: 64 telephone links with unencoded spaces that fail to dial on some Android handsets, and 148 validator errors. It says plainly which rows I could not read through NitroPack rather than guessing at them.
+
+Worth a short call?
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+Live ads cited:
+  Library ID 1834827524373920: https://www.facebook.com/ads/library/?id=1834827524373920
+  Library ID 1103976218716711: https://www.facebook.com/ads/library/?id=1103976218716711
+  Library ID 1058256226797967: https://www.facebook.com/ads/library/?id=1058256226797967
+  Library ID 1701066480896002: https://www.facebook.com/ads/library/?id=1701066480896002
+  Library ID 1514572726873309: https://www.facebook.com/ads/library/?id=1514572726873309
+
+
+--- STEP 1 (follow-up) · draft only after step 0 is SENT + 2 days ---
+SUBJECT: Re: D'LIFE: 5 live Meta ads, ~200 Google ads, two different phone numbers
+
+Hi,
+
+One number from the report that is easy to miss.
+
+Of the five live Meta ads, the three newest are the ones that open Messenger, and the two testimonial films point at Instagram. Your best-performing format is the one furthest from anything you can measure.
+
+The report in my first email has the Library IDs.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+--- STEP 2 (follow-up) · draft only after step 1 is SENT + 2 days ---
+SUBJECT: Re: D'LIFE: 5 live Meta ads, ~200 Google ads, two different phone numbers
+
+Hi,
+
+A small thing with an outsized effect: the Hyderabad page's wrapper carries class="locationPage location-bangalore" - a copy-paste from the Bangalore template.
+
+It does not break the page today, but it is the kind of detail that turns into the wrong city, the wrong number or the wrong map after the next edit.
+
+Same report, page 1 onwards.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+--- STEP 3 (breakup) · draft only after step 2 is SENT + 2 days ---
+SUBJECT: Re: D'LIFE: 5 live Meta ads, ~200 Google ads, two different phone numbers
+
+Hi,
+
+Last one, then I will leave you alone.
+
+Your page quotes the packages exactly (Essential at Rs 8.85 lakh down to Rs 6.37 lakh for a 2BHK) - that is more than most interior firms publish. The gap is not the offer; it is that the ads never send anyone to it.
+
+If the paid side becomes a priority this quarter, I would start there.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+=== END ===

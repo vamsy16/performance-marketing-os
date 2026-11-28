@@ -8,7 +8,7 @@
   "conservative_scope": false,
   "checked_on": "2026-11-28",
   "audit_date": "2026-11-28",
-  "generated_at": "2026-11-28 13:51",
+  "generated_at": "2026-11-28 14:53",
   "source": "Meta Ad Library (India, active ads), Google Ads Transparency Centre (India), the company's own live website and the W3C Nu HTML Checker",
   "ad_library": {
     "checked_at": "2026-11-28",
@@ -102,8 +102,8 @@
       "The canonical tag points at https://www.sunriseenergies.example/, a placeholder. Every search engine reading it is told the real page is somewhere else - a one-line fix with a direct SEO payoff."
     ],
     [
-      "Make the homepage counters show real numbers",
-      "The trust strip renders '0+', '0 MW' and '0%' because the counters animate from zero and the script never provides a value; on a slow phone they stay at zero."
+      "Publish a real email address and office address",
+      "The homepage offers a phone number and WhatsApp only - no email, no street address - on a page whose job is to make installers and commercial buyers trust the company with a project."
     ],
     [
       "Point the channel-partner ad at a partner landing page",
@@ -120,8 +120,8 @@
       "The canonical tag points at https://www.sunriseenergies.example/, a placeholder. Every search engine reading it is told the real page is somewhere else - a one-line fix with a direct SEO payoff."
     ],
     [
-      "Make the homepage counters show real numbers",
-      "The trust strip renders '0+', '0 MW' and '0%' because the counters animate from zero and the script never provides a value; on a slow phone they stay at zero."
+      "Publish a real email address and office address",
+      "The homepage offers a phone number and WhatsApp only - no email, no street address - on a page whose job is to make installers and commercial buyers trust the company with a project."
     ],
     [
       "Point the channel-partner ad at a partner landing page",
@@ -227,7 +227,7 @@
     "generator": "ads_only_report.py",
     "entrypoint": "build_batch15_telangana.py",
     "data_file": "batch15_telangana_data.py",
-    "run_at": "2026-11-28 13:51",
+    "run_at": "2026-11-28 14:53",
     "method": "Ad IDs read in Meta Ad Library (India, active only); site values read from the served page and the W3C Nu checker source view; PageSpeed API unreachable so no speed score is claimed"
   },
   "ads_audit": {

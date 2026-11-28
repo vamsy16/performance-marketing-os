@@ -358,9 +358,9 @@ PNR = {
          "The canonical tag points at https://www.sunriseenergies.example/, a placeholder. Every search "
          "engine reading it is told the real page is somewhere else - a one-line fix with a direct SEO "
          "payoff."),
-        ("Make the homepage counters show real numbers",
-         "The trust strip renders '0+', '0 MW' and '0%' because the counters animate from zero and the "
-         "script never provides a value; on a slow phone they stay at zero."),
+        ("Publish a real email address and office address",
+         "The homepage offers a phone number and WhatsApp only - no email, no street address - on a page "
+         "whose job is to make installers and commercial buyers trust the company with a project."),
         ("Point the channel-partner ad at a partner landing page",
          "The ad is recruiting installers, but the button opens a WhatsApp chat. A page carrying margins, "
          "territories and an application form would qualify partners before a human spends time on them."),

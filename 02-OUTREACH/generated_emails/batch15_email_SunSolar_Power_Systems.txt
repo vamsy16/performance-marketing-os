@@ -1,0 +1,94 @@
+=== DRAFT (NOT SENT) - SunSolar Power Systems ===
+Drafted: 2026-11-28
+To: sales@sunsolar.info
+Channel: Published address: sales@sunsolar.info (also on the site footer).
+Website: https://www.sunsolar.info/
+Report kind: ads + measured site audit
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_SunSolar_Power_Systems.pdf
+Source for every figure: 01-LEADS/batch15_telangana_data.py (read live on 2026-11-28)
+Report: 01-LEADS/ads_only_results/audit_SunSolar_Power_Systems.json
+Step 0 subject: SunSolar: 4 live Meta ads, all of them landing on fb.me
+
+
+--- STEP 0 (initial) · send day 0 ---
+SUBJECT: SunSolar: 4 live Meta ads, all of them landing on fb.me
+
+Hi,
+
+I read SunSolar's live advertising this week, and one thing stood out.
+
+All four of your Meta ads point at http://fb.me/ - a bare short link, with no UTM on it. The oldest has been running since 22 October 2026; the other three all started in the last week (two on 21 November, one on 23 November).
+
+Meanwhile the Google side of the house is in better shape than most: the Google Ads conversion tag in your tracking.js (AW-18179174251) is already wired to the lead form (#leadForm), both phone links and the WhatsApp link. So a Google enquiry can be counted today.
+
+The Meta side cannot. There is no Meta Pixel in the page, no GA4 and no Tag Manager container, so the four ads above produce enquiries you can only count by hand.
+
+I put the evidence in the attached report: the four live ads with their Library IDs and start dates, the tracking audit of the page, and the three things I would fix first. Every line in it can be re-checked from the links it cites.
+
+Worth 10 minutes? I am happy to walk you through it, or keep the report and use it without me.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+Live ads cited:
+  Library ID 1810233520093832: https://www.facebook.com/ads/library/?id=1810233520093832
+  Library ID 2413566255849370: https://www.facebook.com/ads/library/?id=2413566255849370
+  Library ID 1866738597708833: https://www.facebook.com/ads/library/?id=1866738597708833
+  Library ID 2576227376137902: https://www.facebook.com/ads/library/?id=2576227376137902
+
+
+--- STEP 1 (follow-up) · draft only after step 0 is SENT + 2 days ---
+SUBJECT: Re: SunSolar: 4 live Meta ads, all of them landing on fb.me
+
+Hi,
+
+Adding one thing I did not put in the first email.
+
+Your site already quotes a price in the estimator (Rs 2,25,000 base for a 4 kW system), while the live ads quote Rs 1,71,999 and Rs 2,18,999 after the Rs 78,000 subsidy. Two different numbers for the same buyer, in two places they will both see.
+
+That is a five-minute fix on the page, and it matters more once the ads are measurable.
+
+The report is in my first email if it is useful.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+--- STEP 2 (follow-up) · draft only after step 1 is SENT + 2 days ---
+SUBJECT: Re: SunSolar: 4 live Meta ads, all of them landing on fb.me
+
+Hi,
+
+Last detail from the audit, then I will stop.
+
+The homepage preloads a video file (assets/video/sunsolar-cinematic-loop.mp4) before anything else, and it is the first thing between a paid click and the quote calculator on a phone. Combined with a fb.me redirect, that is the whole path a Meta click takes.
+
+If you ever want a second pair of eyes on the paid side, I am around.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+--- STEP 3 (breakup) · draft only after step 2 is SENT + 2 days ---
+SUBJECT: Re: SunSolar: 4 live Meta ads, all of them landing on fb.me
+
+Hi,
+
+I have written twice and heard nothing, so I will assume the timing is wrong and close the loop.
+
+The report stands on its own - the four Library IDs in it still resolve in the Ad Library, and the tracking findings will still be true next month unless someone fixes them.
+
+If it becomes a priority, my door is open.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+=== END ===

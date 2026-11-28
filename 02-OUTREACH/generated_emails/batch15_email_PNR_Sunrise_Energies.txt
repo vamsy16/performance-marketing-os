@@ -1,0 +1,88 @@
+=== DRAFT (NOT SENT) - PNR Sunrise Energies ===
+Drafted: 2026-11-28
+To: (no public email address - see channel note)
+Channel: NO PUBLIC EMAIL. The homepage publishes only +91 63045 87145 (phone and WhatsApp). Send as a web-form message or WhatsApp, or find a named contact before sending.
+Website: https://sunriseenergies.in/
+Report kind: ads + measured site audit
+ATTACH THIS: /home/user/performance-marketing-os/02-OUTREACH/ads_only_pdfs/audit_PNR_Sunrise_Energies.pdf
+Source for every figure: 01-LEADS/batch15_telangana_data.py (read live on 2026-11-28)
+Report: 01-LEADS/ads_only_results/audit_PNR_Sunrise_Energies.json
+Step 0 subject: PNR Sunrise: one live ad, and a canonical tag pointing at a placeholder
+
+
+--- STEP 0 (initial) · send day 0 ---
+SUBJECT: PNR Sunrise: one live ad, and a canonical tag pointing at a placeholder
+
+Hi,
+
+I read PNR Sunrise Energies' live advertising this week. One ad is running - opened 12 November, recruiting solar channel partners across Telangana and Andhra Pradesh, with a WhatsApp button rather than a landing page.
+
+The ad itself is fine. What worried me is the page it mentions in the copy (sunriseenergies.in) and what that page tells Google:
+
+  - its canonical tag points at https://www.sunriseenergies.example/ - a placeholder domain that does not exist;
+  - there is no analytics, no pixel and no tag manager of any kind in the page source, so the WhatsApp enquiries from that ad cannot be traced to it.
+
+The first is a one-line fix with a direct search cost. The second is why the ad spend and the enquiries never meet.
+
+The attached report documents both, with the ad's Library ID, the validator output and the exact lines involved, so it can be re-checked.
+
+If it is useful, I am happy to walk you through it on a short call. If not, keep it.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+Live ad cited:
+  Library ID 28807326382303186: https://www.facebook.com/ads/library/?id=28807326382303186
+
+
+--- STEP 1 (follow-up) · draft only after step 0 is SENT + 2 days ---
+SUBJECT: Re: PNR Sunrise: one live ad, and a canonical tag pointing at a placeholder
+
+Hi,
+
+One more from the audit, in case the canonical tag felt small.
+
+Your homepage gives a phone number and a WhatsApp link, but no email address and no office address - and it is the page an installer or a commercial buyer lands on when they are deciding whether to trust you with a project.
+
+Both items are in the report from my first email.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+--- STEP 2 (follow-up) · draft only after step 1 is SENT + 2 days ---
+SUBJECT: Re: PNR Sunrise: one live ad, and a canonical tag pointing at a placeholder
+
+Hi,
+
+The ad you are running asks installers to partner with you, but the button opens a chat. Nothing captures the territory, the team size or the margin expectation before a human answers.
+
+A one-page partner form would qualify those conversations before they cost you time - and would be measurable, which the WhatsApp thread is not.
+
+Happy to sketch it if that is useful.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+
+--- STEP 3 (breakup) · draft only after step 2 is SENT + 2 days ---
+SUBJECT: Re: PNR Sunrise: one live ad, and a canonical tag pointing at a placeholder
+
+Hi,
+
+I will stop here - no reply, so I assume it is not a priority right now.
+
+If the channel-partner push picks up, the report in my first email lists what to fix first, in order. It will still be accurate.
+
+Best,
+Vamsi
+Smart Pursuit
++91 70950 24220
+
+=== END ===
