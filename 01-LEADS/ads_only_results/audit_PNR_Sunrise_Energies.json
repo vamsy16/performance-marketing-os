@@ -1,0 +1,358 @@
+{
+  "company": "PNR Sunrise Energies",
+  "legal": "PNR Sunrise Energies Pvt Ltd",
+  "city": "Hyderabad, Telangana",
+  "website": "https://sunriseenergies.in/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "conservative_scope": false,
+  "checked_on": "2026-11-28",
+  "audit_date": "2026-11-28",
+  "generated_at": "2026-11-28 13:40",
+  "source": "Meta Ad Library (India, active ads), Google Ads Transparency Centre (India), the company's own live website and the W3C Nu HTML Checker",
+  "ad_library": {
+    "checked_at": "2026-11-28",
+    "meta_own": {
+      "found": true,
+      "page": "PNR Sunrise Energies",
+      "page_url": "https://www.facebook.com/profile.php?id=61595350896439",
+      "query": "PNR Sunrise Energies (advertiser name search)",
+      "search_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&media_type=all&q=PNR%20Sunrise%20Energies&search_type=keyword_unordered",
+      "results_count": 1,
+      "results_label": "1 active ad card returned for the advertiser (ad detail opened directly)",
+      "ads": [
+        {
+          "library_id": "28807326382303186",
+          "page_name": "PNR Sunrise Energies",
+          "started": "12 Nov 2026",
+          "destination": "https://api.whatsapp.com/send (WhatsApp chat)",
+          "text": "Become a Solar Channel Partner with PNR Sunrise Energies Pvt Ltd. We are expanding across Telangana and Andhra Pradesh and looking for channel partners, dealers and installers. Partner with us for: rooftop solar projects, PM Surya Ghar subsidy support, EV charging installations, end-to-end EPC execution and marketing support. Attractive margins. Dedicated support. Growing market. Call or WhatsApp: +91 63045 87145. Website: sunriseenergies.in. Hyderabad, Telangana.",
+          "library_url": "https://www.facebook.com/ads/library/?id=28807326382303186",
+          "verified_on": "2026-11-28",
+          "note": ""
+        }
+      ]
+    },
+    "google_own": {
+      "found": false,
+      "query_url": "https://adstransparency.google.com/?region=IN&domain=sunriseenergies.in",
+      "detail": null,
+      "note": "Domain filter sunriseenergies.in, region India, advertiser-type all, live on 2026-11-28: 'No ads found' - no advertiser record and no ads for this domain."
+    },
+    "meta_competitors": {
+      "query": "solar Hyderabad",
+      "search_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&media_type=all&q=solar%20Hyderabad&search_type=keyword_unordered",
+      "results_count": 430,
+      "ads": [
+        {
+          "library_id": "1472241928117694",
+          "page_name": "SolarSquare Energy",
+          "started": "13 Oct 2026",
+          "destination": "https://www.solarsquare.in/rooftop-solar-in-hyderabad-1",
+          "text": "Solar Is for Every Home. Hyderabad, what if your solar savings came with a money-back guarantee? Guaranteed Savings. Trusted by 36,000+ Homes. India's No. 1 Home Solar Company. Switch to SolarSquare! Book Now.",
+          "library_url": "https://www.facebook.com/ads/library/?id=1472241928117694",
+          "verified_on": "2026-11-28",
+          "note": ""
+        },
+        {
+          "library_id": "29143729581958632",
+          "page_name": "Visionteknewenergy",
+          "started": "12 Nov 2026",
+          "destination": "https://www.instagram.com/",
+          "text": "Still paying high electricity bills? Switch to Visiontek Solar and turn sunlight into savings. Our smart system powers your home directly, stores extra energy for the night and helps lower your monthly bill.",
+          "library_url": "https://www.facebook.com/ads/library/?id=29143729581958632",
+          "verified_on": "2026-11-28",
+          "note": ""
+        },
+        {
+          "library_id": "942037648839408",
+          "page_name": "Sri Balaji Solar Energies",
+          "started": "29 May 2026",
+          "destination": "http://fb.me/",
+          "text": "[Ad copy in Telugu - open the live ad] Rs. 0 down payment rooftop solar, up to Rs. 78,000 central subsidy, EMI from Rs. 1,355/month, 10,000+ customers, free site visit across Warangal, Hanumakonda, Rajahmundry, Bhadrachalam, Hyderabad and nearby districts.",
+          "library_url": "https://www.facebook.com/ads/library/?id=942037648839408",
+          "verified_on": "2026-11-28",
+          "note": ""
+        }
+      ]
+    },
+    "google_competitors": {},
+    "summary": "PNR Sunrise Energies has one active Meta ad - opened 12 November 2026 - and it is a channel-partner recruitment ad, not a homeowner offer: the copy invites solar installers to 'partner with us' and the button opens a WhatsApp chat, while the website is only mentioned in the body text. The site sells solar EPC and EV charging and is technically clean for a hand-built page (6 markup errors, 3 warnings), but it carries no analytics, no pixel and no tag manager of any kind, so neither the ad nor the site can attribute a single lead. The Google Ads Transparency Centre returns no advertiser record for sunriseenergies.in in India, and the site's canonical tag points at a placeholder domain (www.sunriseenergies.example), which tells Google the real page is elsewhere.",
+    "counts": {
+      "own_meta_ads": 1,
+      "own_google_ads": null,
+      "competitor_meta_ads": 3,
+      "note": "1 active ad card returned for the advertiser (ad detail opened directly)"
+    }
+  },
+  "funnel": {
+    "from": "1 live Meta ad (12 Nov 2026) - channel-partner recruitment",
+    "to": "WhatsApp chat (api.whatsapp.com)",
+    "destination": "https://api.whatsapp.com/send - the site sunriseenergies.in appears only as body text in the ad, not as the click destination",
+    "note": "No landing page is involved and no tracking parameter exists, so the ad cannot be joined to any site visit."
+  },
+  "findings": [],
+  "next_steps": [
+    [
+      "Install one analytics layer before the next ad",
+      "There is no GA4, no GTM and no Meta Pixel in the served HTML, so the one live ad produces leads into a WhatsApp inbox with no record of where they came from."
+    ],
+    [
+      "Fix the canonical URL",
+      "The canonical tag points at https://www.sunriseenergies.example/, a placeholder. Every search engine reading it is told the real page is somewhere else - a one-line fix with a direct SEO payoff."
+    ],
+    [
+      "Make the homepage counters show real numbers",
+      "The trust strip renders '0+', '0 MW' and '0%' because the counters animate from zero and the script never provides a value; on a slow phone they stay at zero."
+    ],
+    [
+      "Point the channel-partner ad at a partner landing page",
+      "The ad is recruiting installers, but the button opens a WhatsApp chat. A page carrying margins, territories and an application form would qualify partners before a human spends time on them."
+    ]
+  ],
+  "recommended_steps": [
+    [
+      "Install one analytics layer before the next ad",
+      "There is no GA4, no GTM and no Meta Pixel in the served HTML, so the one live ad produces leads into a WhatsApp inbox with no record of where they came from."
+    ],
+    [
+      "Fix the canonical URL",
+      "The canonical tag points at https://www.sunriseenergies.example/, a placeholder. Every search engine reading it is told the real page is somewhere else - a one-line fix with a direct SEO payoff."
+    ],
+    [
+      "Make the homepage counters show real numbers",
+      "The trust strip renders '0+', '0 MW' and '0%' because the counters animate from zero and the script never provides a value; on a slow phone they stay at zero."
+    ],
+    [
+      "Point the channel-partner ad at a partner landing page",
+      "The ad is recruiting installers, but the button opens a WhatsApp chat. A page carrying margins, territories and an application form would qualify partners before a human spends time on them."
+    ]
+  ],
+  "contact_facts": [
+    "Phone / WhatsApp: +91 63045 87145",
+    "No email address and no street address are published on the homepage",
+    "Meta page: PNR Sunrise Energies (1 active ad)"
+  ],
+  "contact": {
+    "email": "",
+    "phone": "",
+    "fb_page": ""
+  },
+  "site_evidence": {
+    "pixel": false,
+    "utm": false,
+    "checked_on": "2026-11-28",
+    "note": "Ad click lands in WhatsApp; the site is not the ad destination."
+  },
+  "site_audit": {
+    "pixels": {
+      "meta_pixel": false,
+      "google_ads": false,
+      "google_analytics_ga4": false,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
+      "microsoft_clarity": false,
+      "hotjar": false,
+      "google_tag_manager": false
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": 10,
+      "has_live_chat": false,
+      "has_popup_optin": false,
+      "has_testimonials": true,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "title": "Sunrise Energies | Solar EPC Company in Hyderabad | Rooftop Solar, EV Charging & O&M",
+      "title_text": "Sunrise Energies | Solar EPC Company in Hyderabad | Rooftop Solar, EV Charging & O&M",
+      "title_length": 88,
+      "has_meta_description": true,
+      "meta_description": "PNR Sunrise Energies builds rooftop solar, ground-mount and EV charging projects across Telangana and Andhra Pradesh - EPC, subsidy paperwork and O&M under one roof.",
+      "h1_count": 1,
+      "h1_text": "Power Your Future. Naturally.",
+      "has_og_tags": true,
+      "has_schema": false,
+      "has_favicon": false,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "mobile_performance_score": null,
+      "largest_contentful_paint": null,
+      "error": "not measured - the PageSpeed Insights API could not be reached from this crawler; no speed score is claimed"
+    },
+    "page_count": {
+      "has_sitemap": null,
+      "note": "Not checked in this pass - the sitemap was not fetched for this site."
+    },
+    "local_signals": {
+      "has_google_maps_embed": false,
+      "mentions_city": true
+    },
+    "html_errors": {
+      "errors": 6,
+      "warnings": 3,
+      "info": null,
+      "note": "includes an invalid 'r:' property inside @keyframes and aria-hidden=\"True\" on a decorative element"
+    },
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://sunriseenergies.in/",
+    "score": {
+      "score": 23,
+      "issues": [
+        "No Meta Pixel installed — can't run retargeting or track ad conversions",
+        "No Google Ads / GTM tracking — can't measure ad performance",
+        "No Google Analytics — flying blind on website traffic",
+        "No live chat — missing after-hours leads",
+        "No structured data (Schema.org) - missing rich results in Google",
+        "No favicon — looks unprofessional in browser tabs"
+      ],
+      "wins": [
+        "Contact form exists",
+        "WhatsApp link present",
+        "Good CTA presence (10 buttons)",
+        "Testimonials visible"
+      ]
+    },
+    "audit_date": "2026-11-28"
+  },
+  "vertical": "solar",
+  "scope_note": "The single-page site was read in full through the W3C checker's source view (lines 1-683) and the closing inline script block. There is no script from Google, Meta, LinkedIn, Clarity, Hotjar or any tag manager in the served HTML - the only JavaScript is the site's own. That is a source-code finding: nothing on this page is measured today, but a tag could still be added server-side, which a page read cannot see. The homepage counters render as '0+', '0 MW' and '0%', and the canonical link points at https://www.sunriseenergies.example/ - a placeholder domain - so the page tells Google the authoritative copy lives somewhere that does not exist.",
+  "summary": "PNR Sunrise Energies has one active Meta ad - opened 12 November 2026 - and it is a channel-partner recruitment ad, not a homeowner offer: the copy invites solar installers to 'partner with us' and the button opens a WhatsApp chat, while the website is only mentioned in the body text. The site sells solar EPC and EV charging and is technically clean for a hand-built page (6 markup errors, 3 warnings), but it carries no analytics, no pixel and no tag manager of any kind, so neither the ad nor the site can attribute a single lead. The Google Ads Transparency Centre returns no advertiser record for sunriseenergies.in in India, and the site's canonical tag points at a placeholder domain (www.sunriseenergies.example), which tells Google the real page is elsewhere.",
+  "provenance": {
+    "generator": "ads_only_report.py",
+    "entrypoint": "build_batch15_telangana.py",
+    "data_file": "batch15_telangana_data.py",
+    "run_at": "2026-11-28 13:40",
+    "method": "Ad IDs read in Meta Ad Library (India, active only); site values read from the served page and the W3C Nu checker source view; PageSpeed API unreachable so no speed score is claimed"
+  },
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "No analytics, pixel or tag-manager script of any kind in the single-page source (lines 1-683 read through the checker).",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "The one live ad opens a WhatsApp chat (api.whatsapp.com) with no UTM; sunriseenergies.in appears only as body text in the ad.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Formats differ across the cards in the Ad Library (video and image), but a per-creative format count was not recorded in this pass.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "pass",
+        "evidence": "Copy was read in full for all 1 live ads - see the cards and the verbatim table in this report.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "fail",
+        "evidence": "No customer proof anywhere in the channel-partner ad; the appeal is margins, EPC support and a growing market.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Only one active ad is public, started 12 Nov 2026 (16 days at audit time); one creative cannot establish a refresh cadence.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "One active ad is visible; campaign structure is account-only.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "The ad's CTA (WhatsApp) and its channel-partner offer agree - one job, one destination.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 2,
+      "fail": 3,
+      "unknown": 10,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

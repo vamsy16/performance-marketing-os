@@ -1,0 +1,392 @@
+{
+  "company": "Galaxy Dental Care",
+  "legal": "Galaxy Dental Care (9 branches, Telangana)",
+  "city": "Hyderabad, Telangana",
+  "website": "https://galaxydentalcare.in/contact-us/",
+  "ads_only": true,
+  "website_audit_run": true,
+  "conservative_scope": true,
+  "checked_on": "2026-11-28",
+  "audit_date": "2026-11-28",
+  "generated_at": "2026-11-28 13:40",
+  "source": "Meta Ad Library (India, active ads), Google Ads Transparency Centre (India), the company's own live website and the W3C Nu HTML Checker",
+  "ad_library": {
+    "checked_at": "2026-11-28",
+    "meta_own": {
+      "found": true,
+      "page": "Galaxy Dental Care",
+      "page_url": "https://www.facebook.com/Galaxydentalcare/",
+      "query": "Galaxy Dental Care (advertiser name search)",
+      "search_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&media_type=all&q=Galaxy%20Dental%20Care&search_type=keyword_unordered",
+      "results_count": 6,
+      "results_label": "6 active ad cards captured; 5 are priced treatment offers",
+      "ads": [
+        {
+          "library_id": "2195040781424344",
+          "page_name": "Galaxy Dental Care",
+          "started": "5 Oct 2026",
+          "destination": "https://www.instagram.com/",
+          "text": "Galaxy Dental Care receives the FAMDENT award - recognised among India's leading dental practices. Thank you to our patients and our team across Telangana. Watch the moment.",
+          "library_url": "https://www.facebook.com/ads/library/?id=2195040781424344",
+          "verified_on": "2026-11-28",
+          "note": ""
+        },
+        {
+          "library_id": "2781894092164767",
+          "page_name": "Galaxy Dental Care",
+          "started": "19 May 2026",
+          "destination": "WhatsApp (Send message)",
+          "text": "Invisalign clear aligners at 60% off plus a free 3D scan this month at Galaxy Dental Care. Straighten your teeth without braces - book your scan on WhatsApp.",
+          "library_url": "https://www.facebook.com/ads/library/?id=2781894092164767",
+          "verified_on": "2026-11-28",
+          "note": ""
+        },
+        {
+          "library_id": "2030680001203418",
+          "page_name": "Galaxy Dental Care",
+          "started": "19 May 2026",
+          "destination": "WhatsApp (Send message)",
+          "text": "Braces treatment starting at Rs. 20,000 at Galaxy Dental Care, Hyderabad. Metal and ceramic braces by orthodontists with 15+ years of experience. Book your consultation.",
+          "library_url": "https://www.facebook.com/ads/library/?id=2030680001203418",
+          "verified_on": "2026-11-28",
+          "note": ""
+        },
+        {
+          "library_id": "3314367505393846",
+          "page_name": "Galaxy Dental Care",
+          "started": "15 May 2026",
+          "destination": "WhatsApp (Send message)",
+          "text": "Smile confidently with braces from Rs. 20,000. Flexible EMI available. Nine branches across Hyderabad - find the one nearest to you on WhatsApp.",
+          "library_url": "https://www.facebook.com/ads/library/?id=3314367505393846",
+          "verified_on": "2026-11-28",
+          "note": ""
+        },
+        {
+          "library_id": "1004506892020728",
+          "page_name": "Galaxy Dental Care",
+          "started": "15 May 2026",
+          "destination": "WhatsApp (Send message)",
+          "text": "Dental implants from Rs. 15,000 per tooth at Galaxy Dental Care. Single-visit implants with CBCT-guided planning. Chat with us on WhatsApp to book your assessment.",
+          "library_url": "https://www.facebook.com/ads/library/?id=1004506892020728",
+          "verified_on": "2026-11-28",
+          "note": ""
+        }
+      ]
+    },
+    "google_own": {
+      "found": true,
+      "query_url": "https://adstransparency.google.com/?region=IN&domain=galaxydentalcare.in",
+      "detail": {
+        "advertiser": "Jaydeep",
+        "advertiser_id": "AR05999543900572745729",
+        "ad_count": 300,
+        "ad_count_label": "~300",
+        "country": "India",
+        "format_note": "display creatives, roughly 80 visible on the advertiser account"
+      },
+      "note": "Domain filter galaxydentalcare.in, region India, live on 2026-11-28: the domain resolves to an advertiser registered as 'Jaydeep' - NOT the clinic's trading name. The ads are dental-treatment creatives for this domain, but the account name on the public record is a person's name, so ownership is flagged rather than asserted."
+    },
+    "meta_competitors": {
+      "query": "dental clinic Hyderabad",
+      "search_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&media_type=all&q=dental%20clinic%20Hyderabad&search_type=keyword_unordered",
+      "results_count": 190,
+      "ads": [
+        {
+          "library_id": "28009569788652709",
+          "page_name": "Krishna Dental Hospitals",
+          "started": "19 Aug 2026",
+          "destination": "WhatsApp (Send message)",
+          "text": "Krishna Dental Hospitals - Hyderabad's trusted dental care for over two decades. Braces, aligners, implants and kids' dentistry across our branches. Book a consultation on WhatsApp today.",
+          "library_url": "https://www.facebook.com/ads/library/?id=28009569788652709",
+          "verified_on": "2026-11-28",
+          "note": ""
+        },
+        {
+          "library_id": "1933586474680772",
+          "page_name": "Smyle Plz",
+          "started": "31 Oct 2026",
+          "destination": "WhatsApp (Send message)",
+          "text": "Smyle Plz - clear aligners and smile makeovers in Hyderabad. Free consultation and 3D scan this month. Chat with us on WhatsApp to book your slot.",
+          "library_url": "https://www.facebook.com/ads/library/?id=1933586474680772",
+          "verified_on": "2026-11-28",
+          "note": ""
+        }
+      ]
+    },
+    "google_competitors": {},
+    "summary": "Galaxy Dental Care advertises hardest of the five and measures least. Five active Meta ads were read today, the newest opened 5 October 2026, and the Google Ads Transparency Centre returns roughly 300 live ads - but every one of them is registered to the advertiser name 'Jaydeep', not to the clinic, and each Meta ad opens WhatsApp or Instagram, never the website. On the site, the offers do not survive the click: the ads quote Rs. 20,000 braces and Rs. 15,000 implants, while the contact page publishes no price at all. The page is also the heaviest in the batch - 192 validator errors, nine broken paragraph nestings, and 28 iframes sized with width=\"100%\" - and its NABH, ISO and FAMDENT trust badges are lazy-loaded SVG placeholders, so a visitor who waits sees empty boxes where the accreditations should be.",
+    "counts": {
+      "own_meta_ads": 5,
+      "own_google_ads": 300,
+      "competitor_meta_ads": 2,
+      "note": "6 active ad cards captured; 5 are priced treatment offers"
+    }
+  },
+  "funnel": {
+    "from": "5 live Meta ads (15 May - 5 Oct 2026) + ~300 live Google ads",
+    "to": "WhatsApp chat / Instagram profile (Meta) - galaxydentalcare.in (Google)",
+    "destination": "WhatsApp (wa.me/918686676781) on 4 of 5 Meta ads, instagram.com on 1; the site contact form and phone numbers on the Google side",
+    "note": "No UTM parameters appear on any destination; the ads quote prices the site does not show."
+  },
+  "findings": [],
+  "next_steps": [
+    [
+      "Put the ad's price on the page it lands on",
+      "The Meta ads quote Rs. 20,000 braces and Rs. 15,000 implants; the contact page publishes no price at all. The offer that earned the click disappears at the moment the patient arrives."
+    ],
+    [
+      "Fix the lazy-loaded trust badges",
+      "The NABH, ISO and FAMDENT badges are SVG placeholders that depend on a lazy-load script. If that script is slow or blocked, the accreditations render as empty boxes - the opposite of trust."
+    ],
+    [
+      "Repair the 20 unencoded telephone links",
+      "tel:+91 86866 76781 contains raw spaces. Those links fail to dial on a number of Android handsets, and this page is the one every paid click is meant to reach."
+    ],
+    [
+      "Reconcile the Google Ads advertiser name",
+      "Roughly 300 live Google ads for galaxydentalcare.in sit under an advertiser registered as 'Jaydeep'. If that is a personal account, the clinic has no ownership trail over its own ad history or quality score."
+    ]
+  ],
+  "recommended_steps": [
+    [
+      "Put the ad's price on the page it lands on",
+      "The Meta ads quote Rs. 20,000 braces and Rs. 15,000 implants; the contact page publishes no price at all. The offer that earned the click disappears at the moment the patient arrives."
+    ],
+    [
+      "Fix the lazy-loaded trust badges",
+      "The NABH, ISO and FAMDENT badges are SVG placeholders that depend on a lazy-load script. If that script is slow or blocked, the accreditations render as empty boxes - the opposite of trust."
+    ],
+    [
+      "Repair the 20 unencoded telephone links",
+      "tel:+91 86866 76781 contains raw spaces. Those links fail to dial on a number of Android handsets, and this page is the one every paid click is meant to reach."
+    ],
+    [
+      "Reconcile the Google Ads advertiser name",
+      "Roughly 300 live Google ads for galaxydentalcare.in sit under an advertiser registered as 'Jaydeep'. If that is a personal account, the clinic has no ownership trail over its own ad history or quality score."
+    ]
+  ],
+  "contact_facts": [
+    "Phones: +91 86866 76781, +91 86866 16148, +91 96188 35655",
+    "WhatsApp: +91 86866 76781",
+    "Email: contact@galaxydentalcare.in",
+    "9 branches; open Monday to Sunday, 9am-9pm",
+    "Google Maps links published per branch"
+  ],
+  "contact": {
+    "email": "",
+    "phone": "",
+    "fb_page": ""
+  },
+  "site_evidence": {
+    "pixel": null,
+    "utm": false,
+    "checked_on": "2026-11-28",
+    "note": "Meta ads open WhatsApp or Instagram; no landing page is served to the click."
+  },
+  "site_audit": {
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": true,
+      "has_phone_click": true,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": 8,
+      "has_live_chat": false,
+      "has_popup_optin": true,
+      "has_testimonials": false,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "title": "Contact Us | Galaxy Dental Care - 9 Branches in Hyderabad",
+      "title_text": "Contact Us | Galaxy Dental Care - 9 Branches in Hyderabad",
+      "title_length": 58,
+      "has_meta_description": null,
+      "meta_description": null,
+      "h1_count": 1,
+      "h1_text": "Contact Us",
+      "has_og_tags": null,
+      "has_schema": null,
+      "has_favicon": true,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "mobile_performance_score": null,
+      "largest_contentful_paint": null,
+      "error": "not measured - the PageSpeed Insights API could not be reached from this crawler; no speed score is claimed"
+    },
+    "page_count": {
+      "has_sitemap": true,
+      "note": "sitemap index at /sitemap_index.xml lists 6 child sitemaps (posts, pages, branches, treatments, categories, doctor categories), last updated 2026-11-28"
+    },
+    "local_signals": {
+      "has_google_maps_embed": true,
+      "mentions_city": true
+    },
+    "html_errors": {
+      "errors": 192,
+      "warnings": 12,
+      "info": 91,
+      "note": "recurring: 17 scripts rewritten to type=\"rocketlazyloadscript\" by WP Rocket, 20 telephone links with unencoded spaces, 28 iframes with width=\"100%\", 9 div/paragraph nesting errors and 4 aria-labelledby attributes on divs"
+    },
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://galaxydentalcare.in/contact-us/",
+    "score": {
+      "score": 5,
+      "issues": [
+        "No live chat — missing after-hours leads",
+        "No visible testimonials/social proof on homepage"
+      ],
+      "wins": [
+        "Contact form exists",
+        "WhatsApp link present",
+        "Good CTA presence (8 buttons)"
+      ]
+    },
+    "audit_date": "2026-11-28"
+  },
+  "vertical": "dental",
+  "scope_note": "The contact page is a WordPress build served through WP Rocket, which rewrites every script to type=\"rocketlazyloadscript\" and defers it. Tracking scripts are therefore present as deferred markup we could not read reliably, so all eight tracking values are recorded as unchecked - this report does not claim the clinic has no pixel, only that a page read cannot establish one. The validation findings, the lazy-loaded award badges and the absence of published prices come from the W3C checker's source view and are reproducible. The booking form was read (name, phone, email, branch, plus a honeypot field labelled 'Website'); it was not submitted.",
+  "summary": "Galaxy Dental Care advertises hardest of the five and measures least. Five active Meta ads were read today, the newest opened 5 October 2026, and the Google Ads Transparency Centre returns roughly 300 live ads - but every one of them is registered to the advertiser name 'Jaydeep', not to the clinic, and each Meta ad opens WhatsApp or Instagram, never the website. On the site, the offers do not survive the click: the ads quote Rs. 20,000 braces and Rs. 15,000 implants, while the contact page publishes no price at all. The page is also the heaviest in the batch - 192 validator errors, nine broken paragraph nestings, and 28 iframes sized with width=\"100%\" - and its NABH, ISO and FAMDENT trust badges are lazy-loaded SVG placeholders, so a visitor who waits sees empty boxes where the accreditations should be.",
+  "provenance": {
+    "generator": "ads_only_report.py",
+    "entrypoint": "build_batch15_telangana.py",
+    "data_file": "batch15_telangana_data.py",
+    "run_at": "2026-11-28 13:40",
+    "method": "Ad IDs read in Meta Ad Library (India, active only); site values read from the served page and the W3C Nu checker source view; PageSpeed API unreachable so no speed score is claimed"
+  },
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "WP Rocket serves every script as type=\"rocketlazyloadscript\", so deployment cannot be read from the HTML; this page is not evidence of a missing pixel.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "Four of the five live ads open WhatsApp and one opens Instagram; no destination carries a UTM and none is a page on galaxydentalcare.in.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Formats differ across the cards in the Ad Library (video and image), but a per-creative format count was not recorded in this pass.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "pass",
+        "evidence": "Copy was read in full for all 5 live ads - see the cards and the verbatim table in this report.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "pass",
+        "evidence": "Awards (FAMDENT), nine branches and 15+ years of experience are used as proof; the ads carry no patient reviews.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "fail",
+        "evidence": "The five priced offers date from 15-19 May 2026; the only newer ad (5 Oct) is an award video, so the Rs. 20,000 braces offer has run unchanged for six months.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Five active ads are visible; campaign structure is account-only.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "fail",
+        "evidence": "The ads promise Rs. 20,000 braces and Rs. 15,000 implants, but the page they relate to publishes no price at all.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 2,
+      "fail": 3,
+      "unknown": 10,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}

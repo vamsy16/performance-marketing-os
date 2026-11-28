@@ -55,6 +55,29 @@ YOUR_AGENCY = os.environ.get("SP_AGENCY", "Smart Pursuit")
 YOUR_PHONE = os.environ.get("SP_PHONE", "+91 70950 24220")
 TAGLINE = "SOLAR GROWTH PARTNER"
 
+# Vertical wording. The cover tagline, the closing card and the search-example
+# line must not call a dental practice a solar company.
+VERTICALS = {
+    "solar": {"tagline": "SOLAR GROWTH PARTNER", "audience": "solar companies",
+              "signature": "Solar marketing specialist", "example": "solar panel price in"},
+    "dental": {"tagline": "DENTAL GROWTH PARTNER", "audience": "dental practices",
+               "signature": "Dental practice marketing specialist", "example": "dental implant cost in"},
+    "interiors": {"tagline": "INTERIORS GROWTH PARTNER", "audience": "interior design studios",
+                  "signature": "Interior design marketing specialist",
+                  "example": "interior designers in"},
+}
+_V = {"solar": VERTICALS["solar"]}
+
+
+def vertical_of(audit):
+    return (audit or {}).get("vertical") if isinstance((audit or {}).get("vertical"), dict) else \
+        VERTICALS.get(((audit or {}).get("vertical") or "solar"), VERTICALS["solar"])
+
+
+def set_vertical(key):
+    """Pick the wording for the page furniture (the canvas header is drawn late)."""
+    _V["solar"] = VERTICALS.get((key or "solar"), VERTICALS["solar"])
+
 PAGE_W, PAGE_H = A4
 MARGIN = 16 * mm
 CONTENT_W = PAGE_W - 2 * MARGIN
@@ -228,7 +251,8 @@ def score_verdict(score):
         return ("Clear quick wins available", AMBER,
                 "A handful of gaps are holding back your conversion rate. Fixing them is fast and low-cost.")
     return ("Solid foundation", GREEN,
-            "Your homepage is in good shape. The remaining gaps are small but costly - close them before scaling ad spend.")
+            "The page is not the bottleneck. The gaps left are few but they are the ones that decide "
+            "whether ad spend turns into enquiries - close them before scaling.")
 
 
 def next_steps(audit):
@@ -436,7 +460,10 @@ def stat_tiles(audit):
 
     def tile(num, label, num_color=NAVY):
         return [
-            Paragraph(f'<font color="{num_color.hexval()}">{T(num)}</font>', ST["tile_num"]),
+            # Trailing no-break space keeps number and label from being glued
+            # into one token ("12/100AUDIT SCORE") in the extracted text layer,
+            # which delivery_gate.py reads to confirm the /100 score panel.
+            Paragraph(f'<font color="{num_color.hexval()}">{T(num)}\u00a0</font>', ST["tile_num"]),
             Spacer(1, 0.8 * mm),
             Paragraph(T(label), ST["tile_lbl"]),
         ]
@@ -771,6 +798,20 @@ def promise_gap_table(audit):
     return table
 
 
+def _html_error_source(site):
+    """Describe the W3C Nu result honestly - including 'not run'."""
+    he = site.get("html_errors") or {}
+    if not he:
+        return "NOT CHECKED - no validator counts were stored for this report."
+    parts = []
+    for key, word in (("errors", "errors"), ("warnings", "warnings"), ("info", "info messages")):
+        if he.get(key) is not None:
+            parts.append(f"{he[key]} {word}")
+    base = "W3C Nu HTML Checker (validator.w3.org/nu, show source) - " + ", ".join(parts)
+    note = he.get("note") or ""
+    return (base + ("; " + note if note else "")).strip()
+
+
 def verification_log(audit):
     """Where every number in this report came from - compact, one line each.
 
@@ -859,8 +900,8 @@ def verification_log(audit):
          "Public page fetch and W3C checker source where available",
          read_on),
         ("HTML / CSS error and warning counts",
-         "NOT CHECKED - no validator counts were stored for this report.",
-         "not run"),
+         T(_html_error_source(site)),
+         read_on if site.get("html_errors") else "not run"),
         ("Mobile page speed and Largest Contentful Paint",
          speed_where,
          speed_when),
@@ -979,12 +1020,14 @@ def cta_card(audit):
         Paragraph("Ready to fix this - and start capturing those leads?", ST["white_b"]),
         Spacer(1, 1.8 * mm),
         Paragraph(
-            f"{T(YOUR_AGENCY)} builds lead engines for solar companies using Google Ads, Meta Ads and local SEO. "
+            f"{T(YOUR_AGENCY)} builds lead engines for {T(vertical_of(audit)['audience'])} using Google Ads, "
+            "Meta Ads and local SEO. "
             f"Reply to this report or call {T(YOUR_PHONE)} for a free 10-minute walkthrough - we will show you "
             f"what to fix first, what it costs, and what it should return in extra enquiries. No pitch, no obligation.",
             ST["white"]),
         Spacer(1, 2.6 * mm),
-        Paragraph(f"<b>{T(YOUR_NAME)}</b>  |  {T(YOUR_AGENCY)}  |  {T(YOUR_PHONE)}  |  Solar marketing specialist",
+        Paragraph(f"<b>{T(YOUR_NAME)}</b>  |  {T(YOUR_AGENCY)}  |  {T(YOUR_PHONE)}  |  "
+                  f"{T(vertical_of(audit)['signature'])}",
                   ParagraphStyle("ctac", fontName=FONT_BOLD, fontSize=8.6, leading=11, textColor=AMBER)),
     ]
     cols = ([logo_cell, body] if logo else [body])
@@ -1064,7 +1107,10 @@ def ads_only_tiles(audit):
 
     def tile(num, label, num_color=NAVY):
         return [
-            Paragraph(f'<font color="{num_color.hexval()}">{T(num)}</font>', ST["tile_num"]),
+            # Trailing no-break space keeps number and label from being glued
+            # into one token ("12/100AUDIT SCORE") in the extracted text layer,
+            # which delivery_gate.py reads to confirm the /100 score panel.
+            Paragraph(f'<font color="{num_color.hexval()}">{T(num)}\u00a0</font>', ST["tile_num"]),
             Spacer(1, 0.8 * mm),
             Paragraph(T(label), ST["tile_lbl"]),
         ]
@@ -1184,6 +1230,35 @@ def ads_control_section(audit):
     return story
 
 
+def _unmeasured_line(audit):
+    """Name only the checks this particular report actually left empty."""
+    site = audit.get("site_audit") or audit
+    pagespeed = site.get("pagespeed") or {}
+    pixels = site.get("pixels") or {}
+    page_count = site.get("page_count") or {}
+    adlib = audit.get("ad_library") or {}
+    missing = []
+    if pagespeed.get("mobile_performance_score") is None:
+        missing.append("Google PageSpeed mobile score and Largest Contentful Paint")
+    if site.get("load_time_seconds") is None:
+        missing.append("server response time")
+    unchecked = sum(1 for v in pixels.values() if v is None)
+    if unchecked:
+        missing.append(f"{unchecked} of {len(pixels)} tracking tags (the served HTML could not "
+                       "establish them)")
+    if page_count.get("has_sitemap") is None:
+        missing.append("indexed page count")
+    if not adlib.get("google_own"):
+        missing.append("Google Ads Transparency advertiser records")
+    if not missing:
+        return ("Nothing in this report was estimated. Every row below carries a value that was read "
+                "from the live page or the Ad Library on the date shown.")
+    return (", ".join(missing)[:1].upper() + ", ".join(missing)[1:] +
+            ". Those rows read <b>\"Not available at audit time\"</b> or "
+            "<b>\"Not checked in this pass\"</b> - they are left empty on purpose rather than filled "
+            "with a guess.")
+
+
 def ads_only_honesty_panel(audit):
     """Panel stating exactly what was read live and what was not measured.
 
@@ -1208,12 +1283,7 @@ def ads_only_honesty_panel(audit):
         Paragraph('<font color="#B26A00"><b>NOT MEASURED - AND THEREFORE NOT CLAIMED</b></font>',
                   ST["small_b"]),
         Spacer(1, 1 * mm),
-        Paragraph(
-            "Google PageSpeed mobile score and Largest Contentful Paint (not measured for this site), "
-            "server response time, Google Ads Transparency advertiser "
-            "records and indexed page count. These rows read "
-            "<b>\"Not available at audit time\"</b> or <b>\"Not checked in this pass\"</b> - "
-            "they are left empty on purpose rather than filled with a guess.", ST["small"]),
+        Paragraph(_unmeasured_line(audit), ST["small"]),
     ]
     if audit.get("review_pending"):
         body.insert(0, Paragraph('<font color="#B26A00"><b>INTERNAL DRAFT - NOT FOR OUTREACH: REVIEW AND LIVE RECHECK PENDING</b></font>', ST["small_b"]))
@@ -1379,6 +1449,7 @@ def build_ads_only_story(audit):
 
 def generate_ads_only_pdf(audit, out_path=None):
     """Render an ads-only (live ad activity) report. Returns the output path."""
+    set_vertical(audit.get("vertical"))
     company = audit.get("company") or audit.get("website", "audit")
     slug = re.sub(r"[^a-zA-Z0-9]+", "_", company)[:50]
     ads_only_dir = os.path.join(os.path.dirname(BASE_DIR), "02-OUTREACH", "ads_only_pdfs")
@@ -1496,7 +1567,7 @@ def build_story(audit):
                     "ad status can change after the audit date.", ST["body"]))
             else:
                 story.append(Paragraph(
-                    f"<b>{n} active ad results found.</b> Your Meta presence is live - the creatives below are "
+                    f"<b>{n} active ad result{'' if n == 1 else 's'} found.</b> Your Meta presence is live - the creatives below are "
                     f"publicly visible in the Ad Library right now.", ST["body"]))
             if n > shown:
                 if all(ad_start_key(ad) != datetime.min for ad in ads_sorted):
@@ -1539,7 +1610,7 @@ def build_story(audit):
         else:
             story.append(empty_box(
                 "No Google Ads advertiser record was found for this company or domain. That means nobody is "
-                "bidding on searches like 'solar panel price in " + (city or "your city") +
+                "bidding on searches like '" + vertical_of(audit)["example"] + " " + (city or "your city") +
                 "' in your name - a high-intent demand your competitors can take for free."))
 
     story.extend(ads_control_section(audit))
@@ -1761,7 +1832,7 @@ def header_footer(canvas, doc):
         canvas.drawString(tx, PAGE_H - 12.5 * mm, "SMART PURSUIT")
         canvas.setFont(FONT, 7.6)
         canvas.setFillColor(colors.HexColor("#AFC3DA"))
-        canvas.drawString(tx, PAGE_H - 17 * mm, TAGLINE)
+        canvas.drawString(tx, PAGE_H - 17 * mm, _V["solar"]["tagline"])
         canvas.setFont(FONT_BOLD, 8.5)
         canvas.setFillColor(colors.white)
         canvas.drawRightString(PAGE_W - MARGIN, PAGE_H - 11.5 * mm, "ADS AUDIT REPORT")

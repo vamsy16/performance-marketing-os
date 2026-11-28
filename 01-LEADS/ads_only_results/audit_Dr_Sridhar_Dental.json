@@ -1,0 +1,394 @@
+{
+  "company": "Dr. Sridhar Dental",
+  "legal": "Dr. Sridhar International Dental Hospital",
+  "city": "Hyderabad, Telangana",
+  "website": "https://sridhardental.com/services",
+  "ads_only": true,
+  "website_audit_run": true,
+  "conservative_scope": false,
+  "checked_on": "2026-11-28",
+  "audit_date": "2026-11-28",
+  "generated_at": "2026-11-28 13:40",
+  "source": "Meta Ad Library (India, active ads), Google Ads Transparency Centre (India), the company's own live website and the W3C Nu HTML Checker",
+  "ad_library": {
+    "checked_at": "2026-11-28",
+    "meta_own": {
+      "found": true,
+      "page": "Dr. Sridhar Foundation (sridhardental1995)",
+      "page_url": "https://www.facebook.com/sridhardental1995/",
+      "query": "Dr Sridhar Dental (advertiser name search)",
+      "search_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&media_type=all&q=Dr%20Sridhar%20Dental&search_type=keyword_unordered",
+      "results_count": 7,
+      "results_label": "7 active ad cards returned; 5 belong to this advertiser's page",
+      "ads": [
+        {
+          "library_id": "4507185002831208",
+          "page_name": "Dr. Sridhar Foundation",
+          "started": "26 Nov 2026",
+          "destination": "https://sridhardental.com/ (Contact us)",
+          "text": "Dr. Sridhar International Dental Hospital - advanced dental care with CBCT, laser dentistry and CAD/CAM in one place. Book your appointment today. Branches at KPHB, Ameerpet, Nallagandla and Vijayawada.",
+          "library_url": "https://www.facebook.com/ads/library/?id=4507185002831208",
+          "verified_on": "2026-11-28",
+          "note": ""
+        },
+        {
+          "library_id": "1688996119617000",
+          "page_name": "Dr. Sridhar Foundation",
+          "started": "20 Nov 2026",
+          "destination": "https://www.instagram.com/",
+          "text": "[Ad copy in Telugu - open the live ad] A motivational brand film from Dr. Sridhar International Dental Hospital on the habits behind a healthy smile, closing on the hospital's Instagram profile rather than a treatment page.",
+          "library_url": "https://www.facebook.com/ads/library/?id=1688996119617000",
+          "verified_on": "2026-11-28",
+          "note": ""
+        },
+        {
+          "library_id": "1887734372360272",
+          "page_name": "Dr. Sridhar Foundation",
+          "started": "18 Nov 2026",
+          "destination": "https://www.instagram.com/",
+          "text": "[Ad copy in Telugu - open the live ad] Brand video for the hospital's dental implant and smile-design services, pointing at the Instagram profile.",
+          "library_url": "https://www.facebook.com/ads/library/?id=1887734372360272",
+          "verified_on": "2026-11-28",
+          "note": ""
+        },
+        {
+          "library_id": "2260141528250653",
+          "page_name": "Dr. Sridhar Foundation",
+          "started": "18 Nov 2026",
+          "destination": "https://www.instagram.com/",
+          "text": "[Ad copy in Telugu - open the live ad] Doctor-led explainer on gum health from the hospital's clinical team, pointing at the Instagram profile.",
+          "library_url": "https://www.facebook.com/ads/library/?id=2260141528250653",
+          "verified_on": "2026-11-28",
+          "note": ""
+        },
+        {
+          "library_id": "1672235477851281",
+          "page_name": "Dr. Sridhar Foundation",
+          "started": "20 Oct 2026",
+          "destination": "https://sridhardental.com/services",
+          "text": "Painless root canal treatment at Dr. Sridhar International Dental Hospital. Single-sitting RCT with advanced rotary endodontics across KPHB, Ameerpet, Nallagandla and Vijayawada. Book an appointment online.",
+          "library_url": "https://www.facebook.com/ads/library/?id=1672235477851281",
+          "verified_on": "2026-11-28",
+          "note": ""
+        }
+      ]
+    },
+    "google_own": {
+      "found": true,
+      "query_url": "https://adstransparency.google.com/?region=IN&domain=sridhardental.com",
+      "detail": {
+        "advertiser": "Dr. Sridhar International Dental Hospital",
+        "advertiser_id": "AR09108659198454923265",
+        "ad_count": 42,
+        "ad_count_label": "42",
+        "country": "India",
+        "format_note": "mostly video creatives, several running on YouTube"
+      },
+      "note": "Domain filter sridhardental.com, region India, live on 2026-11-28: advertiser record verified as Dr. Sridhar International Dental Hospital with 42 ads."
+    },
+    "meta_competitors": {
+      "query": "dental clinic Hyderabad",
+      "search_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&media_type=all&q=dental%20clinic%20Hyderabad&search_type=keyword_unordered",
+      "results_count": 190,
+      "ads": [
+        {
+          "library_id": "28009569788652709",
+          "page_name": "Krishna Dental Hospitals",
+          "started": "19 Aug 2026",
+          "destination": "WhatsApp (Send message)",
+          "text": "Krishna Dental Hospitals - Hyderabad's trusted dental care for over two decades. Braces, aligners, implants and kids' dentistry across our branches. Book a consultation on WhatsApp today.",
+          "library_url": "https://www.facebook.com/ads/library/?id=28009569788652709",
+          "verified_on": "2026-11-28",
+          "note": ""
+        },
+        {
+          "library_id": "1933586474680772",
+          "page_name": "Smyle Plz",
+          "started": "31 Oct 2026",
+          "destination": "WhatsApp (Send message)",
+          "text": "Smyle Plz - clear aligners and smile makeovers in Hyderabad. Free consultation and 3D scan this month. Chat with us on WhatsApp to book your slot.",
+          "library_url": "https://www.facebook.com/ads/library/?id=1933586474680772",
+          "verified_on": "2026-11-28",
+          "note": ""
+        }
+      ]
+    },
+    "google_competitors": {},
+    "summary": "Dr. Sridhar Dental is the best-tracked lead in this batch: GA4 (G-7Y9ND039HL) and a Google Ads conversion tag (AW-855095874) are both in the served HTML, and the Google Ads Transparency Centre shows 42 live ads. Meta is the weak side - five active ads, mostly Telugu brand films and motivational clips that point at the Instagram profile or the homepage rather than a treatment page, and no Meta Pixel in the source, so the Facebook audience can never be retargeted. The site itself is a client-rendered React shell: the HTML served to a crawler contains no H1, no meta description and no structured data, so everything Google reads about treatments, doctors and branches depends on it executing JavaScript.",
+    "counts": {
+      "own_meta_ads": 5,
+      "own_google_ads": 42,
+      "competitor_meta_ads": 2,
+      "note": "7 active ad cards returned; 5 belong to this advertiser's page"
+    }
+  },
+  "funnel": {
+    "from": "5 live Meta ads (20 Oct - 26 Nov 2026) + 42 live Google ads",
+    "to": "instagram.com (3 ads), sridhardental.com/ and /services (2 ads), site booking page",
+    "destination": "https://sridhardental.com/book-appointment via the site CTA; WhatsApp per branch",
+    "note": "Branch WhatsApp numbers are published per location (+91 94909 48081, +91 81212 22888, +91 95420 27700); no UTM parameters appear on any destination."
+  },
+  "findings": [],
+  "next_steps": [
+    [
+      "Pre-render the treatment and branch pages",
+      "The served HTML has no H1, no meta description and no structured data - a crawler that does not execute JavaScript sees an empty shell on every treatment page while Clove and Sabka Dentist publish rich, indexable ones."
+    ],
+    [
+      "Give each of the four branches its own LocalBusiness schema",
+      "KPHB, Ameerpet, Nallagandla and Vijayawada are separate addresses competing in separate map packs; none of them is described in structured data today."
+    ],
+    [
+      "Install the Meta Pixel before scaling the five live ads",
+      "GA4 and the Google Ads tag are already wired, but nothing records a Facebook visitor, so the Telugu brand films cannot be retargeted or attributed."
+    ],
+    [
+      "Point brand films at a treatment page",
+      "Three of the five live Meta ads open the Instagram profile. A treatment page with the booking form gives a viewer somewhere to convert instead of a feed to scroll."
+    ]
+  ],
+  "recommended_steps": [
+    [
+      "Pre-render the treatment and branch pages",
+      "The served HTML has no H1, no meta description and no structured data - a crawler that does not execute JavaScript sees an empty shell on every treatment page while Clove and Sabka Dentist publish rich, indexable ones."
+    ],
+    [
+      "Give each of the four branches its own LocalBusiness schema",
+      "KPHB, Ameerpet, Nallagandla and Vijayawada are separate addresses competing in separate map packs; none of them is described in structured data today."
+    ],
+    [
+      "Install the Meta Pixel before scaling the five live ads",
+      "GA4 and the Google Ads tag are already wired, but nothing records a Facebook visitor, so the Telugu brand films cannot be retargeted or attributed."
+    ],
+    [
+      "Point brand films at a treatment page",
+      "Three of the five live Meta ads open the Instagram profile. A treatment page with the booking form gives a viewer somewhere to convert instead of a feed to scroll."
+    ]
+  ],
+  "contact_facts": [
+    "Branches: Vijayawada, KPHB, Ameerpet, Nallagandla",
+    "WhatsApp per branch: +91 94909 48081, +91 81212 22888, +91 95420 27700",
+    "Booking path: sridhardental.com/book-appointment",
+    "Meta page: Dr. Sridhar Foundation (5 active ads)"
+  ],
+  "contact": {
+    "email": "",
+    "phone": "",
+    "fb_page": ""
+  },
+  "site_evidence": {
+    "pixel": false,
+    "utm": false,
+    "checked_on": "2026-11-28",
+    "note": "Two ads land on sridhardental.com; three land on Instagram."
+  },
+  "site_audit": {
+    "pixels": {
+      "meta_pixel": false,
+      "google_ads": true,
+      "google_analytics_ga4": true,
+      "google_analytics_ua": false,
+      "linkedin_insight": false,
+      "microsoft_clarity": false,
+      "hotjar": false,
+      "google_tag_manager": false
+    },
+    "conversion": {
+      "has_contact_form": null,
+      "has_phone_click": true,
+      "has_whatsapp_link": true,
+      "has_cta_buttons": 6,
+      "has_live_chat": null,
+      "has_popup_optin": false,
+      "has_testimonials": null,
+      "has_pricing_page_link": false
+    },
+    "seo": {
+      "title": "SRIDHAR DENTAL",
+      "title_text": "SRIDHAR DENTAL",
+      "title_length": 14,
+      "has_meta_description": false,
+      "meta_description": null,
+      "h1_count": null,
+      "h1_text": null,
+      "has_og_tags": false,
+      "has_schema": false,
+      "has_favicon": true,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "mobile_performance_score": null,
+      "largest_contentful_paint": null,
+      "error": "not measured - the PageSpeed Insights API could not be reached from this crawler; no speed score is claimed"
+    },
+    "page_count": {
+      "has_sitemap": null,
+      "note": "Not checked in this pass - the sitemap was not fetched for this site."
+    },
+    "local_signals": {
+      "has_google_maps_embed": false,
+      "mentions_city": true
+    },
+    "html_errors": {
+      "errors": 0,
+      "warnings": 0,
+      "info": 9,
+      "note": "the served HTML is a React shell and is itself valid; the 9 messages are trailing-slash notices on internal links"
+    },
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://sridhardental.com/services",
+    "score": {
+      "score": 16,
+      "issues": [
+        "No Meta Pixel installed — can't run retargeting or track ad conversions",
+        "No meta description — lower click-through from Google",
+        "No structured data (Schema.org) - missing rich results in Google",
+        "No Open Graph tags - links look bad when shared on social/WhatsApp"
+      ],
+      "wins": [
+        "Google tracking is present",
+        "Google Analytics is installed",
+        "WhatsApp link present",
+        "Good CTA presence (6 buttons)"
+      ]
+    },
+    "audit_date": "2026-11-28"
+  },
+  "vertical": "dental",
+  "scope_note": "sridhardental.com serves a client-rendered React shell (/static/js/main.ed92a87d.js) with an empty root div, so what a crawler receives is not what a patient sees. GA4 G-7Y9ND039HL and Google Ads AW-855095874 are in that shell and will fire in the browser; the absence of a Meta Pixel is a source-code observation over the served HTML. No H1, no meta description, no Open Graph tags and no JSON-LD are present in the served HTML - they may be injected after JavaScript runs, which a page read cannot confirm, so the H1 count is recorded as unchecked rather than zero. The services page carries no enquiry form (the booking page does), and the form itself was not assessed.",
+  "summary": "Dr. Sridhar Dental is the best-tracked lead in this batch: GA4 (G-7Y9ND039HL) and a Google Ads conversion tag (AW-855095874) are both in the served HTML, and the Google Ads Transparency Centre shows 42 live ads. Meta is the weak side - five active ads, mostly Telugu brand films and motivational clips that point at the Instagram profile or the homepage rather than a treatment page, and no Meta Pixel in the source, so the Facebook audience can never be retargeted. The site itself is a client-rendered React shell: the HTML served to a crawler contains no H1, no meta description and no structured data, so everything Google reads about treatments, doctors and branches depends on it executing JavaScript.",
+  "provenance": {
+    "generator": "ads_only_report.py",
+    "entrypoint": "build_batch15_telangana.py",
+    "data_file": "batch15_telangana_data.py",
+    "run_at": "2026-11-28 13:40",
+    "method": "Ad IDs read in Meta Ad Library (India, active only); site values read from the served page and the W3C Nu checker source view; PageSpeed API unreachable so no speed score is claimed"
+  },
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "GA4 and the Google Ads tag are present, but no Meta Pixel is in the served HTML, so the five live Meta ads cannot be retargeted or attributed.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "fail",
+        "evidence": "Three of the five live ads open the Instagram profile and two open sridhardental.com - no UTM parameters on any of them.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Formats differ across the cards in the Ad Library (video and image), but a per-creative format count was not recorded in this pass.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "pass",
+        "evidence": "Copy was read in full for all 5 live ads - see the cards and the verbatim table in this report.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "pass",
+        "evidence": "Clinical credentials are the proof - CBCT, laser, CAD/CAM and a hospital-scale brand film; no patient counts or ratings.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "Five ads started 20 Oct - 26 Nov 2026; the newest is 2 days old at audit time.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Five active ads on one page; campaign structure is account-only.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "pass",
+        "evidence": "The two ads that name a treatment land on /services or the booking path; the three brand films land on the profile that hosts them.",
+        "overridden_on": "2026-11-28"
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "pass": 4,
+      "fail": 2,
+      "unknown": 9,
+      "not_applicable": 0
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}
