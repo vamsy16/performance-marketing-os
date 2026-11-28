@@ -1,0 +1,274 @@
+{
+  "company": "Atria Power",
+  "city": "Bengaluru",
+  "website": "https://www.atriapower.com/",
+  "checked_on": "2026-11-23",
+  "audit_date": "2026-11-23",
+  "generated_at": "2026-11-23",
+  "ads_only": true,
+  "website_audit_run": true,
+  "conservative_scope": true,
+  "review_pending": true,
+  "ad_library": {
+    "meta_own": {
+      "found": true,
+      "ads": [
+        {
+          "library_id": "1103298019283935",
+          "library_url": "https://www.facebook.com/ads/library/?id=1103298019283935",
+          "page_name": "Atria Power",
+          "started": "Nov 4, 2026",
+          "destination": "fb.me (card link; form not verified)",
+          "text": "Why wait for a subsidy when you can start saving from day one?\n\nWith the Atria Subsidy, Bengaluru homeowners get benefits worth ₹75,000 on a 3 kW rooftop system, paid upfront. You pay only the balance.\n\n✔ 3 kW systems from ₹1.42 lakh after the Atria Subsidy\n\n✔ For independent houses with a monthly bill above ₹1,200\n\n✔ Financing options available\n\n✔ 4.9 on Google from 100+ reviews\n\n✔ 66+ year legacy, from the founders of ACT\n\nTap Get Offer to book a free site survey, or call +91 99011 00428."
+        }
+      ]
+    },
+    "summary": "One active Meta ad card captured on 2026-11-23; this is a sample, not necessarily the total. Google Ads activity was not checked."
+  },
+  "score_basis": "0 points from measured formula checks. Unknown checks are excluded; zero is not a clean bill of health.",
+  "funnel": {
+    "type": "fb.me link",
+    "destination": "fb.me (card link; form not verified)"
+  },
+  "site_audit": {
+    "ssl": true,
+    "load_time_seconds": null,
+    "final_url": "https://www.atriapower.com/",
+    "audit_date": "2026-11-23",
+    "pixels": {
+      "meta_pixel": null,
+      "google_ads": null,
+      "google_analytics_ga4": null,
+      "google_analytics_ua": null,
+      "linkedin_insight": null,
+      "microsoft_clarity": null,
+      "hotjar": null,
+      "google_tag_manager": null
+    },
+    "conversion": {
+      "has_contact_form": null,
+      "has_phone_click": true,
+      "has_whatsapp_link": null,
+      "has_cta_buttons": null,
+      "has_live_chat": null,
+      "has_popup_optin": null,
+      "has_testimonials": null,
+      "has_pricing_page_link": null
+    },
+    "seo": {
+      "has_title": true,
+      "title_text": "Home | Atria Power",
+      "has_meta_description": null,
+      "h1_count": null,
+      "has_og_tags": null,
+      "has_schema": null,
+      "has_favicon": true,
+      "image_count": null,
+      "images_without_alt": null
+    },
+    "pagespeed": {
+      "error": "not measured for this site"
+    },
+    "page_count": {
+      "has_sitemap": null,
+      "note": "robots.txt declares /sitemap.xml; sitemap fetch failed, so contents and indexing are unverified."
+    },
+    "local_signals": {
+      "has_google_maps_embed": null
+    },
+    "conversion_evidence": {
+      "checked_on": "2026-11-23",
+      "method": "Public page text and selected served source; no browser interaction or form submission.",
+      "sources": [
+        "https://www.atriapower.com/",
+        "https://www.atriapower.com/contact-us"
+      ],
+      "rows": [
+        [
+          "Action links",
+          "Corporate homepage Contact us links to /contact-us."
+        ],
+        [
+          "Forms",
+          "Contact page has a form; homepage form and submission unverified."
+        ],
+        [
+          "Phone / WhatsApp",
+          "Homepage has a tel link; WhatsApp not verified."
+        ],
+        [
+          "Proof / price",
+          "Homepage lists projects; testimonials and pricing not verified."
+        ],
+        [
+          "Chat / popup",
+          "Live chat and offer popup require browser verification."
+        ]
+      ]
+    },
+    "scope_note": "The card says Get offer and links to fb.me; its final form was not tested. The separately reviewed corporate contact page has a form. Wix source review is partial; event firing remains unverified.",
+    "html_errors": "979 errors, 0 warnings, 22 info (checker hit message cap; includes 7 HTML errors)",
+    "score": {
+      "score": 0,
+      "issues": [
+        "The card shows fb.me and Get offer; verify the actual destination and survey booking flow.",
+        "The corporate homepage features solar, wind and hydro; its rooftop link points to a separate domain.",
+        "The homepage checker hit its message cap; do not treat the total as a count of actionable HTML defects."
+      ],
+      "wins": [
+        "Corporate homepage links to contact and a phone number.",
+        "Contact page contains a form; submission untested."
+      ]
+    }
+  },
+  "site_evidence": {
+    "pixel": null,
+    "ga4": null,
+    "gtm": null,
+    "google_ads_tag": null,
+    "checked_on": "2026-11-23",
+    "note": "Selected served source reviewed; absence and runtime behavior are unverified."
+  },
+  "promise_gap": [
+    [
+      "Ad: 3 kW from ₹1.42 lakh after Atria Subsidy.",
+      "The reviewed corporate homepage is not the confirmed ad destination and does not establish this offer. Verify terms in the live form and the rooftop site."
+    ],
+    [
+      "Ad: book a free survey via Get Offer.",
+      "The card shows fb.me; the booking flow and survey delivery were not tested."
+    ]
+  ],
+  "recommended_steps": [
+    [
+      "Test Get Offer",
+      "Check the mobile post-click flow and lead handoff."
+    ],
+    [
+      "Clarify the offer",
+      "Confirm price, subsidy terms and eligibility wherever the offer is shown."
+    ],
+    [
+      "Verify tracking",
+      "Inspect runtime events and account configuration with consent."
+    ],
+    [
+      "Review validator output",
+      "Separate actionable markup findings from Wix CSS diagnostics."
+    ]
+  ],
+  "ads_audit": {
+    "controls": [
+      {
+        "id": "M01",
+        "name": "Meta Pixel installed",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Partial source review; verify deployment and runtime."
+      },
+      {
+        "id": "M39",
+        "name": "UTM parameters on ad destinations",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M05",
+        "name": "Domain verification",
+        "group": "Tracking & measurement",
+        "disposition": "unknown",
+        "evidence": "Business Manager domain verification cannot be observed from public ad data; needs account access."
+      },
+      {
+        "id": "M25",
+        "name": "Creative format diversity",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M26",
+        "name": "Creative concept coverage",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M30",
+        "name": "Social proof utilization",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M27",
+        "name": "Video aspect ratios",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Creative files cannot be downloaded from the Ad Library; needs account access or the raw creatives."
+      },
+      {
+        "id": "M29",
+        "name": "Hook rate",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Video performance metrics are account-only."
+      },
+      {
+        "id": "M31",
+        "name": "UGC / social-native content",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Content style cannot be verified from ad cards alone."
+      },
+      {
+        "id": "M-CR4",
+        "name": "CTR benchmark",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "No spend or impression data is public for this advertiser; the catalog forbids benchmark guessing."
+      },
+      {
+        "id": "M-CR1",
+        "name": "Creative freshness",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M11",
+        "name": "Campaign fragmentation",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M18",
+        "name": "Campaign objective alignment",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "One card only; verify full account and click path."
+      },
+      {
+        "id": "M33",
+        "name": "Advantage+ Placements",
+        "group": "Structure & delivery",
+        "disposition": "unknown",
+        "evidence": "Placement automation state is account-only."
+      },
+      {
+        "id": "M28",
+        "name": "Creative fatigue detection",
+        "group": "Creative",
+        "disposition": "unknown",
+        "evidence": "Frequency and performance decay need account metrics."
+      }
+    ],
+    "counts": {
+      "unknown": 15
+    },
+    "methodology": "Control review follows the claude-ads Meta Ads audit catalog (github.com/vamsy16/claude-ads, ads/references/meta-audit.md). Each control is graded only where public evidence establishes it - Ad Library ad data and the lead's own landing page. Controls that require Ads Manager access (bidding, budgets, audiences, learning phase, EMQ, CAPI status) are marked unknown on purpose: they cannot be verified from outside the account and are never guessed.",
+    "account_only": "M02 Conversions API, M03 event deduplication, M04 Event Match Quality, M06 aggregated measurement, M07 standard vs custom events, M08 CAPI Gateway, M09/M-AT1 attribution windows, M10 data freshness, M13/M14 learning phase, M15/M16 campaign & ad-set structure, M17 budget distribution, M36 bid strategy, M37 frequency caps, M38 breakdown reporting, M40 A/B testing, M19-M24 audiences & first-party data"
+  }
+}
